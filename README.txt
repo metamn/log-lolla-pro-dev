@@ -1,23 +1,17 @@
-=== Log Lolla ===
+=== Log Lolla Pro ===
 Contributors: The More Themes Baby team
 Requires at least: WordPress 4.7
 Tested up to: WordPress 4.9.4
-Version: 1.0.1
+Version: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: one-column
 
 == Description ==
 
-Log Lolla is a classic blog theme with brutalist design.
+Log Lolla Pro is the advanced version of the Log Lolla theme.
 
-It brings back the joy of blogging and is meant to create knowledge from news.
-
-It supports all default post formats—aside, gallery, link, image, quote, status, video, chat, audio—to let you freely add content. Whatever content you want.
-
-Log Lolla aims to be the single destination, the hub of all content you publish on the web. Instead of scattering your thoughts, inspiration, fun, things to learn, status updates—you name it—on third party networks like Twitter, Tumblr, Instagram—you can collect them into a single space and distribute anywhere.
-
-For more information about Log Lolla please go to https://morethemes.baby/themes/log-lolla
+For more information about Log Lolla please go to https://morethemes.baby/themes/log-lolla-pro
 
 == Installation ==
 
@@ -62,7 +56,7 @@ License: GNU General Public License v2 or later
 
 == Changelog ==
 
-= 1.0 =
+= 1.0.0 =
 * Released: February 12, 2018
 
 https://github.com/morethemesbaby/log-lolla
