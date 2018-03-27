@@ -1,0 +1,31 @@
+@mixin header-menu__grid {
+  .widget + .widget {
+    margin-top: $lem;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @include mobile-and-up {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .widget {
+      margin-right: $lem;
+    }
+  }
+
+  // TODO: Remove this when deploying the theme
+  // it helps only this special case
+  @include tablet {
+    .widget {
+      max-width: 40%;
+
+      &:first-of-type {
+        max-width: none;
+      }
+    }
+  }
+}

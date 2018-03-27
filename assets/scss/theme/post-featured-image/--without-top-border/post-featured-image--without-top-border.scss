@@ -1,0 +1,6 @@
+@mixin post-featured-image--without-top-border {
+  .figure {
+    border-top: none;
+    margin: 0;
+  }
+}

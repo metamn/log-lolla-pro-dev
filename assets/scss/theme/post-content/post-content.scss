@@ -1,0 +1,29 @@
+@mixin post-content {
+  .text {
+    @include text-style(body-text);
+    @include text-style(body-text-post);
+    max-width: $text-block-width;
+
+    // to clear floats for an <img> inside
+    // - https://www.quirksmode.org/css/clearing.html
+    width: 100%;
+    overflow: hidden;
+
+    // Gallery support
+    .gallery {
+      @include post-content-gallery;
+    }
+
+    // More link
+    .more-link {
+      @include post-read-more;
+    }
+
+
+    // Remove top padding on embedded content
+    // - https://github.com/metamn/log-lolla-dev/issues/11
+    .wp-embedded-content + p {
+      margin-top: 0;
+    }
+  }
+}

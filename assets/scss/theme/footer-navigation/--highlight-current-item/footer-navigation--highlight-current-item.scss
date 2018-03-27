@@ -1,0 +1,11 @@
+@mixin footer-navigation--highlight-current-item {
+  ul {
+    li {
+      &.current-menu-item {
+        a {
+          @include link--linethrough;
+        }
+      }
+    }
+  }
+}

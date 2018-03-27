@@ -1,0 +1,9 @@
+@mixin navigation-post {
+  .ul {
+    .li {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  }
+}

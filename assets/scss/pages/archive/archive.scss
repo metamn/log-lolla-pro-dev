@@ -1,0 +1,11 @@
+html {
+  body {
+    &.archive {
+      .footer {
+        .footer-navigation {
+          @include footer-navigation--highlight-current-item;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@mixin post-format-link {
+  @include mobile-and-up {
+    @include post-grid--display-vertical;
+  }
+
+  .post-title {
+    width: 100%;
+
+    .link {
+      @include text-style(post-format-link);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .arrow-with-triangle {
+        @include arrow-with-triangle;
+        margin-left: $lem / 2;
+      }
+    }
+  }
+
+  &.external-link {
+    @include post-format-link--external-link;
+  }
+
+  &.local-link {
+    @include post-format-link--local-link;
+  }
+}

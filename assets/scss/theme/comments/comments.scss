@@ -1,0 +1,21 @@
+@mixin comments {
+  @include colors(default);
+
+  a {
+    @include link;
+  }
+
+  .comment-list {
+    @include comment-list;
+  }
+
+  .comment-form {
+    @include comment-form;
+  }
+
+  .bypostauthor {
+    // if the comment is by the original author of the post, the class "bypostauthor" is added.
+    // - required by the theme check plugin
+    display: flex;
+  }
+}

@@ -1,0 +1,48 @@
+// Form styling
+//
+// - trying to replicate the Material guidelines
+// - trying to mix with material-components-web
+// - inspired mostly by: https://material.io/guidelines/components/text-fields.html
+//
+// - we don't use `.select` or `.label` since 3rd party code can use these classes and will mess up the layout
+// - Ex: `<td class="label"><label>...</label></tr>`
+@mixin form {
+  input[type="number"],
+  .input-number {
+    @include input-number;
+  }
+
+  input[type="text"],
+  input[type="url"],
+  .input-text,
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  input[type="file"],
+  input[type="search"], {
+    @include input-text;
+  }
+
+  select {
+    @include select;
+  }
+
+  label {
+    @include label;
+  }
+
+  fieldset {
+    @include fieldset;
+  }
+
+  textarea {
+    @include textarea;
+  }
+
+  button,
+  .button,
+  input[type="submit"] {
+    @include button;
+    @include button--with-border;
+  }
+}

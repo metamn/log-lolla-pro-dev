@@ -1,0 +1,101 @@
+@mixin comment-list {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: $lem;
+    padding-bottom: $lem;
+    @include border(normal, bottom);
+
+    &:last-of-type {
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      border: none;
+    }
+
+    .comment-body {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: $lem 0;
+
+      .comment-meta {
+        // avatar width + avatar right margin
+        // margin-left: $lem * 2 + $lem / 2;
+
+        .comment-author {
+          @include comment-list__vcard;
+        }
+
+        .comment-metadata {
+          margin-left: $lem * 2 + $lem / 2;
+        }
+      }
+
+      .comment-content {
+        @include text-style(body-text-post);
+
+        // Reset <li> setting added to <ol class="comment-list">
+        ul {
+          @include ul--body-text;
+
+          li {
+            margin-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+          }
+        }
+
+        ol {
+          li {
+            margin-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border: none;
+          }
+        }
+
+        @include border(normal, left);
+        margin-left: $lem;
+        padding-left: $lem;
+        margin-top: $lem;
+        padding-bottom: $lem;
+      }
+
+      .reply {
+        @include comment-list__reply;
+      }
+    }
+
+    .children {
+      margin-left: $lem;
+      margin-top: $lem;
+
+      li {
+        border-bottom: none;
+        @include border(normal, top);
+
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    &.pingback {
+      margin-bottom: 0;
+      padding-bottom: 0;
+
+      .comment-body {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        a {
+          margin: 0 $lem / 2;
+        }
+      }
+    }
+  }
+}

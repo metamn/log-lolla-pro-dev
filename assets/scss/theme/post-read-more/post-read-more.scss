@@ -1,0 +1,12 @@
+@mixin post-read-more {
+  @include font(bold);
+
+  display: flex;
+  flex-wrap: wrap;
+
+  // Arrows for read more ...
+  .arrow-with-triangle {
+    @include arrow-with-triangle;
+    margin-left: $lem / 2;
+  }
+}

@@ -1,0 +1,13 @@
+@mixin header-logo {
+  figure {
+    img {
+      width: auto;
+      height: auto;
+      max-height: $top * 2;
+    }
+  }
+
+  + .header-title {
+    margin-top: $lem;
+  }
+}

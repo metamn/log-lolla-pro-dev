@@ -1,0 +1,10 @@
+@mixin post-title {
+  .link {
+    @include text-style(title);
+    @include link($type: underlined, $hover: linethrough);
+  }
+
+  .text {
+    @include text-style(title);
+  }
+}

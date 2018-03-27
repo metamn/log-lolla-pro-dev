@@ -1,0 +1,24 @@
+@mixin sidebar {
+  @include background-pattern--horizontal-lines;
+
+  .widget {
+    @include colors(default);
+    @include border(normal, all);
+    @include text-style(body-text-post);
+    padding: $lem;
+
+    &.widget_tag_cloud {
+      @include sidebar-widget-tag-cloud;
+    }
+
+    &.widget_calendar {
+      @include sidebar-widget-calendar;
+    }
+
+    &.widget_media_audio {
+      @include sidebar-widget-audio;
+    }
+  }
+
+  @include sidebar__grid;
+}

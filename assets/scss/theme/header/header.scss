@@ -1,0 +1,26 @@
+@mixin header {
+  padding: $lem;
+
+  .header-logo {
+    @include header-logo;
+  }
+
+  .header-image {
+    @include header-image;
+    @include header-image--half-sized;
+  }
+
+  .header-title {
+    @include header-title;
+  }
+
+  .header-subtitle {
+    @include header-subtitle;
+  }
+
+  .menu-hamburger {
+    @include menu-hamburger;
+  }
+
+  @include header__grid;
+}

@@ -1,0 +1,69 @@
+@mixin post-footer {
+  display: flex;
+  flex-direction: column;
+
+  @include border(normal, all);
+  border-top: none;
+
+  @include colors(default);
+
+
+  .date-and-author {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .categories-and-tags {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+
+      .post-tags {
+        margin-top: $lem;
+      }
+    }
+
+    @include mobile-and-up {
+      .post-categories + .post-tags {
+        margin-left: $lem;
+      }
+    }
+
+    @include tablet {
+      .post-categories,
+      .post-tags {
+        min-width: 30%;
+      }
+    }
+  }
+
+  .post-edit-link {
+    .edit-link {
+      @include button;
+      @include button--with-border;
+
+      .post-edit-link {
+        padding: 0;
+        @include link($type: not-underlined);
+      }
+    }
+  }
+
+  .categories-and-tags,
+  .date-and-author,
+  .post-edit-link {
+    padding: $lem;
+  }
+
+  .date-and-author + .categories-and-tags,
+  .date-and-author + .post-edit-link,
+  .categories-and-tags + .post-edit-link {
+    padding-top: 0;
+  }
+
+  .link,
+  a {
+    @include link;
+  }
+}

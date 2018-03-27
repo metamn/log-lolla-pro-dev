@@ -1,0 +1,31 @@
+@mixin menu-hamburger {
+  cursor: pointer;
+
+  .hamburger-icon {
+    @include colors(default);
+    
+    &--closed {
+      display: none;
+    }
+
+    &--opened {
+      display: flex;
+
+      // enlarge it
+      transform: scale(1.5) translateX(-2px) translateY(-3px);
+    }
+  }
+
+
+  &--closed {
+    .hamburger-icon {
+      &--closed {
+        display: flex;
+      }
+
+      &--opened {
+        display: none;
+      }
+    }
+  }
+}

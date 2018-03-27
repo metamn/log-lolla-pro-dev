@@ -1,0 +1,21 @@
+@mixin sub {
+  sub,
+  .sub,
+  sup,
+  .sup {
+    @include scale(small-1);
+    top: 0;
+    bottom: 0;
+  }
+
+
+  sub,
+  .sub {
+    vertical-align: sub;
+  }
+
+  sup,
+  .sup {
+    vertical-align: super;
+  }
+}

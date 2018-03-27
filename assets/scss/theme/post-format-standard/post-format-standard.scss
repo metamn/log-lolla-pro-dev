@@ -1,0 +1,34 @@
+@mixin post-format-standard {
+  @include mobile-and-up {
+    @include post-grid--display-vertical;
+
+    &.display-horizontal {
+      @include post-grid--display-horizontal;
+
+      .post-featured-image {
+        @include post-featured-image--with-border;
+      }
+    }
+  }
+
+  @include portrait {
+    &.has-excerpt.has-thumbnail {
+      @include post-grid--display-vertical;
+
+      .post-featured-image {
+        @include post-featured-image--without-border;
+      }
+    }
+  }
+
+  // Styling attachments post formats
+  // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
+  .post-content {
+    .attachment {
+      img {
+        @include border(normal, all);
+        padding: $lem;
+      }
+    }
+  }
+}

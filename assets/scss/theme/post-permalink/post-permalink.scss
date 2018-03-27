@@ -1,0 +1,8 @@
+@mixin post-permalink {
+  padding: $lem;
+
+  .link,
+  a {
+    @include link;
+  }
+}

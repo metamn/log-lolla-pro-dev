@@ -1,0 +1,25 @@
+@mixin table {
+  table,
+  .table {
+    border-collapse: collapse;
+    margin-top: $lem;
+
+    .th,
+    th,
+    .td,
+    td {
+      @include border(normal, bottom);
+      padding: $lem / 2 $lem $lem / 2 0;
+      text-align: left;
+    }
+
+    .th,
+    th {
+      @include font(bold);
+
+      > * {
+        @include font(bold);
+      }
+    }
+  }
+}

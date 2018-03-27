@@ -1,0 +1,9 @@
+// It's like '<acronym>' but bold
+//
+@mixin abbr {
+  abbr,
+  .abbr {
+    @include font(bold);
+    font-variant: all-petite-caps;
+  }
+}

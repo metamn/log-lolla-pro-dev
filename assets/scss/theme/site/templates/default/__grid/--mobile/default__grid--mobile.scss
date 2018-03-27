@@ -1,0 +1,16 @@
+@mixin default__grid--mobile {
+  @include mobile {
+    .header,
+    .header-menu,
+    .content,
+    .sidebar,
+    .footer {
+      padding: $top-mobile $left-mobile;
+    }
+
+    .header-menu {
+      margin: $top-mobile $left-mobile;
+      width: calc(100% - #{$left-mobile * 2});
+    }
+  }
+}

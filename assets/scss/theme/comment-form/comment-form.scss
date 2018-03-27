@@ -1,0 +1,23 @@
+@mixin comment-form {
+  display: flex;
+  flex-direction: column;
+
+  .comment-form-comment,
+  .comment-form-author,
+  .comment-form-email,
+  .comment-form-url {
+    display: flex;
+    flex-direction: column;
+    margin-top: $lem;
+  }
+
+  .form-submit {
+    margin-top: $lem;
+  }
+
+  .comment-reply-title,
+  .logged-in-as,
+  .comment-notes {
+    //display: none;
+  }
+}

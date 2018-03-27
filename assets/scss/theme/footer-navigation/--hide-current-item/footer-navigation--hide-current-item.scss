@@ -1,0 +1,9 @@
+@mixin footer-navigation--hide-current-item {
+  ul {
+    li {
+      &.current-menu-item {
+        display: none;
+      }
+    }
+  }
+}

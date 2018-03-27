@@ -1,0 +1,34 @@
+// Colors
+//
+// The colors together with the color pairs.
+// Colors don't exist alone yet in pairs, like text-color on background-color.
+// All color pairs have a contrast ratio set for perfect readability using [Lea Verou's contrast checking tool](http://leaverou.github.io/contrast-ratio/).
+//
+// Styleguide colors
+
+// background color
+$background-color: #fff;
+
+// Text color
+$text-color: #000;
+
+
+// Color combinations. Colors are not used standalone but in pairs
+@mixin colors($name) {
+
+  @if ($name == 'default') {
+    color: $text-color;
+    background-color: $background-color;
+  }
+
+  @if ($name == 'text-color-on-transparent') {
+    color: $text-color;
+    background-color: transparent;
+  }
+
+  @if ($name == 'inverted') {
+    color: $background-color;
+    background-color: $text-color;
+  }
+
+}

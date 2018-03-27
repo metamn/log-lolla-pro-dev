@@ -1,0 +1,7 @@
+@mixin post-featured-image--without-border {
+  .figure {
+    @include background-pattern--dotted;
+    border-left: none;
+    border-right: none;
+  }
+}

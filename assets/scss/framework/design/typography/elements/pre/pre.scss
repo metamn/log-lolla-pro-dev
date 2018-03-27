@@ -1,0 +1,7 @@
+@mixin pre {
+  pre,
+  .pre {
+    @include font(monospace);
+    white-space: pre-wrap;
+  }
+}

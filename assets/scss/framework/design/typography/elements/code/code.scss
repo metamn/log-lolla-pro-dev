@@ -1,0 +1,6 @@
+@mixin code {
+  .code,
+  code {
+    @include font(monospace);
+  }
+}

@@ -1,0 +1,22 @@
+@mixin post-grid {
+  @include border(normal, all);
+
+  // On small screens all posts will be displayed vertically
+  // On bigger screens the display will be decided by the post format
+  @include mobile {
+    @include post-grid--display-vertical;
+  }
+
+  .post-title,
+  .post-meta,
+  .post-excerpt,
+  .post-content,
+  .post-paginated-content,
+  .post-footer {
+    padding: $lem;
+  }
+
+  + .post {
+    margin-top: $lem;
+  }
+}

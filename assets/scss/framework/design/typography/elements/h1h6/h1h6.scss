@@ -1,0 +1,53 @@
+@mixin h1h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @include text-style(title);
+    @include border(normal, top);
+    @include border(normal, bottom);
+    margin: $top / 2 0;
+    padding: $top / 2 0;
+  }
+
+
+  // - http://jrgraphix.net/r/Unicode/2600-26FF
+
+  h1 {
+    &:before {
+      content: '\2609';
+    }
+  }
+
+  h2 {
+    &:before {
+      content: '\2609\2609';
+    }
+  }
+
+  h3 {
+    &:before {
+      content: '\2609\2609\2609';
+    }
+  }
+
+  h4 {
+    &:before {
+      content: '\2609\2609\2609\2609';
+    }
+  }
+
+  h5 {
+    &:before {
+      content: '\2609\2609\2609\2609\2609';
+    }
+  }
+
+  h6 {
+    &:before {
+      content: '\2609\2609\2609\2609\2609\2609';
+    }
+  }
+}

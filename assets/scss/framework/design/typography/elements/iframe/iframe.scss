@@ -1,0 +1,6 @@
+@mixin iframe {
+  iframe {
+    @include border(normal, all);
+    border: 1px solid !important;
+  }
+}

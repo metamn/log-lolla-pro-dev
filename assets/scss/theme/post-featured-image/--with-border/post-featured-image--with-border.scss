@@ -1,0 +1,17 @@
+@mixin post-featured-image--with-border {
+  .figure {
+    @include border(normal, all);
+    padding: $lem;
+    margin: $lem 0;
+    background: transparent;
+
+    @include mobile {
+      margin: $lem;
+      padding: 0;
+    }
+
+    .figcaption {
+      display: none;
+    }
+  }
+}

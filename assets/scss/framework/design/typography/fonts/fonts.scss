@@ -1,0 +1,88 @@
+// Managing fonts
+// - includes @font-face definitions
+// - includes the font mixin
+//
+// If fonts are served locally add them to the `assets/fonts` folder
+// And include them as: `src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),`
+
+
+@font-face {
+    font-family: 'nimbus_sans_lbold_italic';
+    src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),
+         url('assets/fonts/nimbussanl-bolita-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_lbold';
+    src: url('assets/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
+         url('assets/fonts/nimbussanl-bol-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_lregular_italic';
+    src: url('assets/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
+         url('assets/fonts/nimbussanl-regita-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_sans_lregular';
+    src: url('assets/fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
+         url('assets/fonts/nimbussanl-reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nimbus_monoregular';
+    src: url('assets/fonts/nimbusmono-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/nimbusmono-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// The font mixin
+//
+@mixin font($variant) {
+
+  @if ($variant == 'default') {
+    font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @if ($variant == 'bold') {
+    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @if ($variant == 'italic') {
+    font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;;
+  }
+
+  @if ($variant == 'bold-italic') {
+    font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @if ($variant == 'monospace') {
+    font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @if ($variant == 'site-title') {
+    font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+    font-weight: normal;
+    font-style: normal;
+  }
+}

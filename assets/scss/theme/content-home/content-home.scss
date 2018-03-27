@@ -1,0 +1,12 @@
+@mixin content-home {
+  .post {
+    .post-permalink {
+      align-self: center;
+    }
+
+    &.format-standard.without-excerpt {
+      // This ain't gonna work ... breaks the 'under construction' post
+      // @include post--display-vertical;
+    }
+  }
+}

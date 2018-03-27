@@ -1,0 +1,9 @@
+@mixin content-page {
+  .post {
+    @include post-grid--display-vertical;
+
+    &.display-horizontal {
+      @include post-grid--display-vertical;
+    }
+  }
+}

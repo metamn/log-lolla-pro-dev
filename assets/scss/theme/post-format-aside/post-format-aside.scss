@@ -1,0 +1,28 @@
+@mixin post-format-aside {
+  @include portrait {
+    @include post-grid--display-vertical;
+  }
+
+  @include landscape {
+    @include post-grid--display-horizontal;
+  }
+
+  .post-content {
+    .text {
+      @include border(normal, all);
+      @include scale(large-1);
+      @include colors(inverted);
+
+      padding: $top $left;
+
+      @include mobile {
+        @include scale(default);
+        padding: $lem;
+      }
+
+      a {
+        @include link($color-scheme: inverted);
+      }
+    }
+  }
+}

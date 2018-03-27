@@ -1,0 +1,6 @@
+@mixin header-subtitle {
+  .text {
+    @include text-style(title);
+    @include colors(default);
+  }
+}

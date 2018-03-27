@@ -1,0 +1,53 @@
+// Grid
+//
+// Displays items in a grid
+//
+// The container can contain the grid title wrapped into a `<h3>`
+//
+// - $iepx: sometimes a -1px required to make the grid work in IE
+//
+// Styleguide grid
+@mixin grid($items-per-row, $margin-right: 0px, $margin-bottom: 0px, $max-items-to-display: null, $grid-title: true, $iepx: 0px) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  $item-width: percentage(1 / $items-per-row);
+  $item-flex-basis: calc(#{$item-width} - (((#{$items-per-row} - 1) * #{$margin-right}) / #{$items-per-row}) - #{$iepx});
+
+  > * {
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+
+    // Now we can have padding and border for items
+    box-sizing: border-box;
+
+    // Only $max-items-to-display number of items will be shown
+    @if ($max-items-to-display != null) {
+      display: none;
+
+      @for $i from 1 through $max-items-to-display {
+        &:nth-child(#{$i + 1}) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  // Right margins
+  @if ($grid-title == true) {
+    > *:not(h3) {
+      width: $item-flex-basis;
+      &:nth-child(#{$items-per-row}n + 1) {
+        margin-right: 0;
+      }
+    }
+  } @else {
+    > * {
+      width: $item-flex-basis;
+      &:nth-child(#{$items-per-row}n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

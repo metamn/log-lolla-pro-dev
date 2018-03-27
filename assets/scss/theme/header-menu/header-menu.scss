@@ -1,0 +1,23 @@
+@mixin header-menu {
+  @include colors(default);
+  @include border(normal, all);
+
+  // Active state
+  display: flex;
+
+  // Inactive state
+  &--closed {
+    display: none;
+  }
+
+  .widget {
+    @include text-style(body-text-post);
+
+    .arrow-with-triangle {
+      @include arrow-with-triangle;
+      margin-top: $lem;
+    }
+  }
+
+  @include header-menu__grid;
+}

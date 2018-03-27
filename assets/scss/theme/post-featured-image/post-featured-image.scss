@@ -1,0 +1,26 @@
+@mixin post-featured-image {
+  @include image;
+  @include figure;
+
+  figure {
+    @include border(normal, top);
+    @include border(normal, bottom);
+    line-height: 0;
+
+    width: 100%;
+    height: auto;
+    display: block;
+
+    img {
+      @include border(normal, all);
+
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      display: none !important;
+    }
+  }
+}

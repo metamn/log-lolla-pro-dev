@@ -1,0 +1,40 @@
+@mixin content {
+  padding: $lem;
+
+  .post {
+    @include post;
+  }
+
+  #comments,
+  .comments-area {
+    @include comments;
+  }
+
+  .navigation {
+    @include navigation;
+  }
+
+  &.content-home {
+    @include content-home;
+  }
+
+  &.content-archive {
+    @include content-archive;
+  }
+
+  &.content-search {
+    @include content-search;
+  }
+
+  &.content-none {
+    @include content-none;
+  }
+
+  &.content-single {
+    @include content-single;
+  }
+
+  &.content-page {
+    @include content-page;
+  }
+}

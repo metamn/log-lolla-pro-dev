@@ -1,0 +1,29 @@
+@mixin header__grid {
+  display: flex;
+
+  &.without-header-menu {
+    flex-direction: column;
+  }
+
+  &.with-header-menu {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; // to align hamburger icon
+
+    .header-title,
+    .header-subtitle,
+    .header-logo {
+      width: 90%;
+    }
+
+    .menu-hamburger {
+      width: 10%;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &.without-logo.without-header-text {
+      justify-content: flex-end;
+    }
+  }
+}

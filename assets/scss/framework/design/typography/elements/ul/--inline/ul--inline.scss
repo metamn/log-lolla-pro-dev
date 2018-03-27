@@ -1,0 +1,11 @@
+@mixin ul--inline {
+  display: flex;
+
+  li,
+  .li {
+    + .li,
+    + li {
+      margin-left: $lem;
+    }
+  }
+}

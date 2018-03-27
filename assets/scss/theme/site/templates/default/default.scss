@@ -1,0 +1,38 @@
+@include html-css-reset;
+
+html {
+  body {
+    @include typography-reset;
+    @include form-reset;
+    @include form;
+    @include grid-reset;
+    @include text-style(default);
+
+    .header {
+      @include header;
+    }
+
+    .header-menu {
+      @include header-menu;
+    }
+
+    .content {
+      @include content;
+    }
+
+    .sidebar {
+      @include sidebar;
+    }
+
+    .footer {
+      @include footer;
+    }
+
+    @include default__grid;
+
+    // Wordpress specific
+    .screen-reader-text {
+      display: none;
+    }
+  }
+}

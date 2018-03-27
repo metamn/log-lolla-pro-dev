@@ -1,0 +1,10 @@
+@mixin comment-list__text {
+  .text {
+    @include text-style(body-text);
+
+    @include border(normal, left);
+    margin-left: $lem;
+    padding-left: $lem;
+    margin-top: $lem;
+  }
+}

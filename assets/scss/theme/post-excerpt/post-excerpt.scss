@@ -1,0 +1,16 @@
+@mixin post-excerpt {
+  .text {
+    @include text-style(body-text);
+    @include text-style(body-text-post);
+    max-width: $text-block-width;
+
+    // to clear floats for an <img> inside
+    // - https://www.quirksmode.org/css/clearing.html
+    width: 100%;
+    overflow: hidden;
+
+    .more-link {
+      @include post-read-more;
+    }
+  }
+}

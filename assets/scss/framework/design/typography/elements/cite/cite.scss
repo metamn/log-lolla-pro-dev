@@ -1,0 +1,17 @@
+@mixin cite {
+  cite,
+  .cite {
+    @include font(default);
+
+    display: block;
+    padding-top: $lem / 2;
+    margin-top: $lem / 2;
+    @include border(normal, top);
+    border-top-style: dashed;
+
+    &:before {
+      content: 'by';
+      padding-right: $lem / 4;
+    }
+  }
+}

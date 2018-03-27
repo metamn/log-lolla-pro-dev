@@ -1,0 +1,41 @@
+@mixin default__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  // Making blockquotes do not overflow
+  overflow-x: hidden;
+
+  > * {
+    width: 100%;
+  }
+
+  .header,
+  .content,
+  .sidebar,
+  .footer {
+    padding: $top $left;
+  }
+
+  .header,
+  .content {
+    max-width: $text-block-width;
+  }
+
+  .header-menu {
+    padding: $top $left;
+    margin: 0 $left;
+    width: calc(100% - #{$left * 2});
+    max-width: $text-block-width - ($left * 2);
+  }
+
+  .content {
+    .post {
+      + .post {
+        margin-top: $top;
+      }
+    }
+  }
+
+  @include default__grid--mobile;
+}

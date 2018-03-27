@@ -1,0 +1,33 @@
+@mixin post-format-quote {
+  @include mobile-and-up {
+    @include post-grid--display-vertical;
+  }
+
+  > * {
+    order: 2;
+  }
+
+  .post-content {
+    @include background-pattern--dotted;
+    padding: 0;
+
+    order: 1;
+
+    .text {
+      @include colors(default);
+      @include border(thin, all);
+      padding: $top $left;
+      margin: $top $left;
+      transform: translateX(-$left) skew(5deg);
+
+      blockquote,
+      q {
+        @include blockquote--naked;
+      }
+    }
+
+    @include mobile-and-up {
+      @include blockquote--large;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@mixin em {
+  em,
+  i,
+  .em,
+  .i {
+    @include text-style(italic);
+
+    b,
+    strong,
+    .strong,
+    .b,
+    .bold {
+      @include text-style(bold-italic);
+    }
+  }
+}

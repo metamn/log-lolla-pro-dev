@@ -1,0 +1,18 @@
+@mixin blockquote {
+  blockquote,
+  .blockquote {
+    @include border(normal, left);
+    padding: $lem;
+  }
+
+  q,
+  .q {
+    @include border(normal, left);
+    padding: 0 $lem;
+  }
+
+  blockquote + cite,
+  blockquote + p {
+    margin-top: $lem;
+  }
+}

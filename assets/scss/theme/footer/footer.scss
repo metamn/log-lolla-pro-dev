@@ -1,0 +1,16 @@
+@mixin footer {
+  @include colors(default);
+  padding: $lem;
+
+  .footer-copyright {
+    @include footer-copyright;
+  }
+
+  .footer-navigation {
+    @include footer-navigation;
+  }
+
+  .footer-credits {
+    @include footer-credits;
+  }
+}

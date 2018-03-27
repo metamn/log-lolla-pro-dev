@@ -1,0 +1,12 @@
+@mixin navigation-posts {
+  .nav-links {
+    .nav-previous,
+    .nav-next {
+      a {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+  }
+}

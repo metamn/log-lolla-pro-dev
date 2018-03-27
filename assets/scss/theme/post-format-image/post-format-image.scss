@@ -1,0 +1,14 @@
+@mixin post-format-image {
+  @include mobile-and-up {
+    @include post-grid--display-vertical;
+  }
+
+  .post-first-image {
+    @include figure;
+    @include image;
+
+    figcaption {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@mixin big {
+  big,
+  .big {
+    @include scale(large-1);
+  }
+
+  small,
+  .small {
+    @include scale(small-1);
+  }
+}

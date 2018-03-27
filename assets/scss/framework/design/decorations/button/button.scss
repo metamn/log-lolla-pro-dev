@@ -1,0 +1,4 @@
+@mixin button {
+  @include text-style(action);
+  cursor: pointer;
+}
