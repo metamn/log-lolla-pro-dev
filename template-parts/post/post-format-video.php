@@ -15,8 +15,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-video' ); ?>>
-  <?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
-  <?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'content' ); ?>
-  <?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
+  <?php get_template_part( 'template-parts/post/post', 'sidebar-left' ); ?>
+
+	<div class="post__content">
+    <?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+    <?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
+	  <?php get_template_part( 'template-parts/post/parts/post', 'content' ); ?>
+    <?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
+  </div>
+
+ 	<?php get_template_part( 'template-parts/post/post', 'sidebar-right' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

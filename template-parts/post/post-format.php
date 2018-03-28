@@ -21,24 +21,30 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_klass_array); ?>>
-	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<?php get_template_part( 'template-parts/post/post', 'sidebar-left' ); ?>
 
-	<?php
-		if ( is_single() ) {
-			get_template_part( 'template-parts/post/parts/post', 'title-without-link' );
-		} else {
-			get_template_part( 'template-parts/post/parts/post', 'title' );
-		}
-	?>
+	<div class="post__content">
+		<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 
-	<?php get_template_part( 'template-parts/post/parts/post', 'featured-image' ); ?>
-	<?php
-		if ( ! is_single() && has_excerpt() ) {
-			get_template_part( 'template-parts/post/parts/post', 'excerpt' );
-		} else {
-			get_template_part( 'template-parts/post/parts/post', 'content' );
-			get_template_part( 'template-parts/post/parts/post', 'paginated-content' );
-		}
-	?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
+		<?php
+			if ( is_single() ) {
+				get_template_part( 'template-parts/post/parts/post', 'title-without-link' );
+			} else {
+				get_template_part( 'template-parts/post/parts/post', 'title' );
+			}
+		?>
+
+		<?php get_template_part( 'template-parts/post/parts/post', 'featured-image' ); ?>
+		<?php
+			if ( ! is_single() && has_excerpt() ) {
+				get_template_part( 'template-parts/post/parts/post', 'excerpt' );
+			} else {
+				get_template_part( 'template-parts/post/parts/post', 'content' );
+				get_template_part( 'template-parts/post/parts/post', 'paginated-content' );
+			}
+		?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-no-title' ); ?>
+	</div>
+
+	<?php get_template_part( 'template-parts/post/post', 'sidebar-right' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->
