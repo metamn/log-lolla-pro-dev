@@ -1,9 +1,11 @@
 @mixin post-format-audio {
-  .post-content {
-    margin-top: $lem;
+  .post__content {
+    .post-content {
+      margin-top: $lem;
 
-    .mejs-horizontal-volume-slider {
-      @include colors(inverted);
+      .mejs-horizontal-volume-slider {
+        @include colors(inverted);
+      }
     }
   }
 }

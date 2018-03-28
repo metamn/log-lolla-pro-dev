@@ -1,9 +1,24 @@
 @mixin post-format-standard {
-  @include mobile-and-up {
-    @include post-grid--display-vertical;
+  .post__content {
+    @include mobile-and-up {
+      @include post__content--display-vertical;
+    }
 
-    &.display-horizontal {
-      @include post-grid--display-horizontal;
+    // Styling attachments post formats
+    // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
+    .post-content {
+      .attachment {
+        img {
+          @include border(normal, all);
+          padding: $lem;
+        }
+      }
+    }
+  }
+
+  &.display-horizontal {
+    .post__content {
+      @include post__content--display-horizontal;
 
       .post-featured-image {
         @include post-featured-image--with-border;
@@ -13,21 +28,12 @@
 
   @include portrait {
     &.has-excerpt.has-thumbnail {
-      @include post-grid--display-vertical;
+      .post__content {
+        @include post__content--display-vertical;
 
-      .post-featured-image {
-        @include post-featured-image--without-border;
-      }
-    }
-  }
-
-  // Styling attachments post formats
-  // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
-  .post-content {
-    .attachment {
-      img {
-        @include border(normal, all);
-        padding: $lem;
+        .post-featured-image {
+          @include post-featured-image--without-border;
+        }
       }
     }
   }

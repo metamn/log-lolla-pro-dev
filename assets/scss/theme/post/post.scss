@@ -1,7 +1,10 @@
 @mixin post {
   @include colors(default);
   @include post-grid;
-  @include post-grid--with-sidebars;
+
+  .post__content {
+    @include post__content;
+  }
 
   .post-sticky {
     @include post-sticky;

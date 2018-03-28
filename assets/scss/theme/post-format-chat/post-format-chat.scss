@@ -1,31 +1,33 @@
 @mixin post-format-chat {
-  @include mobile-and-up {
-    @include post-grid--display-vertical;
-  }
+  .post__content {
+    @include mobile-and-up {
+      @include post__content--display-vertical;
+    }
 
-  .post-content {
-    .text {
-      margin-top: $lem;
+    .post-content {
+      .text {
+        margin-top: $lem;
 
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
 
-      p {
-        @include border(thin, all);
-        @include colors(default);
+        p {
+          @include border(thin, all);
+          @include colors(default);
 
-        @include mobile {
-          @include scale(small-1);
-        }
+          @include mobile {
+            @include scale(small-1);
+          }
 
-        // TODO: On large text quotes the top-right border is missing
-        transform: translateX($lem / 2) skew(5deg);
-        max-width: 70%;
-        padding: $lem;
+          // TODO: On large text quotes the top-right border is missing
+          transform: translateX($lem / 2) skew(5deg);
+          max-width: 70%;
+          padding: $lem;
 
-        &:nth-child(even) {
-          align-self: flex-end;
-          transform: translateX(-$lem / 2) skew(-5deg);
+          &:nth-child(even) {
+            align-self: flex-end;
+            transform: translateX(-$lem / 2) skew(-5deg);
+          }
         }
       }
     }

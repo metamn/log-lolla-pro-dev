@@ -1,27 +1,29 @@
 @mixin post-format-aside {
-  @include portrait {
-    @include post-grid--display-vertical;
-  }
+  .post__content {
+    @include portrait {
+      @include post__content--display-vertical;
+    }
 
-  @include landscape {
-    @include post-grid--display-horizontal;
-  }
+    @include landscape {
+      @include post__content--display-horizontal;
+    }
 
-  .post-content {
-    .text {
-      @include border(normal, all);
-      @include scale(large-1);
-      @include colors(inverted);
+    .post-content {
+      .text {
+        @include border(normal, all);
+        @include scale(large-1);
+        @include colors(inverted);
 
-      padding: $top $left;
+        padding: $top $left;
 
-      @include mobile {
-        @include scale(default);
-        padding: $lem;
-      }
+        @include mobile {
+          @include scale(default);
+          padding: $lem;
+        }
 
-      a {
-        @include link($color-scheme: inverted);
+        a {
+          @include link($color-scheme: inverted);
+        }
       }
     }
   }

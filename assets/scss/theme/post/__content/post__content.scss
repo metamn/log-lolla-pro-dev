@@ -1,0 +1,19 @@
+@mixin post__content {
+  @include border(normal, all);
+  max-width: $text-block-width;
+
+  // On small screens all posts will be displayed vertically
+  // On bigger screens the display will be decided by the post format
+  @include mobile {
+    @include post__content--display-vertical;
+  }
+
+  .post-title,
+  .post-meta,
+  .post-excerpt,
+  .post-content,
+  .post-paginated-content,
+  .post-footer {
+    padding: $lem;
+  }
+}
