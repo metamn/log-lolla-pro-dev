@@ -1,3 +1,20 @@
 @mixin post__sidebar {
-  
+  .post-date,
+  .post-categories {
+    word-wrap: break-word;
+    height: $lem;
+
+    @include laptop {
+      @include scale(large-2);
+    }
+
+    @include desktop {
+      @include scale(large-3);
+    }
+  }
+
+  a,
+  .link {
+    @include link;
+  }
 }

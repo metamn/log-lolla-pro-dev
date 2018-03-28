@@ -11,11 +11,6 @@
   .post__sidebar {
     width: calc((100% - #{$text-block-width}) / 2);
     padding-top: $lem;
-
-    a,
-    .link {
-      @include link;
-    }
   }
 
   .post__sidebar--left {

@@ -1,5 +1,7 @@
 @mixin post--hovered {
-  .post__sidebar {
-    @include post__sidebar--visible;
+  @include laptop-and-up {
+    .post__sidebar {
+      @include post__sidebar--visible;
+    }
   }
 }
