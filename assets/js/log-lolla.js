@@ -2,6 +2,27 @@
  * Javascript functions for the Log Lolla Theme
  */
 
+
+// Hover on post content
+var postContentHover = function() {
+  var postContent = document.querySelectorAll('.content-home .post .post__content');
+
+  function onMouseOver(index, event) {
+    postContent[index].parentNode.classList.add('post--hovered');
+    event.stopPropagation();
+  }
+
+  function onMouseOut(index, event) {
+    postContent[index].parentNode.classList.remove('post--hovered');
+    event.stopPropagation();
+  }
+
+  for (var i = 0; i < postContent.length; i++) {
+    postContent[i].addEventListener('mouseover', onMouseOver.bind(null, i), false);
+    postContent[i].addEventListener('mouseout', onMouseOut.bind(null, i), false);
+  }
+}
+
 // Click on the hamburger menu
 var menuHamburgerClick = function(ID) {
   var menuHamburger = document.querySelector('.menu-hamburger');
@@ -19,6 +40,12 @@ var menuHamburgerClick = function(ID) {
 
 // Run functions once the document is ready
 document.addEventListener('DOMContentLoaded', function(){
+  // Post content hover
+  if (document.querySelector('.content-home')) {
+    postContentHover();
+  }
+
+  // Hamburger menu
   if (document.querySelector('.menu-hamburger')) {
     menuHamburgerClick('.menu-hamburger');
   }

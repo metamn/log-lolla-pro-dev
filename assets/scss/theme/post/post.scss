@@ -6,6 +6,15 @@
     @include post__content;
   }
 
+  .post__sidebar {
+    @include post__sidebar;
+    @include post__sidebar--hidden;
+  }
+
+  &--hovered {
+    @include post--hovered;
+  }
+
   .post-sticky {
     @include post-sticky;
   }
