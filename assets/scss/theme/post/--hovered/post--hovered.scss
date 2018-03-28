@@ -1,7 +1,16 @@
 @mixin post--hovered {
   @include laptop-and-up {
+    // @include border(normal, all);
+    // @include background-pattern--horizontal-lines;
+    //
+
     .post__sidebar {
+      transform: rotate(-90deg);
       @include post__sidebar--visible;
+
+      aside {
+        @include border(normal, all);
+      }
     }
   }
 }
