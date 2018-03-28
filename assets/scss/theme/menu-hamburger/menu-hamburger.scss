@@ -1,9 +1,9 @@
 @mixin menu-hamburger {
-  cursor: pointer;
+  @include cursor('brutalist_line_SVGicon_cursor2-64x64', -10, 0);
 
   .hamburger-icon {
     @include colors(default);
-    
+
     &--closed {
       display: none;
     }

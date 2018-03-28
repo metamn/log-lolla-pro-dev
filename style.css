@@ -448,6 +448,7 @@ html body {
   font-style: normal;
   color: #000;
   background-color: #fff;
+  cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64.cur"), auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -541,6 +542,11 @@ html body {
   @media only screen and (min-width: 1600.1px) {
     html body {
       font-size: 140%; } }
+  html body a {
+    will-change: all;
+    transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+    html body a:hover {
+      cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64.cur"), auto; }
   html body .header {
     padding: 1.48em;
     display: -webkit-box;
@@ -587,7 +593,7 @@ html body {
       color: #000;
       background-color: #fff; }
     html body .header .menu-hamburger {
-      cursor: pointer; }
+      cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64.cur"), auto; }
       html body .header .menu-hamburger .hamburger-icon {
         color: #000;
         background-color: #fff; }
@@ -1231,7 +1237,8 @@ html body {
           background-color: #fff;
           text-decoration: underline;
           will-change: text-decoration;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          padding: 0 1.48em; }
           html body .content .post .post-permalink .link:hover, html body .content .post .post-permalink .link:active,
           html body .content .post .post-permalink a:hover,
           html body .content .post .post-permalink a:active {

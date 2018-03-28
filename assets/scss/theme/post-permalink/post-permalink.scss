@@ -4,5 +4,6 @@
   .link,
   a {
     @include link;
+    padding: 0 $lem; // for the custom cursor ....
   }
 }
