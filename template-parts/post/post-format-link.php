@@ -29,13 +29,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($post_klass_array); ?>>
-	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
+	<div class="post__left-side">
+		left side
+	</div>
 
-	<h3 class="post-title">
-		<a class="link <?php echo esc_attr( $klass ); ?>" title="<?php echo esc_attr( $title ); ?>" href="<?php echo esc_url( $url ); ?>">
-			<?php echo wp_kses_post( $title . $arrow ); ?>
-		</a>
-	</h3>
+	<div class="post__content">
+		<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 
-	<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-link-is-external' ); ?>
+		<h3 class="post-title">
+			<a class="link <?php echo esc_attr( $klass ); ?>" title="<?php echo esc_attr( $title ); ?>" href="<?php echo esc_url( $url ); ?>">
+				<?php echo wp_kses_post( $title . $arrow ); ?>
+			</a>
+		</h3>
+
+		<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-link-is-external' ); ?>
+	</div>
+
+	<div class="post__right-side">
+		right side
+	</div>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1167,7 +1167,12 @@ html body {
     html body .content .post {
       color: #000;
       background-color: #fff;
-      border: 1px solid; }
+      border: 1px solid;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
       @media only screen and (max-width: 767.9px) {
         html body .content .post {
           display: -webkit-box;
@@ -1186,6 +1191,8 @@ html body {
         padding: 1.48em; }
       html body .content .post + .post {
         margin-top: 1.48em; }
+      html body .content .post .post__content {
+        max-width: 44.4em; }
       html body .content .post .post-sticky {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5160,8 +5167,7 @@ html body {
   html body .sidebar,
   html body .footer {
     padding: 2.96em 2.96em; }
-  html body .header,
-  html body .content {
+  html body .header {
     max-width: 44.4em; }
   html body .header-menu {
     padding: 2.96em 2.96em;

@@ -1,0 +1,8 @@
+@mixin post-grid--with-sidebars {
+  display: flex;
+  flex-wrap: nowrap;
+
+  .post__content {
+    max-width: $text-block-width;
+  }
+}
