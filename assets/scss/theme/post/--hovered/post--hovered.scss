@@ -11,6 +11,12 @@
       aside {
         @include border(normal, all);
       }
+
+      &--right {
+        aside {
+          @include colors(inverted);
+        }
+      }
     }
   }
 }

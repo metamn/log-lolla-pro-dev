@@ -8,7 +8,13 @@ var postContentHover = function() {
   var postContent = document.querySelectorAll('.content-home .post .post__content');
 
   function onMouseOver(index, event) {
-    postContent[index].parentNode.classList.add('post--hovered');
+    var post = postContent[index].parentNode;
+
+    if (post.classList.contains('post--hovered')) {
+      post.classList.remove('post--hovered')
+    } else {
+      post.classList.add('post--hovered');
+    }
     event.stopPropagation();
   }
 
@@ -18,7 +24,7 @@ var postContentHover = function() {
   }
 
   for (var i = 0; i < postContent.length; i++) {
-    postContent[i].addEventListener('mouseover', onMouseOver.bind(null, i), false);
+    postContent[i].addEventListener('click', onMouseOver.bind(null, i), false);
     postContent[i].addEventListener('mouseout', onMouseOut.bind(null, i), false);
   }
 }

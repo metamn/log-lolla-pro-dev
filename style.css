@@ -1237,7 +1237,10 @@ html body {
                   transform: rotate(-90deg);
           visibility: visible; }
           html body .content .post--hovered .post__sidebar aside {
-            border: 1px solid; } }
+            border: 1px solid; }
+          html body .content .post--hovered .post__sidebar--right aside {
+            color: #fff;
+            background-color: #000; } }
       html body .content .post .post-sticky {
         display: -webkit-box;
         display: -ms-flexbox;
