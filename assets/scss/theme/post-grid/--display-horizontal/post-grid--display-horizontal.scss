@@ -2,22 +2,15 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: center;
 
   .post__content {
-    width: calc(#{$text-block-width - $left});
+    width: calc(#{$text-block-width - $left * 2});
   }
 
   .post__sidebar {
-    width: calc((100% - #{$text-block-width - $left}) / 2);
+    width: calc((100% - #{$text-block-width - $left * 2}) / 2);
+    max-width: $text-block-width / 5;
     padding-top: $lem;
-  }
-
-  .post__sidebar--left {
-    margin-right: $lem;
-  }
-
-  .post__sidebar--right {
-    margin-left: $lem;
   }
 }

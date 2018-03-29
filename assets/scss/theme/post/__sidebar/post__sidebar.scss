@@ -9,18 +9,20 @@
   }
 
   @include landscape {
-    @include post__sidebar--bordered;
-
+    @include post__sidebar--large;
     @include laptop-and-up {
       @include post__sidebar--fixed-height;
-      @include post__sidebar--rotated;
-      @include post__sidebar--large;
+    }
+  }
+
+  &--left {
+    @include landscape {
+      @include post__sidebar--bordered;
     }
   }
 
   &--right {
     @include landscape {
-      @include post__sidebar--inverted;
       @include post__sidebar--fixed-height;
     }
   }
