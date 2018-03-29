@@ -3,7 +3,7 @@
     @include post-grid--display-vertical;
   }
 
-  @include laptop-and-up {
+  @include landscape {
     @include post-grid--display-horizontal;
   }
 }

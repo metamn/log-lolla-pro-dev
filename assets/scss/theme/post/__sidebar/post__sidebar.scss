@@ -8,19 +8,20 @@
     @include post__sidebar--bordered($lem / 2);
   }
 
-  @include tablet {
-    @include post__sidebar--bordered($lem / 2);
-  }
+  @include landscape {
+    @include post__sidebar--bordered;
 
-  @include laptop-and-up {
-    @include post__sidebar--fixed-height;
-    @include post__sidebar--large;
-    @include post__sidebar--rotated;
+    @include laptop-and-up {
+      @include post__sidebar--fixed-height;
+      @include post__sidebar--rotated;
+      @include post__sidebar--large;
+    }
   }
 
   &--right {
-    @include laptop-and-up {
+    @include landscape {
       @include post__sidebar--inverted;
+      @include post__sidebar--fixed-height;
     }
   }
 }

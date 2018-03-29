@@ -1185,7 +1185,7 @@ html body {
               top: -1.48em; }
             html body .content .post .post__sidebar--right {
               bottom: -1.48em; } }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      @media only screen and (orientation: landscape) {
         html body .content .post {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -1200,32 +1200,9 @@ html body {
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           html body .content .post .post__content {
-            width: 44.4em; }
+            width: calc(42.92em); }
           html body .content .post .post__sidebar {
-            width: calc((100% - 44.4em) / 2);
-            padding-top: 1.48em; }
-          html body .content .post .post__sidebar--left {
-            margin-right: 1.48em; }
-          html body .content .post .post__sidebar--right {
-            margin-left: 1.48em; } }
-      @media only screen and (min-width: 1025px) {
-        html body .content .post {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-          html body .content .post .post__content {
-            width: 44.4em; }
-          html body .content .post .post__sidebar {
-            width: calc((100% - 44.4em) / 2);
+            width: calc((100% - 42.92em) / 2);
             padding-top: 1.48em; }
           html body .content .post .post__sidebar--left {
             margin-right: 1.48em; }
@@ -1266,26 +1243,30 @@ html body {
           html body .content .post .post__sidebar aside {
             border: 1px solid;
             padding: 0.74em; } }
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (orientation: landscape) {
           html body .content .post .post__sidebar aside {
             border: 1px solid;
-            padding: 0.74em; } }
-        @media only screen and (min-width: 1025px) {
-          html body .content .post .post__sidebar {
-            -webkit-transform: rotate(-90deg);
-                    transform: rotate(-90deg); }
-            html body .content .post .post__sidebar aside {
-              word-wrap: break-word;
-              height: 1.48em; }
-            html body .content .post .post__sidebar aside {
-              font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-              font-weight: normal;
-              font-style: normal;
-              font-size: 1.333em; } }
-        @media only screen and (min-width: 1025px) {
+            padding: 0; } }
+
+@media only screen and (orientation: landscape) and (min-width: 1025px) {
+  html body .content .post .post__sidebar {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+    html body .content .post .post__sidebar aside {
+      word-wrap: break-word;
+      height: 1.48em; }
+    html body .content .post .post__sidebar aside {
+      font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.333em; } }
+        @media only screen and (orientation: landscape) {
           html body .content .post .post__sidebar--right aside {
             color: #fff;
-            background-color: #000; } }
+            background-color: #000; }
+          html body .content .post .post__sidebar--right aside {
+            word-wrap: break-word;
+            height: 1.48em; } }
       html body .content .post--clicked .post__sidebar {
         visibility: visible; }
       html body .content .post .post-sticky {
@@ -1530,7 +1511,7 @@ html body {
           display: none !important; }
       html body .content .post .post-excerpt .text {
         word-wrap: break-word;
-        max-width: 44.4em;
+        max-width: 48.84em;
         width: 100%;
         overflow: hidden; }
         html body .content .post .post-excerpt .text p {
@@ -2035,7 +2016,7 @@ html body {
                       transform: rotate(90deg); }
       html body .content .post .post-content .text {
         word-wrap: break-word;
-        max-width: 44.4em;
+        max-width: 48.84em;
         width: 100%;
         overflow: hidden; }
         html body .content .post .post-content .text p {
@@ -2736,7 +2717,7 @@ html body {
       html body .content .post .post-paginated-content {
         width: 100%;
         margin: 1.48em 0;
-        max-width: 44.4em; }
+        max-width: 48.84em; }
         html body .content .post .post-paginated-content .text {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5298,12 +5279,12 @@ html body {
   html body .footer {
     padding: 2.96em 2.96em; }
   html body .header {
-    max-width: 44.4em; }
+    max-width: 48.84em; }
   html body .header-menu {
     padding: 2.96em 2.96em;
     margin: 0 2.96em;
     width: calc(100% - 5.92em);
-    max-width: 38.48em; }
+    max-width: 42.92em; }
   html body .content .post + .post {
     margin-top: 2.96em; }
   @media only screen and (max-width: 767.9px) {
