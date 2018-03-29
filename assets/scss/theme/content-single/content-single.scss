@@ -1,26 +1,12 @@
 @mixin content-single {
-  .post {
-    @include post-grid--display-vertical;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &.display-horizontal {
-      @include post-grid--display-vertical;
+  padding-top: 0;
 
-      .post-featured-image {
-        @include post-featured-image--without-border;
-      }
-    }
-
-    .post-title {
-      @include border(normal, bottom);
-
-      + .post-featured-image {
-        @include post-featured-image--without-top-border;
-      }
-    }
-
-    .post-permalink {
-      display: none;
-    }
+  .post-single {
+    @include post-single;
   }
 
   .post-footer {

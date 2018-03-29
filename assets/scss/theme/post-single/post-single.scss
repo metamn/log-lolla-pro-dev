@@ -1,0 +1,16 @@
+@mixin post-single {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: calc(#{$text-block-width - $left * 2});
+
+  .post-title {
+    @include post-title--large;
+  }
+
+  .post-content {
+    @include post-content--large;
+    margin-top: $lem;
+  }
+}

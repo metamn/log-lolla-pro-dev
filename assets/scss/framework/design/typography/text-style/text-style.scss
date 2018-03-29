@@ -35,6 +35,39 @@ $text-block-width: $lem * 33;
   }
 
 
+  // Post title large
+  @if ($variant == 'post-title-large') {
+    @include font(bold);
+    line-height: 1.1;
+
+    @include mobile {
+      @include scale(large-1);
+    }
+
+    @include tablet {
+      @include scale(large-2);
+    }
+
+    @include laptop {
+      @include scale(large-3);
+    }
+
+    @include desktop {
+      @include scale(large-4);
+    }
+  }
+
+
+  // Post content large
+  @if ($variant == 'post-content-large') {
+    @include font(default);
+
+    @include mobile-and-up {
+      @include scale(large-1);
+    }
+  }
+
+
   // Post Format Link
   @if ($variant == 'post-format-link') {
     @include font(default);

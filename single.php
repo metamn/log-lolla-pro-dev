@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/post/post-format', get_post_type() );
+			get_template_part( 'template-parts/post/post', 'single' );
       get_template_part( 'template-parts/post/parts/post', 'footer' );
 
 			get_template_part( 'template-parts/navigation/navigation', 'post' );
