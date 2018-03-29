@@ -3,29 +3,32 @@
  */
 
 
-// Hover on post content
-var postContentHover = function() {
+// Click on post content
+var postContentClick = function() {
   var postContent = document.querySelectorAll('.content-home .post .post__content');
 
-  function onMouseOver(index, event) {
+  function postContentRemoveClicks() {
+    for (var i = 0; i < postContent.length; i++) {
+      postContent[i].parentNode.classList.remove('post--clicked');
+    }
+  }
+
+  function onMouseClick(index, event) {
     var post = postContent[index].parentNode;
 
-    if (post.classList.contains('post--hovered')) {
-      post.classList.remove('post--hovered')
+    if (post.classList.contains('post--clicked')) {
+      post.classList.remove('post--clicked')
     } else {
-      post.classList.add('post--hovered');
+      postContentRemoveClicks();
+      post.classList.add('post--clicked');
     }
+
     event.stopPropagation();
   }
 
-  function onMouseOut(index, event) {
-    postContent[index].parentNode.classList.remove('post--hovered');
-    event.stopPropagation();
-  }
 
   for (var i = 0; i < postContent.length; i++) {
-    postContent[i].addEventListener('click', onMouseOver.bind(null, i), false);
-    postContent[i].addEventListener('mouseout', onMouseOut.bind(null, i), false);
+    postContent[i].addEventListener('click', onMouseClick.bind(null, i), false);
   }
 }
 
@@ -48,7 +51,7 @@ var menuHamburgerClick = function(ID) {
 document.addEventListener('DOMContentLoaded', function(){
   // Post content hover
   if (document.querySelector('.content-home')) {
-    postContentHover();
+    postContentClick();
   }
 
   // Hamburger menu

@@ -11,8 +11,8 @@
     @include post__sidebar--hidden;
   }
 
-  &--hovered {
-    @include post--hovered;
+  &--clicked {
+    @include post--clicked;
   }
 
   .post-sticky {
