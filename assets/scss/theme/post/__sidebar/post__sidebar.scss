@@ -1,20 +1,26 @@
 @mixin post__sidebar {
-  .post-date,
-  .post-categories-as-list {
-    word-wrap: break-word;
-    height: $lem;
-
-    @include laptop {
-      @include scale(large-1);
-    }
-
-    @include desktop {
-      @include scale(large-1);
-    }
-  }
-
   a,
   .link {
     @include link;
+  }
+
+  @include portrait {
+    @include post__sidebar--bordered($lem / 2);
+  }
+
+  @include tablet {
+    @include post__sidebar--bordered($lem / 2);
+  }
+
+  @include laptop-and-up {
+    @include post__sidebar--fixed-height;
+    @include post__sidebar--large;
+    @include post__sidebar--rotated;
+  }
+
+  &--right {
+    @include laptop-and-up {
+      @include post__sidebar--inverted;
+    }
   }
 }

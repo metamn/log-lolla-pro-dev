@@ -1,4 +1,22 @@
 @mixin post-grid--display-vertical {
   display: flex;
   flex-direction: column;
+
+  position: relative;
+
+  .post__content {
+    width: 100%;
+  }
+
+  .post__sidebar {
+    position: absolute;
+
+    &--left {
+      top: -$lem;
+    }
+
+    &--right {
+      bottom: -$lem;
+    }
+  }
 }

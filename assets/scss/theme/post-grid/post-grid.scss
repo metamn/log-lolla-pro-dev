@@ -1,23 +1,9 @@
 @mixin post-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-
-  .post__content {
-    width: $text-block-width;
+  @include portrait {
+    @include post-grid--display-vertical;
   }
 
-  .post__sidebar {
-    width: calc((100% - #{$text-block-width}) / 2);
-    padding-top: $lem;
-  }
-
-  .post__sidebar--left {
-    margin-right: $lem;
-  }
-
-  .post__sidebar--right {
-    margin-left: $lem;
+  @include laptop-and-up {
+    @include post-grid--display-horizontal;
   }
 }

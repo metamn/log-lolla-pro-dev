@@ -1,0 +1,6 @@
+@mixin post__sidebar--bordered($padding: 0) {
+  aside {
+    @include border(normal, all);
+    padding: $padding;
+  }
+}
