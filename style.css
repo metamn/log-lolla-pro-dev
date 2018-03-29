@@ -1200,9 +1200,9 @@ html body {
               -ms-flex-pack: justify;
                   justify-content: space-between; }
           html body .content .post .post__content {
-            width: calc(42.92em); }
+            width: calc(45.88em); }
           html body .content .post .post__sidebar {
-            width: calc((100% - 42.92em) / 2);
+            width: calc((100% - 45.88em) / 2);
             padding-top: 1.48em; }
           html body .content .post .post__sidebar--left {
             margin-right: 1.48em; }

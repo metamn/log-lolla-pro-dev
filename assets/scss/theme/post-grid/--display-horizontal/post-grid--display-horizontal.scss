@@ -5,11 +5,11 @@
   justify-content: space-between;
 
   .post__content {
-    width: calc(#{$text-block-width - ($left * 2)});
+    width: calc(#{$text-block-width - $left});
   }
 
   .post__sidebar {
-    width: calc((100% - #{$text-block-width - ($left * 2)}) / 2);
+    width: calc((100% - #{$text-block-width - $left}) / 2);
     padding-top: $lem;
   }
 
