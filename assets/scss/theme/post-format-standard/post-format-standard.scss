@@ -18,7 +18,9 @@
 
   &.display-horizontal {
     .post__content {
-      @include post__content--display-horizontal;
+      @include mobile-and-up {
+        @include post__content--display-horizontal;
+      }
 
       .post-featured-image {
         @include post-featured-image--with-border;

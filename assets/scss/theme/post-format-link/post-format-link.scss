@@ -19,13 +19,9 @@
         }
       }
     }
+  }
 
-    &.external-link {
-      @include post-format-link--external-link;
-    }
-
-    &.local-link {
-      @include post-format-link--local-link;
-    }
+  &.external-link {
+    @include post-format-link--external-link;
   }
 }

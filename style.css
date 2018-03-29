@@ -2808,23 +2808,9 @@ html body {
             html body .content .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
-      html body .content .post.post-format-link .post__content.external-link {
-        border: none;
-        position: relative; }
-        html body .content .post.post-format-link .post__content.external-link .post-title {
-          border: 1px solid; }
-          html body .content .post.post-format-link .post__content.external-link .post-title .arrow-with-triangle {
-            -webkit-transform: rotate(-15deg);
-                    transform: rotate(-15deg); }
-        html body .content .post.post-format-link .post__content.external-link .post-permalink {
-          padding: 0; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .post.post-format-link .post__content.external-link .post-permalink {
-              -ms-flex-item-align: end;
-                  align-self: flex-end;
-              position: absolute;
-              bottom: 0.37em;
-              right: 0.37em; } }
+      html body .content .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
+        -webkit-transform: rotate(-15deg);
+                transform: rotate(-15deg); }
       @media only screen and (min-width: 768px) {
         html body .content .post.post-format-image .post__content {
           display: -webkit-box;
@@ -3423,25 +3409,26 @@ html body {
       html body .content .post.post-format-standard .post__content .post-content .attachment img {
         border: 1px solid;
         padding: 1.48em; }
-      html body .content .post.post-format-standard.display-horizontal .post__content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; }
-        html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure {
-          border: 1px solid;
-          padding: 1.48em;
-          margin: 1.48em 0;
-          background: transparent; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure {
-              margin: 1.48em;
-              padding: 0; } }
-          html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure .figcaption {
-            display: none; }
+      @media only screen and (min-width: 768px) {
+        html body .content .post.post-format-standard.display-horizontal .post__content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row; } }
+      html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure {
+        border: 1px solid;
+        padding: 1.48em;
+        margin: 1.48em 0;
+        background: transparent; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure {
+            margin: 1.48em;
+            padding: 0; } }
+        html body .content .post.post-format-standard.display-horizontal .post__content .post-featured-image .figure .figcaption {
+          display: none; }
       @media only screen and (orientation: portrait) {
         html body .content .post.post-format-standard.has-excerpt.has-thumbnail .post__content {
           display: -webkit-box;

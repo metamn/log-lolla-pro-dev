@@ -1,23 +1,9 @@
 @mixin post-format-link--external-link {
-  border: none;
-  position: relative;
-
-  .post-title {
-    @include border(normal, all);
-
-    .arrow-with-triangle {
-      transform: rotate(-15deg);
-    }
-  }
-
-  .post-permalink {
-    padding: 0;
-
-    @include mobile {
-      align-self: flex-end;
-      position: absolute;
-      bottom: $lem / 4;
-      right: $lem / 4;
+  .post__content {
+    .post-title {
+      .arrow-with-triangle {
+        transform: rotate(-15deg);
+      }
     }
   }
 }
