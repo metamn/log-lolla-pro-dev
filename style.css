@@ -799,7 +799,7 @@ html body {
         html body .header-menu .widget .wp-caption a,
         html body .header-menu .widget .wp-caption .link {
           color: #000;
-          background-color: #fff;
+          background-color: transparent;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -830,7 +830,7 @@ html body {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
-          display: block; }
+          display: inline-block; }
           html body .header-menu .widget .figure figcaption .link,
           html body .header-menu .widget .figure figcaption a,
           html body .header-menu .widget .figure .figcaption .link,
@@ -1329,7 +1329,7 @@ html body {
         html body .content .post .post-featured-image figure a,
         html body .content .post .post-featured-image figure .link {
           color: #000;
-          background-color: #fff;
+          background-color: transparent;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -1346,14 +1346,18 @@ html body {
           max-width: 100%;
           border: 1px solid;
           padding: 0; }
-        html body .content .post .post-featured-image figure figcaption {
+        html body .content .post .post-featured-image figure figcaption,
+        html body .content .post .post-featured-image figure .wp-caption-text {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
+          display: inline-block;
           margin: 0.74em 0;
-          padding: 0; }
+          padding: 0.37em 0.74em; }
           html body .content .post .post-featured-image figure figcaption .link,
-          html body .content .post .post-featured-image figure figcaption a {
+          html body .content .post .post-featured-image figure figcaption a,
+          html body .content .post .post-featured-image figure .wp-caption-text .link,
+          html body .content .post .post-featured-image figure .wp-caption-text a {
             color: #000;
             background-color: #fff;
             text-decoration: underline;
@@ -1362,7 +1366,11 @@ html body {
             padding: 0 0.37em; }
             html body .content .post .post-featured-image figure figcaption .link:hover, html body .content .post .post-featured-image figure figcaption .link:active,
             html body .content .post .post-featured-image figure figcaption a:hover,
-            html body .content .post .post-featured-image figure figcaption a:active {
+            html body .content .post .post-featured-image figure figcaption a:active,
+            html body .content .post .post-featured-image figure .wp-caption-text .link:hover,
+            html body .content .post .post-featured-image figure .wp-caption-text .link:active,
+            html body .content .post .post-featured-image figure .wp-caption-text a:hover,
+            html body .content .post .post-featured-image figure .wp-caption-text a:active {
               text-decoration: line-through; }
         html body .content .post .post-featured-image figure .figcaption,
         html body .content .post .post-featured-image figure figcaption {
@@ -1524,7 +1532,7 @@ html body {
           html body .content .post .post-excerpt .text .wp-caption a,
           html body .content .post .post-excerpt .text .wp-caption .link {
             color: #000;
-            background-color: #fff;
+            background-color: transparent;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -1555,7 +1563,7 @@ html body {
             color: #000;
             background-color: #fff;
             font-size: 0.75em;
-            display: block; }
+            display: inline-block; }
             html body .content .post .post-excerpt .text .figure figcaption .link,
             html body .content .post .post-excerpt .text .figure figcaption a,
             html body .content .post .post-excerpt .text .figure .figcaption .link,
@@ -2025,7 +2033,7 @@ html body {
           html body .content .post .post-content .text .wp-caption a,
           html body .content .post .post-content .text .wp-caption .link {
             color: #000;
-            background-color: #fff;
+            background-color: transparent;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2056,7 +2064,7 @@ html body {
             color: #000;
             background-color: #fff;
             font-size: 0.75em;
-            display: block; }
+            display: inline-block; }
             html body .content .post .post-content .text .figure figcaption .link,
             html body .content .post .post-content .text .figure figcaption a,
             html body .content .post .post-content .text .figure .figcaption .link,
@@ -2668,7 +2676,7 @@ html body {
         html body .content .post.post-format-image .post__content .post-first-image a,
         html body .content .post.post-format-image .post__content .post-first-image .link {
           color: #000;
-          background-color: #fff;
+          background-color: transparent;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2685,14 +2693,18 @@ html body {
           max-width: 100%;
           border: 1px solid;
           padding: 0; }
-        html body .content .post.post-format-image .post__content .post-first-image figcaption {
+        html body .content .post.post-format-image .post__content .post-first-image figcaption,
+        html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
+          display: inline-block;
           margin: 0.74em 0;
-          padding: 0; }
+          padding: 0.37em 0.74em; }
           html body .content .post.post-format-image .post__content .post-first-image figcaption .link,
-          html body .content .post.post-format-image .post__content .post-first-image figcaption a {
+          html body .content .post.post-format-image .post__content .post-first-image figcaption a,
+          html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text .link,
+          html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text a {
             color: #000;
             background-color: #fff;
             text-decoration: underline;
@@ -2701,7 +2713,11 @@ html body {
             padding: 0 0.37em; }
             html body .content .post.post-format-image .post__content .post-first-image figcaption .link:hover, html body .content .post.post-format-image .post__content .post-first-image figcaption .link:active,
             html body .content .post.post-format-image .post__content .post-first-image figcaption a:hover,
-            html body .content .post.post-format-image .post__content .post-first-image figcaption a:active {
+            html body .content .post.post-format-image .post__content .post-first-image figcaption a:active,
+            html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text .link:hover,
+            html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text .link:active,
+            html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text a:hover,
+            html body .content .post.post-format-image .post__content .post-first-image .wp-caption-text a:active {
               text-decoration: line-through; }
         html body .content .post.post-format-image .post__content .post-first-image figcaption {
           display: none !important; }
@@ -3456,7 +3472,7 @@ html body {
                 html body .content .comments-area .comment-list li .comment-body .comment-content .wp-caption a,
                 html body .content .comments-area .comment-list li .comment-body .comment-content .wp-caption .link {
                   color: #000;
-                  background-color: #fff;
+                  background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
                   transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -3511,7 +3527,7 @@ html body {
                   color: #000;
                   background-color: #fff;
                   font-size: 0.75em;
-                  display: block; }
+                  display: inline-block; }
                   html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption .link,
                   html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption a,
                   html body .content #comments .comment-list li .comment-body .comment-content .figure .figcaption .link,
@@ -4209,7 +4225,10 @@ html body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      padding-top: 0; }
+      padding-top: 0;
+      max-width: 48.84em; }
+      html body .content.content-single > * {
+        width: 100%; }
       html body .content.content-single .post-single {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4220,8 +4239,7 @@ html body {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center;
-        max-width: calc(42.92em); }
+                align-items: center; }
         html body .content.content-single .post-single > * {
           width: 100%; }
         html body .content.content-single .post-single .post-title .text {
@@ -4243,6 +4261,11 @@ html body {
               font-size: 3.157em; } }
         html body .content.content-single .post-single .post-featured-image {
           margin-top: 1.48em; }
+          html body .content.content-single .post-single .post-featured-image figure {
+            border: none;
+            padding: 0;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+            padding: 1.48em; }
         html body .content.content-single .post-single .post-content {
           margin-top: 1.48em; }
           html body .content.content-single .post-single .post-content .text {
@@ -4261,12 +4284,14 @@ html body {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            border: 1px solid;
+            border: none;
+            padding: 0;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
             padding: 1.48em; }
             html body .content.content-single .post-single .post-content figure a,
             html body .content.content-single .post-single .post-content figure .link {
               color: #000;
-              background-color: #fff;
+              background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -4283,14 +4308,18 @@ html body {
               max-width: 100%;
               border: 1px solid;
               padding: 0; }
-            html body .content.content-single .post-single .post-content figure figcaption {
+            html body .content.content-single .post-single .post-content figure figcaption,
+            html body .content.content-single .post-single .post-content figure .wp-caption-text {
               color: #000;
               background-color: #fff;
               font-size: 0.75em;
+              display: inline-block;
               margin: 0.74em 0;
-              padding: 0; }
+              padding: 0.37em 0.74em; }
               html body .content.content-single .post-single .post-content figure figcaption .link,
-              html body .content.content-single .post-single .post-content figure figcaption a {
+              html body .content.content-single .post-single .post-content figure figcaption a,
+              html body .content.content-single .post-single .post-content figure .wp-caption-text .link,
+              html body .content.content-single .post-single .post-content figure .wp-caption-text a {
                 color: #000;
                 background-color: #fff;
                 text-decoration: underline;
@@ -4299,11 +4328,15 @@ html body {
                 padding: 0 0.37em; }
                 html body .content.content-single .post-single .post-content figure figcaption .link:hover, html body .content.content-single .post-single .post-content figure figcaption .link:active,
                 html body .content.content-single .post-single .post-content figure figcaption a:hover,
-                html body .content.content-single .post-single .post-content figure figcaption a:active {
+                html body .content.content-single .post-single .post-content figure figcaption a:active,
+                html body .content.content-single .post-single .post-content figure .wp-caption-text .link:hover,
+                html body .content.content-single .post-single .post-content figure .wp-caption-text .link:active,
+                html body .content.content-single .post-single .post-content figure .wp-caption-text a:hover,
+                html body .content.content-single .post-single .post-content figure .wp-caption-text a:active {
                   text-decoration: line-through; }
             html body .content.content-single .post-single .post-content figure .figcaption,
             html body .content.content-single .post-single .post-content figure figcaption {
-              display: block; }
+              display: inline-block; }
       html body .content.content-single .post-footer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -4565,7 +4598,7 @@ html body {
         html body .sidebar .widget .wp-caption a,
         html body .sidebar .widget .wp-caption .link {
           color: #000;
-          background-color: #fff;
+          background-color: transparent;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -4596,7 +4629,7 @@ html body {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
-          display: block; }
+          display: inline-block; }
           html body .sidebar .widget .figure figcaption .link,
           html body .sidebar .widget .figure figcaption a,
           html body .sidebar .widget .figure .figcaption .link,

@@ -4,6 +4,11 @@
   align-items: center;
 
   padding-top: 0;
+  max-width: $text-block-width;
+
+  > * {
+    width: 100%;
+  }
 
   .post-single {
     @include post-single;

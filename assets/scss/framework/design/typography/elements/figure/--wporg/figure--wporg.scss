@@ -7,7 +7,7 @@
 
     a,
     .link {
-      @include link;
+      @include link(text-color-on-transparent);
     }
 
     figcaption,
@@ -15,8 +15,8 @@
     .wp-caption-text,
     .gallery-caption {
       @include text-style(figcaption);
-      // display: inline-block; // do not overflow the image on large screens
-      display: block; // otherwise it breaks the wp test data
+      display: inline-block; // do not overflow the image on large screens
+      // display: block; // otherwise it breaks the wp test data
 
       .link,
       a {

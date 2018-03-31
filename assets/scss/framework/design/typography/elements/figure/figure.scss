@@ -5,7 +5,7 @@
 
   a,
   .link {
-    @include link;
+    @include link(text-color-on-transparent);
   }
 
   img {
@@ -14,7 +14,8 @@
     @include image--with-border($padding: 0);
   }
 
-  figcaption {
+  figcaption,
+  .wp-caption-text {
     @include figure__figcaption;
   }
 }

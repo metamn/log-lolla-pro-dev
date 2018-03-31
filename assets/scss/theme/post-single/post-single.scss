@@ -3,8 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-  max-width: calc(#{$text-block-width - $left * 2});
-
   > * {
     width: 100%;
   }
@@ -15,6 +13,11 @@
 
   .post-featured-image {
     margin-top: $lem;
+
+    figure {
+      @include figure--without-border;
+      @include figure--with-background($lem);
+    }
   }
 
   .post-content {
@@ -23,7 +26,8 @@
 
     figure {
       @include figure;
-      @include figure--with-border;
+      @include figure--without-border;
+      @include figure--with-background($lem);
       @include figure--with-figcaption;
     }
   }
