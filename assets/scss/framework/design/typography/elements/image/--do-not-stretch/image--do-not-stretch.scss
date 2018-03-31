@@ -1,0 +1,5 @@
+@mixin image--do-not-stretch {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}

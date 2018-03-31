@@ -1,0 +1,11 @@
+@mixin figure__figcaption {
+  @include text-style(figcaption);
+  margin: $lem / 2 0;
+  padding: 0;
+
+  .link,
+  a {
+    @include link;
+    padding: 0 $lem / 4;
+  }
+}

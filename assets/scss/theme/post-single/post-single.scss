@@ -5,12 +5,30 @@
 
   max-width: calc(#{$text-block-width - $left * 2});
 
+  > * {
+    width: 100%;
+  }
+
   .post-title {
     @include post-title--large;
+  }
+
+  .post-featured-image {
+    margin-top: $lem;
+
+    figure {
+      @include figure--with-figcaption;
+    }
   }
 
   .post-content {
     @include post-content--large;
     margin-top: $lem;
+
+    figure {
+      @include figure;
+      @include figure--with-border;
+      @include figure--with-figcaption;
+    }
   }
 }

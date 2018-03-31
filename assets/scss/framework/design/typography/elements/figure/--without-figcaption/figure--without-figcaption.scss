@@ -1,0 +1,6 @@
+@mixin figure--without-figcaption {
+  .figcaption,
+  figcaption {
+    display: none;
+  }
+}

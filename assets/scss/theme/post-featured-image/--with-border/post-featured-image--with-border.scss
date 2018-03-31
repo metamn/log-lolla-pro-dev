@@ -1,5 +1,6 @@
 @mixin post-featured-image--with-border {
-  .figure {
+  .figure,
+  figure {
     @include border(normal, all);
     padding: $lem;
     margin: $lem 0;

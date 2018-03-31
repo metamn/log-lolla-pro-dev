@@ -1,55 +1,20 @@
 @mixin figure {
-  .figure,
-  figure,
-  .wp-caption {
-    @include background-pattern--dotted;
-    max-width: 100% !important;
-    padding: $lem;
-    display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    a,
-    .link {
-      @include link;
-    }
+  a,
+  .link {
+    @include link;
+  }
 
-    figcaption,
-    .figcaption,
-    .wp-caption-text,
-    .gallery-caption {
-      @include text-style(figcaption);
-      padding: $lem / 4 $lem / 2;
-      // display: inline-block; // do not overflow the image on large screens
-      display: block; // otherwise it breaks the wp test data
+  img {
+    @include image;
+    @include image--do-not-stretch;
+    @include image--with-border($padding: 0);
+  }
 
-      .link,
-      a {
-        @include link;
-        padding: 0 $lem / 4;
-      }
-    }
-
-    &.alignright {
-      float: right;
-      margin: $lem 0 $lem $lem;
-    }
-
-    &.alignleft {
-      float: left;
-      margin: $lem $lem $lem 0;
-    }
-
-    &.aligncenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    &.alignnone {
-      text-align: unset;
-    }
-
-    + p {
-      margin-top: $lem;
-    }
+  figcaption {
+    @include figure__figcaption;
   }
 }

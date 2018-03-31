@@ -4,6 +4,11 @@
       @include post__content--display-vertical;
     }
 
+    .post-featured-image {
+      margin: $lem 0;
+    }
+    
+
     // Styling attachments post formats
     // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
     .post-content {
@@ -21,10 +26,6 @@
       @include mobile-and-up {
         @include post__content--display-horizontal;
       }
-
-      .post-featured-image {
-        @include post-featured-image--with-border;
-      }
     }
   }
 
@@ -32,10 +33,6 @@
     &.has-excerpt.has-thumbnail {
       .post__content {
         @include post__content--display-vertical;
-
-        .post-featured-image {
-          @include post-featured-image--without-border;
-        }
       }
     }
   }

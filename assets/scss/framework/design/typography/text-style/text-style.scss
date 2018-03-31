@@ -19,7 +19,7 @@ $text-block-width: $lem * 33;
     @include scale(default);
     @include font(default);
     @include colors(default);
-    letter-spacing: 1.1px;
+    letter-spacing: 1.48px;
   }
 
   // Site title
@@ -118,8 +118,8 @@ $text-block-width: $lem * 33;
     @include ol;
     @include ul--body-text;
     @include blockquote;
-    @include image;
-    @include figure;
+    @include image--wporg;
+    @include figure--wporg;
     @include gist;
     @include code;
     @include pre;
