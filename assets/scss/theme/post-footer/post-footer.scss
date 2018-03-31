@@ -3,9 +3,9 @@
   flex-direction: column;
 
   @include border(normal, all);
-  border-top: none;
-
   @include colors(default);
+
+  margin-top: $top;
 
 
   .date-and-author {

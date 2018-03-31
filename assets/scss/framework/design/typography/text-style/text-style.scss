@@ -19,6 +19,7 @@ $text-block-width: $lem * 33;
     @include scale(default);
     @include font(default);
     @include colors(default);
+    letter-spacing: 1.1px;
   }
 
   // Site title

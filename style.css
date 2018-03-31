@@ -448,6 +448,7 @@ html body {
   font-style: normal;
   color: #000;
   background-color: #fff;
+  letter-spacing: 1.1px;
   cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64.cur"), auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4569,9 +4570,9 @@ html body {
             -ms-flex-direction: column;
                 flex-direction: column;
         border: 1px solid;
-        border-top: none;
         color: #000;
-        background-color: #fff; }
+        background-color: #fff;
+        margin-top: 2.96em; }
         html body .content.content-single .post-footer .date-and-author {
           display: -webkit-box;
           display: -ms-flexbox;
