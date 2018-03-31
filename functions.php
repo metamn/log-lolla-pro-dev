@@ -131,7 +131,6 @@ function log_lolla_widgets_init() {
 add_action( 'widgets_init', 'log_lolla_widgets_init' );
 
 
-
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -176,7 +175,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 
-
 /**
  * Customizer additions.
  */
@@ -188,5 +186,10 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * Custom widgets
+ */
+require get_template_directory() . '/inc/custom-widgets.php';
 
 ?>
