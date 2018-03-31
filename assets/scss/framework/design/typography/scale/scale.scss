@@ -22,7 +22,7 @@ $left-mobile: $lem;
   // The default font size and line height
   @if ($variant == 'default') {
     font-size: 100%;
-    line-height: 1.48;
+    line-height: 1.8;
 
     @include tablet {
       font-size: 120%;

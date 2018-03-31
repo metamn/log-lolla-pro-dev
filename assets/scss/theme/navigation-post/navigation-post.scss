@@ -2,8 +2,12 @@
   .ul {
     .li {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: center;
+
+      + .li {
+        margin-top: $lem / 2;
+      }
     }
   }
 }

@@ -442,7 +442,7 @@ template {
 
 html body {
   font-size: 100%;
-  line-height: 1.48;
+  line-height: 1.8;
   font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -2918,7 +2918,7 @@ html body {
         @media only screen and (max-width: 767.9px) {
           html body .content .post.post-format-aside .post__content .post-content .text {
             font-size: 100%;
-            line-height: 1.48;
+            line-height: 1.8;
             padding: 1.48em; } }
   @media only screen and (max-width: 767.9px) and (min-width: 768px) and (max-width: 1024px) {
     html body .content .post.post-format-aside .post__content .post-content .text {
@@ -4122,11 +4122,13 @@ html body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        html body .content .navigation.post-navigation .ul .li + .li {
+          margin-top: 0.74em; }
       html body .content .navigation.posts-navigation .nav-links .nav-previous a,
       html body .content .navigation.posts-navigation .nav-links .nav-next a {
         display: -webkit-box;
