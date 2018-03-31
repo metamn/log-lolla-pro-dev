@@ -3118,7 +3118,9 @@ html body {
     html body .content #comments,
     html body .content .comments-area {
       color: #000;
-      background-color: #fff; }
+      background-color: #fff;
+      padding: 2.96em 2.96em;
+      border: 1px solid; }
       html body .content #comments a,
       html body .content .comments-area a {
         color: #000;

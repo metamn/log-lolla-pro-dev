@@ -1,6 +1,9 @@
 @mixin comments {
   @include colors(default);
 
+  padding: $top $left;
+  @include border(normal, all);
+
   a {
     @include link;
   }
