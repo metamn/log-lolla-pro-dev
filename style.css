@@ -687,10 +687,7 @@ html body {
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
         color: #000;
-        background-color: #fff;
-        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-        font-weight: normal;
-        font-style: normal; }
+        background-color: #fff; }
         html body .header-menu .widget a:hover, html body .header-menu .widget a:active,
         html body .header-menu .widget .link:hover,
         html body .header-menu .widget .link:active {
@@ -1414,10 +1411,7 @@ html body {
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           color: #000;
-          background-color: #fff;
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal; }
+          background-color: #fff; }
           html body .content .post .post-excerpt .text a:hover, html body .content .post .post-excerpt .text a:active,
           html body .content .post .post-excerpt .text .link:hover,
           html body .content .post .post-excerpt .text .link:active {
@@ -1909,10 +1903,7 @@ html body {
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           color: #000;
-          background-color: #fff;
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal; }
+          background-color: #fff; }
           html body .content .post .post-content .text a:hover, html body .content .post .post-content .text a:active,
           html body .content .post .post-content .text .link:hover,
           html body .content .post .post-content .text .link:active {
@@ -3269,10 +3260,7 @@ html body {
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: #000;
-                background-color: #fff;
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal; }
+                background-color: #fff; }
                 html body .content #comments .comment-list li .comment-body .comment-content a:hover, html body .content #comments .comment-list li .comment-body .comment-content a:active,
                 html body .content #comments .comment-list li .comment-body .comment-content .link:hover,
                 html body .content #comments .comment-list li .comment-body .comment-content .link:active,
@@ -4215,32 +4203,26 @@ html body {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        padding: 2.96em 2.96em;
+        border: 1px solid; }
         html body .content.content-single .post-single > * {
           width: 100%; }
         html body .content.content-single .post-single .post-title .text {
           font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-size: 1.333em;
           line-height: 1.1; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .post-single .post-title .text {
-              font-size: 1.333em; } }
-          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          @media only screen and (min-width: 768px) {
             html body .content.content-single .post-single .post-title .text {
               font-size: 1.777em; } }
-          @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-            html body .content.content-single .post-single .post-title .text {
-              font-size: 2.369em; } }
-          @media only screen and (min-width: 1600.1px) {
-            html body .content.content-single .post-single .post-title .text {
-              font-size: 3.157em; } }
         html body .content.content-single .post-single .post-featured-image {
           margin-top: 1.48em; }
           html body .content.content-single .post-single .post-featured-image figure {
             border: none;
             padding: 0;
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
             padding: 1.48em; }
         html body .content.content-single .post-single .post-content {
           margin-top: 1.48em; }
@@ -4248,9 +4230,6 @@ html body {
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post-single .post-content .text {
-                font-size: 1.333em; } }
           html body .content.content-single .post-single .post-content figure {
             width: 100%;
             display: -webkit-box;
@@ -4262,7 +4241,7 @@ html body {
                     flex-direction: column;
             border: none;
             padding: 0;
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
             padding: 1.48em; }
             html body .content.content-single .post-single .post-content figure a,
             html body .content.content-single .post-single .post-content figure .link {
@@ -4462,10 +4441,7 @@ html body {
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
         color: #000;
-        background-color: #fff;
-        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-        font-weight: normal;
-        font-style: normal; }
+        background-color: #fff; }
         html body .sidebar .widget a:hover, html body .sidebar .widget a:active,
         html body .sidebar .widget .link:hover,
         html body .sidebar .widget .link:active {

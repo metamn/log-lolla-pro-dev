@@ -1,4 +1,4 @@
 @mixin figure--with-background($padding: 0) {
-  @include background-pattern--horizontal-lines;
+  @include background-pattern--dotted;
   padding: $padding;
 }
