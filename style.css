@@ -4137,10 +4137,24 @@ html body {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
-    html body .content.content-home .post .post-permalink {
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; }
+    html body .content.content-home {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      html body .content.content-home .post .post-permalink {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; }
+      html body .content.content-home .posts-navigation {
+        width: 100%;
+        max-width: calc(42.92em); }
     html body .content.content-archive .archive-title,
     html body .content.content-archive .archive-description {
       margin-bottom: 1.48em; }
@@ -4220,14 +4234,14 @@ html body {
             html body .content.content-single .post-single .post-title .text {
               font-size: 1.777em; } }
         html body .content.content-single .post-single .post-featured-image {
-          margin-top: 1.48em; }
+          margin-top: 2.96em; }
           html body .content.content-single .post-single .post-featured-image figure {
             border: none;
             padding: 0;
             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
             padding: 1.48em; }
         html body .content.content-single .post-single .post-content {
-          margin-top: 1.48em; }
+          margin-top: 2.96em; }
           html body .content.content-single .post-single .post-content .text {
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;

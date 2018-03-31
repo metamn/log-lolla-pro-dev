@@ -15,7 +15,7 @@
   }
 
   .post-featured-image {
-    margin-top: $lem;
+    margin-top: $top;
 
     figure {
       @include figure--without-border;
@@ -25,7 +25,7 @@
 
   .post-content {
     @include post-content--large;
-    margin-top: $lem;
+    margin-top: $top;
 
     figure {
       @include figure;

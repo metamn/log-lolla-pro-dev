@@ -1,4 +1,8 @@
 @mixin content-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   .post {
     .post-permalink {
       align-self: center;
@@ -8,5 +12,10 @@
       // This ain't gonna work ... breaks the 'under construction' post
       // @include post--display-vertical;
     }
+  }
+
+  .posts-navigation {
+    width: 100%;
+    max-width: calc(#{$text-block-width - $left * 2});
   }
 }
