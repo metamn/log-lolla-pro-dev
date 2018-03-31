@@ -3,7 +3,6 @@
   figure,
   .wp-caption {
     max-width: 100% !important;
-    padding: $lem;
     display: block;
 
     a,
@@ -16,14 +15,12 @@
     .wp-caption-text,
     .gallery-caption {
       @include text-style(figcaption);
-      padding: $lem / 4 $lem / 2;
       // display: inline-block; // do not overflow the image on large screens
       display: block; // otherwise it breaks the wp test data
 
       .link,
       a {
         @include link;
-        padding: 0 $lem / 4;
       }
     }
 

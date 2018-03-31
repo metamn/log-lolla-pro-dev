@@ -15,10 +15,6 @@
 
   .post-featured-image {
     margin-top: $lem;
-
-    figure {
-      @include figure--with-figcaption;
-    }
   }
 
   .post-content {

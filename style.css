@@ -791,7 +791,6 @@ html body {
       html body .header-menu .widget figure,
       html body .header-menu .widget .wp-caption {
         max-width: 100% !important;
-        padding: 1.48em;
         display: block; }
         html body .header-menu .widget .figure a,
         html body .header-menu .widget .figure .link,
@@ -831,7 +830,6 @@ html body {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
-          padding: 0.37em 0.74em;
           display: block; }
           html body .header-menu .widget .figure figcaption .link,
           html body .header-menu .widget .figure figcaption a,
@@ -861,8 +859,7 @@ html body {
             background-color: #fff;
             text-decoration: underline;
             will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            padding: 0 0.37em; }
+            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
             html body .header-menu .widget .figure figcaption .link:hover, html body .header-menu .widget .figure figcaption .link:active,
             html body .header-menu .widget .figure figcaption a:hover,
             html body .header-menu .widget .figure figcaption a:active,
@@ -1519,7 +1516,6 @@ html body {
         html body .content .post .post-excerpt .text figure,
         html body .content .post .post-excerpt .text .wp-caption {
           max-width: 100% !important;
-          padding: 1.48em;
           display: block; }
           html body .content .post .post-excerpt .text .figure a,
           html body .content .post .post-excerpt .text .figure .link,
@@ -1559,7 +1555,6 @@ html body {
             color: #000;
             background-color: #fff;
             font-size: 0.75em;
-            padding: 0.37em 0.74em;
             display: block; }
             html body .content .post .post-excerpt .text .figure figcaption .link,
             html body .content .post .post-excerpt .text .figure figcaption a,
@@ -1589,8 +1584,7 @@ html body {
               background-color: #fff;
               text-decoration: underline;
               will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              padding: 0 0.37em; }
+              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
               html body .content .post .post-excerpt .text .figure figcaption .link:hover, html body .content .post .post-excerpt .text .figure figcaption .link:active,
               html body .content .post .post-excerpt .text .figure figcaption a:hover,
               html body .content .post .post-excerpt .text .figure figcaption a:active,
@@ -2023,7 +2017,6 @@ html body {
         html body .content .post .post-content .text figure,
         html body .content .post .post-content .text .wp-caption {
           max-width: 100% !important;
-          padding: 1.48em;
           display: block; }
           html body .content .post .post-content .text .figure a,
           html body .content .post .post-content .text .figure .link,
@@ -2063,7 +2056,6 @@ html body {
             color: #000;
             background-color: #fff;
             font-size: 0.75em;
-            padding: 0.37em 0.74em;
             display: block; }
             html body .content .post .post-content .text .figure figcaption .link,
             html body .content .post .post-content .text .figure figcaption a,
@@ -2093,8 +2085,7 @@ html body {
               background-color: #fff;
               text-decoration: underline;
               will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              padding: 0 0.37em; }
+              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
               html body .content .post .post-content .text .figure figcaption .link:hover, html body .content .post .post-content .text .figure figcaption .link:active,
               html body .content .post .post-content .text .figure figcaption a:hover,
               html body .content .post .post-content .text .figure figcaption a:active,
@@ -3451,7 +3442,6 @@ html body {
               html body .content .comments-area .comment-list li .comment-body .comment-content figure,
               html body .content .comments-area .comment-list li .comment-body .comment-content .wp-caption {
                 max-width: 100% !important;
-                padding: 1.48em;
                 display: block; }
                 html body .content #comments .comment-list li .comment-body .comment-content .figure a,
                 html body .content #comments .comment-list li .comment-body .comment-content .figure .link,
@@ -3521,7 +3511,6 @@ html body {
                   color: #000;
                   background-color: #fff;
                   font-size: 0.75em;
-                  padding: 0.37em 0.74em;
                   display: block; }
                   html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption .link,
                   html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption a,
@@ -3575,8 +3564,7 @@ html body {
                     background-color: #fff;
                     text-decoration: underline;
                     will-change: text-decoration;
-                    transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                    padding: 0 0.37em; }
+                    transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
                     html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption .link:hover, html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption .link:active,
                     html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption a:hover,
                     html body .content #comments .comment-list li .comment-body .comment-content .figure figcaption a:active,
@@ -4255,9 +4243,6 @@ html body {
               font-size: 3.157em; } }
         html body .content.content-single .post-single .post-featured-image {
           margin-top: 1.48em; }
-          html body .content.content-single .post-single .post-featured-image figure .figcaption,
-          html body .content.content-single .post-single .post-featured-image figure figcaption {
-            display: block; }
         html body .content.content-single .post-single .post-content {
           margin-top: 1.48em; }
           html body .content.content-single .post-single .post-content .text {
@@ -4572,7 +4557,6 @@ html body {
       html body .sidebar .widget figure,
       html body .sidebar .widget .wp-caption {
         max-width: 100% !important;
-        padding: 1.48em;
         display: block; }
         html body .sidebar .widget .figure a,
         html body .sidebar .widget .figure .link,
@@ -4612,7 +4596,6 @@ html body {
           color: #000;
           background-color: #fff;
           font-size: 0.75em;
-          padding: 0.37em 0.74em;
           display: block; }
           html body .sidebar .widget .figure figcaption .link,
           html body .sidebar .widget .figure figcaption a,
@@ -4642,8 +4625,7 @@ html body {
             background-color: #fff;
             text-decoration: underline;
             will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            padding: 0 0.37em; }
+            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
             html body .sidebar .widget .figure figcaption .link:hover, html body .sidebar .widget .figure figcaption .link:active,
             html body .sidebar .widget .figure figcaption a:hover,
             html body .sidebar .widget .figure figcaption a:active,
