@@ -542,7 +542,7 @@ html body {
       font-size: 140%; } }
   @media only screen and (min-width: 1600.1px) {
     html body {
-      font-size: 140%; } }
+      font-size: 160%; } }
   html body a {
     will-change: all;
     transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2928,7 +2928,7 @@ html body {
       font-size: 140%; } }
   @media only screen and (max-width: 767.9px) and (min-width: 1600.1px) {
     html body .content .post.post-format-aside .post__content .post-content .text {
-      font-size: 140%; } }
+      font-size: 160%; } }
         html body .content .post.post-format-aside .post__content .post-content .text a {
           color: #fff;
           background-color: #000;
@@ -4349,7 +4349,7 @@ html body {
         html body .content.content-single .post-footer .categories-and-tags,
         html body .content.content-single .post-footer .date-and-author,
         html body .content.content-single .post-footer .post-edit-link {
-          padding: 1.48em; }
+          padding: 2.96em 2.96em; }
         html body .content.content-single .post-footer .date-and-author + .categories-and-tags,
         html body .content.content-single .post-footer .date-and-author + .post-edit-link,
         html body .content.content-single .post-footer .categories-and-tags + .post-edit-link {
