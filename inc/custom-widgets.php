@@ -35,7 +35,7 @@
        $title = apply_filters( 'widget_title', $instance['title'] );
 
        echo $before_widget;
-       echo __( 'Archives', 'log_lolla' );
+       echo log_lolla_widget_archives();
        echo $after_widget;
      }
 

@@ -190,6 +190,7 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Custom widgets
  */
+require get_template_directory() . '/inc/template-widgets.php';
 require get_template_directory() . '/inc/custom-widgets.php';
 
 ?>
