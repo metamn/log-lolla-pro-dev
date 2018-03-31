@@ -665,26 +665,20 @@ html body {
       html body .header-menu .widget h4,
       html body .header-menu .widget h5,
       html body .header-menu .widget h6 {
-        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
-        word-wrap: break-word;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-        margin: 1.48em 0;
-        padding: 1.48em 0; }
-      html body .header-menu .widget h1:before {
-        content: '\2609'; }
-      html body .header-menu .widget h2:before {
-        content: '\2609\2609'; }
-      html body .header-menu .widget h3:before {
-        content: '\2609\2609\2609'; }
-      html body .header-menu .widget h4:before {
-        content: '\2609\2609\2609\2609'; }
-      html body .header-menu .widget h5:before {
-        content: '\2609\2609\2609\2609\2609'; }
-      html body .header-menu .widget h6:before {
-        content: '\2609\2609\2609\2609\2609\2609'; }
+        font-size: 1.333em;
+        line-height: 1.1;
+        margin: 1.48em 0 0.37em; }
+        @media only screen and (min-width: 768px) {
+          html body .header-menu .widget h1,
+          html body .header-menu .widget h2,
+          html body .header-menu .widget h3,
+          html body .header-menu .widget h4,
+          html body .header-menu .widget h5,
+          html body .header-menu .widget h6 {
+            font-size: 1.777em; } }
       html body .header-menu .widget a,
       html body .header-menu .widget .link {
         color: #000;
@@ -1398,26 +1392,20 @@ html body {
         html body .content .post .post-excerpt .text h4,
         html body .content .post .post-excerpt .text h5,
         html body .content .post .post-excerpt .text h6 {
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
-          word-wrap: break-word;
-          border-top: 1px solid;
-          border-bottom: 1px solid;
-          margin: 1.48em 0;
-          padding: 1.48em 0; }
-        html body .content .post .post-excerpt .text h1:before {
-          content: '\2609'; }
-        html body .content .post .post-excerpt .text h2:before {
-          content: '\2609\2609'; }
-        html body .content .post .post-excerpt .text h3:before {
-          content: '\2609\2609\2609'; }
-        html body .content .post .post-excerpt .text h4:before {
-          content: '\2609\2609\2609\2609'; }
-        html body .content .post .post-excerpt .text h5:before {
-          content: '\2609\2609\2609\2609\2609'; }
-        html body .content .post .post-excerpt .text h6:before {
-          content: '\2609\2609\2609\2609\2609\2609'; }
+          font-size: 1.333em;
+          line-height: 1.1;
+          margin: 1.48em 0 0.37em; }
+          @media only screen and (min-width: 768px) {
+            html body .content .post .post-excerpt .text h1,
+            html body .content .post .post-excerpt .text h2,
+            html body .content .post .post-excerpt .text h3,
+            html body .content .post .post-excerpt .text h4,
+            html body .content .post .post-excerpt .text h5,
+            html body .content .post .post-excerpt .text h6 {
+              font-size: 1.777em; } }
         html body .content .post .post-excerpt .text a,
         html body .content .post .post-excerpt .text .link {
           color: #000;
@@ -1899,26 +1887,20 @@ html body {
         html body .content .post .post-content .text h4,
         html body .content .post .post-content .text h5,
         html body .content .post .post-content .text h6 {
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
-          word-wrap: break-word;
-          border-top: 1px solid;
-          border-bottom: 1px solid;
-          margin: 1.48em 0;
-          padding: 1.48em 0; }
-        html body .content .post .post-content .text h1:before {
-          content: '\2609'; }
-        html body .content .post .post-content .text h2:before {
-          content: '\2609\2609'; }
-        html body .content .post .post-content .text h3:before {
-          content: '\2609\2609\2609'; }
-        html body .content .post .post-content .text h4:before {
-          content: '\2609\2609\2609\2609'; }
-        html body .content .post .post-content .text h5:before {
-          content: '\2609\2609\2609\2609\2609'; }
-        html body .content .post .post-content .text h6:before {
-          content: '\2609\2609\2609\2609\2609\2609'; }
+          font-size: 1.333em;
+          line-height: 1.1;
+          margin: 1.48em 0 0.37em; }
+          @media only screen and (min-width: 768px) {
+            html body .content .post .post-content .text h1,
+            html body .content .post .post-content .text h2,
+            html body .content .post .post-content .text h3,
+            html body .content .post .post-content .text h4,
+            html body .content .post .post-content .text h5,
+            html body .content .post .post-content .text h6 {
+              font-size: 1.777em; } }
         html body .content .post .post-content .text a,
         html body .content .post .post-content .text .link {
           color: #000;
@@ -3257,32 +3239,26 @@ html body {
               html body .content .comments-area .comment-list li .comment-body .comment-content h4,
               html body .content .comments-area .comment-list li .comment-body .comment-content h5,
               html body .content .comments-area .comment-list li .comment-body .comment-content h6 {
-                font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
-                word-wrap: break-word;
-                border-top: 1px solid;
-                border-bottom: 1px solid;
-                margin: 1.48em 0;
-                padding: 1.48em 0; }
-              html body .content #comments .comment-list li .comment-body .comment-content h1:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h1:before {
-                content: '\2609'; }
-              html body .content #comments .comment-list li .comment-body .comment-content h2:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h2:before {
-                content: '\2609\2609'; }
-              html body .content #comments .comment-list li .comment-body .comment-content h3:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h3:before {
-                content: '\2609\2609\2609'; }
-              html body .content #comments .comment-list li .comment-body .comment-content h4:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h4:before {
-                content: '\2609\2609\2609\2609'; }
-              html body .content #comments .comment-list li .comment-body .comment-content h5:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h5:before {
-                content: '\2609\2609\2609\2609\2609'; }
-              html body .content #comments .comment-list li .comment-body .comment-content h6:before,
-              html body .content .comments-area .comment-list li .comment-body .comment-content h6:before {
-                content: '\2609\2609\2609\2609\2609\2609'; }
+                font-size: 1.333em;
+                line-height: 1.1;
+                margin: 1.48em 0 0.37em; }
+                @media only screen and (min-width: 768px) {
+                  html body .content #comments .comment-list li .comment-body .comment-content h1,
+                  html body .content #comments .comment-list li .comment-body .comment-content h2,
+                  html body .content #comments .comment-list li .comment-body .comment-content h3,
+                  html body .content #comments .comment-list li .comment-body .comment-content h4,
+                  html body .content #comments .comment-list li .comment-body .comment-content h5,
+                  html body .content #comments .comment-list li .comment-body .comment-content h6,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h1,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h2,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h3,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h4,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h5,
+                  html body .content .comments-area .comment-list li .comment-body .comment-content h6 {
+                    font-size: 1.777em; } }
               html body .content #comments .comment-list li .comment-body .comment-content a,
               html body .content #comments .comment-list li .comment-body .comment-content .link,
               html body .content .comments-area .comment-list li .comment-body .comment-content a,
@@ -4464,26 +4440,20 @@ html body {
       html body .sidebar .widget h4,
       html body .sidebar .widget h5,
       html body .sidebar .widget h6 {
-        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
-        word-wrap: break-word;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-        margin: 1.48em 0;
-        padding: 1.48em 0; }
-      html body .sidebar .widget h1:before {
-        content: '\2609'; }
-      html body .sidebar .widget h2:before {
-        content: '\2609\2609'; }
-      html body .sidebar .widget h3:before {
-        content: '\2609\2609\2609'; }
-      html body .sidebar .widget h4:before {
-        content: '\2609\2609\2609\2609'; }
-      html body .sidebar .widget h5:before {
-        content: '\2609\2609\2609\2609\2609'; }
-      html body .sidebar .widget h6:before {
-        content: '\2609\2609\2609\2609\2609\2609'; }
+        font-size: 1.333em;
+        line-height: 1.1;
+        margin: 1.48em 0 0.37em; }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .widget h1,
+          html body .sidebar .widget h2,
+          html body .sidebar .widget h3,
+          html body .sidebar .widget h4,
+          html body .sidebar .widget h5,
+          html body .sidebar .widget h6 {
+            font-size: 1.777em; } }
       html body .sidebar .widget a,
       html body .sidebar .widget .link {
         color: #000;

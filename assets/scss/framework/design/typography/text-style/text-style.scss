@@ -35,6 +35,19 @@ $text-block-width: $lem * 33;
     @include word-wrap;
   }
 
+  // h1h6
+  @if ($variant == 'h1h6') {
+    @include font(bold);
+    @include scale(large-1);
+
+    @include mobile-and-up {
+      @include scale(large-2);
+    }
+
+    line-height: 1.1;
+    margin: $lem 0 $lem / 4;
+  }
+
 
   // Post title large
   @if ($variant == 'post-title-large') {
