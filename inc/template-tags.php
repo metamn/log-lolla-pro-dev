@@ -21,12 +21,44 @@
      $dates = log_lolla_get_first_post_and_last_post_date();
      if ( empty( $dates ) ) return;
 
-     // Number of days since the first post
+     // Number of days since the first post (ie. 110)
      $date1 = new DateTime( $dates[0] );
      $date2 = new DateTime( $dates[1] );
-     $number_of_days = $date2->diff($date1)->format("%a");
+     $number_of_days = $date2->diff( $date1 )->format( "%a" );
+
+     // Number of days for a sparkline unit (ie 11, from 110 / $sparklines)
+     $number_of_days_per_sparkline = round( $number_of_days / $sparklines );
+
+     // Get most popular categories
+     $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
+     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+
+     print_r($tags);
+   }
+ }
 
 
+ if ( ! function_exists( 'log_lolla_get_most_popular_terms_by_count' ) ) {
+   /**
+    * Get most popular terms by the count of posts they belong to
+    *
+    * Returns something like:
+    *  Array ( [0] => WP_Term Object ( [term_id] => 2 [name] => Emerging [slug] => emerging [term_group] => 0 [term_taxonomy_id] => 2 [taxonomy] => category [description] => [parent] => 0 [count] => 41 [filter] => raw ) [1] => WP_Term Object ( [term_id] => 7 [name] => Wordpress Themes [slug] => wordpress-themes
+    *
+    * @param  string $taxonomy The taxonomy id like 'category', 'post_tag'
+    * @param  integer $how_many How many terms to get
+    * @return array           An array of term objects
+    */
+   function log_lolla_get_most_popular_terms_by_count($taxonomy, $how_many) {
+     return get_terms(
+       array(
+         'taxonomy' => $taxonomy,
+         'hide_empty' => true,
+         'orderby' => 'count',
+         'order' => 'DESC',
+         'number' => $how_many
+       )
+     );
    }
  }
 
