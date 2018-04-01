@@ -13,7 +13,12 @@ if (! function_exists( 'log_lolla_widget_archives' ) ) {
     $html .= __( 'Archives', 'log_lolla' );
     $html .= '</h3>';
 
-    $html .= get_calendar(true, false);
+    $archives = log_lolla_display_archives_by_year_and_month();
+    if ( empty( $archives ) ) return $html;
+
+    $html .= '<div class="widget-body">';
+    $html .= $archives;
+    $html .= '</div>';
 
     return $html;
   }
