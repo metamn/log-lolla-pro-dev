@@ -4,7 +4,7 @@
   align-items: center;
 
   padding-top: 0;
-  max-width: $text-block-width;
+  max-width: calc(#{$text-block-width + $left * 2});
 
   > * {
     width: 100%;

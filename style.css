@@ -1188,10 +1188,10 @@ html body {
               -ms-flex-pack: center;
                   justify-content: center; }
           html body .content .post .post__content {
-            width: calc(42.92em); }
+            width: calc(38.48em); }
           html body .content .post .post__sidebar {
-            width: calc((100% - 42.92em) / 2);
-            max-width: 9.768em;
+            width: calc((100% - 38.48em) / 2);
+            max-width: 8.88em;
             padding-top: 1.48em; } }
       html body .content .post .post__content {
         border: 1px solid; }
@@ -1368,7 +1368,7 @@ html body {
           display: none; }
       html body .content .post .post-excerpt .text {
         word-wrap: break-word;
-        max-width: 48.84em;
+        max-width: 44.4em;
         width: 100%;
         overflow: hidden; }
         html body .content .post .post-excerpt .text p {
@@ -1860,7 +1860,7 @@ html body {
                       transform: rotate(90deg); }
       html body .content .post .post-content .text {
         word-wrap: break-word;
-        max-width: 48.84em;
+        max-width: 44.4em;
         width: 100%;
         overflow: hidden; }
         html body .content .post .post-content .text p {
@@ -2531,7 +2531,7 @@ html body {
       html body .content .post .post-paginated-content {
         width: 100%;
         margin: 1.48em 0;
-        max-width: 48.84em; }
+        max-width: 44.4em; }
         html body .content .post .post-paginated-content .text {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -4156,7 +4156,7 @@ html body {
             align-self: center; }
       html body .content.content-home .posts-navigation {
         width: 100%;
-        max-width: calc(42.92em); }
+        max-width: calc(38.48em); }
     html body .content.content-archive .archive-title,
     html body .content.content-archive .archive-description {
       margin-bottom: 1.48em; }
@@ -4208,7 +4208,7 @@ html body {
           -ms-flex-align: center;
               align-items: center;
       padding-top: 0;
-      max-width: 48.84em; }
+      max-width: calc(50.32em); }
       html body .content.content-single > * {
         width: 100%; }
       html body .content.content-single .post-single {
@@ -5000,12 +5000,12 @@ html body {
   html body .footer {
     padding: 2.96em 2.96em; }
   html body .header {
-    max-width: 48.84em; }
+    max-width: 44.4em; }
   html body .header-menu {
     padding: 2.96em 2.96em;
     margin: 0 2.96em;
     width: calc(100% - 5.92em);
-    max-width: 42.92em; }
+    max-width: 38.48em; }
   html body .content .post + .post {
     margin-top: 2.96em; }
   @media only screen and (max-width: 767.9px) {
