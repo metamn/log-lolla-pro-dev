@@ -59,7 +59,7 @@
      if ( empty( $timestamps ) ) return;
 
      // Get an array with dates like 2017-12, 2018-01, ...
-     $dates = array_unique( array_map( function($d) { return date( 'Y-m', strtotime( $d ) ); }, $timestamps ) );
+     $dates = array_reverse( array_unique( array_map( function($d) { return date( 'Y-m', strtotime( $d ) ); }, $timestamps ) ) );
      if ( empty( $dates ) ) return;
 
      // Create a multidimensional array like [2017] => [12], [2018] => [01, 02, 03]
