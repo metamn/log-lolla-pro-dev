@@ -4424,10 +4424,9 @@ html body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     html body .sidebar .widget {
       color: #000;
       background-color: #fff;
@@ -4864,12 +4863,16 @@ html body {
       html body .sidebar .widget.widget_media_audio .mejs-horizontal-volume-slider {
         color: #fff;
         background-color: #000; }
+      html body .sidebar .widget.widget_log_lolla_archives_widget .widget-title {
+        font-size: 1em;
+        margin: 0; }
       html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; }
+            flex-wrap: nowrap;
+        margin-top: 1.48em; }
         html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5007,14 +5010,9 @@ html body {
                   margin-right: 0; }
           html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months + .year-and-months {
             margin-left: 1.48em; }
-    html body .sidebar > * {
-      margin-right: 0px;
-      margin-bottom: 1.48em;
-      box-sizing: border-box; }
-    html body .sidebar > *:not(h3) {
-      width: calc(100% - (((1 - 1) * 0px) / 1) - 0px); }
-      html body .sidebar > *:not(h3):nth-child(1n + 1) {
-        margin-right: 0; }
+    html body .sidebar .widget {
+      width: auto;
+      margin-right: 1.48em; }
   html body .footer {
     color: #000;
     background-color: #fff;

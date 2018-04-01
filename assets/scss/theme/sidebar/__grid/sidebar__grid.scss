@@ -1,3 +1,10 @@
 @mixin sidebar__grid {
-  @include grid(1, 0px, $lem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .widget {
+    width: auto;
+    margin-right: $lem;
+  }
 }
