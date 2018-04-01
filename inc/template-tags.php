@@ -8,6 +8,44 @@
  */
 
 
+ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
+   /**
+    * Display topics (categories and tags) and their count of posts
+    *
+    * @param  integer $number_of_categories How many categories to show
+    * @param  integer $number_of_tags       How many tags to show
+    * @return string                        HTML
+    */
+   function log_lolla_display_topics_with_count($number_of_categories = 5, $number_of_tags = 5) {
+     $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
+     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+     if ( empty( $categories ) && empty( $tags ) ) return;
+
+     $html = '';
+
+     $html .= '<div class="categories">';
+     foreach ( $categories as $category ) {
+       $html .= '<div class="category">';
+       $html .= '<span class="category-name">' . $category->name . '</span>';
+       $html .= '<span class="category-count">' . $category->count . '</span>';
+       $html .= '</div>';
+     }
+     $html .= '</div>';
+
+     $html .= '<div class="tags">';
+     foreach ( $tags as $tag ) {
+       $html .= '<div class="tag">';
+       $html .= '<span class="tag-name">' . $tag->name . '</span>';
+       $html .= '<span class="tag-count">' . $tag->count . '</span>';
+       $html .= '</div>';
+     }
+     $html .= '</div>';
+
+     return $html;
+   }
+ }
+
+
  if ( ! function_exists( 'log_lolla_display_topics_with_sparklines' ) ) {
    /**
     * Display topics (categories and tags) using sparklines

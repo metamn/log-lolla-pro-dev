@@ -13,7 +13,7 @@
     function log_lolla_widget_topics() {
       $html = log_lolla_widget_helper_title( 'Topics' );
 
-      $topics = log_lolla_display_topics_with_sparklines(10, 5, 5);
+      $topics = log_lolla_display_topics_with_count(5, 5);
       if ( empty( $topics ) ) return $html;
 
       $html .= '<div class="widget-body">';
