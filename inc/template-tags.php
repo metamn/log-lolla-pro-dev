@@ -24,7 +24,9 @@
      foreach ($dates as $year => $months) {
        $html .= '<div class="year-and-months">';
        $html .= '<div class="year"><a class="link" href="' . get_year_link( $year ) .'" title="' . $year .'">' . $year . '</a></div>';
-       $html .= '<div class="months">';
+
+       $grid = round( count($months) / 2 );
+       $html .= '<div class="months grid-' . $grid . '">';
 
        foreach ($months as $month) {
          $html .= '<div class="month"><a class="link" href="' . get_month_link( $year, $month ) .'" title="' . $month .'">' . $month . '</a></div>';

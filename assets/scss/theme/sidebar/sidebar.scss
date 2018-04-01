@@ -18,6 +18,10 @@
     &.widget_media_audio {
       @include sidebar-widget-audio;
     }
+
+    &.widget_log_lolla_archives_widget {
+      @include sidebar-widget-log-lolla-archives;
+    }
   }
 
   @include sidebar__grid;

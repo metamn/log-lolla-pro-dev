@@ -1,17 +1,3 @@
 @mixin sidebar__grid {
-  @include mobile {
-    @include grid(1, 0px, $lem);
-  }
-
-  @include tablet {
-    @include grid(2, $lem, $lem, $iepx: 1px);
-  }
-
-  @include laptop {
-    @include grid(3, $lem, $lem, $iepx: 1px);
-  }
-
-  @include desktop {
-    @include grid(4, $lem, $lem, $iepx: 1px);
-  }
+  @include grid(1, 0px, $lem);
 }
