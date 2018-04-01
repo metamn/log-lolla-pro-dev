@@ -8,6 +8,58 @@
  */
 
 
+ if ( ! function_exists( 'log_lolla_display_topics_with_sparklines' ) ) {
+   /**
+    * Display topics (categories and tags) using sparklines
+    *
+    * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks
+    * @param  integer $number_of_categories How many categories to show
+    * @param  integer $number_of_tags       How many tags to show
+    * @return string                        HTML
+    */
+   function log_lolla_display_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
+     $dates = log_lolla_get_first_post_and_last_post_date();
+     if ( empty( $dates ) ) return;
+
+     // Number of days since the first post
+     $date1 = new DateTime( $dates[0] );
+     $date2 = new DateTime( $dates[1] );
+     $number_of_days = $date2->diff($date1)->format("%a");
+
+
+   }
+ }
+
+
+ if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
+   /**
+    * Get first post and last post published dates
+    *
+    * Returns smnthg like Array ( [0] => 2018-03-27 06:21:26 [1] => 2017-12-05 14:27:58 )
+    *
+    * @return array Of two dates
+    */
+   function log_lolla_get_first_post_and_last_post_date() {
+     $posts = get_posts(
+       array(
+         'posts_per_page' => -1,
+       )
+     );
+     if ( empty( $posts ) ) return;
+
+     $first = reset( $posts );
+     $last = end( $posts );
+     if ( ( $first == false ) || ($last == false ) ) return;
+
+     $ret = [];
+     $ret[] = $last->post_date;
+     $ret[] = $first->post_date;
+
+     return $ret;
+   }
+ }
+
+
  if ( ! function_exists(' log_lolla_display_archives_by_year_and_month' ) ) {
    /**
     * Display archives by year and month
