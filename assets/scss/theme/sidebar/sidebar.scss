@@ -22,6 +22,10 @@
     &.widget_log_lolla_archives_widget {
       @include sidebar-widget-log-lolla-archives;
     }
+
+    &.widget_log_lolla_topics_widget {
+      @include sidebar-widget-log-lolla-topics;
+    }
   }
 
   @include sidebar__grid;

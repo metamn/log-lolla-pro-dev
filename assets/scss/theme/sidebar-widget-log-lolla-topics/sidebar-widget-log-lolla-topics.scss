@@ -1,0 +1,39 @@
+@mixin sidebar-widget-log-lolla-topics {
+  .widget-title {
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $lem;
+
+    .categories,
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+
+      .category,
+      .tag {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        
+        margin-right: $lem;
+      }
+
+      .category-name,
+      .tag-name {
+        @include text-style(post-title-large);
+        line-height: 1.8;
+      }
+
+      .category-count,
+      .tag-count {
+        @include text-style(figcaption);
+        margin-left: $lem / 2;
+      }
+    }
+  }
+}

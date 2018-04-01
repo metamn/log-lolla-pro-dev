@@ -5010,6 +5010,60 @@ html body {
                   margin-right: 0; }
           html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months + .year-and-months {
             margin-left: 1.48em; }
+      html body .sidebar .widget.widget_log_lolla_topics_widget .widget-title {
+        font-size: 1em;
+        margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 1.48em; }
+        html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories,
+        html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            margin-right: 1.48em; }
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .category-name,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-name,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .category-name,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-name {
+            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.333em;
+            line-height: 1.1;
+            line-height: 1.8; }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .category-name,
+              html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-name,
+              html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .category-name,
+              html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-name {
+                font-size: 1.777em; } }
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .category-count,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-count,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .category-count,
+          html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-count {
+            color: #000;
+            background-color: #fff;
+            font-size: 0.75em;
+            margin-left: 0.74em; }
     html body .sidebar .widget {
       width: auto;
       margin-right: 1.48em; }

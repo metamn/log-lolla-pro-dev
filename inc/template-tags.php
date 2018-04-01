@@ -19,26 +19,41 @@
    function log_lolla_display_topics_with_count($number_of_categories = 5, $number_of_tags = 5) {
      $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
      $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+
      if ( empty( $categories ) && empty( $tags ) ) return;
 
      $html = '';
+     $html .= log_lolla_display_topic_with_count( 'categories', 'category', $categories );
+     $html .= log_lolla_display_topic_with_count( 'tags', 'tag', $tags );
 
-     $html .= '<div class="categories">';
-     foreach ( $categories as $category ) {
-       $html .= '<div class="category">';
-       $html .= '<span class="category-name">' . $category->name . '</span>';
-       $html .= '<span class="category-count">' . $category->count . '</span>';
+     return $html;
+   }
+ }
+
+
+ if ( ! function_exists( 'log_lolla_display_topic_with_count' ) ) {
+   /**
+    * Display a topic with a count
+    *
+    * @param  string $container_class_name The container class name
+    * @param  string $item_class_name      The item class name
+    * @param  Array  $items                The array of items of a topic
+    * @return string                       HTML
+    */
+   function log_lolla_display_topic_with_count($container_class_name, $item_class_name, $items) {
+     if ( empty( $items ) ) return;
+
+     $html .= '<div class="' . $container_class_name . '">';
+
+     foreach ( $items as $item ) {
+       $html .= '<div class="' . $item_class_name . '">';
+       $html .= '<span class="' . $item_class_name . '-name">';
+       $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
+       $html .= '</span>';
+       $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
        $html .= '</div>';
      }
-     $html .= '</div>';
 
-     $html .= '<div class="tags">';
-     foreach ( $tags as $tag ) {
-       $html .= '<div class="tag">';
-       $html .= '<span class="tag-name">' . $tag->name . '</span>';
-       $html .= '<span class="tag-count">' . $tag->count . '</span>';
-       $html .= '</div>';
-     }
      $html .= '</div>';
 
      return $html;
