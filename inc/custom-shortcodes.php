@@ -32,9 +32,15 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_person' ) ) {
 
     // Get the person details from the database
     $person = get_page_by_title( $name, OBJECT, 'people');
-    
+
     if ( ! empty( $person ) ) {
       $link = get_permalink( $person );
+
+      if ( has_post_thumbnail( $person->ID ) ) {
+        $image = get_the_post_thumbnail( $person->ID, 'thumbnail' );
+      } else {
+        $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
+      }
     }
 
     // Return HTML
@@ -49,6 +55,14 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_person' ) ) {
           <?php echo $name ?>
         <?php } ?>
       </h3>
+
+      <?php if ( isset( $link ) ) { ?>
+        <figure class="figure">
+          <a class="link" href="<?php echo $link ?>" title="<?php echo $name ?>">
+            <?php echo $image ?>
+          </a>
+        </figure>
+      <?php } ?>
     </aside>
 
     <?php
