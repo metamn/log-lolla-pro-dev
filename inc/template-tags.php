@@ -19,7 +19,6 @@
    function log_lolla_display_topics_with_count($number_of_categories = 5, $number_of_tags = 5) {
      $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
      $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
-
      if ( empty( $categories ) && empty( $tags ) ) return;
 
      $html = '';
@@ -93,7 +92,7 @@
    /**
     * Display a topic (category or tag) with sparklines
     *
-    * @param  integer $sparkline_dates              The array of dates for each sparkline
+    * @param  Array $sparkline_dates              The array of dates for each sparkline
     * @param  string  $container_class_name         The container class name
     * @param  string  $item_class_name              The item class name
     * @param  Array   $items                        The items
@@ -101,6 +100,7 @@
     */
    function log_lolla_display_topic_with_sparklines( $sparkline_dates, $container_class_name, $item_class_name, $items ) {
      if ( empty( $items ) ) return;
+     if ( empty( $sparkline_dates ) ) return;
 
      $html .= '<div class="' . $container_class_name . '">';
 
@@ -126,14 +126,15 @@
    /**
     * Get the sparklines for a topic (category, tag)
     *
-    * @param  integer $sparkline_dates              The array of dates for each sparkline
+    * @param  Array $sparkline_dates              The array of dates for each sparkline
     * @param  Object  $item                         A term
     * @return string                                HTML
     */
    function log_lolla_get_sparklines_for_topic( $sparkline_dates, $item ) {
      if ( empty( $item ) ) return;
+     if ( empty( $sparkline_dates ) ) return;
 
-     // Get all posts from term
+     // Get all posts associated with a term
      $posts = get_posts(
        array(
          'post_type' => 'post',
@@ -151,7 +152,7 @@
      );
      if ( empty( $posts ) ) return;
 
-     // print_r($posts);
+     print_r($posts);
 
      $html = '';
      return $html;
@@ -205,12 +206,13 @@
      $number_of_days_per_sparkline = round( $number_of_days / $sparklines );
 
      $dates = [];
+
      $date = $date1;
      while ($date <= $date2) {
-       array_push( $dates, $date );
+       // If we don't convert $date to string then always the same date will be added to the $dates array ...
+       $dates[] = $date->format('Y-m-d H:i:s');
        $date = $date->modify( '+' . $number_of_days_per_sparkline . ' days' );
      }
-     print_r($dates);
 
      return $dates;
    }
