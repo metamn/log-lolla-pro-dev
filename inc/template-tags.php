@@ -109,8 +109,8 @@
        $html .= '<span class="' . $item_class_name . '-name">';
        $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
        $html .= '</span>';
-       $html .= '<span class="' . $item_class_name . '-sparklines">';
-       $html .= log_lolla_get_sparklines_for_topic( $sparkline_dates, $item );
+       $html .= '<span class="' . $item_class_name . '-sparklines sparks-font sparks-font-bar-medium">';
+       $html .= log_lolla_display_sparklines_for_topic( $sparkline_dates, $item );
        $html .= '</span>';
        $html .= '</div>';
      }
@@ -122,40 +122,65 @@
  }
 
 
+ if ( ! function_exists( 'log_lolla_display_sparklines_for_topic' ) ) {
+   /**
+    * Display sparklines for a topic
+    *
+    * @param  Array $sparkline_dates              The array of dates for each sparkline
+    * @param  Object  $item                       A term
+    * @return string                              HTML
+    */
+   function log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) {
+     $sparklines = log_lolla_get_sparklines_for_topic( $sparkline_dates, $item );
+     if ( empty( $sparklines ) ) return;
+
+     return '{' . implode( ',', $sparklines ) . '}';
+   }
+ }
+
+
  if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
    /**
     * Get the sparklines for a topic (category, tag)
     *
     * @param  Array $sparkline_dates              The array of dates for each sparkline
-    * @param  Object  $item                         A term
-    * @return string                                HTML
+    * @param  Object  $item                       A term
+    * @return Array                               An array of integers
     */
    function log_lolla_get_sparklines_for_topic( $sparkline_dates, $item ) {
      if ( empty( $item ) ) return;
      if ( empty( $sparkline_dates ) ) return;
 
-     // Get all posts associated with a term
-     $posts = get_posts(
-       array(
-         'post_type' => 'post',
-         'post_status' => 'publish',
-         'posts_per_page' => -1,
-         'order' => 'ASC',
-         'tax_query' => array(
-           array(
-             'taxonomy' => $item->taxonomy,
-             'field' => 'slug',
-             'terms' => $item->slug
+     $sparklines = [];
+
+     for ( $i = 0; $i < count($sparkline_dates) - 1; $i++ ) {
+       $posts = get_posts(
+         array(
+           'post_type' => 'post',
+           'post_status' => 'publish',
+           'posts_per_page' => -1,
+           'order' => 'ASC',
+           'tax_query' => array(
+             array(
+               'taxonomy' => $item->taxonomy,
+               'field' => 'slug',
+               'terms' => $item->slug
+             )
+           ),
+           'date_query' => array(
+             array(
+               'after' => date('Y-m-d', strtotime( $sparkline_dates[$i] )),
+               'before' => date('Y-m-d', strtotime( $sparkline_dates[$i + 1] ))
+             )
            )
          )
-       )
-     );
-     if ( empty( $posts ) ) return;
+       );
 
-     print_r($posts);
+       // multiply with 10 to make even small amounts like 1,2 look fine
+       $sparklines[] = count($posts) * 10;
+     }
 
-     $html = '';
-     return $html;
+     return $sparklines;
    }
  }
 
@@ -210,7 +235,7 @@
      $date = $date1;
      while ($date <= $date2) {
        // If we don't convert $date to string then always the same date will be added to the $dates array ...
-       $dates[] = $date->format('Y-m-d H:i:s');
+       $dates[] = $date->format('Y-m-d');
        $date = $date->modify( '+' . $number_of_days_per_sparkline . ' days' );
      }
 
