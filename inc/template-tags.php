@@ -71,26 +71,18 @@
     * @return string                        HTML
     */
    function log_lolla_display_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
-     $dates = log_lolla_get_first_post_and_last_post_date();
-     if ( empty( $dates ) ) return;
-
-     // Number of days since the first post (ie. 110)
-     $date1 = new DateTime( $dates[0] );
-     $date2 = new DateTime( $dates[1] );
-     $number_of_days = $date2->diff( $date1 )->format( "%a" );
-
-     // Number of days for a sparkline unit (ie 11, from 110 / $sparklines)
-     $number_of_days_per_sparkline = round( $number_of_days / $sparklines );
+     // Get an array of dates for each sparkline
+     $sparkline_dates = log_lolla_get_sparkline_dates( $sparklines );
+     if ( empty( $sparkline_dates ) ) return;
 
      // Get most popular topics
      $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
      $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
-
      if ( empty( $categories ) && empty( $tags ) ) return;
 
      $html = '';
-     $html .= log_lolla_display_topic_with_sparklines( $number_of_days_per_sparkline, 'categories', 'category', $categories );
-     $html .= log_lolla_display_topic_with_sparklines( $number_of_days_per_sparkline, 'tags', 'tag', $tags );
+     $html .= log_lolla_display_topic_with_sparklines( $sparkline_dates, 'categories', 'category', $categories );
+     $html .= log_lolla_display_topic_with_sparklines( $sparkline_dates, 'tags', 'tag', $tags );
 
      return $html;
    }
@@ -101,13 +93,13 @@
    /**
     * Display a topic (category or tag) with sparklines
     *
-    * @param  integer $number_of_days_per_sparkline How many days will represent a dot in the sparkline
-    * @param  string $container_class_name         The container class name
-    * @param  string $item_class_name              The item class name
-    * @param  Array $items                         The items
-    * @return string                               HTML
+    * @param  integer $sparkline_dates              The array of dates for each sparkline
+    * @param  string  $container_class_name         The container class name
+    * @param  string  $item_class_name              The item class name
+    * @param  Array   $items                        The items
+    * @return string                                HTML
     */
-   function log_lolla_display_topic_with_sparklines( $number_of_days_per_sparkline, $container_class_name, $item_class_name, $items ) {
+   function log_lolla_display_topic_with_sparklines( $sparkline_dates, $container_class_name, $item_class_name, $items ) {
      if ( empty( $items ) ) return;
 
      $html .= '<div class="' . $container_class_name . '">';
@@ -118,7 +110,7 @@
        $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
        $html .= '</span>';
        $html .= '<span class="' . $item_class_name . '-sparklines">';
-       $html .= log_lolla_get_sparklines_for_topic( $number_of_days_per_sparkline, $item );
+       $html .= log_lolla_get_sparklines_for_topic( $sparkline_dates, $item );
        $html .= '</span>';
        $html .= '</div>';
      }
@@ -132,14 +124,34 @@
 
  if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
    /**
-    * Get the sparklines for a topic (catgeory, tag)
+    * Get the sparklines for a topic (category, tag)
     *
-    * @param  integer $number_of_days_per_sparkline How many days will represent a dot in the sparkline
-    * @param  Object $item                         A term
-    * @return string                               HTML
+    * @param  integer $sparkline_dates              The array of dates for each sparkline
+    * @param  Object  $item                         A term
+    * @return string                                HTML
     */
-   function log_lolla_get_sparklines_for_topic( $number_of_days_per_sparkline, $item ) {
-     if ( empty( $term ) ) return;
+   function log_lolla_get_sparklines_for_topic( $sparkline_dates, $item ) {
+     if ( empty( $item ) ) return;
+
+     // Get all posts from term
+     $posts = get_posts(
+       array(
+         'post_type' => 'post',
+         'post_status' => 'publish',
+         'posts_per_page' => -1,
+         'order' => 'ASC',
+         'tax_query' => array(
+           array(
+             'taxonomy' => $item->taxonomy,
+             'field' => 'slug',
+             'terms' => $item->slug
+           )
+         )
+       )
+     );
+     if ( empty( $posts ) ) return;
+
+     // print_r($posts);
 
      $html = '';
      return $html;
@@ -168,6 +180,39 @@
          'number' => $how_many
        )
      );
+   }
+ }
+
+
+ if ( ! function_exists( 'log_lolla_get_sparkline_dates' ) ) {
+   /**
+    * Get the dates corresponding to a set of sparkline
+    *
+    * @param  integer $sparklines Total number of sparkines
+    * @return array               An array of dates
+    */
+   function log_lolla_get_sparkline_dates( $sparklines ) {
+     // Get the first post and the last post dates
+     $post_dates = log_lolla_get_first_post_and_last_post_date();
+     if ( empty( $post_dates ) ) return;
+
+     // Number of days since the first post (ie. 110)
+     $date1 = new DateTime( $post_dates[0] );
+     $date2 = new DateTime( $post_dates[1] );
+     $number_of_days = $date2->diff( $date1 )->format( "%a" );
+
+     // Number of days for a sparkline unit (ie 11, from 110 / $sparklines)
+     $number_of_days_per_sparkline = round( $number_of_days / $sparklines );
+
+     $dates = [];
+     $date = $date1;
+     while ($date <= $date2) {
+       array_push( $dates, $date );
+       $date = $date->modify( '+' . $number_of_days_per_sparkline . ' days' );
+     }
+     print_r($dates);
+
+     return $dates;
    }
  }
 
