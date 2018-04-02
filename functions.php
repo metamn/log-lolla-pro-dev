@@ -197,7 +197,13 @@ require get_template_directory() . '/inc/custom-widgets.php';
 /**
  * Custom post types
  */
-
 require get_template_directory() . '/inc/custom-post-types.php';
+
+
+/**
+ * Custom shortcodes
+ */
+require get_template_directory() . '/inc/custom-shortcodes.php';
+
 
 ?>
