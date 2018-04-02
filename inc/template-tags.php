@@ -109,7 +109,7 @@
        $html .= '<span class="' . $item_class_name . '-name">';
        $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
        $html .= '</span>';
-       $html .= '<span class="' . $item_class_name . '-sparklines sparks-font sparks-font-bar-medium">';
+       $html .= '<span class="' . $item_class_name . '-sparklines sparks-font sparks-font-dotline-medium">';
        $html .= log_lolla_display_sparklines_for_topic( $sparkline_dates, $item );
        $html .= '</span>';
        $html .= '</div>';
