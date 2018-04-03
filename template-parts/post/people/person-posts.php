@@ -17,6 +17,12 @@
   <h3 class="title">Posts of <?php the_title() ?></h3>
 
   <?php
-    print_r($posts_of_a_person);
+    $current_post = $post;
+
+    foreach ($posts_of_a_person as $post) {
+      get_template_part( 'template-parts/post/post', 'search' );
+    }
+
+    $post = $current_post;
   ?>
 </section>
