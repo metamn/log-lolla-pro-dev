@@ -8,7 +8,74 @@
  */
 
 
- if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
+if ( ! function_exists( 'log_lolla_get_posts_of_a_person' ) ) {
+  /**
+   * Get posts of a person
+   *
+   * @param  Object $person A post of type 'person'
+   * @return Array          A list of posts
+   */
+  function log_lolla_get_posts_of_a_person( $person ) {
+    if ( empty( $person ) ) return;
+
+    return get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'post_tag',
+            'field' => 'slug',
+            'terms' => $person->post_name
+          )
+        )
+      )
+    );
+  }
+}
+
+if ( ! function_exists( 'log_lolla_widget_people' ) ) {
+  /**
+   * Display People
+   *
+   * @param  integer $number_of_people How many people to display
+   * @return string                    HTML
+   */
+  function log_lolla_widget_people( $number_of_people = 5 ) {
+    $people = log_lolla_get_most_popular_terms_by_count( 'people', $number_of_people );
+    if ( empty( $people ) ) return;
+
+    $html = '';
+    $html .= log_lolla_display_topic_with_count( 'people', 'person', $people );
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_most_popular_posts_by_count' ) ) {
+  /**
+   * Get most popular posts by count
+   *
+   * @param  integer $number_of_posts How many posts to return
+   * @param  string  $post_type       Post type
+   * @return Array                    An array of posts
+   */
+  function log_lolla_get_most_popular_posts_by_count( $number_of_posts = -1, $post_type = 'post' ) {
+    return get_posts(
+      array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'posts_per_page' => $number_of_posts,
+        'order'
+      )
+    );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
    /**
     * Display topics (categories and tags) and their count of posts
     *
