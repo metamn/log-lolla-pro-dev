@@ -35,42 +35,85 @@ if ( ! function_exists( 'log_lolla_get_posts_of_a_person' ) ) {
   }
 }
 
-if ( ! function_exists( 'log_lolla_widget_people' ) ) {
+if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
   /**
-   * Display People
+   * Display People with post count
    *
    * @param  integer $number_of_people How many people to display
    * @return string                    HTML
    */
-  function log_lolla_widget_people( $number_of_people = 5 ) {
-    $people = log_lolla_get_most_popular_terms_by_count( 'people', $number_of_people );
+  function log_lolla_display_people_with_post_count( $number_of_people = 5 ) {
+    $people = log_lolla_get_most_popular_people( $number_of_people );
     if ( empty( $people ) ) return;
 
     $html = '';
-    $html .= log_lolla_display_topic_with_count( 'people', 'person', $people );
+    $html .= log_lolla_display_post_with_count( 'people', 'person', $people );
 
     return $html;
   }
 }
 
 
-if ( ! function_exists( 'log_lolla_get_most_popular_posts_by_count' ) ) {
+if ( ! function_exists( 'log_lolla_display_post_with_count' ) ) {
+  function log_lolla_display_post_with_count( $container_class_name, $item_class_name, $items ) {
+    if ( empty( $items ) ) return;
+
+    $html .= '<div class="' . $container_class_name . '">';
+
+    foreach ( $items as $item ) {
+      $html .= '<div class="' . $item_class_name . '">';
+      $html .= '<span class="' . $item_class_name . '-name">';
+      $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
+      $html .= '</span>';
+      $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
+      $html .= '</div>';
+    }
+
+    $html .= '</div>';
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_most_popular_people' ) ) {
   /**
-   * Get most popular posts by count
+   * Get most popular people
    *
    * @param  integer $number_of_posts How many posts to return
-   * @param  string  $post_type       Post type
    * @return Array                    An array of posts
    */
-  function log_lolla_get_most_popular_posts_by_count( $number_of_posts = -1, $post_type = 'post' ) {
-    return get_posts(
+  function log_lolla_get_most_popular_people( $number_of_posts = 5 ) {
+    $people = get_posts(
       array(
-        'post_type' => $post_type,
+        'post_type' => 'people',
         'post_status' => 'publish',
-        'posts_per_page' => $number_of_posts,
-        'order'
+        'posts_per_page' => -1,
       )
     );
+    if ( empty( $people ) ) return;
+
+    // Get posts of people
+    //
+    $posts_of_people = [];
+    foreach ( $people as $person ) {
+      $posts_of_a_person = log_lolla_get_posts_of_a_person( $person );
+
+      $entry = new stdClass;
+      $entry->person = $person->ID;
+      $entry->post_count = count($posts_of_a_person);
+      $posts_of_people[] = $entry;
+    }
+
+    // Sorst posts of people
+    //
+    usort( $posts_of_people, function( $a, $b ) {
+      return ( $a->post_count < $b->post_count );
+    });
+
+    // Return the first x items only
+    //
+    return array_slice( $posts_of_people, 0, $number_of_posts );
   }
 }
 

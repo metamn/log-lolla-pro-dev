@@ -4,6 +4,27 @@
    * Custom widgets for this theme
    */
 
+
+  if ( ! function_exists( 'log_lolla_widget_people' ) ) {
+   /**
+    * The people widget
+    *
+    * @return string HTML
+    */
+   function log_lolla_widget_people() {
+     $html = log_lolla_widget_helper_title( 'People' );
+
+     $people = log_lolla_display_people_with_post_count( 5 );
+     if ( empty( $people ) ) return $html;
+
+     $html .= '<div class="widget-body">';
+     $html .= $people;
+     $html .= '</div>';
+
+     return $html;
+   }
+  }
+
   if ( ! function_exists( 'log_lolla_widget_topics' ) ) {
     /**
      * The topics widget
