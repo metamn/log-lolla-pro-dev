@@ -8,6 +8,46 @@
  */
 
 
+if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
+  function log_lolla_display_post_formats_with_post_count() {
+    $post_formats = log_lolla_get_post_formats_with_post_count();
+    print_r($post_formats);
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count' ) ) {
+  function log_lolla_get_post_formats_with_post_count() {
+    $post_formats_list = get_post_format_strings();
+    if ( empty( $post_formats_list) ) return;
+
+    $post_formats_with_count = [];
+
+    foreach ($post_formats_list as $post_format) {
+      $posts = get_posts(
+        array(
+          'post_type' => 'post',
+          'post_status' => 'publish',
+          'numberposts' => -1,
+          'tax_query' => array(
+            'taxonomy' => 'post_format',
+            'field' => 'name',
+            'terms' => $post_format
+          )
+        )
+      );
+
+      $obj = new stdClass();
+      $obj->post_format = $post_format;
+      $obj->post_count = count( $posts );
+
+      $post_formats_with_count[] = $obj;
+    }
+
+    return $post_formats_with_count;
+  }
+}
+
 
 if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
   /**
