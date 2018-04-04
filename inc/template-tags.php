@@ -8,32 +8,6 @@
  */
 
 
-if ( ! function_exists( 'log_lolla_get_posts_of_a_person' ) ) {
-  /**
-   * Get posts of a person
-   *
-   * @param  Object $person A post of type 'person'
-   * @return Array          A list of posts
-   */
-  function log_lolla_get_posts_of_a_person( $person ) {
-    if ( empty( $person ) ) return;
-
-    return get_posts(
-      array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'numberposts' => -1,
-        'tax_query' => array(
-          array(
-            'taxonomy' => 'post_tag',
-            'field' => 'slug',
-            'terms' => $person->post_name
-          )
-        )
-      )
-    );
-  }
-}
 
 if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
   /**
@@ -46,30 +20,11 @@ if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
     $people = log_lolla_get_most_popular_people( $number_of_people );
     if ( empty( $people ) ) return;
 
-    $html = 'xxx';
-    $html .= log_lolla_display_post_with_count( 'people', 'person', $people );
-
-    return $html;
-  }
-}
-
-
-if ( ! function_exists( 'log_lolla_display_post_with_count' ) ) {
-  function log_lolla_display_post_with_count( $container_class_name, $item_class_name, $items ) {
-    if ( empty( $items ) ) return;
-
-    $html .= '<div class="' . $container_class_name . '">';
-
-    foreach ( $items as $item ) {
-      $html .= '<div class="' . $item_class_name . '">';
-      $html .= '<span class="' . $item_class_name . '-name">';
-      $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
-      $html .= '</span>';
-      $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
-      $html .= '</div>';
-    }
-
-    $html .= '</div>';
+    $html = '';
+    $html .= log_lolla_display_widget_body( 'people', 'person', $people, function( $item ) {
+      $person = get_post( $item->person );
+      return log_lolla_display_person( $person );
+    });
 
     return $html;
   }
@@ -116,6 +71,119 @@ if ( ! function_exists( 'log_lolla_get_most_popular_people' ) ) {
     return array_slice( $posts_of_people, 0, $number_of_posts );
   }
 }
+
+
+if ( ! function_exists( 'log_lolla_get_posts_of_a_person' ) ) {
+  /**
+   * Get posts of a person
+   *
+   * @param  Object $person A post of type 'person'
+   * @return Array          A list of posts
+   */
+  function log_lolla_get_posts_of_a_person( $person ) {
+    if ( empty( $person ) ) return;
+
+    return get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'post_tag',
+            'field' => 'slug',
+            'terms' => $person->post_name
+          )
+        )
+      )
+    );
+  }
+}
+
+
+
+if ( ! function_exists( 'log_lolla_display_person' ) ) {
+  /**
+   * Display a person
+   *
+   * Based on either a database entry or from a simple name
+   *
+   * @param  Object $person The person object
+   * @param  string $name   The person name
+   * @return string         HTML
+   */
+  function log_lolla_display_person( $person, $name = '' ) {
+    if ( empty( $person ) && empty( $name )) return;
+
+    return empty( $person ) ? log_lolla_display_person_from_name( $name ) : log_lolla_display_person_from_database( $person );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_person_from_name' ) ) {
+  function log_lolla_display_person_from_name( $name ) {
+    if ( empty( $name ) ) return;
+
+    $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
+
+    // Return HTML
+    ob_start();
+    ?>
+
+    <aside class="person">
+      <h3 class="person__name"><?php echo $name ?></h3>
+
+      <figure class="person__avatar figure">
+        <?php echo $image ?>
+      </figure>
+    </aside>
+
+    <?php
+    return ob_get_clean();
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_person_from_database' ) ) {
+  /**
+   * Display a person from the database
+   *
+   * @param  Object $person The person object
+   * @return string         HTML
+   */
+  function log_lolla_display_person_from_database( $person ) {
+    if ( empty( $person ) ) return;
+
+    $name = $person->post_title;
+    $link = get_permalink( $person );
+
+    if ( has_post_thumbnail( $person->ID ) ) {
+      $image = get_the_post_thumbnail( $person->ID, 'thumbnail' );
+    } else {
+      $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
+    }
+
+    // Return HTML
+    ob_start();
+    ?>
+
+    <aside class="person">
+      <h3 class="person__name">
+        <a class="link" href="<?php echo $link ?>" title="<?php echo $name ?>"><?php echo $name ?></a>
+      </h3>
+
+      <figure class="person__avatar figure">
+        <a class="link" href="<?php echo $link ?>" title="<?php echo $name ?>">
+          <?php echo $image ?>
+        </a>
+      </figure>
+    </aside>
+
+    <?php
+    return ob_get_clean();
+  }
+}
+
 
 
 if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
@@ -289,31 +357,6 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
  }
 
 
- if ( ! function_exists( 'log_lolla_get_most_popular_terms_by_count' ) ) {
-   /**
-    * Get most popular terms by the count of posts they belong to
-    *
-    * Returns something like:
-    *  Array ( [0] => WP_Term Object ( [term_id] => 2 [name] => Emerging [slug] => emerging [term_group] => 0 [term_taxonomy_id] => 2 [taxonomy] => category [description] => [parent] => 0 [count] => 41 [filter] => raw ) [1] => WP_Term Object ( [term_id] => 7 [name] => Wordpress Themes [slug] => wordpress-themes
-    *
-    * @param  string $taxonomy The taxonomy id like 'category', 'post_tag'
-    * @param  integer $how_many How many terms to get
-    * @return array           An array of term objects
-    */
-   function log_lolla_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
-     return get_terms(
-       array(
-         'taxonomy' => $taxonomy,
-         'hide_empty' => true,
-         'orderby' => 'count',
-         'order' => 'DESC',
-         'number' => $how_many
-       )
-     );
-   }
- }
-
-
  if ( ! function_exists( 'log_lolla_get_sparkline_dates' ) ) {
    /**
     * Get the dates corresponding to a set of sparkline
@@ -344,6 +387,31 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
      }
 
      return $dates;
+   }
+ }
+
+
+ if ( ! function_exists( 'log_lolla_get_most_popular_terms_by_count' ) ) {
+   /**
+    * Get most popular terms by the count of posts they belong to
+    *
+    * Returns something like:
+    *  Array ( [0] => WP_Term Object ( [term_id] => 2 [name] => Emerging [slug] => emerging [term_group] => 0 [term_taxonomy_id] => 2 [taxonomy] => category [description] => [parent] => 0 [count] => 41 [filter] => raw ) [1] => WP_Term Object ( [term_id] => 7 [name] => Wordpress Themes [slug] => wordpress-themes
+    *
+    * @param  string $taxonomy The taxonomy id like 'category', 'post_tag'
+    * @param  integer $how_many How many terms to get
+    * @return array           An array of term objects
+    */
+   function log_lolla_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
+     return get_terms(
+       array(
+         'taxonomy' => $taxonomy,
+         'hide_empty' => true,
+         'orderby' => 'count',
+         'order' => 'DESC',
+         'number' => $how_many
+       )
+     );
    }
  }
 
