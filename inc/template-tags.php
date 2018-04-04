@@ -132,8 +132,14 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
      if ( empty( $categories ) && empty( $tags ) ) return;
 
      $html = '';
-     $html .= log_lolla_display_topic_with_count( 'categories', 'category', $categories );
-     $html .= log_lolla_display_topic_with_count( 'tags', 'tag', $tags );
+     
+     $html .= log_lolla_display_widget_body( 'categories', 'category', $categories, function( $item ) {
+       return log_lolla_display_topic_with_count( 'category', $item );
+     });
+
+     $html .= log_lolla_display_widget_body( 'tags', 'tag', $tags, function( $item ) {
+       return log_lolla_display_topic_with_count( 'tag', $item );
+     });
 
      return $html;
    }
@@ -144,26 +150,17 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
    /**
     * Display a topic with a count
     *
-    * @param  string $container_class_name The container class name
     * @param  string $item_class_name      The item class name
-    * @param  Array  $items                The array of items of a topic
+    * @param  Object $item                 The item
     * @return string                       HTML
     */
-   function log_lolla_display_topic_with_count($container_class_name, $item_class_name, $items) {
-     if ( empty( $items ) ) return;
+   function log_lolla_display_topic_with_count($item_class_name, $item) {
+     if ( empty( $item ) ) return;
 
-     $html .= '<div class="' . $container_class_name . '">';
-
-     foreach ( $items as $item ) {
-       $html .= '<div class="' . $item_class_name . '">';
-       $html .= '<span class="' . $item_class_name . '-name">';
-       $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
-       $html .= '</span>';
-       $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
-       $html .= '</div>';
-     }
-
-     $html .= '</div>';
+     $html = '<span class="' . $item_class_name . '-name">';
+     $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
+     $html .= '</span>';
+     $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
 
      return $html;
    }

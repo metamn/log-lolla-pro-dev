@@ -94,7 +94,8 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
-    $content = log_lolla_display_topics_with_sparklines(10, 5, 5);
+    //$content = log_lolla_display_topics_with_sparklines(10, 5, 5);
+    $content = log_lolla_display_topics_with_count(5, 5);
 
     echo $before_widget;
     echo log_lolla_display_widget( 'Topics', $content );
@@ -227,5 +228,23 @@ if ( ! function_exists( 'log_lolla_display_widget_title' ) ) {
   }
 }
 
+
+if ( ! function_exists( 'log_lolla_display_widget_body' ) ) {
+  function log_lolla_display_widget_body( $container_class_name, $item_class_name, $items, $callback ) {
+    if ( empty( $items ) ) return;
+
+    $html .= '<div class="' . $container_class_name . '">';
+
+    foreach ( $items as $item ) {
+      $html .= '<div class="' . $item_class_name . '">';
+      $html .= $callback( $item );
+      $html .= '</div>';
+    }
+
+    $html .= '</div>';
+
+    return $html;
+  }
+}
 
 ?>
