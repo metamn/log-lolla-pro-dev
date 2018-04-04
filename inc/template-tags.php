@@ -22,9 +22,30 @@ if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
 
     $html = '';
     $html .= log_lolla_display_widget_body( 'people', 'person', $people, function( $item ) {
-      $person = get_post( $item->person );
-      return log_lolla_display_person( $person );
+      return log_lolla_display_person_with_post_count( $item );
     });
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_person_with_post_count') )  {
+  /**
+   * Display person and post count
+   *
+   * @param  Object $item Contains the person id and the count of the person's posts
+   * @return string       HTML
+   */
+  function log_lolla_display_person_with_post_count( $item ) {
+    if ( empty( $item ) ) return;
+
+    $person = get_post( $item->person );
+    $count = $item->post_count;
+
+    $html = '';
+    $html .= log_lolla_display_person( $person );
+    $html .= '<span class="person-post-count">' . $count . '</span>';
 
     return $html;
   }
@@ -101,7 +122,6 @@ if ( ! function_exists( 'log_lolla_get_posts_of_a_person' ) ) {
 }
 
 
-
 if ( ! function_exists( 'log_lolla_display_person' ) ) {
   /**
    * Display a person
@@ -121,6 +141,14 @@ if ( ! function_exists( 'log_lolla_display_person' ) ) {
 
 
 if ( ! function_exists( 'log_lolla_display_person_from_name' ) ) {
+  /**
+   * Display person from name only
+   *
+   * Used when there is no `person` entry in the database
+   *
+   * @param  string $name   The person name
+   * @return string         HTML
+   */
   function log_lolla_display_person_from_name( $name ) {
     if ( empty( $name ) ) return;
 
@@ -183,7 +211,6 @@ if ( ! function_exists( 'log_lolla_display_person_from_database' ) ) {
     return ob_get_clean();
   }
 }
-
 
 
 if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
@@ -574,7 +601,8 @@ if ( ! function_exists( 'log_lolla_get_post_first_image_url' ) ) {
  function log_lolla_get_post_first_image_url() {
  	global $post;
  	$first_img = '';
- 	preg_match_all( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', do_shortcode( $post->post_content, 'gallery' ), $matches );
+
+  preg_match_all( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', do_shortcode( $post->post_content, 'gallery' ), $matches );
   $first_img = isset( $matches[1][0] ) ? $matches[1][0] : null;
 
  	if ( empty( $first_img ) ) {
