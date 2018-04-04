@@ -46,7 +46,7 @@ if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
     $people = log_lolla_get_most_popular_people( $number_of_people );
     if ( empty( $people ) ) return;
 
-    $html = '';
+    $html = 'xxx';
     $html .= log_lolla_display_post_with_count( 'people', 'person', $people );
 
     return $html;

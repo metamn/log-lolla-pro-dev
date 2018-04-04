@@ -1,6 +1,5 @@
 <?php
 
-
 /**
  * Custom widgets
  *
@@ -35,10 +34,12 @@
    */
   public function widget( $args, $instance ) {
     extract( $args );
+
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $content = log_lolla_display_people_with_post_count( 5 );
 
     echo $before_widget;
-    echo log_lolla_widget_people();
+    echo log_lolla_display_widget( 'People', $content );
     echo $after_widget;
   }
 
@@ -91,10 +92,12 @@
    */
   public function widget( $args, $instance ) {
     extract( $args );
+
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $content = log_lolla_display_topics_with_sparklines(10, 5, 5);
 
     echo $before_widget;
-    echo log_lolla_widget_topics();
+    echo log_lolla_display_widget( 'Topics', $content );
     echo $after_widget;
   }
 
@@ -146,10 +149,12 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
   */
  public function widget( $args, $instance ) {
    extract( $args );
+
    $title = apply_filters( 'widget_title', $instance['title'] );
+   $content = log_lolla_display_archives_by_year_and_month();
 
    echo $before_widget;
-   echo log_lolla_widget_archives();
+   echo log_lolla_display_widget( 'Archives', $content );
    echo $after_widget;
  }
 
@@ -175,5 +180,52 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
  }
 }
 add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Widget' ); } );
+
+
+
+
+/**
+ * Widget helpers
+ */
+
+
+if ( ! function_exists( 'log_lolla_display_widget' ) ) {
+  /**
+   * Display a widget
+   *
+   * @param  string $title   Widget title
+   * @param  string $content Widget content, HTML
+   * @return string          HTML
+   */
+  function log_lolla_display_widget( $title, $content ) {
+    if ( empty( $title ) ) return;
+    $html = log_lolla_display_widget_title( $title );
+
+    if ( empty( $content )) return $html;
+    $html .= '<div class="widget-body">';
+    $html .= $content;
+    $html .= '</div>';
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_widget_title' ) ) {
+  /**
+   * Render title for a widegt
+   *
+   * @param  string $title The title of the widget
+   * @return string        HTML
+   */
+  function log_lolla_display_widget_title( $title ) {
+    $html = '<h3 class="widget-title">';
+    $html .= __( $title, 'log_lolla' );
+    $html .= '</h3>';
+
+    return $html;
+  }
+}
+
 
 ?>
