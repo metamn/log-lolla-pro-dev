@@ -94,8 +94,7 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
-    //$content = log_lolla_display_topics_with_sparklines(10, 5, 5);
-    $content = log_lolla_display_topics_with_count(5, 5);
+    $content = log_lolla_display_topics_with_sparklines(10, 5, 5);
 
     echo $before_widget;
     echo log_lolla_display_widget( 'Topics', $content );
@@ -235,9 +234,9 @@ if ( ! function_exists( 'log_lolla_display_widget_body' ) ) {
 
     $html .= '<div class="' . $container_class_name . '">';
 
-    foreach ( $items as $item ) {
+    foreach ( $items as $index => $item ) {
       $html .= '<div class="' . $item_class_name . '">';
-      $html .= $callback( $item );
+      $html .= $callback( $item, $index );
       $html .= '</div>';
     }
 
