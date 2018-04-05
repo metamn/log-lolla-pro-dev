@@ -8,6 +8,73 @@
  */
 
 
+
+if ( ! function_exists( 'log_lolla_display_sources_with_post_count' ) ) {
+  function log_lolla_display_sources_with_post_count( $number_of_sources = 5 ) {
+    log_lolla_generate_sources();
+    //
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_generate_sources' ) ) {
+  function log_lolla_generate_sources() {
+    $posts = get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+      )
+    );
+    if ( empty( $posts ) ) return;
+
+    foreach ( $posts as $post ) {
+      $urls = wp_extract_urls( $post->post_content );
+
+      foreach ( $urls as $url ) {
+        log_lolla_create_source( $url );
+      }
+    }
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_create_source' ) ) {
+  // - https://stackoverflow.com/questions/276516/parsing-domain-from-url-in-php#276525
+  function log_lolla_create_source( $url ) {
+    if ( empty( $url ) ) return;
+
+    $parse_url = parse_url( $url );
+    $main_url = $parse_url['scheme'] . '://' . $parse_url['host'];
+    
+    $title = log_lolla_get_external_site_title( $main_url );
+    if ( empty( $title ) ) return;
+
+    wp_insert_post(
+      array(
+        'post_title' => $title,
+        'post_type' => 'source'
+      )
+    );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_external_site_title' ) ) {
+  // https://stackoverflow.com/questions/4348912/get-title-of-website-via-link
+  function log_lolla_get_external_site_title( $url ) {
+    if ( empty( $url ) ) return;
+
+    $str = file_get_contents($url);
+    if ( empty( $str ) ) return;
+
+    $str = trim(preg_replace('/\s+/', ' ', $str)); // supports line breaks inside <title>
+    preg_match("/\<title\>(.*)\<\/title\>/i",$str,$title); // ignore case
+    return $title[1];
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
   /**
    * Display post formats with post count

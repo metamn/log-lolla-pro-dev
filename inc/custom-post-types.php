@@ -48,11 +48,7 @@
        'has_archive'        => true,
        'hierarchical'       => false,
        'menu_position'      => null,
-       'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' ),
-       'map_meta_cap'        => true,
-       'capabilities' => array(
-         'create_posts' => 'do_not_allow'
-       )
+       'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt' )
      );
 
      register_post_type( 'source', $args );
@@ -60,7 +56,6 @@
 
    add_action( 'init', 'log_lolla_create_custom_post_type_source' );
  }
-
 
 
 
