@@ -16,7 +16,27 @@ if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
    */
   function log_lolla_display_post_formats_with_post_count() {
     $post_formats = log_lolla_get_post_formats_with_post_count();
-    print_r($post_formats);
+    if ( empty( $post_formats)) return;
+
+    $html = '';
+    $html .= log_lolla_display_widget_body( 'post-formats', 'post-format', $post_formats, function( $item ) {
+      return log_lolla_display_post_format_with_post_count( $item );
+    });
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
+  function log_lolla_display_post_format_with_post_count( $item ) {
+    if ( empty( $item) ) return;
+
+    $html = '';
+    $html .= '<span class="post-format-name">' . $item->post_format_name . '</span>';
+    $html .= '<span class="post-count">' . $item->post_count . '</span>';
+
+    return $html;
   }
 }
 
@@ -83,7 +103,6 @@ if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count_for_standard
     $total_number_of_posts = wp_count_posts()->publish;
 
     $total_number_of_posts_with_post_format = 0;
-
     foreach ( $post_formats_with_count as $post_format ) {
       $total_number_of_posts_with_post_format += $post_format->post_count;
     }
