@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying a person
+ * The template for displaying a source
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -15,8 +15,8 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/post/people/person', 'single' );
-      get_template_part( 'template-parts/post/people/person', 'posts' );
+			get_template_part( 'template-parts/post/source/source', 'single' );
+      get_template_part( 'template-parts/post/source/source', 'posts' );
 
 			get_template_part( 'template-parts/navigation/navigation', 'post' );
 
