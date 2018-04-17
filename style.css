@@ -5155,6 +5155,15 @@ html body {
             background-color: #fff;
             font-size: 0.75em;
             margin-left: 0.74em; }
+      html body .sidebar .widget.widget_log_lolla_people_widget .widget-title {
+        font-size: 1em;
+        margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-title {
+        font-size: 1em;
+        margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_sources_widget .widget-title {
+        font-size: 1em;
+        margin: 0; }
     html body .sidebar .widget {
       width: 100%;
       max-width: 44.4em; }

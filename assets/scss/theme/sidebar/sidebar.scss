@@ -26,6 +26,18 @@
     &.widget_log_lolla_topics_widget {
       @include sidebar-widget-log-lolla-topics;
     }
+
+    &.widget_log_lolla_people_widget {
+      @include sidebar-widget-log-lolla-people;
+    }
+
+    &.widget_log_lolla_post_formats_widget {
+      @include sidebar-widget-log-lolla-post-formats;
+    }
+
+    &.widget_log_lolla_sources_widget {
+      @include sidebar-widget-log-lolla-sources;
+    }
   }
 
   @include sidebar__grid;
