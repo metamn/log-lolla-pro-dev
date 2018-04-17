@@ -14,7 +14,7 @@
 
     .year-and-months {
       display: flex;
-      align-items: last baseline;
+      align-items: center;
 
       margin-bottom: $lem;
       margin-right: $lem;
@@ -26,7 +26,9 @@
 
       .months {
         @include grid(6, $lem / 4, $lem / 4, $grid-title:false, $iepx: 1px);
-        margin-left: $lem / 2;
+
+        @include border(normal, all);
+        padding-left: $lem / 4;
 
         .month {
           min-width: $lem; // Do not break 12 into 1 and 2

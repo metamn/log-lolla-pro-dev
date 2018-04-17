@@ -5051,9 +5051,9 @@ html body {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: last baseline;
-                -ms-flex-align: last baseline;
-                    align-items: last baseline;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
             margin-bottom: 1.48em;
             margin-right: 1.48em; }
             html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
@@ -5076,7 +5076,8 @@ html body {
               -webkit-box-direction: normal;
                   -ms-flex-direction: row;
                       flex-direction: row;
-              margin-left: 0.74em; }
+              border: 1px solid;
+              padding-left: 0.37em; }
               html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > * {
                 margin-right: 0.37em;
                 margin-bottom: 0.37em;
