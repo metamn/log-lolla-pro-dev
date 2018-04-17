@@ -17,10 +17,11 @@
       .category,
       .tag {
         display: flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: flex-start;
 
         margin-right: $lem;
+        margin-bottom: $lem;
       }
 
       .category-name,

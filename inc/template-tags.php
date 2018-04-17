@@ -653,6 +653,7 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
        );
 
        // multiply with 10 to make even small amounts like 1,2 look fine
+       // however this breaks when the sparkline > 99
        $sparklines[] = count($posts) * 10;
      }
 

@@ -5111,12 +5111,13 @@ html body {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: flex-start;
-            margin-right: 1.48em; }
+            margin-right: 1.48em;
+            margin-bottom: 1.48em; }
           html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .category-name,
           html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-name,
           html body .sidebar .widget.widget_log_lolla_topics_widget .widget-body .tags .category-name,
