@@ -5043,17 +5043,17 @@ html body {
           display: flex;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
           margin-top: 1.48em; }
           html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             margin-bottom: 1.48em;
             margin-right: 1.48em; }
             html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
