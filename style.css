@@ -4592,7 +4592,10 @@ html body {
         flex-wrap: wrap;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     html body .sidebar .widget {
       color: #000;
       background-color: #fff;
@@ -5243,8 +5246,10 @@ html body {
             font-size: 0.75em;
             margin-left: 0.74em; }
     html body .sidebar .widget {
-      width: auto;
-      margin-right: 1.48em; }
+      width: 100%;
+      max-width: 44.4em; }
+      html body .sidebar .widget + .widget {
+        margin-top: 2.96em; }
   html body .footer {
     color: #000;
     background-color: #fff;

@@ -2,9 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  justify-content: center;
 
   .widget {
-    width: auto;
-    margin-right: $lem;
+    width: 100%;
+    max-width: $text-block-width;
+
+    + .widget {
+      margin-top: $top;
+    }
   }
 }
