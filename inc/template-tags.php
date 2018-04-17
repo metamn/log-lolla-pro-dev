@@ -195,12 +195,36 @@ if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
 
 
 if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
+  /**
+   * Display post format with post count
+   *
+   * @param  object $item The post format object with count
+   * @return string       HTML
+   */
   function log_lolla_display_post_format_with_post_count( $item ) {
     if ( empty( $item) ) return;
 
     $html = '';
-    $html .= '<span class="post-format-name">' . $item->post_format_name . '</span>';
+    $html .= '<span class="post-format-name">' . log_lolla_display_post_format_archive_link( $item->post_format_name ) . '</span>';
     $html .= '<span class="post-count">' . $item->post_count . '</span>';
+
+    return $html;
+  }
+}
+
+if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
+  /**
+   * Display a link to a post format archive
+   *
+   * Standard post formats have no archive link
+   *
+   * @param  string $post_format_name The name of a post format
+   * @return string                   HTML
+   */
+  function log_lolla_display_post_format_archive_link( $post_format_name ) {
+    $html = '<a class="link" title="' . $post_format_name .'" href="' . get_post_format_link( $post_format_name ) . '">';
+    $html .= $post_format_name;
+    $html .= '</a>';
 
     return $html;
   }

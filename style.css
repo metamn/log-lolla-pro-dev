@@ -5161,6 +5161,37 @@ html body {
       html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-title {
         font-size: 1em;
         margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 1.48em; }
+        html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin-right: 1.48em;
+            margin-bottom: 1.48em; }
+            html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format .post-format-name {
+              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-size: 1.333em;
+              line-height: 1.1;
+              line-height: 1.8; }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format .post-format-name {
+                  font-size: 1.777em; } }
+            html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format .post-count {
+              margin-left: 0.37em; }
       html body .sidebar .widget.widget_log_lolla_sources_widget .widget-title {
         font-size: 1em;
         margin: 0; }
