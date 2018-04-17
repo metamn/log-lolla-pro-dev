@@ -5032,44 +5032,41 @@ html body {
       html body .sidebar .widget.widget_media_audio .mejs-horizontal-volume-slider {
         color: #fff;
         background-color: #000; }
-      html body .sidebar .widget.widget_log_lolla_archives_widget .widget-title {
-        font-size: 1em;
-        margin: 0; }
-      html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        margin-top: 1.48em; }
-        html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
+      html body .sidebar .widget.widget_log_lolla_archives_widget {
+        padding-bottom: 0; }
+        html body .sidebar .widget.widget_log_lolla_archives_widget .widget-title {
+          font-size: 1em;
+          margin: 0; }
+        html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap; }
-          html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
-            font-size: 1.333em;
-            line-height: 1.1; }
-            @media only screen and (min-width: 768px) {
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
-                font-size: 1.777em; } }
-          html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months {
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          margin-top: 1.48em; }
+          html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-            width: 100%;
-            margin-left: 0.37em; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months .month {
-              color: #000;
-              background-color: #fff;
-              font-size: 0.75em; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-1 {
+            -webkit-box-align: last baseline;
+                -ms-flex-align: last baseline;
+                    align-items: last baseline;
+            margin-bottom: 1.48em;
+            margin-right: 1.48em; }
+            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
+              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-weight: normal;
+              font-style: normal;
+              font-size: 1.333em;
+              line-height: 1.1;
+              min-width: 2.96em; }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year {
+                  font-size: 1.777em; } }
+            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -5078,107 +5075,18 @@ html body {
               -webkit-box-orient: horizontal;
               -webkit-box-direction: normal;
                   -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-1 > * {
+                      flex-direction: row;
+              margin-left: 0.74em; }
+              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > * {
                 margin-right: 0.37em;
                 margin-bottom: 0.37em;
                 box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-1 > * {
-                width: calc(100% - (((1 - 1) * 0.37em) / 1) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-1 > *:nth-child(1n) {
-                  margin-right: 0; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-2 {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-2 > * {
-                margin-right: 0.37em;
-                margin-bottom: 0.37em;
-                box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-2 > * {
-                width: calc(50% - (((2 - 1) * 0.37em) / 2) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-2 > *:nth-child(2n) {
-                  margin-right: 0; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-3 {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-3 > * {
-                margin-right: 0.37em;
-                margin-bottom: 0.37em;
-                box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-3 > * {
-                width: calc(33.33333% - (((3 - 1) * 0.37em) / 3) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-3 > *:nth-child(3n) {
-                  margin-right: 0; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-4 {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-4 > * {
-                margin-right: 0.37em;
-                margin-bottom: 0.37em;
-                box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-4 > * {
-                width: calc(25% - (((4 - 1) * 0.37em) / 4) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-4 > *:nth-child(4n) {
-                  margin-right: 0; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-5 {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-5 > * {
-                margin-right: 0.37em;
-                margin-bottom: 0.37em;
-                box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-5 > * {
-                width: calc(20% - (((5 - 1) * 0.37em) / 5) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-5 > *:nth-child(5n) {
-                  margin-right: 0; }
-            html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-6 {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -ms-flex-wrap: wrap;
-                  flex-wrap: wrap;
-              -webkit-box-orient: horizontal;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: row;
-                      flex-direction: row; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-6 > * {
-                margin-right: 0.37em;
-                margin-bottom: 0.37em;
-                box-sizing: border-box; }
-              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-6 > * {
+              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > * {
                 width: calc(16.66667% - (((6 - 1) * 0.37em) / 6) - 1px); }
-                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months.grid-6 > *:nth-child(6n) {
+                html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > *:nth-child(6n) {
                   margin-right: 0; }
-          html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months + .year-and-months {
-            margin-left: 1.48em; }
+              html body .sidebar .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months .month {
+                min-width: 1.48em; }
       html body .sidebar .widget.widget_log_lolla_topics_widget .widget-title {
         font-size: 1em;
         margin: 0; }
