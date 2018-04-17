@@ -3,4 +3,36 @@
     font-size: 1em;
     margin: 0;
   }
+
+  .widget-body {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $lem;
+
+    .people {
+      display: flex;
+      flex-wrap: wrap;
+
+      .person-with-count {
+        display: flex;
+        align-items: center;
+
+        margin-right: $lem;
+        margin-bottom: $lem;
+
+        .person {
+          @include person;
+
+          .person__name {
+            @include text-style(post-title-large);
+            line-height: 1.8;
+          }
+        }
+
+        .post-count {
+          margin-left: $lem / 4;
+        }
+      }
+    }
+  }
 }

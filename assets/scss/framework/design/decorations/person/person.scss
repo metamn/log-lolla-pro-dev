@@ -1,0 +1,16 @@
+@mixin person {
+  display: flex;
+  align-items: center;
+
+  &__name {
+    order: 2;
+    margin: 0;
+    margin-left: $lem / 4;
+  }
+
+  &__avatar,
+  .figure {
+    @include figure;
+    width: auto;
+  }
+}

@@ -28,7 +28,7 @@ if ( ! function_exists( 'log_lolla_display_sources_with_post_count' ) ) {
     if ( empty( $sources ) ) return;
 
     $html = '';
-    $html .= log_lolla_display_widget_body( 'sources', 'source', $sources, function( $item ) {
+    $html .= log_lolla_display_widget_body( 'sources', 'source-with-count', $sources, function( $item ) {
       return log_lolla_display_source_with_post_count( $item );
     });
 
@@ -52,7 +52,7 @@ if ( ! function_exists( 'log_lolla_display_source_with_post_count') )  {
 
     $html = '';
     $html .= log_lolla_display_source( $source );
-    $html .= '<span class="source-post-count">' . $count . '</span>';
+    $html .= '<span class="post-count">' . $count . '</span>';
 
     return $html;
   }
@@ -322,7 +322,7 @@ if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
     if ( empty( $people ) ) return;
 
     $html = '';
-    $html .= log_lolla_display_widget_body( 'people', 'person', $people, function( $item ) {
+    $html .= log_lolla_display_widget_body( 'people', 'person-with-count', $people, function( $item ) {
       return log_lolla_display_person_with_post_count( $item );
     });
 
@@ -346,7 +346,7 @@ if ( ! function_exists( 'log_lolla_display_person_with_post_count') )  {
 
     $html = '';
     $html .= log_lolla_display_person( $person );
-    $html .= '<span class="person-post-count">' . $count . '</span>';
+    $html .= '<span class="post-count">' . $count . '</span>';
 
     return $html;
   }

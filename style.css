@@ -5158,6 +5158,131 @@ html body {
       html body .sidebar .widget.widget_log_lolla_people_widget .widget-title {
         font-size: 1em;
         margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_people_widget .widget-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 1.48em; }
+        html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-right: 1.48em;
+            margin-bottom: 1.48em; }
+            html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__name {
+                -webkit-box-ordinal-group: 3;
+                    -ms-flex-order: 2;
+                        order: 2;
+                margin: 0;
+                margin-left: 0.37em; }
+              html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar,
+              html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                width: auto; }
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link {
+                  color: #000;
+                  background-color: transparent;
+                  text-decoration: underline;
+                  will-change: text-decoration;
+                  transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a:hover, html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a:active,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link:hover,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link:active,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a:hover,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a:active,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link:hover,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link:active {
+                    text-decoration: line-through; }
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar img,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure img {
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  width: auto;
+                  height: auto;
+                  max-width: 100%;
+                  border: 1px solid;
+                  padding: 0; }
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
+                html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text {
+                  color: #000;
+                  background-color: #fff;
+                  font-size: 0.75em;
+                  display: inline-block;
+                  margin: 0.74em 0;
+                  padding: 0.37em 0.74em; }
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link,
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a {
+                    color: #000;
+                    background-color: #fff;
+                    text-decoration: underline;
+                    will-change: text-decoration;
+                    transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+                    padding: 0 0.37em; }
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link:hover, html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link:active,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a:hover,
+                    html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a:active {
+                      text-decoration: line-through; }
+              html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .person__name {
+                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 1.333em;
+                line-height: 1.1;
+                line-height: 1.8; }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .person__name {
+                    font-size: 1.777em; } }
+            html body .sidebar .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
+              margin-left: 0.37em; }
       html body .sidebar .widget.widget_log_lolla_post_formats_widget .widget-title {
         font-size: 1em;
         margin: 0; }
@@ -5195,6 +5320,131 @@ html body {
       html body .sidebar .widget.widget_log_lolla_sources_widget .widget-title {
         font-size: 1em;
         margin: 0; }
+      html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-top: 1.48em; }
+        html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-right: 1.48em;
+            margin-bottom: 1.48em; }
+            html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__name {
+                -webkit-box-ordinal-group: 3;
+                    -ms-flex-order: 2;
+                        order: 2;
+                margin: 0;
+                margin-left: 0.37em; }
+              html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar,
+              html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: column;
+                        flex-direction: column;
+                width: auto; }
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link {
+                  color: #000;
+                  background-color: transparent;
+                  text-decoration: underline;
+                  will-change: text-decoration;
+                  transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a:hover, html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a:active,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link:hover,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link:active,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a:hover,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a:active,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link:hover,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link:active {
+                    text-decoration: line-through; }
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar img,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure img {
+                  display: block;
+                  width: 100%;
+                  height: auto;
+                  width: auto;
+                  height: auto;
+                  max-width: 100%;
+                  border: 1px solid;
+                  padding: 0; }
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
+                html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text {
+                  color: #000;
+                  background-color: #fff;
+                  font-size: 0.75em;
+                  display: inline-block;
+                  margin: 0.74em 0;
+                  padding: 0.37em 0.74em; }
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link,
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a {
+                    color: #000;
+                    background-color: #fff;
+                    text-decoration: underline;
+                    will-change: text-decoration;
+                    transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+                    padding: 0 0.37em; }
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link:hover, html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link:active,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a:hover,
+                    html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a:active {
+                      text-decoration: line-through; }
+              html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .source__name {
+                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-weight: normal;
+                font-style: normal;
+                font-size: 1.333em;
+                line-height: 1.1;
+                line-height: 1.8; }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .source__name {
+                    font-size: 1.777em; } }
+            html body .sidebar .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
+              margin-left: 0.37em; }
     html body .sidebar .widget {
       width: 100%;
       max-width: 44.4em; }
