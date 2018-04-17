@@ -348,7 +348,7 @@ if ( ! function_exists( 'log_lolla_display_widget_body' ) ) {
   function log_lolla_display_widget_body( $container_class_name, $item_class_name, $items, $callback ) {
     if ( empty( $items ) ) return;
 
-    $html .= '<div class="' . $container_class_name . '">';
+    $html = '<div class="' . $container_class_name . '">';
 
     foreach ( $items as $index => $item ) {
       $html .= '<div class="' . $item_class_name . '">';
