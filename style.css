@@ -5543,6 +5543,9 @@ html body {
 html body.archive .footer .footer-navigation ul li.current-menu-item a {
   text-decoration: line-through; }
 
+html body.page-template-page-archives .shortcode-topics-summary p {
+  display: inline; }
+
 html body.home .header .header-image {
   height: auto; }
   html body.home .header .header-image figure {

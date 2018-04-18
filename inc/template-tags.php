@@ -529,43 +529,60 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
     if ( empty( $categories ) && empty( $tags ) ) return;
 
-    $categories_descriptions = array_values(
-      array_filter(
-        array_map(
-          function( $term ) {
-            return strtolower( term_description( $term->term_id, 'category' ) );
-          },
-          $categories
-        )
+    $categories_descriptions = array_filter(
+      array_map(
+        function( $term ) {
+          return strtolower( log_lolla_get_term_description( $term->term_id, 'category' ) );
+        },
+        $categories
       )
     );
 
-    $tags_descriptions = array_values(
-      array_filter(
-        array_map(
-          function( $term ) {
-            return strtolower( term_description( $term->term_id, 'post_tag' ) );
-          },
-          $tags
-        )
+    $tags_descriptions = array_filter(
+      array_map(
+        function( $term ) {
+          return strtolower( log_lolla_get_term_description( $term->term_id, 'post_tag' ) );
+        },
+        $tags
       )
     );
 
     if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
 
 
-    $html = esc_html_x( 'This site is about', 'log-lolla-pro' );
+    $html = '<div class="shortcode-topics-summary">';
+
+    $html .= esc_html_x( 'This site is about', 'log-lolla-pro' );
+    $separator = esc_html_x( ', ', 'log-lolla-pro' );
     $html .= ' ';
 
     if ( ! empty( $categories_descriptions ) ) {
-      $html .= implode( "X ", $categories_descriptions );
+      $html .= implode( $separator, $categories_descriptions );
     }
 
     if ( ! empty( $tags_descriptions ) ) {
-      $html .= implode( "X ", $tags_descriptions );
+      $html .= implode( $separator, $tags_descriptions );
     }
 
+    $html .= '.</div>';
+
     return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
+  /**
+   * Clean up the `term-description` Wordpress function
+   * - It wraps the result in `<p>` tags
+   * - It contains null strings
+   *
+   * @param  integer  $term     The term id
+   * @param  string   $taxonomy The term's taxonomy
+   * @return string             The cleaned up term description
+   */
+  function log_lolla_get_term_description( $term_id, $taxonomy ) {
+    return trim( strip_tags( term_description( $term_id, $taxonomy ) ) );
   }
 }
 
