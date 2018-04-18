@@ -58,7 +58,7 @@
 
     $form .= '<p>';
     $form .= log_lolla_display_widget_form_label( $this, 'number_of_sources' );
-    $form .= log_lolla_display_widget_form_input( $this, 'number_of_sources', 'number');
+    $form .= log_lolla_display_widget_form_input( $this, 'number_of_sources', 'number', '5');
     $form .= '</p>';
 
     echo $form;
@@ -72,7 +72,10 @@
    * @return [type]               [description]
    */
   public function update( $new_instance, $old_instance ) {
-    // processes widget options to be saved
+    $instance = array();
+		$instance['number_of_sources'] = ( ! empty( $new_instance['number_of_sources'] ) ) ? filter_var( $new_instance['number_of_sources'], FILTER_SANITIZE_NUMBER_INT ) : '0';
+
+		return $instance;
   }
  }
  add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Sources_Widget' ); } );
@@ -326,6 +329,15 @@ add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Wi
 
 
 if ( ! function_exists( 'log_lolla_display_widget_form_input' ) ) {
+  /**
+   * Display an input field for the widget form
+   *
+   * @param  OBJECT $that         The widget instance (ie. $this)
+   * @param  string $field_id     The field id
+   * @param  string $input_type   The type of the input
+   * @param  string $input_value  The default value of the input
+   * @return string               HTML
+   */
   function log_lolla_display_widget_form_input( $that, $field_id, $input_type = 'text', $input_value = '' ) {
     if ( empty( $that ) ) return;
     if ( empty( $field_id ) ) return;
