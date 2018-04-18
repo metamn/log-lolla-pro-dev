@@ -1,13 +1,14 @@
 <?php
+  /**
+   * Custom widgets
+   *
+   * @link https://developer.wordpress.org/themes/functionality/widgets/
+   *
+   * @package Log_Lolla
+   */
+?>
 
-/**
- * Custom widgets
- *
- * @link https://developer.wordpress.org/themes/functionality/widgets/
- *
- * @package Log_Lolla
- */
-
+<?php
 
  /**
   * The Sources widget
@@ -18,9 +19,12 @@
    */
   public function __construct() {
     parent::__construct(
-      'log_lolla_sources_widget', // Base ID
-      'Log Lolla Sources', // Name
-      array( 'description' => __( 'Display sources archive', 'log_lolla' ), ) // Args
+      'log_lolla_sources_widget',
+      'Log Lolla Sources',
+      array(
+        'description' => __( 'Display sources archive', 'log_lolla' ),
+        'number_of_sources' => __( 'Number of sources to display', 'log_lolla' )
+      )
     );
   }
 
@@ -50,7 +54,14 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    //
+    $form = '';
+
+    $form .= '<p>';
+    $form .= log_lolla_display_widget_form_label( $this, 'number_of_sources' );
+    $form .= log_lolla_display_widget_form_input( $this, 'number_of_sources', 'number');
+    $form .= '</p>';
+
+    echo $form;
   }
 
   /**
@@ -312,6 +323,40 @@ add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Wi
 /**
  * Widget helpers
  */
+
+
+if ( ! function_exists( 'log_lolla_display_widget_form_input' ) ) {
+  function log_lolla_display_widget_form_input( $that, $field_id, $input_type = 'text', $input_value = '' ) {
+    if ( empty( $that ) ) return;
+    if ( empty( $field_id ) ) return;
+
+    $input_id = esc_attr( $that->get_field_id( $field_id ) );
+    $input_name = esc_attr( $that->get_field_name( $field_id ) );
+
+    return '<input id="' . $input_id . '" name="' . $input_name . '" type="' . $input_type . '" value="' . $input_value . '">';
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_widget_form_label' ) ) {
+  /**
+   * Display a label for the widget form
+   *
+   * @param  OBJECT $that     The widget instance (ie. $this)
+   * @param  string $field_id The field id
+   * @return string           HTML
+   */
+  function log_lolla_display_widget_form_label( $that, $field_id ) {
+    if ( empty( $that ) ) return;
+    if ( empty( $field_id ) ) return;
+
+    $html = '<label for="' . esc_attr( $that->get_field_id( $field_id ) ) . '">';
+    $html .= esc_attr__( $that->widget_options[$field_id] );
+    $html .= '</label>';
+
+    return $html;
+  }
+}
 
 
 if ( ! function_exists( 'log_lolla_display_widget' ) ) {
