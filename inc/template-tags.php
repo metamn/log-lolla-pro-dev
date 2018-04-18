@@ -550,7 +550,9 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
 
 
-    $html = '<div class="shortcode-topics-summary">';
+    $html = '<aside class="shortcode-topics-summary">';
+    $html .= '<h3 hidden>' . esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) . '</h3>';
+    $html .= '<div class="text">';
 
     $html .= esc_html_x( 'This site is about', 'log-lolla-pro' );
     $separator = esc_html_x( ', ', 'log-lolla-pro' );
@@ -564,7 +566,7 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
       $html .= implode( $separator, $tags_descriptions );
     }
 
-    $html .= '.</div>';
+    $html .= '.</div></aside>';
 
     return $html;
   }
