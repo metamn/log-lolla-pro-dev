@@ -19,8 +19,8 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_sources_widget', // Base ID
-      'Log Lolla Sources Widget', // Name
-      array( 'description' => __( 'Log Lolla Sources Widget', 'log_lolla' ), ) // Args
+      'Log Lolla Sources', // Name
+      array( 'description' => __( 'Display sources archive', 'log_lolla' ), ) // Args
     );
   }
 
@@ -35,10 +35,11 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $description = apply_filters( 'widget_description', $instance['description'] );
     $content = log_lolla_display_sources_with_post_count();
 
     echo $before_widget;
-    echo log_lolla_display_widget( 'Sources', $content );
+    echo log_lolla_display_widget( $title, $description, $content );
     echo $after_widget;
   }
 
@@ -49,7 +50,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    echo __( 'Will display sources archive', 'log_lolla' );
+    //
   }
 
   /**
@@ -78,8 +79,8 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_post_formats_widget', // Base ID
-      'Log Lolla Post Formats Widget', // Name
-      array( 'description' => __( 'Log Lolla Post Formats Widget', 'log_lolla' ), ) // Args
+      'Log Lolla Post Formats', // Name
+      array( 'description' => __( 'Display post formats archive', 'log_lolla' ), ) // Args
     );
   }
 
@@ -94,10 +95,11 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $description = apply_filters( 'widget_description', $instance['description'] );
     $content = log_lolla_display_post_formats_with_post_count();
 
     echo $before_widget;
-    echo log_lolla_display_widget( 'Post Formats', $content );
+    echo log_lolla_display_widget( $title, $description, $content );
     echo $after_widget;
   }
 
@@ -108,7 +110,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    echo __( 'Will display post formats archive', 'log_lolla' );
+    //
   }
 
   /**
@@ -136,8 +138,8 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_people_widget', // Base ID
-      'Log Lolla People Widget', // Name
-      array( 'description' => __( 'Log Lolla People Widget', 'log_lolla' ), ) // Args
+      'Log Lolla People', // Name
+      array( 'description' => __( 'Display most poular people', 'log_lolla' ), ) // Args
     );
   }
 
@@ -152,10 +154,11 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $description = apply_filters( 'widget_description', $instance['description'] );
     $content = log_lolla_display_people_with_post_count( 5 );
 
     echo $before_widget;
-    echo log_lolla_display_widget( 'People', $content );
+    echo log_lolla_display_widget( $title, $description, $content );
     echo $after_widget;
   }
 
@@ -166,7 +169,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    echo __( 'Will display people', 'log_lolla' );
+    //
   }
 
   /**
@@ -194,8 +197,8 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_topics_widget', // Base ID
-      'Log Lolla Topics Widget', // Name
-      array( 'description' => __( 'Log Lolla Topics Widget', 'log_lolla' ), ) // Args
+      'Log Lolla Topics', // Name
+      array( 'description' => __( 'Display popular topics (categories, tags)', 'log_lolla' ), ) // Args
     );
   }
 
@@ -210,10 +213,11 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', $instance['title'] );
+    $description = apply_filters( 'widget_description', $instance['description'] );
     $content = log_lolla_display_topics_with_sparklines(10, 5, 5);
 
     echo $before_widget;
-    echo log_lolla_display_widget( 'Topics', $content );
+    echo log_lolla_display_widget( $title, $description, $content );
     echo $after_widget;
   }
 
@@ -224,7 +228,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    echo __( 'Will display topics (categories, tags) the Log Lolla way', 'log_lolla' );
+    //
   }
 
   /**
@@ -241,6 +245,8 @@
  add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Topics_Widget' ); } );
 
 
+
+
 /**
  * The Archives widget
  */
@@ -250,9 +256,11 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
   */
  public function __construct() {
    parent::__construct(
-     'log_lolla_archives_widget', // Base ID
-     'Log Lolla Archives Widget', // Name
-     array( 'description' => __( 'Log Lolla Archives Widget', 'log_lolla' ), ) // Args
+     'log_lolla_archives_widget',
+     'Log Lolla Archives',
+     array(
+       'description' => __( 'Display archives of years and months', 'log_lolla' )
+     )
    );
  }
 
@@ -267,10 +275,11 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
    extract( $args );
 
    $title = apply_filters( 'widget_title', $instance['title'] );
+   $description = apply_filters( 'widget_description', $instance['description'] );
    $content = log_lolla_display_archives_by_year_and_month();
 
    echo $before_widget;
-   echo log_lolla_display_widget( 'Archives', $content );
+   echo log_lolla_display_widget( $title, $description, $content );
    echo $after_widget;
  }
 
@@ -281,7 +290,7 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
   * @return [type]           [description]
   */
  public function form( $instance ) {
-   echo __( 'Will display archives the Log Lolla way', 'log_lolla' );
+   //
  }
 
  /**
@@ -313,9 +322,13 @@ if ( ! function_exists( 'log_lolla_display_widget' ) ) {
    * @param  string $content Widget content, HTML
    * @return string          HTML
    */
-  function log_lolla_display_widget( $title, $content ) {
+  function log_lolla_display_widget( $title, $description = '', $content ) {
     if ( empty( $title ) ) return;
     $html = log_lolla_display_widget_title( $title );
+
+    if ( ! empty( $description ) ) {
+      $html .= '<div class="widget_description">' . $description . '</div>';
+    }
 
     if ( empty( $content )) return $html;
     $html .= '<div class="widget-body">';
@@ -369,7 +382,6 @@ if ( ! function_exists( 'log_lolla_display_widget_body' ) ) {
     if ( ! empty( $container_class_name ) ) {
       $html .= '</div>';
     }
-
 
     return $html;
   }
