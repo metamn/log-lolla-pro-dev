@@ -529,23 +529,41 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
     if ( empty( $categories ) && empty( $tags ) ) return;
 
-    $categories_descriptions = array_map(
-      function( $term ) {
-        return strtolower( term_description( $term->term_id, 'category' ) );
-      },
-      $categories
+    $categories_descriptions = array_values(
+      array_filter(
+        array_map(
+          function( $term ) {
+            return strtolower( term_description( $term->term_id, 'category' ) );
+          },
+          $categories
+        )
+      )
     );
 
-    $tags_descriptions = array_map(
-      function( $term ) {
-        return strtolower( term_description( $term->term_id, 'post_tag' ) );
-      },
-      $tags
+    $tags_descriptions = array_values(
+      array_filter(
+        array_map(
+          function( $term ) {
+            return strtolower( term_description( $term->term_id, 'post_tag' ) );
+          },
+          $tags
+        )
+      )
     );
+
+    if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
+
 
     $html = esc_html_x( 'This site is about', 'log-lolla-pro' );
-    $html .= implode( "X ", array_filter( $categories_descriptions ) );
-    $html .= implode( "X ", array_filter( $tags_descriptions ) );
+    $html .= ' ';
+
+    if ( ! empty( $categories_descriptions ) ) {
+      $html .= implode( "X ", $categories_descriptions );
+    }
+
+    if ( ! empty( $tags_descriptions ) ) {
+      $html .= implode( "X ", $tags_descriptions );
+    }
 
     return $html;
   }
