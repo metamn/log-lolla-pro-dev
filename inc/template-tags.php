@@ -514,6 +514,44 @@ if ( ! function_exists( 'log_lolla_display_person_from_database' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
+  /**
+   * Display topics summary
+   *
+   * Displays a text / paragraph containing all the category and tag descriptions merged together
+   *
+   * @param  integer $number_of_categories How many categories to show
+   * @param  integer $number_of_tags       How many tags to show
+   * @return string                        HTML
+   */
+  function log_lolla_display_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
+    $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
+    $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+    if ( empty( $categories ) && empty( $tags ) ) return;
+
+    $categories_descriptions = array_map(
+      function( $term ) {
+        return strtolower( term_description( $term->term_id, 'category' ) );
+      },
+      $categories
+    );
+
+    $tags_descriptions = array_map(
+      function( $term ) {
+        return strtolower( term_description( $term->term_id, 'post_tag' ) );
+      },
+      $tags
+    );
+
+    $html = esc_html_x( 'This site is about', 'log-lolla-pro' );
+    $html .= implode( "X ", array_filter( $categories_descriptions ) );
+    $html .= implode( "X ", array_filter( $tags_descriptions ) );
+
+    return $html;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
    /**
     * Display topics (categories and tags) and their count of posts
