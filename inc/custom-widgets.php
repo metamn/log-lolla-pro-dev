@@ -20,7 +20,7 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_sources_widget',
-      esc_html__( 'Log Lolla Sources', 'log-lolla'),
+      esc_html__( 'Log Lolla Sources' ),
       array(
         'description' => esc_html__( 'Display sources archive', 'log_lolla' ),
         'number_of_sources' => esc_html__( 'Number of sources to display', 'log_lolla' )
@@ -31,6 +31,7 @@
   /**
    * Display widget on frontend
    *
+   *
    * @param  [type] $args     [description]
    * @param  [type] $instance [description]
    * @return [type]           [description]
@@ -38,13 +39,14 @@
   public function widget( $args, $instance ) {
     extract( $args );
 
-    $title = apply_filters( 'widget_title', $instance['title'] );
-    $description = apply_filters( 'widget_description', $instance['description'] );
-    $content = log_lolla_display_sources_with_post_count();
+    $title = apply_filters( 'widget_title', esc_html__( 'Sources' ) );
+    $content = log_lolla_display_sources_with_post_count( $instance['number_of_sources'] );
 
-    echo $before_widget;
-    echo log_lolla_display_widget( $title, $description, $content );
-    echo $after_widget;
+    if ( ! empty( $content ) ) {
+      echo $before_widget;
+      echo log_lolla_display_widget( $title, $content );
+      echo $after_widget;
+    }
   }
 
   /**
@@ -386,18 +388,18 @@ if ( ! function_exists( 'log_lolla_display_widget' ) ) {
    * @param  string $content Widget content, HTML
    * @return string          HTML
    */
-  function log_lolla_display_widget( $title, $description = '', $content ) {
-    if ( empty( $title ) ) return;
-    $html = log_lolla_display_widget_title( $title );
+  function log_lolla_display_widget( $title, $content ) {
+    $html = '';
 
-    if ( ! empty( $description ) ) {
-      $html .= '<div class="widget_description">' . $description . '</div>';
+    if ( ! empty( $title ) ) {
+      $html .= log_lolla_display_widget_title( $title );
     }
 
-    if ( empty( $content )) return $html;
-    $html .= '<div class="widget-body">';
-    $html .= $content;
-    $html .= '</div>';
+    if ( ! empty( $content ) ) {
+      $html .= '<div class="widget-body">';
+      $html .= $content;
+      $html .= '</div>';
+    }
 
     return $html;
   }
