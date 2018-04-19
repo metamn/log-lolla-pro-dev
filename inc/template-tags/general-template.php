@@ -12,6 +12,24 @@
 
 <?php
 
+
+if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
+  /**
+   * Convert a string to a classname
+   *
+   * @param  string $string The string to be converted
+   * @return string         The classname
+   */
+  function log_lolla_convert_string_to_classname( $string ) {
+    $a = preg_replace( "/([^a-z0-9]+)/i", "-", $string );
+    $b = preg_replace( "/ /", "-", $a );
+
+    $ret = strtolower($b);
+
+    return $ret;
+  }
+}
+
 if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
   /**
    * Clean up the `term-description` Wordpress function

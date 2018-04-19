@@ -48,7 +48,7 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
 
 
-    $html = '<aside class="shortcode-topics-summary">';
+    $html = '<aside class="shortcode shortcode-topics-summary">';
     $html .= '<h3 hidden>' . esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) . '</h3>';
     $html .= '<div class="text">';
 

@@ -1,0 +1,25 @@
+@mixin archives-year-month {
+  .year-and-months {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: $lem;
+    margin-right: $lem;
+
+    .year {
+      @include text-style(post-title-large);
+      min-width: $lem * 2; // Do not break 2018 into 210 and 8
+    }
+
+    .months {
+      @include grid(6, $lem / 4, $lem / 4, $grid-title:false, $iepx: 1px);
+
+      @include border(normal, all);
+      padding-left: $lem / 4;
+
+      .month {
+        min-width: $lem; // Do not break 12 into 1 and 2
+      }
+    }
+  }
+}

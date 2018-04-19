@@ -19,5 +19,4 @@ require get_template_directory() . '/inc/template-tags/people-template.php';
 require get_template_directory() . '/inc/template-tags/source-template.php';
 require get_template_directory() . '/inc/template-tags/topics-template.php';
 
-
 ?>

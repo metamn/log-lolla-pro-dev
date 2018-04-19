@@ -1,14 +1,7 @@
-@mixin sidebar-widget-log-lolla-post-formats {
-  .widget-title {
-    font-size: 1em;
-    margin: 0;
-  }
+@mixin widget-log-lolla-post-formats {
+  @include widget-log-lolla;
 
   .widget-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: $lem;
-
     .post-formats {
       display: flex;
       flex-wrap: wrap;

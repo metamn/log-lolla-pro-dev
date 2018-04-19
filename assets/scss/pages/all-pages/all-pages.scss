@@ -1,0 +1,9 @@
+html {
+  body {
+
+    // must be put here ... if put in @mixin sidebar the SASS globbing gulp task will gave us an error
+    .widget {
+      @include widget;
+    }
+  }
+}

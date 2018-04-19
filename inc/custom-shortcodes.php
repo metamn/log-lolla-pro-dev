@@ -29,7 +29,10 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_sources' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_sources_with_post_count( $attrs['sources'] );
+    // Content
+    $content = log_lolla_display_sources_with_post_count( $attrs['sources'] );
+
+    return log_lolla_display_shortcode( esc_html__( 'Sources', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-sources', 'log_lolla_create_custom_shortcode_sources' );
@@ -54,7 +57,10 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_post_formats' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_post_formats_with_post_count();
+    // Content
+    $content = log_lolla_display_post_formats_with_post_count();
+
+    return log_lolla_display_shortcode( esc_html__( 'Post formats', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-post-formats', 'log_lolla_create_custom_shortcode_post_formats' );
@@ -111,7 +117,10 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_people' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_people_with_post_count( $attrs['people'] );
+    // Content
+    $content = log_lolla_display_people_with_post_count( $attrs['people'] );
+
+    return log_lolla_display_shortcode( esc_html__( 'People', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-people', 'log_lolla_create_custom_shortcode_people' );
@@ -139,11 +148,14 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_topics' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_topics_with_sparklines(
+    // Content
+    $content = log_lolla_display_topics_with_sparklines(
       10,
       $attr['categories'],
       $attrs['tags']
     );
+
+    return log_lolla_display_shortcode( esc_html__( 'Topics', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-topics', 'log_lolla_create_custom_shortcode_topics' );
@@ -176,7 +188,10 @@ if ( ! function_exists( 'log_lolla_create_custom_shortcode_topics_summary' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_topics_summary( $attrs['categories'], $attrs['tags'] );
+    // Content
+    $content = log_lolla_display_topics_summary( $attrs['categories'], $attrs['tags'] );
+
+    return log_lolla_display_shortcode( '', $content );
   }
 
   add_shortcode( 'log-lolla-topics-summary', 'log_lolla_create_custom_shortcode_topics_summary' );
@@ -201,12 +216,72 @@ if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_archives_by_year_and_month();
+    // Get content
+    $content = log_lolla_display_archives_by_year_and_month();
+
+    return log_lolla_display_shortcode( esc_html__( 'Archives', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-archives', 'log_lolla_create_custom_shortcode_archives' );
 }
 
+
+
+/**
+ * Shortcode helpers
+ */
+
+
+if ( ! function_exists( 'log_lolla_display_shortcode' ) ) {
+  /**
+   * Display a shortcode
+   *
+   * If has `title` it will be displayed in an `aside`
+   *
+   * @param  string $title   The shortcode title
+   * @param  string $content The shortcode content
+   * @return string          HTML
+   */
+  function log_lolla_display_shortcode( $title, $content ) {
+    $html = '';
+
+    if ( ! empty( $title ) ) {
+      $html .= log_lolla_display_shortcode_header( $title );
+      $html .= '<div class="shortcode-body">';
+    }
+
+    if ( ! empty( $content ) ) {
+      $html .= $content;
+    }
+
+    if ( ! empty( $title ) ) {
+      $html .= '</div>';
+      $html .= "</aside>";
+    }
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_shortcode_header' ) ) {
+  /**
+   * Display shortcode header
+   *
+   * It wraps the content of a shortcode into an `aside`
+   *
+   * @param  string $title The shortcode title
+   * @return string        HTML
+   */
+  function log_lolla_display_shortcode_header( $title ) {
+    $html .= '<aside class="shortcode shortcode-' . log_lolla_convert_string_to_classname( $title ) . '">';
+    $html .= '<h3 class="shortcode-title">';
+    $html .= __( $title, 'log_lolla' );
+    $html .= '</h3>';
+
+    return $html;
+  }
+}
 
 
 ?>

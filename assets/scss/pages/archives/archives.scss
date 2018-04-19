@@ -1,9 +1,7 @@
 html {
   body {
     &.page-template-page-archives {
-      .shortcode-topics-summary {
-        @include shortcode-topics-summary;
-      }
+      //
     }
   }
 }

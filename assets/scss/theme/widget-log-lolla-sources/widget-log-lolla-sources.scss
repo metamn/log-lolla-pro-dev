@@ -1,29 +1,22 @@
-@mixin sidebar-widget-log-lolla-people {
-  .widget-title {
-    font-size: 1em;
-    margin: 0;
-  }
+@mixin widget-log-lolla-sources {
+  @include widget-log-lolla;
 
   .widget-body {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: $lem;
-
-    .people {
+    .sources {
       display: flex;
       flex-wrap: wrap;
 
-      .person-with-count {
+      .source-with-count {
         display: flex;
         align-items: center;
 
         margin-right: $lem;
         margin-bottom: $lem;
 
-        .person {
+        .source {
           @include person;
 
-          .person__name {
+          .source__name {
             @include text-style(post-title-large);
             line-height: 1.8;
           }
