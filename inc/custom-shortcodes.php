@@ -11,6 +11,30 @@
 <?php
 
 
+if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
+  /**
+   * Display archives of years and month
+   *
+   * Usage: [log-lolla-archives]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_archives( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_archives_by_year_and_month();
+  }
+
+  add_shortcode( 'log-lolla-archives', 'log_lolla_create_custom_shortcode_archives' );
+}
+
+
 if ( ! function_exists( 'log_lolla_create_custom_shortcode_topics_summary' ) ) {
   /**
    * Display topics summary
