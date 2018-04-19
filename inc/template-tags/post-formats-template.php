@@ -20,7 +20,7 @@ if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
    */
   function log_lolla_display_post_formats_with_post_count() {
     $post_formats = log_lolla_get_post_formats_with_post_count();
-    if ( empty( $post_formats)) return;
+    if ( empty( $post_formats) ) return;
 
     $html = '';
     $html .= log_lolla_display_widget_body( 'post-formats', 'post-format', $post_formats, function( $item ) {

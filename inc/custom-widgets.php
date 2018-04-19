@@ -164,7 +164,7 @@
       'log_lolla_people_widget',
       esc_html__( 'Log Lolla People', 'log-lolla' ),
       array(
-        'description' => esc_html__( 'Display most poular people', 'log_lolla' ),
+        'description' => esc_html__( 'Display most popular people', 'log_lolla' ),
         'number_of_people' => esc_html__( 'Number of people to display', 'log_lolla' )
       )
     );

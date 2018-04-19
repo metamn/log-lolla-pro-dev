@@ -11,16 +11,42 @@
 <?php
 
 
-if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
+if (! function_exists( 'log_lolla_create_custom_shortcode_sources' ) ) {
   /**
-   * Display archives of years and month
+   * Display sources archive
    *
-   * Usage: [log-lolla-archives]
+   * Usage: [log-lolla-sources sources="5"]
    *
    * @param  Array $attributes The attributes of the shortcode
    * @return string            HTML
    */
-  function log_lolla_create_custom_shortcode_archives( $attributes ) {
+  function log_lolla_create_custom_shortcode_sources( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+      'sources' => 5
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_sources_with_post_count( $attrs['sources'] );
+  }
+
+  add_shortcode( 'log-lolla-sources', 'log_lolla_create_custom_shortcode_sources' );
+}
+
+
+
+if (! function_exists( 'log_lolla_create_custom_shortcode_post_formats' ) ) {
+  /**
+   * Display post formats archive
+   *
+   * Usage: [log-lolla-post-formats]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_post_formats( $attributes ) {
     // Default attributes
     $default_attributes = array(
     );
@@ -28,40 +54,12 @@ if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
     // Parse attributes
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
-    return log_lolla_display_archives_by_year_and_month();
+    return log_lolla_display_post_formats_with_post_count();
   }
 
-  add_shortcode( 'log-lolla-archives', 'log_lolla_create_custom_shortcode_archives' );
+  add_shortcode( 'log-lolla-post-formats', 'log_lolla_create_custom_shortcode_post_formats' );
 }
 
-
-if ( ! function_exists( 'log_lolla_create_custom_shortcode_topics_summary' ) ) {
-  /**
-   * Display topics summary
-   *
-   * Usage: [log-lolla-topics-summary categories="5" tags="3"]
-   *
-   * Displays a text / paragraph containing all the category and tag descriptions merged together
-   * @link https://github.com/metamn/log-lolla-pro-dev/issues/15
-   *
-   * @param  Array $attributes The attributes of the shortcode
-   * @return string            HTML
-   */
-  function log_lolla_create_custom_shortcode_topics_summary( $attributes ) {
-    // Default attributes
-    $default_attributes = array(
-      'categories' => 5,
-      'tags' => 5
-    );
-
-    // Parse attributes
-    $attrs = shortcode_atts( $default_attributes, $attributes );
-
-    return log_lolla_display_topics_summary( $attrs['categories'], $attrs['tags'] );
-  }
-
-  add_shortcode( 'log-lolla-topics-summary', 'log_lolla_create_custom_shortcode_topics_summary' );
-}
 
 
 if (! function_exists( 'log_lolla_create_custom_shortcode_person' ) ) {
@@ -86,10 +84,127 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_person' ) ) {
 
     // Display the person
     $person = get_page_by_title( $attrs['name'], OBJECT, 'people');
+
     return log_lolla_display_person( $person, $attrs['name'] );
   }
 
   add_shortcode( 'log-lolla-person', 'log_lolla_create_custom_shortcode_person' );
+}
+
+
+
+if (! function_exists( 'log_lolla_create_custom_shortcode_people' ) ) {
+  /**
+   * Display most popular people
+   *
+   * Usage: [log-lolla-people people="5"]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_people( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+      'people' => 5
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_people_with_post_count( $attrs['people'] );
+  }
+
+  add_shortcode( 'log-lolla-people', 'log_lolla_create_custom_shortcode_people' );
+}
+
+
+
+
+if (! function_exists( 'log_lolla_create_custom_shortcode_topics' ) ) {
+  /**
+   * Display popular topics (categories, tags)
+   *
+   * Usage: [log-lolla-topics categories="5" tags="3"]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_topics( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+      'categories' => 5,
+      'tags' => 5
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_topics_with_sparklines(
+      10,
+      $attr['categories'],
+      $attrs['tags']
+    );
+  }
+
+  add_shortcode( 'log-lolla-topics', 'log_lolla_create_custom_shortcode_topics' );
+}
+
+
+
+
+
+if ( ! function_exists( 'log_lolla_create_custom_shortcode_topics_summary' ) ) {
+  /**
+   * Display topics summary
+   *
+   * Usage: [log-lolla-topics-summary categories="5" tags="3"]
+   *
+   * Displays a text / paragraph containing all the category and tag descriptions merged together
+   *
+   * @link https://github.com/metamn/log-lolla-pro-dev/issues/15
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_topics_summary( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+      'categories' => 5,
+      'tags' => 5
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_topics_summary( $attrs['categories'], $attrs['tags'] );
+  }
+
+  add_shortcode( 'log-lolla-topics-summary', 'log_lolla_create_custom_shortcode_topics_summary' );
+}
+
+
+
+if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
+  /**
+   * Display archives of years and month
+   *
+   * Usage: [log-lolla-archives]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_archives( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    return log_lolla_display_archives_by_year_and_month();
+  }
+
+  add_shortcode( 'log-lolla-archives', 'log_lolla_create_custom_shortcode_archives' );
 }
 
 
