@@ -358,7 +358,7 @@
   public function widget( $args, $instance ) {
     extract( $args );
 
-    $title = apply_filters( 'widget_title', esc_html__( '', 'log-lolla' ) );
+    $title = apply_filters( 'widget_title', '' );
     $content = log_lolla_display_topics_summary(
       $instance['number_of_categories'],
       $instance['number_of_tags']
