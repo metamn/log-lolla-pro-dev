@@ -99,9 +99,11 @@
    */
   public function __construct() {
     parent::__construct(
-      'log_lolla_post_formats_widget', // Base ID
-      'Log Lolla Post Formats', // Name
-      array( 'description' => __( 'Display post formats archive', 'log_lolla' ), ) // Args
+      'log_lolla_post_formats_widget',
+      esc_html__( 'Log Lolla Post Formats', 'log-lolla' ),
+      array(
+        'description' => esc_html__( 'Display post formats archive', 'log_lolla' )
+      )
     );
   }
 
@@ -115,13 +117,14 @@
   public function widget( $args, $instance ) {
     extract( $args );
 
-    $title = apply_filters( 'widget_title', $instance['title'] );
-    $description = apply_filters( 'widget_description', $instance['description'] );
+    $title = apply_filters( 'widget_title', esc_html__( 'Post Formats' ) );
     $content = log_lolla_display_post_formats_with_post_count();
 
-    echo $before_widget;
-    echo log_lolla_display_widget( $title, $description, $content );
-    echo $after_widget;
+    if ( ! empty( $content ) ) {
+      echo $before_widget;
+      echo log_lolla_display_widget( $title, $content );
+      echo $after_widget;
+    }
   }
 
   /**
@@ -131,7 +134,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    //
+    echo '<p>' . esc_html__( 'There are no options to set for this widget', 'log-lolla') . '</p>';
   }
 
   /**
@@ -158,9 +161,12 @@
    */
   public function __construct() {
     parent::__construct(
-      'log_lolla_people_widget', // Base ID
-      'Log Lolla People', // Name
-      array( 'description' => __( 'Display most poular people', 'log_lolla' ), ) // Args
+      'log_lolla_people_widget',
+      esc_html__( 'Log Lolla People', 'log-lolla' ),
+      array(
+        'description' => esc_html__( 'Display most poular people', 'log_lolla' ),
+        'number_of_people' => esc_html__( 'Number of people to display', 'log_lolla' )
+      )
     );
   }
 
@@ -174,13 +180,14 @@
   public function widget( $args, $instance ) {
     extract( $args );
 
-    $title = apply_filters( 'widget_title', $instance['title'] );
-    $description = apply_filters( 'widget_description', $instance['description'] );
-    $content = log_lolla_display_people_with_post_count( 5 );
+    $title = apply_filters( 'widget_title', esc_html__( 'People' ) );
+    $content = log_lolla_display_people_with_post_count( $instance['number_of_people'] );
 
-    echo $before_widget;
-    echo log_lolla_display_widget( $title, $description, $content );
-    echo $after_widget;
+    if ( ! empty( $content ) ) {
+      echo $before_widget;
+      echo log_lolla_display_widget( $title, $content );
+      echo $after_widget;
+    }
   }
 
   /**
@@ -190,7 +197,21 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    //
+    $form = '';
+
+    $form .= '<p>';
+
+    $form .= log_lolla_display_widget_form_label( $this, 'number_of_people' );
+    $form .= log_lolla_display_widget_form_input(
+      $this,
+      'number_of_people',
+      'number',
+      $instance['number_of_people']
+    );
+
+    $form .= '</p>';
+
+    echo $form;
   }
 
   /**
@@ -201,7 +222,11 @@
    * @return [type]               [description]
    */
   public function update( $new_instance, $old_instance ) {
-    // processes widget options to be saved
+    $instance = array();
+
+    $instance['number_of_people'] = ( ! empty( $new_instance['number_of_people'] ) ) ? filter_var( $new_instance['number_of_people'], FILTER_SANITIZE_NUMBER_INT ) : '0';
+
+    return $instance;
   }
  }
  add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_People_Widget' ); } );
