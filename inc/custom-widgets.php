@@ -134,7 +134,7 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    echo '<p>' . esc_html__( 'There are no options to set for this widget', 'log-lolla') . '</p>';
+    echo log_lolla_display_widget_form_no_settings_message();
   }
 
   /**
@@ -242,9 +242,13 @@
    */
   public function __construct() {
     parent::__construct(
-      'log_lolla_topics_widget', // Base ID
-      'Log Lolla Topics', // Name
-      array( 'description' => __( 'Display popular topics (categories, tags)', 'log_lolla' ), ) // Args
+      'log_lolla_topics_widget',
+      esc_html__( 'Log Lolla Topics', 'log-lolla' ),
+      array(
+        'description' => __( 'Display popular topics (categories, tags)', 'log_lolla' ),
+        'number_of_categories' => esc_html__( 'Number of categories to display', 'log_lolla' ),
+        'number_of_tags' => esc_html__( 'Number of tags to display', 'log_lolla' )
+      )
     );
   }
 
@@ -258,13 +262,18 @@
   public function widget( $args, $instance ) {
     extract( $args );
 
-    $title = apply_filters( 'widget_title', $instance['title'] );
-    $description = apply_filters( 'widget_description', $instance['description'] );
-    $content = log_lolla_display_topics_with_sparklines(10, 5, 5);
+    $title = apply_filters( 'widget_title', esc_html__( 'Topics' ) );
+    $content = log_lolla_display_topics_with_sparklines(
+      10,
+      $instance['number_of_categories'],
+      $instance['number_of_tags']
+    );
 
-    echo $before_widget;
-    echo log_lolla_display_widget( $title, $description, $content );
-    echo $after_widget;
+    if ( ! empty( $content ) ) {
+      echo $before_widget;
+      echo log_lolla_display_widget( $title, $content );
+      echo $after_widget;
+    }
   }
 
   /**
@@ -274,7 +283,30 @@
    * @return [type]           [description]
    */
   public function form( $instance ) {
-    //
+    $form = '';
+
+    $form .= '<p>';
+    $form .= log_lolla_display_widget_form_label( $this, 'number_of_categories' );
+    $form .= log_lolla_display_widget_form_input(
+      $this,
+      'number_of_categories',
+      'number',
+      $instance['number_of_categories']
+    );
+    $form .= '</p>';
+
+
+    $form .= '<p>';
+    $form .= log_lolla_display_widget_form_label( $this, 'number_of_tags' );
+    $form .= log_lolla_display_widget_form_input(
+      $this,
+      'number_of_tags',
+      'number',
+      $instance['number_of_tags']
+    );
+    $form .= '</p>';
+
+    echo $form;
   }
 
   /**
@@ -285,7 +317,12 @@
    * @return [type]               [description]
    */
   public function update( $new_instance, $old_instance ) {
-    // processes widget options to be saved
+    $instance = array();
+
+    $instance['number_of_categories'] = ( ! empty( $new_instance['number_of_categories'] ) ) ? filter_var( $new_instance['number_of_categories'], FILTER_SANITIZE_NUMBER_INT ) : '0';
+    $instance['number_of_tags'] = ( ! empty( $new_instance['number_of_tags'] ) ) ? filter_var( $new_instance['number_of_tags'], FILTER_SANITIZE_NUMBER_INT ) : '0';
+
+    return $instance;
   }
  }
  add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Topics_Widget' ); } );
@@ -303,7 +340,7 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
  public function __construct() {
    parent::__construct(
      'log_lolla_archives_widget',
-     'Log Lolla Archives',
+     esc_html__( 'Log Lolla Archives', 'log-lolla'),
      array(
        'description' => __( 'Display archives of years and months', 'log_lolla' )
      )
@@ -320,13 +357,14 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
  public function widget( $args, $instance ) {
    extract( $args );
 
-   $title = apply_filters( 'widget_title', $instance['title'] );
-   $description = apply_filters( 'widget_description', $instance['description'] );
+   $title = apply_filters( 'widget_title', esc_html__( 'Archives', 'log-lolla' ) );
    $content = log_lolla_display_archives_by_year_and_month();
 
-   echo $before_widget;
-   echo log_lolla_display_widget( $title, $description, $content );
-   echo $after_widget;
+   if ( ! empty( $content ) ) {
+     echo $before_widget;
+     echo log_lolla_display_widget( $title, $content );
+     echo $after_widget;
+   }
  }
 
  /**
@@ -336,7 +374,7 @@ class Log_Lolla_Archives_Widget extends WP_Widget {
   * @return [type]           [description]
   */
  public function form( $instance ) {
-   //
+   echo log_lolla_display_widget_form_no_settings_message();
  }
 
  /**
@@ -359,6 +397,20 @@ add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Wi
  * Widget helpers
  */
 
+if ( ! function_exists( 'log_lolla_display_widget_form_no_settings_message' ) ) {
+  /**
+   * Displays a message when there are no ptions to set for a widget
+   * 
+   * @return [type] [description]
+   */
+  function log_lolla_display_widget_form_no_settings_message() {
+    $html = '<p>';
+    $html .= esc_html__( 'There are no options to set for this widget', 'log-lolla');
+    $html .= '</p>';
+
+    return $html;
+  }
+}
 
 if ( ! function_exists( 'log_lolla_display_widget_form_input' ) ) {
   /**
