@@ -20,10 +20,10 @@
   public function __construct() {
     parent::__construct(
       'log_lolla_sources_widget',
-      'Log Lolla Sources',
+      esc_html__( 'Log Lolla Sources', 'log-lolla'),
       array(
-        'description' => __( 'Display sources archive', 'log_lolla' ),
-        'number_of_sources' => __( 'Number of sources to display', 'log_lolla' )
+        'description' => esc_html__( 'Display sources archive', 'log_lolla' ),
+        'number_of_sources' => esc_html__( 'Number of sources to display', 'log_lolla' )
       )
     );
   }
@@ -58,7 +58,12 @@
 
     $form .= '<p>';
     $form .= log_lolla_display_widget_form_label( $this, 'number_of_sources' );
-    $form .= log_lolla_display_widget_form_input( $this, 'number_of_sources', 'number', '5');
+    $form .= log_lolla_display_widget_form_input(
+      $this,
+      'number_of_sources',
+      'number',
+      $instance['number_of_sources']
+    );
     $form .= '</p>';
 
     echo $form;
@@ -345,7 +350,9 @@ if ( ! function_exists( 'log_lolla_display_widget_form_input' ) ) {
     $input_id = esc_attr( $that->get_field_id( $field_id ) );
     $input_name = esc_attr( $that->get_field_name( $field_id ) );
 
-    return '<input id="' . $input_id . '" name="' . $input_name . '" type="' . $input_type . '" value="' . $input_value . '">';
+    $html = '<input id="' . $input_id . '" name="' . $input_name . '" type="' . $input_type . '" value="' . $input_value . '">';
+
+    return $html;
   }
 }
 
