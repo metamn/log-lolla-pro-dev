@@ -8,9 +8,8 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
+
 
 if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
   /**

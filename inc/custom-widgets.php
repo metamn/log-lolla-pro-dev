@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
 
  /**
   * The Sources widget

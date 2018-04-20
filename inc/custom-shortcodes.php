@@ -6,9 +6,6 @@
    *
    * @package Log_Lolla
    */
-?>
-
-<?php
 
 
 if (! function_exists( 'log_lolla_create_custom_shortcode_sources' ) ) {

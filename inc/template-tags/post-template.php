@@ -8,9 +8,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
 
 if (! function_exists( 'log_lolla_sticky_post_text' ) ) {
   /**

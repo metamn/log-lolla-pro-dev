@@ -8,9 +8,6 @@
    *
    * @package Log_Lolla
    */
-?>
-
-<?php
 
 
 if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {

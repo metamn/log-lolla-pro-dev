@@ -8,9 +8,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
 
 if ( ! function_exists( 'log_lolla_display_people_with_post_count' ) ) {
   /**

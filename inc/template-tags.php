@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
 
 require get_template_directory() . '/inc/template-tags/general-template.php';
 require get_template_directory() . '/inc/template-tags/header-template.php';

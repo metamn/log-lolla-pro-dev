@@ -8,9 +8,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
 
 if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
   /**
