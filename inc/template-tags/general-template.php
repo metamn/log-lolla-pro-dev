@@ -10,6 +10,32 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_implode_with_conjunction' ) ) {
+  /**
+   * An `implode()` which adds $conjunction as the last $separator
+   *
+   * Example: ['one', 'two', 'three'], ',', 'and' => one, two and three
+   *
+   * @link https://stackoverflow.com/questions/8586141/implode-array-with-and-add-and-before-last-item
+   *
+   * @param  Array  $array       The array of strings
+   * @param  string $separator   The separator
+   * @param  string $conjunction The conjunction
+   * @return string              The result
+   */
+  function log_lolla_implode_with_conjunction( $array, $separator, $conjunction ) {
+    $last = array_pop( $array );
+
+    if ( $array ) {
+      return implode( $separator, $array ) . ' ' . $conjunction . ' ' . $last;
+    }
+
+    return $last;
+  }
+}
+
+
+
 if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
   /**
    * Convert a string to a classname

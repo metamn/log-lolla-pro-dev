@@ -55,11 +55,24 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     $html .= ' ';
 
     if ( ! empty( $categories_descriptions ) ) {
-      $html .= implode( $separator, $categories_descriptions );
+      if ( ! empty( $tags_descriptions) ) {
+        $html .= implode( $separator, $categories_descriptions );
+      } else {
+        $html .= log_lolla_implode_with_conjunction( $categories_descriptions,  $separator, 'and' );
+      }
+
     }
 
     if ( ! empty( $tags_descriptions ) ) {
-      $html .= implode( $separator, $tags_descriptions );
+      if ( ! empty( $categories_descriptions ) ) {
+        $html .= ', ';
+      }
+
+      if ( count($tags_descriptions) == 1 ) {
+        $html .= 'and ';
+      }
+
+      $html .= log_lolla_implode_with_conjunction( $tags_descriptions,  $separator, 'and' );
     }
 
     $html .= '.</div></aside>';
