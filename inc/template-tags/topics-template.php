@@ -16,13 +16,29 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
    *
    * Displays a text / paragraph containing all the category and tag descriptions merged together
    *
+   * The $number_of_categories and $number_of_tags works like:
+   * - negative: display all ??? bust mostly a random number
+   * - 0: display none
+   *
+   * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
+   *
    * @param  integer $number_of_categories How many categories to show
    * @param  integer $number_of_tags       How many tags to show
    * @return string                        HTML
    */
   function log_lolla_display_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
-    $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
-    $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+    if ( $number_of_categories == 0) {
+      $categories = [];
+    } else {
+      $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
+    }
+
+    if ( $number_of_tags == 0) {
+      $tags = [];
+    } else {
+      $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+    }
+
     if ( empty( $categories ) && empty( $tags ) ) return;
 
     $categories_descriptions = array_filter(
@@ -66,10 +82,10 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     if ( ! empty( $tags_descriptions ) ) {
       if ( ! empty( $categories_descriptions ) ) {
         $html .= ', ';
-      }
 
-      if ( count($tags_descriptions) == 1 ) {
-        $html .= 'and ';
+        if ( count($tags_descriptions) == 1 ) {
+          $html .= 'and ';
+        }
       }
 
       $html .= log_lolla_implode_with_conjunction( $tags_descriptions,  $separator, 'and' );
@@ -292,12 +308,14 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
    /**
     * Get most popular terms by the count of posts they belong to
     *
+    * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
+    *
     * Returns something like:
     *  Array ( [0] => WP_Term Object ( [term_id] => 2 [name] => Emerging [slug] => emerging [term_group] => 0 [term_taxonomy_id] => 2 [taxonomy] => category [description] => [parent] => 0 [count] => 41 [filter] => raw ) [1] => WP_Term Object ( [term_id] => 7 [name] => Wordpress Themes [slug] => wordpress-themes
     *
-    * @param  string $taxonomy The taxonomy id like 'category', 'post_tag'
-    * @param  integer $how_many How many terms to get
-    * @return array           An array of term objects
+    * @param  string  $taxonomy The taxonomy id like 'category', 'post_tag'
+    * @param  integer $how_many How many terms to get. Accepts 0 (all) or any positive number. Default 0 (all)
+    * @return array             An array of term objects
     */
    function log_lolla_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
      return get_terms(
