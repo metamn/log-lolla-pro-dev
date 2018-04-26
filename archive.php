@@ -11,7 +11,8 @@ get_header(); ?>
 
 	<section class="content content-archive">
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
-    <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
+    <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
+		<?php get_template_part( 'template-parts/archive/parts/archive', 'summaries' ); ?>
 
     <?php
 		if ( have_posts() ) : ?>

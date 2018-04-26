@@ -10,6 +10,8 @@
    */
 
 
+
+
 if ( ! function_exists( 'log_lolla_implode_with_conjunction' ) ) {
   /**
    * An `implode()` which adds $conjunction as the last $separator
@@ -53,9 +55,11 @@ if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
   }
 }
 
+
+
 if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
   /**
-   * Clean up the `term-description` Wordpress function
+   * Clean up the `term-description` Wordpress function which:
    * - It wraps the result in `<p>` tags
    * - It contains null strings
    *
