@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section class="content content-archive">
-	  <?php the_archive_title( '<h3 class="archive-title">', '</h3>' ); ?>
+	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php the_archive_description( '<div class="archive-description">', '</div>' ); ?>
 
     <?php

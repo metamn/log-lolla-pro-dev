@@ -6,6 +6,26 @@
  */
 
 
+/**
+ * Remove archive type from archive title
+ *
+ * Example: `Category: News` => `News`
+ *
+ * @param  string $title Archive title with archive type
+ * @return string        Archive title
+ */
+function log_lolla_get_the_archive_title( $title ) {
+  $split = explode( ': ', $title );
+
+  if ($split[1]) {
+    return $split[1];
+  } else {
+    return $title;
+  }
+}
+add_filter( 'get_the_archive_title', 'log_lolla_get_the_archive_title', 10, 1 );
+
+
  /**
   * Add 'continue reading' link text to post content
   *
@@ -43,7 +63,7 @@
 
 	 return $excerpt . $read_more;
  }
- add_filter( 'get_the_excerpt', 'log_lolla_add_readmore_to_excerpt' );
+ add_filter( 'get_the_excerpt', 'log_lolla_add_readmore_to_excerpt', 10, 1 );
 
 
 
@@ -62,7 +82,7 @@ function log_lolla_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'log_lolla_body_classes' );
+add_filter( 'body_class', 'log_lolla_body_classes', 10, 1 );
 
 
 
@@ -74,6 +94,6 @@ function log_lolla_pingback_header() {
 		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
 	}
 }
-add_action( 'wp_head', 'log_lolla_pingback_header' );
+add_action( 'wp_head', 'log_lolla_pingback_header', 10, 1 );
 
 ?>

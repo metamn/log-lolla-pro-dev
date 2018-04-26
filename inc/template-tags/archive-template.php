@@ -10,6 +10,8 @@
    */
 
 
+
+
 if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
   /**
    * Get first post and last post published dates
