@@ -5541,9 +5541,387 @@ html body .widget {
               font-size: 1.777em; } }
       html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
         margin-left: 0.37em; }
+  html body .widget.widget_log_lolla_topics_summary_widget .widget-title {
+    font-size: 1em;
+    margin: 0; }
+  html body .widget.widget_log_lolla_topics_summary_widget .widget-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 1.48em; }
+  html body .widget.widget_log_lolla_topics_summary_widget .widget-body .text p {
+    display: inline; }
 
 html body.archive .footer .footer-navigation ul li.current-menu-item a {
   text-decoration: line-through; }
+
+html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.48em;
+  margin-right: 1.48em; }
+  html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .year {
+    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.333em;
+    line-height: 1.1;
+    min-width: 2.96em; }
+    @media only screen and (min-width: 768px) {
+      html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .year {
+        font-size: 1.777em; } }
+  html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border: 1px solid;
+    padding-left: 0.37em; }
+    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+      margin-right: 0.37em;
+      margin-bottom: 0.37em;
+      box-sizing: border-box; }
+    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+      width: calc(16.66667% - (((6 - 1) * 0.37em) / 6) - 1px); }
+      html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > *:nth-child(6n) {
+        margin-right: 0; }
+    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months .month {
+      min-width: 1.48em; }
+
+html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories,
+html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 1.48em;
+    margin-bottom: 1.48em; }
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-name,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-name,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-name,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-name {
+    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.333em;
+    line-height: 1.1;
+    line-height: 1.8; }
+    @media only screen and (min-width: 768px) {
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-name,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-name,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-name,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-name {
+        font-size: 1.777em; } }
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-sparklines,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-sparklines,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-sparklines,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-sparklines {
+    margin-left: 0.24667em;
+    font-size: 1.333em; }
+    @media only screen and (min-width: 768px) {
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-sparklines,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-sparklines,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-sparklines,
+      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-sparklines {
+        font-size: 1.777em; } }
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-count,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-count,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-count,
+  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-count {
+    color: #000;
+    background-color: #fff;
+    font-size: 0.75em;
+    margin-left: 0.74em; }
+
+html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 1.48em;
+    margin-bottom: 1.48em; }
+    html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__name {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 0;
+        margin-left: 0.37em; }
+      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar,
+      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: auto; }
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link {
+          color: #000;
+          background-color: transparent;
+          text-decoration: underline;
+          will-change: text-decoration;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a:hover, html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a:active,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link:hover,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link:active,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a:hover,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a:active,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link:hover,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link:active {
+            text-decoration: line-through; }
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
+          display: block;
+          width: 100%;
+          height: auto;
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          border: 1px solid;
+          padding: 0; }
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
+        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
+          color: #000;
+          background-color: #fff;
+          font-size: 0.75em;
+          display: inline-block;
+          margin: 0.74em 0;
+          padding: 0.37em 0.74em; }
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link,
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a {
+            color: #000;
+            background-color: #fff;
+            text-decoration: underline;
+            will-change: text-decoration;
+            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            padding: 0 0.37em; }
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link:hover, html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a:active {
+              text-decoration: line-through; }
+      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .person__name {
+        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.333em;
+        line-height: 1.1;
+        line-height: 1.8; }
+        @media only screen and (min-width: 768px) {
+          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .person__name {
+            font-size: 1.777em; } }
+    html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
+      margin-left: 0.37em; }
+
+html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 1.48em;
+    margin-bottom: 1.48em; }
+    html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format .post-format-name {
+      font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+      font-size: 1.333em;
+      line-height: 1.1;
+      line-height: 1.8; }
+      @media only screen and (min-width: 768px) {
+        html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format .post-format-name {
+          font-size: 1.777em; } }
+    html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format .post-count {
+      margin-left: 0.37em; }
+
+html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 1.48em;
+    margin-bottom: 1.48em; }
+    html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__name {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2;
+        margin: 0;
+        margin-left: 0.37em; }
+      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar,
+      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: auto; }
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link {
+          color: #000;
+          background-color: transparent;
+          text-decoration: underline;
+          will-change: text-decoration;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a:hover, html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a:active,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link:hover,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link:active,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a:hover,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a:active,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link:hover,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link:active {
+            text-decoration: line-through; }
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
+          display: block;
+          width: 100%;
+          height: auto;
+          width: auto;
+          height: auto;
+          max-width: 100%;
+          border: 1px solid;
+          padding: 0; }
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
+        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
+          color: #000;
+          background-color: #fff;
+          font-size: 0.75em;
+          display: inline-block;
+          margin: 0.74em 0;
+          padding: 0.37em 0.74em; }
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link,
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a {
+            color: #000;
+            background-color: #fff;
+            text-decoration: underline;
+            will-change: text-decoration;
+            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+            padding: 0 0.37em; }
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link:hover, html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link:active,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a:hover,
+            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a:active {
+              text-decoration: line-through; }
+      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .source__name {
+        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 1.333em;
+        line-height: 1.1;
+        line-height: 1.8; }
+        @media only screen and (min-width: 768px) {
+          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .source__name {
+            font-size: 1.777em; } }
+    html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {
+      margin-left: 0.37em; }
+
+html body.page-template-page-archives .shortcode.shortcode-topics-summary .shortcode-body .text p {
+  display: inline; }
 
 html body.home .header .header-image {
   height: auto; }

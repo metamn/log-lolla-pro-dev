@@ -1,3 +1,25 @@
 @mixin shortcode {
-  // 
+  &.shortcode-archives {
+    @include shortcode-archives;
+  }
+
+  &.shortcode-topics {
+    @include shortcode-topics;
+  }
+
+  &.shortcode-people {
+    @include shortcode-people;
+  }
+
+  &.shortcode-post-formats {
+    @include shortcode-post-formats;
+  }
+
+  &.shortcode-sources {
+    @include shortcode-sources;
+  }
+
+  &.shortcode-topics-summary {
+    @include shortcode-topics-summary;
+  }
 }

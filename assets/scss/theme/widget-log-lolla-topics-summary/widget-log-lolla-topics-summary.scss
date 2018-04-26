@@ -1,5 +1,7 @@
 @mixin widget-log-lolla-topics-summary {
-  p {
-    display: inline;
+  @include widget-log-lolla;
+
+  .widget-body {
+    @include archives-topics-summary;
   }
 }

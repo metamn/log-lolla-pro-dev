@@ -63,8 +63,8 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
 
 
     $html = '<aside class="shortcode shortcode-topics-summary">';
-    $html .= '<h3 hidden>' . esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) . '</h3>';
-    $html .= '<div class="text">';
+    $html .= '<h3 class="shortcode-title" hidden>' . esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) . '</h3>';
+    $html .= '<div class="shortcode-body"><div class="text">';
 
     $html .= esc_html_x( 'This site is about', 'log-lolla-pro' );
     $separator = esc_html_x( ', ', 'log-lolla-pro' );
@@ -91,7 +91,7 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
       $html .= log_lolla_implode_with_conjunction( $tags_descriptions,  $separator, 'and' );
     }
 
-    $html .= '.</div></aside>';
+    $html .= '.</div></div></aside>';
 
     return $html;
   }

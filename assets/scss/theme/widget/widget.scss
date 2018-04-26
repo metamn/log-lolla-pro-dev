@@ -35,4 +35,8 @@
   &.widget_log_lolla_sources_widget {
     @include widget-log-lolla-sources;
   }
+
+  &.widget_log_lolla_topics_summary_widget {
+    @include widget-log-lolla-topics-summary;
+  }
 }

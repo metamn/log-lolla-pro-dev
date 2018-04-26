@@ -1,0 +1,42 @@
+@mixin archives-topics {
+  .categories,
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    .category,
+    .tag {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      margin-right: $lem;
+      margin-bottom: $lem;
+    }
+
+    .category-name,
+    .tag-name {
+      @include text-style(post-title-large);
+      line-height: 1.8;
+    }
+
+    .category-sparklines,
+    .tag-sparklines {
+      margin-left: $lem / 6;
+
+      // replicate text-style(post-title-large)
+      @include scale(large-1);
+
+      @include mobile-and-up {
+        @include scale(large-2);
+      }
+    }
+
+    .category-count,
+    .tag-count {
+      @include text-style(figcaption);
+      margin-left: $lem / 2;
+    }
+
+  }
+}

@@ -2,25 +2,6 @@
   @include widget-log-lolla;
 
   .widget-body {
-    .post-formats {
-      display: flex;
-      flex-wrap: wrap;
-
-      .post-format {
-        display: flex;
-
-        margin-right: $lem;
-        margin-bottom: $lem;
-
-        .post-format-name {
-          @include text-style(post-title-large);
-          line-height: 1.8;
-        }
-
-        .post-count {
-          margin-left: $lem / 4;
-        }
-      }
-    }
+    @include archives-post-formats;
   }
 }

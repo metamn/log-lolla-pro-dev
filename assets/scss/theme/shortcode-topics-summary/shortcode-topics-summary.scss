@@ -1,0 +1,5 @@
+@mixin shortcode-topics-summary {
+  .shortcode-body {
+    @include archives-topics-summary;
+  }
+}

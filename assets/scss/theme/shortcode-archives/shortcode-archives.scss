@@ -1,0 +1,5 @@
+@mixin shortcode-archives {
+  .shortcode-body {
+    @include archives-year-month;
+  }
+}
