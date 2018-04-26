@@ -32,7 +32,7 @@ if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
     ob_start();
     foreach ( $summaries as $post ) {
       setup_postdata( $post );
-      get_template_part( 'template-parts/post/post-format', 'search' );
+      get_template_part( 'template-parts/post/post', 'search' );
     }
     wp_reset_postdata();
     $html .= ob_get_clean();
