@@ -35,15 +35,7 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
   function log_lolla_get_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $posts_for_archive = get_posts(
-      array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'numberposts' => -1,
-        'category_name' => $archive->slug
-      )
-    );
-
+    $posts_for_archive = log_lolla_get_posts_for_topic( $archive );
     if ( empty( $posts_for_archive ) ) return;
 
     $related_topics = [];
@@ -63,6 +55,24 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
     $related_topics = array_unique( $related_topics, SORT_REGULAR );
 
     return log_lolla_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_posts_for_topic' ) ) {
+  function log_lolla_get_posts_for_topic( $topic ) {
+    if ( empty( $topic ) ) return;
+
+    $taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
+
+    return get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+        $taxonomy => $topic->slug
+      )
+    );
   }
 }
 
