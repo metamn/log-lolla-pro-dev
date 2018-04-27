@@ -13,6 +13,7 @@ get_header(); ?>
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
 		<?php get_template_part( 'template-parts/archive/parts/archive', 'summaries' ); ?>
+		<?php get_template_part( 'template-parts/archive/parts/archive', 'standard-posts' ); ?>
 
     <?php
 		if ( have_posts() ) : ?>

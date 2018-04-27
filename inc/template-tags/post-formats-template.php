@@ -11,6 +11,77 @@
 
 
 
+if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
+  function log_lolla_display_standard_posts_for_archive( $archive ) {
+    if ( empty( $archive ) ) return;
+
+    $standard_posts = log_lolla_get_standard_posts_for_archive( $archive );
+    if ( empty( $standard_posts ) ) return;
+
+    $html = '<section class="standard-posts">';
+    $html .= '<h3 class="standard-posts-title">';
+    $html .= esc_html_x( 'Standard posts', 'log-lolla' );
+    $html .= '</h3>';
+
+    global $post;
+    ob_start();
+    foreach ( $standard_posts as $post ) {
+      setup_postdata( $post );
+      get_template_part( 'template-parts/post/post', 'search' );
+    }
+    wp_reset_postdata();
+    $html .= ob_get_clean();
+
+    $html .= '</section>';
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_standard_posts_for_archive' ) ) {
+  function log_lolla_get_standard_posts_for_archive( $archive ) {
+    if ( empty( $archive ) ) return;
+
+    return get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+        'category_name' => $archive->slug,
+        'tax_query' => array(
+          array(
+            'taxonomy' => 'post_format',
+            'field' => 'slug',
+            'terms' => array(
+              'post-format-aside',
+              'post-format-audio',
+              'post-format-chat',
+              'post-format-gallery',
+              'post-format-image',
+              'post-format-link',
+              'post-format-quote',
+              'post-format-status',
+              'post-format-video',
+              'aside',
+              'audio',
+              'chat',
+              'gallery',
+              'image',
+              'link',
+              'quote',
+              'status',
+              'video',
+            ),
+            'operator' => 'NOT IN'
+          )
+        )
+      )
+    );
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
   /**
    * Display post formats with post count
