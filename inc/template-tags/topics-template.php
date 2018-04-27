@@ -47,6 +47,7 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
     if ( empty( $posts_for_archive ) ) return;
 
     $related_topics = [];
+
     foreach ( $posts_for_archive as $post ) {
       $related_topics[] = wp_get_object_terms( $post->ID,  'category' );
       $related_topics[] = wp_get_object_terms( $post->ID,  'post_tag' );
@@ -54,16 +55,7 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
 
     $related_topics = log_lolla_array_flatten( array_unique( $related_topics ) );
 
-    print_r(
-      array_filter(
-        $related_topics,
-        function ( $topic ) {
-          return ( $topic->term_id !== $archive->term_id );
-        }
-      )
-    );
-
-    return log_lolla_remove_object_from_array( $related_topics, $archive );
+    return log_lolla_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
   }
 }
 

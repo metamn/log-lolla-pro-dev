@@ -10,6 +10,27 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_remove_object_from_array_by_key' ) ) {
+ /**
+  * Remove object from an array by key
+  *
+  * @link https://secure.php.net/manual/en/function.array-search.php
+  *
+  * @param  array   $array  [description]
+  * @param  [type]  $value  [description]
+  * @param  boolean $strict [description]
+  * @return [type]          [description]
+  */
+ function log_lolla_remove_object_from_array_by_key( array $array, $value, $key ) {
+   if ( ( $index = array_search( $value, array_column( $array, $key ) ) ) !== FALSE ) {
+     unset( $array[$index] );
+   }
+
+   return $array;
+ }
+}
+
+
 if ( ! function_exists( 'log_lolla_remove_object_from_array' ) ) {
   /**
    * Remove object from an array
