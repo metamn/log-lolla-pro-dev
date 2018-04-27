@@ -12,6 +12,12 @@
 
 
 if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
+  /**
+   * Display standard posts belonging to an archive
+   *
+   * @param  object $archive The archive object
+   * @return string          HTML
+   */
   function log_lolla_display_standard_posts_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
@@ -40,6 +46,15 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
 
 
 if ( ! function_exists( 'log_lolla_get_standard_posts_for_archive' ) ) {
+  /**
+   * Get standard posts for an archive
+   *
+   * Standard posts are tricky and buggy
+   * - Standard posts = all posts - non standard posts
+   *
+   * @param  object $archive The archive object
+   * @return array           The posts
+   */
   function log_lolla_get_standard_posts_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 

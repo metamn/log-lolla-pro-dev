@@ -10,6 +10,64 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
+  function log_lolla_display_related_topics_for_archive( $archive ) {
+    if ( empty( $archive ) ) return;
+
+    $related_topics = log_lolla_get_related_topics_for_archive( $archive );
+    if ( empty( $related_topics ) ) return;
+
+    $html = '';
+
+    ob_start();
+    foreach ( $related_topics as $term ) {
+      set_query_var( 'term', $term );
+      get_template_part( 'template-parts/term/term', '' );
+    }
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
+  function log_lolla_get_related_topics_for_archive( $archive ) {
+    if ( empty( $archive ) ) return;
+
+    $posts_for_archive = get_posts(
+      array(
+        'post_type' => 'post',
+        'post_status' => 'publish',
+        'numberposts' => -1,
+        'category_name' => $archive->slug
+      )
+    );
+
+    if ( empty( $posts_for_archive ) ) return;
+
+    $related_topics = [];
+    foreach ( $posts_for_archive as $post ) {
+      $related_topics[] = wp_get_object_terms( $post->ID,  'category' );
+      $related_topics[] = wp_get_object_terms( $post->ID,  'post_tag' );
+    }
+
+    $related_topics = log_lolla_array_flatten( array_unique( $related_topics ) );
+
+    print_r(
+      array_filter(
+        $related_topics,
+        function ( $topic ) {
+          return ( $topic->term_id !== $archive->term_id );
+        }
+      )
+    );
+
+    return log_lolla_remove_object_from_array( $related_topics, $archive );
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
   /**
    * Display topics summary

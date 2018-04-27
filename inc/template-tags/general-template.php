@@ -10,6 +10,51 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_remove_object_from_array' ) ) {
+  /**
+   * Remove object from an array
+   *
+   * @link http://stackoverflow.com/questions/3573313/php-remove-object-from-array
+   *
+   * @param  array   $array  [description]
+   * @param  [type]  $value  [description]
+   * @param  boolean $strict [description]
+   * @return [type]          [description]
+   */
+  function log_lolla_remove_object_from_array( array $array, $value, $strict = TRUE ) {
+    if ( ( $key = array_search( $value, $array, $strict ) ) !== FALSE ) {
+      unset( $array[$key] );
+    }
+
+    return array_values( $array );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_array_unique_objects' ) ) {
+  function log_lolla_uniquecol( $obj ) {
+    static $idlist = array();
+
+    if ( in_array( $obj->ID, $idlist ) )
+      return false;
+
+    $idlist[] = $obj->ID;
+    return true;
+  }
+
+  function log_lolla_array_unique_objects( $array ) {
+    $unique = array_filter($array, 'log_lolla_uniquecol');
+    return $unique;
+  }
+}
+
+if ( ! function_exists( 'log_lolla_array_flatten' ) ) {
+  function log_lolla_array_flatten( array $array ) {
+    $flattened_array = array();
+    array_walk_recursive($array, function($a) use (&$flattened_array) { $flattened_array[] = $a; });
+    return $flattened_array;
+  }
+}
 
 
 if ( ! function_exists( 'log_lolla_implode_with_conjunction' ) ) {
