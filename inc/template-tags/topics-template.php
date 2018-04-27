@@ -49,11 +49,18 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
     $related_topics = [];
 
     foreach ( $posts_for_archive as $post ) {
-      $related_topics[] = wp_get_object_terms( $post->ID,  'category' );
-      $related_topics[] = wp_get_object_terms( $post->ID,  'post_tag' );
+      $categories = get_the_terms( $post->ID,  'category' );
+      if (! is_wp_error( $categories ) && ! empty( $categories ) ) {
+        $related_topics = array_merge( $related_topics, $categories );
+      }
+
+      $tags = get_the_terms( $post->ID,  'post_tag' );
+      if (! is_wp_error( $tags ) && ! empty( $tags ) ) {
+        $related_topics = array_merge( $related_topics, $tags );
+      }
     }
 
-    $related_topics = log_lolla_array_flatten( array_unique( $related_topics ) );
+    $related_topics = array_unique( $related_topics, SORT_REGULAR );
 
     return log_lolla_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
   }
