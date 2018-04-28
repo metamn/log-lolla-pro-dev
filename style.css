@@ -1592,8 +1592,7 @@ html {
           visibility: hidden; }
           @media only screen and (orientation: portrait) {
             html body .content.content-home .post .post__sidebar aside {
-              border: 1px solid;
-              padding: 0.625em; } }
+              border: 1px solid; } }
 
 @media only screen and (orientation: landscape) and (min-width: 1025px) {
   html body .content.content-home .post .post__sidebar aside {
@@ -1601,8 +1600,7 @@ html {
     height: 1.25em; } }
           @media only screen and (orientation: landscape) {
             html body .content.content-home .post .post__sidebar--left aside {
-              border: 1px solid;
-              padding: 0; } }
+              border: 1px solid; } }
           @media only screen and (orientation: landscape) {
             html body .content.content-home .post .post__sidebar--right aside {
               word-wrap: break-word;
