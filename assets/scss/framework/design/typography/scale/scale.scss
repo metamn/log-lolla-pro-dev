@@ -9,7 +9,14 @@
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
 
-$lem: 1.48em;
+// Basic typography settings
+$lem: 1.25em;
+$line-height: 1.5;
+$line-height-larger: 1.8;
+$letter-spacing: 1.25px;
+
+
+// Theme specific settings
 $top: $lem * 2;
 $left: $lem * 2;
 $top-mobile: $lem;
@@ -22,39 +29,33 @@ $left-mobile: $lem;
   // The default font size and line height
   @if ($variant == 'default') {
     font-size: 100%;
-    line-height: 1.8;
-
-    @include tablet {
-      font-size: 120%;
-    }
-
-    @include laptop {
-      font-size: 140%;
-    }
-
-    @include desktop {
-      font-size: 160%;
-    }
+    line-height: $line-height;
   }
 
   // Smaller than default font size with 1 scale
   @if ($variant == 'small-1') {
-    font-size: 0.75em;
+    font-size: 0.8em;
+  }
+
+  // Larger according to the browser's scale
+  @if ($variant == 'larger') {
+    font-size: larger;
+    line-height: $line-height-larger;
   }
 
   // Larger than default font size with 1 scale
   @if ($variant == 'large-1') {
-    font-size: 1.333em;
+    font-size: 1.25em;
   }
 
   // Larger than default font size with 2 scalse
   @if ($variant == 'large-2') {
-    font-size: 1.777em;
+    font-size: 1.563em;
   }
 
   // Larger than default font size with 3 scales
   @if ($variant == 'large-3') {
-    font-size: 2.369em;
+    font-size: 1.953em;
   }
 
   // Larger than default font size with 4 scales

@@ -1,7 +1,5 @@
 @mixin blockquote--large {
-  @include scale(large-1);
-
-  cite {
-    @include scale(small-1);
+  blockquote {
+    @include text-style(larger);
   }
 }

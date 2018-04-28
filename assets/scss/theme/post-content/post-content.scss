@@ -1,6 +1,5 @@
 @mixin post-content {
   .text {
-    @include text-style(body-text);
     @include text-style(body-text-post);
     max-width: $text-block-width;
 

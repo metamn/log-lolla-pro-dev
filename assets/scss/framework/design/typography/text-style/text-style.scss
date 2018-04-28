@@ -13,13 +13,41 @@ $text-block-width: $lem * 30;
 
 // The text mixin
 @mixin text-style($variant) {
+
   // Default
-  // - The basic settings for a text.
+  // - The basic settings for the site
   @if ($variant == 'default') {
     @include scale(default);
     @include font(default);
     @include colors(default);
-    letter-spacing: 1.48px;
+    letter-spacing: $letter-spacing;
+  }
+
+
+  // Body text
+  // - Settings for text blocks.
+  @if ($variant == 'body-text') {
+    @include p;
+    max-width: 30em;
+
+    @include tablet {
+      @include scale(large-1);
+    }
+
+    @include laptop {
+      @include scale(large-2);
+    }
+
+    @include desktop {
+      @include scale(large-3);
+    }
+  }
+
+
+  // Body text large
+  // - Settings for larger text inside a text block
+  @if ($variant == 'larger') {
+    @include scale(larger);
   }
 
   // Site title
@@ -27,6 +55,8 @@ $text-block-width: $lem * 30;
   @if ($variant == 'site-title') {
     @include font(site-title);
   }
+
+
 
   // Title
   // - Title
@@ -38,11 +68,6 @@ $text-block-width: $lem * 30;
   // h1h6
   @if ($variant == 'h1h6') {
     @include font(bold);
-    @include scale(large-1);
-
-    @include mobile-and-up {
-      @include scale(large-2);
-    }
 
     line-height: 1.1;
     margin: $lem 0 $lem / 4;
@@ -52,11 +77,7 @@ $text-block-width: $lem * 30;
   // Post title large
   @if ($variant == 'post-title-large') {
     @include font(bold);
-    @include scale(large-1);
 
-    @include mobile-and-up {
-      @include scale(large-2);
-    }
 
     line-height: 1.1;
   }
@@ -65,17 +86,12 @@ $text-block-width: $lem * 30;
   // Post content large
   @if ($variant == 'post-content-large') {
     @include font(default);
-
-    @include mobile-and-up {
-      // @include scale(large-1);
-    }
   }
 
 
   // Post Format Link
   @if ($variant == 'post-format-link') {
     @include font(default);
-    @include scale(large-1);
   }
 
 
@@ -103,13 +119,6 @@ $text-block-width: $lem * 30;
   @if ($variant == 'figcaption') {
     @include colors(default);
     @include scale(small-1);
-  }
-
-
-  // Body text
-  // - Settings for text blocks.
-  @if ($variant == 'body-text') {
-    @include p;
   }
 
 
