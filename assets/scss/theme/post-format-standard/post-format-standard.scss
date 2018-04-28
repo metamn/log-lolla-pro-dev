@@ -12,7 +12,6 @@
     // Styling attachments post formats
     // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
     .post-content {
-      @include post-content--large;
       .attachment {
         img {
           @include border(normal, all);

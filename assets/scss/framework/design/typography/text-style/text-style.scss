@@ -24,7 +24,7 @@
     }
 
     @include laptop {
-      @include scale(large-2);
+      @include scale(large-1);
     }
 
     @include desktop {

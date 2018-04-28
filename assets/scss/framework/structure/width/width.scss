@@ -1,11 +1,19 @@
 @mixin width {
   width: 100%;
-  
+
   @include mobile {
     max-width: calc(100% - #{$left-mobile * 2});
   }
 
-  @include mobile-and-up {
+  @include tablet {
+    max-width: calc(100% - #{$left * 2});
+  }
+
+  @include laptop {
+    max-width: $text-block-width;
+  }
+
+  @include desktop {
     max-width: $text-block-width;
   }
 }

@@ -708,7 +708,7 @@ html {
         font-size: 1.25em; } }
     @media only screen and (min-width: 1025px) and (max-width: 1600px) {
       html body {
-        font-size: 1.563em; } }
+        font-size: 1.25em; } }
     @media only screen and (min-width: 1600.1px) {
       html body {
         font-size: 1.563em; } }
@@ -784,7 +784,13 @@ html {
       @media only screen and (max-width: 767.9px) {
         html body .header {
           max-width: calc(100% - 2.5em); } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html body .header {
+          max-width: calc(100% - 5em); } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .header {
+          max-width: 37.5em; } }
+      @media only screen and (min-width: 1600.1px) {
         html body .header {
           max-width: 37.5em; } }
       @media only screen and (max-width: 767.9px) {
@@ -1306,7 +1312,13 @@ html {
       @media only screen and (max-width: 767.9px) {
         html body .header-menu {
           max-width: calc(100% - 2.5em); } }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html body .header-menu {
+          max-width: calc(100% - 5em); } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .header-menu {
+          max-width: 37.5em; } }
+      @media only screen and (min-width: 1600.1px) {
         html body .header-menu {
           max-width: 37.5em; } }
       @media only screen and (max-width: 767.9px) {
@@ -1484,7 +1496,13 @@ html {
   @media only screen and (orientation: portrait) and (max-width: 767.9px) {
     html body .content.content-home .post {
       max-width: calc(100% - 2.5em); } }
-  @media only screen and (orientation: portrait) and (min-width: 768px) {
+  @media only screen and (orientation: portrait) and (min-width: 768px) and (max-width: 1024px) {
+    html body .content.content-home .post {
+      max-width: calc(100% - 5em); } }
+  @media only screen and (orientation: portrait) and (min-width: 1025px) and (max-width: 1600px) {
+    html body .content.content-home .post {
+      max-width: 37.5em; } }
+  @media only screen and (orientation: portrait) and (min-width: 1600.1px) {
     html body .content.content-home .post {
       max-width: 37.5em; } }
         @media only screen and (orientation: portrait) {
@@ -1516,7 +1534,13 @@ html {
     @media only screen and (orientation: landscape) and (max-width: 767.9px) {
       html body .content.content-home .post .post__content {
         max-width: calc(100% - 2.5em); } }
-    @media only screen and (orientation: landscape) and (min-width: 768px) {
+    @media only screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1024px) {
+      html body .content.content-home .post .post__content {
+        max-width: calc(100% - 5em); } }
+    @media only screen and (orientation: landscape) and (min-width: 1025px) and (max-width: 1600px) {
+      html body .content.content-home .post .post__content {
+        max-width: 37.5em; } }
+    @media only screen and (orientation: landscape) and (min-width: 1600.1px) {
       html body .content.content-home .post .post__content {
         max-width: 37.5em; } }
         @media only screen and (orientation: landscape) {
@@ -2422,7 +2446,13 @@ html {
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post .post-paginated-content {
               max-width: calc(100% - 2.5em); } }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            html body .content.content-home .post .post-paginated-content {
+              max-width: calc(100% - 5em); } }
+          @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+            html body .content.content-home .post .post-paginated-content {
+              max-width: 37.5em; } }
+          @media only screen and (min-width: 1600.1px) {
             html body .content.content-home .post .post-paginated-content {
               max-width: 37.5em; } }
           html body .content.content-home .post .post-paginated-content .text {
@@ -3099,9 +3129,6 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-home .post.post-format-standard .post__content .post-featured-image {
             margin-bottom: 2.5em; } }
-        html body .content.content-home .post.post-format-standard .post__content .post-content .text {
-          font-size: larger;
-          line-height: 1.8; }
         html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
           border: 1px solid; }
           @media only screen and (max-width: 767.9px) {
@@ -4297,7 +4324,13 @@ html {
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post {
             max-width: calc(100% - 2.5em); } }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-page .post {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-page .post {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
           html body .content.content-page .post {
             max-width: 37.5em; } }
         html body .content.content-page .post .post__content {
@@ -4321,7 +4354,13 @@ html {
           @media only screen and (max-width: 767.9px) {
             html body .content.content-page .post.display-horizontal {
               max-width: calc(100% - 2.5em); } }
-          @media only screen and (min-width: 768px) {
+          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            html body .content.content-page .post.display-horizontal {
+              max-width: calc(100% - 5em); } }
+          @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+            html body .content.content-page .post.display-horizontal {
+              max-width: 37.5em; } }
+          @media only screen and (min-width: 1600.1px) {
             html body .content.content-page .post.display-horizontal {
               max-width: 37.5em; } }
           html body .content.content-page .post.display-horizontal .post__content {
