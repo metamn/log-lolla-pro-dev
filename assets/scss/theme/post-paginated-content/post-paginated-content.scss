@@ -1,7 +1,5 @@
 @mixin post-paginated-content {
-  width: 100%;
-  margin: $lem 0;
-  max-width: $text-block-width;
+  @include width;
 
   .text {
     display: flex;
@@ -9,12 +7,6 @@
 
     .page-links-title {
       margin-right: $lem / 2;
-    }
-
-    .page-links {
-      a {
-        @include link;
-      }
     }
   }
 }

@@ -6,7 +6,7 @@
 
     .post-content {
       .text {
-        margin-top: $lem;
+        @include margin(yes, no, no, no);
 
         display: flex;
         flex-direction: column;
@@ -22,7 +22,7 @@
           // TODO: On large text quotes the top-right border is missing
           transform: translateX($lem / 2) skew(5deg);
           max-width: 70%;
-          padding: $lem;
+          @include padding;
 
           &:nth-child(even) {
             align-self: flex-end;

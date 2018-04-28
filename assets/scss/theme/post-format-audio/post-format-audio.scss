@@ -1,7 +1,7 @@
 @mixin post-format-audio {
   .post__content {
     .post-content {
-      margin-top: $lem;
+      @include margin(yes, no, no, no);
 
       .mejs-horizontal-volume-slider {
         @include colors(inverted);

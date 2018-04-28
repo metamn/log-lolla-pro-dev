@@ -5,7 +5,7 @@
     }
 
     .post-gallery {
-      padding: $lem;
+      @include padding;
 
       .gallery {
         @include post-content-gallery;

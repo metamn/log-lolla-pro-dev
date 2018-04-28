@@ -5,11 +5,10 @@
     }
 
     .post-first-image {
-      @include figure;
-      @include image;
-
-      figcaption {
-        display: none !important;
+      figure {
+        @include figure;
+        @include figure--with-border;
+        @include figure--without-figcaption;
       }
     }
   }

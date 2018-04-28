@@ -1,6 +1,11 @@
 @mixin content {
   width: 100%;
 
+  a,
+  .link {
+    @include link;
+  }
+
   .navigation {
     @include navigation;
   }

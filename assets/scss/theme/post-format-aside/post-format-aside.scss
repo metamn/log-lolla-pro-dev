@@ -13,12 +13,10 @@
         @include border(normal, all);
         @include scale(large-1);
         @include colors(inverted);
-
-        padding: $top $left;
+        @include padding;
 
         @include mobile {
           @include scale(default);
-          padding: $lem;
         }
 
         a {

@@ -2,12 +2,11 @@
   .figure,
   figure {
     @include border(normal, all);
-    padding: $lem;
-    margin: $lem 0;
+    @include padding;
+    @include margin(yes, no, yes, no);
     background: transparent;
 
     @include mobile {
-      margin: $lem;
       padding: 0;
     }
 

@@ -1,9 +1,3 @@
 @mixin post-permalink {
-  padding: $lem;
-
-  .link,
-  a {
-    @include link;
-    padding: 0 $lem; // for the custom cursor ....
-  }
+  @include padding(no, no, yes, no);
 }

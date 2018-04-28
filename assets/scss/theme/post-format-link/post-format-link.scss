@@ -8,7 +8,6 @@
       width: 100%;
 
       .link {
-        @include text-style(post-format-link);
         display: flex;
         align-items: center;
         justify-content: space-between;

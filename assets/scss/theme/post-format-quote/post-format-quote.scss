@@ -11,14 +11,13 @@
     .post-content {
       @include background-pattern--dotted;
       padding: 0;
-
       order: 1;
 
       .text {
         @include colors(default);
         @include border(thin, all);
-        padding: $top $left;
-        margin: $top $left;
+        @include padding;
+        @include margin;
         transform: translateX(-$left) skew(5deg);
 
         blockquote,

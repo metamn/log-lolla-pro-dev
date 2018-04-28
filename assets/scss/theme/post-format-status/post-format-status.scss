@@ -5,8 +5,8 @@
 
     .post-content {
       @include border(normal, all);
+      @include padding(no, no, yes, no);
       width: 100%;
-      padding-bottom: $lem * 2;
     }
 
     .post-author-linking-to-post {
@@ -18,12 +18,7 @@
       }
 
       .byline {
-        padding-top: $lem;
-
-        a,
-        .link {
-          @include link;
-        }
+        @include padding(yes, no, no, no);
       }
     }
   }

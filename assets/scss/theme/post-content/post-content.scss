@@ -1,7 +1,6 @@
 @mixin post-content {
   .text {
     @include text-style(body-text-post);
-    max-width: $text-block-width;
 
     // to clear floats for an <img> inside
     // - https://www.quirksmode.org/css/clearing.html
