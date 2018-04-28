@@ -3,18 +3,16 @@
   flex-direction: column;
   align-items: center;
 
-  padding-top: 0;
-  max-width: calc(#{$text-block-width + $left * 2});
-
-  > * {
-    width: 100%;
-  }
-
   .post-single {
     @include post-single;
   }
 
   .post-footer {
     @include post-footer;
+  }
+
+  #comments,
+  .comments-area {
+    @include comments;
   }
 }

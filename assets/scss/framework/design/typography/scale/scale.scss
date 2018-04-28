@@ -10,17 +10,24 @@
 // - $lem is used for spacing elements on the webpage like margins and padding
 
 // Basic typography settings
+//
 $lem: 1.25em;
+
 $line-height: 1.5;
 $line-height-larger: 1.8;
+
 $letter-spacing: 1.25px;
+$letter-spacing-larger: 1.5px;
 
 
-// Theme specific settings
+// Spacing
+//
 $top: $lem * 2;
 $left: $lem * 2;
 $top-mobile: $lem;
 $left-mobile: $lem;
+$text-block-width: $lem * 30;
+
 
 
 // Different typographic scales
@@ -56,10 +63,5 @@ $left-mobile: $lem;
   // Larger than default font size with 3 scales
   @if ($variant == 'large-3') {
     font-size: 1.953em;
-  }
-
-  // Larger than default font size with 4 scales
-  @if ($variant == 'large-4') {
-    font-size: 3.157em;
   }
 }

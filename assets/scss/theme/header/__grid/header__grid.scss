@@ -1,4 +1,6 @@
 @mixin header__grid {
+  @include width;
+  @include padding(yes, no, yes, no);
   display: flex;
 
   &.without-header-menu {

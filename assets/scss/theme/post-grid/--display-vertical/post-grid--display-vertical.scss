@@ -1,4 +1,6 @@
 @mixin post-grid--display-vertical {
+  @include width;
+  
   display: flex;
   flex-direction: column;
 

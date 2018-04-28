@@ -1,0 +1,44 @@
+@mixin padding($t: yes, $r: yes, $b: yes, $l: yes) {
+  @if ($t == 'yes') {
+    @include mobile {
+      padding-top: $top-mobile;
+    }
+
+    @include mobile-and-up {
+      padding-top: $top;
+    }
+  }
+
+
+  @if ($b == 'yes') {
+    @include mobile {
+      padding-bottom: $top-mobile;
+    }
+
+    @include mobile-and-up {
+      padding-bottom: $top;
+    }
+  }
+
+
+  @if ($l == 'yes') {
+    @include mobile {
+      padding-left: $left-mobile;
+    }
+
+    @include mobile-and-up {
+      padding-left: $left;
+    }
+  }
+
+
+  @if ($r == 'yes') {
+    @include mobile {
+      padding-right: $left-mobile;
+    }
+
+    @include mobile-and-up {
+      padding-right: $left;
+    }
+  }
+}

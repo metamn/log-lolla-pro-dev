@@ -1,24 +1,17 @@
 @include html-css-reset;
 
 html {
+  @include grid-reset;
+  
   body {
     @include typography-reset;
     @include form-reset;
     @include form;
-    @include grid-reset;
     @include text-style(default);
 
     @include cursor('brutalist_line_SVGicon_cursor1-64x64');
     @include cursor--hover('a', 'brutalist_line_SVGicon_cursor2-64x64', -10, 0);
 
-    .header,
-    .header-menu,
-    .content,
-    .sidebar,
-    .footer {
-      @include text-style(body-text);
-      max-width: auto;
-    }
 
     .header {
       @include header;

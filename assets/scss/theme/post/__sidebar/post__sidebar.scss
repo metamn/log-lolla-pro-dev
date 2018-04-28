@@ -1,9 +1,4 @@
 @mixin post__sidebar {
-  a,
-  .link {
-    @include link;
-  }
-
   @include portrait {
     @include post__sidebar--bordered($lem / 2);
   }

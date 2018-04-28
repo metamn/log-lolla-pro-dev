@@ -1,14 +1,5 @@
 @mixin content {
-  padding: $lem;
-
-  .post {
-    @include post;
-  }
-
-  #comments,
-  .comments-area {
-    @include comments;
-  }
+  width: 100%;
 
   .navigation {
     @include navigation;

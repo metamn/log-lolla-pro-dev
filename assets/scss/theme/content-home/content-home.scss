@@ -4,18 +4,10 @@
   align-items: center;
 
   .post {
-    .post-permalink {
-      align-self: center;
-    }
+    @include post;
 
-    &.format-standard.without-excerpt {
-      // This ain't gonna work ... breaks the 'under construction' post
-      // @include post--display-vertical;
+    + .post {
+      @include margin(yes, no, no, no);
     }
-  }
-
-  .posts-navigation {
-    width: 100%;
-    max-width: calc(#{$text-block-width - $left * 2});
   }
 }

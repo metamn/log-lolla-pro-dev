@@ -1,0 +1,44 @@
+@mixin margin($t: yes, $r: yes, $b: yes, $l: yes) {
+  @if ($t == 'yes') {
+    @include mobile {
+      margin-top: $top-mobile;
+    }
+
+    @include mobile-and-up {
+      margin-top: $top;
+    }
+  }
+
+
+  @if ($b == 'yes') {
+    @include mobile {
+      margin-bottom: $top-mobile;
+    }
+
+    @include mobile-and-up {
+      margin-bottom: $top;
+    }
+  }
+
+
+  @if ($l == 'yes') {
+    @include mobile {
+      margin-left: $left-mobile;
+    }
+
+    @include mobile-and-up {
+      margin-left: $left;
+    }
+  }
+
+
+  @if ($r == 'yes') {
+    @include mobile {
+      margin-right: $left-mobile;
+    }
+
+    @include mobile-and-up {
+      margin-right: $left;
+    }
+  }
+}

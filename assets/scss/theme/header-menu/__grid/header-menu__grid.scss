@@ -1,4 +1,7 @@
 @mixin header-menu__grid {
+  @include width;
+  @include padding;
+
   .widget + .widget {
     margin-top: $lem;
   }

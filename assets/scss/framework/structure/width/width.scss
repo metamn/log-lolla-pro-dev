@@ -1,0 +1,11 @@
+@mixin width {
+  width: 100%;
+  
+  @include mobile {
+    max-width: calc(100% - #{$left-mobile * 2});
+  }
+
+  @include mobile-and-up {
+    max-width: $text-block-width;
+  }
+}

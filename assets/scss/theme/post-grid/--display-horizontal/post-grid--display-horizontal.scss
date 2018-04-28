@@ -1,11 +1,13 @@
 @mixin post-grid--display-horizontal {
+  width: 100%;
+  
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
 
   .post__content {
-    width: calc(#{$text-block-width - $left * 2});
+    @include width;
   }
 
   .post__sidebar {

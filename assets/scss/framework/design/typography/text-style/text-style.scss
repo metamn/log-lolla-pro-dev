@@ -7,10 +7,6 @@
 // Styleguide text-style
 
 
-// The width of a text block
-$text-block-width: $lem * 30;
-
-
 // The text mixin
 @mixin text-style($variant) {
 
@@ -20,15 +16,8 @@ $text-block-width: $lem * 30;
     @include scale(default);
     @include font(default);
     @include colors(default);
+
     letter-spacing: $letter-spacing;
-  }
-
-
-  // Body text
-  // - Settings for text blocks.
-  @if ($variant == 'body-text') {
-    @include p;
-    max-width: 30em;
 
     @include tablet {
       @include scale(large-1);
@@ -39,8 +28,16 @@ $text-block-width: $lem * 30;
     }
 
     @include desktop {
-      @include scale(large-3);
+      @include scale(large-2);
     }
+  }
+
+
+  // Body text
+  // - Settings for text blocks.
+  @if ($variant == 'body-text') {
+    @include p;
+    max-width: $text-block-width;
   }
 
 
@@ -50,6 +47,7 @@ $text-block-width: $lem * 30;
     @include scale(larger);
   }
 
+
   // Site title
   // - The title of the site
   @if ($variant == 'site-title') {
@@ -57,52 +55,28 @@ $text-block-width: $lem * 30;
   }
 
 
-
   // Title
-  // - Title
+  // - The title of an article
   @if ($variant == 'title') {
     @include font(default);
     @include word-wrap;
   }
 
-  // h1h6
+
+  // H1 - H6
   @if ($variant == 'h1h6') {
     @include font(bold);
-
-    line-height: 1.1;
-    margin: $lem 0 $lem / 4;
+    @include scale(large-1);
   }
 
 
-  // Post title large
-  @if ($variant == 'post-title-large') {
-    @include font(bold);
-
-
-    line-height: 1.1;
-  }
-
-
-  // Post content large
-  @if ($variant == 'post-content-large') {
-    @include font(default);
-  }
-
-
-  // Post Format Link
-  @if ($variant == 'post-format-link') {
-    @include font(default);
-  }
-
-
-  // Post Sticky
-  // Button, action
+  // Sticky text
+  // - it's
   @if ($variant == 'sticky') {
     @include scale(small-1);
-    letter-spacing: $lem / 2;
-    padding-left: $lem / 2;
+    @include word-wrap;
     text-transform: uppercase;
-    word-wrap: break-word;
+    letter-spacing: $letter-spacing-larger;
   }
 
 
@@ -110,7 +84,7 @@ $text-block-width: $lem * 30;
   @if ($variant == 'action') {
     @include scale(small-1);
     text-transform: uppercase;
-    letter-spacing: 1.25px;
+    letter-spacing: $letter-spacing-larger
   }
 
 

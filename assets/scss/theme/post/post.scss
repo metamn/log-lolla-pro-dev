@@ -1,5 +1,4 @@
 @mixin post {
-  @include colors(default);
   @include post-grid;
 
   .post__content {

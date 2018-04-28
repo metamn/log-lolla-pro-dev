@@ -13,6 +13,6 @@
   .post-content,
   .post-paginated-content,
   .post-footer {
-    padding: $lem;
+    @include padding;
   }
 }
