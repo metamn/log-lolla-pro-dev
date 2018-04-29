@@ -1,0 +1,22 @@
+@mixin post--home {
+  .post__content {
+    @include post__content;
+  }
+
+  .post__sidebar {
+    @include post__sidebar;
+    @include post__sidebar--hidden;
+  }
+
+  .post--clicked {
+    @include post--clicked;
+  }
+
+  @include portrait {
+    @include post__grid--display-vertical;
+  }
+
+  @include landscape {
+    @include post__grid--display-horizontal;
+  }
+}

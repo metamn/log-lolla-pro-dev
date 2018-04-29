@@ -5,6 +5,7 @@
 
   .post {
     @include post;
+    @include post--home;
 
     + .post {
       @include margin(yes, no, no, no);

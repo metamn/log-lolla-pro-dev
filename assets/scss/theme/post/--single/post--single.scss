@@ -1,0 +1,20 @@
+@mixin post--single {
+  @include post__grid--display-vertical;
+
+  @include padding;
+  @include border(normal, all);
+
+  .post-title {
+    @include post-title--large;
+    @include margin(no, no, yes, no);
+  }
+
+  figure {
+    @include figure--with-border;
+    @include figure--with-figcaption;
+  }
+
+  .post-content {
+    @include post-content--large;
+  }
+}

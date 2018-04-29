@@ -5,15 +5,16 @@
 
   @include width;
 
-  .post-single,
+  .post,
   .post-footer,
   #comments,
   .comments-area {
     width: 100%;
   }
 
-  .post-single {
-    @include post-single;
+  .post {
+    @include post;
+    @include post--single;
   }
 
   .post-footer {
