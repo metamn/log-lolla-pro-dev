@@ -1,6 +1,6 @@
 @mixin footer {
-  @include colors(default);
-  padding: $lem;
+  @include width;
+  @include padding(yes, no, yes, no);
 
   .footer-copyright {
     @include footer-copyright;

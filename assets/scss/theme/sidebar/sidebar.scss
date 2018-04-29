@@ -1,4 +1,19 @@
 @mixin sidebar {
   @include background-pattern--horizontal-lines;
-  @include sidebar__grid;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+  @include padding(yes, no, yes, no);
+
+  .widget {
+    width: 100%;
+    max-width: $text-block-width;
+
+    + .widget {
+      @include margin(yes, no, no, no);
+    }
+  }
 }

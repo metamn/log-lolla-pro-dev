@@ -7,16 +7,10 @@
       display: flex;
       align-items: center;
 
-      margin-right: $lem;
-      margin-bottom: $lem;
+      @include margin(no, yes, yes, no);
 
       .source {
         @include person;
-
-        .source__name {
-          @include text-style(post-title-large);
-          line-height: 1.8;
-        }
       }
 
       .post-count {

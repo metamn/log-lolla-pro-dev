@@ -6,13 +6,7 @@
     .post-format {
       display: flex;
 
-      margin-right: $lem;
-      margin-bottom: $lem;
-
-      .post-format-name {
-        @include text-style(post-title-large);
-        line-height: 1.8;
-      }
+      @include margin(no, yes, yes, no);
 
       .post-count {
         margin-left: $lem / 4;

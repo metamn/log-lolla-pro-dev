@@ -1,8 +1,6 @@
 @mixin widget-log-lolla-archives {
   @include widget-log-lolla;
 
-  padding-bottom: 0;
-
   .widget-body {
     @include archives-year-month;
   }

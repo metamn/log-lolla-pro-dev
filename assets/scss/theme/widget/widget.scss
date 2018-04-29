@@ -1,8 +1,12 @@
 @mixin widget {
   @include colors(default);
   @include border(normal, all);
-  @include text-style(body-text-post);
-  padding: $lem;
+  @include padding;
+
+  a,
+  .link {
+    @include link;
+  }
 
   &.widget_tag_cloud {
     @include widget-tag-cloud;

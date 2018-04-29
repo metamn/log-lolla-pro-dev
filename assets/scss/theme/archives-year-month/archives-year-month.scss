@@ -3,23 +3,18 @@
     display: flex;
     align-items: center;
 
-    margin-bottom: $lem;
-    margin-right: $lem;
+    @include margin(no, yes, yes, no);
 
-    .year {
-      @include text-style(post-title-large);
+    .year,
+    .month {
       min-width: $lem * 2; // Do not break 2018 into 210 and 8
     }
 
     .months {
-      @include grid(6, $lem / 4, $lem / 4, $grid-title:false, $iepx: 1px);
+      @include grid(6, 0px, 0px, $grid-title:false, $iepx: 1px);
 
       @include border(normal, all);
-      padding-left: $lem / 4;
-
-      .month {
-        min-width: $lem; // Do not break 12 into 1 and 2
-      }
+      padding: $lem / 4;
     }
   }
 }

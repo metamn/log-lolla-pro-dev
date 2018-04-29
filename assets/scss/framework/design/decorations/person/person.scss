@@ -1,4 +1,4 @@
-@mixin person {
+@mixin person($avatar-width: $left) {
   display: flex;
   align-items: center;
 
@@ -11,6 +11,6 @@
   &__avatar,
   .figure {
     @include figure;
-    width: auto;
+    width: $avatar-width;
   }
 }
