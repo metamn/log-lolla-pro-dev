@@ -40,7 +40,7 @@ if ( ! function_exists( 'log_lolla_get_post_first_image_url' ) ) {
   $first_img = isset( $matches[1][0] ) ? $matches[1][0] : null;
 
  	if ( empty( $first_img ) ) {
- 		return get_template_directory_uri() . '/assets/images/empty.png'; // path to default image.
+ 		return get_template_directory_uri() . '/assets/images/image-not-found.png'; // path to default image.
  	}
 
 	return $first_img;
