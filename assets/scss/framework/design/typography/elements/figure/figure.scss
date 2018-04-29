@@ -5,7 +5,7 @@
 
   img {
     @include image;
-    @include image--stretch;
+    @include image--do-not-stretch;
   }
 
   figcaption,
