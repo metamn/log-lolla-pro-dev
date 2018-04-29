@@ -6,5 +6,7 @@
   h5,
   h6 {
     @include text-style(h1h6);
+    @include margin(yes, no, yes, no);
+    line-height: $line-height-smaller;
   }
 }

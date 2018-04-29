@@ -14,7 +14,14 @@
     @include figure--with-figcaption;
   }
 
+  .post-featured-image {
+    + .post-content {
+      @include margin(yes, no, no, no);
+    }
+  }
+
   .post-content {
     @include post-content--large;
+    @include text-style(body-text-post);
   }
 }
