@@ -11,4 +11,8 @@
       @include margin(yes, no, no, no);
     }
   }
+
+  .navigation {
+    @include width;
+  }
 }

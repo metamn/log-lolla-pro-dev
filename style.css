@@ -3293,7 +3293,7 @@ html {
             html body .content.content-home .post .post__sidebar--right aside {
               word-wrap: break-word;
               height: 1.25em; } }
-        html body .content.content-home .post .post--clicked .post__sidebar {
+        html body .content.content-home .post.post--clicked .post__sidebar {
           visibility: visible; }
         @media only screen and (orientation: portrait) {
           html body .content.content-home .post {
@@ -3367,6 +3367,20 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-home .post + .post {
             margin-top: 2.5em; } }
+        html body .content.content-home .navigation {
+          width: 100%; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .navigation {
+              max-width: calc(100% - 2.5em); } }
+          @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            html body .content.content-home .navigation {
+              max-width: calc(100% - 5em); } }
+          @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+            html body .content.content-home .navigation {
+              max-width: 37.5em; } }
+          @media only screen and (min-width: 1600.1px) {
+            html body .content.content-home .navigation {
+              max-width: 37.5em; } }
       html body .content.content-archive .archive-title,
       html body .content.content-archive .archive-description {
         margin-bottom: 1.25em; }
@@ -3430,11 +3444,19 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-single {
             max-width: 37.5em; } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-single {
+            max-width: calc(42.5em); } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-single {
+            max-width: calc(42.5em); } }
         html body .content.content-single .post,
         html body .content.content-single .post-footer,
+        html body .content.content-single .navigation,
         html body .content.content-single #comments,
         html body .content.content-single .comments-area {
-          width: 100%; }
+          width: 100%;
+          max-width: none !important; }
         html body .content.content-single .post {
           width: 100%;
           display: -webkit-box;

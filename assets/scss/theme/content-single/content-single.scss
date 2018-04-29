@@ -4,12 +4,15 @@
   align-items: center;
 
   @include width;
+  @include width--larger;
 
   .post,
   .post-footer,
+  .navigation,
   #comments,
   .comments-area {
     width: 100%;
+    max-width: none !important;
   }
 
   .post {
