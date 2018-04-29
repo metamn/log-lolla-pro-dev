@@ -1,5 +1,6 @@
 @mixin figure--without-figcaption {
   .figcaption,
+  .wp-caption-text,
   figcaption {
     display: none;
   }

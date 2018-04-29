@@ -11,9 +11,7 @@
         @include post-content-gallery;
 
         figure {
-          figcaption {
-            display: none;
-          }
+          @include figure--without-figcaption;
         }
       }
     }

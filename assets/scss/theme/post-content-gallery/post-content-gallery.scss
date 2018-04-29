@@ -15,20 +15,8 @@
   }
 
   figure {
-    @include border(normal, all);
-    background: transparent;
-    padding: 0;
-    overflow: hidden;
-
-    @include image;
-    img {
-      // fill the grid cell
-      width: 100%;
-    }
-
-    a {
-      width: 100%;
-    }
+    @include figure;
+    @include figure--with-border;
 
     .gallery-icon {
       line-height: 0;

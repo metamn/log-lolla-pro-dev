@@ -1,13 +1,12 @@
 @mixin cite {
   cite,
   .cite {
-    @include font(default);
-
     display: block;
-    padding-top: $lem / 2;
-    margin-top: $lem / 2;
+
+    @include font(default);
     @include border(normal, top);
-    border-top-style: dashed;
+    @include margin(yes, no, no, no);
+    @include padding(yes, no, no, no);
 
     &:before {
       content: 'by';

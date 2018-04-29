@@ -1,28 +1,21 @@
 @mixin post-format-aside {
   .post__content {
-    @include portrait {
-      @include post__content--display-vertical;
-    }
-
-    @include landscape {
-      @include post__content--display-horizontal;
-    }
+    display: flex;
+    flex-direction: column;
 
     .post-content {
       .text {
-        @include border(normal, all);
-        @include scale(large-1);
         @include colors(inverted);
         @include padding;
 
-        @include mobile {
-          @include scale(default);
-        }
-
-        a {
-          @include link($color-scheme: inverted);
+        @include mobile-and-up {
+          @include text-style(larger);
         }
       }
+    }
+
+    .post-permalink {
+      align-self: center;
     }
   }
 }

@@ -2,17 +2,17 @@
   blockquote,
   .blockquote {
     @include border(normal, left);
-    padding: $lem;
+    @include padding;
   }
 
   q,
   .q {
     @include border(normal, left);
-    padding: 0 $lem;
+    @include padding(no, yes, no, yes);
   }
 
   blockquote + cite,
   blockquote + p {
-    margin-top: $lem;
+    @include margin(yes, no, no, no);
   }
 }

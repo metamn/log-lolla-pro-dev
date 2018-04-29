@@ -933,15 +933,66 @@ html {
             margin-top: 1.25em; }
         html body .header-menu .widget blockquote,
         html body .header-menu .widget .blockquote {
-          border-left: 1px solid;
-          padding: 1.25em; }
+          border-left: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget blockquote,
+            html body .header-menu .widget .blockquote {
+              padding-right: 2.5em; } }
         html body .header-menu .widget q,
         html body .header-menu .widget .q {
-          border-left: 1px solid;
-          padding: 0 1.25em; }
-        html body .header-menu .widget blockquote + cite,
-        html body .header-menu .widget blockquote + p {
-          margin-top: 1.25em; }
+          border-left: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget q,
+            html body .header-menu .widget .q {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget q,
+            html body .header-menu .widget .q {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget q,
+            html body .header-menu .widget .q {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget q,
+            html body .header-menu .widget .q {
+              padding-right: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .header-menu .widget blockquote + cite,
+          html body .header-menu .widget blockquote + p {
+            margin-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .header-menu .widget blockquote + cite,
+          html body .header-menu .widget blockquote + p {
+            margin-top: 2.5em; } }
         html body .header-menu .widget img,
         html body .header-menu .widget .img {
           max-width: 100%;
@@ -1212,14 +1263,27 @@ html {
           font-size: 0.8em; }
         html body .header-menu .widget cite,
         html body .header-menu .widget .cite {
+          display: block;
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
-          display: block;
-          padding-top: 0.625em;
-          margin-top: 0.625em;
-          border-top: 1px solid;
-          border-top-style: dashed; }
+          border-top: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget cite,
+            html body .header-menu .widget .cite {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget cite,
+            html body .header-menu .widget .cite {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .header-menu .widget cite,
+            html body .header-menu .widget .cite {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .header-menu .widget cite,
+            html body .header-menu .widget .cite {
+              padding-top: 2.5em; } }
           html body .header-menu .widget cite:before,
           html body .header-menu .widget .cite:before {
             content: 'by';
@@ -1687,6 +1751,7 @@ html {
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-home .post .post-featured-image figure .figcaption,
+          html body .content.content-home .post .post-featured-image figure .wp-caption-text,
           html body .content.content-home .post .post-featured-image figure figcaption {
             display: none; }
         html body .content.content-home .post .post-excerpt .text {
@@ -1843,15 +1908,66 @@ html {
               margin-top: 1.25em; }
           html body .content.content-home .post .post-content .text blockquote,
           html body .content.content-home .post .post-content .text .blockquote {
-            border-left: 1px solid;
-            padding: 1.25em; }
+            border-left: 1px solid; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-right: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text blockquote,
+              html body .content.content-home .post .post-content .text .blockquote {
+                padding-right: 2.5em; } }
           html body .content.content-home .post .post-content .text q,
           html body .content.content-home .post .post-content .text .q {
-            border-left: 1px solid;
-            padding: 0 1.25em; }
-          html body .content.content-home .post .post-content .text blockquote + cite,
-          html body .content.content-home .post .post-content .text blockquote + p {
-            margin-top: 1.25em; }
+            border-left: 1px solid; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text q,
+              html body .content.content-home .post .post-content .text .q {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text q,
+              html body .content.content-home .post .post-content .text .q {
+                padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text q,
+              html body .content.content-home .post .post-content .text .q {
+                padding-right: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text q,
+              html body .content.content-home .post .post-content .text .q {
+                padding-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text blockquote + cite,
+            html body .content.content-home .post .post-content .text blockquote + p {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text blockquote + cite,
+            html body .content.content-home .post .post-content .text blockquote + p {
+              margin-top: 2.5em; } }
           html body .content.content-home .post .post-content .text img,
           html body .content.content-home .post .post-content .text .img {
             max-width: 100%;
@@ -2122,14 +2238,27 @@ html {
             font-size: 0.8em; }
           html body .content.content-home .post .post-content .text cite,
           html body .content.content-home .post .post-content .text .cite {
+            display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
-            display: block;
-            padding-top: 0.625em;
-            margin-top: 0.625em;
-            border-top: 1px solid;
-            border-top-style: dashed; }
+            border-top: 1px solid; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text cite,
+              html body .content.content-home .post .post-content .text .cite {
+                margin-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text cite,
+              html body .content.content-home .post .post-content .text .cite {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text cite,
+              html body .content.content-home .post .post-content .text .cite {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text cite,
+              html body .content.content-home .post .post-content .text .cite {
+                padding-top: 2.5em; } }
             html body .content.content-home .post .post-content .text cite:before,
             html body .content.content-home .post .post-content .text .cite:before {
               content: 'by';
@@ -2333,15 +2462,26 @@ html {
               html body .content.content-home .post .post-content .text .gallery.gallery-columns-9 > *:nth-child(9n) {
                 margin-right: 0; }
           html body .content.content-home .post .post-content .text .gallery figure {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
             border: 1px solid;
-            background: transparent;
-            padding: 0;
-            overflow: hidden;
-            display: block; }
+            padding: 1.25em; }
             html body .content.content-home .post .post-content .text .gallery figure img {
-              width: 100%; }
-            html body .content.content-home .post .post-content .text .gallery figure a {
-              width: 100%; }
+              display: block;
+              width: 100%;
+              height: auto; }
+            html body .content.content-home .post .post-content .text .gallery figure figcaption,
+            html body .content.content-home .post .post-content .text .gallery figure .wp-caption-text {
+              color: #000;
+              background-color: #fff;
+              font-size: 0.8em;
+              display: inline-block; }
             html body .content.content-home .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
           html body .content.content-home .post .post-content .text .more-link {
@@ -2556,6 +2696,7 @@ html {
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure .figcaption,
+          html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption {
             display: none; }
         @media only screen and (min-width: 768px) {
@@ -2754,17 +2895,30 @@ html {
             html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery.gallery-columns-9 > *:nth-child(9n) {
               margin-right: 0; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
           border: 1px solid;
-          background: transparent;
-          padding: 0;
-          overflow: hidden;
-          display: block; }
+          padding: 1.25em; }
           html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure img {
-            width: 100%; }
-          html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure a {
-            width: 100%; }
+            display: block;
+            width: 100%;
+            height: auto; }
+          html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
+          html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
+            color: #000;
+            background-color: #fff;
+            font-size: 0.8em;
+            display: inline-block; }
           html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
+        html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .figcaption,
+        html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text,
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption {
           display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -2779,65 +2933,49 @@ html {
         @media only screen and (max-width: 767.9px) {
           html body .content.content-home .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
-        @media only screen and (orientation: portrait) {
-          html body .content.content-home .post.post-format-aside .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        @media only screen and (orientation: landscape) {
-          html body .content.content-home .post.post-format-aside .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: row;
-                    flex-direction: row; } }
-        html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-          border: 1px solid;
-          font-size: 1.25em;
-          color: #fff;
-          background-color: #000; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-top: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-bottom: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              padding-right: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              font-size: 100%;
-              line-height: 1.5; } }
-          html body .content.content-home .post.post-format-aside .post__content .post-content .text a {
+        html body .content.content-home .post.post-format-aside .post__content {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          html body .content.content-home .post.post-format-aside .post__content .post-content .text {
             color: #fff;
-            background-color: #000;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-            html body .content.content-home .post.post-format-aside .post__content .post-content .text a:hover, html body .content.content-home .post.post-format-aside .post__content .post-content .text a:active {
-              text-decoration: line-through; }
+            background-color: #000; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-right: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                padding-right: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-aside .post__content .post-content .text {
+                font-size: larger;
+                line-height: 1.8; } }
+          html body .content.content-home .post.post-format-aside .post__content .post-permalink {
+            -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+                align-self: center; }
         html body .content.content-home .post.post-format-status .post__content {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
@@ -3578,19 +3716,96 @@ html {
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
-                    border-left: 1px solid;
-                    padding: 1.25em; }
+                    border-left: 1px solid; }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-top: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-top: 2.5em; } }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-bottom: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-bottom: 2.5em; } }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-left: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-left: 2.5em; } }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-right: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .blockquote {
+                        padding-right: 2.5em; } }
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content q,
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content .q,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content q,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .q {
-                    border-left: 1px solid;
-                    padding: 0 1.25em; }
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + cite,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + p,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + cite,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + p {
-                    margin-top: 1.25em; }
+                    border-left: 1px solid; }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .q {
+                        padding-left: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .q {
+                        padding-left: 2.5em; } }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .q {
+                        padding-right: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content q,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .q {
+                        padding-right: 2.5em; } }
+                  @media only screen and (max-width: 767.9px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + cite,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + p,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + cite,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + p {
+                      margin-top: 1.25em; } }
+                  @media only screen and (min-width: 768px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + cite,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote + p,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + cite,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote + p {
+                      margin-top: 2.5em; } }
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content img,
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content .img,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content img,
@@ -4058,14 +4273,35 @@ html {
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite,
                   html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .cite {
+                    display: block;
                     font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal;
-                    display: block;
-                    padding-top: 0.625em;
-                    margin-top: 0.625em;
-                    border-top: 1px solid;
-                    border-top-style: dashed; }
+                    border-top: 1px solid; }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .cite {
+                        margin-top: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .cite {
+                        margin-top: 2.5em; } }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .cite {
+                        padding-top: 1.25em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .cite {
+                        padding-top: 2.5em; } }
                     html body .content.content-single #comments .comment-list li .comment-body .comment-content cite:before,
                     html body .content.content-single #comments .comment-list li .comment-body .comment-content .cite:before,
                     html body .content.content-single .comments-area .comment-list li .comment-body .comment-content cite:before,
@@ -4489,15 +4725,66 @@ html body .widget {
       margin-top: 1.25em; }
   html body .widget blockquote,
   html body .widget .blockquote {
-    border-left: 1px solid;
-    padding: 1.25em; }
+    border-left: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-top: 2.5em; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-bottom: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-bottom: 2.5em; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-left: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-left: 2.5em; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-right: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget blockquote,
+      html body .widget .blockquote {
+        padding-right: 2.5em; } }
   html body .widget q,
   html body .widget .q {
-    border-left: 1px solid;
-    padding: 0 1.25em; }
-  html body .widget blockquote + cite,
-  html body .widget blockquote + p {
-    margin-top: 1.25em; }
+    border-left: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget q,
+      html body .widget .q {
+        padding-left: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget q,
+      html body .widget .q {
+        padding-left: 2.5em; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget q,
+      html body .widget .q {
+        padding-right: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget q,
+      html body .widget .q {
+        padding-right: 2.5em; } }
+  @media only screen and (max-width: 767.9px) {
+    html body .widget blockquote + cite,
+    html body .widget blockquote + p {
+      margin-top: 1.25em; } }
+  @media only screen and (min-width: 768px) {
+    html body .widget blockquote + cite,
+    html body .widget blockquote + p {
+      margin-top: 2.5em; } }
   html body .widget img,
   html body .widget .img {
     max-width: 100%;
@@ -4768,14 +5055,27 @@ html body .widget {
     font-size: 0.8em; }
   html body .widget cite,
   html body .widget .cite {
+    display: block;
     font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: normal;
     font-style: normal;
-    display: block;
-    padding-top: 0.625em;
-    margin-top: 0.625em;
-    border-top: 1px solid;
-    border-top-style: dashed; }
+    border-top: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget cite,
+      html body .widget .cite {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget cite,
+      html body .widget .cite {
+        margin-top: 2.5em; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget cite,
+      html body .widget .cite {
+        padding-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget cite,
+      html body .widget .cite {
+        padding-top: 2.5em; } }
     html body .widget cite:before,
     html body .widget .cite:before {
       content: 'by';
