@@ -127,7 +127,7 @@ if ( ! function_exists( 'log_lolla_post_class' ) ) {
    */
    function log_lolla_post_class() {
      // Changing the post grid based on how long a post & it's excerpt is
-     $max_word_count = 50;
+     $max_word_count = 40;
 
      $post_word_count = log_lolla_word_count( strip_tags( get_the_content() ) );
      $grid = ( $post_word_count < $max_word_count ) ? ' display-horizontal' : ' display-vertical';

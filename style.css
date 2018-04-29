@@ -1675,55 +1675,17 @@ html {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
-                  flex-direction: column;
-          border: 1px solid;
-          padding: 1.25em; }
-          html body .content.content-home .post .post-featured-image figure a,
-          html body .content.content-home .post .post-featured-image figure .link {
-            color: #000;
-            background-color: transparent;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-            html body .content.content-home .post .post-featured-image figure a:hover, html body .content.content-home .post .post-featured-image figure a:active,
-            html body .content.content-home .post .post-featured-image figure .link:hover,
-            html body .content.content-home .post .post-featured-image figure .link:active {
-              text-decoration: line-through; }
+                  flex-direction: column; }
           html body .content.content-home .post .post-featured-image figure img {
             display: block;
             width: 100%;
-            height: auto;
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            border: 1px solid;
-            padding: 0; }
+            height: auto; }
           html body .content.content-home .post .post-featured-image figure figcaption,
           html body .content.content-home .post .post-featured-image figure .wp-caption-text {
             color: #000;
             background-color: #fff;
             font-size: 0.8em;
-            display: inline-block;
-            margin: 0.625em 0;
-            padding: 0.3125em 0.625em; }
-            html body .content.content-home .post .post-featured-image figure figcaption .link,
-            html body .content.content-home .post .post-featured-image figure figcaption a,
-            html body .content.content-home .post .post-featured-image figure .wp-caption-text .link,
-            html body .content.content-home .post .post-featured-image figure .wp-caption-text a {
-              color: #000;
-              background-color: #fff;
-              text-decoration: underline;
-              will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              padding: 0 0.3125em; }
-              html body .content.content-home .post .post-featured-image figure figcaption .link:hover, html body .content.content-home .post .post-featured-image figure figcaption .link:active,
-              html body .content.content-home .post .post-featured-image figure figcaption a:hover,
-              html body .content.content-home .post .post-featured-image figure figcaption a:active,
-              html body .content.content-home .post .post-featured-image figure .wp-caption-text .link:hover,
-              html body .content.content-home .post .post-featured-image figure .wp-caption-text .link:active,
-              html body .content.content-home .post .post-featured-image figure .wp-caption-text a:hover,
-              html body .content.content-home .post .post-featured-image figure .wp-caption-text a:active {
-                text-decoration: line-through; }
+            display: inline-block; }
           html body .content.content-home .post .post-featured-image figure .figcaption,
           html body .content.content-home .post .post-featured-image figure figcaption {
             display: none; }
@@ -2375,9 +2337,7 @@ html {
             background: transparent;
             padding: 0;
             overflow: hidden;
-            display: block;
-            width: 100%;
-            height: auto; }
+            display: block; }
             html body .content.content-home .post .post-content .text .gallery figure img {
               width: 100%; }
             html body .content.content-home .post .post-content .text .gallery figure a {
@@ -2439,6 +2399,32 @@ html {
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+          html body .content.content-home .post .post-content .text .attachment img {
+            border: 1px solid; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-right: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text .attachment img {
+                padding-right: 2.5em; } }
           html body .content.content-home .post .post-content .text .wp-embedded-content + p {
             margin-top: 0; }
         html body .content.content-home .post .post-paginated-content {
@@ -2558,54 +2544,17 @@ html {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
-          border: 1px solid;
-          padding: 1.25em; }
-          html body .content.content-home .post.post-format-image .post__content .post-first-image figure a,
-          html body .content.content-home .post.post-format-image .post__content .post-first-image figure .link {
-            color: #000;
-            background-color: transparent;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure a:hover, html body .content.content-home .post.post-format-image .post__content .post-first-image figure a:active,
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure .link:hover,
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure .link:active {
-              text-decoration: line-through; }
+          border-top: 1px solid; }
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure img {
             display: block;
             width: 100%;
-            height: auto;
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            border: 1px solid;
-            padding: 0; }
+            height: auto; }
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: #000;
             background-color: #fff;
             font-size: 0.8em;
-            display: inline-block;
-            margin: 0.625em 0;
-            padding: 0.3125em 0.625em; }
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption .link,
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption a,
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text .link,
-            html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text a {
-              color: #000;
-              background-color: #fff;
-              text-decoration: underline;
-              will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              padding: 0 0.3125em; }
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption .link:hover, html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption .link:active,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption a:hover,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption a:active,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text .link:hover,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text .link:active,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text a:hover,
-              html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text a:active {
-                text-decoration: line-through; }
+            display: inline-block; }
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption {
             display: none; }
@@ -2809,9 +2758,7 @@ html {
           background: transparent;
           padding: 0;
           overflow: hidden;
-          display: block;
-          width: 100%;
-          height: auto; }
+          display: block; }
           html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure img {
             width: 100%; }
           html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure a {
@@ -3117,44 +3064,6 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-home .post.post-format-standard .post__content .post-featured-image {
-            margin-top: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-home .post.post-format-standard .post__content .post-featured-image {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-home .post.post-format-standard .post__content .post-featured-image {
-            margin-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-home .post.post-format-standard .post__content .post-featured-image {
-            margin-bottom: 2.5em; } }
-        html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-          border: 1px solid; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-top: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-bottom: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-standard .post__content .post-content .attachment img {
-              padding-right: 2.5em; } }
         @media only screen and (min-width: 768px) {
           html body .content.content-home .post.post-format-standard.display-horizontal .post__content {
             display: -webkit-box;
@@ -3173,6 +3082,77 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-home .post.post-format-standard .post-featured-image {
+            border-top: 1px solid;
+            border-bottom: 1px solid; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-home .post.post-format-standard.display-horizontal.has-thumbnail .post-featured-image {
+            margin: 2.5em 1.25em; }
+            html body .content.content-home .post.post-format-standard.display-horizontal.has-thumbnail .post-featured-image figure {
+              border: 1px solid;
+              padding: 1.25em;
+              padding: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 767.9px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-top: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-top: 2.5em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 767.9px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-bottom: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-bottom: 2.5em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 767.9px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-left: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-left: 2.5em; } }
+
+@media only screen and (min-width: 768px) and (max-width: 767.9px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-right: 1.25em; } }
+
+@media only screen and (min-width: 768px) and (min-width: 768px) {
+  html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image {
+    margin-right: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+            border: 1px solid;
+            padding: 1.25em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-top: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-top: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-bottom: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-bottom: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-left: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-left: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-right: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content.content-home .post.post-format-standard.display-vertical.has-thumbnail .post-featured-image figure {
+      padding-right: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-home .post + .post {
             margin-top: 1.25em; } }
@@ -3269,52 +3249,16 @@ html {
               padding: 0;
               background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
               padding: 1.25em; }
-              html body .content.content-single .post-single .post-content figure a,
-              html body .content.content-single .post-single .post-content figure .link {
-                color: #000;
-                background-color: transparent;
-                text-decoration: underline;
-                will-change: text-decoration;
-                transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-                html body .content.content-single .post-single .post-content figure a:hover, html body .content.content-single .post-single .post-content figure a:active,
-                html body .content.content-single .post-single .post-content figure .link:hover,
-                html body .content.content-single .post-single .post-content figure .link:active {
-                  text-decoration: line-through; }
               html body .content.content-single .post-single .post-content figure img {
                 display: block;
                 width: 100%;
-                height: auto;
-                width: auto;
-                height: auto;
-                max-width: 100%;
-                border: 1px solid;
-                padding: 0; }
+                height: auto; }
               html body .content.content-single .post-single .post-content figure figcaption,
               html body .content.content-single .post-single .post-content figure .wp-caption-text {
                 color: #000;
                 background-color: #fff;
                 font-size: 0.8em;
-                display: inline-block;
-                margin: 0.625em 0;
-                padding: 0.3125em 0.625em; }
-                html body .content.content-single .post-single .post-content figure figcaption .link,
-                html body .content.content-single .post-single .post-content figure figcaption a,
-                html body .content.content-single .post-single .post-content figure .wp-caption-text .link,
-                html body .content.content-single .post-single .post-content figure .wp-caption-text a {
-                  color: #000;
-                  background-color: #fff;
-                  text-decoration: underline;
-                  will-change: text-decoration;
-                  transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                  padding: 0 0.3125em; }
-                  html body .content.content-single .post-single .post-content figure figcaption .link:hover, html body .content.content-single .post-single .post-content figure figcaption .link:active,
-                  html body .content.content-single .post-single .post-content figure figcaption a:hover,
-                  html body .content.content-single .post-single .post-content figure figcaption a:active,
-                  html body .content.content-single .post-single .post-content figure .wp-caption-text .link:hover,
-                  html body .content.content-single .post-single .post-content figure .wp-caption-text .link:active,
-                  html body .content.content-single .post-single .post-content figure .wp-caption-text a:hover,
-                  html body .content.content-single .post-single .post-content figure .wp-caption-text a:active {
-                    text-decoration: line-through; }
+                display: inline-block; }
               html body .content.content-single .post-single .post-content figure .figcaption,
               html body .content.content-single .post-single .post-content figure figcaption {
                 display: inline-block; }
@@ -5033,33 +4977,11 @@ html body .widget {
                 -ms-flex-direction: column;
                     flex-direction: column;
             width: auto; }
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a,
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link,
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a,
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link {
-              color: #000;
-              background-color: transparent;
-              text-decoration: underline;
-              will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a:hover, html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar a:active,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link:hover,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .link:active,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a:hover,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure a:active,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link:hover,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .link:active {
-                text-decoration: line-through; }
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar img,
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure img {
               display: block;
               width: 100%;
-              height: auto;
-              width: auto;
-              height: auto;
-              max-width: 100%;
-              border: 1px solid;
-              padding: 0; }
+              height: auto; }
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption,
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text,
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
@@ -5067,39 +4989,7 @@ html body .widget {
               color: #000;
               background-color: #fff;
               font-size: 0.8em;
-              display: inline-block;
-              margin: 0.625em 0;
-              padding: 0.3125em 0.625em; }
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a {
-                color: #000;
-                background-color: #fff;
-                text-decoration: underline;
-                will-change: text-decoration;
-                transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                padding: 0 0.3125em; }
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link:hover, html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption .link:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption a:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text .link:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text a:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption .link:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption a:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text .link:active,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a:hover,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text a:active {
-                  text-decoration: line-through; }
+              display: inline-block; }
           html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .person__name {
             line-height: 1.8; }
         html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
@@ -5179,33 +5069,11 @@ html body .widget {
               -ms-flex-direction: column;
                   flex-direction: column;
           width: auto; }
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a,
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link,
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a,
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link {
-            color: #000;
-            background-color: transparent;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a:hover, html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar a:active,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link:hover,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .link:active,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a:hover,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure a:active,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link:hover,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .link:active {
-              text-decoration: line-through; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar img,
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure img {
             display: block;
             width: 100%;
-            height: auto;
-            width: auto;
-            height: auto;
-            max-width: 100%;
-            border: 1px solid;
-            padding: 0; }
+            height: auto; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption,
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text,
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
@@ -5213,39 +5081,7 @@ html body .widget {
             color: #000;
             background-color: #fff;
             font-size: 0.8em;
-            display: inline-block;
-            margin: 0.625em 0;
-            padding: 0.3125em 0.625em; }
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a {
-              color: #000;
-              background-color: #fff;
-              text-decoration: underline;
-              will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              padding: 0 0.3125em; }
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link:hover, html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption .link:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption a:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text .link:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text a:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption .link:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption a:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text .link:active,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a:hover,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text a:active {
-                text-decoration: line-through; }
+            display: inline-block; }
         html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .source__name {
           line-height: 1.8; }
       html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
@@ -5386,33 +5222,11 @@ html body.page-template-page-archives .shortcode.shortcode-people .shortcode-bod
             -ms-flex-direction: column;
                 flex-direction: column;
         width: auto; }
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link {
-          color: #000;
-          background-color: transparent;
-          text-decoration: underline;
-          will-change: text-decoration;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a:hover, html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar a:active,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link:hover,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .link:active,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a:hover,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure a:active,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link:hover,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .link:active {
-            text-decoration: line-through; }
         html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
         html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
           display: block;
           width: 100%;
-          height: auto;
-          width: auto;
-          height: auto;
-          max-width: 100%;
-          border: 1px solid;
-          padding: 0; }
+          height: auto; }
         html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption,
         html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
         html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
@@ -5420,39 +5234,7 @@ html body.page-template-page-archives .shortcode.shortcode-people .shortcode-bod
           color: #000;
           background-color: #fff;
           font-size: 0.8em;
-          display: inline-block;
-          margin: 0.625em 0;
-          padding: 0.3125em 0.625em; }
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link,
-          html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a {
-            color: #000;
-            background-color: #fff;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            padding: 0 0.3125em; }
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link:hover, html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption a:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text a:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption a:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text a:active {
-              text-decoration: line-through; }
+          display: inline-block; }
       html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .person__name {
         line-height: 1.8; }
     html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
@@ -5514,33 +5296,11 @@ html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-bo
             -ms-flex-direction: column;
                 flex-direction: column;
         width: auto; }
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link {
-          color: #000;
-          background-color: transparent;
-          text-decoration: underline;
-          will-change: text-decoration;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a:hover, html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar a:active,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link:hover,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .link:active,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a:hover,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure a:active,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link:hover,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .link:active {
-            text-decoration: line-through; }
         html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
         html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
           display: block;
           width: 100%;
-          height: auto;
-          width: auto;
-          height: auto;
-          max-width: 100%;
-          border: 1px solid;
-          padding: 0; }
+          height: auto; }
         html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption,
         html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
         html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
@@ -5548,39 +5308,7 @@ html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-bo
           color: #000;
           background-color: #fff;
           font-size: 0.8em;
-          display: inline-block;
-          margin: 0.625em 0;
-          padding: 0.3125em 0.625em; }
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link,
-          html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a {
-            color: #000;
-            background-color: #fff;
-            text-decoration: underline;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            padding: 0 0.3125em; }
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link:hover, html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption a:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text a:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption a:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text .link:active,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a:hover,
-            html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text a:active {
-              text-decoration: line-through; }
+          display: inline-block; }
       html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .source__name {
         line-height: 1.8; }
     html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {

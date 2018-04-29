@@ -3,15 +3,9 @@
   display: flex;
   flex-direction: column;
 
-  a,
-  .link {
-    @include link(text-color-on-transparent);
-  }
-
   img {
     @include image;
-    @include image--do-not-stretch;
-    @include image--with-border($padding: 0);
+    @include image--stretch;
   }
 
   figcaption,

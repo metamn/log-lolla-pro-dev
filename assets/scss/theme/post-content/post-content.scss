@@ -17,6 +17,15 @@
       @include post-read-more;
     }
 
+    // Styling attachments post formats
+    // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
+    .attachment {
+      img {
+        @include border(normal, all);
+        @include padding;
+      }
+    }
+
 
     // Remove top padding on embedded content
     // - https://github.com/metamn/log-lolla-dev/issues/11

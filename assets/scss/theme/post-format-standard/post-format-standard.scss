@@ -1,38 +1,35 @@
 @mixin post-format-standard {
-  .post__content {
-    @include mobile-and-up {
-      @include post__content--display-vertical;
-    }
+  @include post-format-standard__grid;
 
+  .post-featured-image {
+    @include mobile {
+      @include border(normal, top);
+      @include border(normal, bottom);
+    }
+  }
+
+  &.display-horizontal.has-thumbnail {
     .post-featured-image {
-      @include margin(yes, no, yes, no);
-    }
+      @include mobile-and-up {
+        margin: $top $left-mobile;
 
-
-    // Styling attachments post formats
-    // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
-    .post-content {
-      .attachment {
-        img {
-          @include border(normal, all);
-          @include padding;
+        figure {
+          @include figure--with-border;
+          padding: $lem;;
         }
       }
     }
   }
 
-  &.display-horizontal {
-    .post__content {
+  &.display-vertical.has-thumbnail {
+    .post-featured-image {
       @include mobile-and-up {
-        @include post__content--display-horizontal;
-      }
-    }
-  }
+        @include margin;
 
-  @include portrait {
-    &.has-excerpt.has-thumbnail {
-      .post__content {
-        @include post__content--display-vertical;
+        figure {
+          @include figure--with-border;
+          @include padding;
+        }
       }
     }
   }

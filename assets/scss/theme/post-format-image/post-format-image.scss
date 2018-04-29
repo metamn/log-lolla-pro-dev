@@ -7,8 +7,8 @@
     .post-first-image {
       figure {
         @include figure;
-        @include figure--with-border;
         @include figure--without-figcaption;
+        @include border(normal, top);
       }
     }
   }

@@ -1,7 +1,6 @@
 @mixin post-featured-image {
   figure {
     @include figure;
-    @include figure--with-border;
     @include figure--without-figcaption;
   }
 }
