@@ -3350,7 +3350,25 @@ html {
                 flex-direction: column;
         -webkit-box-align: center;
             -ms-flex-align: center;
-                align-items: center; }
+                align-items: center;
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-single {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-single {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-single {
+            max-width: 37.5em; } }
+        html body .content.content-single .post-single,
+        html body .content.content-single .post-footer,
+        html body .content.content-single #comments,
+        html body .content.content-single .comments-area {
+          width: 100%; }
         html body .content.content-single .post-single {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -3362,49 +3380,91 @@ html {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center;
-          padding: 2.5em 2.5em;
           border: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single {
+              padding-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single {
+              padding-right: 2.5em; } }
           html body .content.content-single .post-single > * {
             width: 100%; }
-          html body .content.content-single .post-single .post-featured-image {
-            margin-top: 2.5em; }
-            html body .content.content-single .post-single .post-featured-image figure {
-              border: none;
-              padding: 0;
-              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
-              padding: 1.25em; }
-          html body .content.content-single .post-single .post-content {
-            margin-top: 2.5em; }
-            html body .content.content-single .post-single .post-content .text {
-              font-size: larger;
-              line-height: 1.8; }
-            html body .content.content-single .post-single .post-content figure {
+          html body .content.content-single .post-single .post-title .text {
+            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1.25em; }
+          html body .content.content-single .post-single figure {
+            border: 1px solid;
+            padding: 1.25em;
+            padding: 0;
+            width: auto !important; }
+            html body .content.content-single .post-single figure img {
               width: 100%;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                      flex-direction: column;
-              border: none;
-              padding: 0;
-              background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
-              padding: 1.25em; }
-              html body .content.content-single .post-single .post-content figure img {
-                display: block;
-                width: auto;
-                height: auto;
-                max-width: 100%; }
-              html body .content.content-single .post-single .post-content figure figcaption,
-              html body .content.content-single .post-single .post-content figure .wp-caption-text {
-                color: #000;
-                background-color: #fff;
-                font-size: 0.8em;
-                display: inline-block; }
-              html body .content.content-single .post-single .post-content figure .figcaption,
-              html body .content.content-single .post-single .post-content figure figcaption {
-                display: inline-block; }
+              height: auto; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post-single figure figcaption {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post-single figure figcaption {
+                padding-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post-single figure figcaption {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post-single figure figcaption {
+                padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single .post-featured-image {
+              margin-right: 2.5em; } }
+          html body .content.content-single .post-single .post-content .text {
+            font-size: larger;
+            line-height: 1.8; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-single .post-content {
+              margin-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-single .post-content {
+              margin-top: 2.5em; } }
         html body .content.content-single .post-footer {
           display: -webkit-box;
           display: -ms-flexbox;

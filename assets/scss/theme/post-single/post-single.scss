@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding: $top $left;
+  @include padding;
   @include border(normal, all);
 
   > * {
@@ -14,24 +14,28 @@
     @include post-title--large;
   }
 
-  .post-featured-image {
-    margin-top: $top;
+  figure {
+    @include figure--with-border;
+    padding: 0;
 
-    figure {
-      @include figure--without-border;
-      @include figure--with-background($lem);
+    // oterwise WP inserts an inline `width` which might overflow the container
+    width: auto !important;
+
+    img {
+      @include image--stretch;
     }
+
+    figcaption {
+      @include padding(yes, no, yes, no);
+    }
+  }
+
+  .post-featured-image {
+    @include margin;
   }
 
   .post-content {
     @include post-content--large;
-    margin-top: $top;
-
-    figure {
-      @include figure;
-      @include figure--without-border;
-      @include figure--with-background($lem);
-      @include figure--with-figcaption;
-    }
+    @include margin(yes, no, no, no);
   }
 }

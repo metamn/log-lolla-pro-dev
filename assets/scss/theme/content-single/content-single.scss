@@ -3,6 +3,15 @@
   flex-direction: column;
   align-items: center;
 
+  @include width;
+
+  .post-single,
+  .post-footer,
+  #comments,
+  .comments-area {
+    width: 100%;
+  }
+
   .post-single {
     @include post-single;
   }
