@@ -6,6 +6,17 @@
  */
 
 
+
+/**
+ * Remove `<p>` and `<br>` tags added by Wordpress when shortcodes are used
+ *
+ * @link https://wordpress.stackexchange.com/questions/130075/stop-wordpress-automatically-adding-br-tags-to-post-content
+ * 
+ */
+remove_filter( 'the_content', 'wpautop' );
+
+
+
 /**
  * Remove archive type from archive title
  *

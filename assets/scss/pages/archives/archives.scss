@@ -1,8 +1,8 @@
 html {
   body {
     &.page-template-page-archives {
-      .shortcode {
-        @include shortcode;
+      .header {
+        padding-bottom: 0;
       }
     }
   }

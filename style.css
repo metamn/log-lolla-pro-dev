@@ -3398,8 +3398,355 @@ html {
         html body .content.content-archive .post .post-permalink,
         html body .content.content-archive .post .post-date {
           padding: 1.25em; }
-      html body .content.content-archives .archives-content {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=); }
+      html body .content.content-archives {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        html body .content.content-archives .archives-title {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
+        html body .content.content-archives .archives-content {
+          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          width: 100%; }
+          html body .content.content-archives .archives-content > * {
+            margin-right: 2.5em;
+            margin-bottom: 2.5em;
+            box-sizing: border-box; }
+          html body .content.content-archives .archives-content > * {
+            width: calc(50% - (((2 - 1) * 2.5em) / 2) - 1px); }
+            html body .content.content-archives .archives-content > *:nth-child(2n) {
+              margin-right: 0; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-content {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-content {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-content {
+              padding-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-content {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-content {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-content {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-content {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-content {
+              padding-right: 2.5em; } }
+          html body .content.content-archives .archives-content .shortcode {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            color: #000;
+            background-color: #fff; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                  margin-bottom: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                  margin-right: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                  margin-right: 2.5em; } }
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .year,
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .month {
+                min-width: 2.5em; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                        flex-direction: row;
+                border: 1px solid;
+                padding: 0.3125em; }
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+                  margin-right: 0px;
+                  margin-bottom: 0px;
+                  box-sizing: border-box; }
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+                  width: calc(16.66667% - (((6 - 1) * 0px) / 6) - 1px); }
+                  html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > *:nth-child(6n) {
+                    margin-right: 0; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories,
+            html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag {
+                    margin-bottom: 2.5em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag {
+                    margin-right: 2.5em; } }
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category-sparklines,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag-sparklines,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category-sparklines,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag-sparklines {
+                margin-left: 0.20833em; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .category-count,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories .tag-count,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .category-count,
+              html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags .tag-count {
+                margin-left: 0.625em; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+                    margin-bottom: 2.5em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count {
+                    margin-right: 2.5em; } }
+                html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                      -ms-flex-align: center;
+                          align-items: center; }
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__name {
+                    -webkit-box-ordinal-group: 3;
+                        -ms-flex-order: 2;
+                            order: 2;
+                    margin: 0;
+                    margin-left: 0.3125em; }
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure {
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    width: 2.5em; }
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
+                      display: block;
+                      width: auto;
+                      height: auto;
+                      max-width: 100%; }
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
+                      color: #000;
+                      background-color: #fff;
+                      font-size: 0.8em;
+                      display: inline-block; }
+                html body .content.content-archives .archives-content .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
+                  margin-left: 0.3125em; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+                    margin-bottom: 2.5em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
+                    margin-right: 2.5em; } }
+                html body .content.content-archives .archives-content .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format .post-count {
+                  margin-left: 0.3125em; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+                    margin-bottom: 2.5em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
+                    margin-right: 2.5em; } }
+                html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source {
+                  display: -webkit-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-align: center;
+                      -ms-flex-align: center;
+                          align-items: center; }
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__name {
+                    -webkit-box-ordinal-group: 3;
+                        -ms-flex-order: 2;
+                            order: 2;
+                    margin: 0;
+                    margin-left: 0.3125em; }
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar,
+                  html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure {
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                        -ms-flex-direction: column;
+                            flex-direction: column;
+                    width: 2.5em; }
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
+                      display: block;
+                      width: auto;
+                      height: auto;
+                      max-width: 100%; }
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
+                    html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
+                      color: #000;
+                      background-color: #fff;
+                      font-size: 0.8em;
+                      display: inline-block; }
+                html body .content.content-archives .archives-content .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {
+                  margin-left: 0.3125em; }
+            html body .content.content-archives .archives-content .shortcode.shortcode-topics-summary .shortcode-body .text p {
+              display: inline; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-left: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-right: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-content .shortcode {
+                padding-right: 2.5em; } }
+            html body .content.content-archives .archives-content .shortcode .shortcode-title {
+              border: 1px solid; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-content .shortcode .shortcode-title {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-content .shortcode .shortcode-title {
+                  margin-bottom: 2.5em; } }
       html body .content.content-search .search-title {
         margin-bottom: 1.25em; }
         html body .content.content-search .search-title span {
@@ -7379,262 +7726,8 @@ html body .widget {
 html body.archive .footer .footer-navigation ul li.current-menu-item a {
   text-decoration: line-through; }
 
-html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media only screen and (max-width: 767.9px) {
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
-      margin-bottom: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
-      margin-bottom: 2.5em; } }
-  @media only screen and (max-width: 767.9px) {
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
-      margin-right: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months {
-      margin-right: 2.5em; } }
-  html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .year,
-  html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .month {
-    min-width: 2.5em; }
-  html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    border: 1px solid;
-    padding: 0.3125em; }
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
-      margin-right: 0px;
-      margin-bottom: 0px;
-      box-sizing: border-box; }
-    html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
-      width: calc(16.66667% - (((6 - 1) * 0px) / 6) - 1px); }
-      html body.page-template-page-archives .shortcode.shortcode-archives .shortcode-body .year-and-months .months > *:nth-child(6n) {
-        margin-right: 0; }
-
-html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories,
-html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
-        margin-bottom: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
-        margin-bottom: 2.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
-        margin-right: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category,
-      html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag {
-        margin-right: 2.5em; } }
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-sparklines,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-sparklines,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-sparklines,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-sparklines {
-    margin-left: 0.20833em; }
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .category-count,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .categories .tag-count,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .category-count,
-  html body.page-template-page-archives .shortcode.shortcode-topics .shortcode-body .tags .tag-count {
-    margin-left: 0.625em; }
-
-html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
-        margin-bottom: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
-        margin-bottom: 2.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
-        margin-right: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count {
-        margin-right: 2.5em; } }
-    html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__name {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        margin: 0;
-        margin-left: 0.3125em; }
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar,
-      html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 2.5em; }
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
-          display: block;
-          width: auto;
-          height: auto;
-          max-width: 100%; }
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar figcaption,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
-        html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
-          color: #000;
-          background-color: #fff;
-          font-size: 0.8em;
-          display: inline-block; }
-    html body.page-template-page-archives .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
-      margin-left: 0.3125em; }
-
-html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
-        margin-bottom: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
-        margin-bottom: 2.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
-        margin-right: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format {
-        margin-right: 2.5em; } }
-    html body.page-template-page-archives .shortcode.shortcode-post-formats .shortcode-body .post-formats .post-format .post-count {
-      margin-left: 0.3125em; }
-
-html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
-        margin-bottom: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
-        margin-bottom: 2.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
-        margin-right: 1.25em; } }
-    @media only screen and (min-width: 768px) {
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count {
-        margin-right: 2.5em; } }
-    html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__name {
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2;
-        margin: 0;
-        margin-left: 0.3125em; }
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar,
-      html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure {
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 2.5em; }
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
-          display: block;
-          width: auto;
-          height: auto;
-          max-width: 100%; }
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar figcaption,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
-        html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
-          color: #000;
-          background-color: #fff;
-          font-size: 0.8em;
-          display: inline-block; }
-    html body.page-template-page-archives .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {
-      margin-left: 0.3125em; }
-
-html body.page-template-page-archives .shortcode.shortcode-topics-summary .shortcode-body .text p {
-  display: inline; }
+html body.page-template-page-archives .header {
+  padding-bottom: 0; }
 
 html body.home .header .header-image {
   height: auto; }

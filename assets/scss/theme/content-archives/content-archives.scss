@@ -1,5 +1,32 @@
 @mixin content-archives {
+  display: flex;
+  flex-direction: column;
+
+  .archives-title {
+    align-self: center;
+  }
+
   .archives-content {
     @include background-pattern--horizontal-lines;
+
+    @include grid(2, $left, $top, $grid-title: false, $iepx: 1px);
+
+    width: 100%;
+    @include padding;
+
+    .shortcode {
+      @include shortcode;
+
+      display: flex;
+      flex-direction: column;
+
+      @include colors(default);
+      @include padding;
+
+      .shortcode-title {
+        @include border(normal, all);
+        @include margin(no, no, yes, no);
+      }
+    }
   }
 }
