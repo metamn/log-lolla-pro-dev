@@ -2,6 +2,6 @@
   @include widget-log-lolla;
 
   .widget-body {
-    @include archives-year-month;
+    @include archives-by-date;
   }
 }

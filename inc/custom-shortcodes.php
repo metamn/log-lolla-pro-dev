@@ -216,7 +216,7 @@ if ( ! function_exists( 'log_lolla_create_custom_shortcode_archives' ) ) {
     // Get content
     $content = log_lolla_display_archives_by_year_and_month();
 
-    return log_lolla_display_shortcode( esc_html__( 'Archives', 'log-lolla' ), $content );
+    return log_lolla_display_shortcode( esc_html__( 'Archives by date', 'log-lolla' ), $content );
   }
 
   add_shortcode( 'log-lolla-archives', 'log_lolla_create_custom_shortcode_archives' );

@@ -1,6 +1,6 @@
 @mixin shortcode {
-  &.shortcode-archives {
-    @include shortcode-archives;
+  &.shortcode-archives-by-date {
+    @include shortcode-archives-by-date;
   }
 
   &.shortcode-topics {

@@ -1,5 +1,7 @@
 @mixin widget-log-lolla {
   .widget-title {
+    @include border(normal, all);
+    
     + .widget-body {
       @include margin(yes, no, no, no);
     }

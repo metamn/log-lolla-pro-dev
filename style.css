@@ -3464,7 +3464,7 @@ html {
                     flex-direction: column;
             color: #000;
             background-color: #fff; }
-            html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+            html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
@@ -3472,21 +3472,21 @@ html {
                   -ms-flex-align: center;
                       align-items: center; }
               @media only screen and (max-width: 767.9px) {
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
                   margin-bottom: 1.25em; } }
               @media only screen and (min-width: 768px) {
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
                   margin-bottom: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
                   margin-right: 1.25em; } }
               @media only screen and (min-width: 768px) {
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
                   margin-right: 2.5em; } }
-              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .year,
-              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .month {
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .year,
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .month {
                 min-width: 2.5em; }
-              html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months {
+              html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .months {
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -3498,13 +3498,13 @@ html {
                         flex-direction: row;
                 border: 1px solid;
                 padding: 0.3125em; }
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .months > * {
                   margin-right: 0px;
                   margin-bottom: 0px;
                   box-sizing: border-box; }
-                html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > * {
+                html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .months > * {
                   width: calc(16.66667% - (((6 - 1) * 0px) / 6) - 1px); }
-                  html body .content.content-archives .archives-content .shortcode.shortcode-archives .shortcode-body .year-and-months .months > *:nth-child(6n) {
+                  html body .content.content-archives .archives-content .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months .months > *:nth-child(6n) {
                     margin-right: 0; }
             html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .categories,
             html body .content.content-archives .archives-content .shortcode.shortcode-topics .shortcode-body .tags {
@@ -7395,12 +7395,14 @@ html body .widget {
   html body .widget.widget_media_audio .mejs-horizontal-volume-slider {
     color: #fff;
     background-color: #000; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_archives_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_archives_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7449,12 +7451,14 @@ html body .widget {
         width: calc(16.66667% - (((6 - 1) * 0px) / 6) - 1px); }
         html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > *:nth-child(6n) {
           margin-right: 0; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_topics_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_topics_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7514,12 +7518,14 @@ html body .widget {
     html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category-count,
     html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-count {
       margin-left: 0.625em; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_people_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_people_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7595,12 +7601,14 @@ html body .widget {
               display: inline-block; }
         html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
           margin-left: 0.3125em; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_post_formats_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_post_formats_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7631,12 +7639,14 @@ html body .widget {
           margin-right: 2.5em; } }
       html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format .post-count {
         margin-left: 0.3125em; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_sources_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_sources_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7708,12 +7718,14 @@ html body .widget {
             display: inline-block; }
       html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
         margin-left: 0.3125em; }
-  @media only screen and (max-width: 767.9px) {
-    html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-      margin-top: 1.25em; } }
-  @media only screen and (min-width: 768px) {
-    html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-      margin-top: 2.5em; } }
+  html body .widget.widget_log_lolla_topics_summary_widget .widget-title {
+    border: 1px solid; }
+    @media only screen and (max-width: 767.9px) {
+      html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
+        margin-top: 1.25em; } }
+    @media only screen and (min-width: 768px) {
+      html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
+        margin-top: 2.5em; } }
   html body .widget.widget_log_lolla_topics_summary_widget .widget-body {
     display: -webkit-box;
     display: -ms-flexbox;
