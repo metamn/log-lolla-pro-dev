@@ -9,7 +9,13 @@
   .archives-content {
     @include background-pattern--horizontal-lines;
 
-    @include grid(2, $left, $top, $grid-title: false, $iepx: 1px);
+    @include portrait {
+      @include grid(1, 0px, $top-mobile, $grid-title: false, $iepx: 1px);
+    }
+
+    @include landscape {
+      @include grid(2, $left, $top, $grid-title: false, $iepx: 1px);
+    }
 
     width: 100%;
     @include padding;
