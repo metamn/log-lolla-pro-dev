@@ -3398,6 +3398,8 @@ html {
         html body .content.content-archive .post .post-permalink,
         html body .content.content-archive .post .post-date {
           padding: 1.25em; }
+      html body .content.content-archives .archives-content {
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=); }
       html body .content.content-search .search-title {
         margin-bottom: 1.25em; }
         html body .content.content-search .search-title span {

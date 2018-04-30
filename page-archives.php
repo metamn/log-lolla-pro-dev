@@ -10,7 +10,7 @@
 
 <?php get_header() ?>
 
-<section class="content archives">
+<section class="content content-archives">
   <h3 class="archives-title">
     <?php esc_html_e( 'Archives', 'log-lolla-pro' ); ?>
   </h3>

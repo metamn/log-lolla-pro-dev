@@ -18,6 +18,10 @@
     @include content-archive;
   }
 
+  &.content-archives {
+    @include content-archives;
+  }
+
   &.content-search {
     @include content-search;
   }

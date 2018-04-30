@@ -1,0 +1,5 @@
+@mixin content-archives {
+  .archives-content {
+    @include background-pattern--horizontal-lines;
+  }
+}
