@@ -18,7 +18,7 @@
     }
 
     width: 100%;
-    @include padding;
+    @include padding(yes, yes, no, yes);
 
     .shortcode {
       @include shortcode;

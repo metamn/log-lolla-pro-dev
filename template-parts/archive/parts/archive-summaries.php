@@ -13,12 +13,12 @@
   $summaries = log_lolla_display_summaries_for_archive( $archive );
 
   if ( ! empty( $summaries ) ) { ?>
-    <section class="archive-summaries">
-      <h3 class="archive-summaries-title">
-        <?php esc_html_x( 'Archive summaries ', 'log-lolla'); ?>
+    <section class="archive-list archive-list--summaries">
+      <h3 class="archive-list-title">
+        <?php esc_html_e( 'Summaries ', 'log-lolla'); ?>
       </h3>
 
-      <div class="archive-summaries-body">
+      <div class="archive-list-body">
         <?php echo $summaries ?>
       </div>
     </section>

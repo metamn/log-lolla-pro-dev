@@ -24,10 +24,7 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
     $standard_posts = log_lolla_get_standard_posts_for_archive( $archive );
     if ( empty( $standard_posts ) ) return;
 
-    $html = '<section class="standard-posts">';
-    $html .= '<h3 class="standard-posts-title">';
-    $html .= esc_html_x( 'Standard posts', 'log-lolla' );
-    $html .= '</h3>';
+    $html = '';
 
     global $post;
     ob_start();
@@ -37,8 +34,6 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
     }
     wp_reset_postdata();
     $html .= ob_get_clean();
-
-    $html .= '</section>';
 
     return $html;
   }

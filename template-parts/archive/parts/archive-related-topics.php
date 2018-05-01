@@ -14,12 +14,12 @@
   $related_topics  = log_lolla_display_related_topics_for_archive( $archive );
 
   if ( ! empty( $related_topics ) ) { ?>
-    <section class="archive-related-topics">
-      <h3 class="archive-related-topics-title">
-        <?php esc_html_x( 'Archive related topics ', 'log-lolla'); ?>
+    <section class="archive-list archive-list--topics">
+      <h3 class="archive-list-title">
+        <?php esc_html_e( 'Related topics ', 'log-lolla'); ?>
       </h3>
 
-      <div class="archive-related-topics-body">
+      <div class="archive-list-body">
         <?php echo $related_topics ?>
       </div>
     </section>

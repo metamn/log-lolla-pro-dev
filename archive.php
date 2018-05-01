@@ -15,30 +15,7 @@ get_header(); ?>
 		<?php get_template_part( 'template-parts/archive/parts/archive', 'summaries' ); ?>
 		<?php get_template_part( 'template-parts/archive/parts/archive', 'standard-posts' ); ?>
 		<?php get_template_part( 'template-parts/archive/parts/archive', 'related-topics' ); ?>
-
-    <?php
-		if ( have_posts() ) : ?>
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/*
-				 * Include the Post-Format-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/post/post', 'search' );
-
-			endwhile;
-
-			get_template_part( 'template-parts/navigation/navigation', 'posts' );
-
-		else :
-
-			get_template_part( 'template-parts/post/post', 'none' );
-
-		endif; ?>
+		<?php get_template_part( 'template-parts/archive/archive', '' ); ?>
 	</section>
 
 	<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

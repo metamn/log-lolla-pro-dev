@@ -1,0 +1,15 @@
+@mixin post--archive {
+  @include post__grid--display-horizontal;
+  justify-content: space-between;
+
+  @include padding;
+  @include border(normal, all);
+
+  .post-title + .post-date {
+    @include margin(no, no, no, yes);
+  }
+
+  +.post {
+    @include margin(yes, no, no, no);
+  }
+}

@@ -23,10 +23,7 @@ if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
     $summaries = log_lolla_get_summaries_for_archive( $archive );
     if ( empty( $summaries ) ) return;
 
-    $html = '<section class="summaries">';
-    $html .= '<h3 class="summaries-title">';
-    $html .= esc_html_x( 'Summaries', 'log-lolla' );
-    $html .= '</h3>';
+    $html = '';
 
     global $post;
     ob_start();
@@ -36,8 +33,6 @@ if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
     }
     wp_reset_postdata();
     $html .= ob_get_clean();
-
-    $html .= '</section>';
 
     return $html;
   }

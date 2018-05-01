@@ -13,12 +13,12 @@
   $standard_posts = log_lolla_display_standard_posts_for_archive( $archive );
 
   if ( ! empty( $standard_posts ) ) { ?>
-    <section class="archive-standard-posts">
-      <h3 class="archive-standard-posts-title">
-        <?php esc_html_x( 'Archive standard posts ', 'log-lolla'); ?>
+    <section class="archive-list archive-list--standard-posts">
+      <h3 class="archive-list-title">
+        <?php esc_html_e( 'Thoughts', 'log-lolla'); ?>
       </h3>
 
-      <div class="archive-standard-posts-body">
+      <div class="archive-list-body">
         <?php echo $standard_posts ?>
       </div>
     </section>
