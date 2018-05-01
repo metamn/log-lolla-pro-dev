@@ -2,7 +2,7 @@
 
 html {
   @include grid-reset;
-  
+
   body {
     @include typography-reset;
     @include form-reset;
@@ -11,6 +11,15 @@ html {
 
     @include cursor('brutalist_line_SVGicon_cursor1-64x64');
     @include cursor--hover('a', 'brutalist_line_SVGicon_cursor2-64x64', -10, 0);
+
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // Making blockquotes do not overflow
+    overflow-x: hidden;
 
 
     .header {
@@ -33,7 +42,6 @@ html {
       @include footer;
     }
 
-    @include default__grid;
 
     // Wordpress specific
     .screen-reader-text {

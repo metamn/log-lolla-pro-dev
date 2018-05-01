@@ -1,9 +1,0 @@
-@mixin default__grid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  // Making blockquotes do not overflow
-  overflow-x: hidden;
-}
