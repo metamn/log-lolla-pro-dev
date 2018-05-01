@@ -4,12 +4,6 @@
     @include ul-nested;
     list-style-type: square;
     margin-left: 1em;
-    margin-top: $lem;
-
-    + p,
-    + .p {
-      margin-top: $lem;
-    }
   }
 
 }

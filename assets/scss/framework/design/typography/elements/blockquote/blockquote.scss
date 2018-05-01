@@ -10,9 +10,4 @@
     @include border(normal, left);
     @include padding(no, yes, no, yes);
   }
-
-  blockquote + cite,
-  blockquote + p {
-    @include margin(yes, no, no, no);
-  }
 }

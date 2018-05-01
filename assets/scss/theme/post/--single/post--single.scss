@@ -23,6 +23,5 @@
 
   .post-content {
     @include post-content--large;
-    @include text-style(body-text-post);
   }
 }

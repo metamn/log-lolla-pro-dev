@@ -1,11 +1,11 @@
 @mixin dl {
   dl,
   .dl {
-    margin-top: $lem;
+    @include margin(yes, no, no, no);
 
     dd,
     .dd {
-      margin-left: $lem;
+      @include margin(no, no, no, yes);
     }
   }
 }

@@ -1,6 +1,7 @@
 @mixin post-content {
   .text {
     @include text-style(body-text-post);
+    @include margin(no, no, no, no); // the bottom margin is provided by the `body-text-post`
 
     // to clear floats for an <img> inside
     // - https://www.quirksmode.org/css/clearing.html

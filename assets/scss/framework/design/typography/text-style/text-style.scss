@@ -98,32 +98,6 @@
 
   // Body text of an post
   @if ($variant == 'body-text-post') {
-    @include p;
-    @include h1h6;
-    @include a;
-    @include ol--custom-counter;
-    @include ul--body-text;
-    @include blockquote;
-    @include image--wporg;
-    @include figure--wporg;
-    @include gist;
-    @include code;
-    @include pre;
-    @include strong;
-    @include em;
-    @include word-wrap;
-    @include table;
-    @include dl;
-    @include address;
-    @include abbr;
-    @include acronym;
-    @include big;
-    @include cite;
-    @include del;
-    @include kbd;
-    @include ins;
-    @include strike;
-    @include sub;
-    @include iframe;
+    @include elements;
   }
 }

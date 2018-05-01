@@ -6,7 +6,7 @@
     > ol,
     > .ol {
       margin-top: 0;
-      padding-left: $lem;
+      @include padding(no, no, no, yes);
     }
   }
 }

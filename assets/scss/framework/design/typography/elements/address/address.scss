@@ -3,8 +3,4 @@
   address {
     @include font(italic);
   }
-
-  address + p {
-    margin-top: $lem;
-  }
 }

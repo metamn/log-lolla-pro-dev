@@ -2,10 +2,4 @@
   p {
     word-wrap: break-word;
   }
-
-  p + p,
-  p + figure,
-  p + address {
-    margin-top: $lem;
-  }
 }
