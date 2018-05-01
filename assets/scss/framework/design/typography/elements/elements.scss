@@ -27,11 +27,7 @@
   @include sub;
   @include iframe;
 
-  > * {
-    @include margin(no, no, yes, no);
-  }
-
-  &:last-child {
-    @include margin(no, no, no, no);
+  > * + * {
+    @include margin(yes, no, no, no);
   }
 }

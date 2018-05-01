@@ -8,6 +8,7 @@
     > .li {
       list-style: none;
       display: flex;
+      @include margin(no, no, half, no);
 
       &:before {
         content: counter(li);

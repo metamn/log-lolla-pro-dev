@@ -1162,6 +1162,18 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text ol > li,
+              html body .content.content-home .post .post-content .text ol > .li,
+              html body .content.content-home .post .post-content .text .ol > li,
+              html body .content.content-home .post .post-content .text .ol > .li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post .post-content .text ol > li,
+              html body .content.content-home .post .post-content .text ol > .li,
+              html body .content.content-home .post .post-content .text .ol > li,
+              html body .content.content-home .post .post-content .text .ol > .li {
+                margin-bottom: 1.25em; } }
             html body .content.content-home .post .post-content .text ol > li:before,
             html body .content.content-home .post .post-content .text ol > .li:before,
             html body .content.content-home .post .post-content .text .ol > li:before,
@@ -1711,11 +1723,11 @@ html {
           border: 1px solid;
           border: 1px solid !important; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-home .post .post-content .text > * {
-            margin-bottom: 1.25em; } }
+          html body .content.content-home .post .post-content .text > * + * {
+            margin-top: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-home .post .post-content .text > * {
-            margin-bottom: 2.5em; } }
+          html body .content.content-home .post .post-content .text > * + * {
+            margin-top: 2.5em; } }
         html body .content.content-home .post .post-content .text .gallery.gallery-columns-1 {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -3090,6 +3102,18 @@ html {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li {
+                  margin-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li {
+                  margin-bottom: 1.25em; } }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li:before,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li:before,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li:before,
@@ -3639,11 +3663,11 @@ html {
             border: 1px solid;
             border: 1px solid !important; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text > * {
-              margin-bottom: 1.25em; } }
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text > * + * {
+              margin-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text > * {
-              margin-bottom: 2.5em; } }
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text > * + * {
+              margin-top: 2.5em; } }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery.gallery-columns-1 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -4940,6 +4964,18 @@ html {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post .post-content .text ol > li,
+                html body .content.content-none .post .post-content .text ol > .li,
+                html body .content.content-none .post .post-content .text .ol > li,
+                html body .content.content-none .post .post-content .text .ol > .li {
+                  margin-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-none .post .post-content .text ol > li,
+                html body .content.content-none .post .post-content .text ol > .li,
+                html body .content.content-none .post .post-content .text .ol > li,
+                html body .content.content-none .post .post-content .text .ol > .li {
+                  margin-bottom: 1.25em; } }
               html body .content.content-none .post .post-content .text ol > li:before,
               html body .content.content-none .post .post-content .text ol > .li:before,
               html body .content.content-none .post .post-content .text .ol > li:before,
@@ -5489,11 +5525,11 @@ html {
             border: 1px solid;
             border: 1px solid !important; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-none .post .post-content .text > * {
-              margin-bottom: 1.25em; } }
+            html body .content.content-none .post .post-content .text > * + * {
+              margin-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-none .post .post-content .text > * {
-              margin-bottom: 2.5em; } }
+            html body .content.content-none .post .post-content .text > * + * {
+              margin-top: 2.5em; } }
           html body .content.content-none .post .post-content .text .gallery.gallery-columns-1 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -6761,6 +6797,18 @@ html {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post .post-content .text ol > li,
+                html body .content.content-single .post .post-content .text ol > .li,
+                html body .content.content-single .post .post-content .text .ol > li,
+                html body .content.content-single .post .post-content .text .ol > .li {
+                  margin-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .post .post-content .text ol > li,
+                html body .content.content-single .post .post-content .text ol > .li,
+                html body .content.content-single .post .post-content .text .ol > li,
+                html body .content.content-single .post .post-content .text .ol > .li {
+                  margin-bottom: 1.25em; } }
               html body .content.content-single .post .post-content .text ol > li:before,
               html body .content.content-single .post .post-content .text ol > .li:before,
               html body .content.content-single .post .post-content .text .ol > li:before,
@@ -7310,11 +7358,11 @@ html {
             border: 1px solid;
             border: 1px solid !important; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .post .post-content .text > * {
-              margin-bottom: 1.25em; } }
+            html body .content.content-single .post .post-content .text > * + * {
+              margin-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-single .post .post-content .text > * {
-              margin-bottom: 2.5em; } }
+            html body .content.content-single .post .post-content .text > * + * {
+              margin-top: 2.5em; } }
           html body .content.content-single .post .post-content .text .gallery.gallery-columns-1 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -8610,6 +8658,26 @@ html {
                     display: -webkit-box;
                     display: -ms-flexbox;
                     display: flex; }
+                    @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li {
+                        margin-bottom: 0.625em; } }
+                    @media only screen and (min-width: 768px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li {
+                        margin-bottom: 1.25em; } }
                     html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li:before,
                     html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li:before,
                     html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li:before,
@@ -9548,13 +9616,13 @@ html {
                   border: 1px solid;
                   border: 1px solid !important; }
                 @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content > *,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content > * {
-                    margin-bottom: 1.25em; } }
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content > * + *,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content > * + * {
+                    margin-top: 1.25em; } }
                 @media only screen and (min-width: 768px) {
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content > *,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content > * {
-                    margin-bottom: 2.5em; } }
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content > * + *,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content > * + * {
+                    margin-top: 2.5em; } }
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content ul ul,
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .ul,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul ul,
@@ -9914,6 +9982,18 @@ html {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li {
+                  margin-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li {
+                  margin-bottom: 1.25em; } }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li:before,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li:before,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li:before,
@@ -10463,11 +10543,11 @@ html {
             border: 1px solid;
             border: 1px solid !important; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text > * {
-              margin-bottom: 1.25em; } }
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text > * + * {
+              margin-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text > * {
-              margin-bottom: 2.5em; } }
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text > * + * {
+              margin-top: 2.5em; } }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery.gallery-columns-1 {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -11750,6 +11830,18 @@ html {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post .post-content .text ol > li,
+                html body .content.content-page .post .post-content .text ol > .li,
+                html body .content.content-page .post .post-content .text .ol > li,
+                html body .content.content-page .post .post-content .text .ol > .li {
+                  margin-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-page .post .post-content .text ol > li,
+                html body .content.content-page .post .post-content .text ol > .li,
+                html body .content.content-page .post .post-content .text .ol > li,
+                html body .content.content-page .post .post-content .text .ol > .li {
+                  margin-bottom: 1.25em; } }
               html body .content.content-page .post .post-content .text ol > li:before,
               html body .content.content-page .post .post-content .text ol > .li:before,
               html body .content.content-page .post .post-content .text .ol > li:before,
@@ -12299,11 +12391,11 @@ html {
             border: 1px solid;
             border: 1px solid !important; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-page .post .post-content .text > * {
-              margin-bottom: 1.25em; } }
+            html body .content.content-page .post .post-content .text > * + * {
+              margin-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-page .post .post-content .text > * {
-              margin-bottom: 2.5em; } }
+            html body .content.content-page .post .post-content .text > * + * {
+              margin-top: 2.5em; } }
           html body .content.content-page .post .post-content .text .gallery.gallery-columns-1 {
             display: -webkit-box;
             display: -ms-flexbox;
