@@ -13,16 +13,24 @@
   if ( empty( $posts_of_a_source ) ) return;
 ?>
 
-<section class="source-posts">
-  <h3 class="title">Posts of <?php the_title() ?></h3>
-
+<section class="source-posts archive-list archive-list--posts">
   <?php
-    $current_post = $post;
-
-    foreach ($posts_of_a_source as $post) {
-      get_template_part( 'template-parts/post/post', 'search' );
-    }
-
-    $post = $current_post;
+    printf(
+      '<h3 class="archive-list-title">%1$s%2$s</h3>',
+      esc_html_x( 'Posts from ', 'post permalink', 'log-lolla' ),
+      get_the_title()
+    );
   ?>
+
+  <div class="archive-list-body">
+    <?php
+      $current_post = $post;
+
+      foreach ($posts_of_a_source as $post) {
+        get_template_part( 'template-parts/post/post', 'search' );
+      }
+
+      $post = $current_post;
+    ?>
+  </div>
 </section>
