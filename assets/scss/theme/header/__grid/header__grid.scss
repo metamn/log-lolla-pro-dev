@@ -1,7 +1,7 @@
 @mixin header__grid {
-  @include width;
-  @include padding(yes, no, yes, no);
   display: flex;
+
+  @include padding(yes, no, yes, no);
 
   &.without-header-menu {
     flex-direction: column;

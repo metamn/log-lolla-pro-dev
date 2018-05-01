@@ -1,0 +1,9 @@
+@mixin width--full {
+  @include laptop {
+    max-width: none;
+  }
+
+  @include desktop {
+    max-width: none;
+  }
+}

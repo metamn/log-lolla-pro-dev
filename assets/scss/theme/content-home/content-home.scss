@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
 
+  max-width: none;
+
   .post {
     @include post;
     @include post--home;
