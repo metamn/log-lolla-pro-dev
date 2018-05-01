@@ -1189,31 +1189,33 @@ html {
             text-decoration: line-through; }
         html body .content.content-home .post .post-content .text ol,
         html body .content.content-home .post .post-content .text .ol {
-          list-style-position: inside;
-          margin-top: 1.25em; }
-          html body .content.content-home .post .post-content .text ol li > ul,
-          html body .content.content-home .post .post-content .text ol li > .ul,
-          html body .content.content-home .post .post-content .text ol li > ol,
-          html body .content.content-home .post .post-content .text ol li > .ol,
-          html body .content.content-home .post .post-content .text ol .li > ul,
-          html body .content.content-home .post .post-content .text ol .li > .ul,
-          html body .content.content-home .post .post-content .text ol .li > ol,
-          html body .content.content-home .post .post-content .text ol .li > .ol,
-          html body .content.content-home .post .post-content .text .ol li > ul,
-          html body .content.content-home .post .post-content .text .ol li > .ul,
-          html body .content.content-home .post .post-content .text .ol li > ol,
-          html body .content.content-home .post .post-content .text .ol li > .ol,
-          html body .content.content-home .post .post-content .text .ol .li > ul,
-          html body .content.content-home .post .post-content .text .ol .li > .ul,
-          html body .content.content-home .post .post-content .text .ol .li > ol,
-          html body .content.content-home .post .post-content .text .ol .li > .ol {
-            margin-top: 0;
-            padding-left: 1.25em; }
-          html body .content.content-home .post .post-content .text ol + p,
-          html body .content.content-home .post .post-content .text ol + .p,
-          html body .content.content-home .post .post-content .text .ol + p,
-          html body .content.content-home .post .post-content .text .ol + .p {
-            margin-top: 1.25em; }
+          counter-reset: li; }
+          html body .content.content-home .post .post-content .text ol > li,
+          html body .content.content-home .post .post-content .text ol > .li,
+          html body .content.content-home .post .post-content .text .ol > li,
+          html body .content.content-home .post .post-content .text .ol > .li {
+            list-style: none;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
+            html body .content.content-home .post .post-content .text ol > li:before,
+            html body .content.content-home .post .post-content .text ol > .li:before,
+            html body .content.content-home .post .post-content .text .ol > li:before,
+            html body .content.content-home .post .post-content .text .ol > .li:before {
+              content: counter(li);
+              counter-increment: li; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-home .post .post-content .text ol > li:before,
+                html body .content.content-home .post .post-content .text ol > .li:before,
+                html body .content.content-home .post .post-content .text .ol > li:before,
+                html body .content.content-home .post .post-content .text .ol > .li:before {
+                  margin-right: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-home .post .post-content .text ol > li:before,
+                html body .content.content-home .post .post-content .text ol > .li:before,
+                html body .content.content-home .post .post-content .text .ol > li:before,
+                html body .content.content-home .post .post-content .text .ol > .li:before {
+                  margin-right: 2.5em; } }
         html body .content.content-home .post .post-content .text ul,
         html body .content.content-home .post .post-content .text .ul {
           list-style-type: square;
@@ -3036,31 +3038,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol li > ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol li > .ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol li > ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol li > .ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol .li > ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol .li > .ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol .li > ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol .li > .ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol li > ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol li > .ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol li > ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol li > .ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol .li > ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol .li > .ul,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol .li > ol,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol + p,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol + .p,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol + p,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li:before,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+                  html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul {
             list-style-type: square;
@@ -4805,31 +4809,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-none .post .post-content .text ol,
           html body .content.content-none .post .post-content .text .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-none .post .post-content .text ol li > ul,
-            html body .content.content-none .post .post-content .text ol li > .ul,
-            html body .content.content-none .post .post-content .text ol li > ol,
-            html body .content.content-none .post .post-content .text ol li > .ol,
-            html body .content.content-none .post .post-content .text ol .li > ul,
-            html body .content.content-none .post .post-content .text ol .li > .ul,
-            html body .content.content-none .post .post-content .text ol .li > ol,
-            html body .content.content-none .post .post-content .text ol .li > .ol,
-            html body .content.content-none .post .post-content .text .ol li > ul,
-            html body .content.content-none .post .post-content .text .ol li > .ul,
-            html body .content.content-none .post .post-content .text .ol li > ol,
-            html body .content.content-none .post .post-content .text .ol li > .ol,
-            html body .content.content-none .post .post-content .text .ol .li > ul,
-            html body .content.content-none .post .post-content .text .ol .li > .ul,
-            html body .content.content-none .post .post-content .text .ol .li > ol,
-            html body .content.content-none .post .post-content .text .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-none .post .post-content .text ol + p,
-            html body .content.content-none .post .post-content .text ol + .p,
-            html body .content.content-none .post .post-content .text .ol + p,
-            html body .content.content-none .post .post-content .text .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-none .post .post-content .text ol > li,
+            html body .content.content-none .post .post-content .text ol > .li,
+            html body .content.content-none .post .post-content .text .ol > li,
+            html body .content.content-none .post .post-content .text .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-none .post .post-content .text ol > li:before,
+              html body .content.content-none .post .post-content .text ol > .li:before,
+              html body .content.content-none .post .post-content .text .ol > li:before,
+              html body .content.content-none .post .post-content .text .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post .post-content .text ol > li:before,
+                  html body .content.content-none .post .post-content .text ol > .li:before,
+                  html body .content.content-none .post .post-content .text .ol > li:before,
+                  html body .content.content-none .post .post-content .text .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post .post-content .text ol > li:before,
+                  html body .content.content-none .post .post-content .text ol > .li:before,
+                  html body .content.content-none .post .post-content .text .ol > li:before,
+                  html body .content.content-none .post .post-content .text .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-none .post .post-content .text ul,
           html body .content.content-none .post .post-content .text .ul {
             list-style-type: square;
@@ -6388,31 +6394,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-none .post .post-content ol,
           html body .content.content-none .post .post-content .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-none .post .post-content ol li > ul,
-            html body .content.content-none .post .post-content ol li > .ul,
-            html body .content.content-none .post .post-content ol li > ol,
-            html body .content.content-none .post .post-content ol li > .ol,
-            html body .content.content-none .post .post-content ol .li > ul,
-            html body .content.content-none .post .post-content ol .li > .ul,
-            html body .content.content-none .post .post-content ol .li > ol,
-            html body .content.content-none .post .post-content ol .li > .ol,
-            html body .content.content-none .post .post-content .ol li > ul,
-            html body .content.content-none .post .post-content .ol li > .ul,
-            html body .content.content-none .post .post-content .ol li > ol,
-            html body .content.content-none .post .post-content .ol li > .ol,
-            html body .content.content-none .post .post-content .ol .li > ul,
-            html body .content.content-none .post .post-content .ol .li > .ul,
-            html body .content.content-none .post .post-content .ol .li > ol,
-            html body .content.content-none .post .post-content .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-none .post .post-content ol + p,
-            html body .content.content-none .post .post-content ol + .p,
-            html body .content.content-none .post .post-content .ol + p,
-            html body .content.content-none .post .post-content .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-none .post .post-content ol > li,
+            html body .content.content-none .post .post-content ol > .li,
+            html body .content.content-none .post .post-content .ol > li,
+            html body .content.content-none .post .post-content .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-none .post .post-content ol > li:before,
+              html body .content.content-none .post .post-content ol > .li:before,
+              html body .content.content-none .post .post-content .ol > li:before,
+              html body .content.content-none .post .post-content .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post .post-content ol > li:before,
+                  html body .content.content-none .post .post-content ol > .li:before,
+                  html body .content.content-none .post .post-content .ol > li:before,
+                  html body .content.content-none .post .post-content .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post .post-content ol > li:before,
+                  html body .content.content-none .post .post-content ol > .li:before,
+                  html body .content.content-none .post .post-content .ol > li:before,
+                  html body .content.content-none .post .post-content .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-none .post .post-content ul,
           html body .content.content-none .post .post-content .ul {
             list-style-type: square;
@@ -7057,31 +7065,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-single .post .post-content .text ol,
           html body .content.content-single .post .post-content .text .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-single .post .post-content .text ol li > ul,
-            html body .content.content-single .post .post-content .text ol li > .ul,
-            html body .content.content-single .post .post-content .text ol li > ol,
-            html body .content.content-single .post .post-content .text ol li > .ol,
-            html body .content.content-single .post .post-content .text ol .li > ul,
-            html body .content.content-single .post .post-content .text ol .li > .ul,
-            html body .content.content-single .post .post-content .text ol .li > ol,
-            html body .content.content-single .post .post-content .text ol .li > .ol,
-            html body .content.content-single .post .post-content .text .ol li > ul,
-            html body .content.content-single .post .post-content .text .ol li > .ul,
-            html body .content.content-single .post .post-content .text .ol li > ol,
-            html body .content.content-single .post .post-content .text .ol li > .ol,
-            html body .content.content-single .post .post-content .text .ol .li > ul,
-            html body .content.content-single .post .post-content .text .ol .li > .ul,
-            html body .content.content-single .post .post-content .text .ol .li > ol,
-            html body .content.content-single .post .post-content .text .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-single .post .post-content .text ol + p,
-            html body .content.content-single .post .post-content .text ol + .p,
-            html body .content.content-single .post .post-content .text .ol + p,
-            html body .content.content-single .post .post-content .text .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-single .post .post-content .text ol > li,
+            html body .content.content-single .post .post-content .text ol > .li,
+            html body .content.content-single .post .post-content .text .ol > li,
+            html body .content.content-single .post .post-content .text .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-single .post .post-content .text ol > li:before,
+              html body .content.content-single .post .post-content .text ol > .li:before,
+              html body .content.content-single .post .post-content .text .ol > li:before,
+              html body .content.content-single .post .post-content .text .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post .post-content .text ol > li:before,
+                  html body .content.content-single .post .post-content .text ol > .li:before,
+                  html body .content.content-single .post .post-content .text .ol > li:before,
+                  html body .content.content-single .post .post-content .text .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post .post-content .text ol > li:before,
+                  html body .content.content-single .post .post-content .text ol > .li:before,
+                  html body .content.content-single .post .post-content .text .ol > li:before,
+                  html body .content.content-single .post .post-content .text .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-single .post .post-content .text ul,
           html body .content.content-single .post .post-content .text .ul {
             list-style-type: square;
@@ -8640,31 +8650,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-single .post .post-content ol,
           html body .content.content-single .post .post-content .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-single .post .post-content ol li > ul,
-            html body .content.content-single .post .post-content ol li > .ul,
-            html body .content.content-single .post .post-content ol li > ol,
-            html body .content.content-single .post .post-content ol li > .ol,
-            html body .content.content-single .post .post-content ol .li > ul,
-            html body .content.content-single .post .post-content ol .li > .ul,
-            html body .content.content-single .post .post-content ol .li > ol,
-            html body .content.content-single .post .post-content ol .li > .ol,
-            html body .content.content-single .post .post-content .ol li > ul,
-            html body .content.content-single .post .post-content .ol li > .ul,
-            html body .content.content-single .post .post-content .ol li > ol,
-            html body .content.content-single .post .post-content .ol li > .ol,
-            html body .content.content-single .post .post-content .ol .li > ul,
-            html body .content.content-single .post .post-content .ol .li > .ul,
-            html body .content.content-single .post .post-content .ol .li > ol,
-            html body .content.content-single .post .post-content .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-single .post .post-content ol + p,
-            html body .content.content-single .post .post-content ol + .p,
-            html body .content.content-single .post .post-content .ol + p,
-            html body .content.content-single .post .post-content .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-single .post .post-content ol > li,
+            html body .content.content-single .post .post-content ol > .li,
+            html body .content.content-single .post .post-content .ol > li,
+            html body .content.content-single .post .post-content .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-single .post .post-content ol > li:before,
+              html body .content.content-single .post .post-content ol > .li:before,
+              html body .content.content-single .post .post-content .ol > li:before,
+              html body .content.content-single .post .post-content .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post .post-content ol > li:before,
+                  html body .content.content-single .post .post-content ol > .li:before,
+                  html body .content.content-single .post .post-content .ol > li:before,
+                  html body .content.content-single .post .post-content .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post .post-content ol > li:before,
+                  html body .content.content-single .post .post-content ol > .li:before,
+                  html body .content.content-single .post .post-content .ol > li:before,
+                  html body .content.content-single .post .post-content .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-single .post .post-content ul,
           html body .content.content-single .post .post-content .ul {
             list-style-type: square;
@@ -9360,51 +9372,49 @@ html {
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol {
-                  list-style-position: inside;
-                  margin-top: 1.25em; }
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol li > ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol li > .ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol li > ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol li > .ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol .li > ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol .li > .ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol .li > ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol .li > .ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol li > ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol li > .ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol li > ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol li > .ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol .li > ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol .li > .ul,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol .li > ol,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol .li > .ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol li > ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol li > .ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol li > ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol li > .ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol .li > ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol .li > .ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol .li > ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol .li > .ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol li > ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol li > .ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol li > ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol li > .ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol .li > ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol .li > .ul,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol .li > ol,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol .li > .ol {
-                    margin-top: 0;
-                    padding-left: 1.25em; }
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol + p,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol + .p,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol + p,
-                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol + .p,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol + p,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol + .p,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol + p,
-                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol + .p {
-                    margin-top: 1.25em; }
+                  counter-reset: li; }
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li,
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li,
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li,
+                  html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li,
+                  html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li {
+                    list-style: none;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex; }
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li:before,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li:before,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li:before,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li:before,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li:before,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li:before,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li:before,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li:before {
+                      content: counter(li);
+                      counter-increment: li; }
+                      @media only screen and (max-width: 767.9px) {
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li:before {
+                          margin-right: 1.25em; } }
+                      @media only screen and (min-width: 768px) {
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content ol > .li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > li:before,
+                        html body .content.content-single #comments .comment-list li .comment-body .comment-content .ol > .li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ol > .li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > li:before,
+                        html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ol > .li:before {
+                          margin-right: 2.5em; } }
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content ul,
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content .ul,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul,
@@ -10439,31 +10449,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol li > ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol li > .ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol li > ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol li > .ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol .li > ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol .li > .ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol .li > ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol .li > .ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol li > ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol li > .ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol li > ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol li > .ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol .li > ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol .li > .ul,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol .li > ol,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol + p,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol + .p,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol + p,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li:before,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text ol > .li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > li:before,
+                  html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul {
             list-style-type: square;
@@ -12194,31 +12206,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-page .post .post-content .text ol,
           html body .content.content-page .post .post-content .text .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-page .post .post-content .text ol li > ul,
-            html body .content.content-page .post .post-content .text ol li > .ul,
-            html body .content.content-page .post .post-content .text ol li > ol,
-            html body .content.content-page .post .post-content .text ol li > .ol,
-            html body .content.content-page .post .post-content .text ol .li > ul,
-            html body .content.content-page .post .post-content .text ol .li > .ul,
-            html body .content.content-page .post .post-content .text ol .li > ol,
-            html body .content.content-page .post .post-content .text ol .li > .ol,
-            html body .content.content-page .post .post-content .text .ol li > ul,
-            html body .content.content-page .post .post-content .text .ol li > .ul,
-            html body .content.content-page .post .post-content .text .ol li > ol,
-            html body .content.content-page .post .post-content .text .ol li > .ol,
-            html body .content.content-page .post .post-content .text .ol .li > ul,
-            html body .content.content-page .post .post-content .text .ol .li > .ul,
-            html body .content.content-page .post .post-content .text .ol .li > ol,
-            html body .content.content-page .post .post-content .text .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-page .post .post-content .text ol + p,
-            html body .content.content-page .post .post-content .text ol + .p,
-            html body .content.content-page .post .post-content .text .ol + p,
-            html body .content.content-page .post .post-content .text .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-page .post .post-content .text ol > li,
+            html body .content.content-page .post .post-content .text ol > .li,
+            html body .content.content-page .post .post-content .text .ol > li,
+            html body .content.content-page .post .post-content .text .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-page .post .post-content .text ol > li:before,
+              html body .content.content-page .post .post-content .text ol > .li:before,
+              html body .content.content-page .post .post-content .text .ol > li:before,
+              html body .content.content-page .post .post-content .text .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post .post-content .text ol > li:before,
+                  html body .content.content-page .post .post-content .text ol > .li:before,
+                  html body .content.content-page .post .post-content .text .ol > li:before,
+                  html body .content.content-page .post .post-content .text .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post .post-content .text ol > li:before,
+                  html body .content.content-page .post .post-content .text ol > .li:before,
+                  html body .content.content-page .post .post-content .text .ol > li:before,
+                  html body .content.content-page .post .post-content .text .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-page .post .post-content .text ul,
           html body .content.content-page .post .post-content .text .ul {
             list-style-type: square;
@@ -13777,31 +13791,33 @@ html {
               text-decoration: line-through; }
           html body .content.content-page .post .post-content ol,
           html body .content.content-page .post .post-content .ol {
-            list-style-position: inside;
-            margin-top: 1.25em; }
-            html body .content.content-page .post .post-content ol li > ul,
-            html body .content.content-page .post .post-content ol li > .ul,
-            html body .content.content-page .post .post-content ol li > ol,
-            html body .content.content-page .post .post-content ol li > .ol,
-            html body .content.content-page .post .post-content ol .li > ul,
-            html body .content.content-page .post .post-content ol .li > .ul,
-            html body .content.content-page .post .post-content ol .li > ol,
-            html body .content.content-page .post .post-content ol .li > .ol,
-            html body .content.content-page .post .post-content .ol li > ul,
-            html body .content.content-page .post .post-content .ol li > .ul,
-            html body .content.content-page .post .post-content .ol li > ol,
-            html body .content.content-page .post .post-content .ol li > .ol,
-            html body .content.content-page .post .post-content .ol .li > ul,
-            html body .content.content-page .post .post-content .ol .li > .ul,
-            html body .content.content-page .post .post-content .ol .li > ol,
-            html body .content.content-page .post .post-content .ol .li > .ol {
-              margin-top: 0;
-              padding-left: 1.25em; }
-            html body .content.content-page .post .post-content ol + p,
-            html body .content.content-page .post .post-content ol + .p,
-            html body .content.content-page .post .post-content .ol + p,
-            html body .content.content-page .post .post-content .ol + .p {
-              margin-top: 1.25em; }
+            counter-reset: li; }
+            html body .content.content-page .post .post-content ol > li,
+            html body .content.content-page .post .post-content ol > .li,
+            html body .content.content-page .post .post-content .ol > li,
+            html body .content.content-page .post .post-content .ol > .li {
+              list-style: none;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex; }
+              html body .content.content-page .post .post-content ol > li:before,
+              html body .content.content-page .post .post-content ol > .li:before,
+              html body .content.content-page .post .post-content .ol > li:before,
+              html body .content.content-page .post .post-content .ol > .li:before {
+                content: counter(li);
+                counter-increment: li; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post .post-content ol > li:before,
+                  html body .content.content-page .post .post-content ol > .li:before,
+                  html body .content.content-page .post .post-content .ol > li:before,
+                  html body .content.content-page .post .post-content .ol > .li:before {
+                    margin-right: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post .post-content ol > li:before,
+                  html body .content.content-page .post .post-content ol > .li:before,
+                  html body .content.content-page .post .post-content .ol > li:before,
+                  html body .content.content-page .post .post-content .ol > .li:before {
+                    margin-right: 2.5em; } }
           html body .content.content-page .post .post-content ul,
           html body .content.content-page .post .post-content .ul {
             list-style-type: square;

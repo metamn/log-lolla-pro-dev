@@ -101,7 +101,7 @@
     @include p;
     @include h1h6;
     @include a;
-    @include ol;
+    @include ol--custom-counter;
     @include ul--body-text;
     @include blockquote;
     @include image--wporg;
