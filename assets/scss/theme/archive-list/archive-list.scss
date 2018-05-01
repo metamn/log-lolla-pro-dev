@@ -1,6 +1,6 @@
 @mixin archive-list {
   .archive-list-title {
-    @include margin(no, no, yes, no);
+    @include text-style(section-title);
   }
 
   .archive-list-body {
@@ -16,12 +16,10 @@
       flex-wrap: wrap;
 
       @include border(normal, all);
-      @include padding;
+      @include padding(yes, yes, no, yes);
 
       .term {
-        + .term {
-          @include margin(o, yes, yes, 0);
-        }
+        @include margin(no, yes, yes, no);
       }
     }
   }

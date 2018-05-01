@@ -699,7 +699,7 @@ html {
     html body input[type="submit"] {
       font-size: 0.8em;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
+      letter-spacing: 2.5px;
       cursor: pointer;
       border: 1px solid;
       padding: 0.3125em 0.625em; }
@@ -1016,7 +1016,7 @@ html {
           font-size: 0.8em;
           word-wrap: break-word;
           text-transform: uppercase;
-          letter-spacing: 1.5px;
+          letter-spacing: 2.5px;
           width: 3.75em;
           padding: 0.3125em 0 0.3125em 0.625em; }
       html body .content.content-home .post .sticky {
@@ -1133,9 +1133,7 @@ html {
         html body .content.content-home .post .post-content .text h4,
         html body .content.content-home .post .post-content .text h5,
         html body .content.content-home .post .post-content .text h6 {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal;
+          border: 1px solid;
           font-size: 1.25em;
           line-height: 1.1; }
         html body .content.content-home .post .post-content .text a,
@@ -2914,22 +2912,32 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-title,
-        html body .content.content-archive .archive-description,
-        html body .content.content-archive .archive-list {
-          margin-bottom: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-title,
-        html body .content.content-archive .archive-description,
-        html body .content.content-archive .archive-list {
-          margin-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-list .archive-list-title {
-          margin-bottom: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-list .archive-list-title {
-          margin-bottom: 2.5em; } }
+      html body .content.content-archive .archive-title,
+      html body .content.content-archive .archive-description,
+      html body .content.content-archive .archive-list {
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-title,
+          html body .content.content-archive .archive-description,
+          html body .content.content-archive .archive-list {
+            margin-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-title,
+          html body .content.content-archive .archive-description,
+          html body .content.content-archive .archive-list {
+            margin-bottom: 2.5em; } }
+      html body .content.content-archive .archive-title {
+        border: 1px solid;
+        font-size: 1.25em; }
+      html body .content.content-archive .archive-description {
+        font-size: 1.25em;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==); }
+      html body .content.content-archive .archive-list .archive-list-title {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        border: 1px solid;
+        display: inline; }
       html body .content.content-archive .archive-list .archive-list-body .post {
         width: 100%;
         display: -webkit-box;
@@ -2956,7 +2964,7 @@ html {
             font-size: 0.8em;
             word-wrap: break-word;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2.5px;
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-archive .archive-list .archive-list-body .post .sticky {
@@ -3073,9 +3081,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h4,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h5,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h6 {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
+            border: 1px solid;
             font-size: 1.25em;
             line-height: 1.1; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a,
@@ -4732,12 +4738,6 @@ html {
             padding-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .archive-list--topics .archive-list-body {
-            padding-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body {
-            padding-bottom: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body {
             padding-left: 1.25em; } }
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-list--topics .archive-list-body {
@@ -4749,16 +4749,16 @@ html {
           html body .content.content-archive .archive-list--topics .archive-list-body {
             padding-right: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-archive .archive-list--topics .archive-list-body .term {
             margin-bottom: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-archive .archive-list--topics .archive-list-body .term {
             margin-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-archive .archive-list--topics .archive-list-body .term {
             margin-right: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archive .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-archive .archive-list--topics .archive-list-body .term {
             margin-right: 2.5em; } }
     html body .content.content-search .search-title {
       margin-bottom: 1.25em; }
@@ -4818,7 +4818,7 @@ html {
             font-size: 0.8em;
             word-wrap: break-word;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2.5px;
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-none .post .sticky {
@@ -4935,9 +4935,7 @@ html {
           html body .content.content-none .post .post-content .text h4,
           html body .content.content-none .post .post-content .text h5,
           html body .content.content-none .post .post-content .text h6 {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
+            border: 1px solid;
             font-size: 1.25em;
             line-height: 1.1; }
           html body .content.content-none .post .post-content .text a,
@@ -6576,9 +6574,7 @@ html {
           html body .content.content-none .post {
             max-width: none; } }
         html body .content.content-none .post .post-title .text {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal;
+          border: 1px solid;
           font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post .post-title {
@@ -6651,7 +6647,7 @@ html {
             font-size: 0.8em;
             word-wrap: break-word;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2.5px;
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-single .post .sticky {
@@ -6768,9 +6764,7 @@ html {
           html body .content.content-single .post .post-content .text h4,
           html body .content.content-single .post .post-content .text h5,
           html body .content.content-single .post .post-content .text h6 {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
+            border: 1px solid;
             font-size: 1.25em;
             line-height: 1.1; }
           html body .content.content-single .post .post-content .text a,
@@ -8409,9 +8403,7 @@ html {
           html body .content.content-single .post {
             max-width: none; } }
         html body .content.content-single .post .post-title .text {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal;
+          border: 1px solid;
           font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post .post-title {
@@ -8475,7 +8467,7 @@ html {
         html body .content.content-single .post-footer .post-edit-link .edit-link {
           font-size: 0.8em;
           text-transform: uppercase;
-          letter-spacing: 1.5px;
+          letter-spacing: 2.5px;
           cursor: pointer;
           border: 1px solid;
           padding: 0.3125em 0.625em; }
@@ -8617,9 +8609,7 @@ html {
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content h4,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content h5,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content h6 {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                  font-weight: normal;
-                  font-style: normal;
+                  border: 1px solid;
                   font-size: 1.25em;
                   line-height: 1.1; }
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content a,
@@ -9804,12 +9794,12 @@ html {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list .archive-list-title {
-          margin-bottom: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list .archive-list-title {
-          margin-bottom: 2.5em; } }
+      html body .content.content-single .archive-list .archive-list-title {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        border: 1px solid;
+        display: inline; }
       html body .content.content-single .archive-list .archive-list-body .post {
         width: 100%;
         display: -webkit-box;
@@ -9836,7 +9826,7 @@ html {
             font-size: 0.8em;
             word-wrap: break-word;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2.5px;
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-single .archive-list .archive-list-body .post .sticky {
@@ -9953,9 +9943,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h4,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h5,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h6 {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
+            border: 1px solid;
             font-size: 1.25em;
             line-height: 1.1; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text a,
@@ -11612,12 +11600,6 @@ html {
             padding-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list--topics .archive-list-body {
-            padding-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--topics .archive-list-body {
-            padding-bottom: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--topics .archive-list-body {
             padding-left: 1.25em; } }
         @media only screen and (min-width: 768px) {
           html body .content.content-single .archive-list--topics .archive-list-body {
@@ -11629,16 +11611,16 @@ html {
           html body .content.content-single .archive-list--topics .archive-list-body {
             padding-right: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-single .archive-list--topics .archive-list-body .term {
             margin-bottom: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-single .archive-list--topics .archive-list-body .term {
             margin-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-single .archive-list--topics .archive-list-body .term {
             margin-right: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--topics .archive-list-body .term + .term {
+          html body .content.content-single .archive-list--topics .archive-list-body .term {
             margin-right: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-single .archive-list {
@@ -11684,7 +11666,7 @@ html {
             font-size: 0.8em;
             word-wrap: break-word;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: 2.5px;
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-page .post .sticky {
@@ -11801,9 +11783,7 @@ html {
           html body .content.content-page .post .post-content .text h4,
           html body .content.content-page .post .post-content .text h5,
           html body .content.content-page .post .post-content .text h6 {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
+            border: 1px solid;
             font-size: 1.25em;
             line-height: 1.1; }
           html body .content.content-page .post .post-content .text a,
@@ -13442,9 +13422,7 @@ html {
           html body .content.content-page .post {
             max-width: none; } }
         html body .content.content-page .post .post-title .text {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal;
+          border: 1px solid;
           font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post .post-title {

@@ -6,7 +6,16 @@
   .archive-title,
   .archive-description,
   .archive-list {
+    width: 100%;
     @include margin(no, no, yes, no);
+  }
+
+  .archive-title {
+    @include text-style(h1h6);
+  }
+
+  .archive-description{
+    @include text-style(description);
   }
 
   .archive-list {

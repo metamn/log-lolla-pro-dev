@@ -65,8 +65,25 @@
 
   // H1 - H6
   @if ($variant == 'h1h6') {
-    @include font(bold);
+    @include border(normal, all);
     @include scale(large-1);
+  }
+
+  // Section title
+  @if ($variant == 'section-title') {
+    @include scale(small-1);
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-larger;
+
+    @include border(normal, all);
+    display: inline;
+  }
+
+
+  // Description
+  @if ($variant == 'description') {
+    @include scale(large-1);
+    @include background-pattern--dotted;
   }
 
 
@@ -84,7 +101,7 @@
   @if ($variant == 'action') {
     @include scale(small-1);
     text-transform: uppercase;
-    letter-spacing: $letter-spacing-larger
+    letter-spacing: $letter-spacing-larger;
   }
 
 
