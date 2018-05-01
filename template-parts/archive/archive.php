@@ -13,16 +13,18 @@
     <?php esc_html_e( 'All posts', 'log-lolla'); ?>
   </h3>
 
-  <?php
-    if ( have_posts() ) {
-      while ( have_posts() ) {
-        the_post();
-        get_template_part( 'template-parts/post/post', 'search' );
-      }
+  <div class="archive-list-body">
+    <?php
+      if ( have_posts() ) {
+        while ( have_posts() ) {
+          the_post();
+          get_template_part( 'template-parts/post/post', 'search' );
+        }
 
-      get_template_part( 'template-parts/navigation/navigation', 'posts' );
-    } else {
-      get_template_part( 'template-parts/post/post', 'none' );
-    }
-  ?>
+        get_template_part( 'template-parts/navigation/navigation', 'posts' );
+      } else {
+        get_template_part( 'template-parts/post/post', 'none' );
+      }
+    ?>
+  </div>
 </section>

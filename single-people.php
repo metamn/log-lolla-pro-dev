@@ -15,8 +15,8 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'template-parts/post/people/person', 'single' );
-      get_template_part( 'template-parts/post/people/person', 'posts' );
+			get_template_part( 'template-parts/people/person', 'single' );
+      get_template_part( 'template-parts/people/person', 'posts' );
 
 			get_template_part( 'template-parts/navigation/navigation', 'post' );
 

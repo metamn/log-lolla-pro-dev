@@ -1,0 +1,28 @@
+@mixin archive-list {
+  .archive-list-title {
+    @include margin(no, no, yes, no);
+  }
+
+  .archive-list-body {
+    .post {
+      @include post;
+      @include post--archive;
+    }
+  }
+
+  &--topics {
+    .archive-list-body {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include border(normal, all);
+      @include padding;
+
+      .term {
+        + .term {
+          @include margin(o, yes, yes, 0);
+        }
+      }
+    }
+  }
+}

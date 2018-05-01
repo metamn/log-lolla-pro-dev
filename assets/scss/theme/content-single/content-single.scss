@@ -10,7 +10,8 @@
   .post-footer,
   .navigation,
   #comments,
-  .comments-area {
+  .comments-area,
+  .archive-list {
     width: 100%;
     max-width: none !important;
   }
@@ -27,5 +28,10 @@
   #comments,
   .comments-area {
     @include comments;
+  }
+
+  .archive-list {
+    @include archive-list;
+    @include margin(yes, no, no, no);
   }
 }
