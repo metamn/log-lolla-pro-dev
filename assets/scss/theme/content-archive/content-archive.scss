@@ -3,14 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-  @include width;
-
-  .post,
-  .navigation {
-    width: 100%;
-    max-width: none !important;
-  }
-
   .archive-title,
   .archive-description,
   .archive-list {

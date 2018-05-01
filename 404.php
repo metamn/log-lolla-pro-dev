@@ -10,19 +10,29 @@
 get_header(); ?>
 
 	<section class="content content-none">
-		<h3 class="none-title">
-			<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla' ); ?>
-		</h3>
+		<h3 hidden>Page not found</h3>
 
-		<div class="text">
-			<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla' ); ?>
-		</div>
+		<article class="post">
+			<h3 class="post-title">
+				<span class="text">
+					<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla' ); ?>
+				</span>
+			</h3>
 
-		<aside class="search">
-			<h3 hidden>Search form</h3>
+			<aside class="post-content">
+			  <h3 hidden>Article content</h3>
 
-			<?php get_search_form(); ?>
-		</aside>
+			  <div class="text">
+			    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla' ); ?>
+			  </div>
+			</aside>
+
+			<aside class="search">
+				<h3 hidden>Search form</h3>
+
+				<?php get_search_form(); ?>
+			</aside>
+		</article>
 	</section>
 
 	<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

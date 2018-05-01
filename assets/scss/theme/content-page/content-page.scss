@@ -1,9 +1,17 @@
 @mixin content-page {
-  .post {
-    @include post__grid--display-vertical;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    &.display-horizontal {
-      @include post__grid--display-vertical;
-    }
+  @include width--larger;
+
+  > * {
+    width: 100%;
+  }
+
+  .post {
+    @include post;
+    @include post--single;
+    @include margin(no, no, yes, no);
   }
 }

@@ -1,5 +1,21 @@
 @mixin content-none {
-  .none-title {
-    margin-bottom: $lem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include width--larger;
+
+  > * {
+    width: 100%;
+  }
+
+  .post {
+    @include post;
+    @include post--single;
+    @include margin(no, no, yes, no);
+
+    .search {
+      @include margin(yes, no, no, no);
+    }
   }
 }

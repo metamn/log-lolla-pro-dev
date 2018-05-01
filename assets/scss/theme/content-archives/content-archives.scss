@@ -1,38 +1,3 @@
 @mixin content-archives {
-  display: flex;
-  flex-direction: column;
-
-  .archives-title {
-    align-self: center;
-  }
-
-  .archives-content {
-    @include background-pattern--horizontal-lines;
-
-    @include portrait {
-      @include grid(1, 0px, $top-mobile, $grid-title: false, $iepx: 1px);
-    }
-
-    @include landscape {
-      @include grid(2, $left, $top, $grid-title: false, $iepx: 1px);
-    }
-
-    width: 100%;
-    @include padding(yes, yes, no, yes);
-
-    .shortcode {
-      @include shortcode;
-
-      display: flex;
-      flex-direction: column;
-
-      @include colors(default);
-      @include padding;
-
-      .shortcode-title {
-        @include border(normal, all);
-        @include margin(no, no, yes, no);
-      }
-    }
-  }
+  //
 }
