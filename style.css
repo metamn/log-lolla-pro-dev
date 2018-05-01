@@ -4987,34 +4987,15 @@ html {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center;
-      width: 100%; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single {
-          max-width: calc(100% - 2.5em); } }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        html body .content.content-single {
-          max-width: calc(100% - 5em); } }
-      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-        html body .content.content-single {
-          max-width: 37.5em; } }
-      @media only screen and (min-width: 1600.1px) {
-        html body .content.content-single {
-          max-width: 37.5em; } }
+              align-items: center; }
       @media only screen and (min-width: 1025px) and (max-width: 1600px) {
         html body .content.content-single {
           max-width: calc(42.5em); } }
       @media only screen and (min-width: 1600.1px) {
         html body .content.content-single {
           max-width: calc(42.5em); } }
-      html body .content.content-single .post,
-      html body .content.content-single .post-footer,
-      html body .content.content-single .navigation,
-      html body .content.content-single #comments,
-      html body .content.content-single .comments-area,
-      html body .content.content-single .archive-list {
-        width: 100%;
-        max-width: none !important; }
+      html body .content.content-single > * {
+        width: 100%; }
       html body .content.content-single .post {
         width: 100%;
         display: -webkit-box;
@@ -6692,6 +6673,12 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-single .post {
             padding-right: 2.5em; } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-single .post {
+            max-width: none; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-single .post {
+            max-width: none; } }
         html body .content.content-single .post .post-title .text {
           font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
