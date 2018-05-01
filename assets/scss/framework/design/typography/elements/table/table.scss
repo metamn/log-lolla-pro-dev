@@ -8,7 +8,7 @@
     .td,
     td {
       @include border(normal, bottom);
-      @include padding;
+      @include padding(half, half, half, half);
       text-align: left;
     }
 

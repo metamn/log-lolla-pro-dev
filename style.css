@@ -1247,6 +1247,18 @@ html {
               html body .content.content-home .post .post-content .text .ul .li > ol,
               html body .content.content-home .post .post-content .text .ul .li > .ol {
                 padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text ul .li,
+            html body .content.content-home .post .post-content .text ul li,
+            html body .content.content-home .post .post-content .text .ul .li,
+            html body .content.content-home .post .post-content .text .ul li {
+              margin-bottom: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text ul .li,
+            html body .content.content-home .post .post-content .text ul li,
+            html body .content.content-home .post .post-content .text .ul .li,
+            html body .content.content-home .post .post-content .text .ul li {
+              margin-bottom: 1.25em; } }
         html body .content.content-home .post .post-content .text blockquote,
         html body .content.content-home .post .post-content .text .blockquote {
           border-left: 1px solid; }
@@ -1532,7 +1544,7 @@ html {
               html body .content.content-home .post .post-content .text .table th,
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
-                padding-top: 1.25em; } }
+                padding-top: 0.625em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
@@ -1542,8 +1554,18 @@ html {
               html body .content.content-home .post .post-content .text .table th,
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
-                padding-top: 2.5em; } }
+                padding-top: 1.25em; } }
             @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post .post-content .text table .th,
+              html body .content.content-home .post .post-content .text table th,
+              html body .content.content-home .post .post-content .text table .td,
+              html body .content.content-home .post .post-content .text table td,
+              html body .content.content-home .post .post-content .text .table .th,
+              html body .content.content-home .post .post-content .text .table th,
+              html body .content.content-home .post .post-content .text .table .td,
+              html body .content.content-home .post .post-content .text .table td {
+                padding-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
               html body .content.content-home .post .post-content .text table .td,
@@ -1553,7 +1575,7 @@ html {
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
                 padding-bottom: 1.25em; } }
-            @media only screen and (min-width: 768px) {
+            @media only screen and (max-width: 767.9px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
               html body .content.content-home .post .post-content .text table .td,
@@ -1562,8 +1584,8 @@ html {
               html body .content.content-home .post .post-content .text .table th,
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
-                padding-bottom: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
+                padding-left: 0.625em; } }
+            @media only screen and (min-width: 768px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
               html body .content.content-home .post .post-content .text table .td,
@@ -1573,16 +1595,6 @@ html {
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
                 padding-left: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-home .post .post-content .text table .th,
-              html body .content.content-home .post .post-content .text table th,
-              html body .content.content-home .post .post-content .text table .td,
-              html body .content.content-home .post .post-content .text table td,
-              html body .content.content-home .post .post-content .text .table .th,
-              html body .content.content-home .post .post-content .text .table th,
-              html body .content.content-home .post .post-content .text .table .td,
-              html body .content.content-home .post .post-content .text .table td {
-                padding-left: 2.5em; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
@@ -1592,7 +1604,7 @@ html {
               html body .content.content-home .post .post-content .text .table th,
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
-                padding-right: 1.25em; } }
+                padding-right: 0.625em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-home .post .post-content .text table .th,
               html body .content.content-home .post .post-content .text table th,
@@ -1602,7 +1614,7 @@ html {
               html body .content.content-home .post .post-content .text .table th,
               html body .content.content-home .post .post-content .text .table .td,
               html body .content.content-home .post .post-content .text .table td {
-                padding-right: 2.5em; } }
+                padding-right: 1.25em; } }
           html body .content.content-home .post .post-content .text table .th,
           html body .content.content-home .post .post-content .text table th,
           html body .content.content-home .post .post-content .text .table .th,
@@ -3195,6 +3207,18 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li > ol,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li > .ol {
                   padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
+              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
+                margin-bottom: 1.25em; } }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text blockquote,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .blockquote {
             border-left: 1px solid; }
@@ -3480,7 +3504,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-top: 1.25em; } }
+                  padding-top: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
@@ -3490,8 +3514,18 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-top: 2.5em; } }
+                  padding-top: 1.25em; } }
               @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .td,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table td,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .th,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
+                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
+                  padding-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .td,
@@ -3501,7 +3535,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
                   padding-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (max-width: 767.9px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .td,
@@ -3510,8 +3544,8 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-bottom: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .td,
@@ -3521,16 +3555,6 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
                   padding-left: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .td,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table td,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .th,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
-                html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-left: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
@@ -3540,7 +3564,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-right: 1.25em; } }
+                  padding-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
@@ -3550,7 +3574,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-right: 2.5em; } }
+                  padding-right: 1.25em; } }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .th,
@@ -5049,6 +5073,18 @@ html {
                 html body .content.content-none .post .post-content .text .ul .li > ol,
                 html body .content.content-none .post .post-content .text .ul .li > .ol {
                   padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-content .text ul .li,
+              html body .content.content-none .post .post-content .text ul li,
+              html body .content.content-none .post .post-content .text .ul .li,
+              html body .content.content-none .post .post-content .text .ul li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-content .text ul .li,
+              html body .content.content-none .post .post-content .text ul li,
+              html body .content.content-none .post .post-content .text .ul .li,
+              html body .content.content-none .post .post-content .text .ul li {
+                margin-bottom: 1.25em; } }
           html body .content.content-none .post .post-content .text blockquote,
           html body .content.content-none .post .post-content .text .blockquote {
             border-left: 1px solid; }
@@ -5334,7 +5370,7 @@ html {
                 html body .content.content-none .post .post-content .text .table th,
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
-                  padding-top: 1.25em; } }
+                  padding-top: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
@@ -5344,8 +5380,18 @@ html {
                 html body .content.content-none .post .post-content .text .table th,
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
-                  padding-top: 2.5em; } }
+                  padding-top: 1.25em; } }
               @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post .post-content .text table .th,
+                html body .content.content-none .post .post-content .text table th,
+                html body .content.content-none .post .post-content .text table .td,
+                html body .content.content-none .post .post-content .text table td,
+                html body .content.content-none .post .post-content .text .table .th,
+                html body .content.content-none .post .post-content .text .table th,
+                html body .content.content-none .post .post-content .text .table .td,
+                html body .content.content-none .post .post-content .text .table td {
+                  padding-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
                 html body .content.content-none .post .post-content .text table .td,
@@ -5355,7 +5401,7 @@ html {
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
                   padding-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (max-width: 767.9px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
                 html body .content.content-none .post .post-content .text table .td,
@@ -5364,8 +5410,8 @@ html {
                 html body .content.content-none .post .post-content .text .table th,
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
-                  padding-bottom: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
                 html body .content.content-none .post .post-content .text table .td,
@@ -5375,16 +5421,6 @@ html {
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
                   padding-left: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-none .post .post-content .text table .th,
-                html body .content.content-none .post .post-content .text table th,
-                html body .content.content-none .post .post-content .text table .td,
-                html body .content.content-none .post .post-content .text table td,
-                html body .content.content-none .post .post-content .text .table .th,
-                html body .content.content-none .post .post-content .text .table th,
-                html body .content.content-none .post .post-content .text .table .td,
-                html body .content.content-none .post .post-content .text .table td {
-                  padding-left: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
@@ -5394,7 +5430,7 @@ html {
                 html body .content.content-none .post .post-content .text .table th,
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
-                  padding-right: 1.25em; } }
+                  padding-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-none .post .post-content .text table .th,
                 html body .content.content-none .post .post-content .text table th,
@@ -5404,7 +5440,7 @@ html {
                 html body .content.content-none .post .post-content .text .table th,
                 html body .content.content-none .post .post-content .text .table .td,
                 html body .content.content-none .post .post-content .text .table td {
-                  padding-right: 2.5em; } }
+                  padding-right: 1.25em; } }
             html body .content.content-none .post .post-content .text table .th,
             html body .content.content-none .post .post-content .text table th,
             html body .content.content-none .post .post-content .text .table .th,
@@ -6878,6 +6914,18 @@ html {
                 html body .content.content-single .post .post-content .text .ul .li > ol,
                 html body .content.content-single .post .post-content .text .ul .li > .ol {
                   padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-content .text ul .li,
+              html body .content.content-single .post .post-content .text ul li,
+              html body .content.content-single .post .post-content .text .ul .li,
+              html body .content.content-single .post .post-content .text .ul li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-content .text ul .li,
+              html body .content.content-single .post .post-content .text ul li,
+              html body .content.content-single .post .post-content .text .ul .li,
+              html body .content.content-single .post .post-content .text .ul li {
+                margin-bottom: 1.25em; } }
           html body .content.content-single .post .post-content .text blockquote,
           html body .content.content-single .post .post-content .text .blockquote {
             border-left: 1px solid; }
@@ -7163,7 +7211,7 @@ html {
                 html body .content.content-single .post .post-content .text .table th,
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
-                  padding-top: 1.25em; } }
+                  padding-top: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
@@ -7173,8 +7221,18 @@ html {
                 html body .content.content-single .post .post-content .text .table th,
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
-                  padding-top: 2.5em; } }
+                  padding-top: 1.25em; } }
               @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post .post-content .text table .th,
+                html body .content.content-single .post .post-content .text table th,
+                html body .content.content-single .post .post-content .text table .td,
+                html body .content.content-single .post .post-content .text table td,
+                html body .content.content-single .post .post-content .text .table .th,
+                html body .content.content-single .post .post-content .text .table th,
+                html body .content.content-single .post .post-content .text .table .td,
+                html body .content.content-single .post .post-content .text .table td {
+                  padding-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
                 html body .content.content-single .post .post-content .text table .td,
@@ -7184,7 +7242,7 @@ html {
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
                   padding-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (max-width: 767.9px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
                 html body .content.content-single .post .post-content .text table .td,
@@ -7193,8 +7251,8 @@ html {
                 html body .content.content-single .post .post-content .text .table th,
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
-                  padding-bottom: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
                 html body .content.content-single .post .post-content .text table .td,
@@ -7204,16 +7262,6 @@ html {
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
                   padding-left: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-single .post .post-content .text table .th,
-                html body .content.content-single .post .post-content .text table th,
-                html body .content.content-single .post .post-content .text table .td,
-                html body .content.content-single .post .post-content .text table td,
-                html body .content.content-single .post .post-content .text .table .th,
-                html body .content.content-single .post .post-content .text .table th,
-                html body .content.content-single .post .post-content .text .table .td,
-                html body .content.content-single .post .post-content .text .table td {
-                  padding-left: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
@@ -7223,7 +7271,7 @@ html {
                 html body .content.content-single .post .post-content .text .table th,
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
-                  padding-right: 1.25em; } }
+                  padding-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-single .post .post-content .text table .th,
                 html body .content.content-single .post .post-content .text table th,
@@ -7233,7 +7281,7 @@ html {
                 html body .content.content-single .post .post-content .text .table th,
                 html body .content.content-single .post .post-content .text .table .td,
                 html body .content.content-single .post .post-content .text .table td {
-                  padding-right: 2.5em; } }
+                  padding-right: 1.25em; } }
             html body .content.content-single .post .post-content .text table .th,
             html body .content.content-single .post .post-content .text table th,
             html body .content.content-single .post .post-content .text .table .th,
@@ -8805,6 +8853,26 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul .li > ol,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul .li > .ol {
                         padding-left: 2.5em; } }
+                  @media only screen and (max-width: 767.9px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul li {
+                      margin-bottom: 0.625em; } }
+                  @media only screen and (min-width: 768px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content .ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .ul li {
+                      margin-bottom: 1.25em; } }
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content blockquote,
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content .blockquote,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content blockquote,
@@ -9296,7 +9364,7 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-top: 1.25em; } }
+                        padding-top: 0.625em; } }
                     @media only screen and (min-width: 768px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
@@ -9314,8 +9382,26 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-top: 2.5em; } }
+                        padding-top: 1.25em; } }
                     @media only screen and (max-width: 767.9px) {
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table .td,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table td,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table .th,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table th,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table .td,
+                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table td,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table .th,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table th,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table .td,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table td,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .th,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
+                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
+                        padding-bottom: 0.625em; } }
+                    @media only screen and (min-width: 768px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .td,
@@ -9333,7 +9419,7 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
                         padding-bottom: 1.25em; } }
-                    @media only screen and (min-width: 768px) {
+                    @media only screen and (max-width: 767.9px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .td,
@@ -9350,8 +9436,8 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-bottom: 2.5em; } }
-                    @media only screen and (max-width: 767.9px) {
+                        padding-left: 0.625em; } }
+                    @media only screen and (min-width: 768px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .td,
@@ -9369,24 +9455,6 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
                         padding-left: 1.25em; } }
-                    @media only screen and (min-width: 768px) {
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table .td,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content table td,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table .th,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table th,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table .td,
-                      html body .content.content-single #comments .comment-list li .comment-body .comment-content .table td,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table .th,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table th,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table .td,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content table td,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .th,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
-                      html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-left: 2.5em; } }
                     @media only screen and (max-width: 767.9px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
@@ -9404,7 +9472,7 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-right: 1.25em; } }
+                        padding-right: 0.625em; } }
                     @media only screen and (min-width: 768px) {
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                       html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
@@ -9422,7 +9490,7 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table th,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table .td,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content .table td {
-                        padding-right: 2.5em; } }
+                        padding-right: 1.25em; } }
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content table .th,
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content table th,
                   html body .content.content-single #comments .comment-list li .comment-body .comment-content .table .th,
@@ -9720,6 +9788,26 @@ html {
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul .li > ol,
                       html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul .li > .ol {
                         padding-left: 2.5em; } }
+                  @media only screen and (max-width: 767.9px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul ul li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul li {
+                      margin-bottom: 0.625em; } }
+                  @media only screen and (min-width: 768px) {
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul ul li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .ul .li,
+                    html body .content.content-single #comments .comment-list li .comment-body .comment-content ul .ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul ul li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul .li,
+                    html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul .ul li {
+                      margin-bottom: 1.25em; } }
                 html body .content.content-single #comments .comment-list li .comment-body .comment-content ul li,
                 html body .content.content-single .comments-area .comment-list li .comment-body .comment-content ul li {
                   margin-top: 0;
@@ -10057,6 +10145,18 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li > ol,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li > .ol {
                   padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
+              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
+                margin-bottom: 1.25em; } }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text blockquote,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .blockquote {
             border-left: 1px solid; }
@@ -10342,7 +10442,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-top: 1.25em; } }
+                  padding-top: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
@@ -10352,8 +10452,18 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-top: 2.5em; } }
+                  padding-top: 1.25em; } }
               @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .td,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table td,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .th,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
+                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
+                  padding-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .td,
@@ -10363,7 +10473,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
                   padding-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (max-width: 767.9px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .td,
@@ -10372,8 +10482,8 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-bottom: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .td,
@@ -10383,16 +10493,6 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
                   padding-left: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .td,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text table td,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .th,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
-                html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-left: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
@@ -10402,7 +10502,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-right: 1.25em; } }
+                  padding-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
@@ -10412,7 +10512,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .td,
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table td {
-                  padding-right: 2.5em; } }
+                  padding-right: 1.25em; } }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .th,
@@ -11897,6 +11997,18 @@ html {
                 html body .content.content-page .post .post-content .text .ul .li > ol,
                 html body .content.content-page .post .post-content .text .ul .li > .ol {
                   padding-left: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-content .text ul .li,
+              html body .content.content-page .post .post-content .text ul li,
+              html body .content.content-page .post .post-content .text .ul .li,
+              html body .content.content-page .post .post-content .text .ul li {
+                margin-bottom: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-content .text ul .li,
+              html body .content.content-page .post .post-content .text ul li,
+              html body .content.content-page .post .post-content .text .ul .li,
+              html body .content.content-page .post .post-content .text .ul li {
+                margin-bottom: 1.25em; } }
           html body .content.content-page .post .post-content .text blockquote,
           html body .content.content-page .post .post-content .text .blockquote {
             border-left: 1px solid; }
@@ -12182,7 +12294,7 @@ html {
                 html body .content.content-page .post .post-content .text .table th,
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
-                  padding-top: 1.25em; } }
+                  padding-top: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
@@ -12192,8 +12304,18 @@ html {
                 html body .content.content-page .post .post-content .text .table th,
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
-                  padding-top: 2.5em; } }
+                  padding-top: 1.25em; } }
               @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post .post-content .text table .th,
+                html body .content.content-page .post .post-content .text table th,
+                html body .content.content-page .post .post-content .text table .td,
+                html body .content.content-page .post .post-content .text table td,
+                html body .content.content-page .post .post-content .text .table .th,
+                html body .content.content-page .post .post-content .text .table th,
+                html body .content.content-page .post .post-content .text .table .td,
+                html body .content.content-page .post .post-content .text .table td {
+                  padding-bottom: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
                 html body .content.content-page .post .post-content .text table .td,
@@ -12203,7 +12325,7 @@ html {
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
                   padding-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
+              @media only screen and (max-width: 767.9px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
                 html body .content.content-page .post .post-content .text table .td,
@@ -12212,8 +12334,8 @@ html {
                 html body .content.content-page .post .post-content .text .table th,
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
-                  padding-bottom: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
                 html body .content.content-page .post .post-content .text table .td,
@@ -12223,16 +12345,6 @@ html {
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
                   padding-left: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-page .post .post-content .text table .th,
-                html body .content.content-page .post .post-content .text table th,
-                html body .content.content-page .post .post-content .text table .td,
-                html body .content.content-page .post .post-content .text table td,
-                html body .content.content-page .post .post-content .text .table .th,
-                html body .content.content-page .post .post-content .text .table th,
-                html body .content.content-page .post .post-content .text .table .td,
-                html body .content.content-page .post .post-content .text .table td {
-                  padding-left: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
@@ -12242,7 +12354,7 @@ html {
                 html body .content.content-page .post .post-content .text .table th,
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
-                  padding-right: 1.25em; } }
+                  padding-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-page .post .post-content .text table .th,
                 html body .content.content-page .post .post-content .text table th,
@@ -12252,7 +12364,7 @@ html {
                 html body .content.content-page .post .post-content .text .table th,
                 html body .content.content-page .post .post-content .text .table .td,
                 html body .content.content-page .post .post-content .text .table td {
-                  padding-right: 2.5em; } }
+                  padding-right: 1.25em; } }
             html body .content.content-page .post .post-content .text table .th,
             html body .content.content-page .post .post-content .text table th,
             html body .content.content-page .post .post-content .text .table .th,
