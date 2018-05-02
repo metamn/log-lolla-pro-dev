@@ -1,7 +1,8 @@
 @mixin comments {
   @include colors(default);
 
-  padding: $top $left;
+  @include padding;
+  @include margin(no, no, yes, no);
   @include border(normal, all);
 
   a {

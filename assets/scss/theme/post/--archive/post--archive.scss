@@ -5,11 +5,15 @@
   @include padding;
   @include border(normal, all);
 
-  .post-title + .post-date {
-    @include margin(no, no, no, yes);
+  .post-title {
+    @include margin(no, no, no, no);
+
+    + .post-date {
+      @include margin(no, no, no, yes);
+    }
   }
 
-  +.post {
+  + .post {
     @include margin(yes, no, no, no);
   }
 }
