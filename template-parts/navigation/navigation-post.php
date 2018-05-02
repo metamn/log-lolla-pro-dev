@@ -8,21 +8,36 @@
    */
 ?>
 
-<nav class="navigation post-navigation">
-  <h3 hidden>Post navigation</h3>
+<?php
 
-  <ul class="ul">
-    <li class="li">
-      <?php
-        $arrow_left = log_lolla_get_arrow_html( 'left' );
-        previous_post_link("$arrow_left%link");
-      ?>
-    </li>
-    <li class="li">
-      <?php
-        $arrow_right = log_lolla_get_arrow_html( 'right' );
-        next_post_link("$arrow_right%link");
-      ?>
-    </li>
-  </ul>
-</nav>
+  $arrow_left = log_lolla_get_arrow_html( 'left' );
+  $prev = get_previous_post_link("$arrow_left%link");
+
+  $arrow_right = log_lolla_get_arrow_html( 'right' );
+  $next = get_next_post_link("$arrow_right%link");
+
+  if ( ! empty( $prev ) || ! empty( $next ) ) { ?>
+
+    <nav class="navigation post-navigation">
+      <h3 hidden>Post navigation</h3>
+
+      <ul class="ul">
+        <?php
+          if (! empty( $prev ) ) { ?>
+            <li class="li">
+              <?php echo $prev; ?>
+            </li>
+          <?php }
+
+          if ( ! empty( $next ) ) { ?>
+            <li class="li">
+              <?php echo $next; ?>
+            </li>
+          <?php }
+        ?>
+      </ul>
+    </nav>
+
+  <?php }
+
+?>
