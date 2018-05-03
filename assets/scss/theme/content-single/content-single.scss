@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  @include width--larger;
+  // width is set at page level
 
   > * {
     width: 100%;

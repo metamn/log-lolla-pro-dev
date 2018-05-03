@@ -7610,12 +7610,6 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-        html body .content.content-single {
-          max-width: calc(42.5em); } }
-      @media only screen and (min-width: 1600.1px) {
-        html body .content.content-single {
-          max-width: calc(42.5em); } }
       html body .content.content-single > * {
         width: 100%; }
       html body .content.content-single .post {
@@ -16884,5 +16878,13 @@ html body.home .header .header-image {
 
 html body.home .footer .footer-navigation ul li.current-menu-item {
   display: none; }
+
+@media only screen and (min-width: 1025px) and (max-width: 1600px) {
+  html body.single-format-standard .content-single {
+    max-width: calc(42.5em); } }
+
+@media only screen and (min-width: 1600.1px) {
+  html body.single-format-standard .content-single {
+    max-width: calc(42.5em); } }
 
 /*# sourceMappingURL=style.css.map */

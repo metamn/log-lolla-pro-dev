@@ -17,50 +17,48 @@ get_header(); ?>
 		<h3 hidden>Home</h3>
 
 		<?php
-      $query = new WP_Query( 'category_name=to-home-page' );
+			if ( have_posts() ) :
 
-      if ( $query->have_posts() ) {
+				// Get comments for this set of posts
+				$comments = log_lolla_get_comments_for_the_loop( $wp_query->posts );
+				print_r($comments);
 
-        /* Start the Loop */
-  			while ( $query->have_posts() ) : $query->the_post();
+				/* Start the Loop */
+				while ( have_posts() ) : the_post();
 
-  				/*
-  				 * Include the Post-Format-specific template for the content.
-  				 * If you want to override this in a child theme, then include a file
-  				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-  				 */
-  				get_template_part( 'template-parts/post/post-format', 'link' );
+					/*
+					 * Include the Post-Format-specific template for the content.
+					 * If you want to override this in a child theme, then include a file
+					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+					 */
+					get_template_part( 'template-parts/post/post-format', get_post_format() );
 
-  			endwhile;
+					// Get all comments before the post date
+					//
+					$comments_before_post = log_lolla_get_comments_before_date( $comments, get_the_date() );
 
-  			get_template_part( 'template-parts/navigation/navigation', 'posts' );
+					// Display dates
+					//
+					if ( ! empty( $comments_before_post ) ) {
+						foreach ( $comments_before_post as $comment ) {
+							get_template_part( 'template-parts/comment/comment' );
+							$comments = log_lolla_remove_object_from_array( $comments, $comment );
+						}
+					}
 
-      } else {
+					// Remove dates
+					//
 
-				if ( have_posts() ) :
 
-					/* Start the Loop */
-					while ( have_posts() ) : the_post();
+				endwhile;
 
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'template-parts/post/post-format', get_post_format() );
+				get_template_part( 'template-parts/navigation/navigation', 'posts' );
 
-					endwhile;
+			else :
 
-					get_template_part( 'template-parts/navigation/navigation', 'posts' );
+				get_template_part( 'template-parts/post/post', 'none' );
 
-				else :
-
-					get_template_part( 'template-parts/post/post', 'none' );
-
-				endif;
-			}
-
-			wp_reset_postdata();
+			endif;
 		?>
 	</section>
 
