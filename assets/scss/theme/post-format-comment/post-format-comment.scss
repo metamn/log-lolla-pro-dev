@@ -6,10 +6,13 @@
 
   @include width;
 
+  > * {
+    width: 100%;
+  }
+
   .comment-content {
     @include border(normal, all);
     @include padding;
-    width: 100%;
 
     .text {
       @include text-style(body-text-post);
@@ -18,14 +21,19 @@
 
   .comment-post-title-with-arrows {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
 
     .arrow-with-triangle {
       @include arrow-with-triangle;
+
+      position: relative;
+      @include margin(yes, no, no, no);
     }
 
-    .title {
-      @include padding(yes, no, no, no);
+    .comment-title {
+      @include padding(no, no, yes, no);
     }
   }
 }

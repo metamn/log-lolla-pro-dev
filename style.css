@@ -3021,9 +3021,10 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .post.post-format-comment {
             max-width: 37.5em; } }
-        html body .content.content-home .post.post-format-comment .comment-content {
-          border: 1px solid;
+        html body .content.content-home .post.post-format-comment > * {
           width: 100%; }
+        html body .content.content-home .post.post-format-comment .comment-content {
+          border: 1px solid; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post.post-format-comment .comment-content {
               padding-top: 1.25em; } }
@@ -3839,9 +3840,14 @@ html {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start; }
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          -webkit-box-align: end;
+              -ms-flex-align: end;
+                  align-items: flex-end;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
           html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -3856,7 +3862,8 @@ html {
                     align-items: center;
             width: 3.75em;
             -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg); }
+                    transform: rotate(0deg);
+            position: relative; }
             html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
               width: calc(3.125em);
               border-bottom: 1px solid; }
@@ -3890,12 +3897,36 @@ html {
             html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                margin-right: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .title {
-              padding-top: 1.25em; } }
+            html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+              padding-bottom: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .title {
-              padding-top: 2.5em; } }
+            html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+              padding-bottom: 2.5em; } }
       html body .content.content-home .post .post__content {
         border: 1px solid; }
         @media only screen and (max-width: 767.9px) {
@@ -6174,9 +6205,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment {
               max-width: 37.5em; } }
-          html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content {
-            border: 1px solid;
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content {
+            border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content {
                 padding-top: 1.25em; } }
@@ -6992,9 +7024,14 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start; }
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -7009,7 +7046,8 @@ html {
                       align-items: center;
               width: 3.75em;
               -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
+                      transform: rotate(0deg);
+              position: relative; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -7043,12 +7081,36 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 1.25em; } }
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 2.5em; } }
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 2.5em; } }
         html body .content.content-archive .archive-list .archive-list-body .post .post__content {
           width: 100%; }
           @media only screen and (max-width: 767.9px) {
@@ -9257,9 +9319,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-none .post.post-format-comment {
               max-width: 37.5em; } }
-          html body .content.content-none .post.post-format-comment .comment-content {
-            border: 1px solid;
+          html body .content.content-none .post.post-format-comment > * {
             width: 100%; }
+          html body .content.content-none .post.post-format-comment .comment-content {
+            border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post.post-format-comment .comment-content {
                 padding-top: 1.25em; } }
@@ -10075,9 +10138,14 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start; }
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -10092,7 +10160,8 @@ html {
                       align-items: center;
               width: 3.75em;
               -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
+                      transform: rotate(0deg);
+              position: relative; }
               html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -10126,12 +10195,36 @@ html {
               html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 1.25em; } }
+              html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 2.5em; } }
+              html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post {
             max-width: calc(100% - 2.5em); } }
@@ -12309,9 +12402,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-single .post.post-format-comment {
               max-width: 37.5em; } }
-          html body .content.content-single .post.post-format-comment .comment-content {
-            border: 1px solid;
+          html body .content.content-single .post.post-format-comment > * {
             width: 100%; }
+          html body .content.content-single .post.post-format-comment .comment-content {
+            border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post.post-format-comment .comment-content {
                 padding-top: 1.25em; } }
@@ -13127,9 +13221,14 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start; }
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -13144,7 +13243,8 @@ html {
                       align-items: center;
               width: 3.75em;
               -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
+                      transform: rotate(0deg);
+              position: relative; }
               html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -13178,12 +13278,36 @@ html {
               html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 1.25em; } }
+              html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 2.5em; } }
+              html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post {
             max-width: calc(100% - 2.5em); } }
@@ -17110,9 +17234,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-comment {
               max-width: 37.5em; } }
-          html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content {
-            border: 1px solid;
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content {
+            border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content {
                 padding-top: 1.25em; } }
@@ -17928,9 +18053,14 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start; }
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -17945,7 +18075,8 @@ html {
                       align-items: center;
               width: 3.75em;
               -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
+                      transform: rotate(0deg);
+              position: relative; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -17979,12 +18110,36 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 1.25em; } }
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 2.5em; } }
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 2.5em; } }
         html body .content.content-single .archive-list .archive-list-body .post .post__content {
           width: 100%; }
           @media only screen and (max-width: 767.9px) {
@@ -20197,9 +20352,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-page .post.post-format-comment {
               max-width: 37.5em; } }
-          html body .content.content-page .post.post-format-comment .comment-content {
-            border: 1px solid;
+          html body .content.content-page .post.post-format-comment > * {
             width: 100%; }
+          html body .content.content-page .post.post-format-comment .comment-content {
+            border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post.post-format-comment .comment-content {
                 padding-top: 1.25em; } }
@@ -21015,9 +21171,14 @@ html {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -webkit-box-align: start;
-                -ms-flex-align: start;
-                    align-items: flex-start; }
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: flex-end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
             html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -21032,7 +21193,8 @@ html {
                       align-items: center;
               width: 3.75em;
               -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
+                      transform: rotate(0deg);
+              position: relative; }
               html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -21066,12 +21228,36 @@ html {
               html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-top: 2.5em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 1.25em; } }
+              html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .title {
-                padding-top: 2.5em; } }
+              html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .comment-title {
+                padding-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post {
             max-width: calc(100% - 2.5em); } }

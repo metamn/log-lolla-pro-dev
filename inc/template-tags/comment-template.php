@@ -36,7 +36,7 @@ if ( ! function_exists( 'log_lolla_comment_updated_text' ) ) {
    */
   function log_lolla_comment_updated_text( $comment ) {
     return sprintf(
-     '<span class="title">%1$s %2$s</a>',
+     '<h3 class="comment-title">%1$s %2$s</h3>',
      esc_html( 'Update on', 'comment updated text', 'log-lolla' ),
      log_lolla_comment_post_title( $comment )
    );
