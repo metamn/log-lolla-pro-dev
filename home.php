@@ -21,7 +21,7 @@ get_header(); ?>
 
 				// Get comments for this set of posts
 				$comments = log_lolla_get_comments_for_the_loop( $wp_query->posts );
-				print_r($comments);
+
 
 				/* Start the Loop */
 				while ( have_posts() ) : the_post();
@@ -33,21 +33,21 @@ get_header(); ?>
 					 */
 					get_template_part( 'template-parts/post/post-format', get_post_format() );
 
+
 					// Get all comments before the post date
 					//
 					$comments_before_post = log_lolla_get_comments_before_date( $comments, get_the_date() );
 
-					// Display dates
+					// Display comments
 					//
 					if ( ! empty( $comments_before_post ) ) {
 						foreach ( $comments_before_post as $comment ) {
-							get_template_part( 'template-parts/comment/comment' );
+							get_template_part( 'template-parts/comment/comment', 'in-loop' );
+
+							// Remove comment from the list
 							$comments = log_lolla_remove_object_from_array( $comments, $comment );
 						}
 					}
-
-					// Remove dates
-					//
 
 
 				endwhile;
