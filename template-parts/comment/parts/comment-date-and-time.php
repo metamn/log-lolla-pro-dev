@@ -8,7 +8,7 @@
    */
 ?>
 
-<aside class="comment-date">
+<aside class="comment-date-and-time">
   <h3 hidden>Comment date</h3>
 
   <?php log_lolla_comment_date( $comment ); ?>

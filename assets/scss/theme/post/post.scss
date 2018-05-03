@@ -83,4 +83,8 @@
   &.post-format-standard {
     @include post-format-standard;
   }
+
+  &.post-format-comment {
+    @include post-format-comment;
+  }
 }

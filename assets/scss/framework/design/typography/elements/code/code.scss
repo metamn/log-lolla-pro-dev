@@ -2,5 +2,8 @@
   .code,
   code {
     @include font(monospace);
+
+    word-wrap: normal;
+    display: block;
   }
 }

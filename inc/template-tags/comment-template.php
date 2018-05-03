@@ -27,6 +27,23 @@ if ( ! function_exists( 'log_lolla_comment_date' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_comment_updated_text' ) ) {
+  /**
+   * Display updated text to a comment
+   *
+   * @param  object $comment The comment object
+   * @return string          HTML
+   */
+  function log_lolla_comment_updated_text( $comment ) {
+    return sprintf(
+     '<span class="title">%1$s %2$s</a>',
+     esc_html( 'Update on', 'comment updated text', 'log-lolla' ),
+     log_lolla_comment_post_title( $comment )
+   );
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_comment_post_title' ) ) {
   /**
    * Display post title associated with a comment
@@ -35,11 +52,11 @@ if ( ! function_exists( 'log_lolla_comment_post_title' ) ) {
    * @return string          HTML
    */
   function log_lolla_comment_post_title( $comment ) {
-    printf(
+    return sprintf(
      '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
-     esc_url( get_permalink( $comment->post_ID ) ),
-     esc_attr( get_the_title( $comment->post_ID ) ),
-     esc_html( get_the_title( $comment->post_ID ) )
+     esc_url( get_permalink( $comment->comment_post_ID ) ),
+     esc_attr( get_the_title( $comment->comment_post_ID ) ),
+     esc_html( get_the_title( $comment->comment_post_ID ) )
    );
   }
 }
