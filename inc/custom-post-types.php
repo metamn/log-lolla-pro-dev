@@ -35,7 +35,7 @@ if ( ! function_exists( 'log_lolla_create_custom_post_type_summary' ) ) {
 
     $args = array(
       'labels'             => $labels,
-      'description'        => __( 'Description.', 'log-lolla' ),
+      'description'        => __( 'High level summaries of a topic', 'log-lolla' ),
       'public'             => true,
       'publicly_queryable' => true,
       'show_ui'            => true,
@@ -85,7 +85,7 @@ if ( ! function_exists( 'log_lolla_create_custom_post_type_source' ) ) {
 
    $args = array(
      'labels'             => $labels,
-     'description'        => __( 'Description.', 'log-lolla' ),
+     'description'        => __( 'Frequently used sources of information', 'log-lolla' ),
      'public'             => true,
      'publicly_queryable' => true,
      'show_ui'            => true,
@@ -131,7 +131,7 @@ if ( ! function_exists( 'log_lolla_create_custom_post_type_people' ) ) {
 
     $args = array(
       'labels'             => $labels,
-      'description'        => __( 'Description.', 'log-lolla' ),
+      'description'        => __( 'People to learn from', 'log-lolla' ),
       'public'             => true,
       'publicly_queryable' => true,
       'show_ui'            => true,
