@@ -10,7 +10,9 @@
     width: 100%;
   }
 
-  .comment-content {
+  .comment-content,
+  .comment-excerpt,
+  .comment-content-or-excerpt {
     @include border(normal, all);
     @include padding;
 

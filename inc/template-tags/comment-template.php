@@ -62,6 +62,40 @@ if ( ! function_exists( 'log_lolla_comment_post_title' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_comment_content_or_excerpt' ) ) {
+  /**
+   * Display comment content or excerpt
+   *
+   * @param  object $comment The comment object
+   * @return string          HTML
+   */
+  function log_lolla_comment_content_or_excerpt( $comment ) {
+    if ( log_lolla_word_count( get_comment_text() ) > 60 ) {
+      log_lolla_comment_excerpt( $comment );
+    } else {
+      log_lolla_comment_content( $comment );
+    }
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_comment_excerpt' ) ) {
+  /**
+   * Display comment excerpt
+   *
+   * @param  object $comment The comment object
+   * @return string          HTML
+   */
+  function log_lolla_comment_excerpt( $comment ) {
+    printf(
+     '<div class="text">%1$s</div>',
+     get_comment_excerpt( $comment )
+   );
+  }
+}
+
+
+
 if ( ! function_exists( 'log_lolla_comment_content' ) ) {
   /**
    * Display comment content
