@@ -1,0 +1,22 @@
+@mixin summary {
+  display: flex;
+  flex-direction: column;
+
+  .summary-link-to-topic {
+    display: flex;
+
+    .text {
+      @include text-style(section-title);
+      display: inline-flex;
+    }
+  }
+
+  .summary-title-without-link {
+    @include padding;
+    @include border(normal, all);
+  }
+
+  + .summary {
+    @include margin(yes, no, no, no);
+  }
+}

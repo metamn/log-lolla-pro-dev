@@ -13,7 +13,7 @@ get_header(); ?>
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
 
-		<div class="summaries">
+		<div class="archive-list">
 			<?php
 	      if ( have_posts() ) {
 	        while ( have_posts() ) {

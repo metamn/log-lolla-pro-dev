@@ -100,7 +100,7 @@ if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
 
     printf(
       '<span class="on">%1$s</span><span class="topic">%2$s</span>',
-      esc_html( 'On ', 'log-lolla'),
+      esc_html( 'On&nbsp;', 'log-lolla'),
       $term
     );
   }

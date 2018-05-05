@@ -23,4 +23,8 @@
       }
     }
   }
+
+  .summary {
+    @include summary;
+  }
 }

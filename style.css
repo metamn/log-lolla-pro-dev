@@ -9394,6 +9394,77 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-list--topics .archive-list-body .term {
             margin-left: 0; } }
+      html body .content.content-archive .archive-list .summary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        html body .content.content-archive .archive-list .summary .summary-link-to-topic {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          html body .content.content-archive .archive-list .summary .summary-link-to-topic .text {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            border: 1px solid;
+            display: inline;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
+        html body .content.content-archive .archive-list .summary .summary-title-without-link {
+          border: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-list .summary .summary-title-without-link {
+              padding-right: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .summary + .summary {
+            margin-right: 0; } }
     html body .content.content-search .search-title {
       margin-bottom: 1.25em; }
       html body .content.content-search .search-title span {
@@ -22777,6 +22848,77 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-single .archive-list--topics .archive-list-body .term {
             margin-left: 0; } }
+      html body .content.content-single .archive-list .summary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        html body .content.content-single .archive-list .summary .summary-link-to-topic {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          html body .content.content-single .archive-list .summary .summary-link-to-topic .text {
+            font-size: 0.8em;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            border: 1px solid;
+            display: inline;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
+        html body .content.content-single .archive-list .summary .summary-title-without-link {
+          border: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .archive-list .summary .summary-title-without-link {
+              padding-right: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .summary + .summary {
+            margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-single .archive-list {
           margin-top: 2.5em; } }
