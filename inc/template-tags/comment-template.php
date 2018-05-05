@@ -10,6 +10,70 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_comment_permalink' ) ) {
+  /**
+   * Display comment permalink
+   *
+   * @param  object $comment The comment
+   * @return string          HTML
+   */
+  function log_lolla_comment_permalink( $comment ) {
+    printf(
+      '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
+      esc_url( get_comment_link( $comment ) ),
+      esc_attr( esc_html( 'Comment permalink', 'log-lolla' ) ),
+      /* translators: %s: post permalink. */
+      esc_html_x( '&infin;', 'post permalink', 'log-lolla' )
+    );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_comment_list_title' ) ) {
+  /**
+   * Display comments list title for a post
+   *
+   * @param  integer $number_of_comments The number of comments
+   * @param  object  $post               The post
+   * @return string                      HTML
+   */
+  function log_lolla_comment_list_title( $number_of_comments, $post ) {
+    $text = '';
+
+    if ( $number_of_comments === 1) {
+      $text = esc_html( 'One update on ', 'log-lolla');
+    } else {
+      $text = $number_of_comments . esc_html( ' updates on ' );
+    }
+
+    return sprintf(
+      '<span class="number-of-comments">%1$s</span><span class="post-title">%2$s</span>',
+      $text,
+      get_the_title( $post )
+    );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_comments_of_a_post' ) ) {
+  /**
+   * Returns only the comments of a post without anything else like pingbacks and trackbacks
+   *
+   * @param  object $post The post
+   * @return array        A list of comments
+   */
+  function log_lolla_get_comments_of_a_post( $post ) {
+    return get_comments(
+      array(
+        'post_id' => $post->ID,
+        'status' => 'approve',
+        'type' => 'comment'
+      )
+    );
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_comment_date' ) ) {
   /**
    * Display comment date

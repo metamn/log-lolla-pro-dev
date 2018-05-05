@@ -18,8 +18,7 @@
     @include post-footer;
   }
 
-  #comments,
-  .comments-area {
+  .comments {
     @include comments;
   }
 

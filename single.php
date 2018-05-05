@@ -19,12 +19,7 @@ get_header(); ?>
       get_template_part( 'template-parts/post/parts/post', 'footer' );
 
 			get_template_part( 'template-parts/navigation/navigation', 'post' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
+      get_template_part( 'template-parts/comment/comment', 'list' );
 		endwhile; // End of the loop.
 		?>
   </section>

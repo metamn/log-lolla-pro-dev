@@ -1,0 +1,15 @@
+@mixin comment {
+  .comment-content {
+    @include padding;
+    @include border(normal, all);
+
+    .text {
+      @include text-style(body-text-post);
+    }
+  }
+
+  .comment-permalink {
+    display: flex;
+    justify-content: center;
+  }
+}

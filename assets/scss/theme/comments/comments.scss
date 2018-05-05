@@ -1,25 +1,19 @@
 @mixin comments {
-  @include colors(default);
+  @include margin(yes, no, yes, no);
 
-  @include padding;
-  @include margin(no, no, yes, no);
-  @include border(normal, all);
-
-  a {
-    @include link;
+  .comments-title {
+    @include text-style('section-title');
   }
 
-  .comment-list {
-    @include comment-list;
-  }
+  .comments-body {
+    @include margin(yes, no, no, no);
+    
+    .comment {
+      @include comment;
 
-  .comment-form {
-    @include comment-form;
-  }
-
-  .bypostauthor {
-    // if the comment is by the original author of the post, the class "bypostauthor" is added.
-    // - required by the theme check plugin
-    display: flex;
+      + .comment {
+        @include margin(yes, no, no, no);
+      }
+    }
   }
 }
