@@ -6,13 +6,9 @@
     display: flex;
     flex-direction: column;
 
-    margin-bottom: $lem;
-    padding-bottom: $lem;
     @include border(normal, bottom);
 
     &:last-of-type {
-      margin-bottom: 0px;
-      padding-bottom: 0px;
       border: none;
     }
 
@@ -20,7 +16,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      margin: $lem 0;
+      @include margin(yes, no, yes, no);
 
       .comment-meta {
         // avatar width + avatar right margin
@@ -59,9 +55,7 @@
           }
         }
 
-        @include border(normal, left);
         margin-left: $lem;
-        padding-left: $lem;
         margin-top: $lem;
         padding-bottom: $lem;
       }
