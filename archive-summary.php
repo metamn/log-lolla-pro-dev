@@ -13,19 +13,20 @@ get_header(); ?>
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
 
+		<div class="summaries">
+			<?php
+	      if ( have_posts() ) {
+	        while ( have_posts() ) {
+	          the_post();
+	          get_template_part( 'template-parts/summary/summary' );
+	        }
 
-		<?php
-      if ( have_posts() ) {
-        while ( have_posts() ) {
-          the_post();
-          get_template_part( 'template-parts/summary/summary' );
-        }
-
-        get_template_part( 'template-parts/navigation/navigation', 'posts' );
-      } else {
-        get_template_part( 'template-parts/post/post', 'none' );
-      }
-    ?>
+	        get_template_part( 'template-parts/navigation/navigation', 'posts' );
+	      } else {
+	        get_template_part( 'template-parts/post/post', 'none' );
+	      }
+	    ?>
+		</div>
 	</section>
 
 	<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
