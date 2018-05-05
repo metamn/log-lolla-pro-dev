@@ -18,6 +18,6 @@
         <?php echo $term->name ?>
       </a>
     </div>
-    
+
   <?php }
 ?>

@@ -10,6 +10,121 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_display_summary_dates' ) ) {
+  /**
+   * Display the dates for a summary
+   *
+   * @param  Object $summary The summary
+   * @return string          HTML
+   */
+  function log_lolla_display_summary_dates( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $dates = log_lolla_get_summary_dates( $summary );
+    if ( empty( $dates ) ) return;
+
+    printf(
+     '<time class="date published" datetime="%1$s">%2$s</time>',
+     esc_attr( $dates[0] ),
+     esc_html( $dates[0] )
+   );
+
+   if ( ! empty( $dates[1] ) ) {
+     printf(
+      '<span class="dates-separator">%1$s</span><time class="date published" datetime="%2$s">%3$s</time>',
+      esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla' ),
+      esc_attr( $dates[1] ),
+      esc_html( $dates[1] )
+    );
+   }
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_summary_dates' ) ) {
+  /**
+   * Get the dates for a summary
+   *
+   * @param  Object $summary The summary
+   * @return Array           The dates
+   */
+  function log_lolla_get_summary_dates( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $dates = [];
+
+    $dates[] = get_the_date( 'F j, Y', $summary );
+    $dates[] = log_lolla_get_summary_last_date( $summary );
+
+    return $dates;
+  }
+}
+
+
+
+if ( ! function_exists( 'log_lolla_get_summary_last_date' ) ) {
+  function log_lolla_get_summary_last_date( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $topic = log_lolla_get_summary_topic( $summary );
+    if ( empty( $topic ) ) return;
+
+    $summaries_for_topic = log_lolla_get_summaries_for_archive( $topic );
+    if ( empty( $summaries_for_topic ) ) return;
+
+    if ( count( $summaries_for_topic ) < 2 ) return;
+
+    return get_the_date( 'F j, Y', $summaries_for_topic[1] );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
+  /**
+   * Display a link to a topic for a summary
+   *
+   * @param  Object $summary The summary
+   * @return string          HTML
+   */
+  function log_lolla_display_summary_link_to_topic( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $topic = log_lolla_get_summary_topic( $summary );
+    if ( empty( $topic ) ) return;
+
+    set_query_var( 'term', $topic );
+    return get_template_part( 'template-parts/term/term' );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
+  /**
+   * Get the topic of a summary
+   *
+   *
+   * @param  Object $summary The summary
+   * @return Object          The topic
+   */
+  function log_lolla_get_summary_topic( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $categories = get_the_category( $summary->ID );
+    if ( empty( $categories[0] ) ) return;
+
+    return $categories[0];
+  }
+}
+
+
+
+if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
+  function log_lolla_display_summaries( $number_of_summaries ) {
+
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
   /**
    * Display summaries for an archive

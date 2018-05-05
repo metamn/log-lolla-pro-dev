@@ -22,7 +22,6 @@
     );
   ?>
 
-
   <div class="archive-list-body">
     <?php
       $current_post = $post;

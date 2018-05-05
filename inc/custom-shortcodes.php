@@ -8,6 +8,37 @@
    */
 
 
+
+
+if (! function_exists( 'log_lolla_create_custom_shortcode_summaries' ) ) {
+  /**
+   * Display summaries archive
+   *
+   * Usage: [log-lolla-summaries summaries="5"]
+   *
+   * @param  Array $attributes The attributes of the shortcode
+   * @return string            HTML
+   */
+  function log_lolla_create_custom_shortcode_sourcessummaries( $attributes ) {
+    // Default attributes
+    $default_attributes = array(
+      'summaries' => 5
+    );
+
+    // Parse attributes
+    $attrs = shortcode_atts( $default_attributes, $attributes );
+
+    // Content
+    $content = log_lolla_display_summaries( $attrs['summaries'] );
+
+    return log_lolla_display_shortcode( esc_html__( 'Summaries', 'log-lolla' ), $content );
+  }
+
+  add_shortcode( 'log-lolla-summaries', 'log_lolla_create_custom_shortcode_summaries' );
+}
+
+
+
 if (! function_exists( 'log_lolla_create_custom_shortcode_sources' ) ) {
   /**
    * Display sources archive
