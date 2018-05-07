@@ -1,3 +1,21 @@
-@mixin background-pattern {
-  //
+@mixin background-pattern($pattern, $color-scheme-name: white) {
+  @if ($pattern == dotted) {
+    @if ($color-scheme-name == white) {
+      @include background-pattern--dotted-white;
+    }
+
+    @if ($color-scheme-name == black) {
+      @include background-pattern--dotted-black;
+    }
+  }
+
+  @if ($pattern == horizontal-lines) {
+    @if ($color-scheme-name == white) {
+      @include background-pattern--horizontal-lines-white;
+    }
+
+    @if ($color-scheme-name == black) {
+      @include background-pattern--horizontal-lines-black;
+    }
+  }
 }
