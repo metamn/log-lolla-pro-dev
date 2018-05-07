@@ -24,25 +24,25 @@ $title-font: 'nimbus-mono';
  * Typography
  *
  */
- $lem: 1.25em;
+ $lem: 1.5em;
 
- $line-height: 1.25;
- $line-height-larger: 1.5;
+ $line-height: 1.5;
+ $line-height-larger: 1.9;
  $line-height-smaller: 1.1;
 
- $letter-spacing: 1px;
+ $letter-spacing: 0px;
  $letter-spacing-larger: 1.1px;
 
- $scale: 'major-third';
+ $scale: 'minor-fourth';
 
 
  // Spacing
  //
- $top: $lem * 1.5;
- $left: $lem * 1.5;
- $top-mobile: $lem * 1.5;
+ $top: $lem;
+ $left: $lem;
+ $top-mobile: $lem;
  $left-mobile: $lem;
- $text-block-width: $lem * 27;
+ $text-block-width: $lem * 20;
 
 
  // Borders
