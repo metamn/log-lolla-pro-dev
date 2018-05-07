@@ -1,6 +1,4 @@
 @mixin border--thick($position: bottom) {
-  $border-thick: $lem / 8 solid;
-
   @if ($position == top) {
     border-top: $border-thick;
   }

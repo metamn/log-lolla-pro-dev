@@ -12,44 +12,108 @@
 @include fonts--sparks;
 
 
+@if ($body-font == 'nimbus-sans') {
+  @include fonts--nimbus-sans;
+}
+
+@if ($body-font == 'lack') {
+  @include fonts--lack;
+}
+
+@if ($monospace-font == 'nimbus-mono') {
+  @include fonts--nimbus-sans;
+}
+
+@if ($title-font == 'nimbus-mono') {
+  @include fonts--nimbus-mono;
+}
+
 
 // The font mixins
 //
 @mixin font($variant) {
 
   @if ($variant == 'default') {
-    font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    @if ($body-font == 'nimbus-sans') {
+      font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'bold') {
-    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    @if ($body-font == 'nimbus-sans') {
+      font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'italic') {
-    font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: normal;
-    font-style: normal;;
+    @if ($body-font == 'nimbus-sans') {
+      font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;;
+    }
   }
 
   @if ($variant == 'bold-italic') {
-    font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    @if ($body-font == 'nimbus-sans') {
+      font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;;
+    }
   }
 
   @if ($variant == 'monospace') {
-    font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-    font-weight: normal;
-    font-style: normal;
+    @if ($monospace-font == 'nimbus-mono') {
+      font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'site-title') {
-    font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-    font-weight: normal;
-    font-style: normal;
+    @if ($title-font == 'nimbus-mono') {
+      font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'lack') {
+      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 }

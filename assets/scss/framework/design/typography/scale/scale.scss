@@ -9,29 +9,9 @@
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
 
-// Basic typography settings
-//
-$lem: 1.25em;
-
-$line-height: 1.5;
-$line-height-larger: 1.8;
-$line-height-smaller: 1.1;
-
-$letter-spacing: 1.25px;
-$letter-spacing-larger: 2.5px;
-
-
-// Spacing
-//
-$top: $lem * 2;
-$left: $lem * 2;
-$top-mobile: $lem * 2;
-$left-mobile: $lem;
-$text-block-width: $lem * 30;
 
 
 
-// Different typographic scales
 @mixin scale($variant) {
 
   // The default font size and line height
@@ -42,7 +22,13 @@ $text-block-width: $lem * 30;
 
   // Smaller than default font size with 1 scale
   @if ($variant == 'small-1') {
-    font-size: 0.8em;
+    @if ($scale == 'major-third') {
+      font-size: 0.8em;
+    }
+
+    @if ($scale == 'minor-fourth') {
+      font-size: 0.75em;
+    }
   }
 
   // Larger according to the browser's scale
@@ -53,16 +39,34 @@ $text-block-width: $lem * 30;
 
   // Larger than default font size with 1 scale
   @if ($variant == 'large-1') {
-    font-size: 1.25em;
+    @if ($scale == 'major-third') {
+      font-size: 1.25em;
+    }
+
+    @if ($scale == 'minor-fourth') {
+      font-size: 1.333em;
+    }
   }
 
   // Larger than default font size with 2 scalse
   @if ($variant == 'large-2') {
-    font-size: 1.563em;
+    @if ($scale == 'major-third') {
+      font-size: 1.563em;
+    }
+
+    @if ($scale == 'minor-fourth') {
+      font-size: 1.777em;
+    }
   }
 
   // Larger than default font size with 3 scales
   @if ($variant == 'large-3') {
-    font-size: 1.953em;
+    @if ($scale == 'major-third') {
+      font-size: 1.953em;
+    }
+
+    @if ($scale == 'minor-fourth') {
+      font-size: 2.369em;
+    }
   }
 }

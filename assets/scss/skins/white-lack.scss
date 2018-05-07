@@ -15,7 +15,7 @@ $text-color: black;
 /**
  * Fonts
  */
-$body-font: 'nimbus-sans';
+$body-font: 'lack';
 $monospace-font:'nimbus-mono';
 $title-font: 'nimbus-mono';
 
@@ -26,30 +26,32 @@ $title-font: 'nimbus-mono';
  */
  $lem: 1.25em;
 
- $line-height: 1.5;
- $line-height-larger: 1.8;
+ $line-height: 1.25;
+ $line-height-larger: 1.5;
  $line-height-smaller: 1.1;
 
- $letter-spacing: 1.25px;
- $letter-spacing-larger: 2.5px;
+ $letter-spacing: 1px;
+ $letter-spacing-larger: 1.1px;
 
  $scale: 'major-third';
 
 
  // Spacing
  //
- $top: $lem * 2;
- $left: $lem * 2;
- $top-mobile: $lem * 2;
+ $top: $lem * 1.5;
+ $left: $lem * 1.5;
+ $top-mobile: $lem * 1.5;
  $left-mobile: $lem;
- $text-block-width: $lem * 30;
+ $text-block-width: $lem * 27;
 
 
-// Borders
-//
-$border-normal: 1px solid;
-$border-thin: $lem / 8 solid;
-$border-thick: $lem / 4 solid;
+ // Borders
+ //
+ $border-normal: 2px solid;
+ $border-thin: $lem / 8 solid;
+ $border-thick: $lem / 4 solid;
+
+
 
 
 /**
