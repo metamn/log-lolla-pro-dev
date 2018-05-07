@@ -83,7 +83,7 @@
   // Description
   @if ($variant == 'description') {
     @include scale(large-1);
-    @include background-pattern(dotted, $color-scheme-name);
+    @include background-pattern(dotted, $quote-pattern-color);
   }
 
 

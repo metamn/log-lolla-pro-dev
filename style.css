@@ -10,6 +10,20 @@
  Tags:         blog, full-width-template, post-formats
  Text Domain:  log-lolla
 */
+/**
+ * The default skin
+ *
+ * Sets up color schemes, image assets, fonts and more
+ */
+/**
+ * Colors
+ */
+/**
+ * Fonts
+ */
+/**
+ * Assets
+ */
 /* Dotlines */
 @font-face {
   font-family: 'Sparks-Dotline-Extrathin';
@@ -119,7 +133,7 @@
   font-style: normal; }
 
 /* Classes for Sparks
------------------------------------------------------------------------------ */
+  ----------------------------------------------------------------------------- */
 .sparks-font {
   text-rendering: optimizeLegibility;
   -webkit-font-variant-ligatures: contextual;
@@ -176,43 +190,9 @@
 .sparks-font-bar-extrawide {
   font-family: Sparks-Bar-Extrawide; }
 
-@font-face {
-  font-family: 'nimbus_sans_lbold_italic';
-  src: url("assets/fonts/nimbussanl-bolita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bolita-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lbold';
-  src: url("assets/fonts/nimbussanl-bol-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bol-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular_italic';
-  src: url("assets/fonts/nimbussanl-regita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-regita-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular';
-  src: url("assets/fonts/nimbussanl-reg-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-reg-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_monoregular';
-  src: url("assets/fonts/nimbusmono-regular-webfont.woff2") format("woff2"), url("assets/fonts/nimbusmono-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
 /* - fixing big child elements breaking smaller parent's width and height in Firefox
 - http://stackoverflow.com/questions/26895349/how-can-i-get-ff-33-x-flexbox-behavior-in-ff-34-x
 */
-/**
- * The white color scheme
- *
- */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
      ========================================================================== */

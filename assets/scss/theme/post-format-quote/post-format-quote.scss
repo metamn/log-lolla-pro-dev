@@ -9,7 +9,7 @@
     }
 
     .post-content {
-      @include background-pattern(dotted, $color-scheme-name);
+      @include background-pattern(dotted, $quote-pattern-color);
       padding: 0;
       order: 1;
 

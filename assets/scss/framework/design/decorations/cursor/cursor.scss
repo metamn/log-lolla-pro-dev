@@ -20,7 +20,7 @@
 //
 // Styleguide cursor
 @mixin cursor($cursor-image-name, $x: 0, $y: 0, $default: auto) {
-  cursor: url("assets/images/#{$cursor-image-name}--#{$color-scheme-name}.png") #{$x} #{$y},
-          url("assets/images/#{$cursor-image-name}--#{$color-scheme-name}.cur"),
+  cursor: url("assets/images/#{$cursor-image-name}--#{$cursor-color}.png") #{$x} #{$y},
+          url("assets/images/#{$cursor-image-name}--#{$cursor-color}.cur"),
           #{$default};
 }
