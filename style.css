@@ -623,7 +623,7 @@ html {
     color: white;
     background-color: black;
     letter-spacing: 1.25px;
-    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64.cur"), auto;
+    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.cur"), auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -720,7 +720,7 @@ html {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
       html body a:hover {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
     html body > * {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -786,7 +786,7 @@ html {
         color: white;
         background-color: black; }
       html body .header .menu-hamburger {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
           color: white;
           background-color: transparent; }
