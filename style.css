@@ -616,8 +616,8 @@ html {
     font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: #000;
-    background-color: #fff;
+    color: #fff;
+    background-color: #000;
     letter-spacing: 1.25px;
     cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64.cur"), auto;
     width: 100%;
@@ -660,8 +660,8 @@ html {
       font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
-      color: #000;
-      background-color: #fff;
+      color: #fff;
+      background-color: #000;
       border: none;
       border-radius: 0;
       -webkit-appearance: none; }
@@ -763,8 +763,8 @@ html {
           html body .header .header-image figure img {
             height: 2.5em; }
       html body .header .header-title .link {
-        color: #000;
-        background-color: #fff;
+        color: #fff;
+        background-color: #000;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -779,13 +779,13 @@ html {
         font-weight: normal;
         font-style: normal;
         word-wrap: break-word;
-        color: #000;
-        background-color: #fff; }
+        color: #fff;
+        background-color: #000; }
       html body .header .menu-hamburger {
         cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: transparent; }
           html body .header .menu-hamburger .hamburger-icon--closed {
             display: none; }
           html body .header .menu-hamburger .hamburger-icon--opened {
@@ -843,8 +843,8 @@ html {
               -ms-flex-pack: end;
                   justify-content: flex-end; }
     html body .header-menu {
-      color: #000;
-      background-color: #fff;
+      color: #fff;
+      background-color: #000;
       border: 1px solid;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -917,8 +917,8 @@ html {
                   align-items: baseline; } }
     html body .content a,
     html body .content .link {
-      color: #000;
-      background-color: #fff;
+      color: #fff;
+      background-color: #000;
       text-decoration: underline;
       will-change: text-decoration;
       transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -931,8 +931,8 @@ html {
       border-bottom: 1px solid;
       margin: 10vh 0;
       padding: 1.25em 0;
-      color: #000;
-      background-color: #fff; }
+      color: #fff;
+      background-color: #000; }
       html body .content .navigation .arrow-with-triangle {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -957,19 +957,19 @@ html {
           height: 0;
           border-style: solid;
           border-width: 0.625em 0 0.625em 0.625em;
-          border-color: transparent transparent transparent #000; }
+          border-color: transparent transparent transparent #fff; }
           html body .content .navigation .arrow-with-triangle__triangle--right {
             border-width: 0.625em 0 0.625em 0.625em;
-            border-color: transparent transparent transparent #000; }
+            border-color: transparent transparent transparent #fff; }
           html body .content .navigation .arrow-with-triangle__triangle--left {
             border-width: 0.625em 0.625em 0.625em 0;
-            border-color: transparent #000 transparent transparent; }
+            border-color: transparent #fff transparent transparent; }
           html body .content .navigation .arrow-with-triangle__triangle--top {
             border-width: 0 0.625em 0.625em 0.625em;
-            border-color: transparent transparent #000 transparent; }
+            border-color: transparent transparent #fff transparent; }
           html body .content .navigation .arrow-with-triangle__triangle--bottom {
             border-width: 0.625em 0.625em 0 0.625em;
-            border-color: #000 transparent transparent transparent; }
+            border-color: #fff transparent transparent transparent; }
         html body .content .navigation .arrow-with-triangle--right {
           -webkit-transform: rotate(0deg);
                   transform: rotate(0deg); }
@@ -984,8 +984,8 @@ html {
                   transform: rotate(90deg); }
       html body .content .navigation a,
       html body .content .navigation .link {
-        color: #000;
-        background-color: #fff;
+        color: #fff;
+        background-color: #000;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -1038,8 +1038,8 @@ html {
           width: 3.75em;
           padding: 0.3125em 0 0.3125em 0.625em; }
       html body .content.content-home .post .sticky {
-        color: #000;
-        background-color: #fff; }
+        color: #fff;
+        background-color: #000; }
       html body .content.content-home .post .post-title .text {
         font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
@@ -1067,8 +1067,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post .post-featured-image figure figcaption,
         html body .content.content-home .post .post-featured-image figure .wp-caption-text {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           font-size: 0.8em;
           display: inline-block; }
         html body .content.content-home .post .post-featured-image figure .figcaption,
@@ -1132,19 +1132,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent #000; }
+              border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent #000 transparent transparent; }
+                border-color: transparent #fff transparent transparent; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent #000 transparent; }
+                border-color: transparent transparent #fff transparent; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: #000 transparent transparent transparent; }
+                border-color: #fff transparent transparent transparent; }
             html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -1174,13 +1174,13 @@ html {
           line-height: 1.1; }
         html body .content.content-home .post .post-content .text a,
         html body .content.content-home .post .post-content .text .link {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
           html body .content.content-home .post .post-content .text a:hover, html body .content.content-home .post .post-content .text a:active,
           html body .content.content-home .post .post-content .text .link:hover,
           html body .content.content-home .post .post-content .text .link:active {
@@ -1488,7 +1488,7 @@ html {
           html body .content.content-home .post .post-content .text figure .link,
           html body .content.content-home .post .post-content .text .wp-caption a,
           html body .content.content-home .post .post-content .text .wp-caption .link {
-            color: #000;
+            color: #fff;
             background-color: transparent;
             text-decoration: underline;
             will-change: text-decoration;
@@ -1517,8 +1517,8 @@ html {
           html body .content.content-home .post .post-content .text .wp-caption .figcaption,
           html body .content.content-home .post .post-content .text .wp-caption .wp-caption-text,
           html body .content.content-home .post .post-content .text .wp-caption .gallery-caption {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
             html body .content.content-home .post .post-content .text .figure figcaption .link,
@@ -1545,8 +1545,8 @@ html {
             html body .content.content-home .post .post-content .text .wp-caption .wp-caption-text a,
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption .link,
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption a {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2150,8 +2150,8 @@ html {
             max-width: 100%; }
           html body .content.content-home .post .post-content .text .gallery figure figcaption,
           html body .content.content-home .post .post-content .text .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-home .post .post-content .text .gallery figure .gallery-icon {
@@ -2186,19 +2186,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent #000; }
+              border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent #000 transparent transparent; }
+                border-color: transparent #fff transparent transparent; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent #000 transparent; }
+                border-color: transparent transparent #fff transparent; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: #000 transparent transparent transparent; }
+                border-color: #fff transparent transparent transparent; }
             html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -2306,19 +2306,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent #000; }
+              border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent #000 transparent transparent; }
+                border-color: transparent #fff transparent transparent; }
               html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent #000 transparent; }
+                border-color: transparent transparent #fff transparent; }
               html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: #000 transparent transparent transparent; }
+                border-color: #fff transparent transparent transparent; }
             html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -2364,8 +2364,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption,
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           font-size: 0.8em;
           display: inline-block; }
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -2585,8 +2585,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           font-size: 0.8em;
           display: inline-block; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -2620,8 +2620,8 @@ html {
         html body .content.content-home .post.post-format-audio .post__content .post-content {
           margin-right: 0; } }
       html body .content.content-home .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-        color: #fff;
-        background-color: #000; }
+        color: #000;
+        background-color: #fff; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post.post-format-video .post__content .post-content .text iframe {
           height: auto; } }
@@ -2634,8 +2634,8 @@ html {
             -ms-flex-direction: column;
                 flex-direction: column; }
         html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post.post-format-aside .post__content .post-content .text {
               padding-top: 2.5em; } }
@@ -2711,19 +2711,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent #000; }
+              border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent #000 transparent transparent; }
+                border-color: transparent #fff transparent transparent; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent #000 transparent; }
+                border-color: transparent transparent #fff transparent; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: #000 transparent transparent transparent; }
+                border-color: #fff transparent transparent transparent; }
             html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -2762,8 +2762,8 @@ html {
             -ms-flex-order: 1;
                 order: 1; }
         html body .content.content-home .post.post-format-quote .post__content .post-content .text {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           border: 0.15625em solid;
           -webkit-transform: translateX(-2.5em) skew(5deg);
                   transform: translateX(-2.5em) skew(5deg); }
@@ -2866,8 +2866,8 @@ html {
             margin-right: 0; } }
         html body .content.content-home .post.post-format-chat .post__content .post-content .text p {
           border: 0.15625em solid;
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           -webkit-transform: translateX(0.625em) skew(5deg);
                   transform: translateX(0.625em) skew(5deg);
           max-width: 70%; }
@@ -3102,13 +3102,13 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text .link,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text a,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .link {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              color: #000;
-              background-color: #fff; }
+              color: #fff;
+              background-color: #000; }
               html body .content.content-home .post.post-format-comment .comment-content .text a:hover, html body .content.content-home .post.post-format-comment .comment-content .text a:active,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:hover,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:active,
@@ -3830,7 +3830,7 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text figure .link,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                color: #000;
+                color: #fff;
                 background-color: transparent;
                 text-decoration: underline;
                 will-change: text-decoration;
@@ -3907,8 +3907,8 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 font-size: 0.8em;
                 display: inline-block; }
                 html body .content.content-home .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -3983,8 +3983,8 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   text-decoration: underline;
                   will-change: text-decoration;
                   transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -4932,19 +4932,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent #000; }
+              border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent #000 transparent transparent; }
+                border-color: transparent #fff transparent transparent; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent #000 transparent; }
+                border-color: transparent transparent #fff transparent; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: #000 transparent transparent transparent; }
+                border-color: #fff transparent transparent transparent; }
             html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -5282,8 +5282,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-archive .archive-list .archive-list-body .post .sticky {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
         html body .content.content-archive .archive-list .archive-list-body .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -5311,8 +5311,8 @@ html {
             max-width: 100%; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
@@ -5376,19 +5376,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -5418,13 +5418,13 @@ html {
             line-height: 1.1; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a:hover, html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a:active,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link:hover,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link:active {
@@ -5732,7 +5732,7 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text figure .link,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption a,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -5761,8 +5761,8 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .figcaption,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
@@ -5789,8 +5789,8 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -6394,8 +6394,8 @@ html {
               max-width: 100%; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure figcaption,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
@@ -6430,19 +6430,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -6550,19 +6550,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -6608,8 +6608,8 @@ html {
             max-width: 100%; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -6829,8 +6829,8 @@ html {
             max-width: 100%; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -6864,8 +6864,8 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -6878,8 +6878,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-            color: #fff;
-            background-color: #000; }
+            color: #000;
+            background-color: #fff; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -6955,19 +6955,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -7006,8 +7006,8 @@ html {
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             border: 0.15625em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -7110,8 +7110,8 @@ html {
               margin-right: 0; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
             border: 0.15625em solid;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -7346,13 +7346,13 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: #000;
-                background-color: #fff; }
+                color: #fff;
+                background-color: #000; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:hover, html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:active,
@@ -8074,7 +8074,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: #000;
+                  color: #fff;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -8151,8 +8151,8 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -8227,8 +8227,8 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: #000;
-                    background-color: #fff;
+                    color: #fff;
+                    background-color: #000;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -9176,19 +9176,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -9527,8 +9527,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-none .post .sticky {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
         html body .content.content-none .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -9556,8 +9556,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post .post-featured-image figure figcaption,
           html body .content.content-none .post .post-featured-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-none .post .post-featured-image figure .figcaption,
@@ -9621,19 +9621,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -9663,13 +9663,13 @@ html {
             line-height: 1.1; }
           html body .content.content-none .post .post-content .text a,
           html body .content.content-none .post .post-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-none .post .post-content .text a:hover, html body .content.content-none .post .post-content .text a:active,
             html body .content.content-none .post .post-content .text .link:hover,
             html body .content.content-none .post .post-content .text .link:active {
@@ -9977,7 +9977,7 @@ html {
             html body .content.content-none .post .post-content .text figure .link,
             html body .content.content-none .post .post-content .text .wp-caption a,
             html body .content.content-none .post .post-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -10006,8 +10006,8 @@ html {
             html body .content.content-none .post .post-content .text .wp-caption .figcaption,
             html body .content.content-none .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-none .post .post-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-none .post .post-content .text .figure figcaption .link,
@@ -10034,8 +10034,8 @@ html {
               html body .content.content-none .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -10639,8 +10639,8 @@ html {
               max-width: 100%; }
             html body .content.content-none .post .post-content .text .gallery figure figcaption,
             html body .content.content-none .post .post-content .text .gallery figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
             html body .content.content-none .post .post-content .text .gallery figure .gallery-icon {
@@ -10675,19 +10675,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -10795,19 +10795,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -10853,8 +10853,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -11074,8 +11074,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -11109,8 +11109,8 @@ html {
           html body .content.content-none .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-none .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -11123,8 +11123,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-none .post.post-format-aside .post__content .post-content .text {
-            color: #fff;
-            background-color: #000; }
+            color: #000;
+            background-color: #fff; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -11200,19 +11200,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -11251,8 +11251,8 @@ html {
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-none .post.post-format-quote .post__content .post-content .text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             border: 0.15625em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -11355,8 +11355,8 @@ html {
               margin-right: 0; } }
           html body .content.content-none .post.post-format-chat .post__content .post-content .text p {
             border: 0.15625em solid;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -11591,13 +11591,13 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: #000;
-                background-color: #fff; }
+                color: #fff;
+                background-color: #000; }
                 html body .content.content-none .post.post-format-comment .comment-content .text a:hover, html body .content.content-none .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:active,
@@ -12319,7 +12319,7 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: #000;
+                  color: #fff;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -12396,8 +12396,8 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
                   html body .content.content-none .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -12472,8 +12472,8 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: #000;
-                    background-color: #fff;
+                    color: #fff;
+                    background-color: #000;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -13421,19 +13421,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -13670,8 +13670,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-single .post .sticky {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
         html body .content.content-single .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -13699,8 +13699,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post .post-featured-image figure figcaption,
           html body .content.content-single .post .post-featured-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .post .post-featured-image figure .figcaption,
@@ -13764,19 +13764,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -13806,13 +13806,13 @@ html {
             line-height: 1.1; }
           html body .content.content-single .post .post-content .text a,
           html body .content.content-single .post .post-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-single .post .post-content .text a:hover, html body .content.content-single .post .post-content .text a:active,
             html body .content.content-single .post .post-content .text .link:hover,
             html body .content.content-single .post .post-content .text .link:active {
@@ -14120,7 +14120,7 @@ html {
             html body .content.content-single .post .post-content .text figure .link,
             html body .content.content-single .post .post-content .text .wp-caption a,
             html body .content.content-single .post .post-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -14149,8 +14149,8 @@ html {
             html body .content.content-single .post .post-content .text .wp-caption .figcaption,
             html body .content.content-single .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .post .post-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-single .post .post-content .text .figure figcaption .link,
@@ -14177,8 +14177,8 @@ html {
               html body .content.content-single .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -14782,8 +14782,8 @@ html {
               max-width: 100%; }
             html body .content.content-single .post .post-content .text .gallery figure figcaption,
             html body .content.content-single .post .post-content .text .gallery figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
             html body .content.content-single .post .post-content .text .gallery figure .gallery-icon {
@@ -14818,19 +14818,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -14938,19 +14938,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -14996,8 +14996,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -15217,8 +15217,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -15252,8 +15252,8 @@ html {
           html body .content.content-single .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-single .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -15266,8 +15266,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-single .post.post-format-aside .post__content .post-content .text {
-            color: #fff;
-            background-color: #000; }
+            color: #000;
+            background-color: #fff; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -15343,19 +15343,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -15394,8 +15394,8 @@ html {
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-single .post.post-format-quote .post__content .post-content .text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             border: 0.15625em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -15498,8 +15498,8 @@ html {
               margin-right: 0; } }
           html body .content.content-single .post.post-format-chat .post__content .post-content .text p {
             border: 0.15625em solid;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -15734,13 +15734,13 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: #000;
-                background-color: #fff; }
+                color: #fff;
+                background-color: #000; }
                 html body .content.content-single .post.post-format-comment .comment-content .text a:hover, html body .content.content-single .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:active,
@@ -16462,7 +16462,7 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: #000;
+                  color: #fff;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -16539,8 +16539,8 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
                   html body .content.content-single .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -16615,8 +16615,8 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: #000;
-                    background-color: #fff;
+                    color: #fff;
+                    background-color: #000;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17564,19 +17564,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -17738,8 +17738,8 @@ html {
             -ms-flex-direction: column;
                 flex-direction: column;
         border: 1px solid;
-        color: #000;
-        background-color: #fff;
+        color: #fff;
+        background-color: #000;
         margin-top: 2.5em; }
         html body .content.content-single .post-footer .date-and-author {
           display: -webkit-box;
@@ -17776,8 +17776,8 @@ html {
           padding: 0.3125em 0.625em; }
           html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link {
             padding: 0;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: none;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17793,8 +17793,8 @@ html {
           padding-top: 0; }
         html body .content.content-single .post-footer .link,
         html body .content.content-single .post-footer a {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17897,13 +17897,13 @@ html {
             line-height: 1.1; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text a,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text a:hover, html body .content.content-single .comments .comments-body .comment .comment-content .text a:active,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:hover,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:active {
@@ -18211,7 +18211,7 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text figure .link,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption a,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -18240,8 +18240,8 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .figcaption,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-single .comments .comments-body .comment .comment-content .text .figure figcaption .link,
@@ -18268,8 +18268,8 @@ html {
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .wp-caption-text a,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18736,8 +18736,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-single .archive-list .archive-list-body .post .sticky {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
         html body .content.content-single .archive-list .archive-list-body .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -18765,8 +18765,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
@@ -18830,19 +18830,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .archive-list .archive-list-body .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -18872,13 +18872,13 @@ html {
             line-height: 1.1; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text a:hover, html body .content.content-single .archive-list .archive-list-body .post .post-content .text a:active,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link:hover,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link:active {
@@ -19186,7 +19186,7 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text figure .link,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption a,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -19215,8 +19215,8 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .figcaption,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
@@ -19243,8 +19243,8 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -19848,8 +19848,8 @@ html {
               max-width: 100%; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure figcaption,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
@@ -19884,19 +19884,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -20004,19 +20004,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -20062,8 +20062,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -20283,8 +20283,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -20318,8 +20318,8 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -20332,8 +20332,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-            color: #fff;
-            background-color: #000; }
+            color: #000;
+            background-color: #fff; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -20409,19 +20409,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -20460,8 +20460,8 @@ html {
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             border: 0.15625em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -20564,8 +20564,8 @@ html {
               margin-right: 0; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
             border: 0.15625em solid;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -20800,13 +20800,13 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: #000;
-                background-color: #fff; }
+                color: #fff;
+                background-color: #000; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:hover, html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:active,
@@ -21528,7 +21528,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: #000;
+                  color: #fff;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -21605,8 +21605,8 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -21681,8 +21681,8 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: #000;
-                    background-color: #fff;
+                    color: #fff;
+                    background-color: #000;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -22630,19 +22630,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -22985,8 +22985,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-page .post .sticky {
-          color: #000;
-          background-color: #fff; }
+          color: #fff;
+          background-color: #000; }
         html body .content.content-page .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -23014,8 +23014,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post .post-featured-image figure figcaption,
           html body .content.content-page .post .post-featured-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-page .post .post-featured-image figure .figcaption,
@@ -23079,19 +23079,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -23121,13 +23121,13 @@ html {
             line-height: 1.1; }
           html body .content.content-page .post .post-content .text a,
           html body .content.content-page .post .post-content .text .link {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: #000;
-            background-color: #fff; }
+            color: #fff;
+            background-color: #000; }
             html body .content.content-page .post .post-content .text a:hover, html body .content.content-page .post .post-content .text a:active,
             html body .content.content-page .post .post-content .text .link:hover,
             html body .content.content-page .post .post-content .text .link:active {
@@ -23435,7 +23435,7 @@ html {
             html body .content.content-page .post .post-content .text figure .link,
             html body .content.content-page .post .post-content .text .wp-caption a,
             html body .content.content-page .post .post-content .text .wp-caption .link {
-              color: #000;
+              color: #fff;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -23464,8 +23464,8 @@ html {
             html body .content.content-page .post .post-content .text .wp-caption .figcaption,
             html body .content.content-page .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-page .post .post-content .text .wp-caption .gallery-caption {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
               html body .content.content-page .post .post-content .text .figure figcaption .link,
@@ -23492,8 +23492,8 @@ html {
               html body .content.content-page .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption a {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24097,8 +24097,8 @@ html {
               max-width: 100%; }
             html body .content.content-page .post .post-content .text .gallery figure figcaption,
             html body .content.content-page .post .post-content .text .gallery figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
             html body .content.content-page .post .post-content .text .gallery figure .gallery-icon {
@@ -24133,19 +24133,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -24253,19 +24253,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -24311,8 +24311,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -24532,8 +24532,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             font-size: 0.8em;
             display: inline-block; }
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -24567,8 +24567,8 @@ html {
           html body .content.content-page .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-page .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: #fff;
-          background-color: #000; }
+          color: #000;
+          background-color: #fff; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -24581,8 +24581,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-page .post.post-format-aside .post__content .post-content .text {
-            color: #fff;
-            background-color: #000; }
+            color: #000;
+            background-color: #fff; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -24658,19 +24658,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -24709,8 +24709,8 @@ html {
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-page .post.post-format-quote .post__content .post-content .text {
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             border: 0.15625em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -24813,8 +24813,8 @@ html {
               margin-right: 0; } }
           html body .content.content-page .post.post-format-chat .post__content .post-content .text p {
             border: 0.15625em solid;
-            color: #000;
-            background-color: #fff;
+            color: #fff;
+            background-color: #000;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -25049,13 +25049,13 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: #000;
-                background-color: #fff; }
+                color: #fff;
+                background-color: #000; }
                 html body .content.content-page .post.post-format-comment .comment-content .text a:hover, html body .content.content-page .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:active,
@@ -25777,7 +25777,7 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: #000;
+                  color: #fff;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -25854,8 +25854,8 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
                   html body .content.content-page .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -25930,8 +25930,8 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: #000;
-                    background-color: #fff;
+                    color: #fff;
+                    background-color: #000;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -26879,19 +26879,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent #000; }
+                border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent #000; }
+                  border-color: transparent transparent transparent #fff; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent #000 transparent transparent; }
+                  border-color: transparent #fff transparent transparent; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent #000 transparent; }
+                  border-color: transparent transparent #fff transparent; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: #000 transparent transparent transparent; }
+                  border-color: #fff transparent transparent transparent; }
               html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -27069,7 +27069,7 @@ html {
           html body .content.content-page .post {
             margin-right: 0; } }
     html body .sidebar {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGElEQVQImWNgYGD4jwVjEfyPBWBXiU0QAA7LJ9nOACy2AAAAAElFTkSuQmCC);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -27147,8 +27147,8 @@ html {
         html body .footer {
           padding-bottom: 2.5em; } }
       html body .footer .footer-copyright .link {
-        color: #000;
-        background-color: #fff;
+        color: #fff;
+        background-color: #000;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27198,8 +27198,8 @@ html {
           margin-bottom: 0.625em;
           padding-bottom: 0.625em; }
         html body .footer .footer-navigation ul li a {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27215,8 +27215,8 @@ html {
       html body .footer .footer-credits {
         margin-top: 1.25em; }
         html body .footer .footer-credits .link {
-          color: #000;
-          background-color: #fff;
+          color: #fff;
+          background-color: #000;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27225,8 +27225,8 @@ html {
     html body .footer-navigation ul li.current-menu-item a {
       text-decoration: line-through; }
     html body .widget {
-      color: #000;
-      background-color: #fff;
+      color: #fff;
+      background-color: #000;
       border: 1px solid; }
       @media only screen and (max-width: 767.9px) {
         html body .widget {
@@ -27254,8 +27254,8 @@ html {
           padding-right: 2.5em; } }
       html body .widget a,
       html body .widget .link {
-        color: #000;
-        background-color: #fff;
+        color: #fff;
+        background-color: #000;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27268,8 +27268,8 @@ html {
       html body .widget.widget_calendar .calendar_wrap {
         overflow-x: auto; }
       html body .widget.widget_media_audio .mejs-horizontal-volume-slider {
-        color: #fff;
-        background-color: #000; }
+        color: #000;
+        background-color: #fff; }
       html body .widget.widget_log_lolla_archives_widget .widget-title {
         border: 1px solid; }
         @media only screen and (max-width: 767.9px) {
@@ -27572,8 +27572,8 @@ html {
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text {
-                  color: #000;
-                  background-color: #fff;
+                  color: #fff;
+                  background-color: #000;
                   font-size: 0.8em;
                   display: inline-block; }
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
@@ -27749,8 +27749,8 @@ html {
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text {
-                color: #000;
-                background-color: #fff;
+                color: #fff;
+                background-color: #000;
                 font-size: 0.8em;
                 display: inline-block; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
@@ -27991,8 +27991,8 @@ html {
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
         html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
@@ -28104,8 +28104,8 @@ html {
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
-              color: #000;
-              background-color: #fff;
+              color: #fff;
+              background-color: #000;
               font-size: 0.8em;
               display: inline-block; }
         html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {

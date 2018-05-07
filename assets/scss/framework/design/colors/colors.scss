@@ -7,10 +7,10 @@
 // Styleguide colors
 
 // background color
-$background-color: #fff;
+$background-color: #000;
 
 // Text color
-$text-color: #000;
+$text-color: #fff;
 
 
 // Color combinations. Colors are not used standalone but in pairs
@@ -23,6 +23,11 @@ $text-color: #000;
 
   @if ($name == 'text-color-on-transparent') {
     color: $text-color;
+    background-color: transparent;
+  }
+
+  @if ($name == 'background-color-on-transparent') {
+    color: $background-color;
     background-color: transparent;
   }
 

@@ -2,7 +2,7 @@
   @include cursor('brutalist_line_SVGicon_cursor2-64x64', -10, 0);
 
   .hamburger-icon {
-    @include colors(default);
+    @include colors(text-color-on-transparent);
 
     &--closed {
       display: none;
