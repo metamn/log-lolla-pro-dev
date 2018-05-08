@@ -1,5 +1,5 @@
 /**
- * The white x lack font skin
+ * The darkgray x Lack font skin
  *
  * Sets up color schemes, image assets, fonts and more
  */
@@ -7,8 +7,10 @@
 
 /**
  * Colors
+ *
+ * Contrast: AAA http://contrast-ratio.com/#black-on-darkgray
  */
-$background-color: white;
+$background-color: darkgray;
 $text-color: black;
 
 $post-format-status-background-color: '';
@@ -22,7 +24,6 @@ $post-format-link-text-color: '';
 
 $post-format-standard-background-color: '';
 $post-format-standard-text-color: '';
-
 
 
 /**
@@ -60,7 +61,7 @@ $title-font: 'lack';
  $left-mobile: $lem;
  $text-block-width: $lem * 20;
 
- $home-grid-columns: 'false';
+ $home-grid-columns: 'true';
 
 
  /**

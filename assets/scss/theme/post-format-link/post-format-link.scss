@@ -4,6 +4,10 @@
       @include post__content--display-vertical;
     }
 
+    @if ($post-format-link-background-color and $post-format-link-text-color) {
+      @include colors-on-the-fly($post-format-link-background-color, $post-format-link-text-color);
+    }
+
     .post-title {
       width: 100%;
 

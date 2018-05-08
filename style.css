@@ -11,12 +11,14 @@
  Text Domain:  log-lolla
 */
 /**
- * The default skin
+ * The darkgray x Lack font skin
  *
  * Sets up color schemes, image assets, fonts and more
  */
 /**
  * Colors
+ *
+ * Contrast: AAA http://contrast-ratio.com/#black-on-gainsboro
  */
 /**
  * Fonts
@@ -640,7 +642,7 @@ html {
     font-weight: normal;
     font-style: normal;
     color: black;
-    background-color: white;
+    background-color: gainsboro;
     letter-spacing: 0px;
     cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
     width: 100%;
@@ -684,7 +686,7 @@ html {
       font-weight: normal;
       font-style: normal;
       color: black;
-      background-color: white;
+      background-color: gainsboro;
       border: none;
       border-radius: 0;
       -webkit-appearance: none; }
@@ -787,7 +789,7 @@ html {
             height: 1.5em; }
       html body .header .header-title .link {
         color: black;
-        background-color: white;
+        background-color: gainsboro;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -803,7 +805,7 @@ html {
         font-style: normal;
         word-wrap: break-word;
         color: black;
-        background-color: white; }
+        background-color: gainsboro; }
       html body .header .menu-hamburger {
         cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
@@ -867,7 +869,7 @@ html {
                   justify-content: flex-end; }
     html body .header-menu {
       color: black;
-      background-color: white;
+      background-color: gainsboro;
       border: 2px solid;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -941,7 +943,7 @@ html {
     html body .content a,
     html body .content .link {
       color: black;
-      background-color: white;
+      background-color: gainsboro;
       text-decoration: underline;
       will-change: text-decoration;
       transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -955,7 +957,7 @@ html {
       margin: 10vh 0;
       padding: 1.5em 0;
       color: black;
-      background-color: white; }
+      background-color: gainsboro; }
       html body .content .navigation .arrow-with-triangle {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1008,7 +1010,7 @@ html {
       html body .content .navigation a,
       html body .content .navigation .link {
         color: black;
-        background-color: white;
+        background-color: gainsboro;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -1062,7 +1064,7 @@ html {
           padding: 0.375em 0 0.375em 0.75em; }
       html body .content.content-home .post .sticky {
         color: black;
-        background-color: white; }
+        background-color: gainsboro; }
       html body .content.content-home .post .post-title .text {
         font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
@@ -1091,7 +1093,7 @@ html {
         html body .content.content-home .post .post-featured-image figure figcaption,
         html body .content.content-home .post .post-featured-image figure .wp-caption-text {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           font-size: 0.75em;
           display: inline-block; }
         html body .content.content-home .post .post-featured-image figure .figcaption,
@@ -1198,12 +1200,12 @@ html {
         html body .content.content-home .post .post-content .text a,
         html body .content.content-home .post .post-content .text .link {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
           html body .content.content-home .post .post-content .text a:hover, html body .content.content-home .post .post-content .text a:active,
           html body .content.content-home .post .post-content .text .link:hover,
           html body .content.content-home .post .post-content .text .link:active {
@@ -1541,7 +1543,7 @@ html {
           html body .content.content-home .post .post-content .text .wp-caption .wp-caption-text,
           html body .content.content-home .post .post-content .text .wp-caption .gallery-caption {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
             html body .content.content-home .post .post-content .text .figure figcaption .link,
@@ -1569,7 +1571,7 @@ html {
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption .link,
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption a {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2174,7 +2176,7 @@ html {
           html body .content.content-home .post .post-content .text .gallery figure figcaption,
           html body .content.content-home .post .post-content .text .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-home .post .post-content .text .gallery figure .gallery-icon {
@@ -2284,76 +2286,83 @@ html {
               flex-wrap: wrap; }
           html body .content.content-home .post .post-paginated-content .text .page-links-title {
             margin-right: 0.75em; }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-home .post.post-format-link .post__content {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: column;
-                  flex-direction: column; } }
-      html body .content.content-home .post.post-format-link .post__content .post-title {
-        width: 100%; }
-        html body .content.content-home .post.post-format-link .post__content .post-title .link {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-          html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+      html body .content.content-home .post.post-format-link .post__content {
+        background-color: skyblue;
+        color: black; }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-home .post.post-format-link .post__content {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            -ms-flex-wrap: nowrap;
-                flex-wrap: nowrap;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; } }
+        html body .content.content-home .post.post-format-link .post__content a,
+        html body .content.content-home .post.post-format-link .post__content .link {
+          background-color: skyblue !important;
+          color: black !important; }
+        html body .content.content-home .post.post-format-link .post__content .post-title {
+          width: 100%; }
+          html body .content.content-home .post.post-format-link .post__content .post-title .link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            width: 4.5em;
-            -webkit-transform: rotate(0deg);
-                    transform: rotate(0deg);
-            margin-left: 0.75em; }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-              width: calc(3.75em);
-              border-bottom: 2px solid; }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 0.75em 0 0.75em 0.75em;
-              border-color: transparent transparent transparent black; }
-              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 4.5em;
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg);
+              margin-left: 0.75em; }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                width: calc(3.75em);
+                border-bottom: 2px solid; }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                width: 0;
+                height: 0;
+                border-style: solid;
                 border-width: 0.75em 0 0.75em 0.75em;
                 border-color: transparent transparent transparent black; }
-              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                border-width: 0.75em 0.75em 0.75em 0;
-                border-color: transparent black transparent transparent; }
-              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                border-width: 0 0.75em 0.75em 0.75em;
-                border-color: transparent transparent black transparent; }
-              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                border-width: 0.75em 0.75em 0 0.75em;
-                border-color: black transparent transparent transparent; }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg); }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-              -webkit-transform: rotate(180deg);
-                      transform: rotate(180deg); }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-              -webkit-transform: rotate(-90deg);
-                      transform: rotate(-90deg); }
-            html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-              -webkit-transform: rotate(90deg);
-                      transform: rotate(90deg); }
+                html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                  border-width: 0.75em 0 0.75em 0.75em;
+                  border-color: transparent transparent transparent black; }
+                html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                  border-width: 0.75em 0.75em 0.75em 0;
+                  border-color: transparent black transparent transparent; }
+                html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                  border-width: 0 0.75em 0.75em 0.75em;
+                  border-color: transparent transparent black transparent; }
+                html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                  border-width: 0.75em 0.75em 0 0.75em;
+                  border-color: black transparent transparent transparent; }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg); }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg); }
+              html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg); }
       html body .content.content-home .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
         -webkit-transform: rotate(-15deg);
                 transform: rotate(-15deg); }
@@ -2389,7 +2398,7 @@ html {
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption,
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           font-size: 0.75em;
           display: inline-block; }
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -2612,7 +2621,7 @@ html {
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           font-size: 0.75em;
           display: inline-block; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -2646,7 +2655,7 @@ html {
         html body .content.content-home .post.post-format-audio .post__content .post-content {
           margin-right: 0; } }
       html body .content.content-home .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-        color: white;
+        color: gainsboro;
         background-color: black; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post.post-format-video .post__content .post-content .text iframe {
@@ -2660,7 +2669,7 @@ html {
             -ms-flex-direction: column;
                 flex-direction: column; }
         html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-          color: white;
+          color: gainsboro;
           background-color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post.post-format-aside .post__content .post-content .text {
@@ -2695,9 +2704,15 @@ html {
               -ms-grid-row-align: center;
               align-self: center; }
       html body .content.content-home .post.post-format-status .post__content {
+        background-color: antiquewhite;
+        color: black;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         border: none; }
+        html body .content.content-home .post.post-format-status .post__content a,
+        html body .content.content-home .post.post-format-status .post__content .link {
+          background-color: antiquewhite !important;
+          color: black !important; }
         html body .content.content-home .post.post-format-status .post__content .post-content {
           border: 2px solid;
           width: 100%; }
@@ -2789,7 +2804,7 @@ html {
                 order: 1; }
         html body .content.content-home .post.post-format-quote .post__content .post-content .text {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           border: 0.1875em solid;
           -webkit-transform: translateX(-1.5em) skew(5deg);
                   transform: translateX(-1.5em) skew(5deg); }
@@ -2897,7 +2912,7 @@ html {
         html body .content.content-home .post.post-format-chat .post__content .post-content .text p {
           border: 0.1875em solid;
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           -webkit-transform: translateX(0.75em) skew(5deg);
                   transform: translateX(0.75em) skew(5deg);
           max-width: 70%; }
@@ -2960,6 +2975,13 @@ html {
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column; } }
+      html body .content.content-home .post.post-format-standard .post__content {
+        background-color: #9cd;
+        color: black; }
+        html body .content.content-home .post.post-format-standard .post__content a,
+        html body .content.content-home .post.post-format-standard .post__content .link {
+          background-color: #9cd !important;
+          color: black !important; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post.post-format-standard .post-featured-image {
           border-top: 2px solid;
@@ -3038,7 +3060,9 @@ html {
             -ms-flex-pack: start;
                 justify-content: flex-start;
         border: none;
-        width: 100%; }
+        width: 100%;
+        background-color: lavender;
+        color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-home .post.post-format-comment {
             max-width: calc(100% - 3em); } }
@@ -3051,6 +3075,10 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .post.post-format-comment {
             max-width: 30em; } }
+        html body .content.content-home .post.post-format-comment a,
+        html body .content.content-home .post.post-format-comment .link {
+          background-color: lavender !important;
+          color: black !important; }
         html body .content.content-home .post.post-format-comment > * {
           width: 100%; }
         html body .content.content-home .post.post-format-comment .comment-content,
@@ -3133,12 +3161,12 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text a,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .link {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
               color: black;
-              background-color: white; }
+              background-color: gainsboro; }
               html body .content.content-home .post.post-format-comment .comment-content .text a:hover, html body .content.content-home .post.post-format-comment .comment-content .text a:active,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:hover,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:active,
@@ -3938,7 +3966,7 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 font-size: 0.75em;
                 display: inline-block; }
                 html body .content.content-home .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -4014,7 +4042,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   text-decoration: underline;
                   will-change: text-decoration;
                   transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -4929,7 +4957,7 @@ html {
         html body .content.content-home .post.post-format-comment .comment-date-and-time,
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           font-size: 0.75em; }
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           display: -webkit-box;
@@ -5220,49 +5248,6 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .navigation {
             max-width: 30em; } }
-      @media only screen and (orientation: landscape) {
-        html body .content.content-home {
-          display: block;
-          -webkit-column-gap: 0;
-                  column-gap: 0;
-          -webkit-column-count: 2;
-                  column-count: 2; }
-          html body .content.content-home .post-format-standard.display-horizontal .post__content {
-            -webkit-box-orient: vertical !important;
-            -webkit-box-direction: normal !important;
-                -ms-flex-direction: column !important;
-                    flex-direction: column !important; }
-          html body .content.content-home .navigation {
-            max-width: none;
-            -ms-grid-column-span: 2;
-            -ms-grid-column: 1;
-                grid-column: 1 / span 2;
-            -ms-grid-row: 2;
-                grid-row: 2; } }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-        html body .content.content-home .post-format-comment {
-          margin-left: 1.5em !important; } }
-      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-        html body .content.content-home .post-format-comment {
-          margin-left: 1.5em !important; } }
-      @media only screen and (min-width: 1600.1px) {
-        html body .content.content-home {
-          -webkit-column-count: 3;
-                  column-count: 3;
-          -webkit-column-gap: 1.5em;
-                  column-gap: 1.5em; } }
-  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
-    html body .content.content-home {
-      padding-left: 1.5em; } }
-  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
-    html body .content.content-home {
-      padding-left: 1.5em; } }
-  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
-    html body .content.content-home {
-      padding-right: 1.5em; } }
-  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
-    html body .content.content-home {
-      padding-right: 1.5em; } }
     html body .content.content-archive {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5361,7 +5346,7 @@ html {
             padding: 0.375em 0 0.375em 0.75em; }
         html body .content.content-archive .archive-list .archive-list-body .post .sticky {
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
         html body .content.content-archive .archive-list .archive-list-body .post .post-title .text {
           font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -5390,7 +5375,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
@@ -5497,12 +5482,12 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a:hover, html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a:active,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link:hover,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link:active {
@@ -5840,7 +5825,7 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
@@ -5868,7 +5853,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -6473,7 +6458,7 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure figcaption,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
@@ -6583,76 +6568,83 @@ html {
                 flex-wrap: wrap; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
-          width: 100%; }
-          html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-            html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+        html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content {
+          background-color: skyblue;
+          color: black; }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content a,
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .link {
+            background-color: skyblue !important;
+            color: black !important; }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
+            width: 100%; }
+            html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center;
-              width: 4.5em;
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg);
-              margin-left: 0.75em; }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-                width: calc(3.75em);
-                border-bottom: 2px solid; }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0.75em 0 0.75em 0.75em;
-                border-color: transparent transparent transparent black; }
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 4.5em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                margin-left: 0.75em; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                  width: calc(3.75em);
+                  border-bottom: 2px solid; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
                   border-width: 0.75em 0 0.75em 0.75em;
                   border-color: transparent transparent transparent black; }
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                  border-width: 0.75em 0.75em 0.75em 0;
-                  border-color: transparent black transparent transparent; }
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                  border-width: 0 0.75em 0.75em 0.75em;
-                  border-color: transparent transparent black transparent; }
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                  border-width: 0.75em 0.75em 0 0.75em;
-                  border-color: black transparent transparent transparent; }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-                -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg); }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-                -webkit-transform: rotate(-90deg);
-                        transform: rotate(-90deg); }
-              html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-                -webkit-transform: rotate(90deg);
-                        transform: rotate(90deg); }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.75em 0 0.75em 0.75em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.75em 0.75em 0.75em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.75em 0.75em 0.75em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.75em 0.75em 0 0.75em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
           -webkit-transform: rotate(-15deg);
                   transform: rotate(-15deg); }
@@ -6688,7 +6680,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -6911,7 +6903,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -6945,7 +6937,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
+          color: gainsboro;
           background-color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-video .post__content .post-content .text iframe {
@@ -6959,7 +6951,7 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-            color: white;
+            color: gainsboro;
             background-color: black; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
@@ -6994,9 +6986,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content {
+          background-color: antiquewhite;
+          color: black;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content a,
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .link {
+            background-color: antiquewhite !important;
+            color: black !important; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -7088,7 +7086,7 @@ html {
                   order: 1; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             border: 0.1875em solid;
             -webkit-transform: translateX(-1.5em) skew(5deg);
                     transform: translateX(-1.5em) skew(5deg); }
@@ -7196,7 +7194,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
             border: 0.1875em solid;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             -webkit-transform: translateX(0.75em) skew(5deg);
                     transform: translateX(0.75em) skew(5deg);
             max-width: 70%; }
@@ -7259,6 +7257,13 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content {
+          background-color: #9cd;
+          color: black; }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content a,
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content .link {
+            background-color: #9cd !important;
+            color: black !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -7337,7 +7342,9 @@ html {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           border: none;
-          width: 100%; }
+          width: 100%;
+          background-color: lavender;
+          color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -7350,6 +7357,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment {
               max-width: 30em; } }
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment a,
+          html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .link {
+            background-color: lavender !important;
+            color: black !important; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content,
@@ -7432,12 +7443,12 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .link {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: black;
-                background-color: white; }
+                background-color: gainsboro; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:hover, html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:active,
@@ -8237,7 +8248,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -8313,7 +8324,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                     color: black;
-                    background-color: white;
+                    background-color: gainsboro;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -9228,7 +9239,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-date-and-time,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
@@ -9618,7 +9629,7 @@ html {
             padding: 0.375em 0 0.375em 0.75em; }
         html body .content.content-none .post .sticky {
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
         html body .content.content-none .post .post-title .text {
           font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -9647,7 +9658,7 @@ html {
           html body .content.content-none .post .post-featured-image figure figcaption,
           html body .content.content-none .post .post-featured-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-none .post .post-featured-image figure .figcaption,
@@ -9754,12 +9765,12 @@ html {
           html body .content.content-none .post .post-content .text a,
           html body .content.content-none .post .post-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-none .post .post-content .text a:hover, html body .content.content-none .post .post-content .text a:active,
             html body .content.content-none .post .post-content .text .link:hover,
             html body .content.content-none .post .post-content .text .link:active {
@@ -10097,7 +10108,7 @@ html {
             html body .content.content-none .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-none .post .post-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-none .post .post-content .text .figure figcaption .link,
@@ -10125,7 +10136,7 @@ html {
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -10730,7 +10741,7 @@ html {
             html body .content.content-none .post .post-content .text .gallery figure figcaption,
             html body .content.content-none .post .post-content .text .gallery figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
             html body .content.content-none .post .post-content .text .gallery figure .gallery-icon {
@@ -10840,76 +10851,83 @@ html {
                 flex-wrap: wrap; }
             html body .content.content-none .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-none .post.post-format-link .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        html body .content.content-none .post.post-format-link .post__content .post-title {
-          width: 100%; }
-          html body .content.content-none .post.post-format-link .post__content .post-title .link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-            html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+        html body .content.content-none .post.post-format-link .post__content {
+          background-color: skyblue;
+          color: black; }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-none .post.post-format-link .post__content {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
+          html body .content.content-none .post.post-format-link .post__content a,
+          html body .content.content-none .post.post-format-link .post__content .link {
+            background-color: skyblue !important;
+            color: black !important; }
+          html body .content.content-none .post.post-format-link .post__content .post-title {
+            width: 100%; }
+            html body .content.content-none .post.post-format-link .post__content .post-title .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center;
-              width: 4.5em;
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg);
-              margin-left: 0.75em; }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-                width: calc(3.75em);
-                border-bottom: 2px solid; }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0.75em 0 0.75em 0.75em;
-                border-color: transparent transparent transparent black; }
-                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 4.5em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                margin-left: 0.75em; }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                  width: calc(3.75em);
+                  border-bottom: 2px solid; }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
                   border-width: 0.75em 0 0.75em 0.75em;
                   border-color: transparent transparent transparent black; }
-                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                  border-width: 0.75em 0.75em 0.75em 0;
-                  border-color: transparent black transparent transparent; }
-                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                  border-width: 0 0.75em 0.75em 0.75em;
-                  border-color: transparent transparent black transparent; }
-                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                  border-width: 0.75em 0.75em 0 0.75em;
-                  border-color: black transparent transparent transparent; }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-                -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg); }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-                -webkit-transform: rotate(-90deg);
-                        transform: rotate(-90deg); }
-              html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-                -webkit-transform: rotate(90deg);
-                        transform: rotate(90deg); }
+                  html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.75em 0 0.75em 0.75em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.75em 0.75em 0.75em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.75em 0.75em 0.75em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.75em 0.75em 0 0.75em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
         html body .content.content-none .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
           -webkit-transform: rotate(-15deg);
                   transform: rotate(-15deg); }
@@ -10945,7 +10963,7 @@ html {
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -11168,7 +11186,7 @@ html {
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -11202,7 +11220,7 @@ html {
           html body .content.content-none .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-none .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
+          color: gainsboro;
           background-color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post.post-format-video .post__content .post-content .text iframe {
@@ -11216,7 +11234,7 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-none .post.post-format-aside .post__content .post-content .text {
-            color: white;
+            color: gainsboro;
             background-color: black; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post.post-format-aside .post__content .post-content .text {
@@ -11251,9 +11269,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-none .post.post-format-status .post__content {
+          background-color: antiquewhite;
+          color: black;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
+          html body .content.content-none .post.post-format-status .post__content a,
+          html body .content.content-none .post.post-format-status .post__content .link {
+            background-color: antiquewhite !important;
+            color: black !important; }
           html body .content.content-none .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -11345,7 +11369,7 @@ html {
                   order: 1; }
           html body .content.content-none .post.post-format-quote .post__content .post-content .text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             border: 0.1875em solid;
             -webkit-transform: translateX(-1.5em) skew(5deg);
                     transform: translateX(-1.5em) skew(5deg); }
@@ -11453,7 +11477,7 @@ html {
           html body .content.content-none .post.post-format-chat .post__content .post-content .text p {
             border: 0.1875em solid;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             -webkit-transform: translateX(0.75em) skew(5deg);
                     transform: translateX(0.75em) skew(5deg);
             max-width: 70%; }
@@ -11516,6 +11540,13 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        html body .content.content-none .post.post-format-standard .post__content {
+          background-color: #9cd;
+          color: black; }
+          html body .content.content-none .post.post-format-standard .post__content a,
+          html body .content.content-none .post.post-format-standard .post__content .link {
+            background-color: #9cd !important;
+            color: black !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -11594,7 +11625,9 @@ html {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           border: none;
-          width: 100%; }
+          width: 100%;
+          background-color: lavender;
+          color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-none .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -11607,6 +11640,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-none .post.post-format-comment {
               max-width: 30em; } }
+          html body .content.content-none .post.post-format-comment a,
+          html body .content.content-none .post.post-format-comment .link {
+            background-color: lavender !important;
+            color: black !important; }
           html body .content.content-none .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-none .post.post-format-comment .comment-content,
@@ -11689,12 +11726,12 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .link {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: black;
-                background-color: white; }
+                background-color: gainsboro; }
                 html body .content.content-none .post.post-format-comment .comment-content .text a:hover, html body .content.content-none .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:active,
@@ -12494,7 +12531,7 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
                   html body .content.content-none .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -12570,7 +12607,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                     color: black;
-                    background-color: white;
+                    background-color: gainsboro;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -13485,7 +13522,7 @@ html {
           html body .content.content-none .post.post-format-comment .comment-date-and-time,
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em; }
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
@@ -13773,7 +13810,7 @@ html {
             padding: 0.375em 0 0.375em 0.75em; }
         html body .content.content-single .post .sticky {
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
         html body .content.content-single .post .post-title .text {
           font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -13802,7 +13839,7 @@ html {
           html body .content.content-single .post .post-featured-image figure figcaption,
           html body .content.content-single .post .post-featured-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .post .post-featured-image figure .figcaption,
@@ -13909,12 +13946,12 @@ html {
           html body .content.content-single .post .post-content .text a,
           html body .content.content-single .post .post-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-single .post .post-content .text a:hover, html body .content.content-single .post .post-content .text a:active,
             html body .content.content-single .post .post-content .text .link:hover,
             html body .content.content-single .post .post-content .text .link:active {
@@ -14252,7 +14289,7 @@ html {
             html body .content.content-single .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .post .post-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-single .post .post-content .text .figure figcaption .link,
@@ -14280,7 +14317,7 @@ html {
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -14885,7 +14922,7 @@ html {
             html body .content.content-single .post .post-content .text .gallery figure figcaption,
             html body .content.content-single .post .post-content .text .gallery figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
             html body .content.content-single .post .post-content .text .gallery figure .gallery-icon {
@@ -14995,76 +15032,83 @@ html {
                 flex-wrap: wrap; }
             html body .content.content-single .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .post.post-format-link .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        html body .content.content-single .post.post-format-link .post__content .post-title {
-          width: 100%; }
-          html body .content.content-single .post.post-format-link .post__content .post-title .link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-            html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+        html body .content.content-single .post.post-format-link .post__content {
+          background-color: skyblue;
+          color: black; }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post.post-format-link .post__content {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
+          html body .content.content-single .post.post-format-link .post__content a,
+          html body .content.content-single .post.post-format-link .post__content .link {
+            background-color: skyblue !important;
+            color: black !important; }
+          html body .content.content-single .post.post-format-link .post__content .post-title {
+            width: 100%; }
+            html body .content.content-single .post.post-format-link .post__content .post-title .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center;
-              width: 4.5em;
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg);
-              margin-left: 0.75em; }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-                width: calc(3.75em);
-                border-bottom: 2px solid; }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0.75em 0 0.75em 0.75em;
-                border-color: transparent transparent transparent black; }
-                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 4.5em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                margin-left: 0.75em; }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                  width: calc(3.75em);
+                  border-bottom: 2px solid; }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
                   border-width: 0.75em 0 0.75em 0.75em;
                   border-color: transparent transparent transparent black; }
-                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                  border-width: 0.75em 0.75em 0.75em 0;
-                  border-color: transparent black transparent transparent; }
-                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                  border-width: 0 0.75em 0.75em 0.75em;
-                  border-color: transparent transparent black transparent; }
-                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                  border-width: 0.75em 0.75em 0 0.75em;
-                  border-color: black transparent transparent transparent; }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-                -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg); }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-                -webkit-transform: rotate(-90deg);
-                        transform: rotate(-90deg); }
-              html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-                -webkit-transform: rotate(90deg);
-                        transform: rotate(90deg); }
+                  html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.75em 0 0.75em 0.75em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.75em 0.75em 0.75em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.75em 0.75em 0.75em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.75em 0.75em 0 0.75em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
         html body .content.content-single .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
           -webkit-transform: rotate(-15deg);
                   transform: rotate(-15deg); }
@@ -15100,7 +15144,7 @@ html {
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -15323,7 +15367,7 @@ html {
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -15357,7 +15401,7 @@ html {
           html body .content.content-single .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-single .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
+          color: gainsboro;
           background-color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post.post-format-video .post__content .post-content .text iframe {
@@ -15371,7 +15415,7 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-single .post.post-format-aside .post__content .post-content .text {
-            color: white;
+            color: gainsboro;
             background-color: black; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post.post-format-aside .post__content .post-content .text {
@@ -15406,9 +15450,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-single .post.post-format-status .post__content {
+          background-color: antiquewhite;
+          color: black;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
+          html body .content.content-single .post.post-format-status .post__content a,
+          html body .content.content-single .post.post-format-status .post__content .link {
+            background-color: antiquewhite !important;
+            color: black !important; }
           html body .content.content-single .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -15500,7 +15550,7 @@ html {
                   order: 1; }
           html body .content.content-single .post.post-format-quote .post__content .post-content .text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             border: 0.1875em solid;
             -webkit-transform: translateX(-1.5em) skew(5deg);
                     transform: translateX(-1.5em) skew(5deg); }
@@ -15608,7 +15658,7 @@ html {
           html body .content.content-single .post.post-format-chat .post__content .post-content .text p {
             border: 0.1875em solid;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             -webkit-transform: translateX(0.75em) skew(5deg);
                     transform: translateX(0.75em) skew(5deg);
             max-width: 70%; }
@@ -15671,6 +15721,13 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        html body .content.content-single .post.post-format-standard .post__content {
+          background-color: #9cd;
+          color: black; }
+          html body .content.content-single .post.post-format-standard .post__content a,
+          html body .content.content-single .post.post-format-standard .post__content .link {
+            background-color: #9cd !important;
+            color: black !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -15749,7 +15806,9 @@ html {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           border: none;
-          width: 100%; }
+          width: 100%;
+          background-color: lavender;
+          color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -15762,6 +15821,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-single .post.post-format-comment {
               max-width: 30em; } }
+          html body .content.content-single .post.post-format-comment a,
+          html body .content.content-single .post.post-format-comment .link {
+            background-color: lavender !important;
+            color: black !important; }
           html body .content.content-single .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-single .post.post-format-comment .comment-content,
@@ -15844,12 +15907,12 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .link {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: black;
-                background-color: white; }
+                background-color: gainsboro; }
                 html body .content.content-single .post.post-format-comment .comment-content .text a:hover, html body .content.content-single .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:active,
@@ -16649,7 +16712,7 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
                   html body .content.content-single .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -16725,7 +16788,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                     color: black;
-                    background-color: white;
+                    background-color: gainsboro;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17640,7 +17703,7 @@ html {
           html body .content.content-single .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em; }
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
@@ -17853,7 +17916,7 @@ html {
                 flex-direction: column;
         border: 2px solid;
         color: black;
-        background-color: white;
+        background-color: gainsboro;
         margin-top: 1.5em; }
         html body .content.content-single .post-footer .date-and-author {
           display: -webkit-box;
@@ -17891,7 +17954,7 @@ html {
           html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link {
             padding: 0;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: none;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17908,7 +17971,7 @@ html {
         html body .content.content-single .post-footer .link,
         html body .content.content-single .post-footer a {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18012,12 +18075,12 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text a,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text a:hover, html body .content.content-single .comments .comments-body .comment .comment-content .text a:active,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:hover,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:active {
@@ -18355,7 +18418,7 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-single .comments .comments-body .comment .comment-content .text .figure figcaption .link,
@@ -18383,7 +18446,7 @@ html {
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18851,7 +18914,7 @@ html {
             padding: 0.375em 0 0.375em 0.75em; }
         html body .content.content-single .archive-list .archive-list-body .post .sticky {
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
         html body .content.content-single .archive-list .archive-list-body .post .post-title .text {
           font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -18880,7 +18943,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
@@ -18987,12 +19050,12 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text a:hover, html body .content.content-single .archive-list .archive-list-body .post .post-content .text a:active,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link:hover,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link:active {
@@ -19330,7 +19393,7 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
@@ -19358,7 +19421,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -19963,7 +20026,7 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure figcaption,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
@@ -20073,76 +20136,83 @@ html {
                 flex-wrap: wrap; }
             html body .content.content-single .archive-list .archive-list-body .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
-          width: 100%; }
-          html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-            html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+        html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content {
+          background-color: skyblue;
+          color: black; }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content a,
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .link {
+            background-color: skyblue !important;
+            color: black !important; }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
+            width: 100%; }
+            html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center;
-              width: 4.5em;
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg);
-              margin-left: 0.75em; }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-                width: calc(3.75em);
-                border-bottom: 2px solid; }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0.75em 0 0.75em 0.75em;
-                border-color: transparent transparent transparent black; }
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 4.5em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                margin-left: 0.75em; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                  width: calc(3.75em);
+                  border-bottom: 2px solid; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
                   border-width: 0.75em 0 0.75em 0.75em;
                   border-color: transparent transparent transparent black; }
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                  border-width: 0.75em 0.75em 0.75em 0;
-                  border-color: transparent black transparent transparent; }
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                  border-width: 0 0.75em 0.75em 0.75em;
-                  border-color: transparent transparent black transparent; }
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                  border-width: 0.75em 0.75em 0 0.75em;
-                  border-color: black transparent transparent transparent; }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-                -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg); }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-                -webkit-transform: rotate(-90deg);
-                        transform: rotate(-90deg); }
-              html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-                -webkit-transform: rotate(90deg);
-                        transform: rotate(90deg); }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.75em 0 0.75em 0.75em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.75em 0.75em 0.75em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.75em 0.75em 0.75em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.75em 0.75em 0 0.75em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
           -webkit-transform: rotate(-15deg);
                   transform: rotate(-15deg); }
@@ -20178,7 +20248,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -20401,7 +20471,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -20435,7 +20505,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
+          color: gainsboro;
           background-color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-video .post__content .post-content .text iframe {
@@ -20449,7 +20519,7 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-            color: white;
+            color: gainsboro;
             background-color: black; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
@@ -20484,9 +20554,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content {
+          background-color: antiquewhite;
+          color: black;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content a,
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .link {
+            background-color: antiquewhite !important;
+            color: black !important; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -20578,7 +20654,7 @@ html {
                   order: 1; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             border: 0.1875em solid;
             -webkit-transform: translateX(-1.5em) skew(5deg);
                     transform: translateX(-1.5em) skew(5deg); }
@@ -20686,7 +20762,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
             border: 0.1875em solid;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             -webkit-transform: translateX(0.75em) skew(5deg);
                     transform: translateX(0.75em) skew(5deg);
             max-width: 70%; }
@@ -20749,6 +20825,13 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content {
+          background-color: #9cd;
+          color: black; }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content a,
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content .link {
+            background-color: #9cd !important;
+            color: black !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -20827,7 +20910,9 @@ html {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           border: none;
-          width: 100%; }
+          width: 100%;
+          background-color: lavender;
+          color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -20840,6 +20925,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-comment {
               max-width: 30em; } }
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-comment a,
+          html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .link {
+            background-color: lavender !important;
+            color: black !important; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content,
@@ -20922,12 +21011,12 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .link {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: black;
-                background-color: white; }
+                background-color: gainsboro; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:hover, html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link:active,
@@ -21727,7 +21816,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -21803,7 +21892,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                     color: black;
-                    background-color: white;
+                    background-color: gainsboro;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -22718,7 +22807,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
@@ -23112,7 +23201,7 @@ html {
             padding: 0.375em 0 0.375em 0.75em; }
         html body .content.content-page .post .sticky {
           color: black;
-          background-color: white; }
+          background-color: gainsboro; }
         html body .content.content-page .post .post-title .text {
           font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -23141,7 +23230,7 @@ html {
           html body .content.content-page .post .post-featured-image figure figcaption,
           html body .content.content-page .post .post-featured-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-page .post .post-featured-image figure .figcaption,
@@ -23248,12 +23337,12 @@ html {
           html body .content.content-page .post .post-content .text a,
           html body .content.content-page .post .post-content .text .link {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             color: black;
-            background-color: white; }
+            background-color: gainsboro; }
             html body .content.content-page .post .post-content .text a:hover, html body .content.content-page .post .post-content .text a:active,
             html body .content.content-page .post .post-content .text .link:hover,
             html body .content.content-page .post .post-content .text .link:active {
@@ -23591,7 +23680,7 @@ html {
             html body .content.content-page .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-page .post .post-content .text .wp-caption .gallery-caption {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
               html body .content.content-page .post .post-content .text .figure figcaption .link,
@@ -23619,7 +23708,7 @@ html {
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption a {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24224,7 +24313,7 @@ html {
             html body .content.content-page .post .post-content .text .gallery figure figcaption,
             html body .content.content-page .post .post-content .text .gallery figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
             html body .content.content-page .post .post-content .text .gallery figure .gallery-icon {
@@ -24334,76 +24423,83 @@ html {
                 flex-wrap: wrap; }
             html body .content.content-page .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-page .post.post-format-link .post__content {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; } }
-        html body .content.content-page .post.post-format-link .post__content .post-title {
-          width: 100%; }
-          html body .content.content-page .post.post-format-link .post__content .post-title .link {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                    justify-content: space-between; }
-            html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+        html body .content.content-page .post.post-format-link .post__content {
+          background-color: skyblue;
+          color: black; }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-page .post.post-format-link .post__content {
               display: -webkit-box;
               display: -ms-flexbox;
               display: flex;
-              -ms-flex-wrap: nowrap;
-                  flex-wrap: nowrap;
-              -webkit-box-pack: center;
-                  -ms-flex-pack: center;
-                      justify-content: center;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column; } }
+          html body .content.content-page .post.post-format-link .post__content a,
+          html body .content.content-page .post.post-format-link .post__content .link {
+            background-color: skyblue !important;
+            color: black !important; }
+          html body .content.content-page .post.post-format-link .post__content .post-title {
+            width: 100%; }
+            html body .content.content-page .post.post-format-link .post__content .post-title .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
               -webkit-box-align: center;
                   -ms-flex-align: center;
                       align-items: center;
-              width: 4.5em;
-              -webkit-transform: rotate(0deg);
-                      transform: rotate(0deg);
-              margin-left: 0.75em; }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
-                width: calc(3.75em);
-                border-bottom: 2px solid; }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
-                width: 0;
-                height: 0;
-                border-style: solid;
-                border-width: 0.75em 0 0.75em 0.75em;
-                border-color: transparent transparent transparent black; }
-                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+              -webkit-box-pack: justify;
+                  -ms-flex-pack: justify;
+                      justify-content: space-between; }
+              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 4.5em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg);
+                margin-left: 0.75em; }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__line {
+                  width: calc(3.75em);
+                  border-bottom: 2px solid; }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
                   border-width: 0.75em 0 0.75em 0.75em;
                   border-color: transparent transparent transparent black; }
-                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
-                  border-width: 0.75em 0.75em 0.75em 0;
-                  border-color: transparent black transparent transparent; }
-                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
-                  border-width: 0 0.75em 0.75em 0.75em;
-                  border-color: transparent transparent black transparent; }
-                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
-                  border-width: 0.75em 0.75em 0 0.75em;
-                  border-color: black transparent transparent transparent; }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
-                -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg); }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
-                -webkit-transform: rotate(180deg);
-                        transform: rotate(180deg); }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
-                -webkit-transform: rotate(-90deg);
-                        transform: rotate(-90deg); }
-              html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
-                -webkit-transform: rotate(90deg);
-                        transform: rotate(90deg); }
+                  html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.75em 0 0.75em 0.75em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.75em 0.75em 0.75em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.75em 0.75em 0.75em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.75em 0.75em 0 0.75em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
         html body .content.content-page .post.post-format-link.external-link .post__content .post-title .arrow-with-triangle {
           -webkit-transform: rotate(-15deg);
                   transform: rotate(-15deg); }
@@ -24439,7 +24535,7 @@ html {
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .figcaption,
@@ -24662,7 +24758,7 @@ html {
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em;
             display: inline-block; }
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
@@ -24696,7 +24792,7 @@ html {
           html body .content.content-page .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-page .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
+          color: gainsboro;
           background-color: black; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post.post-format-video .post__content .post-content .text iframe {
@@ -24710,7 +24806,7 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-page .post.post-format-aside .post__content .post-content .text {
-            color: white;
+            color: gainsboro;
             background-color: black; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post.post-format-aside .post__content .post-content .text {
@@ -24745,9 +24841,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-page .post.post-format-status .post__content {
+          background-color: antiquewhite;
+          color: black;
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
+          html body .content.content-page .post.post-format-status .post__content a,
+          html body .content.content-page .post.post-format-status .post__content .link {
+            background-color: antiquewhite !important;
+            color: black !important; }
           html body .content.content-page .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -24839,7 +24941,7 @@ html {
                   order: 1; }
           html body .content.content-page .post.post-format-quote .post__content .post-content .text {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             border: 0.1875em solid;
             -webkit-transform: translateX(-1.5em) skew(5deg);
                     transform: translateX(-1.5em) skew(5deg); }
@@ -24947,7 +25049,7 @@ html {
           html body .content.content-page .post.post-format-chat .post__content .post-content .text p {
             border: 0.1875em solid;
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             -webkit-transform: translateX(0.75em) skew(5deg);
                     transform: translateX(0.75em) skew(5deg);
             max-width: 70%; }
@@ -25010,6 +25112,13 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column; } }
+        html body .content.content-page .post.post-format-standard .post__content {
+          background-color: #9cd;
+          color: black; }
+          html body .content.content-page .post.post-format-standard .post__content a,
+          html body .content.content-page .post.post-format-standard .post__content .link {
+            background-color: #9cd !important;
+            color: black !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -25088,7 +25197,9 @@ html {
               -ms-flex-pack: start;
                   justify-content: flex-start;
           border: none;
-          width: 100%; }
+          width: 100%;
+          background-color: lavender;
+          color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-page .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -25101,6 +25212,10 @@ html {
           @media only screen and (min-width: 1600.1px) {
             html body .content.content-page .post.post-format-comment {
               max-width: 30em; } }
+          html body .content.content-page .post.post-format-comment a,
+          html body .content.content-page .post.post-format-comment .link {
+            background-color: lavender !important;
+            color: black !important; }
           html body .content.content-page .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-page .post.post-format-comment .comment-content,
@@ -25183,12 +25298,12 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .link {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
                 color: black;
-                background-color: white; }
+                background-color: gainsboro; }
                 html body .content.content-page .post.post-format-comment .comment-content .text a:hover, html body .content.content-page .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:active,
@@ -25988,7 +26103,7 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
                   html body .content.content-page .post.post-format-comment .comment-content .text .figure figcaption .link,
@@ -26064,7 +26179,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
                     color: black;
-                    background-color: white;
+                    background-color: gainsboro;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -26979,7 +27094,7 @@ html {
           html body .content.content-page .post.post-format-comment .comment-date-and-time,
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
-            background-color: white;
+            background-color: gainsboro;
             font-size: 0.75em; }
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
@@ -27286,7 +27401,7 @@ html {
           padding-bottom: 1.5em; } }
       html body .footer .footer-copyright .link {
         color: black;
-        background-color: white;
+        background-color: gainsboro;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27337,7 +27452,7 @@ html {
           padding-bottom: 0.75em; }
         html body .footer .footer-navigation ul li a {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27354,7 +27469,7 @@ html {
         margin-top: 1.5em; }
         html body .footer .footer-credits .link {
           color: black;
-          background-color: white;
+          background-color: gainsboro;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27364,7 +27479,7 @@ html {
       text-decoration: line-through; }
     html body .widget {
       color: black;
-      background-color: white;
+      background-color: gainsboro;
       border: 2px solid; }
       @media only screen and (max-width: 767.9px) {
         html body .widget {
@@ -27393,7 +27508,7 @@ html {
       html body .widget a,
       html body .widget .link {
         color: black;
-        background-color: white;
+        background-color: gainsboro;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -27406,7 +27521,7 @@ html {
       html body .widget.widget_calendar .calendar_wrap {
         overflow-x: auto; }
       html body .widget.widget_media_audio .mejs-horizontal-volume-slider {
-        color: white;
+        color: gainsboro;
         background-color: black; }
       html body .widget.widget_log_lolla_archives_widget .widget-title {
         border: 2px solid; }
@@ -27711,7 +27826,7 @@ html {
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text {
                   color: black;
-                  background-color: white;
+                  background-color: gainsboro;
                   font-size: 0.75em;
                   display: inline-block; }
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
@@ -27888,7 +28003,7 @@ html {
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text {
                 color: black;
-                background-color: white;
+                background-color: gainsboro;
                 font-size: 0.75em;
                 display: inline-block; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
@@ -28130,7 +28245,7 @@ html {
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
         html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
@@ -28243,7 +28358,7 @@ html {
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
               color: black;
-              background-color: white;
+              background-color: gainsboro;
               font-size: 0.75em;
               display: inline-block; }
         html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {

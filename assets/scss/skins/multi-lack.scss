@@ -1,5 +1,5 @@
 /**
- * The white x lack font skin
+ * The darkgray x Lack font skin
  *
  * Sets up color schemes, image assets, fonts and more
  */
@@ -7,22 +7,23 @@
 
 /**
  * Colors
+ *
+ * Contrast: AAA http://contrast-ratio.com/#black-on-gainsboro
  */
-$background-color: white;
+$background-color: gainsboro;
 $text-color: black;
 
-$post-format-status-background-color: '';
-$post-format-status-text-color: '';
+$post-format-status-background-color: antiquewhite;
+$post-format-status-text-color: black;
 
-$post-format-comment-background-color: '';
-$post-format-comment-text-color: '';
+$post-format-comment-background-color: lavender;
+$post-format-comment-text-color: black;
 
-$post-format-link-background-color: '';
-$post-format-link-text-color: '';
+$post-format-link-background-color: skyblue;
+$post-format-link-text-color: black;
 
-$post-format-standard-background-color: '';
-$post-format-standard-text-color: '';
-
+$post-format-standard-background-color: #9cd;
+$post-format-standard-text-color: black;
 
 
 /**

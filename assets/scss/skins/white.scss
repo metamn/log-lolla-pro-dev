@@ -11,6 +11,18 @@
 $background-color: white;
 $text-color: black;
 
+$post-format-status-background-color: '';
+$post-format-status-text-color: '';
+
+$post-format-comment-background-color: '';
+$post-format-comment-text-color: '';
+
+$post-format-link-background-color: '';
+$post-format-link-text-color: '';
+
+$post-format-standard-background-color: '';
+$post-format-standard-text-color: '';
+
 
 /**
  * Fonts
@@ -46,7 +58,7 @@ $title-font: 'nimbus-mono';
  $left-mobile: $lem;
  $text-block-width: $lem * 30;
 
- $home-grid-columns: 0;
+ $home-grid-columns: 'true';
 
 
 

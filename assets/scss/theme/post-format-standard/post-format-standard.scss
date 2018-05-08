@@ -1,6 +1,12 @@
 @mixin post-format-standard {
   @include post-format-standard__grid;
 
+  .post__content {
+    @if ($post-format-standard-background-color and $post-format-standard-text-color) {
+      @include colors-on-the-fly($post-format-standard-background-color, $post-format-standard-text-color);
+    }
+  }
+
   .post-featured-image {
     @include mobile {
       @include border(normal, top);

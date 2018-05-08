@@ -1,0 +1,10 @@
+@mixin colors-on-the-fly($background-color, $text-color) {
+  background-color: $background-color;
+  color: $text-color;
+
+  a,
+  .link {
+    background-color: $background-color !important;
+    color: $text-color !important;
+  }
+}

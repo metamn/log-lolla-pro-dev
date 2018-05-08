@@ -6,6 +6,10 @@
 
   @include width;
 
+  @if ($post-format-comment-background-color and $post-format-comment-text-color) {
+    @include colors-on-the-fly($post-format-comment-background-color, $post-format-comment-text-color);
+  }
+
   > * {
     width: 100%;
   }

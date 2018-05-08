@@ -1,5 +1,5 @@
 /**
- * The white x lack font skin
+ * The peachpuff x Lack font skin
  *
  * Sets up color schemes, image assets, fonts and more
  */
@@ -7,9 +7,12 @@
 
 /**
  * Colors
+ *
+ * Contrast: AAA above 18pt http://contrast-ratio.com/#blue-on-peachpuff
  */
-$background-color: white;
-$text-color: black;
+$background-color: peachpuff;
+$text-color: blue;
+
 
 $post-format-status-background-color: '';
 $post-format-status-text-color: '';
@@ -22,7 +25,6 @@ $post-format-link-text-color: '';
 
 $post-format-standard-background-color: '';
 $post-format-standard-text-color: '';
-
 
 
 /**
