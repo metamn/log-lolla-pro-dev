@@ -1,13 +1,13 @@
-// Grid
+// Flexbox grid
 //
-// Displays items in a grid
+// Displays items in a grid using flexbox
 //
 // The container can contain the grid title wrapped into a `<h3>`
 //
 // - $iepx: sometimes a -1px required to make the grid work in IE
 //
 // Styleguide grid
-@mixin grid($items-per-row, $margin-right: 0px, $margin-bottom: 0px, $max-items-to-display: null, $grid-title: true, $iepx: 0px) {
+@mixin flexbox-grid($items-per-row, $margin-right: 0px, $margin-bottom: 0px, $max-items-to-display: null, $grid-title: true, $iepx: 0px) {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

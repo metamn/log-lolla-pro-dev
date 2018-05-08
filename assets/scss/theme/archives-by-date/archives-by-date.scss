@@ -11,7 +11,7 @@
     }
 
     .months {
-      @include grid(6, 0px, 0px, $grid-title:false, $iepx: 1px);
+      @include flexbox-grid(6, 0px, 0px, $grid-title:false, $iepx: 1px);
 
       @include border(normal, all);
       padding: $lem / 4;

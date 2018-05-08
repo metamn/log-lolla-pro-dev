@@ -17,4 +17,6 @@
   .navigation {
     @include width;
   }
+
+  @include content-home__grid($home-grid-columns);
 }

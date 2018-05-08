@@ -1,10 +1,12 @@
 @mixin content-home__grid($columns) {
-  @if ($columns == 0) {
-    @include grid(1, 0px, $top);
-  } @elseif ($columns == 1) {
-    @include grid(1, 0px, $top-mobile);
+  @if ($columns != 0) {
+    display: block;
+    column-width: 20em;
+    column-gap: 1em;
 
-  } @else {
-    @include grid($columns, $left, $top);
+    .post {
+      display: inline-block;
+      margin: 0.25rem;
+    }
   }
 }

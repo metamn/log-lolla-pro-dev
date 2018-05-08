@@ -1048,7 +1048,12 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      max-width: none; }
+      max-width: none;
+      display: block;
+      -webkit-column-width: 20em;
+              column-width: 20em;
+      -webkit-column-gap: 1em;
+              column-gap: 1em; }
       html body .content.content-home .post .post-sticky {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5220,6 +5225,9 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .navigation {
             max-width: 30em; } }
+      html body .content.content-home .post {
+        display: inline-block;
+        margin: 0.25rem; }
     html body .content.content-archive {
       display: -webkit-box;
       display: -ms-flexbox;

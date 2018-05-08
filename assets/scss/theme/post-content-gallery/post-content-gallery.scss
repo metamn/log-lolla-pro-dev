@@ -7,9 +7,9 @@
   @for $i from 1 through 9 {
     &.gallery-columns-#{$i} {
       @if ($i == 1) {
-        @include grid(1, '0px', $lem, $grid-title: false, $iepx: 1px);
+        @include flexbox-grid(1, '0px', $lem, $grid-title: false, $iepx: 1px);
       } @else {
-        @include grid($i, $lem, $lem, $grid-title: false, $iepx: 1px);
+        @include flexbox-grid($i, $lem, $lem, $grid-title: false, $iepx: 1px);
       }
     }
   }
