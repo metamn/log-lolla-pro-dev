@@ -21,6 +21,11 @@
     }
   }
 
+  .comment-date-and-time,
+  .comment-post-title-with-arrows {
+    @include text-style(figcaption);
+  }
+
   .comment-post-title-with-arrows {
     display: flex;
     flex-wrap: nowrap;

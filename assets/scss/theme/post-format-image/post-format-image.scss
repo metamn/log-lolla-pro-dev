@@ -9,6 +9,7 @@
         @include figure;
         @include figure--without-figcaption;
         @include border(normal, top);
+        @include figure--with-background($figure-background-pattern, $figure-background-pattern-color);
       }
     }
   }

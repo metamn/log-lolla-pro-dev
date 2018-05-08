@@ -45,16 +45,21 @@ $title-font: 'nimbus-mono';
  $text-block-width: $lem * 30;
 
 
-// Borders
-//
-$border-normal: 1px solid;
-$border-thin: $lem / 8 solid;
-$border-thick: $lem / 4 solid;
-
-
 /**
- * Assets
+ * Decorations
+ *
  */
-$cursor-color: 'white';
-$quote-pattern-color: 'white';
-$sidebar-pattern-color: 'white';
+ $cursor-color: 'white';
+
+ $border-normal: 1px solid;
+ $border-thin: $lem / 8 solid;
+ $border-thick: $lem / 4 solid;
+
+ $figure-background-pattern: '';
+ $figure-background-pattern-color: '';
+
+ $quote-pattern: 'dotted';
+ $quote-pattern-color: 'white';
+
+ $sidebar-pattern: 'horizontal-lines';
+ $sidebar-pattern-color: 'white';

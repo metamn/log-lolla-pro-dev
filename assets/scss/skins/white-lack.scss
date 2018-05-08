@@ -45,18 +45,21 @@ $title-font: 'nimbus-mono';
  $text-block-width: $lem * 20;
 
 
- // Borders
- //
+ /**
+  * Decorations
+  *
+  */
+ $cursor-color: 'white';
+
  $border-normal: 2px solid;
  $border-thin: $lem / 8 solid;
  $border-thick: $lem / 4 solid;
 
+ $figure-background-pattern: 'horizontal-lines-thick';
+ $figure-background-pattern-color: 'black';
 
+ $quote-pattern: 'dotted';
+ $quote-pattern-color: 'black';
 
-
-/**
- * Assets
- */
-$cursor-color: 'white';
-$quote-pattern-color: 'white';
-$sidebar-pattern-color: 'white';
+ $sidebar-pattern: 'horizontal-lines';
+ $sidebar-pattern-color: 'white';

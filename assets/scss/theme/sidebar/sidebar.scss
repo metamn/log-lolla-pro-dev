@@ -1,5 +1,5 @@
 @mixin sidebar {
-  @include background-pattern(horizontal-lines, $sidebar-pattern-color);
+  @include background-pattern($sidebar-pattern, $sidebar-pattern-color);
 
   display: flex;
   flex-direction: column;
