@@ -47,6 +47,12 @@ $breakpoint-desktop: 1600px;
   }
 }
 
+@mixin tablet-landscape {
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)  and (orientation: landscape){
+    @content
+  }
+}
+
 @mixin laptop {
   @media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) {
     @content

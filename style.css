@@ -1048,12 +1048,7 @@ html {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      max-width: none;
-      display: block;
-      -webkit-column-width: 20em;
-              column-width: 20em;
-      -webkit-column-gap: 1em;
-              column-gap: 1em; }
+      max-width: none; }
       html body .content.content-home .post .post-sticky {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -5225,9 +5220,49 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .navigation {
             max-width: 30em; } }
-      html body .content.content-home .post {
-        display: inline-block;
-        margin: 0.25rem; }
+      @media only screen and (orientation: landscape) {
+        html body .content.content-home {
+          display: block;
+          -webkit-column-gap: 0;
+                  column-gap: 0;
+          -webkit-column-count: 2;
+                  column-count: 2; }
+          html body .content.content-home .post-format-standard.display-horizontal .post__content {
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
+                    flex-direction: column !important; }
+          html body .content.content-home .navigation {
+            max-width: none;
+            -ms-grid-column-span: 2;
+            -ms-grid-column: 1;
+                grid-column: 1 / span 2;
+            -ms-grid-row: 2;
+                grid-row: 2; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        html body .content.content-home .post-format-comment {
+          margin-left: 1.5em !important; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .content.content-home .post-format-comment {
+          margin-left: 1.5em !important; } }
+      @media only screen and (min-width: 1600.1px) {
+        html body .content.content-home {
+          -webkit-column-count: 3;
+                  column-count: 3;
+          -webkit-column-gap: 1.5em;
+                  column-gap: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
+    html body .content.content-home {
+      padding-left: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
+    html body .content.content-home {
+      padding-left: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
+    html body .content.content-home {
+      padding-right: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
+    html body .content.content-home {
+      padding-right: 1.5em; } }
     html body .content.content-archive {
       display: -webkit-box;
       display: -ms-flexbox;

@@ -1,12 +1,37 @@
-@mixin content-home__grid($columns) {
-  @if ($columns != 0) {
+@mixin content-home__grid {
+  @include landscape {
     display: block;
-    column-width: 20em;
-    column-gap: 1em;
+    column-gap: 0;
+    column-count: 2;
 
-    .post {
-      display: inline-block;
-      margin: 0.25rem;
+    .post-format-standard.display-horizontal {
+      .post__content {
+        flex-direction: column !important;
+      }
     }
+
+    .navigation {
+      max-width: none;
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
+  };
+
+  @include tablet-landscape {
+    .post-format-comment {
+      margin-left: $left !important;
+    }
+  }
+
+  @include laptop {
+    .post-format-comment {
+      margin-left: $left !important;
+    }
+  }
+
+  @include desktop {
+    @include padding(no, yes, no, yes);
+    column-count: 3;
+    column-gap: $left;
   }
 }

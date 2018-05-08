@@ -18,5 +18,7 @@
     @include width;
   }
 
-  @include content-home__grid($home-grid-columns);
+  @if ($home-grid-columns == 'true') {
+    @include content-home__grid;
+  }
 }
