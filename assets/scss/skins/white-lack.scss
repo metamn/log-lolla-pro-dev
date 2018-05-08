@@ -12,12 +12,14 @@ $background-color: white;
 $text-color: black;
 
 
+
 /**
  * Fonts
  */
 $body-font: 'lack';
 $monospace-font:'nimbus-mono';
 $title-font: 'lack';
+
 
 
 /**
@@ -36,13 +38,17 @@ $title-font: 'lack';
  $scale: 'minor-fourth';
 
 
- // Spacing
- //
+ /**
+  * Layout
+  *
+  */
  $top: $lem;
  $left: $lem;
  $top-mobile: $lem;
  $left-mobile: $lem;
  $text-block-width: $lem * 20;
+
+ $home-grid-columns: 3;
 
 
  /**

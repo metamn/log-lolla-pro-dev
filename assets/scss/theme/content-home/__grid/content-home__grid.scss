@@ -1,0 +1,10 @@
+@mixin content-home__grid($columns) {
+  @if ($columns == 0) {
+    @include grid(1, 0px, $top);
+  } @elseif ($columns == 1) {
+    @include grid(1, 0px, $top-mobile);
+
+  } @else {
+    @include grid($columns, $left, $top);
+  }
+}

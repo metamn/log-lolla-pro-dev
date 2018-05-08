@@ -36,13 +36,18 @@ $title-font: 'nimbus-mono';
  $scale: 'major-third';
 
 
- // Spacing
- //
+ /**
+  * Layout
+  *
+  */
  $top: $lem * 2;
  $left: $lem * 2;
  $top-mobile: $lem * 2;
  $left-mobile: $lem;
  $text-block-width: $lem * 30;
+
+ $home-grid-columns: 0;
+
 
 
 /**

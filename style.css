@@ -26,6 +26,10 @@
  *
  */
 /**
+  * Layout
+  *
+  */
+/**
   * Decorations
   *
   */
@@ -2845,6 +2849,10 @@ html {
           html body .content.content-home .post.post-format-quote .post__content .post-content blockquote {
             font-size: larger;
             line-height: 1.9; } }
+      html body .content.content-home .post.post-format-quote .post__content .post-permalink {
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center; }
       @media only screen and (min-width: 768px) {
         html body .content.content-home .post.post-format-chat .post__content {
           display: -webkit-box;
@@ -5142,7 +5150,6 @@ html {
               bottom: -1.5em; } }
       @media only screen and (orientation: landscape) {
         html body .content.content-home .post {
-          width: 100%;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -5154,7 +5161,8 @@ html {
               flex-wrap: nowrap;
           -webkit-box-pack: center;
               -ms-flex-pack: center;
-                  justify-content: center; }
+                  justify-content: center;
+          width: 100%; }
           html body .content.content-home .post .post__content {
             width: 100%; } }
     @media only screen and (orientation: landscape) and (max-width: 767.9px) {
@@ -5280,7 +5288,6 @@ html {
         border: 2px solid;
         display: inline; }
       html body .content.content-archive .archive-list .archive-list-body .post {
-        width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -5293,6 +5300,7 @@ html {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        width: 100%;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
@@ -7097,6 +7105,10 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-content blockquote {
               font-size: larger;
               line-height: 1.9; } }
+        html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-permalink {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-chat .post__content {
             display: -webkit-box;
@@ -11350,6 +11362,10 @@ html {
             html body .content.content-none .post.post-format-quote .post__content .post-content blockquote {
               font-size: larger;
               line-height: 1.9; } }
+        html body .content.content-none .post.post-format-quote .post__content .post-permalink {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
         @media only screen and (min-width: 768px) {
           html body .content.content-none .post.post-format-chat .post__content {
             display: -webkit-box;
@@ -15501,6 +15517,10 @@ html {
             html body .content.content-single .post.post-format-quote .post__content .post-content blockquote {
               font-size: larger;
               line-height: 1.9; } }
+        html body .content.content-single .post.post-format-quote .post__content .post-permalink {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
         @media only screen and (min-width: 768px) {
           html body .content.content-single .post.post-format-chat .post__content {
             display: -webkit-box;
@@ -18758,7 +18778,6 @@ html {
         border: 2px solid;
         display: inline; }
       html body .content.content-single .archive-list .archive-list-body .post {
-        width: 100%;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -18771,6 +18790,7 @@ html {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        width: 100%;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
@@ -20575,6 +20595,10 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-content blockquote {
               font-size: larger;
               line-height: 1.9; } }
+        html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-permalink {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
         @media only screen and (min-width: 768px) {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-chat .post__content {
             display: -webkit-box;
@@ -24832,6 +24856,10 @@ html {
             html body .content.content-page .post.post-format-quote .post__content .post-content blockquote {
               font-size: larger;
               line-height: 1.9; } }
+        html body .content.content-page .post.post-format-quote .post__content .post-permalink {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
         @media only screen and (min-width: 768px) {
           html body .content.content-page .post.post-format-chat .post__content {
             display: -webkit-box;
