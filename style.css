@@ -196,6 +196,12 @@
   font-family: Sparks-Bar-Extrawide; }
 
 @font-face {
+  font-family: 'nimbus_monoregular';
+  src: url("assets/fonts/nimbusmono-regular-webfont.woff2") format("woff2"), url("assets/fonts/nimbusmono-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'lackitalic';
   src: url("assets/fonts/Lack-Italic.woff2") format("woff2"), url("assets/fonts/Lack-Italic.woff") format("woff");
   font-weight: normal;
@@ -216,36 +222,6 @@
 @font-face {
   font-family: 'lackregular';
   src: url("assets/fonts/Lack-Regular.woff2") format("woff2"), url("assets/fonts/Lack-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lbold_italic';
-  src: url("assets/fonts/nimbussanl-bolita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bolita-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lbold';
-  src: url("assets/fonts/nimbussanl-bol-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-bol-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular_italic';
-  src: url("assets/fonts/nimbussanl-regita-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-regita-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_sans_lregular';
-  src: url("assets/fonts/nimbussanl-reg-webfont.woff2") format("woff2"), url("assets/fonts/nimbussanl-reg-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'nimbus_monoregular';
-  src: url("assets/fonts/nimbusmono-regular-webfont.woff2") format("woff2"), url("assets/fonts/nimbusmono-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -814,10 +790,7 @@ html {
         html body .header .header-title .link:hover, html body .header .header-title .link:active {
           text-decoration: line-through; }
         html body .header .header-title .link .text {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-          font-weight: normal;
-          font-style: normal;
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal; }
       html body .header .header-subtitle .text {
@@ -1675,17 +1648,11 @@ html {
           font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
           font-style: normal;
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal;
           word-wrap: normal;
           display: block; }
         html body .content.content-home .post .post-content .text pre,
         html body .content.content-home .post .post-content .text .pre {
           font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-          font-weight: normal;
-          font-style: normal;
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           white-space: pre-wrap; }
@@ -1948,9 +1915,6 @@ html {
         html body .content.content-home .post .post-content .text tt,
         html body .content.content-home .post .post-content .text .tt {
           font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-          font-weight: normal;
-          font-style: normal;
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal; }
         html body .content.content-home .post .post-content .text ins,
@@ -4257,9 +4221,6 @@ html {
               font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
               font-style: normal;
-              font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-              font-weight: normal;
-              font-style: normal;
               word-wrap: normal;
               display: block; }
             html body .content.content-home .post.post-format-comment .comment-content .text pre,
@@ -4269,9 +4230,6 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text pre,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .pre {
               font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-              font-weight: normal;
-              font-style: normal;
-              font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal;
               white-space: pre-wrap; }
@@ -4864,9 +4822,6 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text tt,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .tt {
               font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-              font-weight: normal;
-              font-style: normal;
-              font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
             html body .content.content-home .post.post-format-comment .comment-content .text ins,
@@ -5945,17 +5900,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text pre,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -6218,9 +6167,6 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text tt,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ins,
@@ -8527,9 +8473,6 @@ html {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text pre,
@@ -8539,9 +8482,6 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .pre {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 white-space: pre-wrap; }
@@ -9134,9 +9074,6 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .tt {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ins,
@@ -10216,17 +10153,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-none .post .post-content .text pre,
           html body .content.content-none .post .post-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -10489,9 +10420,6 @@ html {
           html body .content.content-none .post .post-content .text tt,
           html body .content.content-none .post .post-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-none .post .post-content .text ins,
@@ -12798,9 +12726,6 @@ html {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-none .post.post-format-comment .comment-content .text pre,
@@ -12810,9 +12735,6 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .pre {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 white-space: pre-wrap; }
@@ -13405,9 +13327,6 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .tt {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-none .post.post-format-comment .comment-content .text ins,
@@ -14385,17 +14304,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-single .post .post-content .text pre,
           html body .content.content-single .post .post-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -14658,9 +14571,6 @@ html {
           html body .content.content-single .post .post-content .text tt,
           html body .content.content-single .post .post-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .post .post-content .text ins,
@@ -16967,9 +16877,6 @@ html {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-single .post.post-format-comment .comment-content .text pre,
@@ -16979,9 +16886,6 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .pre {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 white-space: pre-wrap; }
@@ -17574,9 +17478,6 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .tt {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-single .post.post-format-comment .comment-content .text ins,
@@ -18502,17 +18403,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text pre,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -18775,9 +18670,6 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text tt,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text ins,
@@ -19486,17 +19378,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text pre,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -19759,9 +19645,6 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text tt,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text ins,
@@ -22068,9 +21951,6 @@ html {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text pre,
@@ -22080,9 +21960,6 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .pre {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 white-space: pre-wrap; }
@@ -22675,9 +22552,6 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .tt {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ins,
@@ -23761,17 +23635,11 @@ html {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal;
             word-wrap: normal;
             display: block; }
           html body .content.content-page .post .post-content .text pre,
           html body .content.content-page .post .post-content .text .pre {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             white-space: pre-wrap; }
@@ -24034,9 +23902,6 @@ html {
           html body .content.content-page .post .post-content .text tt,
           html body .content.content-page .post .post-content .text .tt {
             font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-            font-weight: normal;
-            font-style: normal;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-page .post .post-content .text ins,
@@ -26343,9 +26208,6 @@ html {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-                font-weight: normal;
-                font-style: normal;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-page .post.post-format-comment .comment-content .text pre,
@@ -26355,9 +26217,6 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .pre {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 white-space: pre-wrap; }
@@ -26950,9 +26809,6 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .tt {
                 font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-                font-weight: normal;
-                font-style: normal;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-page .post.post-format-comment .comment-content .text ins,

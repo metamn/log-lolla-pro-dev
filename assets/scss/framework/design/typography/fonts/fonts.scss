@@ -12,21 +12,18 @@
 @include fonts--sparks;
 
 
-@if ($body-font == 'nimbus-sans') {
+@if ($body-font == 'nimbus-sans' or $monospace-font == 'nimbus-sans' or $title-font == 'nimbus-sans') {
   @include fonts--nimbus-sans;
 }
 
-@if ($body-font == 'lack') {
+@if ($body-font == 'nimbus-mono' or $monospace-font == 'nimbus-mono' or $title-font == 'nimbus-mono') {
+  @include fonts--nimbus-mono;
+}
+
+@if ($body-font == 'lack' or $monospace-font == 'lack' or $title-font == 'lack') {
   @include fonts--lack;
 }
 
-@if ($monospace-font == 'nimbus-mono') {
-  @include fonts--nimbus-sans;
-}
-
-@if ($title-font == 'nimbus-mono') {
-  @include fonts--nimbus-mono;
-}
 
 
 // The font mixins
@@ -96,7 +93,7 @@
       font-style: normal;
     }
 
-    @if ($body-font == 'lack') {
+    @if ($monospace-font == 'lack') {
       font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
@@ -110,8 +107,8 @@
       font-style: normal;
     }
 
-    @if ($body-font == 'lack') {
-      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    @if ($title-font == 'lack') {
+      font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
