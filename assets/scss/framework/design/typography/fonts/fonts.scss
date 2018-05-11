@@ -29,6 +29,11 @@
 }
 
 
+@if ($body-font == 'terminal-grotesque' or $monospace-font == 'terminal-grotesque' or $title-font == 'terminal-grotesque') {
+  @include fonts--terminal-grotesque;
+}
+
+
 
 // The font mixins
 //
@@ -52,6 +57,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @if ($body-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'bold') {
@@ -69,6 +80,12 @@
 
     @if ($body-font == 'sporting-grotesque') {
       font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
@@ -92,6 +109,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @if ($body-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'bold-italic') {
@@ -109,6 +132,12 @@
 
     @if ($body-font == 'sporting-grotesque') {
       font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
@@ -132,6 +161,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @if ($monospace-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'site-title') {
@@ -149,6 +184,12 @@
 
     @if ($title-font == 'sporting-grotesque') {
       font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if (title-font == 'terminal-grotesque') {
+      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
