@@ -208,26 +208,16 @@
   font-style: normal; }
 
 @font-face {
-  font-family: 'lackitalic';
-  src: url("assets/fonts/Lack-Italic.woff2") format("woff2"), url("assets/fonts/Lack-Italic.woff") format("woff");
+  font-family: 'Sporting Grotesque_Regular';
+  src: url("assets/fonts/Sporting_Grotesque-Regular_web.eot");
+  src: url("assets/fonts/Sporting_Grotesque-Regular_web.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Sporting_Grotesque-Regular_web.woff") format("woff"), url("assets/fonts/Sporting_Grotesque-Regular_web.woff2") format("woff2"), url("assets/fonts/Sporting_Grotesque-Regular_web.ttf") format("truetype"), url("assets/fonts/Sporting_Grotesque-Regular_web.svg#svgFontName") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'lack_lineitalic';
-  src: url("assets/fonts/Lack-Line-Italic.woff2") format("woff2"), url("assets/fonts/Lack-Line-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'lack_lineregular';
-  src: url("assets/fonts/Lack-Line-Regular.woff2") format("woff2"), url("assets/fonts/Lack-Line-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'lackregular';
-  src: url("assets/fonts/Lack-Regular.woff2") format("woff2"), url("assets/fonts/Lack-Regular.woff") format("woff");
+  font-family: 'Sporting Grotesque_Bold';
+  src: url("assets/fonts/Sporting_Grotesque-Bold_web.eot");
+  src: url("assets/fonts/Sporting_Grotesque-Bold_web.eot?#iefix") format("embedded-opentype"), url("assets/fonts/Sporting_Grotesque-Bold_web.woff") format("woff"), url("assets/fonts/Sporting_Grotesque-Bold_web.woff2") format("woff2"), url("assets/fonts/Sporting_Grotesque-Bold_web.ttf") format("truetype"), url("assets/fonts/Sporting_Grotesque-Bold_web.svg#svgFontName") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -638,7 +628,7 @@ html {
   html body {
     font-size: 100%;
     line-height: 1.5;
-    font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: normal;
     font-style: normal;
     color: black;
@@ -682,7 +672,7 @@ html {
     html body input[type="number"],
     html body input[type="search"],
     html body input[type="url"] {
-      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
       color: black;
@@ -796,11 +786,11 @@ html {
         html body .header .header-title .link:hover, html body .header .header-title .link:active {
           text-decoration: line-through; }
         html body .header .header-title .link .text {
-          font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal; }
       html body .header .header-subtitle .text {
-        font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
         word-wrap: break-word;
@@ -1066,7 +1056,7 @@ html {
         color: black;
         background-color: gainsboro; }
       html body .content.content-home .post .post-title .text {
-        font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
         word-wrap: break-word; }
@@ -1667,7 +1657,7 @@ html {
         html body .content.content-home .post .post-content .text .strong,
         html body .content.content-home .post .post-content .text .b,
         html body .content.content-home .post .post-content .text .bold {
-          font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal; }
           html body .content.content-home .post .post-content .text b em,
@@ -1690,7 +1680,7 @@ html {
           html body .content.content-home .post .post-content .text .bold .em,
           html body .content.content-home .post .post-content .text .bold i,
           html body .content.content-home .post .post-content .text .bold .i {
-            font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
         html body .content.content-home .post .post-content .text table,
@@ -1750,14 +1740,14 @@ html {
           html body .content.content-home .post .post-content .text table th,
           html body .content.content-home .post .post-content .text .table .th,
           html body .content.content-home .post .post-content .text .table th {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-home .post .post-content .text table .th > *,
             html body .content.content-home .post .post-content .text table th > *,
             html body .content.content-home .post .post-content .text .table .th > *,
             html body .content.content-home .post .post-content .text .table th > * {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
         @media only screen and (max-width: 767.9px) {
@@ -1842,12 +1832,12 @@ html {
             margin-right: 0; } }
         html body .content.content-home .post .post-content .text .address,
         html body .content.content-home .post .post-content .text address {
-          font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal; }
         html body .content.content-home .post .post-content .text abbr,
         html body .content.content-home .post .post-content .text .abbr {
-          font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           font-variant: all-petite-caps; }
@@ -1863,7 +1853,7 @@ html {
         html body .content.content-home .post .post-content .text cite,
         html body .content.content-home .post .post-content .text .cite {
           display: block;
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           border-top: 2px solid; }
@@ -4284,7 +4274,7 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .strong,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .b,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-home .post.post-format-comment .comment-content .text b em,
@@ -4347,7 +4337,7 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold i,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
             html body .content.content-home .post.post-format-comment .comment-content .text table,
@@ -4499,7 +4489,7 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text table th,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table .th,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-home .post.post-format-comment .comment-content .text table .th > *,
@@ -4514,7 +4504,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
             @media only screen and (max-width: 767.9px) {
@@ -4699,7 +4689,7 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text address,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .address,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text address {
-              font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
             html body .content.content-home .post.post-format-comment .comment-content .text abbr,
@@ -4708,7 +4698,7 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text .abbr,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text abbr,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal;
               font-variant: all-petite-caps; }
@@ -4740,7 +4730,7 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
               display: block;
-              font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal;
               border-top: 2px solid; }
@@ -5248,6 +5238,49 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-home .navigation {
             max-width: 30em; } }
+      @media only screen and (orientation: landscape) {
+        html body .content.content-home {
+          display: block;
+          -webkit-column-gap: 0;
+                  column-gap: 0;
+          -webkit-column-count: 2;
+                  column-count: 2; }
+          html body .content.content-home .post-format-standard.display-horizontal .post__content {
+            -webkit-box-orient: vertical !important;
+            -webkit-box-direction: normal !important;
+                -ms-flex-direction: column !important;
+                    flex-direction: column !important; }
+          html body .content.content-home .navigation {
+            max-width: none;
+            -ms-grid-column-span: 2;
+            -ms-grid-column: 1;
+                grid-column: 1 / span 2;
+            -ms-grid-row: 2;
+                grid-row: 2; } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        html body .content.content-home .post-format-comment {
+          margin-left: 1.5em !important; } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .content.content-home .post-format-comment {
+          margin-left: 1.5em !important; } }
+      @media only screen and (min-width: 1600.1px) {
+        html body .content.content-home {
+          -webkit-column-count: 3;
+                  column-count: 3;
+          -webkit-column-gap: 1.5em;
+                  column-gap: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
+    html body .content.content-home {
+      padding-left: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
+    html body .content.content-home {
+      padding-left: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (max-width: 767.9px) {
+    html body .content.content-home {
+      padding-right: 1.5em; } }
+  @media only screen and (min-width: 1600.1px) and (min-width: 768px) {
+    html body .content.content-home {
+      padding-right: 1.5em; } }
     html body .content.content-archive {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -5348,7 +5381,7 @@ html {
           color: black;
           background-color: gainsboro; }
         html body .content.content-archive .archive-list .archive-list-body .post .post-title .text {
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           word-wrap: break-word; }
@@ -5949,7 +5982,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .strong,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .b,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text b em,
@@ -5972,7 +6005,7 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .bold .em,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .bold i,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table,
@@ -6032,14 +6065,14 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .th,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table .th > *,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text table th > *,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table .th > *,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -6124,12 +6157,12 @@ html {
               margin-right: 0; } }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .address,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text abbr,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -6145,7 +6178,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -8566,7 +8599,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text b em,
@@ -8629,7 +8662,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text table,
@@ -8781,7 +8814,7 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text table .th > *,
@@ -8796,7 +8829,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                    font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal; }
               @media only screen and (max-width: 767.9px) {
@@ -8981,7 +9014,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text abbr,
@@ -8990,7 +9023,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-variant: all-petite-caps; }
@@ -9022,7 +9055,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 border-top: 2px solid; }
@@ -9569,7 +9602,7 @@ html {
     html body .content.content-search .search-title {
       margin-bottom: 1.5em; }
       html body .content.content-search .search-title span {
-        font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+        font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal; }
     html body .content.content-search .post {
@@ -9631,7 +9664,7 @@ html {
           color: black;
           background-color: gainsboro; }
         html body .content.content-none .post .post-title .text {
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           word-wrap: break-word; }
@@ -10232,7 +10265,7 @@ html {
           html body .content.content-none .post .post-content .text .strong,
           html body .content.content-none .post .post-content .text .b,
           html body .content.content-none .post .post-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-none .post .post-content .text b em,
@@ -10255,7 +10288,7 @@ html {
             html body .content.content-none .post .post-content .text .bold .em,
             html body .content.content-none .post .post-content .text .bold i,
             html body .content.content-none .post .post-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-none .post .post-content .text table,
@@ -10315,14 +10348,14 @@ html {
             html body .content.content-none .post .post-content .text table th,
             html body .content.content-none .post .post-content .text .table .th,
             html body .content.content-none .post .post-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-none .post .post-content .text table .th > *,
               html body .content.content-none .post .post-content .text table th > *,
               html body .content.content-none .post .post-content .text .table .th > *,
               html body .content.content-none .post .post-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -10407,12 +10440,12 @@ html {
               margin-right: 0; } }
           html body .content.content-none .post .post-content .text .address,
           html body .content.content-none .post .post-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-none .post .post-content .text abbr,
           html body .content.content-none .post .post-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -10428,7 +10461,7 @@ html {
           html body .content.content-none .post .post-content .text cite,
           html body .content.content-none .post .post-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -12849,7 +12882,7 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-none .post.post-format-comment .comment-content .text b em,
@@ -12912,7 +12945,7 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
               html body .content.content-none .post.post-format-comment .comment-content .text table,
@@ -13064,7 +13097,7 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
                   html body .content.content-none .post.post-format-comment .comment-content .text table .th > *,
@@ -13079,7 +13112,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                    font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal; }
               @media only screen and (max-width: 767.9px) {
@@ -13264,7 +13297,7 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-none .post.post-format-comment .comment-content .text abbr,
@@ -13273,7 +13306,7 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-variant: all-petite-caps; }
@@ -13305,7 +13338,7 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 border-top: 2px solid; }
@@ -13812,7 +13845,7 @@ html {
           color: black;
           background-color: gainsboro; }
         html body .content.content-single .post .post-title .text {
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           word-wrap: break-word; }
@@ -14413,7 +14446,7 @@ html {
           html body .content.content-single .post .post-content .text .strong,
           html body .content.content-single .post .post-content .text .b,
           html body .content.content-single .post .post-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-single .post .post-content .text b em,
@@ -14436,7 +14469,7 @@ html {
             html body .content.content-single .post .post-content .text .bold .em,
             html body .content.content-single .post .post-content .text .bold i,
             html body .content.content-single .post .post-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-single .post .post-content .text table,
@@ -14496,14 +14529,14 @@ html {
             html body .content.content-single .post .post-content .text table th,
             html body .content.content-single .post .post-content .text .table .th,
             html body .content.content-single .post .post-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-single .post .post-content .text table .th > *,
               html body .content.content-single .post .post-content .text table th > *,
               html body .content.content-single .post .post-content .text .table .th > *,
               html body .content.content-single .post .post-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -14588,12 +14621,12 @@ html {
               margin-right: 0; } }
           html body .content.content-single .post .post-content .text .address,
           html body .content.content-single .post .post-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .post .post-content .text abbr,
           html body .content.content-single .post .post-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -14609,7 +14642,7 @@ html {
           html body .content.content-single .post .post-content .text cite,
           html body .content.content-single .post .post-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -17030,7 +17063,7 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-single .post.post-format-comment .comment-content .text b em,
@@ -17093,7 +17126,7 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
               html body .content.content-single .post.post-format-comment .comment-content .text table,
@@ -17245,7 +17278,7 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
                   html body .content.content-single .post.post-format-comment .comment-content .text table .th > *,
@@ -17260,7 +17293,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                    font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal; }
               @media only screen and (max-width: 767.9px) {
@@ -17445,7 +17478,7 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-single .post.post-format-comment .comment-content .text abbr,
@@ -17454,7 +17487,7 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-variant: all-petite-caps; }
@@ -17486,7 +17519,7 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 border-top: 2px solid; }
@@ -18542,7 +18575,7 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text .strong,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .b,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text b em,
@@ -18565,7 +18598,7 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold .em,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold i,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text table,
@@ -18625,14 +18658,14 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text table th,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .table .th,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-single .comments .comments-body .comment .comment-content .text table .th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text table th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .table .th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -18717,12 +18750,12 @@ html {
               margin-right: 0; } }
           html body .content.content-single .comments .comments-body .comment .comment-content .text .address,
           html body .content.content-single .comments .comments-body .comment .comment-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text abbr,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -18738,7 +18771,7 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -18916,7 +18949,7 @@ html {
           color: black;
           background-color: gainsboro; }
         html body .content.content-single .archive-list .archive-list-body .post .post-title .text {
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           word-wrap: break-word; }
@@ -19517,7 +19550,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .strong,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .b,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text b em,
@@ -19540,7 +19573,7 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .bold .em,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .bold i,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text table,
@@ -19600,14 +19633,14 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .th,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text table .th > *,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text table th > *,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table .th > *,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -19692,12 +19725,12 @@ html {
               margin-right: 0; } }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .address,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text abbr,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -19713,7 +19746,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -22134,7 +22167,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text b em,
@@ -22197,7 +22230,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text table,
@@ -22349,7 +22382,7 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text table .th > *,
@@ -22364,7 +22397,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                    font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal; }
               @media only screen and (max-width: 767.9px) {
@@ -22549,7 +22582,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text abbr,
@@ -22558,7 +22591,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-variant: all-petite-caps; }
@@ -22590,7 +22623,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 border-top: 2px solid; }
@@ -23203,7 +23236,7 @@ html {
           color: black;
           background-color: gainsboro; }
         html body .content.content-page .post .post-title .text {
-          font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
           word-wrap: break-word; }
@@ -23804,7 +23837,7 @@ html {
           html body .content.content-page .post .post-content .text .strong,
           html body .content.content-page .post .post-content .text .b,
           html body .content.content-page .post .post-content .text .bold {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
             html body .content.content-page .post .post-content .text b em,
@@ -23827,7 +23860,7 @@ html {
             html body .content.content-page .post .post-content .text .bold .em,
             html body .content.content-page .post .post-content .text .bold i,
             html body .content.content-page .post .post-content .text .bold .i {
-              font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
           html body .content.content-page .post .post-content .text table,
@@ -23887,14 +23920,14 @@ html {
             html body .content.content-page .post .post-content .text table th,
             html body .content.content-page .post .post-content .text .table .th,
             html body .content.content-page .post .post-content .text .table th {
-              font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+              font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal; }
               html body .content.content-page .post .post-content .text table .th > *,
               html body .content.content-page .post .post-content .text table th > *,
               html body .content.content-page .post .post-content .text .table .th > *,
               html body .content.content-page .post .post-content .text .table th > * {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
           @media only screen and (max-width: 767.9px) {
@@ -23979,12 +24012,12 @@ html {
               margin-right: 0; } }
           html body .content.content-page .post .post-content .text .address,
           html body .content.content-page .post .post-content .text address {
-            font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal; }
           html body .content.content-page .post .post-content .text abbr,
           html body .content.content-page .post .post-content .text .abbr {
-            font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             font-variant: all-petite-caps; }
@@ -24000,7 +24033,7 @@ html {
           html body .content.content-page .post .post-content .text cite,
           html body .content.content-page .post .post-content .text .cite {
             display: block;
-            font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+            font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
             border-top: 2px solid; }
@@ -26421,7 +26454,7 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
                 html body .content.content-page .post.post-format-comment .comment-content .text b em,
@@ -26484,7 +26517,7 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
               html body .content.content-page .post.post-format-comment .comment-content .text table,
@@ -26636,7 +26669,7 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                  font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
                   font-style: normal; }
                   html body .content.content-page .post.post-format-comment .comment-content .text table .th > *,
@@ -26651,7 +26684,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                    font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
                     font-style: normal; }
               @media only screen and (max-width: 767.9px) {
@@ -26836,7 +26869,7 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal; }
               html body .content.content-page .post.post-format-comment .comment-content .text abbr,
@@ -26845,7 +26878,7 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 font-variant: all-petite-caps; }
@@ -26877,7 +26910,7 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+                font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
                 border-top: 2px solid; }

@@ -1,0 +1,19 @@
+1. atnevezni a strukturat: fw, pages, parts, themes
+
+2. menu customization: pl:
+- sitecim + hamburger egy sorban, strapline alatta,
+- sitecime + strapline scrollozik teljes kepernyon, a hambi menu fixed. ez akkor jo ha harmas a layout
+
+3. a multi-lack -ben van fantazia. jo szinkombinaciokkal vagy inkabb post format deko trukokkel nagyot jonne
+
+4. lehet a log lolla pro a knowledge helyett inkabb erre kellene fokuszaljon:
+a brutalist, highly customizable theme and framework
+
+5. lehet infinite scroll is Jetpackel, s a sidebar helyett egy trukkos valami mondjuk egy marquee
+ami az oldalak koze van szurva es ha raklikkelsz lenyitja a sidebart, vagy sidebar elemek beszurva a posztok koze
+mint widgetek
+
+EZ AZ IRANY A LEGKONNYEBB S A LEGNAGYOBB A HASZNA !!!!!!!!!!!!!!!!!
+
+
+6. a grid layout sokszor csak ketoszlopos ez bug valahol

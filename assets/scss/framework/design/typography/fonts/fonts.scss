@@ -24,6 +24,10 @@
   @include fonts--lack;
 }
 
+@if ($body-font == 'sporting-grotesque' or $monospace-font == 'sporting-grotesque' or $title-font == 'sporting-grotesque') {
+  @include fonts--sporting-grotesque;
+}
+
 
 
 // The font mixins
@@ -42,6 +46,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @if ($body-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'bold') {
@@ -53,6 +63,12 @@
 
     @if ($body-font == 'lack') {
       font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($body-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
@@ -70,6 +86,12 @@
       font-weight: normal;
       font-style: normal;;
     }
+
+    @if ($body-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'bold-italic') {
@@ -83,6 +105,12 @@
       font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;;
+    }
+
+    @if ($body-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
     }
   }
 
@@ -98,6 +126,12 @@
       font-weight: normal;
       font-style: normal;
     }
+
+    @if ($monospace-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
   }
 
   @if ($variant == 'site-title') {
@@ -109,6 +143,12 @@
 
     @if ($title-font == 'lack') {
       font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @if ($title-font == 'sporting-grotesque') {
+      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
