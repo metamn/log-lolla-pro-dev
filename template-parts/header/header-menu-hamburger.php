@@ -8,7 +8,7 @@
 ?>
   <?php  if ( function_exists( 'log_lolla_header_menu_contents' ) ) { ?>
     <nav class="menu-hamburger menu-hamburger--closed">
-      <h3 hidden>Hamburger Menu Icon</h3>
+      <h3 class="hidden">Hamburger Menu Icon</h3>
 
       <div class="hamburger-icon hamburger-icon--closed">
         <?php

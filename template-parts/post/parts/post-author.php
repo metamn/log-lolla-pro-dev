@@ -9,7 +9,7 @@
 ?>
 
 <aside class="post-author">
-  <h3 hidden>Article author</h3>
+  <h3 class="hidden">Article author</h3>
 
   <?php log_lolla_post_author(); ?>
 </aside>

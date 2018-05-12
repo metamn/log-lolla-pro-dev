@@ -14,7 +14,7 @@
 get_header(); ?>
 
 	<section class="content content-page">
-		<h3 hidden>Page</h3>
+		<h3 class="hidden">Page</h3>
 
 		<?php
 			// Display the content of the page

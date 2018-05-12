@@ -9,7 +9,7 @@
 ?>
 
 <aside class="post-permalink">
-  <h3 hidden>Article permalink</h3>
+  <h3 class="hidden">Article permalink</h3>
 
   <?php log_lolla_post_permalink(); ?>
 </aside>

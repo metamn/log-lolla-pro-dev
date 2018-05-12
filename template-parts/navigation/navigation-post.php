@@ -19,7 +19,7 @@
   if ( ! empty( $prev ) || ! empty( $next ) ) { ?>
 
     <nav class="navigation post-navigation">
-      <h3 hidden>Post navigation</h3>
+      <h3 class="hidden">Post navigation</h3>
 
       <ul class="ul">
         <?php

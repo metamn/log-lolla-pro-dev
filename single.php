@@ -10,7 +10,7 @@
 get_header(); ?>
 
   <section class="content content-single">
-    <h3 hidden>Content</h3>
+    <h3 class="hidden">Content</h3>
 
 		<?php
 		while ( have_posts() ) : the_post();

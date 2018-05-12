@@ -9,7 +9,7 @@
 ?>
 
 <aside class="post-edit-link">
-  <h3 hidden>Article edit link</h3>
+  <h3 class="hidden">Article edit link</h3>
 
   <?php log_lolla_post_edit_link(); ?>
 </aside>

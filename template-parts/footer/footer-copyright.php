@@ -9,7 +9,7 @@
 ?>
 <?php if ( get_theme_mod( 'footer_copyright_display' ) ) { ?>
   <aside class="footer-copyright">
-    <h3 hidden>Footer copyright</h3>
+    <h3 class="hidden">Footer copyright</h3>
 
     <div class="text">
       &copy;

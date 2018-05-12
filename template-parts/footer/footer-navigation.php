@@ -9,7 +9,7 @@
 ?>
 
 <nav class="footer-navigation">
-  <h3 hidden>Footer navigation</h3>
+  <h3 class="hidden">Footer navigation</h3>
   <?php
     wp_nav_menu( array(
       'theme_location' => 'menu-1',

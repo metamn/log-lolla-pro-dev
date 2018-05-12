@@ -8,7 +8,7 @@
 ?>
   <?php  if ( function_exists( 'log_lolla_header_menu_contents' ) ) { ?>
     <nav class="header-menu header-menu--closed">
-      <h3 hidden>Header menu</h3>
+      <h3 class="hidden">Header menu</h3>
 
       <?php log_lolla_header_menu_contents(); ?>
     </nav>

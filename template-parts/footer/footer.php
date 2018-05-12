@@ -9,7 +9,7 @@
 ?>
 
 <footer class="footer">
-  <h3 hidden>Footer</h3>
+  <h3 class="hidden">Footer</h3>
 
   <?php get_template_part( 'template-parts/footer/footer', 'navigation' ); ?>
   <?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>

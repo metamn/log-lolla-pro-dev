@@ -9,7 +9,7 @@
 ?>
 
 <aside class="comment-permalink">
-  <h3 hidden>Comment permalink</h3>
+  <h3 class="hidden">Comment permalink</h3>
 
   <?php log_lolla_comment_permalink( $comment ); ?>
 </aside>

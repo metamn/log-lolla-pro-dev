@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section class="content content-none">
-		<h3 hidden>Page not found</h3>
+		<h3 class="hidden">Page not found</h3>
 
 		<article class="post">
 			<h3 class="post-title">
@@ -20,7 +20,7 @@ get_header(); ?>
 			</h3>
 
 			<aside class="post-content">
-			  <h3 hidden>Article content</h3>
+			  <h3 class="hidden">Article content</h3>
 
 			  <div class="text">
 			    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla' ); ?>
@@ -28,7 +28,7 @@ get_header(); ?>
 			</aside>
 
 			<aside class="search">
-				<h3 hidden>Search form</h3>
+				<h3 class="hidden">Search form</h3>
 
 				<?php get_search_form(); ?>
 			</aside>

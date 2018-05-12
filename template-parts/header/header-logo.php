@@ -9,7 +9,7 @@
 ?>
   <?php if ( has_custom_logo() ) { ?>
     <aside class="header-logo">
-      <h3 hidden>Logo</h3>
+      <h3 class="hidden">Logo</h3>
 
       <figure class="logo">
         <?php

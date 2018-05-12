@@ -9,7 +9,7 @@
 ?>
   <?php if ( get_header_image() ) : ?>
     <aside class="header-image">
-      <h3 hidden>Image</h3>
+      <h3 class="hidden">Image</h3>
 
       <figure class="image">
         <?php the_header_image_tag(); ?>

@@ -9,7 +9,7 @@
 ?>
 <?php if ( get_theme_mod( 'footer_credits_display' ) ) { ?>
   <aside class="footer-credits">
-    <h3 hidden>Footer credits</h3>
+    <h3 class="hidden">Footer credits</h3>
 
     <div class="text">
       <div class="powered-by">

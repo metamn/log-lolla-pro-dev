@@ -28394,6 +28394,8 @@ html {
           margin-left: 0.375em; }
     html body .shortcode.shortcode-topics-summary .shortcode-body .text p {
       display: inline; }
+    html body .hidden {
+      display: none; }
     html body .screen-reader-text {
       display: none; }
 

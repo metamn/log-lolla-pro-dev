@@ -11,4 +11,4 @@
    * @package Log_Lolla
    */
 ?>
-  <h1 hidden><?php bloginfo( 'name' ) ?></h1>
+  <h1 class="hidden"><?php bloginfo( 'name' ) ?></h1>

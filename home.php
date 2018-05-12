@@ -14,7 +14,7 @@
 get_header(); ?>
 
 	<section class="content content-home">
-		<h3 hidden>Home</h3>
+		<h3 class="hidden">Home</h3>
 
 		<?php
 			if ( have_posts() ) :

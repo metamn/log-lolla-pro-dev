@@ -15,7 +15,7 @@
 get_header(); ?>
 
 	<section class="content content-index">
-		<h3 hidden>Content</h3>
+		<h3 class="hidden">Content</h3>
 
 		<?php
 		if ( have_posts() ) :

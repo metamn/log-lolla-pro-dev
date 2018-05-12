@@ -9,7 +9,7 @@
 ?>
 
 <aside class="comment-content-or-excerpt">
-  <h3 hidden>Comment content or excerpt</h3>
+  <h3 class="hidden">Comment content or excerpt</h3>
 
   <?php log_lolla_comment_content_or_excerpt( $comment ); ?>
 </aside>

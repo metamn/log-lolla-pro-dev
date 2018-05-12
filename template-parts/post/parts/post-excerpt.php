@@ -10,7 +10,7 @@
 ?>
 
 <aside class="post-excerpt">
-  <h3 hidden>Article excerpt</h3>
+  <h3 class="hidden">Article excerpt</h3>
 
   <div class="text">
     <?php the_excerpt(); ?>

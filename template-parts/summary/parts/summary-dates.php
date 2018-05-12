@@ -9,7 +9,7 @@
 ?>
 
 <aside class="summary-dates">
-  <h3 hidden>Summary dates</h3>
+  <h3 class="hidden">Summary dates</h3>
 
   <?php log_lolla_display_summary_dates( $post ); ?>
 </aside>

@@ -9,7 +9,7 @@
 ?>
 
 <aside class="post-date">
-  <h3 hidden>Article date</h3>
+  <h3 class="hidden">Article date</h3>
 
   <?php log_lolla_post_date(); ?>
 </aside>

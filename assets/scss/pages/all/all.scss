@@ -47,6 +47,11 @@ html {
     }
 
 
+    // Common classes
+    .hidden {
+      display: none;
+    }
+
     // Wordpress specific
     .screen-reader-text {
       display: none;
