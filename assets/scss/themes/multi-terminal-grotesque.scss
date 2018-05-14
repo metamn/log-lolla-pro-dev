@@ -13,17 +13,17 @@
 $background-color: #222;
 $text-color: #00FF00;
 
-$post-format-status-background-color: antiquewhite;
-$post-format-status-text-color: black;
+$post-format-status-background-color: '';
+$post-format-status-text-color: '';
 
-$post-format-comment-background-color: lavender;
-$post-format-comment-text-color: black;
+$post-format-comment-background-color: '';
+$post-format-comment-text-color: '';
 
-$post-format-link-background-color: skyblue;
-$post-format-link-text-color: black;
+$post-format-link-background-color: '';
+$post-format-link-text-color: '';
 
-$post-format-standard-background-color: #9cd;
-$post-format-standard-text-color: black;
+$post-format-standard-background-color: '';
+$post-format-standard-text-color: '';
 
 
 /**
@@ -31,7 +31,7 @@ $post-format-standard-text-color: black;
  */
 $body-font: 'terminal-grotesque';
 $monospace-font:'nimbus-mono';
-$title-font: 'terminal-grotesque';
+$title-font: 'lack';
 
 
 
@@ -68,7 +68,7 @@ $title-font: 'terminal-grotesque';
   * Decorations
   *
   */
- $cursor-color: 'white';
+ $cursor-color: 'black';
 
  $border-normal: 2px solid;
  $border-thin: $lem / 8 solid;

@@ -208,6 +208,30 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'lackitalic';
+  src: url("assets/fonts/Lack-Italic.woff2") format("woff2"), url("assets/fonts/Lack-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lack_lineitalic';
+  src: url("assets/fonts/Lack-Line-Italic.woff2") format("woff2"), url("assets/fonts/Lack-Line-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lack_lineregular';
+  src: url("assets/fonts/Lack-Line-Regular.woff2") format("woff2"), url("assets/fonts/Lack-Line-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lackregular';
+  src: url("assets/fonts/Lack-Regular.woff2") format("woff2"), url("assets/fonts/Lack-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'terminal_grotesque';
   src: url("assets/fonts/terminal-grotesque-webfont.eot");
   src: url("assets/fonts/terminal-grotesque-webfont.eot?#iefix") format("embedded-opentype"), url("assets/fonts/terminal-grotesque-webfont.woff2") format("woff2"), url("assets/fonts/terminal-grotesque-webfont.woff") format("woff"), url("assets/fonts/terminal-grotesque-webfont.ttf") format("truetype"), url("assets/fonts/terminal-grotesque-webfont.svg#terminal_grotesqueregular") format("svg");
@@ -634,7 +658,7 @@ html {
     color: #00FF00;
     background-color: #222;
     letter-spacing: 0px;
-    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
+    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.cur"), auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -731,7 +755,7 @@ html {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
       html body a:hover {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
     html body > * {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -785,6 +809,10 @@ html {
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
         html body .header .header-title .link:hover, html body .header .header-title .link:active {
           text-decoration: line-through; }
+        html body .header .header-title .link .text {
+          font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
+          font-weight: normal;
+          font-style: normal; }
       html body .header .header-subtitle .text {
         font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
@@ -793,7 +821,7 @@ html {
         color: #00FF00;
         background-color: #222; }
       html body .header .menu-hamburger {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
           color: #00FF00;
           background-color: transparent; }
@@ -2273,8 +2301,8 @@ html {
           html body .content.content-home .post .post-paginated-content .text .page-links-title {
             margin-right: 0.75em; }
       html body .content.content-home .post.post-format-link .post__content {
-        background-color: skyblue;
-        color: black; }
+        background-color: "";
+        color: ""; }
         @media only screen and (min-width: 768px) {
           html body .content.content-home .post.post-format-link .post__content {
             display: -webkit-box;
@@ -2286,8 +2314,8 @@ html {
                     flex-direction: column; } }
         html body .content.content-home .post.post-format-link .post__content a,
         html body .content.content-home .post.post-format-link .post__content .link {
-          background-color: skyblue !important;
-          color: black !important; }
+          background-color: "" !important;
+          color: "" !important; }
         html body .content.content-home .post.post-format-link .post__content .post-title {
           width: 100%; }
           html body .content.content-home .post.post-format-link .post__content .post-title .link {
@@ -2690,15 +2718,15 @@ html {
               -ms-grid-row-align: center;
               align-self: center; }
       html body .content.content-home .post.post-format-status .post__content {
-        background-color: antiquewhite;
-        color: black;
+        background-color: "";
+        color: "";
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
         border: none; }
         html body .content.content-home .post.post-format-status .post__content a,
         html body .content.content-home .post.post-format-status .post__content .link {
-          background-color: antiquewhite !important;
-          color: black !important; }
+          background-color: "" !important;
+          color: "" !important; }
         html body .content.content-home .post.post-format-status .post__content .post-content {
           border: 2px solid;
           width: 100%; }
@@ -2962,12 +2990,12 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; } }
       html body .content.content-home .post.post-format-standard .post__content {
-        background-color: #9cd;
-        color: black; }
+        background-color: "";
+        color: ""; }
         html body .content.content-home .post.post-format-standard .post__content a,
         html body .content.content-home .post.post-format-standard .post__content .link {
-          background-color: #9cd !important;
-          color: black !important; }
+          background-color: "" !important;
+          color: "" !important; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post.post-format-standard .post-featured-image {
           border-top: 2px solid;
@@ -3047,8 +3075,8 @@ html {
                 justify-content: flex-start;
         border: none;
         width: 100%;
-        background-color: lavender;
-        color: black; }
+        background-color: "";
+        color: ""; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-home .post.post-format-comment {
             max-width: calc(100% - 3em); } }
@@ -3063,8 +3091,8 @@ html {
             max-width: 30em; } }
         html body .content.content-home .post.post-format-comment a,
         html body .content.content-home .post.post-format-comment .link {
-          background-color: lavender !important;
-          color: black !important; }
+          background-color: "" !important;
+          color: "" !important; }
         html body .content.content-home .post.post-format-comment > * {
           width: 100%; }
         html body .content.content-home .post.post-format-comment .comment-content,
@@ -6598,8 +6626,8 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content {
-          background-color: skyblue;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content {
               display: -webkit-box;
@@ -6611,8 +6639,8 @@ html {
                       flex-direction: column; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content a,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .link {
-            background-color: skyblue !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
             width: 100%; }
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
@@ -7015,15 +7043,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content {
-          background-color: antiquewhite;
-          color: black;
+          background-color: "";
+          color: "";
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content a,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .link {
-            background-color: antiquewhite !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -7287,12 +7315,12 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; } }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content {
-          background-color: #9cd;
-          color: black; }
+          background-color: "";
+          color: ""; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content a,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post__content .link {
-            background-color: #9cd !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -7372,8 +7400,8 @@ html {
                   justify-content: flex-start;
           border: none;
           width: 100%;
-          background-color: lavender;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -7388,8 +7416,8 @@ html {
               max-width: 30em; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment a,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .link {
-            background-color: lavender !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content,
@@ -10881,8 +10909,8 @@ html {
             html body .content.content-none .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
         html body .content.content-none .post.post-format-link .post__content {
-          background-color: skyblue;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (min-width: 768px) {
             html body .content.content-none .post.post-format-link .post__content {
               display: -webkit-box;
@@ -10894,8 +10922,8 @@ html {
                       flex-direction: column; } }
           html body .content.content-none .post.post-format-link .post__content a,
           html body .content.content-none .post.post-format-link .post__content .link {
-            background-color: skyblue !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-none .post.post-format-link .post__content .post-title {
             width: 100%; }
             html body .content.content-none .post.post-format-link .post__content .post-title .link {
@@ -11298,15 +11326,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-none .post.post-format-status .post__content {
-          background-color: antiquewhite;
-          color: black;
+          background-color: "";
+          color: "";
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
           html body .content.content-none .post.post-format-status .post__content a,
           html body .content.content-none .post.post-format-status .post__content .link {
-            background-color: antiquewhite !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-none .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -11570,12 +11598,12 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; } }
         html body .content.content-none .post.post-format-standard .post__content {
-          background-color: #9cd;
-          color: black; }
+          background-color: "";
+          color: ""; }
           html body .content.content-none .post.post-format-standard .post__content a,
           html body .content.content-none .post.post-format-standard .post__content .link {
-            background-color: #9cd !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -11655,8 +11683,8 @@ html {
                   justify-content: flex-start;
           border: none;
           width: 100%;
-          background-color: lavender;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-none .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -11671,8 +11699,8 @@ html {
               max-width: 30em; } }
           html body .content.content-none .post.post-format-comment a,
           html body .content.content-none .post.post-format-comment .link {
-            background-color: lavender !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-none .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-none .post.post-format-comment .comment-content,
@@ -15062,8 +15090,8 @@ html {
             html body .content.content-single .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
         html body .content.content-single .post.post-format-link .post__content {
-          background-color: skyblue;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (min-width: 768px) {
             html body .content.content-single .post.post-format-link .post__content {
               display: -webkit-box;
@@ -15075,8 +15103,8 @@ html {
                       flex-direction: column; } }
           html body .content.content-single .post.post-format-link .post__content a,
           html body .content.content-single .post.post-format-link .post__content .link {
-            background-color: skyblue !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .post.post-format-link .post__content .post-title {
             width: 100%; }
             html body .content.content-single .post.post-format-link .post__content .post-title .link {
@@ -15479,15 +15507,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-single .post.post-format-status .post__content {
-          background-color: antiquewhite;
-          color: black;
+          background-color: "";
+          color: "";
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
           html body .content.content-single .post.post-format-status .post__content a,
           html body .content.content-single .post.post-format-status .post__content .link {
-            background-color: antiquewhite !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -15751,12 +15779,12 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; } }
         html body .content.content-single .post.post-format-standard .post__content {
-          background-color: #9cd;
-          color: black; }
+          background-color: "";
+          color: ""; }
           html body .content.content-single .post.post-format-standard .post__content a,
           html body .content.content-single .post.post-format-standard .post__content .link {
-            background-color: #9cd !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -15836,8 +15864,8 @@ html {
                   justify-content: flex-start;
           border: none;
           width: 100%;
-          background-color: lavender;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -15852,8 +15880,8 @@ html {
               max-width: 30em; } }
           html body .content.content-single .post.post-format-comment a,
           html body .content.content-single .post.post-format-comment .link {
-            background-color: lavender !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-single .post.post-format-comment .comment-content,
@@ -20166,8 +20194,8 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content {
-          background-color: skyblue;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (min-width: 768px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content {
               display: -webkit-box;
@@ -20179,8 +20207,8 @@ html {
                       flex-direction: column; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content a,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .link {
-            background-color: skyblue !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title {
             width: 100%; }
             html body .content.content-single .archive-list .archive-list-body .post.post-format-link .post__content .post-title .link {
@@ -20583,15 +20611,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content {
-          background-color: antiquewhite;
-          color: black;
+          background-color: "";
+          color: "";
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content a,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .link {
-            background-color: antiquewhite !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -20855,12 +20883,12 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; } }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content {
-          background-color: #9cd;
-          color: black; }
+          background-color: "";
+          color: ""; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content a,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post__content .link {
-            background-color: #9cd !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -20940,8 +20968,8 @@ html {
                   justify-content: flex-start;
           border: none;
           width: 100%;
-          background-color: lavender;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -20956,8 +20984,8 @@ html {
               max-width: 30em; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment a,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .link {
-            background-color: lavender !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content,
@@ -24453,8 +24481,8 @@ html {
             html body .content.content-page .post .post-paginated-content .text .page-links-title {
               margin-right: 0.75em; }
         html body .content.content-page .post.post-format-link .post__content {
-          background-color: skyblue;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (min-width: 768px) {
             html body .content.content-page .post.post-format-link .post__content {
               display: -webkit-box;
@@ -24466,8 +24494,8 @@ html {
                       flex-direction: column; } }
           html body .content.content-page .post.post-format-link .post__content a,
           html body .content.content-page .post.post-format-link .post__content .link {
-            background-color: skyblue !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-page .post.post-format-link .post__content .post-title {
             width: 100%; }
             html body .content.content-page .post.post-format-link .post__content .post-title .link {
@@ -24870,15 +24898,15 @@ html {
                 -ms-grid-row-align: center;
                 align-self: center; }
         html body .content.content-page .post.post-format-status .post__content {
-          background-color: antiquewhite;
-          color: black;
+          background-color: "";
+          color: "";
           -ms-flex-wrap: wrap;
               flex-wrap: wrap;
           border: none; }
           html body .content.content-page .post.post-format-status .post__content a,
           html body .content.content-page .post.post-format-status .post__content .link {
-            background-color: antiquewhite !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-page .post.post-format-status .post__content .post-content {
             border: 2px solid;
             width: 100%; }
@@ -25142,12 +25170,12 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; } }
         html body .content.content-page .post.post-format-standard .post__content {
-          background-color: #9cd;
-          color: black; }
+          background-color: "";
+          color: ""; }
           html body .content.content-page .post.post-format-standard .post__content a,
           html body .content.content-page .post.post-format-standard .post__content .link {
-            background-color: #9cd !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post.post-format-standard .post-featured-image {
             border-top: 2px solid;
@@ -25227,8 +25255,8 @@ html {
                   justify-content: flex-start;
           border: none;
           width: 100%;
-          background-color: lavender;
-          color: black; }
+          background-color: "";
+          color: ""; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-page .post.post-format-comment {
               max-width: calc(100% - 3em); } }
@@ -25243,8 +25271,8 @@ html {
               max-width: 30em; } }
           html body .content.content-page .post.post-format-comment a,
           html body .content.content-page .post.post-format-comment .link {
-            background-color: lavender !important;
-            color: black !important; }
+            background-color: "" !important;
+            color: "" !important; }
           html body .content.content-page .post.post-format-comment > * {
             width: 100%; }
           html body .content.content-page .post.post-format-comment .comment-content,
