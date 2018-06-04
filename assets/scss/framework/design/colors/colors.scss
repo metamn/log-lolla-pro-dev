@@ -11,7 +11,7 @@
 
 
 // Color combinations. Colors are not used standalone but in pairs
-@mixin colors($name) {
+@mixin colors($name: default) {
 
   @if ($name == 'default') {
     color: $text-color;

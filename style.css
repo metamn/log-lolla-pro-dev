@@ -1192,9 +1192,23 @@ html {
         html body .content.content-home .post .post-content .text h4,
         html body .content.content-home .post .post-content .text h5,
         html body .content.content-home .post .post-content .text h6 {
-          border: 1px solid;
-          font-size: 1.25em;
-          line-height: 1.1; }
+          font-size: 1.953em;
+          letter-spacing: 0.625em;
+          line-height: 1.1;
+          position: relative; }
+          html body .content.content-home .post .post-content .text h1:before,
+          html body .content.content-home .post .post-content .text h2:before,
+          html body .content.content-home .post .post-content .text h3:before,
+          html body .content.content-home .post .post-content .text h4:before,
+          html body .content.content-home .post .post-content .text h5:before,
+          html body .content.content-home .post .post-content .text h6:before {
+            content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+            border: 0.07812em solid;
+            position: absolute;
+            top: calc(-0.41667em);
+            left: calc(0.41667em);
+            width: 6.25em;
+            height: 6.25em; }
         html body .content.content-home .post .post-content .text a,
         html body .content.content-home .post .post-content .text .link {
           color: black;
@@ -1383,25 +1397,25 @@ html {
             html body .content.content-home .post .post-content .text ul li,
             html body .content.content-home .post .post-content .text .ul .li,
             html body .content.content-home .post .post-content .text .ul li {
-              margin-bottom: 1.25em; } }
+              margin-top: 0; } }
           @media only screen and (min-width: 768px) {
             html body .content.content-home .post .post-content .text ul .li,
             html body .content.content-home .post .post-content .text ul li,
             html body .content.content-home .post .post-content .text .ul .li,
             html body .content.content-home .post .post-content .text .ul li {
-              margin-bottom: 1.25em; } }
+              margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post .post-content .text ul .li,
             html body .content.content-home .post .post-content .text ul li,
             html body .content.content-home .post .post-content .text .ul .li,
             html body .content.content-home .post .post-content .text .ul li {
-              margin-top: 0; } }
+              margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
             html body .content.content-home .post .post-content .text ul .li,
             html body .content.content-home .post .post-content .text ul li,
             html body .content.content-home .post .post-content .text .ul .li,
             html body .content.content-home .post .post-content .text .ul li {
-              margin-top: 0; } }
+              margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post .post-content .text ul .li,
             html body .content.content-home .post .post-content .text ul li,
@@ -2800,7 +2814,7 @@ html {
         html body .content.content-home .post.post-format-quote .post__content .post-content .text {
           color: black;
           background-color: white;
-          border: 0.15625em solid;
+          border: 0.07812em solid;
           -webkit-transform: translateX(-2.5em) skew(5deg);
                   transform: translateX(-2.5em) skew(5deg); }
           @media only screen and (max-width: 767.9px) {
@@ -2908,7 +2922,7 @@ html {
           html body .content.content-home .post.post-format-chat .post__content .post-content .text {
             margin-right: 0; } }
         html body .content.content-home .post.post-format-chat .post__content .post-content .text p {
-          border: 0.15625em solid;
+          border: 0.07812em solid;
           color: black;
           background-color: white;
           -webkit-transform: translateX(0.625em) skew(5deg);
@@ -3149,9 +3163,35 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h4,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h5,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h6 {
-              border: 1px solid;
-              font-size: 1.25em;
-              line-height: 1.1; }
+              font-size: 1.953em;
+              letter-spacing: 0.625em;
+              line-height: 1.1;
+              position: relative; }
+              html body .content.content-home .post.post-format-comment .comment-content .text h1:before,
+              html body .content.content-home .post.post-format-comment .comment-content .text h2:before,
+              html body .content.content-home .post.post-format-comment .comment-content .text h3:before,
+              html body .content.content-home .post.post-format-comment .comment-content .text h4:before,
+              html body .content.content-home .post.post-format-comment .comment-content .text h5:before,
+              html body .content.content-home .post.post-format-comment .comment-content .text h6:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h1:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h2:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h3:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h4:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h5:before,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text h6:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                border: 0.07812em solid;
+                position: absolute;
+                top: calc(-0.41667em);
+                left: calc(0.41667em);
+                width: 6.25em;
+                height: 6.25em; }
             html body .content.content-home .post.post-format-comment .comment-content .text a,
             html body .content.content-home .post.post-format-comment .comment-content .text .link,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text a,
@@ -3608,7 +3648,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text ul li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                  margin-bottom: 1.25em; } }
+                  margin-top: 0; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-home .post.post-format-comment .comment-content .text ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content .text ul li,
@@ -3622,7 +3662,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text ul li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                  margin-bottom: 1.25em; } }
+                  margin-top: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-home .post.post-format-comment .comment-content .text ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content .text ul li,
@@ -3636,7 +3676,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text ul li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                  margin-top: 0; } }
+                  margin-bottom: 0; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-home .post.post-format-comment .comment-content .text ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content .text ul li,
@@ -3650,7 +3690,7 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text ul li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                  margin-top: 0; } }
+                  margin-bottom: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-home .post.post-format-comment .comment-content .text ul .li,
                 html body .content.content-home .post.post-format-comment .comment-content .text ul li,
@@ -5302,8 +5342,8 @@ html {
           html body .content.content-archive .archive-list {
             margin-right: 0; } }
       html body .content.content-archive .archive-title {
-        border: 1px solid;
-        font-size: 1.25em; }
+        font-size: 1.953em;
+        letter-spacing: 0.625em; }
       html body .content.content-archive .archive-description {
         font-size: 1.25em;
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==); }
@@ -5474,9 +5514,23 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h4,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h5,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h1:before,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h2:before,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h3:before,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h4:before,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h5:before,
+            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
@@ -5665,25 +5719,25 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text ul li,
@@ -7082,7 +7136,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
             color: black;
             background-color: white;
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
             @media only screen and (max-width: 767.9px) {
@@ -7190,7 +7244,7 @@ html {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text {
               margin-right: 0; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             color: black;
             background-color: white;
             -webkit-transform: translateX(0.625em) skew(5deg);
@@ -7431,9 +7485,35 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6 {
-                border: 1px solid;
-                font-size: 1.25em;
-                line-height: 1.1; }
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                line-height: 1.1;
+                position: relative; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h1:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h2:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h3:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h4:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h5:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h6:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h1:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h2:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h3:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h4:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h5:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h6:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                  border: 0.07812em solid;
+                  position: absolute;
+                  top: calc(-0.41667em);
+                  left: calc(0.41667em);
+                  width: 6.25em;
+                  height: 6.25em; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text a,
@@ -7890,7 +7970,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -7904,7 +7984,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -7918,7 +7998,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -7932,7 +8012,7 @@ html {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -9757,9 +9837,23 @@ html {
           html body .content.content-none .post .post-content .text h4,
           html body .content.content-none .post .post-content .text h5,
           html body .content.content-none .post .post-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-none .post .post-content .text h1:before,
+            html body .content.content-none .post .post-content .text h2:before,
+            html body .content.content-none .post .post-content .text h3:before,
+            html body .content.content-none .post .post-content .text h4:before,
+            html body .content.content-none .post .post-content .text h5:before,
+            html body .content.content-none .post .post-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-none .post .post-content .text a,
           html body .content.content-none .post .post-content .text .link {
             color: black;
@@ -9948,25 +10042,25 @@ html {
               html body .content.content-none .post .post-content .text ul li,
               html body .content.content-none .post .post-content .text .ul .li,
               html body .content.content-none .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-none .post .post-content .text ul .li,
               html body .content.content-none .post .post-content .text ul li,
               html body .content.content-none .post .post-content .text .ul .li,
               html body .content.content-none .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post .post-content .text ul .li,
               html body .content.content-none .post .post-content .text ul li,
               html body .content.content-none .post .post-content .text .ul .li,
               html body .content.content-none .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-none .post .post-content .text ul .li,
               html body .content.content-none .post .post-content .text ul li,
               html body .content.content-none .post .post-content .text .ul .li,
               html body .content.content-none .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post .post-content .text ul .li,
               html body .content.content-none .post .post-content .text ul li,
@@ -11365,7 +11459,7 @@ html {
           html body .content.content-none .post.post-format-quote .post__content .post-content .text {
             color: black;
             background-color: white;
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
             @media only screen and (max-width: 767.9px) {
@@ -11473,7 +11567,7 @@ html {
             html body .content.content-none .post.post-format-chat .post__content .post-content .text {
               margin-right: 0; } }
           html body .content.content-none .post.post-format-chat .post__content .post-content .text p {
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             color: black;
             background-color: white;
             -webkit-transform: translateX(0.625em) skew(5deg);
@@ -11714,9 +11808,35 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h4,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h5,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h6 {
-                border: 1px solid;
-                font-size: 1.25em;
-                line-height: 1.1; }
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                line-height: 1.1;
+                position: relative; }
+                html body .content.content-none .post.post-format-comment .comment-content .text h1:before,
+                html body .content.content-none .post.post-format-comment .comment-content .text h2:before,
+                html body .content.content-none .post.post-format-comment .comment-content .text h3:before,
+                html body .content.content-none .post.post-format-comment .comment-content .text h4:before,
+                html body .content.content-none .post.post-format-comment .comment-content .text h5:before,
+                html body .content.content-none .post.post-format-comment .comment-content .text h6:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h1:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h2:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h3:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h4:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h5:before,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text h6:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                  border: 0.07812em solid;
+                  position: absolute;
+                  top: calc(-0.41667em);
+                  left: calc(0.41667em);
+                  width: 6.25em;
+                  height: 6.25em; }
               html body .content.content-none .post.post-format-comment .comment-content .text a,
               html body .content.content-none .post.post-format-comment .comment-content .text .link,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text a,
@@ -12173,7 +12293,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-none .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content .text ul li,
@@ -12187,7 +12307,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-none .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content .text ul li,
@@ -12201,7 +12321,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-none .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content .text ul li,
@@ -12215,7 +12335,7 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-none .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-none .post.post-format-comment .comment-content .text ul li,
@@ -13664,8 +13784,8 @@ html {
           html body .content.content-none .post {
             max-width: none; } }
         html body .content.content-none .post .post-title .text {
-          border: 1px solid;
-          font-size: 1.25em; }
+          font-size: 1.953em;
+          letter-spacing: 0.625em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post .post-title {
             margin-bottom: 2.5em; } }
@@ -13938,9 +14058,23 @@ html {
           html body .content.content-single .post .post-content .text h4,
           html body .content.content-single .post .post-content .text h5,
           html body .content.content-single .post .post-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-single .post .post-content .text h1:before,
+            html body .content.content-single .post .post-content .text h2:before,
+            html body .content.content-single .post .post-content .text h3:before,
+            html body .content.content-single .post .post-content .text h4:before,
+            html body .content.content-single .post .post-content .text h5:before,
+            html body .content.content-single .post .post-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-single .post .post-content .text a,
           html body .content.content-single .post .post-content .text .link {
             color: black;
@@ -14129,25 +14263,25 @@ html {
               html body .content.content-single .post .post-content .text ul li,
               html body .content.content-single .post .post-content .text .ul .li,
               html body .content.content-single .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .post .post-content .text ul .li,
               html body .content.content-single .post .post-content .text ul li,
               html body .content.content-single .post .post-content .text .ul .li,
               html body .content.content-single .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post .post-content .text ul .li,
               html body .content.content-single .post .post-content .text ul li,
               html body .content.content-single .post .post-content .text .ul .li,
               html body .content.content-single .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .post .post-content .text ul .li,
               html body .content.content-single .post .post-content .text ul li,
               html body .content.content-single .post .post-content .text .ul .li,
               html body .content.content-single .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post .post-content .text ul .li,
               html body .content.content-single .post .post-content .text ul li,
@@ -15546,7 +15680,7 @@ html {
           html body .content.content-single .post.post-format-quote .post__content .post-content .text {
             color: black;
             background-color: white;
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
             @media only screen and (max-width: 767.9px) {
@@ -15654,7 +15788,7 @@ html {
             html body .content.content-single .post.post-format-chat .post__content .post-content .text {
               margin-right: 0; } }
           html body .content.content-single .post.post-format-chat .post__content .post-content .text p {
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             color: black;
             background-color: white;
             -webkit-transform: translateX(0.625em) skew(5deg);
@@ -15895,9 +16029,35 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h4,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h5,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h6 {
-                border: 1px solid;
-                font-size: 1.25em;
-                line-height: 1.1; }
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                line-height: 1.1;
+                position: relative; }
+                html body .content.content-single .post.post-format-comment .comment-content .text h1:before,
+                html body .content.content-single .post.post-format-comment .comment-content .text h2:before,
+                html body .content.content-single .post.post-format-comment .comment-content .text h3:before,
+                html body .content.content-single .post.post-format-comment .comment-content .text h4:before,
+                html body .content.content-single .post.post-format-comment .comment-content .text h5:before,
+                html body .content.content-single .post.post-format-comment .comment-content .text h6:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h1:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h2:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h3:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h4:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h5:before,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text h6:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                  border: 0.07812em solid;
+                  position: absolute;
+                  top: calc(-0.41667em);
+                  left: calc(0.41667em);
+                  width: 6.25em;
+                  height: 6.25em; }
               html body .content.content-single .post.post-format-comment .comment-content .text a,
               html body .content.content-single .post.post-format-comment .comment-content .text .link,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text a,
@@ -16354,7 +16514,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-single .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content .text ul li,
@@ -16368,7 +16528,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-single .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content .text ul li,
@@ -16382,7 +16542,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-single .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content .text ul li,
@@ -16396,7 +16556,7 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-single .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .post.post-format-comment .comment-content .text ul li,
@@ -17845,8 +18005,8 @@ html {
           html body .content.content-single .post {
             max-width: none; } }
         html body .content.content-single .post .post-title .text {
-          border: 1px solid;
-          font-size: 1.25em; }
+          font-size: 1.953em;
+          letter-spacing: 0.625em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post .post-title {
             margin-bottom: 2.5em; } }
@@ -18067,9 +18227,23 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text h4,
           html body .content.content-single .comments .comments-body .comment .comment-content .text h5,
           html body .content.content-single .comments .comments-body .comment .comment-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h1:before,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h2:before,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h3:before,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h4:before,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h5:before,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text a,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .link {
             color: black;
@@ -18258,25 +18432,25 @@ html {
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul .li,
               html body .content.content-single .comments .comments-body .comment .comment-content .text ul li,
@@ -19042,9 +19216,23 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h4,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h5,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h1:before,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h2:before,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h3:before,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h4:before,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h5:before,
+            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
@@ -19233,25 +19421,25 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul .li,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text ul li,
@@ -20650,7 +20838,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-content .text {
             color: black;
             background-color: white;
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
             @media only screen and (max-width: 767.9px) {
@@ -20758,7 +20946,7 @@ html {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text {
               margin-right: 0; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-chat .post__content .post-content .text p {
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             color: black;
             background-color: white;
             -webkit-transform: translateX(0.625em) skew(5deg);
@@ -20999,9 +21187,35 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6 {
-                border: 1px solid;
-                font-size: 1.25em;
-                line-height: 1.1; }
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                line-height: 1.1;
+                position: relative; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h1:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h2:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h3:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h4:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h5:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h6:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h1:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h2:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h3:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h4:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h5:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h6:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                  border: 0.07812em solid;
+                  position: absolute;
+                  top: calc(-0.41667em);
+                  left: calc(0.41667em);
+                  width: 6.25em;
+                  height: 6.25em; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text a,
@@ -21458,7 +21672,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -21472,7 +21686,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -21486,7 +21700,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -21500,7 +21714,7 @@ html {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text ul li,
@@ -23329,9 +23543,23 @@ html {
           html body .content.content-page .post .post-content .text h4,
           html body .content.content-page .post .post-content .text h5,
           html body .content.content-page .post .post-content .text h6 {
-            border: 1px solid;
-            font-size: 1.25em;
-            line-height: 1.1; }
+            font-size: 1.953em;
+            letter-spacing: 0.625em;
+            line-height: 1.1;
+            position: relative; }
+            html body .content.content-page .post .post-content .text h1:before,
+            html body .content.content-page .post .post-content .text h2:before,
+            html body .content.content-page .post .post-content .text h3:before,
+            html body .content.content-page .post .post-content .text h4:before,
+            html body .content.content-page .post .post-content .text h5:before,
+            html body .content.content-page .post .post-content .text h6:before {
+              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+              border: 0.07812em solid;
+              position: absolute;
+              top: calc(-0.41667em);
+              left: calc(0.41667em);
+              width: 6.25em;
+              height: 6.25em; }
           html body .content.content-page .post .post-content .text a,
           html body .content.content-page .post .post-content .text .link {
             color: black;
@@ -23520,25 +23748,25 @@ html {
               html body .content.content-page .post .post-content .text ul li,
               html body .content.content-page .post .post-content .text .ul .li,
               html body .content.content-page .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-page .post .post-content .text ul .li,
               html body .content.content-page .post .post-content .text ul li,
               html body .content.content-page .post .post-content .text .ul .li,
               html body .content.content-page .post .post-content .text .ul li {
-                margin-bottom: 1.25em; } }
+                margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post .post-content .text ul .li,
               html body .content.content-page .post .post-content .text ul li,
               html body .content.content-page .post .post-content .text .ul .li,
               html body .content.content-page .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-page .post .post-content .text ul .li,
               html body .content.content-page .post .post-content .text ul li,
               html body .content.content-page .post .post-content .text .ul .li,
               html body .content.content-page .post .post-content .text .ul li {
-                margin-top: 0; } }
+                margin-bottom: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post .post-content .text ul .li,
               html body .content.content-page .post .post-content .text ul li,
@@ -24937,7 +25165,7 @@ html {
           html body .content.content-page .post.post-format-quote .post__content .post-content .text {
             color: black;
             background-color: white;
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
             @media only screen and (max-width: 767.9px) {
@@ -25045,7 +25273,7 @@ html {
             html body .content.content-page .post.post-format-chat .post__content .post-content .text {
               margin-right: 0; } }
           html body .content.content-page .post.post-format-chat .post__content .post-content .text p {
-            border: 0.15625em solid;
+            border: 0.07812em solid;
             color: black;
             background-color: white;
             -webkit-transform: translateX(0.625em) skew(5deg);
@@ -25286,9 +25514,35 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h4,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h5,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h6 {
-                border: 1px solid;
-                font-size: 1.25em;
-                line-height: 1.1; }
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                line-height: 1.1;
+                position: relative; }
+                html body .content.content-page .post.post-format-comment .comment-content .text h1:before,
+                html body .content.content-page .post.post-format-comment .comment-content .text h2:before,
+                html body .content.content-page .post.post-format-comment .comment-content .text h3:before,
+                html body .content.content-page .post.post-format-comment .comment-content .text h4:before,
+                html body .content.content-page .post.post-format-comment .comment-content .text h5:before,
+                html body .content.content-page .post.post-format-comment .comment-content .text h6:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h1:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h2:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h3:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h4:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h5:before,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text h6:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h1:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h2:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h3:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h4:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h5:before,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h6:before {
+                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
+                  border: 0.07812em solid;
+                  position: absolute;
+                  top: calc(-0.41667em);
+                  left: calc(0.41667em);
+                  width: 6.25em;
+                  height: 6.25em; }
               html body .content.content-page .post.post-format-comment .comment-content .text a,
               html body .content.content-page .post.post-format-comment .comment-content .text .link,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text a,
@@ -25745,7 +25999,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-page .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content .text ul li,
@@ -25759,7 +26013,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-bottom: 1.25em; } }
+                    margin-top: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-page .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content .text ul li,
@@ -25773,7 +26027,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (min-width: 768px) {
                   html body .content.content-page .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content .text ul li,
@@ -25787,7 +26041,7 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text ul li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .ul li {
-                    margin-top: 0; } }
+                    margin-bottom: 0; } }
                 @media only screen and (max-width: 767.9px) {
                   html body .content.content-page .post.post-format-comment .comment-content .text ul .li,
                   html body .content.content-page .post.post-format-comment .comment-content .text ul li,
@@ -27236,8 +27490,8 @@ html {
           html body .content.content-page .post {
             max-width: none; } }
         html body .content.content-page .post .post-title .text {
-          border: 1px solid;
-          font-size: 1.25em; }
+          font-size: 1.953em;
+          letter-spacing: 0.625em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post .post-title {
             margin-bottom: 2.5em; } }
