@@ -1093,6 +1093,7 @@ html {
           color: black;
           background-color: white;
           font-size: 0.8em;
+          line-height: 1.5;
           display: inline-block; }
         html body .content.content-home .post .post-featured-image figure .figcaption,
         html body .content.content-home .post .post-featured-image figure .wp-caption-text,
@@ -1557,6 +1558,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
             html body .content.content-home .post .post-content .text .figure figcaption .link,
             html body .content.content-home .post .post-content .text .figure figcaption a,
@@ -2190,6 +2192,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-home .post .post-content .text .gallery figure .gallery-icon {
             line-height: 0; }
@@ -2411,6 +2414,7 @@ html {
           color: black;
           background-color: white;
           font-size: 0.8em;
+          line-height: 1.5;
           display: inline-block; }
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .figcaption,
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -2632,6 +2636,7 @@ html {
           color: black;
           background-color: white;
           font-size: 0.8em;
+          line-height: 1.5;
           display: inline-block; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
           line-height: 0; }
@@ -4006,6 +4011,7 @@ html {
                 color: black;
                 background-color: white;
                 font-size: 0.8em;
+                line-height: 1.5;
                 display: inline-block; }
                 html body .content.content-home .post.post-format-comment .comment-content .text .figure figcaption .link,
                 html body .content.content-home .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -4996,7 +5002,8 @@ html {
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           color: black;
           background-color: white;
-          font-size: 0.8em; }
+          font-size: 0.8em;
+          line-height: 1.5; }
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5415,6 +5422,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text,
@@ -5879,6 +5887,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
               html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .figure figcaption a,
@@ -6512,6 +6521,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
@@ -6733,6 +6743,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -6954,6 +6965,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
@@ -8328,6 +8340,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
                   html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -9318,7 +9331,8 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
             background-color: white;
-            font-size: 0.8em; }
+            font-size: 0.8em;
+            line-height: 1.5; }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -9738,6 +9752,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-none .post .post-featured-image figure .figcaption,
           html body .content.content-none .post .post-featured-image figure .wp-caption-text,
@@ -10202,6 +10217,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-none .post .post-content .text .figure figcaption .link,
               html body .content.content-none .post .post-content .text .figure figcaption a,
@@ -10835,6 +10851,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
             html body .content.content-none .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
@@ -11056,6 +11073,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -11277,6 +11295,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
@@ -12651,6 +12670,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
                   html body .content.content-none .post.post-format-comment .comment-content .text .figure figcaption .link,
                   html body .content.content-none .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -13641,7 +13661,8 @@ html {
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
             background-color: white;
-            font-size: 0.8em; }
+            font-size: 0.8em;
+            line-height: 1.5; }
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -13959,6 +13980,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .post .post-featured-image figure .figcaption,
           html body .content.content-single .post .post-featured-image figure .wp-caption-text,
@@ -14423,6 +14445,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-single .post .post-content .text .figure figcaption .link,
               html body .content.content-single .post .post-content .text .figure figcaption a,
@@ -15056,6 +15079,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
             html body .content.content-single .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
@@ -15277,6 +15301,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -15498,6 +15523,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
@@ -16872,6 +16898,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
                   html body .content.content-single .post.post-format-comment .comment-content .text .figure figcaption .link,
                   html body .content.content-single .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -17862,7 +17889,8 @@ html {
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
             background-color: white;
-            font-size: 0.8em; }
+            font-size: 0.8em;
+            line-height: 1.5; }
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -18128,8 +18156,8 @@ html {
           padding-top: 0; }
         html body .content.content-single .post-footer .link,
         html body .content.content-single .post-footer a {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18592,6 +18620,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-single .comments .comments-body .comment .comment-content .text .figure figcaption .link,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .figure figcaption a,
@@ -19117,6 +19146,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .figcaption,
           html body .content.content-single .archive-list .archive-list-body .post .post-featured-image figure .wp-caption-text,
@@ -19581,6 +19611,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .figure figcaption .link,
               html body .content.content-single .archive-list .archive-list-body .post .post-content .text .figure figcaption a,
@@ -20214,6 +20245,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
@@ -20435,6 +20467,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -20656,6 +20689,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
@@ -22030,6 +22064,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption .link,
                   html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -23020,7 +23055,8 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
             background-color: white;
-            font-size: 0.8em; }
+            font-size: 0.8em;
+            line-height: 1.5; }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -23444,6 +23480,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-page .post .post-featured-image figure .figcaption,
           html body .content.content-page .post .post-featured-image figure .wp-caption-text,
@@ -23908,6 +23945,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
               html body .content.content-page .post .post-content .text .figure figcaption .link,
               html body .content.content-page .post .post-content .text .figure figcaption a,
@@ -24541,6 +24579,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
             html body .content.content-page .post .post-content .text .gallery figure .gallery-icon {
               line-height: 0; }
@@ -24762,6 +24801,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .figcaption,
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .wp-caption-text,
@@ -24983,6 +25023,7 @@ html {
             color: black;
             background-color: white;
             font-size: 0.8em;
+            line-height: 1.5;
             display: inline-block; }
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .gallery-icon {
             line-height: 0; }
@@ -26357,6 +26398,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
                   html body .content.content-page .post.post-format-comment .comment-content .text .figure figcaption .link,
                   html body .content.content-page .post.post-format-comment .comment-content .text .figure figcaption a,
@@ -27347,7 +27389,8 @@ html {
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
             background-color: white;
-            font-size: 0.8em; }
+            font-size: 0.8em;
+            line-height: 1.5; }
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -28080,6 +28123,7 @@ html {
                   color: black;
                   background-color: white;
                   font-size: 0.8em;
+                  line-height: 1.5;
                   display: inline-block; }
             html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
               margin-left: 0.3125em; }
@@ -28257,6 +28301,7 @@ html {
                 color: black;
                 background-color: white;
                 font-size: 0.8em;
+                line-height: 1.5;
                 display: inline-block; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
             margin-left: 0.3125em; }
@@ -28499,6 +28544,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
         html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .post-count {
           margin-left: 0.3125em; }
@@ -28612,6 +28658,7 @@ html {
               color: black;
               background-color: white;
               font-size: 0.8em;
+              line-height: 1.5;
               display: inline-block; }
         html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {
           margin-left: 0.3125em; }

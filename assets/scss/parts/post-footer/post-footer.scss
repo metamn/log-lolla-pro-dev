@@ -64,6 +64,6 @@
 
   .link,
   a {
-    @include link;
+    @include link($color-scheme: inverted);
   }
 }

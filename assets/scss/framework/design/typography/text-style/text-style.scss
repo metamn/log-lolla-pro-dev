@@ -110,6 +110,7 @@
   @if ($variant == 'figcaption') {
     @include colors(default);
     @include scale(small-1);
+    line-height: $line-height;
   }
 
 
