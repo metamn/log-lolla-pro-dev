@@ -5,6 +5,7 @@
  */
 
 
+
 /**
  * Colors
  */
@@ -24,12 +25,14 @@ $post-format-standard-background-color: '';
 $post-format-standard-text-color: '';
 
 
+
 /**
  * Fonts
  */
 $body-font: 'nimbus-sans';
 $monospace-font:'nimbus-mono';
 $title-font: 'nimbus-mono';
+
 
 
 /**
@@ -48,6 +51,7 @@ $title-font: 'nimbus-mono';
  $scale: 'major-third';
 
 
+
  /**
   * Layout
   *
@@ -58,7 +62,7 @@ $title-font: 'nimbus-mono';
  $left-mobile: $lem;
  $text-block-width: $lem * 30;
 
- $home-grid-columns: 'true';
+ $home-grid-columns: 'false';
 
 
 

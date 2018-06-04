@@ -20,6 +20,10 @@
         @include margin;
         transform: translateX(-$left) skew(5deg);
 
+        @include landscape {
+          padding: $top * 1.5 $left * 1.5;
+        }
+
         blockquote,
         q {
           @include blockquote--naked;
