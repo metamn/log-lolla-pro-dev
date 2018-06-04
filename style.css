@@ -1879,48 +1879,7 @@ html {
           display: block;
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
-          font-style: normal;
-          border-top: 1px solid; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-top: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-bottom: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-bottom: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-left: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-right: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              margin-right: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              padding-top: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-home .post .post-content .text cite,
-            html body .content.content-home .post .post-content .text .cite {
-              padding-top: 2.5em; } }
+          font-style: normal; }
           html body .content.content-home .post .post-content .text cite:before,
           html body .content.content-home .post .post-content .text .cite:before {
             content: 'by';
@@ -4786,88 +4745,7 @@ html {
               display: block;
               font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal;
-              border-top: 1px solid; }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-top: 2.5em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-top: 2.5em; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-bottom: 0; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-bottom: 0; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-left: 0; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-left: 0; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-right: 0; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  margin-right: 0; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  padding-top: 2.5em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-home .post.post-format-comment .comment-content .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-excerpt .text .cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
-                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                  padding-top: 2.5em; } }
+              font-style: normal; }
               html body .content.content-home .post.post-format-comment .comment-content .text cite:before,
               html body .content.content-home .post.post-format-comment .comment-content .text .cite:before,
               html body .content.content-home .post.post-format-comment .comment-excerpt .text cite:before,
@@ -6208,48 +6086,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text cite:before,
             html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .cite:before {
               content: 'by';
@@ -9115,88 +8952,7 @@ html {
                 display: block;
                 font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal;
-                border-top: 1px solid; }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
+                font-style: normal; }
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite:before,
@@ -10538,48 +10294,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-none .post .post-content .text cite,
-              html body .content.content-none .post .post-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-none .post .post-content .text cite:before,
             html body .content.content-none .post .post-content .text .cite:before {
               content: 'by';
@@ -13445,88 +13160,7 @@ html {
                 display: block;
                 font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal;
-                border-top: 1px solid; }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-none .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
+                font-style: normal; }
                 html body .content.content-none .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-none .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-none .post.post-format-comment .comment-excerpt .text cite:before,
@@ -14766,48 +14400,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .post .post-content .text cite,
-              html body .content.content-single .post .post-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-single .post .post-content .text cite:before,
             html body .content.content-single .post .post-content .text .cite:before {
               content: 'by';
@@ -17673,88 +17266,7 @@ html {
                 display: block;
                 font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal;
-                border-top: 1px solid; }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
+                font-style: normal; }
                 html body .content.content-single .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-single .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-single .post.post-format-comment .comment-excerpt .text cite:before,
@@ -18941,48 +18453,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
-              html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text cite:before,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .cite:before {
               content: 'by';
@@ -19932,48 +19403,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite,
-              html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text cite:before,
             html body .content.content-single .archive-list .archive-list-body .post .post-content .text .cite:before {
               content: 'by';
@@ -22839,88 +22269,7 @@ html {
                 display: block;
                 font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal;
-                border-top: 1px solid; }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
+                font-style: normal; }
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text cite:before,
@@ -24266,48 +23615,7 @@ html {
             display: block;
             font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal;
-            border-top: 1px solid; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-top: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-bottom: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-left: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                margin-right: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                padding-top: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-page .post .post-content .text cite,
-              html body .content.content-page .post .post-content .text .cite {
-                padding-top: 2.5em; } }
+            font-style: normal; }
             html body .content.content-page .post .post-content .text cite:before,
             html body .content.content-page .post .post-content .text .cite:before {
               content: 'by';
@@ -27173,88 +26481,7 @@ html {
                 display: block;
                 font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal;
-                border-top: 1px solid; }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-top: 2.5em; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-bottom: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-left: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    margin-right: 0; } }
-                @media only screen and (max-width: 767.9px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
-                @media only screen and (min-width: 768px) {
-                  html body .content.content-page .post.post-format-comment .comment-content .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-excerpt .text .cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
-                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
-                    padding-top: 2.5em; } }
+                font-style: normal; }
                 html body .content.content-page .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-page .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-page .post.post-format-comment .comment-excerpt .text cite:before,

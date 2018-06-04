@@ -1,0 +1,14 @@
+@mixin cite--body-text {
+  cite,
+  .cite {
+    display: block;
+
+    @include font(default);
+    
+
+    &:before {
+      content: 'by';
+      padding-right: $lem / 4;
+    }
+  }
+}
