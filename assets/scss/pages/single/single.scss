@@ -2,7 +2,7 @@ html {
   body {
     &.single-format-standard {
       .content-single {
-        @include width--larger;
+        // @include width--larger;
       }
     }
   }

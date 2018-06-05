@@ -13405,8 +13405,6 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-none .post .post-featured-image + .post-content {
             margin-right: 0; } }
-        html body .content.content-none .post .post-content .text {
-          font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post {
             margin-bottom: 2.5em; } }
@@ -17468,8 +17466,6 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-single .post .post-featured-image + .post-content {
             margin-right: 0; } }
-        html body .content.content-single .post .post-content .text {
-          font-size: 1.25em; }
       html body .content.content-single .post-footer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -26647,8 +26643,6 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-page .post .post-featured-image + .post-content {
             margin-right: 0; } }
-        html body .content.content-page .post .post-content .text {
-          font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post {
             margin-bottom: 2.5em; } }
@@ -27759,13 +27753,5 @@ html body.home .header .header-image {
 
 html body.home .footer .footer-navigation ul li.current-menu-item {
   display: none; }
-
-@media only screen and (min-width: 1025px) and (max-width: 1600px) {
-  html body.single-format-standard .content-single {
-    max-width: calc(42.5em); } }
-
-@media only screen and (min-width: 1600.1px) {
-  html body.single-format-standard .content-single {
-    max-width: calc(42.5em); } }
 
 /*# sourceMappingURL=style.css.map */
