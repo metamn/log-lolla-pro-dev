@@ -1,69 +1,27 @@
 @mixin post-footer {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
 
-  @include border(normal, all);
-  @include colors(default);
+  @include margin(yes, no, no, no);
 
-  margin-top: $top;
-
-
-  .date-and-author {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .categories-and-tags {
-    display: flex;
-
-    @include mobile {
-      flex-direction: column;
-
-      .post-tags {
-        margin-top: $lem;
-      }
-    }
-
-    @include mobile-and-up {
-      .post-categories + .post-tags {
-        margin-left: $lem;
-      }
-    }
-
-    @include tablet {
-      .post-categories,
-      .post-tags {
-        min-width: 30%;
-      }
-    }
-  }
-
-  .post-edit-link {
-    .edit-link {
-      @include button;
-      @include button--with-border;
-
-      .post-edit-link {
-        padding: 0;
-        @include link($type: not-underlined);
-      }
-    }
-  }
-
-  .categories-and-tags,
-  .date-and-author,
-  .post-edit-link {
-    padding: $top $left;
-  }
-
-  .date-and-author + .categories-and-tags,
-  .date-and-author + .post-edit-link,
-  .categories-and-tags + .post-edit-link {
-    padding-top: 0;
-  }
-
+  .post-date,
+  .post-author,
   .link,
+  a[rel="tag"],
+  a[rel="category"],
+  a[rel="category tag"],
+  .edit-link {
+    @include colors(inverted);
+    @include button--with-border;
+  }
+
+  .edit-link {
+    display: block;
+  }
+
   a {
-    @include link($color-scheme: inverted);
+    @include link(inverted, $type: not-underlined);
   }
 }

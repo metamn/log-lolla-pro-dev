@@ -11,6 +11,25 @@
 
 
 
+if ( ! function_exists( 'log_lolla_post_format_and_topics' ) ) {
+  function log_lolla_post_format_and_topics() {
+    $format = log_lolla_post_format();
+    $categories = get_the_category_list( esc_html__( ' ', 'log-lolla' ) );
+    $tags = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'log-lolla' ) );
+
+    $all = $format . ' ' . $categories . ' ' . $tags;
+    echo str_replace( '.', '', $all );
+  }
+}
+
+if ( ! function_exists( 'log_lolla_post_format' ) ) {
+  function log_lolla_post_format() {
+    $format = get_post_format() ? : 'standard';
+    return log_lolla_display_post_format_archive_link( $format );
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
   /**
    * Display standard posts belonging to an archive
@@ -142,7 +161,7 @@ if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
    */
   function log_lolla_display_post_format_archive_link( $post_format_name ) {
     $html = '<a class="link" title="' . $post_format_name .'" href="' . get_post_format_link( $post_format_name ) . '">';
-    $html .= $post_format_name;
+    $html .= ucfirst( $post_format_name );
     $html .= '</a>';
 
     return $html;

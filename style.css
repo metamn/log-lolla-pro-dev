@@ -17438,74 +17438,58 @@ html {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        border: 1px solid;
-        color: black;
-        background-color: white;
-        margin-top: 2.5em; }
-        html body .content.content-single .post-footer .date-and-author {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-        html body .content.content-single .post-footer .categories-and-tags {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .post-footer .categories-and-tags {
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                      flex-direction: column; }
-              html body .content.content-single .post-footer .categories-and-tags .post-tags {
-                margin-top: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-single .post-footer .categories-and-tags .post-categories + .post-tags {
-              margin-left: 1.25em; } }
-          @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            html body .content.content-single .post-footer .categories-and-tags .post-categories,
-            html body .content.content-single .post-footer .categories-and-tags .post-tags {
-              min-width: 30%; } }
-        html body .content.content-single .post-footer .post-edit-link .edit-link {
-          font-size: 0.8em;
-          text-transform: uppercase;
-          letter-spacing: 2.5px;
-          cursor: pointer;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .post-footer {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .post-footer {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .post-footer {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .post-footer {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .post-footer {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .post-footer {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .post-footer {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .post-footer {
+            margin-right: 0; } }
+        html body .content.content-single .post-footer .post-date,
+        html body .content.content-single .post-footer .post-author,
+        html body .content.content-single .post-footer .link,
+        html body .content.content-single .post-footer a[rel="tag"],
+        html body .content.content-single .post-footer a[rel="category"],
+        html body .content.content-single .post-footer a[rel="category tag"],
+        html body .content.content-single .post-footer .edit-link {
+          color: white;
+          background-color: black;
           border: 1px solid;
           padding: 0.3125em 0.625em; }
-          html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link {
-            padding: 0;
-            color: black;
-            background-color: white;
-            text-decoration: none;
-            will-change: text-decoration;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-            html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link:hover, html body .content.content-single .post-footer .post-edit-link .edit-link .post-edit-link:active {
-              text-decoration: line-through; }
-        html body .content.content-single .post-footer .categories-and-tags,
-        html body .content.content-single .post-footer .date-and-author,
-        html body .content.content-single .post-footer .post-edit-link {
-          padding: 2.5em 2.5em; }
-        html body .content.content-single .post-footer .date-and-author + .categories-and-tags,
-        html body .content.content-single .post-footer .date-and-author + .post-edit-link,
-        html body .content.content-single .post-footer .categories-and-tags + .post-edit-link {
-          padding-top: 0; }
-        html body .content.content-single .post-footer .link,
+        html body .content.content-single .post-footer .edit-link {
+          display: block; }
         html body .content.content-single .post-footer a {
           color: white;
           background-color: black;
-          text-decoration: underline;
+          text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-          html body .content.content-single .post-footer .link:hover, html body .content.content-single .post-footer .link:active,
-          html body .content.content-single .post-footer a:hover,
-          html body .content.content-single .post-footer a:active {
+          html body .content.content-single .post-footer a:hover, html body .content.content-single .post-footer a:active {
             text-decoration: line-through; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-single .comments {

@@ -239,7 +239,7 @@ if (! function_exists( 'log_lolla_post_categories' ) ) {
 
     if ( $categories_list ) {
       /* translators: 1: list of categories. */
-      printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s. ', 'log-lolla' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+      printf( '<span class="cat-links">' . esc_html__( 'Posted in%1$s. ', 'log-lolla' ) . '</span>', $categories_list ); // WPCS: XSS OK.
     }
   }
 }
@@ -250,8 +250,6 @@ if (! function_exists( 'log_lolla_post_tags' ) ) {
    * Prints HTML with meta information for the tags
    */
   function log_lolla_post_tags() {
-    $categories_list = get_the_category_list( esc_html__( ', ', 'log-lolla' ) );
-
     /* translators: used between list items, there is a space after the comma */
     $tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'log-lolla' ) );
     if ( $tags_list ) {
