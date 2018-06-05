@@ -5224,13 +5224,6 @@ html {
       html body .content.content-archive .archive-description {
         font-size: 1.25em;
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==); }
-      html body .content.content-archive .archive-list .archive-list-title {
-        font-size: 0.8em;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        border: 1px solid;
-        padding: 0.3125em 0.625em;
-        display: inline; }
       html body .content.content-archive .archive-list .archive-list-body .post {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -9307,12 +9300,6 @@ html {
           display: -ms-flexbox;
           display: flex; }
           html body .content.content-archive .archive-list .summary .summary-link-to-topic .text {
-            font-size: 0.8em;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            border: 1px solid;
-            padding: 0.3125em 0.625em;
-            display: inline;
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
             display: inline-flex; }
@@ -17472,9 +17459,9 @@ html {
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         -webkit-box-align: baseline;
             -ms-flex-align: baseline;
                 align-items: baseline; }
@@ -17509,15 +17496,14 @@ html {
         html body .content.content-single .post-footer a[rel="category"],
         html body .content.content-single .post-footer a[rel="category tag"],
         html body .content.content-single .post-footer .edit-link {
-          color: white;
-          background-color: black;
           border: 1px solid;
-          padding: 0.3125em 0.625em; }
+          padding: 0.3125em 0.625em;
+          margin-bottom: 0.3125em; }
         html body .content.content-single .post-footer .edit-link {
           display: block; }
         html body .content.content-single .post-footer a {
-          color: white;
-          background-color: black;
+          color: black;
+          background-color: white;
           text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -17547,89 +17533,92 @@ html {
       @media only screen and (min-width: 768px) {
         html body .content.content-single .comments {
           margin-right: 0; } }
-      html body .content.content-single .comments .comments-title .number-of-comments {
-        font-size: 0.8em;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        border: 1px solid;
-        padding: 0.3125em 0.625em;
-        display: inline; }
-      html body .content.content-single .comments .comments-title .arrows {
+      html body .content.content-single .comments .comments-title {
         display: -webkit-box;
         display: -ms-flexbox;
-        display: flex; }
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-single .comments .comments-title .arrows {
+          html body .content.content-single .comments .comments-title {
             margin-right: 0; } }
-        html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle {
+        html body .content.content-single .comments .comments-title .arrows {
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-          -webkit-box-pack: center;
-              -ms-flex-pack: center;
-                  justify-content: center;
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          width: 3.75em;
-          -webkit-transform: rotate(0deg);
-                  transform: rotate(0deg); }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__line {
-            width: calc(3.125em);
-            border-bottom: 1px solid; }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0.625em 0 0.625em 0.625em;
-            border-color: transparent transparent transparent black; }
-            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--right {
-              border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
-            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--left {
-              border-width: 0.625em 0.625em 0.625em 0;
-              border-color: transparent black transparent transparent; }
-            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--top {
-              border-width: 0 0.625em 0.625em 0.625em;
-              border-color: transparent transparent black transparent; }
-            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--bottom {
-              border-width: 0.625em 0.625em 0 0.625em;
-              border-color: black transparent transparent transparent; }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--right {
+          display: flex; }
+          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 3.75em;
             -webkit-transform: rotate(0deg);
                     transform: rotate(0deg); }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--left {
-            -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg); }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--top {
-            -webkit-transform: rotate(-90deg);
-                    transform: rotate(-90deg); }
-          html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--bottom {
-            -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg); }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__line {
+              width: calc(3.125em);
+              border-bottom: 1px solid; }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle {
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0.625em 0 0.625em 0.625em;
+              border-color: transparent transparent transparent black; }
+              html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--right {
+                border-width: 0.625em 0 0.625em 0.625em;
+                border-color: transparent transparent transparent black; }
+              html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--left {
+                border-width: 0.625em 0.625em 0.625em 0;
+                border-color: transparent black transparent transparent; }
+              html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--top {
+                border-width: 0 0.625em 0.625em 0.625em;
+                border-color: transparent transparent black transparent; }
+              html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--bottom {
+                border-width: 0.625em 0.625em 0 0.625em;
+                border-color: black transparent transparent transparent; }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--right {
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg); }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--left {
+              -webkit-transform: rotate(180deg);
+                      transform: rotate(180deg); }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--top {
+              -webkit-transform: rotate(-90deg);
+                      transform: rotate(-90deg); }
+            html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--bottom {
+              -webkit-transform: rotate(90deg);
+                      transform: rotate(90deg); }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-single .comments .comments-body {
           margin-top: 2.5em; } }
@@ -18458,13 +18447,6 @@ html {
       @media only screen and (min-width: 768px) {
         html body .content.content-single .comments .comments-body .comment + .comment {
           margin-right: 0; } }
-      html body .content.content-single .archive-list .archive-list-title {
-        font-size: 0.8em;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        border: 1px solid;
-        padding: 0.3125em 0.625em;
-        display: inline; }
       html body .content.content-single .archive-list .archive-list-body .post {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -22541,12 +22523,6 @@ html {
           display: -ms-flexbox;
           display: flex; }
           html body .content.content-single .archive-list .summary .summary-link-to-topic .text {
-            font-size: 0.8em;
-            text-transform: uppercase;
-            letter-spacing: 2.5px;
-            border: 1px solid;
-            padding: 0.3125em 0.625em;
-            display: inline;
             display: -webkit-inline-box;
             display: -ms-inline-flexbox;
             display: inline-flex; }

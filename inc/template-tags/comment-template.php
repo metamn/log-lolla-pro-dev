@@ -51,7 +51,8 @@ if ( ! function_exists( 'log_lolla_comment_list_title' ) ) {
     $arrows .= log_lolla_get_arrow_html( 'bottom' );
 
     return sprintf(
-      '<span class="number-of-comments">%1$s</span><span class="arrows">%2$s</span>',
+      '<span class="arrows">%1$s</span><span class="number-of-comments">%2$s</span><span class="arrows">%3$s</span>',
+      $arrows,
       $text,
       $arrows
     );

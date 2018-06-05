@@ -71,12 +71,7 @@
 
   // Section title
   @if ($variant == 'section-title') {
-    @include scale(small-1);
-    text-transform: uppercase;
-    letter-spacing: $letter-spacing-larger;
-
-    @include button--with-border;
-    display: inline;
+    //
   }
 
 

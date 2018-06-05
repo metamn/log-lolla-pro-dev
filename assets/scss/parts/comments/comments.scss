@@ -2,13 +2,18 @@
   @include margin(yes, no, no, no);
 
   .comments-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include margin(yes, no, no, no);
+
     .number-of-comments {
       @include text-style('section-title');
     }
 
     .arrows {
       display: flex;
-      @include margin(yes, no, no, no);
 
       .arrow-with-triangle {
         @include arrow-with-triangle;
