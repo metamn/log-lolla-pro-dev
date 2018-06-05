@@ -41,15 +41,14 @@ if ( ! function_exists( 'log_lolla_comment_list_title' ) ) {
     $text = '';
 
     if ( $number_of_comments === 1) {
-      $text = esc_html( 'One update on ', 'log-lolla');
+      $text = esc_html( 'One update', 'log-lolla');
     } else {
-      $text = $number_of_comments . esc_html( ' updates on ' );
+      $text = $number_of_comments . esc_html( ' updates' );
     }
 
     return sprintf(
-      '<span class="number-of-comments">%1$s</span><span class="post-title">%2$s</span>',
-      $text,
-      get_the_title( $post )
+      '<span class="number-of-comments">%1$s</span>',
+      $text
     );
   }
 }

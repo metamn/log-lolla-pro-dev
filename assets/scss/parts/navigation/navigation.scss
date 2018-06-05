@@ -1,8 +1,8 @@
 @mixin navigation {
   @include border(normal, top);
   @include border(normal, bottom);
-  margin: 10vh 0;
-  padding: $lem 0;
+  @include margin(yes, no, no, no);
+  @include padding(half, no, half, no);
 
   @include colors(default);
 
