@@ -7,21 +7,5 @@
   h6 {
     @include text-style(h1h6);
     line-height: $line-height-smaller;
-    position: relative;
-
-    &:before {
-      content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-      //@include background-pattern--dashed-lines-white;
-
-      @include border(thin, all);
-
-      position: absolute;
-
-      $size: $lem * 5;
-      top: calc(#{-$size / 15});
-      left: calc(#{$size / 15});
-      width: $size;
-      height: $size;
-    }
   }
 }

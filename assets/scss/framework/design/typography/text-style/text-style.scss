@@ -44,7 +44,7 @@
   // Body text large
   // - Settings for larger text inside a text block
   @if ($variant == 'larger') {
-    @include scale(larger);
+    @include scale(large-1);
   }
 
 

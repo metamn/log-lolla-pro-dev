@@ -1195,21 +1195,7 @@ html {
         html body .content.content-home .post .post-content .text h6 {
           font-size: 1.953em;
           letter-spacing: 0.625em;
-          line-height: 1.1;
-          position: relative; }
-          html body .content.content-home .post .post-content .text h1:before,
-          html body .content.content-home .post .post-content .text h2:before,
-          html body .content.content-home .post .post-content .text h3:before,
-          html body .content.content-home .post .post-content .text h4:before,
-          html body .content.content-home .post .post-content .text h5:before,
-          html body .content.content-home .post .post-content .text h6:before {
-            content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-            border: 0.07812em solid;
-            position: absolute;
-            top: calc(-0.41667em);
-            left: calc(0.41667em);
-            width: 6.25em;
-            height: 6.25em; }
+          line-height: 1.1; }
         html body .content.content-home .post .post-content .text a,
         html body .content.content-home .post .post-content .text .link {
           color: black;
@@ -2670,8 +2656,7 @@ html {
               padding-right: 2.5em; } }
           @media only screen and (min-width: 768px) {
             html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-home .post.post-format-aside .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -2838,8 +2823,7 @@ html {
             padding: 0; }
         @media only screen and (min-width: 768px) {
           html body .content.content-home .post.post-format-quote .post__content .post-content blockquote {
-            font-size: larger;
-            line-height: 1.8; } }
+            font-size: 1.25em; } }
       html body .content.content-home .post.post-format-quote .post__content .post-permalink {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
@@ -3129,33 +3113,7 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h6 {
               font-size: 1.953em;
               letter-spacing: 0.625em;
-              line-height: 1.1;
-              position: relative; }
-              html body .content.content-home .post.post-format-comment .comment-content .text h1:before,
-              html body .content.content-home .post.post-format-comment .comment-content .text h2:before,
-              html body .content.content-home .post.post-format-comment .comment-content .text h3:before,
-              html body .content.content-home .post.post-format-comment .comment-content .text h4:before,
-              html body .content.content-home .post.post-format-comment .comment-content .text h5:before,
-              html body .content.content-home .post.post-format-comment .comment-content .text h6:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h1:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h2:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h3:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h4:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h5:before,
-              html body .content.content-home .post.post-format-comment .comment-excerpt .text h6:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                border: 0.07812em solid;
-                position: absolute;
-                top: calc(-0.41667em);
-                left: calc(0.41667em);
-                width: 6.25em;
-                height: 6.25em; }
+              line-height: 1.1; }
             html body .content.content-home .post.post-format-comment .comment-content .text a,
             html body .content.content-home .post.post-format-comment .comment-content .text .link,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text a,
@@ -5402,21 +5360,7 @@ html {
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h1:before,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h2:before,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h3:before,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h4:before,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h5:before,
-            html body .content.content-archive .archive-list .archive-list-body .post .post-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-archive .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
@@ -6877,8 +6821,7 @@ html {
                 padding-right: 2.5em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-                font-size: larger;
-                line-height: 1.8; } }
+                font-size: 1.25em; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-aside .post__content .post-permalink {
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -7045,8 +6988,7 @@ html {
               padding: 0; }
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-content blockquote {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-archive .archive-list .archive-list-body .post.post-format-quote .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -7336,33 +7278,7 @@ html {
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6 {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
-                line-height: 1.1;
-                position: relative; }
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h1:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h2:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h3:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h4:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h5:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text h6:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h1:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h2:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h3:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h4:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h5:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h6:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                  border: 0.07812em solid;
-                  position: absolute;
-                  top: calc(-0.41667em);
-                  left: calc(0.41667em);
-                  width: 6.25em;
-                  height: 6.25em; }
+                line-height: 1.1; }
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text a,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link,
               html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text a,
@@ -9610,21 +9526,7 @@ html {
           html body .content.content-none .post .post-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-none .post .post-content .text h1:before,
-            html body .content.content-none .post .post-content .text h2:before,
-            html body .content.content-none .post .post-content .text h3:before,
-            html body .content.content-none .post .post-content .text h4:before,
-            html body .content.content-none .post .post-content .text h5:before,
-            html body .content.content-none .post .post-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-none .post .post-content .text a,
           html body .content.content-none .post .post-content .text .link {
             color: black;
@@ -11085,8 +10987,7 @@ html {
                 padding-right: 2.5em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-none .post.post-format-aside .post__content .post-content .text {
-                font-size: larger;
-                line-height: 1.8; } }
+                font-size: 1.25em; } }
           html body .content.content-none .post.post-format-aside .post__content .post-permalink {
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -11253,8 +11154,7 @@ html {
               padding: 0; }
           @media only screen and (min-width: 768px) {
             html body .content.content-none .post.post-format-quote .post__content .post-content blockquote {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-none .post.post-format-quote .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -11544,33 +11444,7 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h6 {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
-                line-height: 1.1;
-                position: relative; }
-                html body .content.content-none .post.post-format-comment .comment-content .text h1:before,
-                html body .content.content-none .post.post-format-comment .comment-content .text h2:before,
-                html body .content.content-none .post.post-format-comment .comment-content .text h3:before,
-                html body .content.content-none .post.post-format-comment .comment-content .text h4:before,
-                html body .content.content-none .post.post-format-comment .comment-content .text h5:before,
-                html body .content.content-none .post.post-format-comment .comment-content .text h6:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h1:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h2:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h3:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h4:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h5:before,
-                html body .content.content-none .post.post-format-comment .comment-excerpt .text h6:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                  border: 0.07812em solid;
-                  position: absolute;
-                  top: calc(-0.41667em);
-                  left: calc(0.41667em);
-                  width: 6.25em;
-                  height: 6.25em; }
+                line-height: 1.1; }
               html body .content.content-none .post.post-format-comment .comment-content .text a,
               html body .content.content-none .post.post-format-comment .comment-content .text .link,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text a,
@@ -13496,8 +13370,7 @@ html {
           html body .content.content-none .post .post-featured-image + .post-content {
             margin-right: 0; } }
         html body .content.content-none .post .post-content .text {
-          font-size: larger;
-          line-height: 1.8; }
+          font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post {
             margin-bottom: 2.5em; } }
@@ -13716,21 +13589,7 @@ html {
           html body .content.content-single .post .post-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-single .post .post-content .text h1:before,
-            html body .content.content-single .post .post-content .text h2:before,
-            html body .content.content-single .post .post-content .text h3:before,
-            html body .content.content-single .post .post-content .text h4:before,
-            html body .content.content-single .post .post-content .text h5:before,
-            html body .content.content-single .post .post-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-single .post .post-content .text a,
           html body .content.content-single .post .post-content .text .link {
             color: black;
@@ -15191,8 +15050,7 @@ html {
                 padding-right: 2.5em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .post.post-format-aside .post__content .post-content .text {
-                font-size: larger;
-                line-height: 1.8; } }
+                font-size: 1.25em; } }
           html body .content.content-single .post.post-format-aside .post__content .post-permalink {
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -15359,8 +15217,7 @@ html {
               padding: 0; }
           @media only screen and (min-width: 768px) {
             html body .content.content-single .post.post-format-quote .post__content .post-content blockquote {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-single .post.post-format-quote .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -15650,33 +15507,7 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h6 {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
-                line-height: 1.1;
-                position: relative; }
-                html body .content.content-single .post.post-format-comment .comment-content .text h1:before,
-                html body .content.content-single .post.post-format-comment .comment-content .text h2:before,
-                html body .content.content-single .post.post-format-comment .comment-content .text h3:before,
-                html body .content.content-single .post.post-format-comment .comment-content .text h4:before,
-                html body .content.content-single .post.post-format-comment .comment-content .text h5:before,
-                html body .content.content-single .post.post-format-comment .comment-content .text h6:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h1:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h2:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h3:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h4:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h5:before,
-                html body .content.content-single .post.post-format-comment .comment-excerpt .text h6:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                  border: 0.07812em solid;
-                  position: absolute;
-                  top: calc(-0.41667em);
-                  left: calc(0.41667em);
-                  width: 6.25em;
-                  height: 6.25em; }
+                line-height: 1.1; }
               html body .content.content-single .post.post-format-comment .comment-content .text a,
               html body .content.content-single .post.post-format-comment .comment-content .text .link,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text a,
@@ -17602,8 +17433,7 @@ html {
           html body .content.content-single .post .post-featured-image + .post-content {
             margin-right: 0; } }
         html body .content.content-single .post .post-content .text {
-          font-size: larger;
-          line-height: 1.8; }
+          font-size: 1.25em; }
       html body .content.content-single .post-footer {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -17769,21 +17599,7 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h1:before,
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h2:before,
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h3:before,
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h4:before,
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h5:before,
-            html body .content.content-single .comments .comments-body .comment .comment-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text a,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .link {
             color: black;
@@ -18719,21 +18535,7 @@ html {
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h1:before,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h2:before,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h3:before,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h4:before,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h5:before,
-            html body .content.content-single .archive-list .archive-list-body .post .post-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text a,
           html body .content.content-single .archive-list .archive-list-body .post .post-content .text .link {
             color: black;
@@ -20194,8 +19996,7 @@ html {
                 padding-right: 2.5em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-content .text {
-                font-size: larger;
-                line-height: 1.8; } }
+                font-size: 1.25em; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-aside .post__content .post-permalink {
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -20362,8 +20163,7 @@ html {
               padding: 0; }
           @media only screen and (min-width: 768px) {
             html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-content blockquote {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-single .archive-list .archive-list-body .post.post-format-quote .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -20653,33 +20453,7 @@ html {
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6 {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
-                line-height: 1.1;
-                position: relative; }
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h1:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h2:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h3:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h4:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h5:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text h6:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h1:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h2:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h3:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h4:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h5:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text h6:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                  border: 0.07812em solid;
-                  position: absolute;
-                  top: calc(-0.41667em);
-                  left: calc(0.41667em);
-                  width: 6.25em;
-                  height: 6.25em; }
+                line-height: 1.1; }
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text a,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .text .link,
               html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text a,
@@ -22931,21 +22705,7 @@ html {
           html body .content.content-page .post .post-content .text h6 {
             font-size: 1.953em;
             letter-spacing: 0.625em;
-            line-height: 1.1;
-            position: relative; }
-            html body .content.content-page .post .post-content .text h1:before,
-            html body .content.content-page .post .post-content .text h2:before,
-            html body .content.content-page .post .post-content .text h3:before,
-            html body .content.content-page .post .post-content .text h4:before,
-            html body .content.content-page .post .post-content .text h5:before,
-            html body .content.content-page .post .post-content .text h6:before {
-              content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-              border: 0.07812em solid;
-              position: absolute;
-              top: calc(-0.41667em);
-              left: calc(0.41667em);
-              width: 6.25em;
-              height: 6.25em; }
+            line-height: 1.1; }
           html body .content.content-page .post .post-content .text a,
           html body .content.content-page .post .post-content .text .link {
             color: black;
@@ -24406,8 +24166,7 @@ html {
                 padding-right: 2.5em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-page .post.post-format-aside .post__content .post-content .text {
-                font-size: larger;
-                line-height: 1.8; } }
+                font-size: 1.25em; } }
           html body .content.content-page .post.post-format-aside .post__content .post-permalink {
             -ms-flex-item-align: center;
                 -ms-grid-row-align: center;
@@ -24574,8 +24333,7 @@ html {
               padding: 0; }
           @media only screen and (min-width: 768px) {
             html body .content.content-page .post.post-format-quote .post__content .post-content blockquote {
-              font-size: larger;
-              line-height: 1.8; } }
+              font-size: 1.25em; } }
         html body .content.content-page .post.post-format-quote .post__content .post-permalink {
           -ms-flex-item-align: center;
               -ms-grid-row-align: center;
@@ -24865,33 +24623,7 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h6 {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
-                line-height: 1.1;
-                position: relative; }
-                html body .content.content-page .post.post-format-comment .comment-content .text h1:before,
-                html body .content.content-page .post.post-format-comment .comment-content .text h2:before,
-                html body .content.content-page .post.post-format-comment .comment-content .text h3:before,
-                html body .content.content-page .post.post-format-comment .comment-content .text h4:before,
-                html body .content.content-page .post.post-format-comment .comment-content .text h5:before,
-                html body .content.content-page .post.post-format-comment .comment-content .text h6:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h1:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h2:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h3:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h4:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h5:before,
-                html body .content.content-page .post.post-format-comment .comment-excerpt .text h6:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h1:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h2:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h3:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h4:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h5:before,
-                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text h6:before {
-                  content: '\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0';
-                  border: 0.07812em solid;
-                  position: absolute;
-                  top: calc(-0.41667em);
-                  left: calc(0.41667em);
-                  width: 6.25em;
-                  height: 6.25em; }
+                line-height: 1.1; }
               html body .content.content-page .post.post-format-comment .comment-content .text a,
               html body .content.content-page .post.post-format-comment .comment-content .text .link,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text a,
@@ -26817,8 +26549,7 @@ html {
           html body .content.content-page .post .post-featured-image + .post-content {
             margin-right: 0; } }
         html body .content.content-page .post .post-content .text {
-          font-size: larger;
-          line-height: 1.8; }
+          font-size: 1.25em; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post {
             margin-bottom: 2.5em; } }
