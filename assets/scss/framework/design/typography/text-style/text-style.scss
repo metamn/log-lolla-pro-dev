@@ -75,7 +75,7 @@
     text-transform: uppercase;
     letter-spacing: $letter-spacing-larger;
 
-    @include border(normal, all);
+    @include button--with-border;
     display: inline;
   }
 

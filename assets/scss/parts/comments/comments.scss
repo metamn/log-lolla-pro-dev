@@ -1,13 +1,24 @@
 @mixin comments {
-  @include margin(yes, no, yes, no);
+  @include margin(yes, no, no, no);
 
   .comments-title {
-    @include text-style('section-title');
+    .number-of-comments {
+      @include text-style('section-title');
+    }
+
+    .arrows {
+      display: flex;
+      @include margin(yes, no, no, no);
+
+      .arrow-with-triangle {
+        @include arrow-with-triangle;
+      }
+    }
   }
 
   .comments-body {
     @include margin(yes, no, no, no);
-    
+
     .comment {
       @include comment;
 

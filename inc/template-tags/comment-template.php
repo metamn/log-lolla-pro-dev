@@ -46,9 +46,14 @@ if ( ! function_exists( 'log_lolla_comment_list_title' ) ) {
       $text = $number_of_comments . esc_html( ' updates' );
     }
 
+    $arrows = log_lolla_get_arrow_html( 'bottom' );
+    $arrows .= log_lolla_get_arrow_html( 'bottom' );
+    $arrows .= log_lolla_get_arrow_html( 'bottom' );
+
     return sprintf(
-      '<span class="number-of-comments">%1$s</span>',
-      $text
+      '<span class="number-of-comments">%1$s</span><span class="arrows">%2$s</span>',
+      $text,
+      $arrows
     );
   }
 }
