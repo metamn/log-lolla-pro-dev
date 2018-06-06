@@ -1,0 +1,28 @@
+@mixin list--single-line-icon-with-text($icon-position: left, $selector: '.icon', $margin: $lem) {
+  display: flex;
+  align-items: center;
+
+  @if ($icon-position == right) {
+    justify-content: flex-end;
+
+    #{$selector} {
+      order: 2;
+      margin-left: $margin;
+      margin-right: 0;
+    }
+
+  } @elseif ($icon-position == left) {
+
+    #{$selector} {
+      margin-right: $margin;
+      margin-left: 0;
+    }
+
+  } @elseif ($icon-position == hidden) {
+
+    #{$selector} {
+      display: none;
+    }
+
+  }
+}

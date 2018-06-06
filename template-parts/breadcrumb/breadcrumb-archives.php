@@ -6,8 +6,8 @@
    */
 ?>
 
-<nav class="breadcrumb">
-  <h3 class="hidden">Breadcrumb navigation</h3>
+<nav class="breadcrumb breadcrumb-archives">
+  <h3 class="hidden">Breadcrumb navigation for archives</h3>
 
   <?php log_lolla_archive_breadcrumbs(); ?>
 </nav>

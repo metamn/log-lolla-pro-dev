@@ -1,0 +1,6 @@
+@mixin list--vertical {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}

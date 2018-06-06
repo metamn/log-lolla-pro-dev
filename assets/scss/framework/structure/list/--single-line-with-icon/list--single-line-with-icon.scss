@@ -1,0 +1,9 @@
+@mixin list--single-line-with-icon($margin: $lem) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon {
+    margin-left: $margin;
+  }
+}

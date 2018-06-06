@@ -26,6 +26,10 @@ html {
       @include content;
     }
 
+    .breadcrumb {
+      @include breadcrumb;
+    }
+
     .sidebar {
       @include sidebar;
     }

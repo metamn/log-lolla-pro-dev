@@ -9,11 +9,10 @@
 
 get_header(); ?>
 
-	<?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
-
 	<section class="content content-archive">
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
+		<?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
 		<?php //get_template_part( 'template-parts/archive/parts/archive', 'summaries' ); ?>
 		<?php //get_template_part( 'template-parts/archive/parts/archive', 'standard-posts' ); ?>
 		<?php //get_template_part( 'template-parts/archive/parts/archive', 'related-topics' ); ?>

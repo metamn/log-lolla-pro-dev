@@ -27,6 +27,10 @@ if ( ! function_exists( 'log_lolla_archive_breadcrumbs' ) ) {
       $links[] = log_lolla_get_link_html_for( 'Tags' );
     }
 
+    if ( is_category() ) {
+      $links[] = log_lolla_get_link_html_for( 'Categories' );
+    }
+
     $list = [];
 
     foreach ($links as $link) {

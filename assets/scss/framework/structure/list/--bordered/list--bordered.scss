@@ -1,0 +1,33 @@
+@mixin list--bordered($color: $text-color) {
+  .li {
+    @include border(normal, bottom);
+    border-color: $color;
+
+    // Remove the border for the last item
+    &:last-of-type {
+      border-bottom: none;
+
+      .li__header {
+        padding-bottom: 0;
+      }
+    }
+
+    .li__children {
+      .li {
+        // In submenus keep the top padding
+        &:first-of-type {
+          .li__header {
+            padding-top: $lem / 2;
+          }
+        }
+
+        // In submenus keep the bottom padding
+        &:last-of-type {
+          .li__header {
+            padding-bottom: $lem / 2;
+          }
+        }
+      }
+    }
+  }
+}

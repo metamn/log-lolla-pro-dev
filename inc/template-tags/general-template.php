@@ -26,6 +26,7 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
           $title = esc_html__( 'Archives', 'log-lolla' );
           $content = $title;
         }
+        break;
 
       case 'Tags':
         $page = get_page_by_title( 'Tags' );
@@ -34,6 +35,16 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
           $title = esc_html__( 'Tags', 'log-lolla' );
           $content = $title;
         }
+        break;
+
+      case 'Categories':
+        $page = get_page_by_title( 'Categories' );
+        if ( isset( $page ) ) {
+          $url = esc_url( get_permalink( $page ) );
+          $title = esc_html__( 'Categories', 'log-lolla' );
+          $content = $title;
+        }
+        break;
 
       default:
         # code...
