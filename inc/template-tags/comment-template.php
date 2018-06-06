@@ -123,7 +123,7 @@ if ( ! function_exists( 'log_lolla_comment_post_title' ) ) {
   function log_lolla_comment_post_title( $comment ) {
     return sprintf(
      '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
-     esc_url( get_permalink( $comment->comment_post_ID ) ),
+     esc_url( get_comment_link( $comment ) ),
      esc_attr( get_the_title( $comment->comment_post_ID ) ),
      esc_html( get_the_title( $comment->comment_post_ID ) )
    );
