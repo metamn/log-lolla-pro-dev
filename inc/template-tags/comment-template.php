@@ -223,6 +223,7 @@ if ( ! function_exists( 'log_lolla_get_comments_for_the_loop' ) ) {
       array(
         'status' => 'approve',
         'post_status' => 'publish',
+        'type' => 'comment',
         'date_query' => array(
           'after' => $last_post_date,
           'before' => $first_post_date,
