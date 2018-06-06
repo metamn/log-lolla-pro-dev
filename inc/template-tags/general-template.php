@@ -241,6 +241,24 @@ if ( ! function_exists( 'log_lolla_get_arrow_html' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_get_triangle_html' ) ) {
+  /**
+   * Return HTML markup for a triangle
+   *
+   * @param [string] $direction the arrow direction liek top, left, right, bottom
+   *
+   * @return string
+   */
+  function log_lolla_get_triangle_html( $direction ) {
+    return '<span class="triangle triangle--' . $direction . '"></span>';
+  }
+ }
 
+
+if ( ! function_exists( 'log_lolla_get_link_html' ) ) {
+  function log_lolla_get_link_html( $url, $title, $content ) {
+    return '<a class="link" href="' . $url .'" title="' . $title . '">' . $content . '</a>';
+  }
+}
 
 ?>

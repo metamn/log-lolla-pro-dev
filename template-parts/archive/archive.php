@@ -9,7 +9,7 @@
 ?>
 
 <section class="archive-list archive-list--posts">
-  <h3 class="archive-list-title">
+  <h3 class="archive-list-title hidden">
     <?php esc_html_e( 'All posts', 'log-lolla'); ?>
   </h3>
 
@@ -18,7 +18,7 @@
       if ( have_posts() ) {
         while ( have_posts() ) {
           the_post();
-          get_template_part( 'template-parts/post/post', 'search' );
+          get_template_part( 'template-parts/post/post-format', get_post_format() );
         }
 
         get_template_part( 'template-parts/navigation/navigation', 'posts' );
