@@ -20,17 +20,19 @@ if ( ! function_exists( 'log_lolla_archive_breadcrumbs' ) ) {
     extract( $deco );
 
     $links = [];
-    $links[] = log_lolla_get_link_html( esc_url( home_url( '/' ) ), 'Home', 'Home' );
-    $links[] = log_lolla_get_link_html( esc_url( home_url( '/' ) ), 'Archives', 'Archives' );
+    $links[] = log_lolla_get_link_html_for( 'Home' );
+    $links[] = log_lolla_get_link_html_for( 'Archives' );
 
     if ( is_tag() ) {
-      $links[] = log_lolla_get_link_html( esc_url( home_url( '/' ) ), 'Tags', 'tags' );
+      $links[] = log_lolla_get_link_html_for( 'Tags' );
     }
 
     $list = [];
 
     foreach ($links as $link) {
-      $list[] = $before_each . $link . $after_each;
+      if ( ! empty( $link ) ) {
+        $list[] = $before_each . $link . $after_each;
+      }
     }
 
     echo $before_all . implode( $separator, $list ) . $after_all;

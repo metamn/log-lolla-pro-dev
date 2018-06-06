@@ -41,7 +41,7 @@ if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
 }
 
 
-if ( ! function_exists(' log_lolla_display_archives_by_year_and_month' ) ) {
+if ( ! function_exists( 'log_lolla_display_archives_by_year_and_month' ) ) {
   /**
    * Display archives by year and month
    *

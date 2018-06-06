@@ -10,6 +10,42 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
+  function log_lolla_get_link_html_for( $object ) {
+    switch ($object) {
+      case 'Home':
+        $url = esc_url( home_url( '/' ) );
+        $title = esc_html__( 'Home', 'log-lolla' );
+        $content = $title;
+        break;
+
+      case 'Archives':
+        $page = get_page_by_title( 'Archives' );
+        if ( isset( $page ) ) {
+          $url = esc_url( get_permalink( $page ) );
+          $title = esc_html__( 'Archives', 'log-lolla' );
+          $content = $title;
+        }
+
+      case 'Tags':
+        $page = get_page_by_title( 'Tags' );
+        if ( isset( $page ) ) {
+          $url = esc_url( get_permalink( $page ) );
+          $title = esc_html__( 'Tags', 'log-lolla' );
+          $content = $title;
+        }
+
+      default:
+        # code...
+        break;
+    }
+
+    if ( isset( $url ) ) {
+      return '<a class="link" href="' . $url .'" title="' . $title . '">' . $content . '</a>';
+    }
+  }
+}
+
 if ( ! function_exists( 'log_lolla_remove_object_from_array_by_key' ) ) {
  /**
   * Remove object from an array by key
@@ -252,13 +288,7 @@ if ( ! function_exists( 'log_lolla_get_triangle_html' ) ) {
   function log_lolla_get_triangle_html( $direction ) {
     return '<span class="triangle triangle--' . $direction . '"></span>';
   }
- }
-
-
-if ( ! function_exists( 'log_lolla_get_link_html' ) ) {
-  function log_lolla_get_link_html( $url, $title, $content ) {
-    return '<a class="link" href="' . $url .'" title="' . $title . '">' . $content . '</a>';
-  }
 }
+
 
 ?>
