@@ -157,9 +157,22 @@ if ( ! function_exists( 'log_lolla_comment_excerpt' ) ) {
    */
   function log_lolla_comment_excerpt( $comment ) {
     printf(
-     '<div class="text">%1$s</div>',
-     get_comment_excerpt( $comment )
+     '<div class="text">%1$s</div><div class="read-more">%2$s</div>',
+     get_comment_excerpt( $comment ),
+     log_lolla_comment_read_more_link( $comment )
    );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_comment_read_more_link' ) ) {
+  function log_lolla_comment_read_more_link( $comment ) {
+    return sprintf(
+      '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
+      esc_url( get_comment_link( $comment ) ),
+      esc_attr( get_the_title( $comment->comment_post_ID ) ),
+      log_lolla_add_readmore_to_content()
+    );
   }
 }
 

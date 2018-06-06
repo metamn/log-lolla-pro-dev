@@ -23,6 +23,20 @@
     .text {
       @include text-style(body-text-post);
     }
+
+    .read-more {
+      @include margin(yes, no, no, no);
+
+      .link {
+        display: flex;
+        flex-wrap: wrap;
+
+        .arrow-with-triangle {
+          @include arrow-with-triangle;
+          @include margin(no, no, no, half);
+        }
+      }
+    }
   }
 
   .comment-date-and-time,

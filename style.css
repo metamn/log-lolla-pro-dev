@@ -4868,6 +4868,164 @@ html {
               html body .content.content-home .post.post-format-comment .comment-excerpt .text > * + *,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                 margin-right: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post.post-format-comment .comment-content .read-more,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more {
+              margin-right: 0; } }
+          html body .content.content-home .post.post-format-comment .comment-content .read-more .link,
+          html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link,
+          html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 3.75em;
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg); }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                width: calc(3.125em);
+                border-bottom: 1px solid; }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0.625em 0 0.625em 0.625em;
+                border-color: transparent transparent transparent black; }
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                  border-width: 0.625em 0.625em 0.625em 0;
+                  border-color: transparent black transparent transparent; }
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                  border-width: 0 0.625em 0.625em 0.625em;
+                  border-color: transparent transparent black transparent; }
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                  border-width: 0.625em 0.625em 0 0.625em;
+                  border-color: black transparent transparent transparent; }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg); }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg); }
+              html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg); }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-left: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                  margin-right: 0; } }
         html body .content.content-home .post.post-format-comment .comment-date-and-time,
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           color: black;
@@ -9027,6 +9185,164 @@ html {
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text > * + *,
                 html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                   margin-right: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link,
+            html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link,
+            html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+              html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 3.75em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                  width: calc(3.125em);
+                  border-bottom: 1px solid; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.625em 0 0.625em 0.625em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.625em 0.625em 0.625em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.625em 0.625em 0.625em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.625em 0.625em 0 0.625em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-date-and-time,
           html body .content.content-archive .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
@@ -13188,6 +13504,164 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-excerpt .text > * + *,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                   margin-right: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post.post-format-comment .comment-content .read-more,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            html body .content.content-none .post.post-format-comment .comment-content .read-more .link,
+            html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link,
+            html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 3.75em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                  width: calc(3.125em);
+                  border-bottom: 1px solid; }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.625em 0 0.625em 0.625em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.625em 0.625em 0.625em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.625em 0.625em 0.625em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.625em 0.625em 0 0.625em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
           html body .content.content-none .post.post-format-comment .comment-date-and-time,
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
@@ -17249,6 +17723,164 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-excerpt .text > * + *,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                   margin-right: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            html body .content.content-single .post.post-format-comment .comment-content .read-more .link,
+            html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link,
+            html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 3.75em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                  width: calc(3.125em);
+                  border-bottom: 1px solid; }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.625em 0 0.625em 0.625em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.625em 0.625em 0.625em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.625em 0.625em 0.625em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.625em 0.625em 0 0.625em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
           html body .content.content-single .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
@@ -22250,6 +22882,164 @@ html {
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .text > * + *,
                 html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                   margin-right: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link,
+            html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link,
+            html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+              html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 3.75em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                  width: calc(3.125em);
+                  border-bottom: 1px solid; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.625em 0 0.625em 0.625em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.625em 0.625em 0.625em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.625em 0.625em 0.625em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.625em 0.625em 0 0.625em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .archive-list .archive-list-body .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
@@ -26415,6 +27205,164 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-excerpt .text > * + *,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text > * + * {
                   margin-right: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post.post-format-comment .comment-content .read-more,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more {
+                margin-right: 0; } }
+            html body .content.content-page .post.post-format-comment .comment-content .read-more .link,
+            html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link,
+            html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: nowrap;
+                    flex-wrap: nowrap;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                width: 3.75em;
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__line,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__line,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__line {
+                  width: calc(3.125em);
+                  border-bottom: 1px solid; }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle {
+                  width: 0;
+                  height: 0;
+                  border-style: solid;
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
+                    border-width: 0.625em 0 0.625em 0.625em;
+                    border-color: transparent transparent transparent black; }
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
+                    border-width: 0.625em 0.625em 0.625em 0;
+                    border-color: transparent black transparent transparent; }
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
+                    border-width: 0 0.625em 0.625em 0.625em;
+                    border-color: transparent transparent black transparent; }
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
+                    border-width: 0.625em 0.625em 0 0.625em;
+                    border-color: black transparent transparent transparent; }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
+                  -webkit-transform: rotate(0deg);
+                          transform: rotate(0deg); }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--left,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--left,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--left {
+                  -webkit-transform: rotate(180deg);
+                          transform: rotate(180deg); }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--top,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--top,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--top {
+                  -webkit-transform: rotate(-90deg);
+                          transform: rotate(-90deg); }
+                html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--bottom,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--bottom {
+                  -webkit-transform: rotate(90deg);
+                          transform: rotate(90deg); }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-left: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-bottom: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle,
+                  html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle {
+                    margin-right: 0; } }
           html body .content.content-page .post.post-format-comment .comment-date-and-time,
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             color: black;
