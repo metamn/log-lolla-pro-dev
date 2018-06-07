@@ -1,24 +1,28 @@
 @mixin content-archive {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .archive-title,
-  .archive-description,
-  .archive-list {
-    width: 100%;
-    @include margin(no, no, yes, no);
-  }
-
   .archive-title {
-    @include text-style(h1h6);
+    @include button--with-border;
   }
 
   .archive-description{
-    @include text-style(description);
+    @include width;
+    @include background-pattern--dashed-lines-white;
+    @include padding(half, half, half, half);
+
+    display: flex;
+    justify-content: center;
+
+    p {
+      @include colors;
+    }
+  }
+
+  .archive-title + .archive-description,
+  .archive-title + .breadcrumb,
+  .archive-description + .breadcrumb {
+    @include margin(half, no, no, no);
   }
 
   .archive-list {
-    @include archive-list;
+    //@include archive-list;
   }
 }

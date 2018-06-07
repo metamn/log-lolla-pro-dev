@@ -9571,6 +9571,97 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-archive .navigation {
             max-width: 37.5em; } }
+      html body .content.content-archive .archive-title {
+        border: 1px solid;
+        padding: 0.3125em 0.625em; }
+      html body .content.content-archive .archive-description {
+        width: 100%;
+        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAEUlEQVQYlWNgIA78H1VEZ0UA7RAJ995l1iMAAAAASUVORK5CYII=);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-description {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-archive .archive-description {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-archive .archive-description {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-archive .archive-description {
+            max-width: 37.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-description {
+            padding-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-description {
+            padding-top: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-description {
+            padding-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-description {
+            padding-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-description {
+            padding-left: 0.625em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-description {
+            padding-left: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-description {
+            padding-right: 0.625em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-description {
+            padding-right: 1.25em; } }
+        html body .content.content-archive .archive-description p {
+          color: black;
+          background-color: white; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-top: 1.25em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-title + .archive-description,
+        html body .content.content-archive .archive-title + .breadcrumb,
+        html body .content.content-archive .archive-description + .breadcrumb {
+          margin-right: 0; } }
     html body .content.content-search .search-title {
       margin-bottom: 1.25em; }
       html body .content.content-search .search-title span {
