@@ -31,6 +31,18 @@ if ( ! function_exists( 'log_lolla_archive_breadcrumbs' ) ) {
       $links[] = log_lolla_get_link_html_for( 'Categories' );
     }
 
+    if ( is_singular( 'source' ) ) {
+      $links[] = log_lolla_get_link_html_for( 'Sources' );
+    }
+
+    if ( is_singular( 'people' ) ) {
+      $links[] = log_lolla_get_link_html_for( 'People' );
+    }
+
+    if ( is_singular( 'summary' ) ) {
+      $links[] = log_lolla_get_link_html_for( 'Summaries' );
+    }
+
     $list = [];
 
     foreach ($links as $link) {

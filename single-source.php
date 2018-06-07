@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+  <?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
+
   <section class="content content-single">
     <h3 class="hidden">Content</h3>
 

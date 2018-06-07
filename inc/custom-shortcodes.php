@@ -19,7 +19,7 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_summaries' ) ) {
    * @param  Array $attributes The attributes of the shortcode
    * @return string            HTML
    */
-  function log_lolla_create_custom_shortcode_sourcessummaries( $attributes ) {
+  function log_lolla_create_custom_shortcode_summaries( $attributes ) {
     // Default attributes
     $default_attributes = array(
       'summaries' => 5

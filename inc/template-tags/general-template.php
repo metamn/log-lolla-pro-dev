@@ -46,6 +46,24 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
         }
         break;
 
+      case 'Sources':
+        $url = esc_url( get_post_type_archive_link( 'source' ) );
+        $title = esc_html__( 'Sources', 'log-lolla' );
+        $content = $title;
+        break;
+
+      case 'People':
+        $url = esc_url( get_post_type_archive_link( 'people' ) );
+        $title = esc_html__( 'People', 'log-lolla' );
+        $content = $title;
+        break;
+
+      case 'Summaries':
+        $url = esc_url( get_post_type_archive_link( 'summary' ) );
+        $title = esc_html__( 'Summaries', 'log-lolla' );
+        $content = $title;
+        break;
+
       default:
         # code...
         break;

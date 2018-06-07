@@ -12,6 +12,7 @@ get_header(); ?>
 	<section class="content content-archive">
 	  <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
     <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
+		<?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
 
 		<div class="archive-list">
 			<?php

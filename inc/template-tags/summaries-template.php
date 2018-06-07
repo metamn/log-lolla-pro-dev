@@ -129,7 +129,7 @@ if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
 
 if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
   function log_lolla_display_summaries( $number_of_summaries ) {
-
+    return 'tbd';
   }
 }
 
