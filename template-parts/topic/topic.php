@@ -11,6 +11,7 @@
 
 <?php
   $term = get_query_var( 'term' );
+  
   if ( ! empty( $term ) ) { ?>
 
     <div class="term">

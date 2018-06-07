@@ -10,6 +10,24 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
+  function log_lolla_topic_archive( $term ) {
+    $terms = log_lolla_get_most_popular_terms_by_count( $term, 0 );
+    if ( empty( $terms ) ) return;
+
+    $html = '';
+
+    ob_start();
+    foreach ( $terms as $term ) {
+      set_query_var( 'term', $term );
+      get_template_part( 'template-parts/topic/topic', '' );
+    }
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
 if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
   function log_lolla_display_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
@@ -22,7 +40,7 @@ if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
     ob_start();
     foreach ( $related_topics as $term ) {
       set_query_var( 'term', $term );
-      get_template_part( 'template-parts/term/term', '' );
+      get_template_part( 'template-parts/topic/topic', '' );
     }
     $html .= ob_get_clean();
 

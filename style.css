@@ -9662,6 +9662,87 @@ html {
         html body .content.content-archive .archive-title + .breadcrumb,
         html body .content.content-archive .archive-description + .breadcrumb {
           margin-right: 0; } }
+      html body .content.content-archive .archive-list--terms {
+        width: 100%;
+        border: 1px solid; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list--terms {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-archive .archive-list--terms {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-archive .archive-list--terms {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-archive .archive-list--terms {
+            max-width: 37.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list--terms {
+            padding-right: 2.5em; } }
+        html body .content.content-archive .archive-list--terms .archive-list-body {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .content.content-archive .archive-list--terms .archive-list-body .term {
+            border: 1px solid;
+            padding: 0.3125em 0.625em; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-list--terms .archive-list-body .term {
+                margin-left: 0; } }
+            html body .content.content-archive .archive-list--terms .archive-list-body .term .link {
+              color: black;
+              background-color: white;
+              text-decoration: none;
+              will-change: text-decoration;
+              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+              html body .content.content-archive .archive-list--terms .archive-list-body .term .link:hover, html body .content.content-archive .archive-list--terms .archive-list-body .term .link:active {
+                text-decoration: line-through; }
     html body .content.content-archives {
       max-width: none;
       display: -webkit-box;
