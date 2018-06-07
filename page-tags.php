@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Categories Page
+ * Template Name: Tags Page
  *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
@@ -13,12 +13,12 @@
 
 <section class="content content-archive">
   <h3 class="archive-title">
-    <?php esc_html_e( 'Categories', 'log-lolla-pro' ); ?>
+    <?php esc_html_e( 'Tags', 'log-lolla-pro' ); ?>
   </h3>
 
   <?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
 
-  <?php set_query_var( 'term', 'category' ); ?>
+  <?php set_query_var( 'term', 'post_tag' ); ?>
   <?php get_template_part( 'template-parts/topic/topic', 'archive' ); ?>
 </section>
 

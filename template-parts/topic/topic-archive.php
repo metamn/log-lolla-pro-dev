@@ -14,6 +14,9 @@
   </h3>
 
   <div class="archive-list-body">
-    <?php echo log_lolla_topic_archive( 'category' ); ?>
+    <?php
+      $term = get_query_var( 'term' );
+      echo log_lolla_topic_archive( $term ); 
+    ?>
   </div>
 </section>
