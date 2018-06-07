@@ -95,7 +95,7 @@ if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
     set_query_var( 'term', $topic );
 
     ob_start();
-    get_template_part( 'template-parts/term/term' );
+    get_template_part( 'template-parts/topic/topic' );
     $term = ob_get_clean();
 
     printf(
