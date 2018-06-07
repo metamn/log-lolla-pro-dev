@@ -11,6 +11,4 @@
 
 ?>
 
-<div class="archives-content">
-  <?php the_content(); ?>
-</div>
+<?php the_content(); ?>

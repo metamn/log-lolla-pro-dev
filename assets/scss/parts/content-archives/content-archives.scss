@@ -1,3 +1,31 @@
 @mixin content-archives {
-  //
+  max-width: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include background-pattern--horizontal-lines-white;
+  @include padding;
+
+  .shortcode {
+    @include width;
+    @include margin(no, no, yes, no);
+
+    .shortcode-title {
+      display: inline;
+      @include colors;
+      @include padding(half, yes, half, yes);
+    }
+
+    .shortcode-body {
+      @include colors;
+      @include padding(yes, yes, yes, yes);
+    }
+  }
+
+  .archives-title,
+  .shortcode-topics-summary .shortcode-title {
+    display: none;
+  }
 }
