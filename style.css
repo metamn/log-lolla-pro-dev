@@ -9792,6 +9792,54 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archives .shortcode .shortcode-body {
               padding-right: 2.5em; } }
+      html body .content.content-archives .summary {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .content.content-archives .summary .summary-link-to-topic,
+        html body .content.content-archives .summary .summary-dates {
+          color: black;
+          background-color: white;
+          font-size: 0.8em;
+          line-height: 1.5; }
+        html body .content.content-archives .summary .summary-dates {
+          display: none; }
+        html body .content.content-archives .summary .summary-link-to-topic {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          html body .content.content-archives .summary .summary-link-to-topic .text {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex; }
+        html body .content.content-archives .summary .summary-title-without-link {
+          width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .summary + .summary {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .summary + .summary {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .summary + .summary {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .summary + .summary {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .summary + .summary {
+            margin-right: 0; } }
       html body .content.content-archives .archives-title,
       html body .content.content-archives .shortcode-topics-summary .shortcode-title {
         display: none; }
@@ -23430,10 +23478,16 @@ html {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .content.content-single .archive-list .summary .summary-link-to-topic,
+        html body .content.content-single .archive-list .summary .summary-dates {
+          color: black;
+          background-color: white;
+          font-size: 0.8em;
+          line-height: 1.5; }
+        html body .content.content-single .archive-list .summary .summary-dates {
+          display: none; }
         html body .content.content-single .archive-list .summary .summary-link-to-topic {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -23443,31 +23497,7 @@ html {
             display: -ms-inline-flexbox;
             display: inline-flex; }
         html body .content.content-single .archive-list .summary .summary-title-without-link {
-          border: 1px solid; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-top: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-single .archive-list .summary .summary-title-without-link {
-              padding-right: 2.5em; } }
+          width: 100%; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .archive-list .summary + .summary {
             margin-top: 2.5em; } }

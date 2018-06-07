@@ -129,7 +129,29 @@ if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
 
 if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
   function log_lolla_display_summaries( $number_of_summaries ) {
-    return 'tbd';
+    $summaries = get_posts(
+      array(
+        'post_type' => 'summary',
+        'post_status' => 'publish',
+        'posts_per_page' => $number_of_summaries,
+        'order' => 'ASC'
+      )
+    );
+
+    if ( empty( $summaries ) ) return;
+
+    $html = '';
+
+    global $post;
+    ob_start();
+    foreach ( $summaries as $post ) {
+      setup_postdata( $post );
+      get_template_part( 'template-parts/summary/summary' );
+    }
+    wp_reset_postdata();
+    $html .= ob_get_clean();
+
+    return $html;
   }
 }
 

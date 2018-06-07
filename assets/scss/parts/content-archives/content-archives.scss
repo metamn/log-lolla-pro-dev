@@ -24,6 +24,10 @@
     }
   }
 
+  .summary {
+    @include summary;
+  }
+
   .archives-title,
   .shortcode-topics-summary .shortcode-title {
     display: none;

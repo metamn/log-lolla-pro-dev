@@ -10,7 +10,7 @@
 
 
 <article class="summary">
+  <?php get_template_part( 'template-parts/summary/parts/summary', 'dates' ); ?>
   <?php get_template_part( 'template-parts/summary/parts/summary', 'link-to-topic' ); ?>
   <?php get_template_part( 'template-parts/summary/parts/summary', 'title-without-link' ); ?>
-  <?php get_template_part( 'template-parts/summary/parts/summary', 'dates' ); ?>
 </article>
