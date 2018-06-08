@@ -1,9 +1,9 @@
-@mixin circle($radius: $lem * 3, $color-scheme: default) {
+@mixin circle($radius: $lem * 3, $color-scheme: inverted) {
   width: $radius;
   height: $radius;
   border-radius: $radius;
 
-  //@include colors($color-scheme);
+  @include colors($color-scheme);
 
   display: flex;
   justify-content: center;

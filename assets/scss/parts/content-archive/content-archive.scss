@@ -1,27 +1,8 @@
 @mixin content-archive {
-  .archive-title {
-    @include button--with-border;
+  .archive-header {
+    @include archive-header;
   }
-
-  .archive-description{
-    @include width;
-    @include background-pattern--dashed-lines-white;
-    @include padding(half, half, half, half);
-
-    display: flex;
-    justify-content: center;
-
-    p {
-      @include colors;
-    }
-  }
-
-  .archive-title + .archive-description,
-  .archive-title + .breadcrumb,
-  .archive-description + .breadcrumb {
-    @include margin(half, no, no, no);
-  }
-
+  
   .archive-list {
     &--terms {
       @include width;

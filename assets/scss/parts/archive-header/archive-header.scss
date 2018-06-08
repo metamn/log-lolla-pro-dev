@@ -1,0 +1,15 @@
+@mixin archive-header {
+  @include border(normal, all);
+  @include width;
+  @include margin(no, no, yes, no);
+
+  .breadcrumb {
+    @include padding(half, half, no, half);
+    @include border(normal, bottom);
+    @include text-style(figcaption);
+  }
+
+  .archive-title-and-description {
+    @include archive-title-and-description;
+  }
+}

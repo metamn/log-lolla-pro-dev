@@ -1,0 +1,22 @@
+@mixin archive-title-and-description {
+  display: flex;
+  align-items: center;
+
+  .archive-artwork {
+    @include padding(half, half, half, half);
+
+    .circle {
+      @include circle;
+    }
+  }
+
+  .archive-text {
+    display: flex;
+    flex-direction: column;
+
+    .archive-title {
+      @include text-style(h1h6);
+      letter-spacing: $letter-spacing;
+    }
+  }
+}
