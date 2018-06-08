@@ -1,0 +1,9 @@
+@mixin pictogram--vertical($centered: false) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @if ($centered != false) {
+    justify-content: center;
+  }
+}

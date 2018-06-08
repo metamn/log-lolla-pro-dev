@@ -9696,6 +9696,105 @@ html {
               font-size: 1.953em;
               letter-spacing: 0.625em;
               letter-spacing: 1.25px; }
+        html body .content.content-archive .archive-header .archive-counters {
+          border-top: 1px solid; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-header .archive-counters {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-header .archive-counters {
+              padding-top: 1.25em; } }
+          html body .content.content-archive .archive-header .archive-counters .archive-counter {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            cursor: pointer; }
+            html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram {
+              width: 7.5em; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__text {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center; }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__text .text {
+                  text-align: center; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__icon {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number {
+                width: 100%;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number .number {
+                font-size: 1.953em;
+                letter-spacing: 0.625em;
+                letter-spacing: 1.25px; }
+            html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle {
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0.625em 0 0.625em 0.625em;
+              border-color: transparent transparent transparent black; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--right {
+                border-width: 0.625em 0 0.625em 0.625em;
+                border-color: transparent transparent transparent black; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--left {
+                border-width: 0.625em 0.625em 0.625em 0;
+                border-color: transparent black transparent transparent; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--top {
+                border-width: 0 0.625em 0.625em 0.625em;
+                border-color: transparent transparent black transparent; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--bottom {
+                border-width: 0.625em 0.625em 0 0.625em;
+                border-color: black transparent transparent transparent; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-header .archive-counters {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                      flex-direction: row; }
+              html body .content.content-archive .archive-header .archive-counters > * {
+                margin-right: 1.25em;
+                margin-bottom: 1.25em;
+                box-sizing: border-box; }
+              html body .content.content-archive .archive-header .archive-counters > * {
+                width: calc(50% - (((2 - 1) * 1.25em) / 2) - 0px); }
+                html body .content.content-archive .archive-header .archive-counters > *:nth-child(2n) {
+                  margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-header .archive-counters {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              -webkit-box-orient: horizontal;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: row;
+                      flex-direction: row; }
+              html body .content.content-archive .archive-header .archive-counters > * {
+                margin-right: 1.25em;
+                margin-bottom: 1.25em;
+                box-sizing: border-box; }
+              html body .content.content-archive .archive-header .archive-counters > * {
+                width: calc(25% - (((4 - 1) * 1.25em) / 4) - 0px); }
+                html body .content.content-archive .archive-header .archive-counters > *:nth-child(4n) {
+                  margin-right: 0; } }
       html body .content.content-archive .archive-list--terms {
         width: 100%;
         border: 1px solid; }

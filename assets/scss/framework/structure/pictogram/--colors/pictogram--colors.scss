@@ -1,0 +1,12 @@
+@mixin pictogram--colors($number-color-scheme, $text-color-scheme, $text-padding) {
+  .pictogram__number {
+    .number {
+      @include colors($number-color-scheme);
+    }
+  }
+
+  .pictogram__text {
+    @include colors($text-color-scheme);
+    padding: $text-padding;
+  }
+}

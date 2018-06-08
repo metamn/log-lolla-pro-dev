@@ -1,0 +1,24 @@
+@mixin archive-counters {
+  @include padding(half, no, no, no);
+  @include border(normal, top);
+
+  .archive-counter {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .pictogram {
+      @include pictogram;
+
+      &__number {
+        @include pictogram__number--large;
+      }
+    }
+
+    .triangle {
+      @include triangle;
+    }
+  }
+
+  @include archive-counters__grid;
+}

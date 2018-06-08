@@ -1,0 +1,8 @@
+@mixin pictogram__text {
+  display: flex;
+  justify-content: center;
+
+  .text {
+    text-align: center;
+  }
+}

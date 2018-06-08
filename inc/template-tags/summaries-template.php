@@ -138,9 +138,6 @@ if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
       )
     );
 
-    global $SUMMARIES_COUNT;
-    $SUMMARIES_COUNT = count( $summaries );
-
     if ( empty( $summaries ) ) return;
 
     $html = '';
@@ -171,6 +168,9 @@ if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
 
     $summaries = log_lolla_get_summaries_for_archive( $archive );
     if ( empty( $summaries ) ) return;
+
+    global $SUMMARIES_COUNT;
+    $SUMMARIES_COUNT = count( $summaries );
 
     $html = '';
 

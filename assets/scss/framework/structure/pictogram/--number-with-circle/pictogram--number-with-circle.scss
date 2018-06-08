@@ -1,0 +1,7 @@
+@mixin pictogram--number-with-circle {
+  .pictogram__number {
+    .number {
+      @include circle;
+    }
+  }
+}

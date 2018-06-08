@@ -1,0 +1,9 @@
+@mixin pictogram__number($width) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .number {
+    //@include text-style(badge);
+  }
+}

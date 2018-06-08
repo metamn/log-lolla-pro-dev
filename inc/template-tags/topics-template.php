@@ -12,15 +12,59 @@
 
 if ( ! function_exists( 'log_lolla_archive_counters' ) ) {
   function log_lolla_archive_counters() {
+    $pictograms = log_lolla_get_archive_counters();
+    if ( empty( $pictograms ) ) return;
+
+    $html = '';
+
+    ob_start();
+    foreach ($pictograms as $pictogram) {
+      set_query_var( 'pictogram', $pictogram );
+      get_template_part( 'template-parts/archive/parts/archive-counter', '' );
+    }
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
+  function log_lolla_get_archive_counters() {
     $archive = get_queried_object();
     if ( empty( $archive ) ) return;
 
-    $number_of_posts = $archive->count;
     global $SUMMARIES_COUNT;
     global $STANDARD_POSTS_COUNT;
     global $RELATED_TOPICS_COUNT;
 
-    return $RELATED_TOPICS_COUNT;
+    $pictograms = [];
+
+    $pictograms[] = array(
+      'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
+      'number' => $archive->count ? $archive->count : 0,
+      'scrollto' => 'archive-list--posts'
+    );
+
+    $pictograms[] = array(
+      'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
+      'number' => isset( $SUMMARIES_COUNT ) ? $SUMMARIES_COUNT : 0,
+      'scrollto' => 'archive-list--summaries'
+    );
+
+    $pictograms[] = array(
+      'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
+      'number' => $STANDARD_POSTS_COUNT ? $STANDARD_POSTS_COUNT : 0,
+      'scrollto' => 'archive-list--standard-posts'
+    );
+
+    $pictograms[] = array(
+      'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
+      'number' => $RELATED_TOPICS_COUNT ? $RELATED_TOPICS_COUNT : 0,
+      'scrollto' => 'archive-list--related-topics'
+    );
+
+    return $pictograms;
   }
 }
 

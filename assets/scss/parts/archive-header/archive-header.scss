@@ -12,4 +12,8 @@
   .archive-title-and-description {
     @include archive-title-and-description;
   }
+
+  .archive-counters {
+    @include archive-counters;
+  }
 }

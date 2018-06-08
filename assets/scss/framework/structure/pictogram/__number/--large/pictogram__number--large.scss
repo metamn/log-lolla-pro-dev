@@ -1,0 +1,6 @@
+@mixin pictogram__number--large {
+  .number {
+    @include text-style(h1h6);
+    letter-spacing: $letter-spacing;
+  }
+}
