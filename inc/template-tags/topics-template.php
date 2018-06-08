@@ -38,30 +38,39 @@ if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
     global $STANDARD_POSTS_COUNT;
     global $RELATED_TOPICS_COUNT;
 
+    $post_count = $archive->count ? $archive->count : 0;
+    $summaries_count = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
+    $standard_posts_count = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
+    $related_topics_count = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
+
     $pictograms = [];
 
     $pictograms[] = array(
       'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
-      'number' => $archive->count ? $archive->count : 0,
-      'scrollto' => 'archive-list--posts'
+      'number' => $post_count,
+      'scrollto' => 'archive-list--posts',
+      'klass' => ( $post_count > 0 ) ? 'activable' : 'inactivable'
     );
 
     $pictograms[] = array(
       'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
-      'number' => isset( $SUMMARIES_COUNT ) ? $SUMMARIES_COUNT : 0,
-      'scrollto' => 'archive-list--summaries'
+      'number' => $summaries_count,
+      'scrollto' => 'archive-list--summaries',
+      'klass' => ( $summaries_count > 0 ) ? 'activable' : 'inactivable'
     );
 
     $pictograms[] = array(
       'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
-      'number' => $STANDARD_POSTS_COUNT ? $STANDARD_POSTS_COUNT : 0,
-      'scrollto' => 'archive-list--standard-posts'
+      'number' => $standard_posts_count,
+      'scrollto' => 'archive-list--standard-posts',
+      'klass' => ( $standard_posts_count > 0 ) ? 'activable' : 'inactivable'
     );
 
     $pictograms[] = array(
       'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
-      'number' => $RELATED_TOPICS_COUNT ? $RELATED_TOPICS_COUNT : 0,
-      'scrollto' => 'archive-list--related-topics'
+      'number' => $related_topics_count,
+      'scrollto' => 'archive-list--related-topics',
+      'klass' => ( $related_topics_count > 0 ) ? 'activable' : 'inactivable'
     );
 
     return $pictograms;

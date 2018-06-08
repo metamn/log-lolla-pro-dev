@@ -1,6 +1,6 @@
 @mixin pictogram($width: $lem * 6, $centered: false) {
   width: $width;
-  
+
   &__text {
     @include pictogram__text;
   }
@@ -11,5 +11,13 @@
 
   &__number {
     @include pictogram__number($width);
+  }
+
+  &--activable {
+    @include pictogram--activable;
+  }
+
+  &--inactivable {
+    @include pictogram--inactivable;
   }
 }
