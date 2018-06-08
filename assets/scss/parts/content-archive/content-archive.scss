@@ -5,25 +5,6 @@
   }
 
   .archive-list {
-    &--terms {
-      @include width;
-      @include border(normal, all);
-      @include padding(yes, yes, half, yes);
-
-      .archive-list-body {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-
-        .term {
-          @include button--with-border;
-          @include margin(no, half, half, no);
-
-          .link {
-            @include link($type: not-underlined);
-          }
-        }
-      }
-    }
+    @include archive-list;
   }
 }
