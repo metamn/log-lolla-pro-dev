@@ -10,6 +10,21 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_archive_counters' ) ) {
+  function log_lolla_archive_counters() {
+    $archive = get_queried_object();
+    if ( empty( $archive ) ) return;
+
+    $number_of_posts = $archive->count;
+    global $SUMMARIES_COUNT;
+    global $STANDARD_POSTS_COUNT;
+    global $RELATED_TOPICS_COUNT;
+
+    return $RELATED_TOPICS_COUNT;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
   function log_lolla_topic_archive( $term ) {
     $terms = log_lolla_get_most_popular_terms_by_count( $term, 0 );
@@ -34,6 +49,9 @@ if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
 
     $related_topics = log_lolla_get_related_topics_for_archive( $archive );
     if ( empty( $related_topics ) ) return;
+
+    global $RELATED_TOPICS_COUNT;
+    $RELATED_TOPICS_COUNT = count( $related_topics );
 
     $html = '';
 

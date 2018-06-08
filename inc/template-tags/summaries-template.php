@@ -138,6 +138,9 @@ if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
       )
     );
 
+    global $SUMMARIES_COUNT;
+    $SUMMARIES_COUNT = count( $summaries );
+
     if ( empty( $summaries ) ) return;
 
     $html = '';

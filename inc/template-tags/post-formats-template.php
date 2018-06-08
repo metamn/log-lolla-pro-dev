@@ -43,6 +43,9 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
     $standard_posts = log_lolla_get_standard_posts_for_archive( $archive );
     if ( empty( $standard_posts ) ) return;
 
+    global $STANDARD_POSTS_COUNT;
+    $STANDARD_POSTS_COUNT = count( $standard_posts );
+
     $html = '';
 
     global $post;

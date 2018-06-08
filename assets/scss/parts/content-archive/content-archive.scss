@@ -1,8 +1,9 @@
 @mixin content-archive {
   .archive-header {
     @include archive-header;
+    order: -1;
   }
-  
+
   .archive-list {
     &--terms {
       @include width;
