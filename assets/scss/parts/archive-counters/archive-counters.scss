@@ -8,14 +8,16 @@
 
     .pictogram {
       @include pictogram;
+      @include pictogram--vertical;
 
       &__number {
         @include pictogram__number--large;
       }
     }
 
-    .triangle {
-      @include triangle;
+    .arrow-with-triangle {
+      @include arrow-with-triangle;
+      @include text-style(figcaption);
     }
   }
 

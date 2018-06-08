@@ -9712,7 +9712,17 @@ html {
                 -ms-flex-align: center;
                     align-items: center; }
             html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram {
-              width: 7.5em; }
+              width: 7.5em;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__text {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -9721,7 +9731,8 @@ html {
                     -ms-flex-pack: center;
                         justify-content: center; }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__text .text {
-                  text-align: center; }
+                  text-align: center;
+                  word-wrap: break-word; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__icon {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -9740,24 +9751,58 @@ html {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
                 letter-spacing: 1.25px; }
-            html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle {
-              width: 0;
-              height: 0;
-              border-style: solid;
-              border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
-              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--right {
+            html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: nowrap;
+                  flex-wrap: nowrap;
+              -webkit-box-pack: center;
+                  -ms-flex-pack: center;
+                      justify-content: center;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center;
+              width: 3.75em;
+              -webkit-transform: rotate(0deg);
+                      transform: rotate(0deg);
+              color: black;
+              background-color: white;
+              font-size: 0.8em;
+              line-height: 1.5; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__line {
+                width: calc(3.125em);
+                border-bottom: 1px solid; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle {
+                width: 0;
+                height: 0;
+                border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
                 border-color: transparent transparent transparent black; }
-              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--left {
-                border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
-              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--top {
-                border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
-              html body .content.content-archive .archive-header .archive-counters .archive-counter .triangle--bottom {
-                border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--right {
+                  border-width: 0.625em 0 0.625em 0.625em;
+                  border-color: transparent transparent transparent black; }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--left {
+                  border-width: 0.625em 0.625em 0.625em 0;
+                  border-color: transparent black transparent transparent; }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--top {
+                  border-width: 0 0.625em 0.625em 0.625em;
+                  border-color: transparent transparent black transparent; }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--bottom {
+                  border-width: 0.625em 0.625em 0 0.625em;
+                  border-color: black transparent transparent transparent; }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle--right {
+                -webkit-transform: rotate(0deg);
+                        transform: rotate(0deg); }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle--left {
+                -webkit-transform: rotate(180deg);
+                        transform: rotate(180deg); }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle--top {
+                -webkit-transform: rotate(-90deg);
+                        transform: rotate(-90deg); }
+              html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle--bottom {
+                -webkit-transform: rotate(90deg);
+                        transform: rotate(90deg); }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-header .archive-counters {
               display: -webkit-box;
