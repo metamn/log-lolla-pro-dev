@@ -20,20 +20,6 @@
   @include fonts--nimbus-mono;
 }
 
-@if ($body-font == 'lack' or $monospace-font == 'lack' or $title-font == 'lack') {
-  @include fonts--lack;
-}
-
-@if ($body-font == 'sporting-grotesque' or $monospace-font == 'sporting-grotesque' or $title-font == 'sporting-grotesque') {
-  @include fonts--sporting-grotesque;
-}
-
-
-@if ($body-font == 'terminal-grotesque' or $monospace-font == 'terminal-grotesque' or $title-font == 'terminal-grotesque') {
-  @include fonts--terminal-grotesque;
-}
-
-
 
 // The font mixins
 //
@@ -45,47 +31,11 @@
       font-weight: normal;
       font-style: normal;
     }
-
-    @if ($body-font == 'lack') {
-      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
   }
 
   @if ($variant == 'bold') {
     @if ($body-font == 'nimbus-sans') {
       font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'lack') {
-      font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Bold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
@@ -97,47 +47,11 @@
       font-weight: normal;
       font-style: normal;;
     }
-
-    @if ($body-font == 'lack') {
-      font-family: 'lackitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;;
-    }
-
-    @if ($body-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
   }
 
   @if ($variant == 'bold-italic') {
     @if ($body-font == 'nimbus-sans') {
       font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'lack') {
-      font-family: 'lack_lineitalic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;;
-    }
-
-    @if ($body-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($body-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque_openRg',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }
@@ -149,47 +63,11 @@
       font-weight: normal;
       font-style: normal;
     }
-
-    @if ($monospace-font == 'lack') {
-      font-family: 'lackregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($monospace-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($monospace-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
   }
 
   @if ($variant == 'site-title') {
     @if ($title-font == 'nimbus-mono') {
       font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($title-font == 'lack') {
-      font-family: 'lack_lineregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if ($title-font == 'sporting-grotesque') {
-      font-family: 'Sporting Grotesque_Regular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
-
-    @if (title-font == 'terminal-grotesque') {
-      font-family: 'terminal_grotesque',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
     }

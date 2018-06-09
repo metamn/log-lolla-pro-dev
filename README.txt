@@ -50,6 +50,10 @@ Nimbus Sans L font, Copyright URW++
 License: GPL
 Source: https://www.fontsquirrel.com/fonts/nimbus-sans-l
 
+Sparks font, by After The Flood
+License: SIL Open Font License
+Source: https://github.com/aftertheflood/sparks
+
 Log Lolla is based on Underscores http://underscores.me/,
 (C) 2012-2017 Automattic, Inc.
 License: GNU General Public License v2 or later

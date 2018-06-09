@@ -1,4 +1,10 @@
-@mixin fonts--nimbus-sans {  
+// Nimbus Sans
+//
+// Nimbus Sans L font, Copyright URW++
+// License: GPL
+// Source: https://www.fontsquirrel.com/fonts/nimbus-sans-l
+//
+@mixin fonts--nimbus-sans {
   @font-face {
       font-family: 'nimbus_sans_lbold_italic';
       src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),
