@@ -5,7 +5,7 @@
     }
 
     @if ($post-format-link-background-color and $post-format-link-text-color) {
-      @include colors-on-the-fly($post-format-link-background-color, $post-format-link-text-color);
+      @include set-colors($post-format-link-background-color, $post-format-link-text-color);
     }
 
     .post-title {

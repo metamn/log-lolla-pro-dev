@@ -7,10 +7,11 @@
 // Styleguide colors
 
 
-// Color variables are set up in skins
 
-
-// Color combinations. Colors are not used standalone but in pairs
+// Color combinations
+// - Colors are not used standalone but in pairs
+// - `$text-color` or `$background-color` are set up in `themes` folder
+//
 @mixin colors($name: default) {
 
   @if ($name == 'default') {
