@@ -1,5 +1,7 @@
-// Settings for the content section
+// General settings for the content section
 //
+// For different content types there are different mixins
+// 
 @mixin content {
   a,
   .link {

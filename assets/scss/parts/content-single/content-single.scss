@@ -1,3 +1,5 @@
+// Settings for the content section on the single post page
+//
 @mixin content-single {
   display: flex;
   flex-direction: column;
@@ -18,10 +20,5 @@
 
   .comments {
     @include comments;
-  }
-
-  .archive-list {
-    @include archive-list;
-    @include margin(yes, no, no, no);
   }
 }

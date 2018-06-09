@@ -19928,212 +19928,6 @@ html {
       @media only screen and (min-width: 768px) {
         html body .content.content-single .comments .comments-body .comment + .comment {
           margin-right: 0; } }
-      html body .content.content-single .archive-list .archive-list-title {
-        display: -webkit-inline-box;
-        display: -ms-inline-flexbox;
-        display: inline-flex;
-        color: black;
-        background-color: white;
-        border: 1px solid;
-        border-bottom: none; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-top: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-top: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-bottom: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-left: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-left: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-right: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .archive-list-title {
-            padding-right: 2.5em; } }
-      html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-        width: 100%;
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            max-width: calc(100% - 2.5em); } }
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            max-width: calc(100% - 5em); } }
-        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            max-width: 37.5em; } }
-        @media only screen and (min-width: 1600.1px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            max-width: 37.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-bottom: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-left: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-left: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-right: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
-            padding-right: 2.5em; } }
-        html body .content.content-single .archive-list--terms .archive-list-body, html body .content.content-single .archive-list--topics .archive-list-body {
-          width: 100%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-          html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-            border: 1px solid;
-            padding: 0.3125em 0.625em; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-bottom: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-bottom: 1.25em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-right: 0.625em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-right: 1.25em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-top: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-top: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
-                margin-left: 0; } }
-            html body .content.content-single .archive-list--terms .archive-list-body .term .link, html body .content.content-single .archive-list--topics .archive-list-body .term .link {
-              color: black;
-              background-color: white;
-              text-decoration: none;
-              will-change: text-decoration;
-              transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
-              html body .content.content-single .archive-list--terms .archive-list-body .term .link:hover, html body .content.content-single .archive-list--terms .archive-list-body .term .link:active, html body .content.content-single .archive-list--topics .archive-list-body .term .link:hover, html body .content.content-single .archive-list--topics .archive-list-body .term .link:active {
-                text-decoration: line-through; }
-      html body .content.content-single .archive-list .summary {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .content.content-single .archive-list .summary .summary-link-to-topic,
-        html body .content.content-single .archive-list .summary .summary-dates {
-          font-size: 0.8em; }
-        html body .content.content-single .archive-list .summary .summary-dates {
-          display: none; }
-        html body .content.content-single .archive-list .summary .summary-link-to-topic {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          html body .content.content-single .archive-list .summary .summary-link-to-topic .text {
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
-            display: inline-flex; }
-        html body .content.content-single .archive-list .summary .summary-title-without-link {
-          width: 100%; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-single .archive-list .summary + .summary {
-            margin-right: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list + .archive-list {
-          margin-right: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-single .archive-list {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-single .archive-list {
-          margin-right: 0; } }
     html body .content.content-page {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -25502,6 +25296,53 @@ html {
           margin-left: 0.3125em; }
     html body .shortcode.shortcode-topics-summary .shortcode-body .text p {
       display: inline; }
+    html body .breadcrumb .ul {
+      list-style: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      html body .breadcrumb .ul .li {
+        margin-right: 0.625em;
+        margin-bottom: 0.625em; }
+        html body .breadcrumb .ul .li + .li {
+          margin-left: 0; }
+      html body .breadcrumb .ul .li {
+        margin-bottom: 1.25em; }
+      @media only screen and (max-width: 767.9px) {
+        html body .breadcrumb .ul .li {
+          margin-bottom: 0.625em; } }
+      html body .breadcrumb .ul .li .link {
+        color: black;
+        background-color: white;
+        text-decoration: underline;
+        will-change: text-decoration;
+        transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+        html body .breadcrumb .ul .li .link:hover, html body .breadcrumb .ul .li .link:active {
+          text-decoration: line-through; }
+      html body .breadcrumb .ul .li .triangle {
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0.3125em 0 0.3125em 0.3125em;
+        border-color: transparent transparent transparent black; }
+        html body .breadcrumb .ul .li .triangle--right {
+          border-width: 0.3125em 0 0.3125em 0.3125em;
+          border-color: transparent transparent transparent black; }
+        html body .breadcrumb .ul .li .triangle--left {
+          border-width: 0.3125em 0.3125em 0.3125em 0;
+          border-color: transparent black transparent transparent; }
+        html body .breadcrumb .ul .li .triangle--top {
+          border-width: 0 0.3125em 0.3125em 0.3125em;
+          border-color: transparent transparent black transparent; }
+        html body .breadcrumb .ul .li .triangle--bottom {
+          border-width: 0.3125em 0.3125em 0 0.3125em;
+          border-color: black transparent transparent transparent; }
     html body a {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }

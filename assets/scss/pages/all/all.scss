@@ -48,6 +48,10 @@ html {
       @include shortcode;
     }
 
+    .breadcrumb {
+      @include breadcrumb;
+    }
+
 
     @include cursor;
     a {
