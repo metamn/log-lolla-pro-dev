@@ -647,7 +647,7 @@ html {
     color: black;
     background-color: white;
     letter-spacing: 1.25px;
-    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
+    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 32 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -728,9 +728,14 @@ html {
       font-size: 0.8em;
       text-transform: uppercase;
       letter-spacing: 2.5px;
-      cursor: pointer;
+      will-change: all;
+      transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
       border: 1px solid;
       padding: 0.3125em 0.625em; }
+      html body button:hover,
+      html body .button:hover,
+      html body input[type="submit"]:hover {
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       html body {
         font-size: 1.25em; } }
@@ -744,7 +749,7 @@ html {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
       html body a:hover {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
     html body > * {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -813,7 +818,7 @@ html {
         will-change: all;
         transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
         html body .header .menu-hamburger:hover {
-          cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+          cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
         html body .header .menu-hamburger .hamburger-icon {
           color: black;
           background-color: transparent; }
@@ -9757,7 +9762,7 @@ html {
                 will-change: all;
                 transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram--activable:hover {
-                  cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+                  cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number .number {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;

@@ -1,8 +1,8 @@
 // Button
 //
 // A simple button
-// 
+//
 @mixin button {
   @include text-style(action);
-  cursor: pointer;
+  @include cursor(pointer);
 }
