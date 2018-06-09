@@ -1,7 +1,6 @@
 @mixin archive-list {
   .archive-list-title {
-    @include text-style(section-title);
-    display: flex;
+    @include text-style(section-title-bordered);
   }
 
 

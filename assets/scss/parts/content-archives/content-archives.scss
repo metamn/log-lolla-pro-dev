@@ -13,9 +13,7 @@
     @include margin(no, no, yes, no);
 
     .shortcode-title {
-      display: inline;
-      @include colors;
-      @include padding(half, yes, half, yes);
+      @include text-style(section-title);
     }
 
     .shortcode-body {

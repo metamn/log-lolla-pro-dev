@@ -9680,9 +9680,37 @@ html {
                 html body .content.content-archive .archive-header .archive-counters > *:nth-child(4n) {
                   margin-right: 0; } }
       html body .content.content-archive .archive-list .archive-list-title {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        border-bottom: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-top: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-list .archive-list-title {
+            padding-right: 2.5em; } }
       html body .content.content-archive .archive-list--terms, html body .content.content-archive .archive-list--topics {
         width: 100%;
         border: 1px solid; }
@@ -9909,7 +9937,9 @@ html {
           html body .content.content-archives .shortcode {
             margin-right: 0; } }
         html body .content.content-archives .shortcode .shortcode-title {
-          display: inline;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
           color: black;
           background-color: white; }
           @media only screen and (max-width: 767.9px) {
@@ -18527,6 +18557,36 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-single .comments .comments-title {
             margin-right: 0; } }
+        html body .content.content-single .comments .comments-title .number-of-comments {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          color: black;
+          background-color: white; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-top: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-top: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-left: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-left: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .comments .comments-title .number-of-comments {
+              padding-right: 2.5em; } }
         html body .content.content-single .comments .comments-title .arrows {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -19408,9 +19468,37 @@ html {
         html body .content.content-single .comments .comments-body .comment + .comment {
           margin-right: 0; } }
       html body .content.content-single .archive-list .archive-list-title {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        color: black;
+        background-color: white;
+        border: 1px solid;
+        border-bottom: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-top: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-single .archive-list .archive-list-title {
+            padding-right: 2.5em; } }
       html body .content.content-single .archive-list--terms, html body .content.content-single .archive-list--topics {
         width: 100%;
         border: 1px solid; }

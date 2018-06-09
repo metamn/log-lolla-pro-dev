@@ -32,11 +32,13 @@
     }
   }
 
+
   // Large text
   // - Text larger with a scale
   @if ($variant == 'large') {
     @include scale(large-1);
   }
+
 
   // Small text
   // - Text smaller with a scale
@@ -44,17 +46,32 @@
     @include scale(small-1);
   }
 
+
+  // Italic text
+  @if ($variant == 'italic') {
+    @include font(italic);
+  }
+
+
+  // Bold italic text
+  @if ($variant == 'bold-italic') {
+    @include font(bold-italic);
+  }
+
+
   // Site title
   // - The title of the site
   @if ($variant == 'site-title') {
     @include font(site-title);
   }
 
+
   // Headline
   // - Large text
   @if ($variant == 'headline') {
     @include scale(large-3);
   }
+
 
   // Headline with large spacing
   // - Large text with extra large spacing
@@ -64,16 +81,22 @@
     line-height: $line-height-smaller;
   }
 
+
   // Section title
   @if ($variant == 'section-title') {
-    //
+    display: inline-flex;
+    @include colors;
+    @include padding(half, yes, half, yes);
   }
 
 
-  // Description
-  @if ($variant == 'description') {
-    @include scale(large-1);
-    @include background-pattern(dotted, $quote-pattern-color);
+  // Section title with border
+  @if ($variant == 'section-title-bordered') {
+    display: inline-flex;
+    @include colors;
+    @include padding(half, yes, half, yes);
+    @include border(normal, all);
+    border-bottom: none;
   }
 
 

@@ -16,7 +16,6 @@
     display: flex;
 
     .text {
-      @include text-style(section-title);
       display: inline-flex;
     }
   }
