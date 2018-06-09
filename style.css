@@ -1,19 +1,23 @@
 /*!
  Theme Name:   Log Lolla Pro
- Theme URI:    https://morethemes.baby/log-lolla-pro-demo/
- Description:  The Pro version of the Log Lolla theme.
+ Theme URI:    https://morethemes.baby/themes/log-lolla-pro/
+ Description:  The Pro version of the Log Lolla theme focusing on creating knowledge.
  Author:       More Themes Baby
  Author URI:   https://morethemes.baby
  Version:      1.0.0
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         blog, full-width-template, post-formats
- Text Domain:  log-lolla
+ Text Domain:  log-lolla-pro
 */
 /**
- * The default skin
+ * The inverse of the default skin (dark mode)
  *
- * Sets up color schemes, image assets, fonts and more
+ * - white on black
+ * - minimalist and brutalist look
+ *
+ * Enabling a skin / theme is done in `style.scss`
+ * Example: `@import 'assets/scss/themes/white.scss';`
  */
 /**
  * Colors
@@ -639,10 +643,10 @@ html {
     font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: normal;
     font-style: normal;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
     letter-spacing: 1.25px;
-    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--white.cur"), auto;
+    cursor: url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor1-64x64--black.cur"), auto;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -683,8 +687,8 @@ html {
       font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: black;
       border: none;
       border-radius: 0;
       -webkit-appearance: none; }
@@ -739,7 +743,7 @@ html {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
       html body a:hover {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
     html body > * {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -786,8 +790,8 @@ html {
           html body .header .header-image figure img {
             height: 2.5em; }
       html body .header .header-title .link {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: black;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -802,12 +806,12 @@ html {
         font-weight: normal;
         font-style: normal;
         word-wrap: break-word;
-        color: black;
-        background-color: white; }
+        color: white;
+        background-color: black; }
       html body .header .menu-hamburger {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
-          color: black;
+          color: white;
           background-color: transparent; }
           html body .header .menu-hamburger .hamburger-icon--closed {
             display: none; }
@@ -866,8 +870,8 @@ html {
               -ms-flex-pack: end;
                   justify-content: flex-end; }
     html body .header-menu {
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: black;
       border: 1px solid;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -940,8 +944,8 @@ html {
                   align-items: baseline; } }
     html body .content a,
     html body .content .link {
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: black;
       text-decoration: underline;
       will-change: text-decoration;
       transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -952,8 +956,8 @@ html {
     html body .content .navigation {
       border-top: 1px solid;
       border-bottom: 1px solid;
-      color: black;
-      background-color: white; }
+      color: white;
+      background-color: black; }
       @media only screen and (max-width: 767.9px) {
         html body .content .navigation {
           margin-top: 2.5em; } }
@@ -1014,19 +1018,19 @@ html {
           height: 0;
           border-style: solid;
           border-width: 0.625em 0 0.625em 0.625em;
-          border-color: transparent transparent transparent black; }
+          border-color: transparent transparent transparent white; }
           html body .content .navigation .arrow-with-triangle__triangle--right {
             border-width: 0.625em 0 0.625em 0.625em;
-            border-color: transparent transparent transparent black; }
+            border-color: transparent transparent transparent white; }
           html body .content .navigation .arrow-with-triangle__triangle--left {
             border-width: 0.625em 0.625em 0.625em 0;
-            border-color: transparent black transparent transparent; }
+            border-color: transparent white transparent transparent; }
           html body .content .navigation .arrow-with-triangle__triangle--top {
             border-width: 0 0.625em 0.625em 0.625em;
-            border-color: transparent transparent black transparent; }
+            border-color: transparent transparent white transparent; }
           html body .content .navigation .arrow-with-triangle__triangle--bottom {
             border-width: 0.625em 0.625em 0 0.625em;
-            border-color: black transparent transparent transparent; }
+            border-color: white transparent transparent transparent; }
         html body .content .navigation .arrow-with-triangle--right {
           -webkit-transform: rotate(0deg);
                   transform: rotate(0deg); }
@@ -1041,8 +1045,8 @@ html {
                   transform: rotate(90deg); }
       html body .content .navigation a,
       html body .content .navigation .link {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: black;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -1095,8 +1099,8 @@ html {
           width: 3.75em;
           padding: 0.3125em 0 0.3125em 0.625em; }
       html body .content.content-home .post .sticky {
-        color: black;
-        background-color: white; }
+        color: white;
+        background-color: black; }
       html body .content.content-home .post .post-title .text {
         font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
@@ -1124,8 +1128,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post .post-featured-image figure figcaption,
         html body .content.content-home .post .post-featured-image figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -1190,19 +1194,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -1232,13 +1236,13 @@ html {
           line-height: 1.1; }
         html body .content.content-home .post .post-content .text a,
         html body .content.content-home .post .post-content .text .link {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
           html body .content.content-home .post .post-content .text a:hover, html body .content.content-home .post .post-content .text a:active,
           html body .content.content-home .post .post-content .text .link:hover,
           html body .content.content-home .post .post-content .text .link:active {
@@ -1546,7 +1550,7 @@ html {
           html body .content.content-home .post .post-content .text figure .link,
           html body .content.content-home .post .post-content .text .wp-caption a,
           html body .content.content-home .post .post-content .text .wp-caption .link {
-            color: black;
+            color: white;
             background-color: transparent;
             text-decoration: underline;
             will-change: text-decoration;
@@ -1575,8 +1579,8 @@ html {
           html body .content.content-home .post .post-content .text .wp-caption .figcaption,
           html body .content.content-home .post .post-content .text .wp-caption .wp-caption-text,
           html body .content.content-home .post .post-content .text .wp-caption .gallery-caption {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -1604,8 +1608,8 @@ html {
             html body .content.content-home .post .post-content .text .wp-caption .wp-caption-text a,
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption .link,
             html body .content.content-home .post .post-content .text .wp-caption .gallery-caption a {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -2168,8 +2172,8 @@ html {
             max-width: 100%; }
           html body .content.content-home .post .post-content .text .gallery figure figcaption,
           html body .content.content-home .post .post-content .text .gallery figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -2205,19 +2209,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -2332,19 +2336,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-home .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -2390,8 +2394,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure figcaption,
         html body .content.content-home .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -2612,8 +2616,8 @@ html {
           max-width: 100%; }
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
         html body .content.content-home .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -2648,8 +2652,8 @@ html {
         html body .content.content-home .post.post-format-audio .post__content .post-content {
           margin-right: 0; } }
       html body .content.content-home .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-        color: white;
-        background-color: black; }
+        color: black;
+        background-color: white; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post.post-format-video .post__content .post-content .text iframe {
           height: auto; } }
@@ -2662,8 +2666,8 @@ html {
             -ms-flex-direction: column;
                 flex-direction: column; }
         html body .content.content-home .post.post-format-aside .post__content .post-content .text {
-          color: white;
-          background-color: black; }
+          color: black;
+          background-color: white; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-home .post.post-format-aside .post__content .post-content .text {
               padding-top: 2.5em; } }
@@ -2744,19 +2748,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-home .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -2789,14 +2793,13 @@ html {
             -ms-flex-order: 2;
                 order: 2; }
       html body .content.content-home .post.post-format-quote .post__content .post-content {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
         padding: 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
         html body .content.content-home .post.post-format-quote .post__content .post-content .text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           border: 0.07812em solid;
           -webkit-transform: translateX(-2.5em) skew(5deg);
                   transform: translateX(-2.5em) skew(5deg); }
@@ -2905,8 +2908,8 @@ html {
             margin-right: 0; } }
         html body .content.content-home .post.post-format-chat .post__content .post-content .text p {
           border: 0.07812em solid;
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           -webkit-transform: translateX(0.625em) skew(5deg);
                   transform: translateX(0.625em) skew(5deg);
           max-width: 70%; }
@@ -3154,13 +3157,13 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text .link,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text a,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .link {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              color: black;
-              background-color: white; }
+              color: white;
+              background-color: black; }
               html body .content.content-home .post.post-format-comment .comment-content .text a:hover, html body .content.content-home .post.post-format-comment .comment-content .text a:active,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:hover,
               html body .content.content-home .post.post-format-comment .comment-content .text .link:active,
@@ -3882,7 +3885,7 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text figure .link,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                color: black;
+                color: white;
                 background-color: transparent;
                 text-decoration: underline;
                 will-change: text-decoration;
@@ -3959,8 +3962,8 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 font-size: 0.8em;
                 line-height: 1.5;
                 display: inline-block; }
@@ -4036,8 +4039,8 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   text-decoration: underline;
                   will-change: text-decoration;
                   transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -4945,27 +4948,27 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
                 html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
                 html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
                 html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
                 html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-home .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
               html body .content.content-home .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
@@ -5028,8 +5031,8 @@ html {
                   margin-right: 0; } }
         html body .content.content-home .post.post-format-comment .comment-date-and-time,
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
@@ -5068,19 +5071,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -5345,8 +5348,8 @@ html {
           width: 3.75em;
           padding: 0.3125em 0 0.3125em 0.625em; }
       html body .content.content-archive .post .sticky {
-        color: black;
-        background-color: white; }
+        color: white;
+        background-color: black; }
       html body .content.content-archive .post .post-title .text {
         font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
@@ -5374,8 +5377,8 @@ html {
           max-width: 100%; }
         html body .content.content-archive .post .post-featured-image figure figcaption,
         html body .content.content-archive .post .post-featured-image figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -5440,19 +5443,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -5482,13 +5485,13 @@ html {
           line-height: 1.1; }
         html body .content.content-archive .post .post-content .text a,
         html body .content.content-archive .post .post-content .text .link {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
           html body .content.content-archive .post .post-content .text a:hover, html body .content.content-archive .post .post-content .text a:active,
           html body .content.content-archive .post .post-content .text .link:hover,
           html body .content.content-archive .post .post-content .text .link:active {
@@ -5796,7 +5799,7 @@ html {
           html body .content.content-archive .post .post-content .text figure .link,
           html body .content.content-archive .post .post-content .text .wp-caption a,
           html body .content.content-archive .post .post-content .text .wp-caption .link {
-            color: black;
+            color: white;
             background-color: transparent;
             text-decoration: underline;
             will-change: text-decoration;
@@ -5825,8 +5828,8 @@ html {
           html body .content.content-archive .post .post-content .text .wp-caption .figcaption,
           html body .content.content-archive .post .post-content .text .wp-caption .wp-caption-text,
           html body .content.content-archive .post .post-content .text .wp-caption .gallery-caption {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -5854,8 +5857,8 @@ html {
             html body .content.content-archive .post .post-content .text .wp-caption .wp-caption-text a,
             html body .content.content-archive .post .post-content .text .wp-caption .gallery-caption .link,
             html body .content.content-archive .post .post-content .text .wp-caption .gallery-caption a {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -6418,8 +6421,8 @@ html {
             max-width: 100%; }
           html body .content.content-archive .post .post-content .text .gallery figure figcaption,
           html body .content.content-archive .post .post-content .text .gallery figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -6455,19 +6458,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -6582,19 +6585,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-archive .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-archive .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-archive .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-archive .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-archive .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -6640,8 +6643,8 @@ html {
           max-width: 100%; }
         html body .content.content-archive .post.post-format-image .post__content .post-first-image figure figcaption,
         html body .content.content-archive .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -6862,8 +6865,8 @@ html {
           max-width: 100%; }
         html body .content.content-archive .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
         html body .content.content-archive .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5;
           display: inline-block; }
@@ -6898,8 +6901,8 @@ html {
         html body .content.content-archive .post.post-format-audio .post__content .post-content {
           margin-right: 0; } }
       html body .content.content-archive .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-        color: white;
-        background-color: black; }
+        color: black;
+        background-color: white; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archive .post.post-format-video .post__content .post-content .text iframe {
           height: auto; } }
@@ -6912,8 +6915,8 @@ html {
             -ms-flex-direction: column;
                 flex-direction: column; }
         html body .content.content-archive .post.post-format-aside .post__content .post-content .text {
-          color: white;
-          background-color: black; }
+          color: black;
+          background-color: white; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .post.post-format-aside .post__content .post-content .text {
               padding-top: 2.5em; } }
@@ -6994,19 +6997,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-archive .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-archive .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-archive .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-archive .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-archive .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -7039,14 +7042,13 @@ html {
             -ms-flex-order: 2;
                 order: 2; }
       html body .content.content-archive .post.post-format-quote .post__content .post-content {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
         padding: 0;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
                 order: 1; }
         html body .content.content-archive .post.post-format-quote .post__content .post-content .text {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           border: 0.07812em solid;
           -webkit-transform: translateX(-2.5em) skew(5deg);
                   transform: translateX(-2.5em) skew(5deg); }
@@ -7155,8 +7157,8 @@ html {
             margin-right: 0; } }
         html body .content.content-archive .post.post-format-chat .post__content .post-content .text p {
           border: 0.07812em solid;
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           -webkit-transform: translateX(0.625em) skew(5deg);
                   transform: translateX(0.625em) skew(5deg);
           max-width: 70%; }
@@ -7404,13 +7406,13 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text .link,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text a,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .link {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: underline;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-              color: black;
-              background-color: white; }
+              color: white;
+              background-color: black; }
               html body .content.content-archive .post.post-format-comment .comment-content .text a:hover, html body .content.content-archive .post.post-format-comment .comment-content .text a:active,
               html body .content.content-archive .post.post-format-comment .comment-content .text .link:hover,
               html body .content.content-archive .post.post-format-comment .comment-content .text .link:active,
@@ -8132,7 +8134,7 @@ html {
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text figure .link,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                color: black;
+                color: white;
                 background-color: transparent;
                 text-decoration: underline;
                 will-change: text-decoration;
@@ -8209,8 +8211,8 @@ html {
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 font-size: 0.8em;
                 line-height: 1.5;
                 display: inline-block; }
@@ -8286,8 +8288,8 @@ html {
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   text-decoration: underline;
                   will-change: text-decoration;
                   transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -9195,27 +9197,27 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-archive .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
                 html body .content.content-archive .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-archive .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
                 html body .content.content-archive .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-archive .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
                 html body .content.content-archive .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-archive .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
                 html body .content.content-archive .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-archive .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
               html body .content.content-archive .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
@@ -9278,8 +9280,8 @@ html {
                   margin-right: 0; } }
         html body .content.content-archive .post.post-format-comment .comment-date-and-time,
         html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
         html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows {
@@ -9318,19 +9320,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -9615,8 +9617,8 @@ html {
             margin-right: 0; } }
         html body .content.content-archive .archive-header .breadcrumb {
           border-bottom: 1px solid;
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
           @media only screen and (max-width: 767.9px) {
@@ -9672,8 +9674,8 @@ html {
             width: 3.75em;
             height: 3.75em;
             border-radius: 3.75em;
-            color: white;
-            background-color: black;
+            color: black;
+            background-color: white;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -9746,7 +9748,7 @@ html {
                     -ms-flex-pack: center;
                         justify-content: center; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram--activable {
-                cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+                cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--black.cur"), auto; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number .number {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;
@@ -9766,8 +9768,8 @@ html {
               width: 3.75em;
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg);
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__line {
@@ -9778,19 +9780,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -9919,8 +9921,8 @@ html {
               html body .content.content-archive .archive-list--terms .archive-list-body .term, html body .content.content-archive .archive-list--topics .archive-list-body .term {
                 margin-left: 0; } }
             html body .content.content-archive .archive-list--terms .archive-list-body .term .link, html body .content.content-archive .archive-list--topics .archive-list-body .term .link {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: none;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -9934,8 +9936,8 @@ html {
             flex-wrap: wrap; }
         html body .content.content-archive .archive-list .summary .summary-link-to-topic,
         html body .content.content-archive .archive-list .summary .summary-dates {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
         html body .content.content-archive .archive-list .summary .summary-dates {
@@ -10075,8 +10077,8 @@ html {
             margin-right: 0; } }
         html body .content.content-archives .shortcode .shortcode-title {
           display: inline;
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archives .shortcode .shortcode-title {
               padding-top: 1.25em; } }
@@ -10102,8 +10104,8 @@ html {
             html body .content.content-archives .shortcode .shortcode-title {
               padding-right: 2.5em; } }
         html body .content.content-archives .shortcode .shortcode-body {
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archives .shortcode .shortcode-body {
               padding-top: 2.5em; } }
@@ -10136,8 +10138,8 @@ html {
             flex-wrap: wrap; }
         html body .content.content-archives .summary .summary-link-to-topic,
         html body .content.content-archives .summary .summary-dates {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
         html body .content.content-archives .summary .summary-dates {
@@ -10241,8 +10243,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-none .post .sticky {
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
         html body .content.content-none .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -10270,8 +10272,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post .post-featured-image figure figcaption,
           html body .content.content-none .post .post-featured-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -10336,19 +10338,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -10378,13 +10380,13 @@ html {
             line-height: 1.1; }
           html body .content.content-none .post .post-content .text a,
           html body .content.content-none .post .post-content .text .link {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: black;
-            background-color: white; }
+            color: white;
+            background-color: black; }
             html body .content.content-none .post .post-content .text a:hover, html body .content.content-none .post .post-content .text a:active,
             html body .content.content-none .post .post-content .text .link:hover,
             html body .content.content-none .post .post-content .text .link:active {
@@ -10692,7 +10694,7 @@ html {
             html body .content.content-none .post .post-content .text figure .link,
             html body .content.content-none .post .post-content .text .wp-caption a,
             html body .content.content-none .post .post-content .text .wp-caption .link {
-              color: black;
+              color: white;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -10721,8 +10723,8 @@ html {
             html body .content.content-none .post .post-content .text .wp-caption .figcaption,
             html body .content.content-none .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-none .post .post-content .text .wp-caption .gallery-caption {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -10750,8 +10752,8 @@ html {
               html body .content.content-none .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-none .post .post-content .text .wp-caption .gallery-caption a {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -11314,8 +11316,8 @@ html {
               max-width: 100%; }
             html body .content.content-none .post .post-content .text .gallery figure figcaption,
             html body .content.content-none .post .post-content .text .gallery figure .wp-caption-text {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -11351,19 +11353,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -11478,19 +11480,19 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-none .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                   -webkit-transform: rotate(0deg);
                           transform: rotate(0deg); }
@@ -11536,8 +11538,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-none .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -11758,8 +11760,8 @@ html {
             max-width: 100%; }
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-none .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -11794,8 +11796,8 @@ html {
           html body .content.content-none .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-none .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
-          background-color: black; }
+          color: black;
+          background-color: white; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -11808,8 +11810,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-none .post.post-format-aside .post__content .post-content .text {
-            color: white;
-            background-color: black; }
+            color: black;
+            background-color: white; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-none .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -11890,19 +11892,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-none .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -11935,14 +11937,13 @@ html {
               -ms-flex-order: 2;
                   order: 2; }
         html body .content.content-none .post.post-format-quote .post__content .post-content {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
           padding: 0;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-none .post.post-format-quote .post__content .post-content .text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -12051,8 +12052,8 @@ html {
               margin-right: 0; } }
           html body .content.content-none .post.post-format-chat .post__content .post-content .text p {
             border: 0.07812em solid;
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -12300,13 +12301,13 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: black;
-                background-color: white; }
+                color: white;
+                background-color: black; }
                 html body .content.content-none .post.post-format-comment .comment-content .text a:hover, html body .content.content-none .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-none .post.post-format-comment .comment-content .text .link:active,
@@ -13028,7 +13029,7 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: black;
+                  color: white;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -13105,8 +13106,8 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   font-size: 0.8em;
                   line-height: 1.5;
                   display: inline-block; }
@@ -13182,8 +13183,8 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: black;
-                    background-color: white;
+                    color: white;
+                    background-color: black;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -14091,27 +14092,27 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-none .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
                 html body .content.content-none .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
@@ -14174,8 +14175,8 @@ html {
                     margin-right: 0; } }
           html body .content.content-none .post.post-format-comment .comment-date-and-time,
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5; }
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
@@ -14214,19 +14215,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -14460,8 +14461,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-single .post .sticky {
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
         html body .content.content-single .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -14489,8 +14490,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post .post-featured-image figure figcaption,
           html body .content.content-single .post .post-featured-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -14555,19 +14556,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -14597,13 +14598,13 @@ html {
             line-height: 1.1; }
           html body .content.content-single .post .post-content .text a,
           html body .content.content-single .post .post-content .text .link {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: black;
-            background-color: white; }
+            color: white;
+            background-color: black; }
             html body .content.content-single .post .post-content .text a:hover, html body .content.content-single .post .post-content .text a:active,
             html body .content.content-single .post .post-content .text .link:hover,
             html body .content.content-single .post .post-content .text .link:active {
@@ -14911,7 +14912,7 @@ html {
             html body .content.content-single .post .post-content .text figure .link,
             html body .content.content-single .post .post-content .text .wp-caption a,
             html body .content.content-single .post .post-content .text .wp-caption .link {
-              color: black;
+              color: white;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -14940,8 +14941,8 @@ html {
             html body .content.content-single .post .post-content .text .wp-caption .figcaption,
             html body .content.content-single .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .post .post-content .text .wp-caption .gallery-caption {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -14969,8 +14970,8 @@ html {
               html body .content.content-single .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .post .post-content .text .wp-caption .gallery-caption a {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -15533,8 +15534,8 @@ html {
               max-width: 100%; }
             html body .content.content-single .post .post-content .text .gallery figure figcaption,
             html body .content.content-single .post .post-content .text .gallery figure .wp-caption-text {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -15570,19 +15571,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -15697,19 +15698,19 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-single .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                   -webkit-transform: rotate(0deg);
                           transform: rotate(0deg); }
@@ -15755,8 +15756,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-single .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -15977,8 +15978,8 @@ html {
             max-width: 100%; }
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-single .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -16013,8 +16014,8 @@ html {
           html body .content.content-single .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-single .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
-          background-color: black; }
+          color: black;
+          background-color: white; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -16027,8 +16028,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-single .post.post-format-aside .post__content .post-content .text {
-            color: white;
-            background-color: black; }
+            color: black;
+            background-color: white; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-single .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -16109,19 +16110,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-single .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -16154,14 +16155,13 @@ html {
               -ms-flex-order: 2;
                   order: 2; }
         html body .content.content-single .post.post-format-quote .post__content .post-content {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
           padding: 0;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-single .post.post-format-quote .post__content .post-content .text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -16270,8 +16270,8 @@ html {
               margin-right: 0; } }
           html body .content.content-single .post.post-format-chat .post__content .post-content .text p {
             border: 0.07812em solid;
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -16519,13 +16519,13 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: black;
-                background-color: white; }
+                color: white;
+                background-color: black; }
                 html body .content.content-single .post.post-format-comment .comment-content .text a:hover, html body .content.content-single .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-single .post.post-format-comment .comment-content .text .link:active,
@@ -17247,7 +17247,7 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: black;
+                  color: white;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -17324,8 +17324,8 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   font-size: 0.8em;
                   line-height: 1.5;
                   display: inline-block; }
@@ -17401,8 +17401,8 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: black;
-                    background-color: white;
+                    color: white;
+                    background-color: black;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18310,27 +18310,27 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-single .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
                 html body .content.content-single .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
@@ -18393,8 +18393,8 @@ html {
                     margin-right: 0; } }
           html body .content.content-single .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5; }
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
@@ -18433,19 +18433,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -18644,8 +18644,8 @@ html {
         html body .content.content-single .post-footer .edit-link {
           display: block; }
         html body .content.content-single .post-footer a {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -18736,19 +18736,19 @@ html {
               height: 0;
               border-style: solid;
               border-width: 0.625em 0 0.625em 0.625em;
-              border-color: transparent transparent transparent black; }
+              border-color: transparent transparent transparent white; }
               html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--right {
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
               html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--left {
                 border-width: 0.625em 0.625em 0.625em 0;
-                border-color: transparent black transparent transparent; }
+                border-color: transparent white transparent transparent; }
               html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--top {
                 border-width: 0 0.625em 0.625em 0.625em;
-                border-color: transparent transparent black transparent; }
+                border-color: transparent transparent white transparent; }
               html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle__triangle--bottom {
                 border-width: 0.625em 0.625em 0 0.625em;
-                border-color: black transparent transparent transparent; }
+                border-color: white transparent transparent transparent; }
             html body .content.content-single .comments .comments-title .arrows .arrow-with-triangle--right {
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg); }
@@ -18826,13 +18826,13 @@ html {
             line-height: 1.1; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text a,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .link {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: black;
-            background-color: white; }
+            color: white;
+            background-color: black; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text a:hover, html body .content.content-single .comments .comments-body .comment .comment-content .text a:active,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:hover,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .link:active {
@@ -19140,7 +19140,7 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text figure .link,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption a,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .link {
-              color: black;
+              color: white;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -19169,8 +19169,8 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .figcaption,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .wp-caption-text,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -19198,8 +19198,8 @@ html {
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .wp-caption-text a,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption .link,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .wp-caption .gallery-caption a {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -19667,8 +19667,8 @@ html {
               html body .content.content-single .archive-list--terms .archive-list-body .term, html body .content.content-single .archive-list--topics .archive-list-body .term {
                 margin-left: 0; } }
             html body .content.content-single .archive-list--terms .archive-list-body .term .link, html body .content.content-single .archive-list--topics .archive-list-body .term .link {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               text-decoration: none;
               will-change: text-decoration;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -19682,8 +19682,8 @@ html {
             flex-wrap: wrap; }
         html body .content.content-single .archive-list .summary .summary-link-to-topic,
         html body .content.content-single .archive-list .summary .summary-dates {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           font-size: 0.8em;
           line-height: 1.5; }
         html body .content.content-single .archive-list .summary .summary-dates {
@@ -19812,8 +19812,8 @@ html {
             width: 3.75em;
             padding: 0.3125em 0 0.3125em 0.625em; }
         html body .content.content-page .post .sticky {
-          color: black;
-          background-color: white; }
+          color: white;
+          background-color: black; }
         html body .content.content-page .post .post-title .text {
           font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
@@ -19841,8 +19841,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post .post-featured-image figure figcaption,
           html body .content.content-page .post .post-featured-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -19907,19 +19907,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -19949,13 +19949,13 @@ html {
             line-height: 1.1; }
           html body .content.content-page .post .post-content .text a,
           html body .content.content-page .post .post-content .text .link {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             text-decoration: underline;
             will-change: text-decoration;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            color: black;
-            background-color: white; }
+            color: white;
+            background-color: black; }
             html body .content.content-page .post .post-content .text a:hover, html body .content.content-page .post .post-content .text a:active,
             html body .content.content-page .post .post-content .text .link:hover,
             html body .content.content-page .post .post-content .text .link:active {
@@ -20263,7 +20263,7 @@ html {
             html body .content.content-page .post .post-content .text figure .link,
             html body .content.content-page .post .post-content .text .wp-caption a,
             html body .content.content-page .post .post-content .text .wp-caption .link {
-              color: black;
+              color: white;
               background-color: transparent;
               text-decoration: underline;
               will-change: text-decoration;
@@ -20292,8 +20292,8 @@ html {
             html body .content.content-page .post .post-content .text .wp-caption .figcaption,
             html body .content.content-page .post .post-content .text .wp-caption .wp-caption-text,
             html body .content.content-page .post .post-content .text .wp-caption .gallery-caption {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -20321,8 +20321,8 @@ html {
               html body .content.content-page .post .post-content .text .wp-caption .wp-caption-text a,
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption .link,
               html body .content.content-page .post .post-content .text .wp-caption .gallery-caption a {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -20885,8 +20885,8 @@ html {
               max-width: 100%; }
             html body .content.content-page .post .post-content .text .gallery figure figcaption,
             html body .content.content-page .post .post-content .text .gallery figure .wp-caption-text {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -20922,19 +20922,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -21049,19 +21049,19 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-page .post.post-format-link .post__content .post-title .link .arrow-with-triangle--right {
                   -webkit-transform: rotate(0deg);
                           transform: rotate(0deg); }
@@ -21107,8 +21107,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure figcaption,
           html body .content.content-page .post.post-format-image .post__content .post-first-image figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -21329,8 +21329,8 @@ html {
             max-width: 100%; }
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure figcaption,
           html body .content.content-page .post.post-format-gallery .post__content .post-gallery .gallery figure .wp-caption-text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5;
             display: inline-block; }
@@ -21365,8 +21365,8 @@ html {
           html body .content.content-page .post.post-format-audio .post__content .post-content {
             margin-right: 0; } }
         html body .content.content-page .post.post-format-audio .post__content .post-content .mejs-horizontal-volume-slider {
-          color: white;
-          background-color: black; }
+          color: black;
+          background-color: white; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post.post-format-video .post__content .post-content .text iframe {
             height: auto; } }
@@ -21379,8 +21379,8 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column; }
           html body .content.content-page .post.post-format-aside .post__content .post-content .text {
-            color: white;
-            background-color: black; }
+            color: black;
+            background-color: white; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-page .post.post-format-aside .post__content .post-content .text {
                 padding-top: 2.5em; } }
@@ -21461,19 +21461,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-page .post.post-format-status .post__content .post-author-linking-to-post .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -21506,14 +21506,13 @@ html {
               -ms-flex-order: 2;
                   order: 2; }
         html body .content.content-page .post.post-format-quote .post__content .post-content {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
           padding: 0;
           -webkit-box-ordinal-group: 2;
               -ms-flex-order: 1;
                   order: 1; }
           html body .content.content-page .post.post-format-quote .post__content .post-content .text {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             border: 0.07812em solid;
             -webkit-transform: translateX(-2.5em) skew(5deg);
                     transform: translateX(-2.5em) skew(5deg); }
@@ -21622,8 +21621,8 @@ html {
               margin-right: 0; } }
           html body .content.content-page .post.post-format-chat .post__content .post-content .text p {
             border: 0.07812em solid;
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             -webkit-transform: translateX(0.625em) skew(5deg);
                     transform: translateX(0.625em) skew(5deg);
             max-width: 70%; }
@@ -21871,13 +21870,13 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text .link,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text a,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .link {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 text-decoration: underline;
                 will-change: text-decoration;
                 transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-                color: black;
-                background-color: white; }
+                color: white;
+                background-color: black; }
                 html body .content.content-page .post.post-format-comment .comment-content .text a:hover, html body .content.content-page .post.post-format-comment .comment-content .text a:active,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:hover,
                 html body .content.content-page .post.post-format-comment .comment-content .text .link:active,
@@ -22599,7 +22598,7 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text figure .link,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption a,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .link {
-                  color: black;
+                  color: white;
                   background-color: transparent;
                   text-decoration: underline;
                   will-change: text-decoration;
@@ -22676,8 +22675,8 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .figcaption,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   font-size: 0.8em;
                   line-height: 1.5;
                   display: inline-block; }
@@ -22753,8 +22752,8 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .wp-caption-text a,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption .link,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .wp-caption .gallery-caption a {
-                    color: black;
-                    background-color: white;
+                    color: white;
+                    background-color: black;
                     text-decoration: underline;
                     will-change: text-decoration;
                     transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -23662,27 +23661,27 @@ html {
                   height: 0;
                   border-style: solid;
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                   html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--right,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--right {
                     border-width: 0.625em 0 0.625em 0.625em;
-                    border-color: transparent transparent transparent black; }
+                    border-color: transparent transparent transparent white; }
                   html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--left,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--left {
                     border-width: 0.625em 0.625em 0.625em 0;
-                    border-color: transparent black transparent transparent; }
+                    border-color: transparent white transparent transparent; }
                   html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--top,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--top {
                     border-width: 0 0.625em 0.625em 0.625em;
-                    border-color: transparent transparent black transparent; }
+                    border-color: transparent transparent white transparent; }
                   html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle__triangle--bottom,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle__triangle--bottom {
                     border-width: 0.625em 0.625em 0 0.625em;
-                    border-color: black transparent transparent transparent; }
+                    border-color: white transparent transparent transparent; }
                 html body .content.content-page .post.post-format-comment .comment-content .read-more .link .arrow-with-triangle--right,
                 html body .content.content-page .post.post-format-comment .comment-excerpt .read-more .link .arrow-with-triangle--right,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .read-more .link .arrow-with-triangle--right {
@@ -23745,8 +23744,8 @@ html {
                     margin-right: 0; } }
           html body .content.content-page .post.post-format-comment .comment-date-and-time,
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
+            color: white;
+            background-color: black;
             font-size: 0.8em;
             line-height: 1.5; }
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
@@ -23785,19 +23784,19 @@ html {
                 height: 0;
                 border-style: solid;
                 border-width: 0.625em 0 0.625em 0.625em;
-                border-color: transparent transparent transparent black; }
+                border-color: transparent transparent transparent white; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--right {
                   border-width: 0.625em 0 0.625em 0.625em;
-                  border-color: transparent transparent transparent black; }
+                  border-color: transparent transparent transparent white; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--left {
                   border-width: 0.625em 0.625em 0.625em 0;
-                  border-color: transparent black transparent transparent; }
+                  border-color: transparent white transparent transparent; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--top {
                   border-width: 0 0.625em 0.625em 0.625em;
-                  border-color: transparent transparent black transparent; }
+                  border-color: transparent transparent white transparent; }
                 html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle__triangle--bottom {
                   border-width: 0.625em 0.625em 0 0.625em;
-                  border-color: black transparent transparent transparent; }
+                  border-color: white transparent transparent transparent; }
               html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows .arrow-with-triangle--right {
                 -webkit-transform: rotate(0deg);
                         transform: rotate(0deg); }
@@ -23992,8 +23991,8 @@ html {
         html body .breadcrumb .ul .li {
           margin-bottom: 0.625em; } }
       html body .breadcrumb .ul .li .link {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: black;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24005,21 +24004,20 @@ html {
         height: 0;
         border-style: solid;
         border-width: 0.3125em 0 0.3125em 0.3125em;
-        border-color: transparent transparent transparent black; }
+        border-color: transparent transparent transparent white; }
         html body .breadcrumb .ul .li .triangle--right {
           border-width: 0.3125em 0 0.3125em 0.3125em;
-          border-color: transparent transparent transparent black; }
+          border-color: transparent transparent transparent white; }
         html body .breadcrumb .ul .li .triangle--left {
           border-width: 0.3125em 0.3125em 0.3125em 0;
-          border-color: transparent black transparent transparent; }
+          border-color: transparent white transparent transparent; }
         html body .breadcrumb .ul .li .triangle--top {
           border-width: 0 0.3125em 0.3125em 0.3125em;
-          border-color: transparent transparent black transparent; }
+          border-color: transparent transparent white transparent; }
         html body .breadcrumb .ul .li .triangle--bottom {
           border-width: 0.3125em 0.3125em 0 0.3125em;
-          border-color: black transparent transparent transparent; }
+          border-color: white transparent transparent transparent; }
     html body .sidebar {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -24121,8 +24119,8 @@ html {
         html body .footer {
           padding-bottom: 2.5em; } }
       html body .footer .footer-copyright .link {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: black;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24172,8 +24170,8 @@ html {
           margin-bottom: 0.625em;
           padding-bottom: 0.625em; }
         html body .footer .footer-navigation ul li a {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: none;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24189,8 +24187,8 @@ html {
       html body .footer .footer-credits {
         margin-top: 1.25em; }
         html body .footer .footer-credits .link {
-          color: black;
-          background-color: white;
+          color: white;
+          background-color: black;
           text-decoration: underline;
           will-change: text-decoration;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24199,8 +24197,8 @@ html {
     html body .footer-navigation ul li.current-menu-item a {
       text-decoration: line-through; }
     html body .widget {
-      color: black;
-      background-color: white;
+      color: white;
+      background-color: black;
       border: 1px solid; }
       @media only screen and (max-width: 767.9px) {
         html body .widget {
@@ -24228,8 +24226,8 @@ html {
           padding-right: 2.5em; } }
       html body .widget a,
       html body .widget .link {
-        color: black;
-        background-color: white;
+        color: white;
+        background-color: black;
         text-decoration: underline;
         will-change: text-decoration;
         transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -24242,8 +24240,8 @@ html {
       html body .widget.widget_calendar .calendar_wrap {
         overflow-x: auto; }
       html body .widget.widget_media_audio .mejs-horizontal-volume-slider {
-        color: white;
-        background-color: black; }
+        color: black;
+        background-color: white; }
       html body .widget.widget_log_lolla_archives_widget .widget-title {
         border: 1px solid; }
         @media only screen and (max-width: 767.9px) {
@@ -24546,8 +24544,8 @@ html {
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text {
-                  color: black;
-                  background-color: white;
+                  color: white;
+                  background-color: black;
                   font-size: 0.8em;
                   line-height: 1.5;
                   display: inline-block; }
@@ -24724,8 +24722,8 @@ html {
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text {
-                color: black;
-                background-color: white;
+                color: white;
+                background-color: black;
                 font-size: 0.8em;
                 line-height: 1.5;
                 display: inline-block; }
@@ -24967,8 +24965,8 @@ html {
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar .wp-caption-text,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure figcaption,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure .wp-caption-text {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
@@ -25081,8 +25079,8 @@ html {
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar .wp-caption-text,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure figcaption,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure .wp-caption-text {
-              color: black;
-              background-color: white;
+              color: white;
+              background-color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }

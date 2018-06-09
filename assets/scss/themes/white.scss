@@ -1,17 +1,26 @@
 /**
  * The default skin
  *
- * Sets up color schemes, image assets, fonts and more
+ * - black on white
+ * - minimalist and brutalist look
+ *
+ * Enabling a skin / theme is done in `style.scss`
+ * Example: `@import 'assets/scss/themes/white.scss';`
+ *
  */
-
 
 
 /**
  * Colors
  */
+
+// Default colors
+//
 $background-color: white;
 $text-color: black;
 
+// Post format colors
+//
 $post-format-status-background-color: '';
 $post-format-status-text-color: '';
 
@@ -29,8 +38,17 @@ $post-format-standard-text-color: '';
 /**
  * Fonts
  */
+
+// For text
+//
 $body-font: 'nimbus-sans';
+
+// For code inside text
+//
 $monospace-font:'nimbus-mono';
+
+// For site title (only used there)
+//
 $title-font: 'nimbus-mono';
 
 
@@ -39,16 +57,25 @@ $title-font: 'nimbus-mono';
  * Typography
  *
  */
- $lem: 1.25em;
 
- $line-height: 1.5;
- $line-height-larger: 1.8;
- $line-height-smaller: 1.1;
+// The basic spacing unit
+// - Every `padding` and `margin` will use this
+$lem: 1.25em;
 
- $letter-spacing: 1.25px;
- $letter-spacing-larger: 2.5px;
+// The scale for bigger and smaller font sizes
+// - http://www.modularscale.com/
+$scale: 'major-third';
 
- $scale: 'major-third';
+// Different line heights for different text types
+//
+$line-height: 1.5;
+$line-height-larger: 1.8;
+$line-height-smaller: 1.1;
+
+// Different letter spacings for different text types
+$letter-spacing: 1.25px;
+$letter-spacing-larger: 2.5px;
+
 
 
 
@@ -56,13 +83,24 @@ $title-font: 'nimbus-mono';
   * Layout
   *
   */
- $top: $lem * 2;
- $left: $lem * 2;
- $top-mobile: $lem * 2;
- $left-mobile: $lem;
- $text-block-width: $lem * 30;
 
- $home-grid-columns: 'false';
+// We have a `margin()` and a `padding()` mixin
+// - by using that mixin we can have a responsive spacing throughout the site
+// - $top, $left are used from mobile and up (tablets, laptops, desktops)
+// - $top-mobile, $left-mobile are used on mobile screens
+$top: $lem * 2;
+$left: $lem * 2;
+$top-mobile: $lem * 2;
+$left-mobile: $lem;
+
+// The width of a post
+//
+$text-block-width: $lem * 30;
+
+// Display homepage posts
+// - `false` - in a single column
+// - `true` - in multiple columns
+$home-grid-columns: 'false';
 
 
 
@@ -70,17 +108,39 @@ $title-font: 'nimbus-mono';
  * Decorations
  *
  */
- $cursor-color: 'white';
 
- $border-normal: 1px solid;
- $border-thin: $lem / 16 solid;
- $border-thick: $lem / 8 solid;
+// Cursor color
+// - cursors can be found in the `assets/images` folder
+// - this is the suffix which will be appended to the cursor name
+// - for example `white` will load the `brutalist_line_SVGicon_cursor1-64x64--white.png` cursor
+$cursor-color: 'white';
 
- $figure-background-pattern: '';
- $figure-background-pattern-color: '';
+// Border size
+// - borders are the main design element of the theme
+// - here you can seriously alter the look and feel of the site
+$border-normal: 1px solid;
+$border-thin: $lem / 16 solid;
+$border-thick: $lem / 8 solid;
 
- $quote-pattern: 'dotted';
- $quote-pattern-color: 'white';
+// Background patterns
+// - there is the `background-pattern()` mixin which defines background images
+// - patterns are created with http://patternify.com/
+// - by adding a suffix you can change the pattern
+// - for example: `dotted-black` will use the `background-pattern--dotted-black` mixin
+//
 
- $sidebar-pattern: 'horizontal-lines';
- $sidebar-pattern-color: 'white';
+// The background pattern / color of an image (`<figure>`)
+//
+$figure-background-pattern: '';
+$figure-background-pattern-color: '';
+
+// The background pattern / color of a blockquote
+//
+$quote-pattern: 'dotted';
+$quote-pattern-color: 'white';
+
+
+// The background pattern / color of the sidebar
+//
+$sidebar-pattern: 'horizontal-lines';
+$sidebar-pattern-color: 'white';
