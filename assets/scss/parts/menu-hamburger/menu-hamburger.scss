@@ -1,5 +1,5 @@
 @mixin menu-hamburger {
-  @include cursor('brutalist_line_SVGicon_cursor2-64x64', -10, 0);
+  @include cursor(pointer);
 
   .hamburger-icon {
     @include colors(text-color-on-transparent);

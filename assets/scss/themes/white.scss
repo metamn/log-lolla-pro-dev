@@ -109,11 +109,11 @@ $home-grid-columns: 'false';
  *
  */
 
-// Cursor color
+// Cursors
 // - cursors can be found in the `assets/images` folder
-// - this is the suffix which will be appended to the cursor name
-// - for example `white` will load the `brutalist_line_SVGicon_cursor1-64x64--white.png` cursor
-$cursor-color: 'white';
+$cursor-default: 'brutalist_line_SVGicon_cursor1-64x64--white';
+$cursor-pointer: 'brutalist_line_SVGicon_cursor2-64x64--white';
+
 
 // Border size
 // - borders are the main design element of the theme

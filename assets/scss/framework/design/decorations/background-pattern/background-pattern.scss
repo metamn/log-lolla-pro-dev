@@ -1,3 +1,10 @@
+// Background patter
+//
+// Small images used as background
+// Images are created with http://www.patternify.com/
+// With `$pattern-color` theming is enabled
+// 
+//
 @mixin background-pattern($pattern, $pattern-color: 'white') {
   @if ($pattern == 'dotted') {
     @if ($pattern-color == 'white') {

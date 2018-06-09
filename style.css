@@ -744,7 +744,7 @@ html {
       will-change: all;
       transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
       html body a:hover {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
     html body > * {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -810,7 +810,10 @@ html {
         color: black;
         background-color: white; }
       html body .header .menu-hamburger {
-        cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+        will-change: all;
+        transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+        html body .header .menu-hamburger:hover {
+          cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
         html body .header .menu-hamburger .hamburger-icon {
           color: black;
           background-color: transparent; }
@@ -9751,7 +9754,10 @@ html {
                     -ms-flex-pack: center;
                         justify-content: center; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram--activable {
-                cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") -10 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
+                will-change: all;
+                transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
+                html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram--activable:hover {
+                  cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 0 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), auto; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number .number {
                 font-size: 1.953em;
                 letter-spacing: 0.625em;

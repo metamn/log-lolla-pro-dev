@@ -9,10 +9,13 @@ html {
     @include form;
     @include text-style(default);
 
-    @include cursor('brutalist_line_SVGicon_cursor1-64x64');
-    @include cursor--hover('a', 'brutalist_line_SVGicon_cursor2-64x64', -10, 0);
+    @include cursor;
+    a {
+      @include cursor(pointer);
+    }
 
     @include all__grid;
+
 
     .header {
       @include header;
