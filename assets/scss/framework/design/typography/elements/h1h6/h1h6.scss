@@ -5,7 +5,6 @@
   h4,
   h5,
   h6 {
-    @include text-style(h1h6);
-    line-height: $line-height-smaller;
+    @include text-style(headline-title);
   }
 }

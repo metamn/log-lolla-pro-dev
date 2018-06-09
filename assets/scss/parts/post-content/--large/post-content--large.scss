@@ -1,5 +1,5 @@
 @mixin post-content--large {
   .text {
-    @include text-style(larger);
+    @include text-style(large);
   }
 }

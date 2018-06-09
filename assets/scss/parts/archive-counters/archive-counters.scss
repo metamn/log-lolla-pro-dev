@@ -17,7 +17,7 @@
 
     .arrow-with-triangle {
       @include arrow-with-triangle;
-      @include text-style(figcaption);
+      @include text-style(small);
     }
   }
 

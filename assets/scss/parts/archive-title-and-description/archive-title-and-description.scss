@@ -15,8 +15,7 @@
     flex-direction: column;
 
     .archive-title {
-      @include text-style(h1h6);
-      letter-spacing: $letter-spacing;
+      @include text-style(headline);
     }
   }
 }

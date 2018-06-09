@@ -4,7 +4,7 @@
 
   .summary-link-to-topic,
   .summary-dates {
-    @include text-style(figcaption);
+    @include text-style(small);
   }
 
   .summary-dates {

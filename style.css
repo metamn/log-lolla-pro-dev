@@ -662,13 +662,6 @@ html {
           font-weight: normal;
           font-style: normal;
           font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
-      html body .header .header-subtitle .text {
-        font-weight: normal;
-        font-style: normal;
-        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-        word-wrap: break-word;
-        color: black;
-        background-color: white; }
       html body .header .menu-hamburger {
         will-change: all;
         transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946); }
@@ -965,11 +958,6 @@ html {
       html body .content.content-home .post .sticky {
         color: black;
         background-color: white; }
-      html body .content.content-home .post .post-title .text {
-        font-weight: normal;
-        font-style: normal;
-        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-        word-wrap: break-word; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post .post-permalink {
           padding-bottom: 2.5em; } }
@@ -4896,10 +4884,7 @@ html {
                   margin-right: 0; } }
         html body .content.content-home .post.post-format-comment .comment-date-and-time,
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
         html body .content.content-home .post.post-format-comment .comment-post-title-with-arrows {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -5215,11 +5200,6 @@ html {
       html body .content.content-archive .post .sticky {
         color: black;
         background-color: white; }
-      html body .content.content-archive .post .post-title .text {
-        font-weight: normal;
-        font-style: normal;
-        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-        word-wrap: break-word; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archive .post .post-permalink {
           padding-bottom: 2.5em; } }
@@ -9146,10 +9126,7 @@ html {
                   margin-right: 0; } }
         html body .content.content-archive .post.post-format-comment .comment-date-and-time,
         html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows {
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
         html body .content.content-archive .post.post-format-comment .comment-post-title-with-arrows {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -9483,10 +9460,7 @@ html {
             margin-right: 0; } }
         html body .content.content-archive .archive-header .breadcrumb {
           border-bottom: 1px solid;
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-header .breadcrumb {
               padding-top: 1.25em; } }
@@ -9561,9 +9535,7 @@ html {
                 -ms-flex-direction: column;
                     flex-direction: column; }
             html body .content.content-archive .archive-header .archive-title-and-description .archive-text .archive-title {
-              font-size: 1.953em;
-              letter-spacing: 0.625em;
-              letter-spacing: 1.25px; }
+              font-size: 1.953em; }
         html body .content.content-archive .archive-header .archive-counters {
           border-top: 1px solid; }
           @media only screen and (max-width: 767.9px) {
@@ -9619,9 +9591,7 @@ html {
                 html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram--activable:hover {
                   cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .pictogram__number .number {
-                font-size: 1.953em;
-                letter-spacing: 0.625em;
-                letter-spacing: 1.25px; }
+                font-size: 1.953em; }
             html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -9637,10 +9607,7 @@ html {
               width: 3.75em;
               -webkit-transform: rotate(0deg);
                       transform: rotate(0deg);
-              color: black;
-              background-color: white;
-              font-size: 0.8em;
-              line-height: 1.5; }
+              font-size: 0.8em; }
               html body .content.content-archive .archive-header .archive-counters .archive-counter .arrow-with-triangle__line {
                 width: calc(3.125em);
                 border-bottom: 1px solid; }
@@ -9805,10 +9772,7 @@ html {
             flex-wrap: wrap; }
         html body .content.content-archive .archive-list .summary .summary-link-to-topic,
         html body .content.content-archive .archive-list .summary .summary-dates {
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
         html body .content.content-archive .archive-list .summary .summary-dates {
           display: none; }
         html body .content.content-archive .archive-list .summary .summary-link-to-topic {
@@ -10007,10 +9971,7 @@ html {
             flex-wrap: wrap; }
         html body .content.content-archives .summary .summary-link-to-topic,
         html body .content.content-archives .summary .summary-dates {
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
         html body .content.content-archives .summary .summary-dates {
           display: none; }
         html body .content.content-archives .summary .summary-link-to-topic {
@@ -10114,11 +10075,6 @@ html {
         html body .content.content-none .post .sticky {
           color: black;
           background-color: white; }
-        html body .content.content-none .post .post-title .text {
-          font-weight: normal;
-          font-style: normal;
-          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-          word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post .post-permalink {
             padding-bottom: 2.5em; } }
@@ -14045,10 +14001,7 @@ html {
                     margin-right: 0; } }
           html body .content.content-none .post.post-format-comment .comment-date-and-time,
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
-            font-size: 0.8em;
-            line-height: 1.5; }
+            font-size: 0.8em; }
           html body .content.content-none .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -14192,7 +14145,8 @@ html {
             max-width: none; } }
         html body .content.content-none .post .post-title .text {
           font-size: 1.953em;
-          letter-spacing: 0.625em; }
+          letter-spacing: 0.625em;
+          line-height: 1.1; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post .post-title {
             margin-bottom: 2.5em; } }
@@ -14333,11 +14287,6 @@ html {
         html body .content.content-single .post .sticky {
           color: black;
           background-color: white; }
-        html body .content.content-single .post .post-title .text {
-          font-weight: normal;
-          font-style: normal;
-          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-          word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post .post-permalink {
             padding-bottom: 2.5em; } }
@@ -18264,10 +18213,7 @@ html {
                     margin-right: 0; } }
           html body .content.content-single .post.post-format-comment .comment-date-and-time,
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
-            font-size: 0.8em;
-            line-height: 1.5; }
+            font-size: 0.8em; }
           html body .content.content-single .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -18411,7 +18357,8 @@ html {
             max-width: none; } }
         html body .content.content-single .post .post-title .text {
           font-size: 1.953em;
-          letter-spacing: 0.625em; }
+          letter-spacing: 0.625em;
+          line-height: 1.1; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post .post-title {
             margin-bottom: 2.5em; } }
@@ -19553,10 +19500,7 @@ html {
             flex-wrap: wrap; }
         html body .content.content-single .archive-list .summary .summary-link-to-topic,
         html body .content.content-single .archive-list .summary .summary-dates {
-          color: black;
-          background-color: white;
-          font-size: 0.8em;
-          line-height: 1.5; }
+          font-size: 0.8em; }
         html body .content.content-single .archive-list .summary .summary-dates {
           display: none; }
         html body .content.content-single .archive-list .summary .summary-link-to-topic {
@@ -19685,11 +19629,6 @@ html {
         html body .content.content-page .post .sticky {
           color: black;
           background-color: white; }
-        html body .content.content-page .post .post-title .text {
-          font-weight: normal;
-          font-style: normal;
-          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
-          word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post .post-permalink {
             padding-bottom: 2.5em; } }
@@ -23616,10 +23555,7 @@ html {
                     margin-right: 0; } }
           html body .content.content-page .post.post-format-comment .comment-date-and-time,
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
-            color: black;
-            background-color: white;
-            font-size: 0.8em;
-            line-height: 1.5; }
+            font-size: 0.8em; }
           html body .content.content-page .post.post-format-comment .comment-post-title-with-arrows {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -23763,7 +23699,8 @@ html {
             max-width: none; } }
         html body .content.content-page .post .post-title .text {
           font-size: 1.953em;
-          letter-spacing: 0.625em; }
+          letter-spacing: 0.625em;
+          line-height: 1.1; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post .post-title {
             margin-bottom: 2.5em; } }

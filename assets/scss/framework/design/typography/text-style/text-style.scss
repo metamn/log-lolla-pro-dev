@@ -32,21 +32,17 @@
     }
   }
 
-
-  // Body text
-  // - Settings for text blocks.
-  @if ($variant == 'body-text') {
-    @include p;
-    max-width: $text-block-width;
-  }
-
-
-  // Body text large
-  // - Settings for larger text inside a text block
-  @if ($variant == 'larger') {
+  // Large text
+  // - Text larger with a scale
+  @if ($variant == 'large') {
     @include scale(large-1);
   }
 
+  // Small text
+  // - Text smaller with a scale
+  @if ($variant == 'small') {
+    @include scale(small-1);
+  }
 
   // Site title
   // - The title of the site
@@ -54,19 +50,18 @@
     @include font(site-title);
   }
 
-
-  // Title
-  // - The title of an article
-  @if ($variant == 'title') {
-    @include font(default);
-    @include word-wrap;
+  // Headline
+  // - Large text
+  @if ($variant == 'headline') {
+    @include scale(large-3);
   }
 
-
-  // H1 - H6
-  @if ($variant == 'h1h6') {
+  // Headline with large spacing
+  // - Large text with extra large spacing
+  @if ($variant == 'headline-title') {
     @include scale(large-3);
-    letter-spacing: $lem / 2;
+    letter-spacing: $letter-spacing-extra-large;
+    line-height: $line-height-smaller;
   }
 
   // Section title
