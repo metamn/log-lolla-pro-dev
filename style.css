@@ -1583,6 +1583,36 @@ html {
             font-weight: normal;
             font-style: normal;
             font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+        html body .content.content-home .post .post-content .text em,
+        html body .content.content-home .post .post-content .text i,
+        html body .content.content-home .post .post-content .text .em,
+        html body .content.content-home .post .post-content .text .i {
+          font-weight: normal;
+          font-style: normal;
+          font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-home .post .post-content .text em b,
+          html body .content.content-home .post .post-content .text em strong,
+          html body .content.content-home .post .post-content .text em .strong,
+          html body .content.content-home .post .post-content .text em .b,
+          html body .content.content-home .post .post-content .text em .bold,
+          html body .content.content-home .post .post-content .text i b,
+          html body .content.content-home .post .post-content .text i strong,
+          html body .content.content-home .post .post-content .text i .strong,
+          html body .content.content-home .post .post-content .text i .b,
+          html body .content.content-home .post .post-content .text i .bold,
+          html body .content.content-home .post .post-content .text .em b,
+          html body .content.content-home .post .post-content .text .em strong,
+          html body .content.content-home .post .post-content .text .em .strong,
+          html body .content.content-home .post .post-content .text .em .b,
+          html body .content.content-home .post .post-content .text .em .bold,
+          html body .content.content-home .post .post-content .text .i b,
+          html body .content.content-home .post .post-content .text .i strong,
+          html body .content.content-home .post .post-content .text .i .strong,
+          html body .content.content-home .post .post-content .text .i .b,
+          html body .content.content-home .post .post-content .text .i .bold {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
         html body .content.content-home .post .post-content .text table,
         html body .content.content-home .post .post-content .text .table {
           border-collapse: collapse; }
@@ -4201,6 +4231,84 @@ html {
                 font-weight: normal;
                 font-style: normal;
                 font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-home .post.post-format-comment .comment-content .text em,
+            html body .content.content-home .post.post-format-comment .comment-content .text i,
+            html body .content.content-home .post.post-format-comment .comment-content .text .em,
+            html body .content.content-home .post.post-format-comment .comment-content .text .i,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .text em,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .text i,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .text .em,
+            html body .content.content-home .post.post-format-comment .comment-excerpt .text .i,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em,
+            html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+              html body .content.content-home .post.post-format-comment .comment-content .text em b,
+              html body .content.content-home .post.post-format-comment .comment-content .text em strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text em .strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text em .b,
+              html body .content.content-home .post.post-format-comment .comment-content .text em .bold,
+              html body .content.content-home .post.post-format-comment .comment-content .text i b,
+              html body .content.content-home .post.post-format-comment .comment-content .text i strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text i .strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text i .b,
+              html body .content.content-home .post.post-format-comment .comment-content .text i .bold,
+              html body .content.content-home .post.post-format-comment .comment-content .text .em b,
+              html body .content.content-home .post.post-format-comment .comment-content .text .em strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text .em .strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text .em .b,
+              html body .content.content-home .post.post-format-comment .comment-content .text .em .bold,
+              html body .content.content-home .post.post-format-comment .comment-content .text .i b,
+              html body .content.content-home .post.post-format-comment .comment-content .text .i strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text .i .strong,
+              html body .content.content-home .post.post-format-comment .comment-content .text .i .b,
+              html body .content.content-home .post.post-format-comment .comment-content .text .i .bold,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text em b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text em strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text em .strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text em .b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text em .bold,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text i b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text i strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text i .strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text i .b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text i .bold,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .em b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .em strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .em .strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .em .b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .em .bold,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .i b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .i strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .i .strong,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .i .b,
+              html body .content.content-home .post.post-format-comment .comment-excerpt .text .i .bold,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em .strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em .b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text em .bold,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i .strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i .b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text i .bold,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em .strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em .b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .em .bold,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i .strong,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i .b,
+              html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .i .bold {
+                font-weight: normal;
+                font-style: normal;
+                font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-home .post.post-format-comment .comment-content .text table,
             html body .content.content-home .post.post-format-comment .comment-content .text .table,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text table,
@@ -5822,6 +5930,36 @@ html {
           html body .content.content-archive .post .post-content .text .bold .em,
           html body .content.content-archive .post .post-content .text .bold i,
           html body .content.content-archive .post .post-content .text .bold .i {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+        html body .content.content-archive .post .post-content .text em,
+        html body .content.content-archive .post .post-content .text i,
+        html body .content.content-archive .post .post-content .text .em,
+        html body .content.content-archive .post .post-content .text .i {
+          font-weight: normal;
+          font-style: normal;
+          font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-archive .post .post-content .text em b,
+          html body .content.content-archive .post .post-content .text em strong,
+          html body .content.content-archive .post .post-content .text em .strong,
+          html body .content.content-archive .post .post-content .text em .b,
+          html body .content.content-archive .post .post-content .text em .bold,
+          html body .content.content-archive .post .post-content .text i b,
+          html body .content.content-archive .post .post-content .text i strong,
+          html body .content.content-archive .post .post-content .text i .strong,
+          html body .content.content-archive .post .post-content .text i .b,
+          html body .content.content-archive .post .post-content .text i .bold,
+          html body .content.content-archive .post .post-content .text .em b,
+          html body .content.content-archive .post .post-content .text .em strong,
+          html body .content.content-archive .post .post-content .text .em .strong,
+          html body .content.content-archive .post .post-content .text .em .b,
+          html body .content.content-archive .post .post-content .text .em .bold,
+          html body .content.content-archive .post .post-content .text .i b,
+          html body .content.content-archive .post .post-content .text .i strong,
+          html body .content.content-archive .post .post-content .text .i .strong,
+          html body .content.content-archive .post .post-content .text .i .b,
+          html body .content.content-archive .post .post-content .text .i .bold {
             font-weight: normal;
             font-style: normal;
             font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -8443,6 +8581,84 @@ html {
                 font-weight: normal;
                 font-style: normal;
                 font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-archive .post.post-format-comment .comment-content .text em,
+            html body .content.content-archive .post.post-format-comment .comment-content .text i,
+            html body .content.content-archive .post.post-format-comment .comment-content .text .em,
+            html body .content.content-archive .post.post-format-comment .comment-content .text .i,
+            html body .content.content-archive .post.post-format-comment .comment-excerpt .text em,
+            html body .content.content-archive .post.post-format-comment .comment-excerpt .text i,
+            html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em,
+            html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i,
+            html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em,
+            html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i,
+            html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em,
+            html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+              html body .content.content-archive .post.post-format-comment .comment-content .text em b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text em strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text em .b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content .text i b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text i strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text i .b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text i .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .em b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .em strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .em .b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .i b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .i strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .i .b,
+              html body .content.content-archive .post.post-format-comment .comment-content .text .i .bold,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text em b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text em strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text em .b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text i b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text i strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text i .b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text i .bold,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em .b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i .b,
+              html body .content.content-archive .post.post-format-comment .comment-excerpt .text .i .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em .b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i .b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text i .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em .b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .em .bold,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i .strong,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i .b,
+              html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .i .bold {
+                font-weight: normal;
+                font-style: normal;
+                font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-archive .post.post-format-comment .comment-content .text table,
             html body .content.content-archive .post.post-format-comment .comment-content .text .table,
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text table,
@@ -10727,6 +10943,36 @@ html {
             html body .content.content-none .post .post-content .text .bold .em,
             html body .content.content-none .post .post-content .text .bold i,
             html body .content.content-none .post .post-content .text .bold .i {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-none .post .post-content .text em,
+          html body .content.content-none .post .post-content .text i,
+          html body .content.content-none .post .post-content .text .em,
+          html body .content.content-none .post .post-content .text .i {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-none .post .post-content .text em b,
+            html body .content.content-none .post .post-content .text em strong,
+            html body .content.content-none .post .post-content .text em .strong,
+            html body .content.content-none .post .post-content .text em .b,
+            html body .content.content-none .post .post-content .text em .bold,
+            html body .content.content-none .post .post-content .text i b,
+            html body .content.content-none .post .post-content .text i strong,
+            html body .content.content-none .post .post-content .text i .strong,
+            html body .content.content-none .post .post-content .text i .b,
+            html body .content.content-none .post .post-content .text i .bold,
+            html body .content.content-none .post .post-content .text .em b,
+            html body .content.content-none .post .post-content .text .em strong,
+            html body .content.content-none .post .post-content .text .em .strong,
+            html body .content.content-none .post .post-content .text .em .b,
+            html body .content.content-none .post .post-content .text .em .bold,
+            html body .content.content-none .post .post-content .text .i b,
+            html body .content.content-none .post .post-content .text .i strong,
+            html body .content.content-none .post .post-content .text .i .strong,
+            html body .content.content-none .post .post-content .text .i .b,
+            html body .content.content-none .post .post-content .text .i .bold {
               font-weight: normal;
               font-style: normal;
               font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -13348,6 +13594,84 @@ html {
                   font-weight: normal;
                   font-style: normal;
                   font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+              html body .content.content-none .post.post-format-comment .comment-content .text em,
+              html body .content.content-none .post.post-format-comment .comment-content .text i,
+              html body .content.content-none .post.post-format-comment .comment-content .text .em,
+              html body .content.content-none .post.post-format-comment .comment-content .text .i,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .text em,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .text i,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .text .em,
+              html body .content.content-none .post.post-format-comment .comment-excerpt .text .i,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em,
+              html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i {
+                font-weight: normal;
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+                html body .content.content-none .post.post-format-comment .comment-content .text em b,
+                html body .content.content-none .post.post-format-comment .comment-content .text em strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text em .strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text em .b,
+                html body .content.content-none .post.post-format-comment .comment-content .text em .bold,
+                html body .content.content-none .post.post-format-comment .comment-content .text i b,
+                html body .content.content-none .post.post-format-comment .comment-content .text i strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text i .strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text i .b,
+                html body .content.content-none .post.post-format-comment .comment-content .text i .bold,
+                html body .content.content-none .post.post-format-comment .comment-content .text .em b,
+                html body .content.content-none .post.post-format-comment .comment-content .text .em strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text .em .strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text .em .b,
+                html body .content.content-none .post.post-format-comment .comment-content .text .em .bold,
+                html body .content.content-none .post.post-format-comment .comment-content .text .i b,
+                html body .content.content-none .post.post-format-comment .comment-content .text .i strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text .i .strong,
+                html body .content.content-none .post.post-format-comment .comment-content .text .i .b,
+                html body .content.content-none .post.post-format-comment .comment-content .text .i .bold,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text em b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text em strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text em .strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text em .b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text em .bold,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text i b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text i strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text i .strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text i .b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text i .bold,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .em b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .em strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .em .strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .em .b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .em .bold,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .i b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .i strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .i .strong,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .i .b,
+                html body .content.content-none .post.post-format-comment .comment-excerpt .text .i .bold,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em .strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em .b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text em .bold,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i .strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i .b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text i .bold,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em .strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em .b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .em .bold,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i .strong,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i .b,
+                html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .i .bold {
+                  font-weight: normal;
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-none .post.post-format-comment .comment-content .text table,
               html body .content.content-none .post.post-format-comment .comment-content .text .table,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text table,
@@ -14939,6 +15263,36 @@ html {
             html body .content.content-single .post .post-content .text .bold .em,
             html body .content.content-single .post .post-content .text .bold i,
             html body .content.content-single .post .post-content .text .bold .i {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-single .post .post-content .text em,
+          html body .content.content-single .post .post-content .text i,
+          html body .content.content-single .post .post-content .text .em,
+          html body .content.content-single .post .post-content .text .i {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-single .post .post-content .text em b,
+            html body .content.content-single .post .post-content .text em strong,
+            html body .content.content-single .post .post-content .text em .strong,
+            html body .content.content-single .post .post-content .text em .b,
+            html body .content.content-single .post .post-content .text em .bold,
+            html body .content.content-single .post .post-content .text i b,
+            html body .content.content-single .post .post-content .text i strong,
+            html body .content.content-single .post .post-content .text i .strong,
+            html body .content.content-single .post .post-content .text i .b,
+            html body .content.content-single .post .post-content .text i .bold,
+            html body .content.content-single .post .post-content .text .em b,
+            html body .content.content-single .post .post-content .text .em strong,
+            html body .content.content-single .post .post-content .text .em .strong,
+            html body .content.content-single .post .post-content .text .em .b,
+            html body .content.content-single .post .post-content .text .em .bold,
+            html body .content.content-single .post .post-content .text .i b,
+            html body .content.content-single .post .post-content .text .i strong,
+            html body .content.content-single .post .post-content .text .i .strong,
+            html body .content.content-single .post .post-content .text .i .b,
+            html body .content.content-single .post .post-content .text .i .bold {
               font-weight: normal;
               font-style: normal;
               font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -17560,6 +17914,84 @@ html {
                   font-weight: normal;
                   font-style: normal;
                   font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+              html body .content.content-single .post.post-format-comment .comment-content .text em,
+              html body .content.content-single .post.post-format-comment .comment-content .text i,
+              html body .content.content-single .post.post-format-comment .comment-content .text .em,
+              html body .content.content-single .post.post-format-comment .comment-content .text .i,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .text em,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .text i,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .text .em,
+              html body .content.content-single .post.post-format-comment .comment-excerpt .text .i,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em,
+              html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i {
+                font-weight: normal;
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+                html body .content.content-single .post.post-format-comment .comment-content .text em b,
+                html body .content.content-single .post.post-format-comment .comment-content .text em strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text em .strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text em .b,
+                html body .content.content-single .post.post-format-comment .comment-content .text em .bold,
+                html body .content.content-single .post.post-format-comment .comment-content .text i b,
+                html body .content.content-single .post.post-format-comment .comment-content .text i strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text i .strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text i .b,
+                html body .content.content-single .post.post-format-comment .comment-content .text i .bold,
+                html body .content.content-single .post.post-format-comment .comment-content .text .em b,
+                html body .content.content-single .post.post-format-comment .comment-content .text .em strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text .em .strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text .em .b,
+                html body .content.content-single .post.post-format-comment .comment-content .text .em .bold,
+                html body .content.content-single .post.post-format-comment .comment-content .text .i b,
+                html body .content.content-single .post.post-format-comment .comment-content .text .i strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text .i .strong,
+                html body .content.content-single .post.post-format-comment .comment-content .text .i .b,
+                html body .content.content-single .post.post-format-comment .comment-content .text .i .bold,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text em b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text em strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text em .strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text em .b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text em .bold,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text i b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text i strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text i .strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text i .b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text i .bold,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .em b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .em strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .em .strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .em .b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .em .bold,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .i b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .i strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .i .strong,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .i .b,
+                html body .content.content-single .post.post-format-comment .comment-excerpt .text .i .bold,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em .strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em .b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text em .bold,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i .strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i .b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text i .bold,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em .strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em .b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .em .bold,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i .strong,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i .b,
+                html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .i .bold {
+                  font-weight: normal;
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-single .post.post-format-comment .comment-content .text table,
               html body .content.content-single .post.post-format-comment .comment-content .text .table,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text table,
@@ -19199,6 +19631,36 @@ html {
               font-weight: normal;
               font-style: normal;
               font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-single .comments .comments-body .comment .comment-content .text em,
+          html body .content.content-single .comments .comments-body .comment .comment-content .text i,
+          html body .content.content-single .comments .comments-body .comment .comment-content .text .em,
+          html body .content.content-single .comments .comments-body .comment .comment-content .text .i {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-single .comments .comments-body .comment .comment-content .text em b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text em strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text em .strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text em .b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text em .bold,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text i b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text i strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text i .strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text i .b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text i .bold,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .em b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .em strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .em .strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .em .b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .em .bold,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .i b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .i strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .i .strong,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .i .b,
+            html body .content.content-single .comments .comments-body .comment .comment-content .text .i .bold {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text table,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .table {
             border-collapse: collapse; }
@@ -20339,6 +20801,36 @@ html {
             html body .content.content-page .post .post-content .text .bold .em,
             html body .content.content-page .post .post-content .text .bold i,
             html body .content.content-page .post .post-content .text .bold .i {
+              font-weight: normal;
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-page .post .post-content .text em,
+          html body .content.content-page .post .post-content .text i,
+          html body .content.content-page .post .post-content .text .em,
+          html body .content.content-page .post .post-content .text .i {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+            html body .content.content-page .post .post-content .text em b,
+            html body .content.content-page .post .post-content .text em strong,
+            html body .content.content-page .post .post-content .text em .strong,
+            html body .content.content-page .post .post-content .text em .b,
+            html body .content.content-page .post .post-content .text em .bold,
+            html body .content.content-page .post .post-content .text i b,
+            html body .content.content-page .post .post-content .text i strong,
+            html body .content.content-page .post .post-content .text i .strong,
+            html body .content.content-page .post .post-content .text i .b,
+            html body .content.content-page .post .post-content .text i .bold,
+            html body .content.content-page .post .post-content .text .em b,
+            html body .content.content-page .post .post-content .text .em strong,
+            html body .content.content-page .post .post-content .text .em .strong,
+            html body .content.content-page .post .post-content .text .em .b,
+            html body .content.content-page .post .post-content .text .em .bold,
+            html body .content.content-page .post .post-content .text .i b,
+            html body .content.content-page .post .post-content .text .i strong,
+            html body .content.content-page .post .post-content .text .i .strong,
+            html body .content.content-page .post .post-content .text .i .b,
+            html body .content.content-page .post .post-content .text .i .bold {
               font-weight: normal;
               font-style: normal;
               font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
@@ -22957,6 +23449,84 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
+                  font-weight: normal;
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+              html body .content.content-page .post.post-format-comment .comment-content .text em,
+              html body .content.content-page .post.post-format-comment .comment-content .text i,
+              html body .content.content-page .post.post-format-comment .comment-content .text .em,
+              html body .content.content-page .post.post-format-comment .comment-content .text .i,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .text em,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .text i,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .text .em,
+              html body .content.content-page .post.post-format-comment .comment-excerpt .text .i,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em,
+              html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i {
+                font-weight: normal;
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+                html body .content.content-page .post.post-format-comment .comment-content .text em b,
+                html body .content.content-page .post.post-format-comment .comment-content .text em strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text em .strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text em .b,
+                html body .content.content-page .post.post-format-comment .comment-content .text em .bold,
+                html body .content.content-page .post.post-format-comment .comment-content .text i b,
+                html body .content.content-page .post.post-format-comment .comment-content .text i strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text i .strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text i .b,
+                html body .content.content-page .post.post-format-comment .comment-content .text i .bold,
+                html body .content.content-page .post.post-format-comment .comment-content .text .em b,
+                html body .content.content-page .post.post-format-comment .comment-content .text .em strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text .em .strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text .em .b,
+                html body .content.content-page .post.post-format-comment .comment-content .text .em .bold,
+                html body .content.content-page .post.post-format-comment .comment-content .text .i b,
+                html body .content.content-page .post.post-format-comment .comment-content .text .i strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text .i .strong,
+                html body .content.content-page .post.post-format-comment .comment-content .text .i .b,
+                html body .content.content-page .post.post-format-comment .comment-content .text .i .bold,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text em b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text em strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text em .strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text em .b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text em .bold,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text i b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text i strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text i .strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text i .b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text i .bold,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .em b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .em strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .em .strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .em .b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .em .bold,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .i b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .i strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .i .strong,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .i .b,
+                html body .content.content-page .post.post-format-comment .comment-excerpt .text .i .bold,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em .strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em .b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text em .bold,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i .strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i .b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text i .bold,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em .strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em .b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .em .bold,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i .strong,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i .b,
+                html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .i .bold {
                   font-weight: normal;
                   font-style: normal;
                   font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }

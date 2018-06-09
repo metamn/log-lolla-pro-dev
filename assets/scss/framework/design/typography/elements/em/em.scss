@@ -3,14 +3,14 @@
   i,
   .em,
   .i {
-    @include text-style(italic);
+    @include font(italic);;
 
     b,
     strong,
     .strong,
     .b,
     .bold {
-      @include text-style(bold-italic);
+      @include font(bold-italic);
     }
   }
 }

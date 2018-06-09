@@ -9,7 +9,7 @@
     @include margin(yes, no, no, no);
 
     .number-of-comments {
-      @include text-style('section-title');
+      @include text-style(section-title);
     }
 
     .arrows {
