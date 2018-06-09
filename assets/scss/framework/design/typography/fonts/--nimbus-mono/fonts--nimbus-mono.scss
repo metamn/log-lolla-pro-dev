@@ -4,6 +4,13 @@
 // License: GPL
 // Source: https://www.fontsquirrel.com/fonts/nimbus-mono
 //
+
+
+$font-family-nimbus-mono: (
+  regular: ('nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace)
+);
+
+
 @mixin fonts--nimbus-mono {
   @font-face {
       font-family: 'nimbus_monoregular';

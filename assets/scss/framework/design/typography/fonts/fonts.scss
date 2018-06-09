@@ -8,9 +8,11 @@
 // And include them as: `src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),`
 
 
+// Load fonts
+//
+
 // This is always required for sparklines
 @include fonts--sparks;
-
 
 @if ($body-font == 'nimbus-sans' or $monospace-font == 'nimbus-sans' or $title-font == 'nimbus-sans') {
   @include fonts--nimbus-sans;
@@ -24,52 +26,34 @@
 // The font mixins
 //
 @mixin font($variant) {
+  font-weight: normal;
+  font-style: normal;
+
+  $body-font-map: $font-family-nimbus-sans;
+  $monospace-font-map: $font-family-nimbus-mono;
+  $title-font-map: $font-family-nimbus-mono;
 
   @if ($variant == 'default') {
-    @if ($body-font == 'nimbus-sans') {
-      font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
+    font-family: #{map-get($body-font-map, 'regular')};
   }
 
   @if ($variant == 'bold') {
-    @if ($body-font == 'nimbus-sans') {
-      font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
+    font-family: #{map-get($body-font-map, 'bold')};
   }
 
   @if ($variant == 'italic') {
-    @if ($body-font == 'nimbus-sans') {
-      font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;;
-    }
+    font-family: #{map-get($body-font-map, 'italic')};
   }
 
   @if ($variant == 'bold-italic') {
-    @if ($body-font == 'nimbus-sans') {
-      font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-      font-weight: normal;
-      font-style: normal;
-    }
+    font-family: #{map-get($body-font-map, 'bold-italic')};
   }
 
   @if ($variant == 'monospace') {
-    @if ($monospace-font == 'nimbus-mono') {
-      font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-      font-weight: normal;
-      font-style: normal;
-    }
+    font-family: #{map-get($monospace-font-map, 'regular')};
   }
 
   @if ($variant == 'site-title') {
-    @if ($title-font == 'nimbus-mono') {
-      font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
-      font-weight: normal;
-      font-style: normal;
-    }
+    font-family: #{map-get($title-font-map, 'regular')};
   }
 }

@@ -496,9 +496,9 @@ html {
   html body {
     font-size: 100%;
     line-height: 1.5;
-    font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
     font-weight: normal;
     font-style: normal;
+    font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
     color: black;
     background-color: white;
     letter-spacing: 1.25px;
@@ -540,9 +540,9 @@ html {
     html body input[type="number"],
     html body input[type="search"],
     html body input[type="url"] {
-      font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
       font-weight: normal;
       font-style: normal;
+      font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
       color: black;
       background-color: white;
       border: none;
@@ -659,13 +659,13 @@ html {
         html body .header .header-title .link:hover, html body .header .header-title .link:active {
           text-decoration: line-through; }
         html body .header .header-title .link .text {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
       html body .header .header-subtitle .text {
-        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
+        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
         word-wrap: break-word;
         color: black;
         background-color: white; }
@@ -966,9 +966,9 @@ html {
         color: black;
         background-color: white; }
       html body .content.content-home .post .post-title .text {
-        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
+        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
         word-wrap: break-word; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-home .post .post-permalink {
@@ -1553,25 +1553,25 @@ html {
           margin: 1.25em 0; }
         html body .content.content-home .post .post-content .text .code,
         html body .content.content-home .post .post-content .text code {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
           word-wrap: normal;
           display: block; }
         html body .content.content-home .post .post-content .text pre,
         html body .content.content-home .post .post-content .text .pre {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
           white-space: pre-wrap; }
         html body .content.content-home .post .post-content .text b,
         html body .content.content-home .post .post-content .text strong,
         html body .content.content-home .post .post-content .text .strong,
         html body .content.content-home .post .post-content .text .b,
         html body .content.content-home .post .post-content .text .bold {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-home .post .post-content .text b em,
           html body .content.content-home .post .post-content .text b .em,
           html body .content.content-home .post .post-content .text b i,
@@ -1592,9 +1592,9 @@ html {
           html body .content.content-home .post .post-content .text .bold .em,
           html body .content.content-home .post .post-content .text .bold i,
           html body .content.content-home .post .post-content .text .bold .i {
-            font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
         html body .content.content-home .post .post-content .text table,
         html body .content.content-home .post .post-content .text .table {
           border-collapse: collapse; }
@@ -1652,16 +1652,16 @@ html {
           html body .content.content-home .post .post-content .text table th,
           html body .content.content-home .post .post-content .text .table .th,
           html body .content.content-home .post .post-content .text .table th {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-home .post .post-content .text table .th > *,
             html body .content.content-home .post .post-content .text table th > *,
             html body .content.content-home .post .post-content .text .table .th > *,
             html body .content.content-home .post .post-content .text .table th > * {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-home .post .post-content .text dl,
           html body .content.content-home .post .post-content .text .dl {
@@ -1744,14 +1744,14 @@ html {
             margin-right: 0; } }
         html body .content.content-home .post .post-content .text .address,
         html body .content.content-home .post .post-content .text address {
-          font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal; }
-        html body .content.content-home .post .post-content .text abbr,
-        html body .content.content-home .post .post-content .text .abbr {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+        html body .content.content-home .post .post-content .text abbr,
+        html body .content.content-home .post .post-content .text .abbr {
+          font-weight: normal;
+          font-style: normal;
+          font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
           font-variant: all-petite-caps; }
         html body .content.content-home .post .post-content .text acronym,
         html body .content.content-home .post .post-content .text .acronym {
@@ -1765,9 +1765,9 @@ html {
         html body .content.content-home .post .post-content .text cite,
         html body .content.content-home .post .post-content .text .cite {
           display: block;
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-home .post .post-content .text cite:before,
           html body .content.content-home .post .post-content .text .cite:before {
             content: 'by';
@@ -1781,9 +1781,9 @@ html {
         html body .content.content-home .post .post-content .text .kbd,
         html body .content.content-home .post .post-content .text tt,
         html body .content.content-home .post .post-content .text .tt {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
         html body .content.content-home .post .post-content .text ins,
         html body .content.content-home .post .post-content .text .ins {
           font-variant: small-caps; }
@@ -4117,9 +4117,9 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text code,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .code,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text code {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
               word-wrap: normal;
               display: block; }
             html body .content.content-home .post.post-format-comment .comment-content .text pre,
@@ -4128,9 +4128,9 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text .pre,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text pre,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .pre {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
               white-space: pre-wrap; }
             html body .content.content-home .post.post-format-comment .comment-content .text b,
             html body .content.content-home .post.post-format-comment .comment-content .text strong,
@@ -4147,9 +4147,9 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .strong,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .b,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-home .post.post-format-comment .comment-content .text b em,
               html body .content.content-home .post.post-format-comment .comment-content .text b .em,
               html body .content.content-home .post.post-format-comment .comment-content .text b i,
@@ -4210,9 +4210,9 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold i,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-home .post.post-format-comment .comment-content .text table,
             html body .content.content-home .post.post-format-comment .comment-content .text .table,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text table,
@@ -4362,9 +4362,9 @@ html {
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text table th,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table .th,
               html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-home .post.post-format-comment .comment-content .text table .th > *,
                 html body .content.content-home .post.post-format-comment .comment-content .text table th > *,
                 html body .content.content-home .post.post-format-comment .comment-content .text .table .th > *,
@@ -4377,9 +4377,9 @@ html {
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                 html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-home .post.post-format-comment .comment-content .text dl,
               html body .content.content-home .post.post-format-comment .comment-content .text .dl,
@@ -4562,18 +4562,18 @@ html {
             html body .content.content-home .post.post-format-comment .comment-excerpt .text address,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .address,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text address {
-              font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-home .post.post-format-comment .comment-content .text abbr,
             html body .content.content-home .post.post-format-comment .comment-content .text .abbr,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text abbr,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text .abbr,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text abbr,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
               font-variant: all-petite-caps; }
             html body .content.content-home .post.post-format-comment .comment-content .text acronym,
             html body .content.content-home .post.post-format-comment .comment-content .text .acronym,
@@ -4603,9 +4603,9 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text cite,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .cite {
               display: block;
-              font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-home .post.post-format-comment .comment-content .text cite:before,
               html body .content.content-home .post.post-format-comment .comment-content .text .cite:before,
               html body .content.content-home .post.post-format-comment .comment-excerpt .text cite:before,
@@ -4639,9 +4639,9 @@ html {
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .kbd,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text tt,
             html body .content.content-home .post.post-format-comment .comment-content-or-excerpt .text .tt {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
             html body .content.content-home .post.post-format-comment .comment-content .text ins,
             html body .content.content-home .post.post-format-comment .comment-content .text .ins,
             html body .content.content-home .post.post-format-comment .comment-excerpt .text ins,
@@ -5216,9 +5216,9 @@ html {
         color: black;
         background-color: white; }
       html body .content.content-archive .post .post-title .text {
-        font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
         font-style: normal;
+        font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
         word-wrap: break-word; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archive .post .post-permalink {
@@ -5803,25 +5803,25 @@ html {
           margin: 1.25em 0; }
         html body .content.content-archive .post .post-content .text .code,
         html body .content.content-archive .post .post-content .text code {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
           word-wrap: normal;
           display: block; }
         html body .content.content-archive .post .post-content .text pre,
         html body .content.content-archive .post .post-content .text .pre {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
           white-space: pre-wrap; }
         html body .content.content-archive .post .post-content .text b,
         html body .content.content-archive .post .post-content .text strong,
         html body .content.content-archive .post .post-content .text .strong,
         html body .content.content-archive .post .post-content .text .b,
         html body .content.content-archive .post .post-content .text .bold {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-archive .post .post-content .text b em,
           html body .content.content-archive .post .post-content .text b .em,
           html body .content.content-archive .post .post-content .text b i,
@@ -5842,9 +5842,9 @@ html {
           html body .content.content-archive .post .post-content .text .bold .em,
           html body .content.content-archive .post .post-content .text .bold i,
           html body .content.content-archive .post .post-content .text .bold .i {
-            font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
         html body .content.content-archive .post .post-content .text table,
         html body .content.content-archive .post .post-content .text .table {
           border-collapse: collapse; }
@@ -5902,16 +5902,16 @@ html {
           html body .content.content-archive .post .post-content .text table th,
           html body .content.content-archive .post .post-content .text .table .th,
           html body .content.content-archive .post .post-content .text .table th {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-archive .post .post-content .text table .th > *,
             html body .content.content-archive .post .post-content .text table th > *,
             html body .content.content-archive .post .post-content .text .table .th > *,
             html body .content.content-archive .post .post-content .text .table th > * {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-archive .post .post-content .text dl,
           html body .content.content-archive .post .post-content .text .dl {
@@ -5994,14 +5994,14 @@ html {
             margin-right: 0; } }
         html body .content.content-archive .post .post-content .text .address,
         html body .content.content-archive .post .post-content .text address {
-          font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-          font-weight: normal;
-          font-style: normal; }
-        html body .content.content-archive .post .post-content .text abbr,
-        html body .content.content-archive .post .post-content .text .abbr {
-          font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+        html body .content.content-archive .post .post-content .text abbr,
+        html body .content.content-archive .post .post-content .text .abbr {
+          font-weight: normal;
+          font-style: normal;
+          font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
           font-variant: all-petite-caps; }
         html body .content.content-archive .post .post-content .text acronym,
         html body .content.content-archive .post .post-content .text .acronym {
@@ -6015,9 +6015,9 @@ html {
         html body .content.content-archive .post .post-content .text cite,
         html body .content.content-archive .post .post-content .text .cite {
           display: block;
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-archive .post .post-content .text cite:before,
           html body .content.content-archive .post .post-content .text .cite:before {
             content: 'by';
@@ -6031,9 +6031,9 @@ html {
         html body .content.content-archive .post .post-content .text .kbd,
         html body .content.content-archive .post .post-content .text tt,
         html body .content.content-archive .post .post-content .text .tt {
-          font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
           font-weight: normal;
-          font-style: normal; }
+          font-style: normal;
+          font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
         html body .content.content-archive .post .post-content .text ins,
         html body .content.content-archive .post .post-content .text .ins {
           font-variant: small-caps; }
@@ -8367,9 +8367,9 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text code,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .code,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text code {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
               word-wrap: normal;
               display: block; }
             html body .content.content-archive .post.post-format-comment .comment-content .text pre,
@@ -8378,9 +8378,9 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text .pre,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text pre,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .pre {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
               white-space: pre-wrap; }
             html body .content.content-archive .post.post-format-comment .comment-content .text b,
             html body .content.content-archive .post.post-format-comment .comment-content .text strong,
@@ -8397,9 +8397,9 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .strong,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .b,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .bold {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-archive .post.post-format-comment .comment-content .text b em,
               html body .content.content-archive .post.post-format-comment .comment-content .text b .em,
               html body .content.content-archive .post.post-format-comment .comment-content .text b i,
@@ -8460,9 +8460,9 @@ html {
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .bold i,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-archive .post.post-format-comment .comment-content .text table,
             html body .content.content-archive .post.post-format-comment .comment-content .text .table,
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text table,
@@ -8612,9 +8612,9 @@ html {
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text table th,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .table .th,
               html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-archive .post.post-format-comment .comment-content .text table .th > *,
                 html body .content.content-archive .post.post-format-comment .comment-content .text table th > *,
                 html body .content.content-archive .post.post-format-comment .comment-content .text .table .th > *,
@@ -8627,9 +8627,9 @@ html {
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                 html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .post.post-format-comment .comment-content .text dl,
               html body .content.content-archive .post.post-format-comment .comment-content .text .dl,
@@ -8812,18 +8812,18 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text address,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .address,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text address {
-              font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-archive .post.post-format-comment .comment-content .text abbr,
             html body .content.content-archive .post.post-format-comment .comment-content .text .abbr,
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text abbr,
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text .abbr,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text abbr,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
               font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
               font-variant: all-petite-caps; }
             html body .content.content-archive .post.post-format-comment .comment-content .text acronym,
             html body .content.content-archive .post.post-format-comment .comment-content .text .acronym,
@@ -8853,9 +8853,9 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text cite,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .cite {
               display: block;
-              font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-archive .post.post-format-comment .comment-content .text cite:before,
               html body .content.content-archive .post.post-format-comment .comment-content .text .cite:before,
               html body .content.content-archive .post.post-format-comment .comment-excerpt .text cite:before,
@@ -8889,9 +8889,9 @@ html {
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .kbd,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text tt,
             html body .content.content-archive .post.post-format-comment .comment-content-or-excerpt .text .tt {
-              font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
             html body .content.content-archive .post.post-format-comment .comment-content .text ins,
             html body .content.content-archive .post.post-format-comment .comment-content .text .ins,
             html body .content.content-archive .post.post-format-comment .comment-excerpt .text ins,
@@ -10053,9 +10053,9 @@ html {
     html body .content.content-search .search-title {
       margin-bottom: 1.25em; }
       html body .content.content-search .search-title span {
-        font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
         font-weight: normal;
-        font-style: normal; }
+        font-style: normal;
+        font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
     html body .content.content-search .post {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -10115,9 +10115,9 @@ html {
           color: black;
           background-color: white; }
         html body .content.content-none .post .post-title .text {
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
           word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-none .post .post-permalink {
@@ -10702,25 +10702,25 @@ html {
             margin: 1.25em 0; }
           html body .content.content-none .post .post-content .text .code,
           html body .content.content-none .post .post-content .text code {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             word-wrap: normal;
             display: block; }
           html body .content.content-none .post .post-content .text pre,
           html body .content.content-none .post .post-content .text .pre {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             white-space: pre-wrap; }
           html body .content.content-none .post .post-content .text b,
           html body .content.content-none .post .post-content .text strong,
           html body .content.content-none .post .post-content .text .strong,
           html body .content.content-none .post .post-content .text .b,
           html body .content.content-none .post .post-content .text .bold {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-none .post .post-content .text b em,
             html body .content.content-none .post .post-content .text b .em,
             html body .content.content-none .post .post-content .text b i,
@@ -10741,9 +10741,9 @@ html {
             html body .content.content-none .post .post-content .text .bold .em,
             html body .content.content-none .post .post-content .text .bold i,
             html body .content.content-none .post .post-content .text .bold .i {
-              font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-none .post .post-content .text table,
           html body .content.content-none .post .post-content .text .table {
             border-collapse: collapse; }
@@ -10801,16 +10801,16 @@ html {
             html body .content.content-none .post .post-content .text table th,
             html body .content.content-none .post .post-content .text .table .th,
             html body .content.content-none .post .post-content .text .table th {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-none .post .post-content .text table .th > *,
               html body .content.content-none .post .post-content .text table th > *,
               html body .content.content-none .post .post-content .text .table .th > *,
               html body .content.content-none .post .post-content .text .table th > * {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-none .post .post-content .text dl,
             html body .content.content-none .post .post-content .text .dl {
@@ -10893,14 +10893,14 @@ html {
               margin-right: 0; } }
           html body .content.content-none .post .post-content .text .address,
           html body .content.content-none .post .post-content .text address {
-            font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal; }
-          html body .content.content-none .post .post-content .text abbr,
-          html body .content.content-none .post .post-content .text .abbr {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-none .post .post-content .text abbr,
+          html body .content.content-none .post .post-content .text .abbr {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
             font-variant: all-petite-caps; }
           html body .content.content-none .post .post-content .text acronym,
           html body .content.content-none .post .post-content .text .acronym {
@@ -10914,9 +10914,9 @@ html {
           html body .content.content-none .post .post-content .text cite,
           html body .content.content-none .post .post-content .text .cite {
             display: block;
-            font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-none .post .post-content .text cite:before,
             html body .content.content-none .post .post-content .text .cite:before {
               content: 'by';
@@ -10930,9 +10930,9 @@ html {
           html body .content.content-none .post .post-content .text .kbd,
           html body .content.content-none .post .post-content .text tt,
           html body .content.content-none .post .post-content .text .tt {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
           html body .content.content-none .post .post-content .text ins,
           html body .content.content-none .post .post-content .text .ins {
             font-variant: small-caps; }
@@ -13266,9 +13266,9 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text code,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .code,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text code {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-none .post.post-format-comment .comment-content .text pre,
@@ -13277,9 +13277,9 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text .pre,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .pre {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 white-space: pre-wrap; }
               html body .content.content-none .post.post-format-comment .comment-content .text b,
               html body .content.content-none .post.post-format-comment .comment-content .text strong,
@@ -13296,9 +13296,9 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-none .post.post-format-comment .comment-content .text b em,
                 html body .content.content-none .post.post-format-comment .comment-content .text b .em,
                 html body .content.content-none .post.post-format-comment .comment-content .text b i,
@@ -13359,9 +13359,9 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-none .post.post-format-comment .comment-content .text table,
               html body .content.content-none .post.post-format-comment .comment-content .text .table,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text table,
@@ -13511,9 +13511,9 @@ html {
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                   html body .content.content-none .post.post-format-comment .comment-content .text table .th > *,
                   html body .content.content-none .post.post-format-comment .comment-content .text table th > *,
                   html body .content.content-none .post.post-format-comment .comment-content .text .table .th > *,
@@ -13526,9 +13526,9 @@ html {
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
-                    font-style: normal; }
+                    font-style: normal;
+                    font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-none .post.post-format-comment .comment-content .text dl,
                 html body .content.content-none .post.post-format-comment .comment-content .text .dl,
@@ -13711,18 +13711,18 @@ html {
               html body .content.content-none .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-none .post.post-format-comment .comment-content .text abbr,
               html body .content.content-none .post.post-format-comment .comment-content .text .abbr,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text abbr,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
                 font-variant: all-petite-caps; }
               html body .content.content-none .post.post-format-comment .comment-content .text acronym,
               html body .content.content-none .post.post-format-comment .comment-content .text .acronym,
@@ -13752,9 +13752,9 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-none .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-none .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-none .post.post-format-comment .comment-excerpt .text cite:before,
@@ -13788,9 +13788,9 @@ html {
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .kbd,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-none .post.post-format-comment .comment-content-or-excerpt .text .tt {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
               html body .content.content-none .post.post-format-comment .comment-content .text ins,
               html body .content.content-none .post.post-format-comment .comment-content .text .ins,
               html body .content.content-none .post.post-format-comment .comment-excerpt .text ins,
@@ -14334,9 +14334,9 @@ html {
           color: black;
           background-color: white; }
         html body .content.content-single .post .post-title .text {
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
           word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-single .post .post-permalink {
@@ -14921,25 +14921,25 @@ html {
             margin: 1.25em 0; }
           html body .content.content-single .post .post-content .text .code,
           html body .content.content-single .post .post-content .text code {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             word-wrap: normal;
             display: block; }
           html body .content.content-single .post .post-content .text pre,
           html body .content.content-single .post .post-content .text .pre {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             white-space: pre-wrap; }
           html body .content.content-single .post .post-content .text b,
           html body .content.content-single .post .post-content .text strong,
           html body .content.content-single .post .post-content .text .strong,
           html body .content.content-single .post .post-content .text .b,
           html body .content.content-single .post .post-content .text .bold {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-single .post .post-content .text b em,
             html body .content.content-single .post .post-content .text b .em,
             html body .content.content-single .post .post-content .text b i,
@@ -14960,9 +14960,9 @@ html {
             html body .content.content-single .post .post-content .text .bold .em,
             html body .content.content-single .post .post-content .text .bold i,
             html body .content.content-single .post .post-content .text .bold .i {
-              font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-single .post .post-content .text table,
           html body .content.content-single .post .post-content .text .table {
             border-collapse: collapse; }
@@ -15020,16 +15020,16 @@ html {
             html body .content.content-single .post .post-content .text table th,
             html body .content.content-single .post .post-content .text .table .th,
             html body .content.content-single .post .post-content .text .table th {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-single .post .post-content .text table .th > *,
               html body .content.content-single .post .post-content .text table th > *,
               html body .content.content-single .post .post-content .text .table .th > *,
               html body .content.content-single .post .post-content .text .table th > * {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .post .post-content .text dl,
             html body .content.content-single .post .post-content .text .dl {
@@ -15112,14 +15112,14 @@ html {
               margin-right: 0; } }
           html body .content.content-single .post .post-content .text .address,
           html body .content.content-single .post .post-content .text address {
-            font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal; }
-          html body .content.content-single .post .post-content .text abbr,
-          html body .content.content-single .post .post-content .text .abbr {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-single .post .post-content .text abbr,
+          html body .content.content-single .post .post-content .text .abbr {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
             font-variant: all-petite-caps; }
           html body .content.content-single .post .post-content .text acronym,
           html body .content.content-single .post .post-content .text .acronym {
@@ -15133,9 +15133,9 @@ html {
           html body .content.content-single .post .post-content .text cite,
           html body .content.content-single .post .post-content .text .cite {
             display: block;
-            font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-single .post .post-content .text cite:before,
             html body .content.content-single .post .post-content .text .cite:before {
               content: 'by';
@@ -15149,9 +15149,9 @@ html {
           html body .content.content-single .post .post-content .text .kbd,
           html body .content.content-single .post .post-content .text tt,
           html body .content.content-single .post .post-content .text .tt {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
           html body .content.content-single .post .post-content .text ins,
           html body .content.content-single .post .post-content .text .ins {
             font-variant: small-caps; }
@@ -17485,9 +17485,9 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text code,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .code,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text code {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-single .post.post-format-comment .comment-content .text pre,
@@ -17496,9 +17496,9 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text .pre,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .pre {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 white-space: pre-wrap; }
               html body .content.content-single .post.post-format-comment .comment-content .text b,
               html body .content.content-single .post.post-format-comment .comment-content .text strong,
@@ -17515,9 +17515,9 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-single .post.post-format-comment .comment-content .text b em,
                 html body .content.content-single .post.post-format-comment .comment-content .text b .em,
                 html body .content.content-single .post.post-format-comment .comment-content .text b i,
@@ -17578,9 +17578,9 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-single .post.post-format-comment .comment-content .text table,
               html body .content.content-single .post.post-format-comment .comment-content .text .table,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text table,
@@ -17730,9 +17730,9 @@ html {
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                   html body .content.content-single .post.post-format-comment .comment-content .text table .th > *,
                   html body .content.content-single .post.post-format-comment .comment-content .text table th > *,
                   html body .content.content-single .post.post-format-comment .comment-content .text .table .th > *,
@@ -17745,9 +17745,9 @@ html {
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
-                    font-style: normal; }
+                    font-style: normal;
+                    font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-single .post.post-format-comment .comment-content .text dl,
                 html body .content.content-single .post.post-format-comment .comment-content .text .dl,
@@ -17930,18 +17930,18 @@ html {
               html body .content.content-single .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-single .post.post-format-comment .comment-content .text abbr,
               html body .content.content-single .post.post-format-comment .comment-content .text .abbr,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text abbr,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
                 font-variant: all-petite-caps; }
               html body .content.content-single .post.post-format-comment .comment-content .text acronym,
               html body .content.content-single .post.post-format-comment .comment-content .text .acronym,
@@ -17971,9 +17971,9 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-single .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-single .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-single .post.post-format-comment .comment-excerpt .text cite:before,
@@ -18007,9 +18007,9 @@ html {
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .kbd,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-single .post.post-format-comment .comment-content-or-excerpt .text .tt {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
               html body .content.content-single .post.post-format-comment .comment-content .text ins,
               html body .content.content-single .post.post-format-comment .comment-content .text .ins,
               html body .content.content-single .post.post-format-comment .comment-excerpt .text ins,
@@ -19150,25 +19150,25 @@ html {
             margin: 1.25em 0; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text .code,
           html body .content.content-single .comments .comments-body .comment .comment-content .text code {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             word-wrap: normal;
             display: block; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text pre,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .pre {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             white-space: pre-wrap; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text b,
           html body .content.content-single .comments .comments-body .comment .comment-content .text strong,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .strong,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .b,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .bold {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text b em,
             html body .content.content-single .comments .comments-body .comment .comment-content .text b .em,
             html body .content.content-single .comments .comments-body .comment .comment-content .text b i,
@@ -19189,9 +19189,9 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold .em,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold i,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .bold .i {
-              font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text table,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .table {
             border-collapse: collapse; }
@@ -19249,16 +19249,16 @@ html {
             html body .content.content-single .comments .comments-body .comment .comment-content .text table th,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .table .th,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .table th {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-single .comments .comments-body .comment .comment-content .text table .th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text table th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .table .th > *,
               html body .content.content-single .comments .comments-body .comment .comment-content .text .table th > * {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-single .comments .comments-body .comment .comment-content .text dl,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .dl {
@@ -19341,14 +19341,14 @@ html {
               margin-right: 0; } }
           html body .content.content-single .comments .comments-body .comment .comment-content .text .address,
           html body .content.content-single .comments .comments-body .comment .comment-content .text address {
-            font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal; }
-          html body .content.content-single .comments .comments-body .comment .comment-content .text abbr,
-          html body .content.content-single .comments .comments-body .comment .comment-content .text .abbr {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-single .comments .comments-body .comment .comment-content .text abbr,
+          html body .content.content-single .comments .comments-body .comment .comment-content .text .abbr {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
             font-variant: all-petite-caps; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text acronym,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .acronym {
@@ -19362,9 +19362,9 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text cite,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .cite {
             display: block;
-            font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-single .comments .comments-body .comment .comment-content .text cite:before,
             html body .content.content-single .comments .comments-body .comment .comment-content .text .cite:before {
               content: 'by';
@@ -19378,9 +19378,9 @@ html {
           html body .content.content-single .comments .comments-body .comment .comment-content .text .kbd,
           html body .content.content-single .comments .comments-body .comment .comment-content .text tt,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .tt {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
           html body .content.content-single .comments .comments-body .comment .comment-content .text ins,
           html body .content.content-single .comments .comments-body .comment .comment-content .text .ins {
             font-variant: small-caps; }
@@ -19686,9 +19686,9 @@ html {
           color: black;
           background-color: white; }
         html body .content.content-page .post .post-title .text {
-          font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
           font-weight: normal;
           font-style: normal;
+          font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif;
           word-wrap: break-word; }
         @media only screen and (max-width: 767.9px) {
           html body .content.content-page .post .post-permalink {
@@ -20273,25 +20273,25 @@ html {
             margin: 1.25em 0; }
           html body .content.content-page .post .post-content .text .code,
           html body .content.content-page .post .post-content .text code {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             word-wrap: normal;
             display: block; }
           html body .content.content-page .post .post-content .text pre,
           html body .content.content-page .post .post-content .text .pre {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
             white-space: pre-wrap; }
           html body .content.content-page .post .post-content .text b,
           html body .content.content-page .post .post-content .text strong,
           html body .content.content-page .post .post-content .text .strong,
           html body .content.content-page .post .post-content .text .b,
           html body .content.content-page .post .post-content .text .bold {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-page .post .post-content .text b em,
             html body .content.content-page .post .post-content .text b .em,
             html body .content.content-page .post .post-content .text b i,
@@ -20312,9 +20312,9 @@ html {
             html body .content.content-page .post .post-content .text .bold .em,
             html body .content.content-page .post .post-content .text .bold i,
             html body .content.content-page .post .post-content .text .bold .i {
-              font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
           html body .content.content-page .post .post-content .text table,
           html body .content.content-page .post .post-content .text .table {
             border-collapse: collapse; }
@@ -20372,16 +20372,16 @@ html {
             html body .content.content-page .post .post-content .text table th,
             html body .content.content-page .post .post-content .text .table .th,
             html body .content.content-page .post .post-content .text .table th {
-              font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
               font-weight: normal;
-              font-style: normal; }
+              font-style: normal;
+              font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-page .post .post-content .text table .th > *,
               html body .content.content-page .post .post-content .text table th > *,
               html body .content.content-page .post .post-content .text .table .th > *,
               html body .content.content-page .post .post-content .text .table th > * {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-page .post .post-content .text dl,
             html body .content.content-page .post .post-content .text .dl {
@@ -20464,14 +20464,14 @@ html {
               margin-right: 0; } }
           html body .content.content-page .post .post-content .text .address,
           html body .content.content-page .post .post-content .text address {
-            font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
-            font-weight: normal;
-            font-style: normal; }
-          html body .content.content-page .post .post-content .text abbr,
-          html body .content.content-page .post .post-content .text .abbr {
-            font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
             font-style: normal;
+            font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
+          html body .content.content-page .post .post-content .text abbr,
+          html body .content.content-page .post .post-content .text .abbr {
+            font-weight: normal;
+            font-style: normal;
+            font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
             font-variant: all-petite-caps; }
           html body .content.content-page .post .post-content .text acronym,
           html body .content.content-page .post .post-content .text .acronym {
@@ -20485,9 +20485,9 @@ html {
           html body .content.content-page .post .post-content .text cite,
           html body .content.content-page .post .post-content .text .cite {
             display: block;
-            font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
             html body .content.content-page .post .post-content .text cite:before,
             html body .content.content-page .post .post-content .text .cite:before {
               content: 'by';
@@ -20501,9 +20501,9 @@ html {
           html body .content.content-page .post .post-content .text .kbd,
           html body .content.content-page .post .post-content .text tt,
           html body .content.content-page .post .post-content .text .tt {
-            font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
             font-weight: normal;
-            font-style: normal; }
+            font-style: normal;
+            font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
           html body .content.content-page .post .post-content .text ins,
           html body .content.content-page .post .post-content .text .ins {
             font-variant: small-caps; }
@@ -22837,9 +22837,9 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text code,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .code,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text code {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 word-wrap: normal;
                 display: block; }
               html body .content.content-page .post.post-format-comment .comment-content .text pre,
@@ -22848,9 +22848,9 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text .pre,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text pre,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .pre {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
                 white-space: pre-wrap; }
               html body .content.content-page .post.post-format-comment .comment-content .text b,
               html body .content.content-page .post.post-format-comment .comment-content .text strong,
@@ -22867,9 +22867,9 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .strong,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .b,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-page .post.post-format-comment .comment-content .text b em,
                 html body .content.content-page .post.post-format-comment .comment-content .text b .em,
                 html body .content.content-page .post.post-format-comment .comment-content .text b i,
@@ -22930,9 +22930,9 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .em,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold i,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .bold .i {
-                  font-family: 'nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-page .post.post-format-comment .comment-content .text table,
               html body .content.content-page .post.post-format-comment .comment-content .text .table,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text table,
@@ -23082,9 +23082,9 @@ html {
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text table th,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table .th,
                 html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table th {
-                  font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                   font-weight: normal;
-                  font-style: normal; }
+                  font-style: normal;
+                  font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
                   html body .content.content-page .post.post-format-comment .comment-content .text table .th > *,
                   html body .content.content-page .post.post-format-comment .comment-content .text table th > *,
                   html body .content.content-page .post.post-format-comment .comment-content .text .table .th > *,
@@ -23097,9 +23097,9 @@ html {
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text table th > *,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table .th > *,
                   html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .table th > * {
-                    font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                     font-weight: normal;
-                    font-style: normal; }
+                    font-style: normal;
+                    font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-page .post.post-format-comment .comment-content .text dl,
                 html body .content.content-page .post.post-format-comment .comment-content .text .dl,
@@ -23282,18 +23282,18 @@ html {
               html body .content.content-page .post.post-format-comment .comment-excerpt .text address,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .address,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text address {
-                font-family: 'nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular_italic, Arial, Helvetica Neue, Helvetica, sans-serif; }
               html body .content.content-page .post.post-format-comment .comment-content .text abbr,
               html body .content.content-page .post.post-format-comment .comment-content .text .abbr,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text abbr,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text .abbr,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text abbr,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .abbr {
-                font-family: 'nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
                 font-style: normal;
+                font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif;
                 font-variant: all-petite-caps; }
               html body .content.content-page .post.post-format-comment .comment-content .text acronym,
               html body .content.content-page .post.post-format-comment .comment-content .text .acronym,
@@ -23323,9 +23323,9 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text cite,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .cite {
                 display: block;
-                font-family: 'nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_sans_lregular, Arial, Helvetica Neue, Helvetica, sans-serif; }
                 html body .content.content-page .post.post-format-comment .comment-content .text cite:before,
                 html body .content.content-page .post.post-format-comment .comment-content .text .cite:before,
                 html body .content.content-page .post.post-format-comment .comment-excerpt .text cite:before,
@@ -23359,9 +23359,9 @@ html {
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .kbd,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text tt,
               html body .content.content-page .post.post-format-comment .comment-content-or-excerpt .text .tt {
-                font-family: 'nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
                 font-weight: normal;
-                font-style: normal; }
+                font-style: normal;
+                font-family: nimbus_monoregular, Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; }
               html body .content.content-page .post.post-format-comment .comment-content .text ins,
               html body .content.content-page .post.post-format-comment .comment-content .text .ins,
               html body .content.content-page .post.post-format-comment .comment-excerpt .text ins,
