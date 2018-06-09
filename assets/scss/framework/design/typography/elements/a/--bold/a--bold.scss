@@ -1,8 +1,0 @@
-@mixin a--bold {
-  a,
-  .link {
-    @include link;
-    @include colors(default);
-    @include font(bold);
-  }
-}

@@ -8,11 +8,35 @@
 // The default metric for sizing non-typographic elements
 // - it is based on the default font size and line height
 // - $lem is used for spacing elements on the webpage like margins and padding
+//
 
+// Scales
+//
 
+$modular-scale-major-third: (
+  small-1: 0.8em,
+  large-1: 1.25em,
+  large-2: 1.563em,
+  large-3: 1.953em
+);
+
+$modular-scale-minor-fourth: (
+  small-1: 0.75em,
+  large-1: 1.333em,
+  large-2: 1.777em,
+  large-3: 2.369em
+);
 
 
 @mixin scale($variant) {
+
+  // Get the scale
+  //
+  $map: $modular-scale-major-third;
+
+  @if ($scale == 'minor-fourth') {
+    $map: $modular-scale-minor-fourth;
+  }
 
   // The default font size and line height
   @if ($variant == 'default') {
@@ -22,13 +46,7 @@
 
   // Smaller than default font size with 1 scale
   @if ($variant == 'small-1') {
-    @if ($scale == 'major-third') {
-      font-size: 0.8em;
-    }
-
-    @if ($scale == 'minor-fourth') {
-      font-size: 0.75em;
-    }
+    font-size: #{map-get($map, 'small-1')};
   }
 
   // Larger according to the browser's scale
@@ -39,34 +57,16 @@
 
   // Larger than default font size with 1 scale
   @if ($variant == 'large-1') {
-    @if ($scale == 'major-third') {
-      font-size: 1.25em;
-    }
-
-    @if ($scale == 'minor-fourth') {
-      font-size: 1.333em;
-    }
+    font-size: #{map-get($map, 'large-1')};
   }
 
   // Larger than default font size with 2 scalse
   @if ($variant == 'large-2') {
-    @if ($scale == 'major-third') {
-      font-size: 1.563em;
-    }
-
-    @if ($scale == 'minor-fourth') {
-      font-size: 1.777em;
-    }
+    font-size: #{map-get($map, 'large-2')};
   }
 
   // Larger than default font size with 3 scales
   @if ($variant == 'large-3') {
-    @if ($scale == 'major-third') {
-      font-size: 1.953em;
-    }
-
-    @if ($scale == 'minor-fourth') {
-      font-size: 2.369em;
-    }
+    font-size: #{map-get($map, 'large-3')};
   }
 }
