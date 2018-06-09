@@ -6,6 +6,10 @@
 //
 // Example: https://raw.githubusercontent.com/aftertheflood/sparks/master/tests/dummy-site/css/tests.css
 //
+//
+// This font will be loaded via classes and not SCSS mixins
+//
+// 
 @mixin fonts--sparks {
   @font-face {
     font-family: 'Sparks-Dotline-Medium';

@@ -29,10 +29,14 @@
   font-weight: normal;
   font-style: normal;
 
+  // Get the fonts
+  //
   $body-font-map: $font-family-nimbus-sans;
   $monospace-font-map: $font-family-nimbus-mono;
   $title-font-map: $font-family-nimbus-mono;
 
+  // Set up fonts
+  // 
   @if ($variant == 'default') {
     font-family: #{map-get($body-font-map, 'regular')};
   }
