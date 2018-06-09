@@ -1,3 +1,8 @@
+// Common settings for all pages
+//
+// This is where we set up all basic styles and parts of the site
+//
+//
 @include html-css-reset;
 
 html {
@@ -9,13 +14,7 @@ html {
     @include form;
     @include text-style(default);
 
-    @include cursor;
-    a {
-      @include cursor(pointer);
-    }
-
     @include all__grid;
-
 
     .header {
       @include header;
@@ -27,10 +26,6 @@ html {
 
     .content {
       @include content;
-    }
-
-    .breadcrumb {
-      @include breadcrumb;
     }
 
     .sidebar {
@@ -51,6 +46,12 @@ html {
 
     .shortcode {
       @include shortcode;
+    }
+
+
+    @include cursor;
+    a {
+      @include cursor(pointer);
     }
 
 

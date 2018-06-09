@@ -1,9 +1,0 @@
-@mixin width--larger {
-  @include laptop {
-    max-width: calc(#{$text-block-width + ($left * 2)});
-  }
-
-  @include desktop {
-    max-width: calc(#{$text-block-width + ($left * 2)});
-  }
-}

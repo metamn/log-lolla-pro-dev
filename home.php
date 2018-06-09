@@ -2,13 +2,9 @@
 /**
  * The template for displaying the home page
  *
- * If there is a `to-home-page` category with posts these posts will be displayed here
- * If not, the homepage will display the latest posts
- *
- *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 get_header(); ?>

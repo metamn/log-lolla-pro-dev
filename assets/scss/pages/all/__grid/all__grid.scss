@@ -1,3 +1,6 @@
+// The default layout for all pages
+//
+//
 @mixin all__grid {
   width: 100%;
   display: flex;
@@ -7,10 +10,12 @@
   // Making blockquotes do not overflow
   overflow-x: hidden;
 
+  // Making header, content to have a fixed with
   > * {
     @include width;
   }
 
+  // Sidebar is an exception, it is always full width
   .sidebar {
     @include width--full;
   }
