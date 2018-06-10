@@ -13,8 +13,7 @@
   <h3 class="hidden">Archive title and description</h3>
 
   <div class="archive-artwork">
-    <div class="circle">
-    </div>
+    <?php get_template_part( 'template-parts/framework/design/decorations/circle/circle', '' ); ?>
   </div>
 
   <div class="archive-text">

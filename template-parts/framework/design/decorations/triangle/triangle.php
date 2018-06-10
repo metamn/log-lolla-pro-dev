@@ -2,10 +2,9 @@
   /**
    * Displaying a triangle
    *
+   * The corresponding SCSS code can be found in `assets/scss/framework/design/decorations`
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 

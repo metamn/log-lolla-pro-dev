@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the home page
+ * Template for displaying the home page
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

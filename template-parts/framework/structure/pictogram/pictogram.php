@@ -1,4 +1,15 @@
 <?php
+  /**
+   * Displaying a pictogram
+   *
+   * The corresponding SCSS code can be found in `assets/scss/framework/structure`
+   *
+   * @package Log_Lolla_Pro
+   */
+?>
+
+
+<?php
   $klass = isset( $pictogram['klass'] ) ? $pictogram['klass'] : '';
 ?>
 
