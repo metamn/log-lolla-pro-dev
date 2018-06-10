@@ -15,6 +15,13 @@ get_header(); ?>
   <h3 class="hidden">Archive</h3>
 
   <?php get_template_part( 'template-parts/source/source', 'posts' ); ?>
+
+  <?php
+    $topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
+    set_query_var( 'topic', $topic );
+    get_template_part( 'template-parts/archive/archive', 'related-topics' );
+  ?>
+
   <?php get_template_part( 'template-parts/source/source', 'header' ); ?>
 </section>
 

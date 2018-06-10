@@ -10,8 +10,13 @@
 
 
 <?php
-  $archive = get_queried_object();
-  $related_topics  = log_lolla_display_related_topics_for_archive( $archive );
+  $topic = get_query_var( 'topic' );
+
+  if ( empty( $topic) ) {
+    $topic = get_queried_object();
+  }
+
+  $related_topics  = log_lolla_display_related_topics_for_archive( $topic );
 
   if ( ! empty( $related_topics ) ) { ?>
     <section class="archive-list archive-list--topics">

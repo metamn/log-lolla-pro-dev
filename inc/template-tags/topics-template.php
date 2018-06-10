@@ -10,21 +10,39 @@
    */
 
 
-if ( ! function_exists( 'log_lolla_archive_counters' ) ) {
-  function log_lolla_archive_counters() {
-    $pictograms = log_lolla_get_archive_counters();
-    if ( empty( $pictograms ) ) return;
+if ( ! function_exists( 'log_lolla_get_pictograms' ) ) {
+  function log_lolla_get_pictograms( $counters ) {
+    $pictograms = [];
 
-    $html = '';
+    $pictograms[] = array(
+      'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
+      'number' => $counters[0],
+      'scrollto' => 'archive-list--posts',
+      'klass' => ( $counters[0] > 0 ) ? 'activable' : 'inactivable'
+    );
 
-    ob_start();
-    foreach ($pictograms as $pictogram) {
-      set_query_var( 'pictogram', $pictogram );
-      get_template_part( 'template-parts/archive/parts/archive-counter', '' );
-    }
-    $html .= ob_get_clean();
+    $pictograms[] = array(
+      'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
+      'number' => $counters[1],
+      'scrollto' => 'archive-list--summaries',
+      'klass' => ( $counters[1] > 0 ) ? 'activable' : 'inactivable'
+    );
 
-    return $html;
+    $pictograms[] = array(
+      'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
+      'number' => $counters[2],
+      'scrollto' => 'archive-list--standard-posts',
+      'klass' => ( $counters[2] > 0 ) ? 'activable' : 'inactivable'
+    );
+
+    $pictograms[] = array(
+      'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
+      'number' => $counters[3],
+      'scrollto' => 'archive-list--related-topics',
+      'klass' => ( $counters[3] > 0 ) ? 'activable' : 'inactivable'
+    );
+
+    return $pictograms;
   }
 }
 
@@ -38,42 +56,14 @@ if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
     global $STANDARD_POSTS_COUNT;
     global $RELATED_TOPICS_COUNT;
 
-    $post_count = $archive->count ? $archive->count : 0;
-    $summaries_count = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
-    $standard_posts_count = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
-    $related_topics_count = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
+    $ret = [];
 
-    $pictograms = [];
+    $ret[] = $archive->count ? $archive->count : 0;
+    $ret[] = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
+    $ret[] = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
+    $ret[] = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
 
-    $pictograms[] = array(
-      'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
-      'number' => $post_count,
-      'scrollto' => 'archive-list--posts',
-      'klass' => ( $post_count > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
-      'number' => $summaries_count,
-      'scrollto' => 'archive-list--summaries',
-      'klass' => ( $summaries_count > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
-      'number' => $standard_posts_count,
-      'scrollto' => 'archive-list--standard-posts',
-      'klass' => ( $standard_posts_count > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
-      'number' => $related_topics_count,
-      'scrollto' => 'archive-list--related-topics',
-      'klass' => ( $related_topics_count > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    return $pictograms;
+    return $ret;
   }
 }
 

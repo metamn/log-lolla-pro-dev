@@ -10,6 +10,25 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
+  function log_lolla_get_source_counters( $post ) {
+    global $SUMMARIES_COUNT;
+    global $STANDARD_POSTS_COUNT;
+    global $RELATED_TOPICS_COUNT;
+
+    $posts_of_a_source = log_lolla_get_posts_of_a_source( $post );
+
+    $ret = [];
+
+    $ret[] = empty( $posts_of_a_source ) ? 0 : count( $posts_of_a_source );
+    $ret[] = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
+    $ret[] = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
+    $ret[] = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
+
+    return $ret;
+  }
+}
+
 if ( ! function_exists( 'log_lolla_display_sources_with_post_count' ) ) {
   /**
    * Display Sources post type with post count
