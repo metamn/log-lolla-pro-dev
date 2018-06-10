@@ -11,6 +11,14 @@
 
 
 if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
+  /**
+   * Get the counters of a source
+   *
+   * Counters are posts count, summaries count etc.
+   *
+   * @param  object $post The source object
+   * @return Array        An array of integers
+   */
   function log_lolla_get_source_counters( $post ) {
     global $SUMMARIES_COUNT;
     global $STANDARD_POSTS_COUNT;
@@ -28,6 +36,7 @@ if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
     return $ret;
   }
 }
+
 
 if ( ! function_exists( 'log_lolla_display_sources_with_post_count' ) ) {
   /**
@@ -70,13 +79,48 @@ if ( ! function_exists( 'log_lolla_display_source_with_post_count') )  {
     $source = get_post( $item->source );
     $count = $item->post_count;
 
+    return log_lolla_display_source( $source, $count );
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_display_source' ) ) {
+  /**
+   * Display a source
+   *
+   * @param  Object   $source     The source object
+   * @param  integer  $post_count The post count for the source
+   * @return string               HTML
+   */
+  function log_lolla_display_source( $source, $post_count ) {
+    if ( empty( $source ) ) return;
+
+    $name = $source->post_title;
+    $link = get_permalink( $source );
+
+    if ( has_post_thumbnail( $source->ID ) ) {
+      $image = get_the_post_thumbnail( $source->ID, 'thumbnail' );
+    } else {
+      $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
+    }
+
+    // Return HTML
     $html = '';
-    $html .= log_lolla_display_source( $source );
-    $html .= '<span class="post-count">' . $count . '</span>';
+
+    ob_start();
+
+    set_query_var( 'source_link', $link );
+    set_query_var( 'source_name', $name );
+    set_query_var( 'source_image', $image );
+    set_query_var( 'source_post_count', $post_count );
+    get_template_part( 'template-parts/source/source', 'thumb-name-and-count' );
+
+    $html .= ob_get_clean();
 
     return $html;
   }
 }
+
 
 
 if ( ! function_exists( 'log_lolla_get_most_popular_sources' ) ) {
@@ -147,49 +191,5 @@ if ( ! function_exists( 'log_lolla_get_posts_of_a_source' ) ) {
     );
   }
 }
-
-
-if ( ! function_exists( 'log_lolla_display_source' ) ) {
-  /**
-   * Display a source from the database
-   *
-   * @param  Object $source The source object
-   * @return string         HTML
-   */
-  function log_lolla_display_source( $source ) {
-    if ( empty( $source ) ) return;
-
-    $name = $source->post_title;
-    $link = get_permalink( $source );
-
-    if ( has_post_thumbnail( $source->ID ) ) {
-      $image = get_the_post_thumbnail( $source->ID, 'thumbnail' );
-    } else {
-      $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
-    }
-
-    // Return HTML
-    ob_start();
-    ?>
-
-    <aside class="source">
-      <h3 class="source__name">
-        <a class="link" href="<?php echo $link ?>" title="<?php echo $name ?>"><?php echo $name ?></a>
-      </h3>
-
-      <figure class="source__icon figure">
-        <a class="link" href="<?php echo $link ?>" title="<?php echo $name ?>">
-          <?php echo $image ?>
-        </a>
-      </figure>
-    </aside>
-
-    <?php
-    return ob_get_clean();
-  }
-}
-
-
-
 
 ?>

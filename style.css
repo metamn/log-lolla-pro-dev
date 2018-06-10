@@ -24741,7 +24741,10 @@ html {
                 -webkit-box-direction: normal;
                     -ms-flex-direction: column;
                         flex-direction: column;
-                width: 2.5em; }
+                width: 2.5em;
+                -webkit-box-ordinal-group: 2;
+                    -ms-flex-order: 1;
+                        order: 1; }
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar img,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure img {
                   display: block;
@@ -24919,7 +24922,10 @@ html {
               -webkit-box-direction: normal;
                   -ms-flex-direction: column;
                       flex-direction: column;
-              width: 2.5em; }
+              width: 2.5em;
+              -webkit-box-ordinal-group: 2;
+                  -ms-flex-order: 1;
+                      order: 1; }
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar img,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure img {
                 display: block;
@@ -25162,7 +25168,10 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            width: 2.5em; }
+            width: 2.5em;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; }
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
               display: block;
@@ -25276,7 +25285,10 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            width: 2.5em; }
+            width: 2.5em;
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; }
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
               display: block;
