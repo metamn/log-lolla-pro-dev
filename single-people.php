@@ -1,37 +1,29 @@
 <?php
 /**
- * The template for displaying a person
+ * Template for displaying a person
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * This template is 100% similar to the `single-source` template
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 get_header(); ?>
 
-  <?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
+<section class="content content-archive">
+  <h3 class="hidden">Archive</h3>
 
-  <section class="content content-single">
-    <h3 class="hidden">Content</h3>
+  <?php
+    get_template_part( 'template-parts/source/source', 'posts' );
 
-		<?php
-		while ( have_posts() ) : the_post();
+    $topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
+    set_query_var( 'topic', $topic );
+    get_template_part( 'template-parts/archive/archive', 'related-topics' );
 
-			get_template_part( 'template-parts/people/person', 'single' );
-      get_template_part( 'template-parts/people/person', 'posts' );
+    get_template_part( 'template-parts/source/source', 'header' );
+  ?>
+</section>
 
-			get_template_part( 'template-parts/navigation/navigation', 'post' );
-
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-  </section>
-
-  <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
+<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
 
 <?php
 get_footer();
