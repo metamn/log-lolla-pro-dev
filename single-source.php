@@ -15,7 +15,7 @@ get_header(); ?>
   <h3 class="hidden">Archive</h3>
 
   <?php get_template_part( 'template-parts/source/source', 'posts' ); ?>
-  <?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+  <?php get_template_part( 'template-parts/source/source', 'header' ); ?>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

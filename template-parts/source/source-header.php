@@ -1,0 +1,19 @@
+<?php
+  /**
+   * Template part for displaying the header information of a source
+   *
+   * It will be displayed using the common `archive-header` template
+   *
+   * @package Log_Lolla_Pro
+   */
+?>
+
+<?php
+	set_query_var( 'archive_title', get_the_title() );
+
+	// `get_the_excerpt()` returns a read more link if the excerpt is empty
+	// so we get the excerpt directly from the database
+	set_query_var( 'archive_description', esc_html__( $post->post_excerpt ) );
+
+	get_template_part( 'template-parts/archive/archive', 'header' );
+?>

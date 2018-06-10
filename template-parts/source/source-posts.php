@@ -2,9 +2,9 @@
   /**
    * Template part for displaying posts associated to a source
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+   * Posts will be displayed using the common `archive-list` template
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 
@@ -13,7 +13,7 @@
   if ( empty( $posts_of_a_source ) ) return;
 
   $archive_list_title = sprintf(
-    '<h3 class="archive-list-title">%1$s%2$s</h3>',
+    '%1$s%2$s',
     esc_html_x( 'Posts from ', 'post permalink', 'log-lolla' ),
     get_the_title()
   );
