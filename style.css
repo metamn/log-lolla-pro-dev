@@ -9708,16 +9708,16 @@ html {
               -ms-flex-align: center;
                   align-items: center; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-top: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-top: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-bottom: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-bottom: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {

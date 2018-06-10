@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
 
+  @include padding(half, no, half, no);
+
   .archive-artwork {
-    @include padding(half, half, half, half);
+    @include padding(no, half, no, half);
 
     .circle {
       @include circle;
