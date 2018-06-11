@@ -24741,10 +24741,7 @@ html {
                 -webkit-box-direction: normal;
                     -ms-flex-direction: column;
                         flex-direction: column;
-                width: 2.5em;
-                -webkit-box-ordinal-group: 2;
-                    -ms-flex-order: 1;
-                        order: 1; }
+                width: 2.5em; }
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar img,
                 html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure img {
                   display: block;
@@ -24922,10 +24919,7 @@ html {
               -webkit-box-direction: normal;
                   -ms-flex-direction: column;
                       flex-direction: column;
-              width: 2.5em;
-              -webkit-box-ordinal-group: 2;
-                  -ms-flex-order: 1;
-                      order: 1; }
+              width: 2.5em; }
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar img,
               html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure img {
                 display: block;
@@ -24942,7 +24936,10 @@ html {
                 line-height: 1.5;
                 display: inline-block; }
           html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
-            margin-left: 0.3125em; }
+            margin-left: 0.3125em;
+            -webkit-box-ordinal-group: 3;
+                -ms-flex-order: 2;
+                    order: 2; }
       html body .widget.widget_log_lolla_topics_summary_widget .widget-title {
         border: 1px solid; }
         @media only screen and (max-width: 767.9px) {
@@ -25168,10 +25165,7 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            width: 2.5em;
-            -webkit-box-ordinal-group: 2;
-                -ms-flex-order: 1;
-                    order: 1; }
+            width: 2.5em; }
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person__avatar img,
             html body .shortcode.shortcode-people .shortcode-body .people .person-with-count .person .figure img {
               display: block;
@@ -25285,10 +25279,7 @@ html {
             -webkit-box-direction: normal;
                 -ms-flex-direction: column;
                     flex-direction: column;
-            width: 2.5em;
-            -webkit-box-ordinal-group: 2;
-                -ms-flex-order: 1;
-                    order: 1; }
+            width: 2.5em; }
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source__avatar img,
             html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .source .figure img {
               display: block;
@@ -25305,7 +25296,10 @@ html {
               line-height: 1.5;
               display: inline-block; }
         html body .shortcode.shortcode-sources .shortcode-body .sources .source-with-count .post-count {
-          margin-left: 0.3125em; }
+          margin-left: 0.3125em;
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
     html body .shortcode.shortcode-topics-summary .shortcode-body .text p {
       display: inline; }
     html body .breadcrumb .ul {

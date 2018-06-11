@@ -12,6 +12,5 @@
   .figure {
     @include figure;
     width: $avatar-width;
-    order: 1;
   }
 }
