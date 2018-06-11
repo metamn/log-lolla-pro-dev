@@ -11,5 +11,5 @@
 <aside class="post-format">
   <h3 class="hidden">Post format</h3>
 
-  <?php echo log_lolla_post_format(); ?>
+  <?php echo log_lolla_get_post_format_link_to_archive(); ?>
 </aside>

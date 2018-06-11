@@ -11,5 +11,9 @@
 <aside class="post-date-and-time">
   <h3 class="hidden">Article date and time</h3>
 
-  <?php log_lolla_post_date_and_time(); ?>
+  <div class="posted-on">
+    <time class="date published" datetime="<?php echo esc_attr( get_the_date( 'c' ) . ', ' .  get_the_time( 'c' ) ) ?>">
+      <?php echo esc_html( get_the_date() . ', ' . get_the_time() ) ?>
+    </time>
+  </div>'
 </aside>

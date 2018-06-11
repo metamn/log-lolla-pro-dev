@@ -8,4 +8,11 @@
    */
 ?>
 
-<?php log_lolla_post_format_and_topics(); ?>
+<?php
+  $format = log_lolla_get_post_format_link_to_archive();
+  $categories = get_the_category_list( esc_html_x( ' ', 'list item separator', 'log-lolla' ) );
+  $tags = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'log-lolla' ) );
+
+  $all = $format . ' ' . $categories . ' ' . $tags;
+  echo str_replace( '.', '', $all );
+?>

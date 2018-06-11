@@ -6,25 +6,20 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
 
-if ( ! function_exists( 'log_lolla_post_format_and_topics' ) ) {
-  function log_lolla_post_format_and_topics() {
-    $format = log_lolla_post_format();
-    $categories = get_the_category_list( esc_html__( ' ', 'log-lolla' ) );
-    $tags = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'log-lolla' ) );
-
-    $all = $format . ' ' . $categories . ' ' . $tags;
-    echo str_replace( '.', '', $all );
-  }
-}
-
-if ( ! function_exists( 'log_lolla_post_format' ) ) {
-  function log_lolla_post_format() {
+if ( ! function_exists( 'log_lolla_get_post_format_link_to_archive' ) ) {
+  /**
+   * Get the link to the post format archive
+   *
+   * @return string HTML
+   */
+  function log_lolla_get_post_format_link_to_archive() {
     $format = get_post_format() ? : 'standard';
+
     return log_lolla_display_post_format_archive_link( $format );
   }
 }
@@ -55,6 +50,7 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
       get_template_part( 'template-parts/post/post', 'search' );
     }
     wp_reset_postdata();
+
     $html .= ob_get_clean();
 
     return $html;
