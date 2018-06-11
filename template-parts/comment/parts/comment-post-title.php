@@ -8,6 +8,6 @@
    */
 ?>
 
-<h3 class="comment-post-title">
-  <?php log_lolla_comment_post_title( $comment ); ?>
-</h3>
+<a class="link" href="<?php echo esc_url( get_comment_link( $comment ) ) ?>" title="<?php echo esc_html( get_the_title( $comment->comment_post_ID ) ) ?>">
+  <?php echo esc_html( get_the_title( $comment->comment_post_ID ) ) ?>
+</a>

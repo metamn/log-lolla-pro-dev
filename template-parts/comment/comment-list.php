@@ -18,9 +18,10 @@
 ?>
 
 <section class="comments" id="comments-for-post-<?php echo get_the_ID( $post ) ?>">
-  <h3 class="comments-title">
-    <?php echo log_lolla_comment_list_title( $number_of_comments, $post ) ?>
-  </h3>
+  <?php
+    set_query_var( 'number_of_comments', $number_of_comments );
+    get_template_part( 'template-parts/comment/parts/comment', 'list-title' );
+  ?>
 
   <div class="comments-body">
     <?php foreach ( $comments as $comment ) {

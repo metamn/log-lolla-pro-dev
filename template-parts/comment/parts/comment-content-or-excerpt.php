@@ -11,5 +11,11 @@
 <aside class="comment-content-or-excerpt">
   <h3 class="hidden">Comment content or excerpt</h3>
 
-  <?php log_lolla_comment_content_or_excerpt( $comment ); ?>
+  <?php
+    if ( log_lolla_word_count( get_comment_text() ) > 60 ) {
+      get_template_part( 'template-parts/comment/parts/comment', 'excerpt' );
+    } else {
+      get_template_part( 'template-parts/comment/parts/comment', 'content' );
+    }
+  ?>
 </aside>

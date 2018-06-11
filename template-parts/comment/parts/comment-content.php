@@ -11,5 +11,7 @@
 <aside class="comment-content">
   <h3 class="hidden">Comment content</h3>
 
-  <?php log_lolla_comment_content( $comment ); ?>
+  <div class="text">
+    <?php echo get_comment_text() ?>
+  </div>
 </aside>
