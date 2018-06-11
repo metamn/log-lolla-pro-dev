@@ -2,13 +2,11 @@
   /**
    * Custom template tags for this theme
    *
-   * Eventually, some of the functionality here could be replaced by core features.
-   *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
-require get_template_directory() . '/inc/template-tags/general-template.php';
+require get_template_directory() . '/inc/template-tags/framework-template.php';
 require get_template_directory() . '/inc/template-tags/header-template.php';
 require get_template_directory() . '/inc/template-tags/post-template.php';
 require get_template_directory() . '/inc/template-tags/post-formats-template.php';

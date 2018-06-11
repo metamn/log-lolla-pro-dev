@@ -2,7 +2,7 @@
   /**
    * Displaying a pictogram
    *
-   * The corresponding SCSS code can be found in `assets/scss/framework/structure`
+   * The corresponding SCSS code can be found in the same folder in `assets/scss/`
    *
    * @package Log_Lolla_Pro
    */

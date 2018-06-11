@@ -2,15 +2,22 @@
   /**
    * General template tags for this theme
    *
-   * Contains custom template tags not groupable into a special template tag file
+   * Contains custom, reusable template tags specific for this theme
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
+
 if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
+  /**
+   * Get the link for a special page or archive
+   *
+   * @param  string $object The special page or archive title
+   * @return string         HTML
+   */
   function log_lolla_get_link_html_for( $object ) {
     switch ($object) {
       case 'Home':
@@ -21,6 +28,7 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
 
       case 'Archives':
         $page = get_page_by_title( 'Archives' );
+
         if ( isset( $page ) ) {
           $url = esc_url( get_permalink( $page ) );
           $title = esc_html__( 'Archives', 'log-lolla' );
@@ -30,6 +38,7 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
 
       case 'Tags':
         $page = get_page_by_title( 'Tags' );
+
         if ( isset( $page ) ) {
           $url = esc_url( get_permalink( $page ) );
           $title = esc_html__( 'Tags', 'log-lolla' );
@@ -39,6 +48,7 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
 
       case 'Categories':
         $page = get_page_by_title( 'Categories' );
+
         if ( isset( $page ) ) {
           $url = esc_url( get_permalink( $page ) );
           $title = esc_html__( 'Categories', 'log-lolla' );
@@ -74,6 +84,47 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
     }
   }
 }
+
+
+if ( ! function_exists( 'log_lolla_get_arrow_html' ) ) {
+  /**
+   * Return HTML markup for an arrow
+   *
+   * @param   string $direction The arrow direction like top, left, right, bottom
+   * @return  string            HTML
+   */
+  function log_lolla_get_arrow_html( $direction ) {
+    $html = '';
+
+    ob_start();
+    set_query_var( 'arrow_direction', $direction );
+    get_template_part( 'template-parts/framework/design/decorations/arrow-with-triangle/arrow-with-triangle', '' );
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
+
+if ( ! function_exists( 'log_lolla_get_triangle_html' ) ) {
+  /**
+   * Return HTML markup for a triangle
+   *
+   * @param   string $direction The arrow direction like top, left, right, bottom
+   * @return  string            HTML
+   */
+  function log_lolla_get_triangle_html( $direction ) {
+    $html = '';
+
+    ob_start();
+    set_query_var( 'triangle_direction', $direction );
+    get_template_part( 'template-parts/framework/design/decorations/triangle/triangle', '' );
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
 
 if ( ! function_exists( 'log_lolla_remove_object_from_array_by_key' ) ) {
  /**
@@ -128,13 +179,26 @@ if ( ! function_exists( 'log_lolla_array_unique_objects' ) ) {
     return true;
   }
 
+  /**
+   * PHP's array_unique of array of objects
+   *
+   * @param  array $array An array of objects
+   * @return array        An array of unique objects
+   */
   function log_lolla_array_unique_objects( $array ) {
     $unique = array_filter($array, 'log_lolla_uniquecol');
     return $unique;
   }
 }
 
+
 if ( ! function_exists( 'log_lolla_array_flatten' ) ) {
+  /**
+   * Flatten an array
+   *
+   * @param  array  $array An array to be flattened
+   * @return array        The flattened array
+   */
   function log_lolla_array_flatten( array $array ) {
     $flattened_array = array();
     array_walk_recursive($array, function($a) use (&$flattened_array) { $flattened_array[] = $a; });
@@ -168,7 +232,6 @@ if ( ! function_exists( 'log_lolla_implode_with_conjunction' ) ) {
 }
 
 
-
 if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
   /**
    * Convert a string to a classname
@@ -185,7 +248,6 @@ if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
     return $ret;
   }
 }
-
 
 
 if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
@@ -266,58 +328,12 @@ if (! function_exists( 'log_lolla_word_count' ) ) {
    *
    * @link http://www.thomashardy.me.uk/wordpress-word-count-function
    *
-   * @return integer
+   * @param   string  $text   The text
+   * @return  integer         The number of words
    */
   function log_lolla_word_count( $text ) {
     return str_word_count( $text );
   }
 }
-
-
-if ( ! function_exists( 'log_lolla_add_arrow_to_link_title' ) ) {
-  /**
-   * Add arrow after the link title
-   *
-   * @return string
-   */
-  function log_lolla_add_arrow_to_link_title( $title ) {
-   $arrow = log_lolla_get_arrow_html( 'right' );
-
-   return $title . $arrow;
-  }
-}
-
-
-
-if ( ! function_exists( 'log_lolla_get_arrow_html' ) ) {
-  /**
-   * Return HTML markup for an arrow
-   *
-   * @param [string] $direction the arrow direction liek top, left, right, bottom
-   *
-   * @return string
-   */
-  function log_lolla_get_arrow_html( $direction ) {
-    return '<span class="arrow-with-triangle arrow-with-triangle--' . $direction . '">
-               <span class="arrow-with-triangle__line"></span>
-               <span class="triangle triangle-- arrow-with-triangle__triangle"></span>
-             </span>';
-  }
-}
-
-
-if ( ! function_exists( 'log_lolla_get_triangle_html' ) ) {
-  /**
-   * Return HTML markup for a triangle
-   *
-   * @param [string] $direction the arrow direction liek top, left, right, bottom
-   *
-   * @return string
-   */
-  function log_lolla_get_triangle_html( $direction ) {
-    return '<span class="triangle triangle--' . $direction . '"></span>';
-  }
-}
-
 
 ?>
