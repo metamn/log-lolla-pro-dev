@@ -1,11 +1,14 @@
 <?php
-/**
- * Template Name: Archives Page
- *
- * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
- *
- * @package Log_Lolla
- */
+  /**
+   * Template Name: Archives Page
+   *
+   * Template to display the main Archives page
+   * The content of the page should consist of different shortcodes
+   *
+   * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
+   *
+   * @package Log_Lolla_Pro
+   */
 ?>
 
 <?php get_header() ?>
@@ -23,7 +26,7 @@
 
       /* Start the Loop */
       while ( have_posts() ) : the_post();
-        get_template_part( 'template-parts/page/page-type', 'archive' );
+        the_content();
       endwhile;
 
     } else {

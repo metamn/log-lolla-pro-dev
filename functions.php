@@ -1,12 +1,10 @@
 <?php
   /**
-   * Log Lolla functions and definitions
-   *
-   * Based on Underscore starter theme
+   * Functions and definitions
    *
    * @link https://developer.wordpress.org/themes/basics/theme-functions/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 if ( ! function_exists( 'log_lolla_setup' ) ) :

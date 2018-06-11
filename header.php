@@ -1,12 +1,10 @@
 <?php
 /**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until the content
+ * Template to display the site's header
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 ?>

@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * Template for displaying 404 pages (not found)
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 get_header(); ?>

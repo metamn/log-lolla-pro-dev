@@ -7,13 +7,14 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Log_Lolla_pro
+ * @package Log_Lolla_Pro
  */
 ?>
 
-<?php
+<?php get_header(); ?>
 
-get_header();
-get_footer();
+<section class="content content-index">
+  <h3 class="hidden">Index</h3>
+</section>
 
-?>
+<?php get_footer(); ?>
