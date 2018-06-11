@@ -126,6 +126,7 @@ if ( ! function_exists( 'log_lolla_get_triangle_html' ) ) {
 }
 
 
+
 if ( ! function_exists( 'log_lolla_remove_object_from_array_by_key' ) ) {
  /**
   * Remove object from an array by key
@@ -247,52 +248,6 @@ if ( ! function_exists( 'log_lolla_convert_string_to_classname' ) ) {
 
     return $ret;
   }
-}
-
-
-if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
-  /**
-   * Clean up the `term-description` Wordpress function which:
-   * - It wraps the result in `<p>` tags
-   * - It contains null strings
-   *
-   * @param  integer  $term     The term id
-   * @param  string   $taxonomy The term's taxonomy
-   * @return string             The cleaned up term description
-   */
-  function log_lolla_get_term_description( $term_id, $taxonomy ) {
-    return trim( strip_tags( term_description( $term_id, $taxonomy ) ) );
-  }
-}
-
-
-
-if ( ! function_exists( 'log_lolla_adjust_range_for_sparkline' ) ) {
- /**
-  * Adjust range for a sparkline
-  *
-  * The sparkline font takes value from 0-99
-  * If a sparkline item is bigger than 100 the sparkline graphics is broken
-  * If a sparkline item is to small (1, 12) the sparkline graphics will be very flat
-  *
-  * What we need to to is to transform sparkline items to be less than 99, and,
-  * multiply small items with 10 ... or something like this
-  *
-  * @param  Array $sparklines The array of sparklines
-  * @return Array             The adjusted array of sparklines
-  */
- function log_lolla_adjust_range_for_sparkline( $sparklines ) {
-   $adjusted = [];
-
-   $min = min( $sparklines );
-   $max = max( $sparklines );
-
-   foreach ( $sparklines as $sparkline ) {
-     $adjusted[] = log_lolla_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
-   }
-
-   return $adjusted;
- }
 }
 
 
