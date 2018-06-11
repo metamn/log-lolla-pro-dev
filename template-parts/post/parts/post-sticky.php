@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 
@@ -12,7 +12,9 @@
   if ( is_sticky() ) { ?>
     <div class="post-sticky">
       <span class="text">
-        <?php echo esc_attr( log_lolla_sticky_post_text() ); ?>
+        <?php
+          echo esc_html_x( 'Featured', 'sticky post text', 'log-lolla' );
+        ?>
       </span>
     </div>
 <?php } ?>

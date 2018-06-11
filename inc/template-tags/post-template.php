@@ -11,19 +11,6 @@
 
 
 
-if (! function_exists( 'log_lolla_sticky_post_text' ) ) {
-  /**
-   * Returns a text / HTML for a sticky post
-   *
-   * @return string
-   */
-  function log_lolla_sticky_post_text() {
-    /* translators: sticky post text. */
-    return esc_html_x( 'Featured', 'sticky post text', 'log-lolla' );
-  }
-}
-
-
 if ( ! function_exists( 'log_lolla_get_post_first_image_url' ) ) {
   /**
   * Get the first image from each post and resize it.

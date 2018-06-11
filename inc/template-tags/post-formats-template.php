@@ -142,8 +142,15 @@ if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
     if ( empty( $item) ) return;
 
     $html = '';
-    $html .= '<span class="post-format-name">' . log_lolla_display_post_format_archive_link( $item->post_format_name ) . '</span>';
-    $html .= '<span class="post-count">' . $item->post_count . '</span>';
+
+    ob_start();
+    set_query_var( 'post_format_name', log_lolla_display_post_format_archive_link( $item->post_format_name ) );
+    get_template_part( 'template-parts/post/parts/post-format', 'name' );
+
+    set_query_var( 'post_count', $item->post_count );
+    get_template_part( 'template-parts/post/parts/post', 'count' );
+
+    $html .= ob_get_clean();
 
     return $html;
   }
@@ -159,9 +166,13 @@ if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
    * @return string                   HTML
    */
   function log_lolla_display_post_format_archive_link( $post_format_name ) {
-    $html = '<a class="link" title="' . $post_format_name .'" href="' . get_post_format_link( $post_format_name ) . '">';
-    $html .= ucfirst( $post_format_name );
-    $html .= '</a>';
+    $html = '';
+
+    ob_start();
+    set_query_var( 'post_format_name', $post_format_name );
+    get_template_part( 'template-parts/post/parts/post-format', 'name-with-link' );
+
+    $html .= ob_get_clean();
 
     return $html;
   }

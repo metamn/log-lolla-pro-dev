@@ -4,7 +4,7 @@
    *
    * @link https://codex.wordpress.org/Styling_Page-Links
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 

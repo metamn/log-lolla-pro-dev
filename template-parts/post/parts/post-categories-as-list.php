@@ -1,6 +1,6 @@
 <?php
   /**
-   * Displaying post categories as list
+   * Displaying post categories as a list
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
