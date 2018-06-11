@@ -2,9 +2,12 @@
 /**
  * Template Name: Tags Page
  *
+ * Template to display a page of tags
+ * It will be displayed as an archive
+ *
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 ?>
 
@@ -12,14 +15,14 @@
 
 
 <section class="content content-archive">
-  <h3 class="archive-title">
-    <?php esc_html_e( 'Tags', 'log-lolla-pro' ); ?>
-  </h3>
+  <h3 class="hidden">Tag archive</h3>
 
-  <?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'archives' ); ?>
+  <?php
+    set_query_var( 'term', 'post_tag' );
+    get_template_part( 'template-parts/topic/topic', 'archive' );
 
-  <?php set_query_var( 'term', 'post_tag' ); ?>
-  <?php get_template_part( 'template-parts/topic/topic', 'archive' ); ?>
+    get_template_part( 'template-parts/topic/topic', 'header' );
+  ?>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

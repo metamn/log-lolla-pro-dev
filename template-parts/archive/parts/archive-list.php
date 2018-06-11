@@ -1,6 +1,6 @@
 <?php
   /**
-   * Displaying a list of archives
+   * Displaying a list of post of an archive
    *
    * The corresponding SCSS code can be found in `assets/scss/parts/archive-list`
    *

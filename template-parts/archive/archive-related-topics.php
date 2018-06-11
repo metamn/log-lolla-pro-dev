@@ -17,16 +17,11 @@
   }
 
   $related_topics  = log_lolla_display_related_topics_for_archive( $topic );
+  if ( empty( $related_topics ) ) return;
 
-  if ( ! empty( $related_topics ) ) { ?>
-    <section class="archive-list archive-list--topics">
-      <h3 class="archive-list-title">
-        <?php esc_html_e( 'Related topics ', 'log-lolla'); ?>
-      </h3>
+  set_query_var( 'archive_list_topics_klass', 'topics' );
+  set_query_var( 'archive_list_topics_title',  esc_html__( 'Related topics ', 'log-lolla') );
+  set_query_var( 'archive_list_topics_topics', $related_topics );
 
-      <div class="archive-list-body">
-        <?php echo $related_topics ?>
-      </div>
-    </section>
-  <?php }
+  get_template_part( 'template-parts/archive/parts/archive-list', 'topics' );
 ?>

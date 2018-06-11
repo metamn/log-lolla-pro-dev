@@ -1,10 +1,10 @@
 <?php
 /**
- * The template for displaying search results pages
+ * Template for displaying search results
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 get_header(); ?>
@@ -13,7 +13,10 @@ get_header(); ?>
     <h3 class="search-title">
       <?php
         /* translators: %s: search query. */
-        printf( esc_html__( 'Search Results for: %s', 'log-lolla' ), '<span>&quot;' . get_search_query() . '&quot;</span>' );
+        printf(
+          esc_html__( 'Search Results for: %s', 'log-lolla' ),
+          '<span>&quot;' . get_search_query() . '&quot;</span>'
+        );
       ?>
     </h3>
 
