@@ -12,6 +12,8 @@
 
 
 
+
+
 if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
   /**
    * Get first post and last post published dates
@@ -59,7 +61,7 @@ if ( ! function_exists( 'log_lolla_display_archives_by_year_and_month' ) ) {
     foreach ($dates as $archive_year => $archive_months) {
       set_query_var( 'archive_year', $archive_year );
       set_query_var( 'archive_months', $archive_months );
-      
+
       get_template_part( 'template-parts/archive/archive', 'year-and-months' );
     }
 

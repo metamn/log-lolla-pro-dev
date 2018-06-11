@@ -1,8 +1,8 @@
 <?php
   /**
-   * Navigation template
+   * Breadcrumb template
    *
-   * Contains custom template tags for pages, posts, archives navigation
+   * Contains custom breadcrumb navigation code
    *
    * @package Log_Lolla
    */
