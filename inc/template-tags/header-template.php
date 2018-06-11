@@ -6,7 +6,7 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 

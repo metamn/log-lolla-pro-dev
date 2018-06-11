@@ -6,7 +6,7 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
@@ -40,7 +40,7 @@ if ( ! function_exists( 'log_lolla_get_post_first_image_url' ) ) {
   $first_img = isset( $matches[1][0] ) ? $matches[1][0] : null;
 
  	if ( empty( $first_img ) ) {
- 		return get_template_directory_uri() . '/assets/images/image-not-found.png'; // path to default image.
+ 		return get_template_directory_uri() . log_lolla_get_image_not_found_url(); // path to default image.
  	}
 
 	return $first_img;
@@ -147,21 +147,6 @@ if ( ! function_exists( 'log_lolla_post_class' ) ) {
   }
 }
 
-
-
-if ( ! function_exists( 'log_lolla_post_permalink' ) ) {
-  /**
-   * Prints HTML with meta information for the current post link
-   *
-   */
-  function log_lolla_post_permalink() {
-    printf(
-      '<div class="permalink"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">%s</a></div>',
-      /* translators: %s: post permalink. */
-      esc_html_x( '&infin;', 'post permalink', 'log-lolla' )
-    );
-  }
-}
 
 
 if ( ! function_exists( 'log_lolla_post_author_linking_to_post' ) ) {

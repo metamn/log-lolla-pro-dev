@@ -86,6 +86,18 @@ if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_get_image_not_found_url' ) ) {
+  /**
+   * Get the image name / url to display when an image is not found
+   *
+   * @return string Image url and name
+   */
+  function log_lolla_get_image_not_found_url() {
+    return '/assets/images/image-not-found.png';
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_get_arrow_html' ) ) {
   /**
    * Return HTML markup for an arrow
