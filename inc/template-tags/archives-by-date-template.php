@@ -54,20 +54,16 @@ if ( ! function_exists( 'log_lolla_display_archives_by_year_and_month' ) ) {
     if ( empty( $dates ) ) return;
 
     $html = '';
-    foreach ($dates as $year => $months) {
-      $html .= '<div class="year-and-months">';
-      $html .= '<div class="year"><a class="link" href="' . get_year_link( $year ) .'" title="' . $year .'">' . $year . '</a></div>';
 
-      $grid = round( count($months) / 2 );
-      $html .= '<div class="months grid-' . $grid . '">';
-
-      foreach ($months as $month) {
-        $html .= '<div class="month"><a class="link" href="' . get_month_link( $year, $month ) .'" title="' . $month .'">' . $month . '</a></div>';
-      }
-
-      $html .= '</div>';
-      $html .= '</div>';
+    ob_start();
+    foreach ($dates as $archive_year => $archive_months) {
+      set_query_var( 'archive_year', $archive_year );
+      set_query_var( 'archive_months', $archive_months );
+      
+      get_template_part( 'template-parts/archive/archive', 'year-and-months' );
     }
+
+    $html .= ob_get_clean();
 
     return $html;
   }
