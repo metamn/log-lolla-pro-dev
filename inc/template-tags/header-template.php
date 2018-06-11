@@ -13,27 +13,8 @@
 if ( ! function_exists( 'log_lolla_header_menu_contents' ) ) {
   /**
   * What goes into the header menu
+  *
   * If this function is removed the header menu won't be displayed
-  *
-  * Example code for Header Menu
-  *
-  * <a href="#sidebar">
-     	<span class="text">Archives</span>
-     	<div class="arrows" style="display:flex;flex-wrap:wrap">
-     		<span class="arrow-with-triangle arrow-with-triangle--bottom">
-      					  	<span class="arrow-with-triangle__line"></span>
-      					  	<span class="triangle triangle-- arrow-with-triangle__triangle"></span>
-      						</span>
-     		<span class="arrow-with-triangle arrow-with-triangle--bottom">
-      					  	<span class="arrow-with-triangle__line"></span>
-      					  	<span class="triangle triangle-- arrow-with-triangle__triangle"></span>
-      						</span>
-     		<span class="arrow-with-triangle arrow-with-triangle--bottom">
-      					  	<span class="arrow-with-triangle__line"></span>
-      					  	<span class="triangle triangle-- arrow-with-triangle__triangle"></span>
-      						</span>
-     	</div>
-     </a>
   *
   * @return string
   *
@@ -64,31 +45,5 @@ if ( ! function_exists( 'log_lolla_header_class' ) ) {
      return $header_image . $logo . $header_text . $header_menu;
   }
 }
-
-
- if ( ! function_exists( 'log_lolla_hamburger_icon' ) ) {
-   /**
-    * Return HTML markup for hamburger icon
-    *
-    * @return string
-    *
-    */
-    function log_lolla_hamburger_icon() {
-    	echo '<span class="icon">&#x2630;</span>';
-    }
- }
-
-
- if ( ! function_exists( 'log_lolla_hamburger_icon_x' ) ) {
-   /**
-    * Return HTML markup for hamburger icon X
-    *
-    * @return string
-    */
-    function log_lolla_hamburger_icon_x() {
-   	 echo '<span class="icon">&times;</span>';
-    }
- }
-
 
 ?>

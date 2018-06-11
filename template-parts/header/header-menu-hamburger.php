@@ -11,23 +11,11 @@
       <h3 class="hidden">Hamburger Menu Icon</h3>
 
       <div class="hamburger-icon hamburger-icon--closed">
-        <?php
-          if ( function_exists( 'log_lolla_hamburger_icon') ) {
-            log_lolla_hamburger_icon();
-          } else {
-            echo '<span class="icon">&#x2630;</span>';
-          }
-        ?>
+        <span class="icon">&#x2630;</span>
       </div>
 
       <div class="hamburger-icon hamburger-icon--opened">
-        <?php
-          if ( function_exists( 'log_lolla_hamburger_icon_x') ) {
-            log_lolla_hamburger_icon_x();
-          } else {
-            echo '<span class="icon">&times;</span>';
-          }
-        ?>
+        <span class="icon">&times;</span>
       </div>
     </nav>
   <?php } ?>
