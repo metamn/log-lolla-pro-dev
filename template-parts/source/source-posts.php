@@ -9,7 +9,7 @@
 ?>
 
 <?php
-  $posts_of_a_source = log_lolla_get_posts_of_a_source( $post );
+  $posts_of_a_source = log_lolla_get_posts_of_a_post_type( $post );
   if ( empty( $posts_of_a_source ) ) return;
 
   $archive_list_title = sprintf(

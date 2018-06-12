@@ -11,6 +11,33 @@
 
 
 
+if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
+ /**
+  * Get the counters of a source
+  *
+  * Counters are posts count, summaries count etc.
+  *
+  * @param  object $post The source object
+  * @return Array        An array of integers
+  */
+ function log_lolla_get_source_counters( $post ) {
+   global $SUMMARIES_COUNT;
+   global $STANDARD_POSTS_COUNT;
+   global $RELATED_TOPICS_COUNT;
+
+   $posts_of_a_source = log_lolla_get_posts_of_a_post_type( $post );
+
+   $ret = [];
+
+   $ret[] = empty( $posts_of_a_source ) ? 0 : count( $posts_of_a_source );
+   $ret[] = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
+   $ret[] = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
+   $ret[] = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
+
+   return $ret;
+ }
+}
+
 
 
 

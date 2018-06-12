@@ -38,7 +38,11 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', esc_html__( 'Sources' ) );
-    $content = log_lolla_display_sources_with_post_count( $instance['number_of_sources'] );
+    $content = log_lolla_display_popular_posts_of_post_type(
+      'source',
+      $instance['number_of_sources'],
+      'post count'
+    );
 
     if ( ! empty( $content ) ) {
       echo $before_widget;
