@@ -15,7 +15,6 @@ require get_template_directory() . '/inc/template-tags/comment-template.php';
 require get_template_directory() . '/inc/template-tags/breadcrumb-template.php';
 require get_template_directory() . '/inc/template-tags/archive-template.php';
 
-require get_template_directory() . '/inc/template-tags/people-template.php';
 require get_template_directory() . '/inc/template-tags/source-template.php';
 require get_template_directory() . '/inc/template-tags/topics-template.php';
 require get_template_directory() . '/inc/template-tags/summary-template.php';

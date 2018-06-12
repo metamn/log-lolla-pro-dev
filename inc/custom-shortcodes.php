@@ -119,7 +119,7 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_person' ) ) {
     // Display the person
     $person = get_page_by_title( $attrs['name'], OBJECT, 'people');
 
-    return log_lolla_display_person( $person, $attrs['name'] );
+    return log_lolla_display_post_type( 'person', $person );
   }
 
   add_shortcode( 'log-lolla-person', 'log_lolla_create_custom_shortcode_person' );

@@ -7,6 +7,31 @@
    */
 
 
+
+if ( ! function_exists( 'log_lolla_display_post_type' ) ) {
+  function log_lolla_display_post_type( $post_type, $post ) {
+    $html = '';
+
+    ob_start();
+    set_query_var( 'list_item_class', $post_type );
+    set_query_var( 'list_item_url', get_permalink( $post ) );
+    set_query_var( 'list_item_avatar_url', 'yes' );
+
+    set_query_var( 'list_item_primary_text', the_title_attribute( array(
+      'echo' => false,
+      'post' => $post
+    ) ) );
+    set_query_var( 'list_item_avatar', get_the_post_thumbnail( $post->ID, 'thumbnail' ) );
+
+    get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
   function log_lolla_display_latest_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
     $items = log_lolla_get_latest_posts_of_post_type( $post_type, $number_of_items );
@@ -23,7 +48,7 @@ if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
         'post' => $item
       ) ) );
       set_query_var( 'list_item_secondary_text', log_lolla_display_summary_link_to_topic( $item ) );
-      
+
       get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
       $html .= ob_get_clean();
@@ -62,6 +87,7 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
         'echo' => false,
         'post' => $item->post
       ) ) );
+      set_query_var( 'list_item_secondary_text', '' );
 
       set_query_var( 'list_item_avatar', get_the_post_thumbnail( $item->post->ID, 'thumbnail' ) );
       set_query_var( 'list_item_metadata', $item->post_count );

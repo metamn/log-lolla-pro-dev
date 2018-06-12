@@ -179,7 +179,7 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', esc_html__( 'People' ) );
-    $content = log_lolla_display_people_with_post_count( $instance['number_of_people'] );
+    $content = log_lolla_display_popular_posts_of_post_type( 'people', $instance['number_of_people'] );
 
     if ( ! empty( $content ) ) {
       echo $before_widget;
@@ -508,7 +508,7 @@ add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Wi
    }
  }
 
- 
+
 
 if ( ! function_exists( 'log_lolla_display_widget_form_no_settings_message' ) ) {
   /**
