@@ -7,7 +7,46 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
+  function log_lolla_display_latest_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
+    $items = log_lolla_get_latest_posts_of_post_type( $post_type, $number_of_items );
+    if ( empty( $items ) ) return;
+
+    $html = '';
+
+    foreach ( $items as $item ) {
+      ob_start();
+
+      set_query_var( 'list_item_class', $post_type );
+      set_query_var( 'list_item_primary_text', the_title_attribute( array(
+        'echo' => false,
+        'post' => $item
+      ) ) );
+
+      $topic = log_lolla_get_summary_topic( $item );
+      set_query_var( 'list_item_secondary_text', $topic->name );
+      
+      get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+
+      $html .= ob_get_clean();
+    }
+
+    return $html;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
+  /**
+   * Display the most poular posts of a post type
+   *
+   * For example, the 5 most popular sources, or people
+   *
+   * @param  string   $post_type        The custom post type
+   * @param  integer  $number_of_items  How many posts to display
+   * @param  string   $metadata         The metadata type, like `post count`, `sparkline`
+   * @return string                     HTML
+   */
   function log_lolla_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
     $items = log_lolla_get_popular_posts_of_post_type( $post_type, $number_of_items );
     if ( empty( $items ) ) return;
@@ -26,13 +65,7 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
         'post' => $item->post
       ) ) );
 
-      if ( has_post_thumbnail( $item->post->ID ) ) {
-        $image = get_the_post_thumbnail( $item->post->ID, 'thumbnail' );
-      } else {
-        $image = '<img src="' . get_stylesheet_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64.png" title="' . $name . '">';
-      }
-
-      set_query_var( 'list_item_avatar', $image );
+      set_query_var( 'list_item_avatar', get_the_post_thumbnail( $item->post->ID, 'thumbnail' ) );
       set_query_var( 'list_item_metadata', $item->post_count );
       get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
@@ -43,6 +76,19 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
   }
 }
 
+
+if ( ! function_exists( 'log_lolla_get_latest_posts_of_post_type' ) ) {
+  function log_lolla_get_latest_posts_of_post_type( $post_type, $number_of_items ) {
+    return get_posts(
+      array(
+        'post_type' => $post_type,
+        'post_status' => 'publish',
+        'posts_per_page' => $number_of_items,
+        'order' => 'ASC'
+      )
+    );
+  }
+}
 
 
 if ( ! function_exists( 'log_lolla_get_popular_posts_of_post_type' ) ) {
