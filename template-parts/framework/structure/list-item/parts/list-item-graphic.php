@@ -17,17 +17,29 @@
     $list_item_graphic = get_query_var( 'list_item_graphic' );
   }
 
+  if ( empty( $list_item_graphic_url ) ) {
+    $list_item_graphic_url = get_query_var( 'list_item_graphic_url' );
+  }
+
+  if ( empty( $list_item_url ) ) {
+    $list_item_url = get_query_var( 'list_item_url' );
+  }
+
+  if ( empty( $list_item_primary_text ) ) {
+    $list_item_primary_text = get_query_var( 'list_item_primary_text' );
+  }
+
   if ( empty( $list_item_graphic ) ) return;
 ?>
 
-<div class="list_item_graphic">
-  <?php if ( isset( $list_item_graphic['url'] ) ) { ?>
-    <a class="link" href="<?php echo $list_item_graphic['url'] ?>" title="<?php echo $list_item_graphic['title'] ?>">
+<div class="list-item-graphic">
+  <?php if ( ! empty( $list_item_graphic_url ) ) { ?>
+    <a class="link" href="<?php echo $list_item_url ?>" title="<?php echo $list_item_primary_text ?>">
   <?php } ?>
 
-  <?php echo $list_item_graphic['content'] ?>
+  <?php echo $list_item_graphic ?>
 
-  <?php if ( isset( $list_item_graphic['url'] ) ) { ?>
+  <?php if ( isset( $list_item_graphic_url ) ) { ?>
     </a>
   <?php } ?>
 </div>

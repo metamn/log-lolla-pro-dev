@@ -17,17 +17,29 @@
     $list_item_avatar = get_query_var( 'list_item_avatar' );
   }
 
+  if ( empty( $list_item_avatar_url ) ) {
+    $list_item_avatar_url = get_query_var( 'list_item_avatar_url' );
+  }
+
+  if ( empty( $list_item_url ) ) {
+    $list_item_url = get_query_var( 'list_item_url' );
+  }
+
+  if ( empty( $list_item_primary_text ) ) {
+    $list_item_primary_text = get_query_var( 'list_item_primary_text' );
+  }
+
   if ( empty( $list_item_avatar ) ) return;
 ?>
 
-<figure class="list_item_avatar">
-  <?php if ( isset( $list_item_avatar['url'] ) ) { ?>
-    <a class="link" href="<?php echo $list_item_avatar['url'] ?>" title="<?php echo $list_item_avatar['title'] ?>">
+<figure class="list-item-avatar">
+  <?php if ( ! empty( $list_item_avatar_url ) ) { ?>
+    <a class="link" href="<?php echo $list_item_url ?>" title="<?php echo $list_item_primary_text ?>">
   <?php } ?>
 
-  <?php echo $list_item_avatar['image'] ?>
+  <?php echo $list_item_avatar ?>
 
-  <?php if ( isset( $list_item_avatar['url'] ) ) { ?>
+  <?php if ( isset( $list_item_avatar_url ) ) { ?>
     </a>
   <?php } ?>
 </figure>

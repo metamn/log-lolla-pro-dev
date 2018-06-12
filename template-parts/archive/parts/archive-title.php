@@ -13,10 +13,10 @@
 
   if ( ! empty( $archive_title ) ) {
     printf(
-      '<h3 class="archive-title">%1$s</h3>',
+      '%1$s',
       $archive_title
     );
   } else {
-    the_archive_title( '<h3 class="archive-title">', '</h3>' );
+    the_archive_title( '', '' );
   }
 ?>

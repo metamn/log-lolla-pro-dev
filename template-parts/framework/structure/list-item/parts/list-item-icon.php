@@ -16,17 +16,29 @@
     $list_item_icon = get_query_var( 'list_item_icon' );
   }
 
+  if ( empty( $list_item_icon_url ) ) {
+    $list_item_icon_url = get_query_var( 'list_item_icon_url' );
+  }
+
+  if ( empty( $list_item_url ) ) {
+    $list_item_url = get_query_var( 'list_item_url' );
+  }
+
+  if ( empty( $list_item_primary_text ) ) {
+    $list_item_primary_text = get_query_var( 'list_item_primary_text' );
+  }
+
   if ( empty( $list_item_icon ) ) return;
 ?>
 
-<div class="list_item_icon">
-  <?php if ( isset( $list_item_icon['url'] ) ) { ?>
-    <a class="link" href="<?php echo $list_item_icon['url'] ?>" title="<?php echo $list_item_icon['title'] ?>">
+<div class="list-item-icon">
+  <?php if ( ! empty( $list_item_icon_url ) ) { ?>
+    <a class="link" href="<?php echo $list_item_url ?>" title="<?php echo $list_item_primary_text ?>">
   <?php } ?>
 
-  <?php echo $list_item_icon['content'] ?>
+  <?php echo $list_item_icon ?>
 
-  <?php if ( isset( $list_item_icon['url'] ) ) { ?>
+  <?php if ( isset( $list_item_icon_url ) ) { ?>
     </a>
   <?php } ?>
 </div>

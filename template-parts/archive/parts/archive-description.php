@@ -12,10 +12,10 @@
 
   if ( ! empty( $archive_description ) ) {
     printf(
-      '<div class="archive-description">%1$s</div>',
+      '%1$s',
       $archive_description
     );
   } else {
-    the_archive_description( '<div class="archive-description">', '</div>' );
+    the_archive_description( '', '' );
   }
 ?>

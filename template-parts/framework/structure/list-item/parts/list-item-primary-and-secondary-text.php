@@ -21,7 +21,7 @@
 ?>
 
 <div class="list-item-primary-and-secondary-text">
-  <?php get_template_part( 'template_parts/framework/structure/list-item/parts/list-item-primary-text'); ?>
+  <?php get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-text'); ?>
 
   <div class="list-item-secondary-text">
     <?php echo $list_item_secondary_text; ?>

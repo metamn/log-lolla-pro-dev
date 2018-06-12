@@ -17,17 +17,29 @@
     $list_item_metadata = get_query_var( 'list_item_metadata' );
   }
 
+  if ( empty( $list_item_metadata_url ) ) {
+    $list_item_metadata_url = get_query_var( 'list_item_metadata_url' );
+  }
+
+  if ( empty( $list_item_url ) ) {
+    $list_item_url = get_query_var( 'list_item_url' );
+  }
+
+  if ( empty( $list_item_primary_text ) ) {
+    $list_item_primary_text = get_query_var( 'list_item_primary_text' );
+  }
+
   if ( empty( $list_item_metadata ) ) return;
 ?>
 
-<div class="list_item_metadata">
-  <?php if ( isset( $list_item_metadata['url'] ) ) { ?>
-    <a class="link" href="<?php echo $list_item_metadata['url'] ?>" title="<?php echo $list_item_metadata['title'] ?>">
+<div class="list-item-metadata">
+  <?php if ( ! empty( $list_item_metadata_url ) ) { ?>
+    <a class="link" href="<?php echo $list_item_url ?>" title="<?php echo $list_item_primary_text ?>">
   <?php } ?>
 
-  <?php echo $list_item_metadata['content'] ?>
+  <?php echo $list_item_metadata ?>
 
-  <?php if ( isset( $list_item_metadata['url'] ) ) { ?>
+  <?php if ( isset( $list_item_metadata_url ) ) { ?>
     </a>
   <?php } ?>
 </div>

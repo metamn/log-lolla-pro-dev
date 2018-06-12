@@ -9,15 +9,21 @@
    */
 ?>
 
-<aside class="archive-title-and-description">
-  <h3 class="hidden">Archive title and description</h3>
 
-  <div class="archive-artwork">
-    <?php get_template_part( 'template-parts/framework/design/decorations/circle/circle', '' ); ?>
-  </div>
+<?php
+  set_query_var( 'list_item_class', 'archive-title-and-description' );
 
-  <div class="archive-text">
-    <?php get_template_part( 'template-parts/archive/parts/archive', 'title' ); ?>
-    <?php get_template_part( 'template-parts/archive/parts/archive', 'description' ); ?>
-  </div>
-</aside>
+  ob_start();
+  get_template_part( 'template-parts/archive/parts/archive', 'title' );
+  set_query_var( 'list_item_primary_text', ob_get_clean() );
+
+  ob_start();
+  get_template_part( 'template-parts/archive/parts/archive', 'description');
+  set_query_var( 'list_item_secondary_text',  ob_get_clean() );
+
+  ob_start();
+  get_template_part( 'template-parts/framework/design/decorations/circle/circle', '' );
+  set_query_var( 'list_item_graphic', ob_get_clean() );
+
+  get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+?>
