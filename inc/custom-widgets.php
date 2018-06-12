@@ -493,6 +493,23 @@ add_action( 'widgets_init', function() { register_widget( 'Log_Lolla_Archives_Wi
  * Widget helpers
  */
 
+
+ if ( ! function_exists( 'log_lolla_display_widget' ) ) {
+   /**
+    * Display a widget
+    * It will be displayed as a shortcode
+    *
+    * @param  string $title   Widget title
+    * @param  string $content Widget content, HTML
+    * @return string          HTML
+    */
+   function log_lolla_display_widget( $title, $content ) {
+     return log_lolla_display_shortcode( $title, $content );
+   }
+ }
+
+ 
+
 if ( ! function_exists( 'log_lolla_display_widget_form_no_settings_message' ) ) {
   /**
    * Displays a message when there are no ptions to set for a widget
@@ -552,48 +569,6 @@ if ( ! function_exists( 'log_lolla_display_widget_form_label' ) ) {
   }
 }
 
-
-if ( ! function_exists( 'log_lolla_display_widget' ) ) {
-  /**
-   * Display a widget
-   *
-   * @param  string $title   Widget title
-   * @param  string $content Widget content, HTML
-   * @return string          HTML
-   */
-  function log_lolla_display_widget( $title, $content ) {
-    $html = '';
-
-    if ( ! empty( $title ) ) {
-      $html .= log_lolla_display_widget_title( $title );
-    }
-
-    if ( ! empty( $content ) ) {
-      $html .= '<div class="widget-body">';
-      $html .= $content;
-      $html .= '</div>';
-    }
-
-    return $html;
-  }
-}
-
-
-if ( ! function_exists( 'log_lolla_display_widget_title' ) ) {
-  /**
-   * Render title for a widegt
-   *
-   * @param  string $title The title of the widget
-   * @return string        HTML
-   */
-  function log_lolla_display_widget_title( $title ) {
-    $html = '<h3 class="widget-title">';
-    $html .= __( $title, 'log_lolla' );
-    $html .= '</h3>';
-
-    return $html;
-  }
-}
 
 
 if ( ! function_exists( 'log_lolla_display_widget_body' ) ) {
