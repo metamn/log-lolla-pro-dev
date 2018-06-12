@@ -58,7 +58,8 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_sources' ) ) {
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
     // Content
-    $content = log_lolla_display_sources_with_post_count( $attrs['sources'] );
+    // $content = log_lolla_display_sources_with_post_count( $attrs['sources'] );
+    $content = log_lolla_display_popular_posts_of_post_type( 'source', $attrs['sources'] );
 
     return log_lolla_display_shortcode( esc_html__( 'Sources', 'log-lolla' ), $content );
   }
