@@ -98,7 +98,7 @@ if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
     get_template_part( 'template-parts/topic/topic' );
     $term = ob_get_clean();
 
-    printf(
+    return sprintf(
       '<span class="on">%1$s</span><span class="topic">%2$s</span>',
       esc_html( 'On&nbsp;', 'log-lolla'),
       $term

@@ -22,9 +22,7 @@ if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
         'echo' => false,
         'post' => $item
       ) ) );
-
-      $topic = log_lolla_get_summary_topic( $item );
-      set_query_var( 'list_item_secondary_text', $topic->name );
+      set_query_var( 'list_item_secondary_text', log_lolla_display_summary_link_to_topic( $item ) );
       
       get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
