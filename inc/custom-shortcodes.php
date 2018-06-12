@@ -273,43 +273,16 @@ if ( ! function_exists( 'log_lolla_display_shortcode' ) ) {
   function log_lolla_display_shortcode( $title, $content ) {
     $html = '';
 
-    if ( ! empty( $title ) ) {
-      $html .= log_lolla_display_shortcode_header( $title );
-      $html .= '<div class="shortcode-body">';
-    }
+    ob_start();
+    set_query_var( 'shortcode_klass', log_lolla_convert_string_to_classname( $title ) );
+    set_query_var( 'shortcode_title', $title );
+    set_query_var( 'shortcode_body', $content );
+    get_template_part( 'template-parts/shortcode/shortcode', '');
 
-    if ( ! empty( $content ) ) {
-      $html .= $content;
-    }
-
-    if ( ! empty( $title ) ) {
-      $html .= '</div>';
-      $html .= "</aside>";
-    }
+    $html .= ob_get_clean();
 
     return $html;
   }
 }
-
-
-if ( ! function_exists( 'log_lolla_display_shortcode_header' ) ) {
-  /**
-   * Display shortcode header
-   *
-   * It wraps the content of a shortcode into an `aside`
-   *
-   * @param  string $title The shortcode title
-   * @return string        HTML
-   */
-  function log_lolla_display_shortcode_header( $title ) {
-    $html .= '<aside class="shortcode shortcode-' . log_lolla_convert_string_to_classname( $title ) . '">';
-    $html .= '<h3 class="shortcode-title">';
-    $html .= __( $title, 'log_lolla' );
-    $html .= '</h3>';
-
-    return $html;
-  }
-}
-
 
 ?>
