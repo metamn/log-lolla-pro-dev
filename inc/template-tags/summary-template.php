@@ -79,6 +79,31 @@ if ( ! function_exists( 'log_lolla_get_summary_last_date' ) ) {
 }
 
 
+if ( ! function_exists( 'log_lolla_get_summary_link_to_topic' ) ) {
+  /**
+   * Get a link to a topic for a summary
+   *
+   * @param  Object $summary The summary
+   * @return string          HTML
+   */
+  function log_lolla_get_summary_link_to_topic( $summary ) {
+    if ( empty( $summary ) ) return;
+
+    $topic = log_lolla_get_summary_topic( $summary );
+    if ( empty( $topic ) ) return;
+
+    $html = '';
+
+    ob_start();
+    set_query_var( 'topic', $topic );
+    get_template_part( 'template-parts/topic/topic', 'with-prefix' );
+    $html .= ob_get_clean();
+
+    return $html;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
   /**
    * Display a link to a topic for a summary
@@ -87,22 +112,7 @@ if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
    * @return string          HTML
    */
   function log_lolla_display_summary_link_to_topic( $summary ) {
-    if ( empty( $summary ) ) return;
-
-    $topic = log_lolla_get_summary_topic( $summary );
-    if ( empty( $topic ) ) return;
-
-    set_query_var( 'term', $topic );
-
-    ob_start();
-    get_template_part( 'template-parts/topic/topic' );
-    $term = ob_get_clean();
-
-    return sprintf(
-      '<span class="on">%1$s</span><span class="topic">%2$s</span>',
-      esc_html( 'On&nbsp;', 'log-lolla'),
-      $term
-    );
+    echo log_lolla_get_summary_link_to_topic( $summary );
   }
 }
 
@@ -146,7 +156,7 @@ if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
     ob_start();
     foreach ( $summaries as $post ) {
       setup_postdata( $post );
-      get_template_part( 'template-parts/summary/summary' );
+      get_template_part( 'template-parts/summary/summary', '' );
     }
     wp_reset_postdata();
     $html .= ob_get_clean();

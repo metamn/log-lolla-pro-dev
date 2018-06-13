@@ -10,14 +10,12 @@
 ?>
 
 <?php
-  $term = get_query_var( 'term' );
-  
-  if ( ! empty( $term ) ) { ?>
+  $topic = get_query_var( 'topic' );
 
-    <div class="term">
-      <a class="link" href="<?php echo esc_url( get_term_link( $term->term_id ) ) ?>" title="<?php echo $term->name ?>">
-        <?php echo $term->name ?>
-      </a>
+  if ( ! empty( $topic ) ) { ?>
+
+    <div class="topic">
+      <?php get_template_part( 'template-parts/topic/parts/topic', 'link' ); ?>
     </div>
 
   <?php }

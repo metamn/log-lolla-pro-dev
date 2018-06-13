@@ -47,7 +47,7 @@ if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
         'echo' => false,
         'post' => $item
       ) ) );
-      set_query_var( 'list_item_secondary_text', log_lolla_display_summary_link_to_topic( $item ) );
+      set_query_var( 'list_item_secondary_text', log_lolla_get_summary_link_to_topic( $item ) );
 
       get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
@@ -71,7 +71,7 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
    * @return string                     HTML
    */
   function log_lolla_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
-    $items = log_lolla_get_popular_posts_of_post_type( $post_type, $number_of_items );
+    $items = log_lolla_get_popular_posts_of_post_type( $post_type, $number_of_items, $metadata );
     if ( empty( $items ) ) return;
 
     $html = '';
