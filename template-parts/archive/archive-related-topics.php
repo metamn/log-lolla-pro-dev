@@ -2,9 +2,8 @@
   /**
    * Displaying related topics of an archive
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 
@@ -19,9 +18,9 @@
   $related_topics  = log_lolla_display_related_topics_for_archive( $topic );
   if ( empty( $related_topics ) ) return;
 
-  set_query_var( 'archive_list_topics_klass', 'topics' );
-  set_query_var( 'archive_list_topics_title',  esc_html__( 'Related topics ', 'log-lolla') );
-  set_query_var( 'archive_list_topics_topics', $related_topics );
+  set_query_var( 'topic_list_klass', 'topics' );
+  set_query_var( 'topic_list_title',  esc_html__( 'Related topics ', 'log-lolla') );
+  set_query_var( 'topic_list_items', $related_topics );
 
-  get_template_part( 'template-parts/archive/parts/archive-list', 'topics' );
+  get_template_part( 'template-parts/topic/topic', 'list' );
 ?>

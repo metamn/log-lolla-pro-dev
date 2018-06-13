@@ -2,9 +2,8 @@
   /**
    * Displaying summaries of an archive
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 
@@ -13,7 +12,7 @@
   $summaries = log_lolla_display_summaries_for_archive( $archive );
 
   if ( ! empty( $summaries ) ) { ?>
-    <section class="archive-list archive-list--summaries">
+    <section class="archive-list archive-list-summaries">
       <h3 class="archive-list-title">
         <?php esc_html_e( 'Summaries ', 'log-lolla'); ?>
       </h3>

@@ -18,5 +18,4 @@ require get_template_directory() . '/inc/template-tags/sparklines-template.php';
 require get_template_directory() . '/inc/template-tags/topics-template.php';
 require get_template_directory() . '/inc/template-tags/summary-template.php';
 
-
 ?>

@@ -1,8 +1,7 @@
 <?php
   /**
-   * Template part to display links to a yearly archive with months
+   * Display archive of years and months
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
    * @package Log_Lolla_Pro
    */

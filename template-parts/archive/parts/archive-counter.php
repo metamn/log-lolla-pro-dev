@@ -3,9 +3,7 @@
    * Displaying an archive counter
    *
    *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 ?>
 

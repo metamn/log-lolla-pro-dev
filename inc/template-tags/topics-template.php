@@ -1,4 +1,4 @@
-e<?php
+<?php
   /**
    * Topics template tags for this theme
    *
@@ -45,8 +45,8 @@ if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
     $html = '';
 
     ob_start();
-    foreach ( $related_topics as $term ) {
-      set_query_var( 'term', $term );
+    foreach ( $related_topics as $topic ) {
+      set_query_var( 'topic', $topic );
       get_template_part( 'template-parts/topic/topic', '' );
     }
     $html .= ob_get_clean();

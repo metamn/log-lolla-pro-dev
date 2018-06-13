@@ -2,7 +2,6 @@
   /**
    * Displaying a link to an archive year
    *
-   * The archive type is removed by a filter (`Category: News` => `News`)
    *
    * @package Log_Lolla_Pro
    */

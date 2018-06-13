@@ -2,6 +2,7 @@
   /**
    * Displaying a link to an archive month
    *
+   * 
    * @package Log_Lolla_Pro
    */
 ?>
