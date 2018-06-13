@@ -121,9 +121,10 @@ if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
     if ( empty( $post_formats) ) return;
 
     $html = '';
-    $html .= log_lolla_display_widget_body( 'post-formats', 'post-format', $post_formats, function( $item ) {
-      return log_lolla_display_post_format_with_post_count( $item );
-    });
+
+    foreach ($post_formats as $post_format) {
+      $html .= log_lolla_display_post_format_with_post_count( $post_format );
+    }
 
     return $html;
   }
@@ -144,11 +145,13 @@ if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
     $html = '';
 
     ob_start();
-    set_query_var( 'post_format_name', log_lolla_display_post_format_archive_link( $item->post_format_name ) );
-    get_template_part( 'template-parts/post/parts/post-format', 'name' );
+    set_query_var( 'list_item_class', 'post-format' );
+    set_query_var( 'list_item_url', get_post_format_link( $item->post_format_name ) );
 
-    set_query_var( 'post_count', $item->post_count );
-    get_template_part( 'template-parts/post/parts/post', 'count' );
+    set_query_var( 'list_item_primary_text', $item->post_format_name );
+    set_query_var( 'list_item_metadata', $item->post_count );
+
+    get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
     $html .= ob_get_clean();
 

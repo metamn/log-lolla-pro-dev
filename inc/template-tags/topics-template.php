@@ -1,4 +1,4 @@
-<?php
+e<?php
   /**
    * Topics template tags for this theme
    *
@@ -171,13 +171,13 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
 
      $html = '';
 
-     $html .= log_lolla_display_widget_body( 'categories', 'category', $categories, function( $item ) {
-       return log_lolla_display_topic_with_count( 'category', $item );
-     });
+     foreach ($categories as $category) {
+       $html .= log_lolla_display_topic_with_count( 'category', $category );
+     }
 
-     $html .= log_lolla_display_widget_body( 'tags', 'tag', $tags, function( $item ) {
-       return log_lolla_display_topic_with_count( 'tag', $item );
-     });
+     foreach ($tags as $tag) {
+       $html .= log_lolla_display_topic_with_count( 'tag', $tag );
+     }
 
      return $html;
    }
@@ -195,10 +195,18 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
    function log_lolla_display_topic_with_count($item_class_name, $item) {
      if ( empty( $item ) ) return;
 
-     $html = '<span class="' . $item_class_name . '-name">';
-     $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
-     $html .= '</span>';
-     $html .= '<span class="' . $item_class_name . '-count">' . $item->count . '</span>';
+     $html = '';
+
+     ob_start();
+     set_query_var( 'list_item_class', $item_class_name );
+     set_query_var( 'list_item_url', get_term_link( $item ) );
+
+     set_query_var( 'list_item_primary_text', $item->name );
+     set_query_var( 'list_item_metadata', $item->count );
+
+     get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+
+     $html .= ob_get_clean();
 
      return $html;
    }
@@ -226,13 +234,13 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
 
      $html = '';
 
-     $html .= log_lolla_display_widget_body( 'categories', 'category', $categories, function( $item ) use( $sparkline_dates ) {
-       return log_lolla_display_topic_with_sparklines( 'category', $item, $sparkline_dates );
-     });
+     foreach ($categories as $category) {
+       $html .= log_lolla_display_topic_with_sparklines( 'category', $category, $sparkline_dates );
+     }
 
-     $html .= log_lolla_display_widget_body( 'tags', 'tag', $tags, function( $item ) use( $sparkline_dates ) {
-       return log_lolla_display_topic_with_sparklines( 'tag', $item, $sparkline_dates );
-     });
+     foreach ($tags as $tag) {
+       $html .= log_lolla_display_topic_with_sparklines( 'tag', $tag, $sparkline_dates );
+     }
 
      return $html;
    }
@@ -255,9 +263,17 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
      $html = '';
 
      ob_start();
-     set_query_var( 'topic', $item );
+     set_query_var( 'list_item_class', $item_class_name );
+     set_query_var( 'list_item_url', get_term_link( $item ) );
+     set_query_var( 'list_item_primary_text', $item->name );
+
+     ob_start();
      set_query_var( 'sparklines', log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) );
-     get_template_part( 'template-parts/topic/topic', 'with-sparklines' );
+     get_template_part( 'template-parts/sparklines/sparklines', '' );
+     set_query_var( 'list_item_metadata', ob_get_clean() );
+
+     get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+
      $html .= ob_get_clean();
 
      return $html;
