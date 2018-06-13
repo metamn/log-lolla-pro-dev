@@ -21,7 +21,7 @@ if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
 
     ob_start();
     foreach ( $terms as $term ) {
-      set_query_var( 'term', $term );
+      set_query_var( 'topic', $term );
       get_template_part( 'template-parts/topic/topic', '' );
     }
     $html .= ob_get_clean();

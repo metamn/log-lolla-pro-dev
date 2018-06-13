@@ -3,7 +3,7 @@
    * Template Name: Archives Page
    *
    * Template to display the main Archives page
-   * The content of the page should consist of different shortcodes
+   * The content of the page should consist of different shortcodes which are displayed here
    *
    * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
    *

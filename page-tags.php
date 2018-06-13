@@ -2,8 +2,7 @@
   /**
    * Template Name: Tags Page
    *
-   * Template to display a page of tags
-   * It will be displayed as an archive
+   * Template to display an archive of tags
    *
    * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
    *
@@ -18,7 +17,9 @@
   <h3 class="hidden">Tag archive</h3>
 
   <?php
-    set_query_var( 'term', 'post_tag' );
+    set_query_var( 'topic_list_klass', 'tags' );
+    set_query_var( 'topic_list_title', '' );
+    set_query_var( 'topic_list_items', log_lolla_topic_archive( 'post_tag' ) );
     get_template_part( 'template-parts/topic/topic', 'list' );
 
     get_template_part( 'template-parts/topic/topic', 'header' );

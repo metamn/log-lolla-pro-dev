@@ -2,8 +2,7 @@
   /**
    * Template Name: Categories Page
    *
-   * Template to display a page of categories
-   * It will be similar like `page-tags`
+   * Template to display an archive of categories
    *
    * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
    *
@@ -18,7 +17,9 @@
   <h3 class="hidden">Category archive</h3>
 
   <?php
-    set_query_var( 'term', 'category' );
+    set_query_var( 'topic_list_klass', 'categories' );
+    set_query_var( 'topic_list_title', '' );
+    set_query_var( 'topic_list_items', log_lolla_topic_archive( 'category' ) );
     get_template_part( 'template-parts/topic/topic', 'list' );
 
     get_template_part( 'template-parts/topic/topic', 'header' );
