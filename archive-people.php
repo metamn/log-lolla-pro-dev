@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Template for displaying an archive page for people
+	 * Template for displaying the People archive page
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *

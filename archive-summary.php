@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Template for displaying archive pages for Summaries
+	 * Template for displaying the Summaries archive page
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *

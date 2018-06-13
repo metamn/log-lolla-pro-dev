@@ -1,8 +1,7 @@
 <?php
   /**
-   * Template part for displaying the header of a source
+   * Template part for displaying the header of a post type
    *
-   * It will be displayed using the common `archive-header` template
    *
    * @package Log_Lolla_Pro
    */
