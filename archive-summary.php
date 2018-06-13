@@ -1,6 +1,6 @@
 <?php
 	/**
-	 * Template for displaying archive pages for Sources
+	 * Template for displaying archive pages for Summaries
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
@@ -10,7 +10,7 @@
 get_header(); ?>
 
 	<section class="content content-archive">
-		<h3 class="hidden">Archive for Sources</h3>
+		<h3 class="hidden">Archive for Summaries</h3>
 
 		<?php get_template_part( 'template-parts/archive/archive', 'posts' ); ?>
 		<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>

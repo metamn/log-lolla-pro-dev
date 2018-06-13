@@ -1,11 +1,11 @@
 <?php
-/**
- * Template for displaying archive pages for People
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Log_Lolla_Pro
- */
+	/**
+	 * Template for displaying an archive page for people
+	 *
+	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+	 *
+	 * @package Log_Lolla_Pro
+	 */
 
 get_header(); ?>
 
