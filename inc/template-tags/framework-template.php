@@ -220,6 +220,50 @@ if ( ! function_exists( 'log_lolla_array_flatten' ) ) {
 }
 
 
+
+if ( ! function_exists( 'log_lolla_create_sentence_from_arrays' ) ) {
+  /**
+   * Create a sentence from two arrays of text
+   *
+   * @param  Array $array1  The first array
+   * @param  Array $array2  The second array
+   * @return string         The sentence
+   */
+  function log_lolla_create_sentence_from_arrays( $array1, $array2 ) {
+    $ret = '';
+
+    $ret .= esc_html_x( 'This site is about', 'log-lolla-pro' );
+    $ret .= ' ';
+
+    $separator = esc_html_x( ', ', 'log-lolla-pro' );
+    $connector = esc_html_x( 'and', 'log-lolla-pro' );
+
+    if ( ! empty( $array1 ) ) {
+      if ( ! empty( $array2) ) {
+        $ret .= implode( $separator, $array1 );
+      } else {
+        $ret .= log_lolla_implode_with_conjunction( $array1,  $separator, $connector );
+      }
+
+    }
+
+    if ( ! empty( $array2 ) ) {
+      if ( ! empty( $array1 ) ) {
+        $ret .= ', ';
+
+        if ( count($array2) == 1 ) {
+          $ret .= $connector . ' ';
+        }
+      }
+
+      $ret .= log_lolla_implode_with_conjunction( $array2,  $separator, $connector );
+    }
+
+    return $ret;
+  }
+}
+
+
 if ( ! function_exists( 'log_lolla_implode_with_conjunction' ) ) {
   /**
    * An `implode()` which adds $conjunction as the last $separator

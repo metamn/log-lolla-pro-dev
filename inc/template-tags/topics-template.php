@@ -10,62 +10,6 @@
    */
 
 
-if ( ! function_exists( 'log_lolla_get_pictograms' ) ) {
-  function log_lolla_get_pictograms( $counters ) {
-    $pictograms = [];
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
-      'number' => $counters[0],
-      'scrollto' => 'archive-list--posts',
-      'klass' => ( $counters[0] > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
-      'number' => $counters[1],
-      'scrollto' => 'archive-list--summaries',
-      'klass' => ( $counters[1] > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
-      'number' => $counters[2],
-      'scrollto' => 'archive-list--standard-posts',
-      'klass' => ( $counters[2] > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    $pictograms[] = array(
-      'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
-      'number' => $counters[3],
-      'scrollto' => 'archive-list--related-topics',
-      'klass' => ( $counters[3] > 0 ) ? 'activable' : 'inactivable'
-    );
-
-    return $pictograms;
-  }
-}
-
-
-if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
-  function log_lolla_get_archive_counters() {
-    $archive = get_queried_object();
-    if ( empty( $archive ) ) return;
-
-    global $SUMMARIES_COUNT;
-    global $STANDARD_POSTS_COUNT;
-    global $RELATED_TOPICS_COUNT;
-
-    $ret = [];
-
-    $ret[] = $archive->count ? $archive->count : 0;
-    $ret[] = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
-    $ret[] = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
-    $ret[] = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
-
-    return $ret;
-  }
-}
 
 
 if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
@@ -85,6 +29,8 @@ if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
     return $html;
   }
 }
+
+
 
 if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
   function log_lolla_display_related_topics_for_archive( $archive ) {
@@ -138,22 +84,7 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_posts_for_topic' ) ) {
-  function log_lolla_get_posts_for_topic( $topic ) {
-    if ( empty( $topic ) ) return;
 
-    $taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
-
-    return get_posts(
-      array(
-        'post_type' => 'post',
-        'post_status' => 'publish',
-        'numberposts' => -1,
-        $taxonomy => $topic->slug
-      )
-    );
-  }
-}
 
 
 if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
@@ -187,6 +118,7 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
 
     if ( empty( $categories ) && empty( $tags ) ) return;
 
+
     $categories_descriptions = array_filter(
       array_map(
         function( $term ) {
@@ -206,38 +138,17 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
     );
 
     if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
+    $sentence = log_lolla_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
 
 
-    $html = '<aside class="shortcode shortcode-topics-summary">';
-    $html .= '<h3 class="shortcode-title" class="hidden">' . esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) . '</h3>';
-    $html .= '<div class="shortcode-body"><div class="text">';
+    $html = '';
 
-    $html .= esc_html_x( 'This site is about', 'log-lolla-pro' );
-    $separator = esc_html_x( ', ', 'log-lolla-pro' );
-    $html .= ' ';
-
-    if ( ! empty( $categories_descriptions ) ) {
-      if ( ! empty( $tags_descriptions) ) {
-        $html .= implode( $separator, $categories_descriptions );
-      } else {
-        $html .= log_lolla_implode_with_conjunction( $categories_descriptions,  $separator, 'and' );
-      }
-
-    }
-
-    if ( ! empty( $tags_descriptions ) ) {
-      if ( ! empty( $categories_descriptions ) ) {
-        $html .= ', ';
-
-        if ( count($tags_descriptions) == 1 ) {
-          $html .= 'and ';
-        }
-      }
-
-      $html .= log_lolla_implode_with_conjunction( $tags_descriptions,  $separator, 'and' );
-    }
-
-    $html .= '.</div></div></aside>';
+    ob_start();
+    set_query_var( 'shortcode_klass', 'shortcode-topics-summary' );
+    set_query_var( 'shortcode_title', esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) );
+    set_query_var( 'shortcode_body', $sentence );
+    get_template_part( 'template-parts/shortcode/shortcode' );
+    $html .= ob_get_clean();
 
     return $html;
   }
@@ -341,113 +252,18 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
      if ( empty( $item ) ) return;
      if ( empty( $sparkline_dates ) ) return;
 
-     $html = '<span class="' . $item_class_name . '-name">';
-     $html .= '<a class="link" href="' . get_term_link( $item ) . '" title="' . $item->name . '">' . $item->name . '</a>';
-     $html .= '</span>';
-     $html .= '<span class="' . $item_class_name . '-sparklines sparks-font sparks-font-dotline-medium">';
-     $html .= log_lolla_display_sparklines_for_topic( $sparkline_dates, $item );
-     $html .= '</span>';
+     $html = '';
+
+     ob_start();
+     set_query_var( 'topic', $item );
+     set_query_var( 'sparklines', log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) );
+     get_template_part( 'template-parts/topic/topic', 'with-sparklines' );
+     $html .= ob_get_clean();
 
      return $html;
    }
  }
 
-
- if ( ! function_exists( 'log_lolla_display_sparklines_for_topic' ) ) {
-   /**
-    * Display sparklines for a topic
-    *
-    * @param  Array $sparkline_dates              The array of dates for each sparkline
-    * @param  Object  $item                       A term
-    * @return string                              HTML
-    */
-   function log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) {
-     $sparklines = log_lolla_get_sparklines_for_topic( $sparkline_dates, $item );
-     if ( empty( $sparklines ) ) return;
-
-     $sparklines = log_lolla_adjust_range_for_sparkline( $sparklines );
-
-     return '{' . implode( ',', $sparklines ) . '}';
-   }
- }
-
-
- if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
-   /**
-    * Get the sparklines for a topic (category, tag)
-    *
-    * @param  Array $sparkline_dates              The array of dates for each sparkline
-    * @param  Object  $item                       A term
-    * @return Array                               An array of integers
-    */
-   function log_lolla_get_sparklines_for_topic( $sparkline_dates, $item ) {
-     if ( empty( $item ) ) return;
-     if ( empty( $sparkline_dates ) ) return;
-
-     $sparklines = [];
-
-     for ( $i = 0; $i < count($sparkline_dates) - 1; $i++ ) {
-       $posts = get_posts(
-         array(
-           'post_type' => 'post',
-           'post_status' => 'publish',
-           'posts_per_page' => -1,
-           'order' => 'ASC',
-           'tax_query' => array(
-             array(
-               'taxonomy' => $item->taxonomy,
-               'field' => 'slug',
-               'terms' => $item->slug
-             )
-           ),
-           'date_query' => array(
-             array(
-               'after' => date('Y-m-d', strtotime( $sparkline_dates[$i] )),
-               'before' => date('Y-m-d', strtotime( $sparkline_dates[$i + 1] ))
-             )
-           )
-         )
-       );
-
-       $sparklines[] = count( $posts );
-     }
-
-     return $sparklines;
-   }
- }
-
- if ( ! function_exists( 'log_lolla_get_sparkline_dates' ) ) {
-   /**
-    * Get the dates corresponding to a set of sparkline
-    *
-    * @param  integer $sparklines Total number of sparkines
-    * @return array               An array of dates
-    */
-   function log_lolla_get_sparkline_dates( $sparklines ) {
-     // Get the first post and the last post dates
-     $post_dates = log_lolla_get_first_post_and_last_post_date();
-     if ( empty( $post_dates ) ) return;
-
-     // Number of days since the first post (ie. 110)
-     $date1 = new DateTime( $post_dates[0] );
-     $date2 = new DateTime( $post_dates[1] );
-     $number_of_days = $date2->diff( $date1 )->format( "%a" );
-
-     // Number of days for a sparkline unit (ie 11, from 110 / $sparklines)
-     $number_of_days_per_sparkline = round( $number_of_days / $sparklines );
-
-     $dates = [];
-
-     $date = $date1;
-     while ($date <= $date2) {
-       // If we don't convert $date to string then always the same date will be added to the $dates array ...
-       $dates[] = $date->format('Y-m-d');
-       $date = $date->modify( '+' . $number_of_days_per_sparkline . ' days' );
-     }
-
-     return $dates;
-   }
- }
 
 
  if ( ! function_exists( 'log_lolla_get_most_popular_terms_by_count' ) ) {
@@ -477,34 +293,6 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
  }
 
 
- if ( ! function_exists( 'log_lolla_adjust_range_for_sparkline' ) ) {
-  /**
-   * Adjust range for a sparkline
-   *
-   * The sparkline font takes value from 0-99
-   * If a sparkline item is bigger than 100 the sparkline graphics is broken
-   * If a sparkline item is to small (1, 12) the sparkline graphics will be very flat
-   *
-   * What we need to to is to transform sparkline items to be less than 99, and,
-   * multiply small items with 10 ... or something like this
-   *
-   * @param  Array $sparklines The array of sparklines
-   * @return Array             The adjusted array of sparklines
-   */
-  function log_lolla_adjust_range_for_sparkline( $sparklines ) {
-    $adjusted = [];
-
-    $min = min( $sparklines );
-    $max = max( $sparklines );
-
-    foreach ( $sparklines as $sparkline ) {
-      $adjusted[] = log_lolla_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
-    }
-
-    return $adjusted;
-  }
- }
-
 
  if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
    /**
@@ -518,6 +306,31 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
     */
    function log_lolla_get_term_description( $term_id, $taxonomy ) {
      return trim( strip_tags( term_description( $term_id, $taxonomy ) ) );
+   }
+ }
+
+
+
+ if ( ! function_exists( 'log_lolla_get_posts_for_topic' ) ) {
+   /**
+    * Get all posts of a topic
+    *
+    * @param  object $topic The topic
+    * @return Array         An array of posts
+    */
+   function log_lolla_get_posts_for_topic( $topic ) {
+     if ( empty( $topic ) ) return;
+
+     $taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
+
+     return get_posts(
+       array(
+         'post_type' => 'post',
+         'post_status' => 'publish',
+         'numberposts' => -1,
+         $taxonomy => $topic->slug
+       )
+     );
    }
  }
 

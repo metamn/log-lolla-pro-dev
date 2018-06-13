@@ -11,6 +11,65 @@
 
 
 
+   if ( ! function_exists( 'log_lolla_get_pictograms' ) ) {
+     function log_lolla_get_pictograms( $counters ) {
+       $pictograms = [];
+
+       $pictograms[] = array(
+         'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
+         'number' => $counters[0],
+         'scrollto' => 'archive-list--posts',
+         'klass' => ( $counters[0] > 0 ) ? 'activable' : 'inactivable'
+       );
+
+       $pictograms[] = array(
+         'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
+         'number' => $counters[1],
+         'scrollto' => 'archive-list--summaries',
+         'klass' => ( $counters[1] > 0 ) ? 'activable' : 'inactivable'
+       );
+
+       $pictograms[] = array(
+         'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
+         'number' => $counters[2],
+         'scrollto' => 'archive-list--standard-posts',
+         'klass' => ( $counters[2] > 0 ) ? 'activable' : 'inactivable'
+       );
+
+       $pictograms[] = array(
+         'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
+         'number' => $counters[3],
+         'scrollto' => 'archive-list--related-topics',
+         'klass' => ( $counters[3] > 0 ) ? 'activable' : 'inactivable'
+       );
+
+       return $pictograms;
+     }
+   }
+
+
+   if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
+     function log_lolla_get_archive_counters() {
+       $archive = get_queried_object();
+       if ( empty( $archive ) ) return;
+
+       global $SUMMARIES_COUNT;
+       global $STANDARD_POSTS_COUNT;
+       global $RELATED_TOPICS_COUNT;
+
+       $ret = [];
+
+       $ret[] = $archive->count ? $archive->count : 0;
+       $ret[] = is_null( $SUMMARIES_COUNT ) ? 0 : $SUMMARIES_COUNT;
+       $ret[] = is_null( $STANDARD_POSTS_COUNT ) ? 0 : $STANDARD_POSTS_COUNT;
+       $ret[] = is_null( $RELATED_TOPICS_COUNT ) ? 0 : $RELATED_TOPICS_COUNT;
+
+       return $ret;
+     }
+   }
+
+
+
 if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
  /**
   * Get the counters of a source

@@ -79,6 +79,7 @@ if ( ! function_exists( 'log_lolla_get_summary_last_date' ) ) {
 }
 
 
+
 if ( ! function_exists( 'log_lolla_get_summary_link_to_topic' ) ) {
   /**
    * Get a link to a topic for a summary
