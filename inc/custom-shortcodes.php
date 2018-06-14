@@ -217,7 +217,7 @@ if ( ! function_exists( 'log_lolla_create_custom_shortcode_topics_summary' ) ) {
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
     // Content
-    $content = log_lolla_display_topics_summary( $attrs['categories'], $attrs['tags'] );
+    $content = log_lolla_get_topics_summary( $attrs['categories'], $attrs['tags'] );
 
     return log_lolla_display_shortcode( '', $content );
   }

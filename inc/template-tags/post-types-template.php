@@ -4,6 +4,8 @@
    *
    * Like sources, poeple, summaries etc.
    *
+   * @package Log_Lolla_Pro
+   *
    */
 
 

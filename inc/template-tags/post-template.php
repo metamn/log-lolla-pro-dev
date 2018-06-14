@@ -1,8 +1,7 @@
 <?php
   /**
-   * Post template tags for this theme
+   * Post template tags
    *
-   * Contains custom template tags related to posts
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
@@ -108,13 +107,13 @@ if ( ! function_exists( 'log_lolla_get_link_from_content' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_post_class' ) ) {
+if ( ! function_exists( 'log_lolla_get_post_class' ) ) {
   /**
    * Returns a custom post class
    *
    * @return string
    */
-   function log_lolla_post_class() {
+   function log_lolla_get_post_class() {
      // Changing the post grid based on how long a post & it's excerpt is
      $max_word_count = 40;
 

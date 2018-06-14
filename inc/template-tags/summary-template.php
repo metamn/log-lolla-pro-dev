@@ -1,8 +1,7 @@
 <?php
   /**
-   * Summaries template tags for this theme
+   * Summary template tags
    *
-   * Contains custom template tags related to categories and tags
    *
    * @link https://codex.wordpress.org/Template_Tags
    *

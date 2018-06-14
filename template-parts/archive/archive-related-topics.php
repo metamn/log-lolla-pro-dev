@@ -15,7 +15,7 @@
     $topic = get_queried_object();
   }
 
-  $related_topics  = log_lolla_display_related_topics_for_archive( $topic );
+  $related_topics  = log_lolla_get_related_topics_for_archive( $topic );
   if ( empty( $related_topics ) ) return;
 
   set_query_var( 'topic_list_klass', 'topics' );

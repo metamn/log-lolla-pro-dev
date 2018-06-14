@@ -1,6 +1,8 @@
 <?php
   /**
    * Template tags for sparklines
+   *
+   * @package Log_Lolla_Pro
    */
 
 

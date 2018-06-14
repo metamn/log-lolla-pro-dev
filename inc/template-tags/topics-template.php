@@ -1,8 +1,7 @@
 <?php
   /**
-   * Topics template tags for this theme
+   * Topics template tags
    *
-   * Contains custom template tags related to categories and tags
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
@@ -12,9 +11,15 @@
 
 
 
-if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
-  function log_lolla_topic_archive( $term ) {
-    $terms = log_lolla_get_most_popular_terms_by_count( $term, 0 );
+if ( ! function_exists( 'log_lolla_get_topic_archive' ) ) {
+  /**
+   * Get topics for an archive
+   *
+   * @param  string $topic The type of a topic like 'category', 'post_tag'
+   * @return string        HTML
+   */
+  function log_lolla_get_topic_archive( $topic ) {
+    $terms = log_lolla_get_most_popular_terms_by_count( $topic, 0 );
     if ( empty( $terms ) ) return;
 
     $html = '';
@@ -31,12 +36,17 @@ if ( ! function_exists( 'log_lolla_topic_archive' ) ) {
 }
 
 
-
-if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
-  function log_lolla_display_related_topics_for_archive( $archive ) {
+if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
+  /**
+   * Get related topics for an archive
+   *
+   * @param  [type] $archive [description]
+   * @return [type]          [description]
+   */
+  function log_lolla_get_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $related_topics = log_lolla_get_related_topics_for_archive( $archive );
+    $related_topics = log_lolla_get_data_for_related_topics_for_archive( $archive );
     if ( empty( $related_topics ) ) return;
 
     global $RELATED_TOPICS_COUNT;
@@ -56,8 +66,14 @@ if ( ! function_exists( 'log_lolla_display_related_topics_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
-  function log_lolla_get_related_topics_for_archive( $archive ) {
+if ( ! function_exists( 'log_lolla_get_data_for_related_topics_for_archive' ) ) {
+  /**
+   * Get the data for the related topics of an archive
+   *
+   * @param  [type] $archive [description]
+   * @return [type]          [description]
+   */
+  function log_lolla_get_data_for_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
     $posts_for_archive = log_lolla_get_posts_for_topic( $archive );
@@ -87,9 +103,9 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
+if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
   /**
-   * Display topics summary
+   * Get topics summary
    *
    * Displays a text / paragraph containing all the category and tag descriptions merged together
    *
@@ -103,7 +119,7 @@ if ( ! function_exists( 'log_lolla_display_topics_summary' ) ) {
    * @param  integer $number_of_tags       How many tags to show
    * @return string                        HTML
    */
-  function log_lolla_display_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
+  function log_lolla_get_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
     if ( $number_of_categories == 0) {
       $categories = [];
     } else {

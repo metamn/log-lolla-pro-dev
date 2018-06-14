@@ -361,7 +361,7 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', '' );
-    $content = log_lolla_display_topics_summary(
+    $content = log_lolla_get_topics_summary(
       $instance['number_of_categories'],
       $instance['number_of_tags']
     );

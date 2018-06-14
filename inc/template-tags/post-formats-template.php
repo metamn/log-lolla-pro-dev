@@ -1,8 +1,7 @@
 <?php
   /**
-   * Post formats template tags for this theme
+   * Post formats template tags
    *
-   * Contains custom template tags related to post formats
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
