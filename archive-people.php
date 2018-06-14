@@ -1,10 +1,14 @@
 <?php
 	/**
-	 * Template for displaying the People archive page
+	 * Displays the archive page for the People post type
 	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+	 * @uses ::archive-source.html Archive source
+	 *
+	 * @link https://morethemes.baby/log-lolla-pro-demo/people Live example
+	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
 	 *
 	 * @package Log_Lolla_Pro
+	 * @since 1.0.0
 	 */
 
 get_header(); ?>

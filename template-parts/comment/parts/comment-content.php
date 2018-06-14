@@ -6,12 +6,14 @@
    *
    * @package Log_Lolla
    */
+
+  $text = get_comment_text();
 ?>
 
 <aside class="comment-content">
   <h3 class="hidden">Comment content</h3>
 
   <div class="text">
-    <?php echo get_comment_text() ?>
+    <?php echo $text; ?>
   </div>
 </aside>

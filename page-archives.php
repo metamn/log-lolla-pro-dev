@@ -9,9 +9,9 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php get_header() ?>
+  get_header()
+?>
 
 
 <section class="content content-archives">

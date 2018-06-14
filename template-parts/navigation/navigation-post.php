@@ -6,9 +6,6 @@
    *
    * @package Log_Lolla
    */
-?>
-
-<?php
 
   $arrow_left = log_lolla_get_arrow_html( 'left' );
   $prev = get_previous_post_link("$arrow_left%link");
@@ -37,7 +34,5 @@
         ?>
       </ul>
     </nav>
-
   <?php }
-
 ?>

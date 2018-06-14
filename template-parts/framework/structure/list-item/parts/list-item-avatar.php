@@ -10,9 +10,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   if ( empty( $list_item_avatar ) ) {
     $list_item_avatar = get_query_var( 'list_item_avatar' );
   }

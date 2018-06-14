@@ -6,13 +6,12 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
+
   if ( function_exists( 'log_lolla_get_header_class' ) ) {
-    $klass = log_lolla_get_header_class();
+   $klass = log_lolla_get_header_class();
   } else {
-    $klass = '';
+   $klass = '';
   }
 ?>
 

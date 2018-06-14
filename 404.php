@@ -1,11 +1,15 @@
 <?php
-/**
- * Template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package Log_Lolla_Pro
- */
+	/**
+	 * Displays a 404 page (not found)
+	 *
+	 * Displays a page not found message and a search form
+	 *
+	 * @link https://morethemes.baby/log-lolla-pro-demo/peoplexxx Live example
+	 * @link https://codex.wordpress.org/Creating_an_Error_404_Page Wordpress documentation
+	 *
+	 * @package Log_Lolla_Pro
+	 * @since 1.0.0
+	 */
 
 get_header(); ?>
 
@@ -35,7 +39,9 @@ get_header(); ?>
 		</article>
 	</section>
 
-	<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
+	<?php
+		get_template_part( 'template-parts/sidebar/sidebar' );
+	?>
 
 <?php
 get_footer();

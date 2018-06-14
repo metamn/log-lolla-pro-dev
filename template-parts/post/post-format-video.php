@@ -1,20 +1,22 @@
 <?php
-/**
- * Template part for displaying video posts
- *
- * video – A single video. The first <video /> tag or object/embed in the post content
- * could be considered the video.
- * Alternatively, if the post consists only of a URL, that will be the video URL.
- * May also contain the video as an attachment to the post,
- * if video support is enabled on the blog (like via a plugin).
- *
- * @link https://developer.wordpress.org/themes/functionality/post-formats/
- *
- * @package Log_Lolla
- */
+  /**
+   * Template part for displaying video posts
+   *
+   * video – A single video. The first <video /> tag or object/embed in the post content
+   * could be considered the video.
+   * Alternatively, if the post consists only of a URL, that will be the video URL.
+   * May also contain the video as an attachment to the post,
+   * if video support is enabled on the blog (like via a plugin).
+   *
+   * @link https://developer.wordpress.org/themes/functionality/post-formats/
+   *
+   * @package Log_Lolla
+   */
+
+  $klass = 'post post-format-video';
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-video' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>
   <?php get_template_part( 'template-parts/post/post', 'sidebar-left' ); ?>
 
 	<div class="post__content">

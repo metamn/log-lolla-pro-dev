@@ -10,6 +10,22 @@
    */
 
 
+  if ( ! function_exists( 'for_doc' ) ) {
+    /**
+     * Return an empty string
+     *
+     * phpDoc returns 'No summary was found for this file' on PHP files which do not start with a PHP function call
+     * This usually happens in template parts when the code starts with a HTML element
+     * This is a function which solves this issue
+     *
+     * @return string An empty string
+     */
+    function for_doc() {
+      return '';
+    }
+  }
+
+
 
 if ( ! function_exists( 'log_lolla_get_link_html_for' ) ) {
   /**
