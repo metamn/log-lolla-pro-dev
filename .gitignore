@@ -76,6 +76,11 @@ typings/
 .env
 
 
+# composer
+composer.*
+/vendor/
+/doc/
+
 
 .sass-cache/
 *.css.map
