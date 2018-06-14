@@ -1,12 +1,14 @@
 <?php
-/**
- * Displaying a navigation menu icon in the header
- * It is only displayed if there is a custom function to provide content for the header menu
- *
- * @package Log_Lolla
- */
-?>
-  <?php  if ( function_exists( 'log_lolla_display_header_menu_contents' ) ) { ?>
+  /**
+   * Displaying a navigation menu icon in the header
+   * It is only displayed if there is a custom function to provide content for the header menu
+   *
+   * @package Log_Lolla
+   */
+
+   if ( function_exists( 'log_lolla_display_header_menu_contents' ) ) {
+     ?>
+
     <nav class="menu-hamburger menu-hamburger--closed">
       <h3 class="hidden">Hamburger Menu Icon</h3>
 
@@ -18,4 +20,7 @@
         <span class="icon">&times;</span>
       </div>
     </nav>
-  <?php } ?>
+
+    <?php
+  }
+  ?>

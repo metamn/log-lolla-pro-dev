@@ -1,13 +1,15 @@
 <?php
-/**
- * Template part for displaying the header logo
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Log_Lolla
- */
-?>
-  <?php if ( has_custom_logo() ) { ?>
+  /**
+   * Template part for displaying the header logo
+   *
+   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+   *
+   * @package Log_Lolla
+   */
+
+   if ( has_custom_logo() ) {
+     ?>
+
     <aside class="header-logo">
       <h3 class="hidden">Logo</h3>
 
@@ -19,4 +21,7 @@
         ?>
       </figure>
     </aside>
-  <?php } ?>
+
+    <?php
+  }
+  ?>
