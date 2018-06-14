@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
   if ( post_password_required() ) return;
 
   $comments = log_lolla_get_comments_of_a_post( $post );

@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $klass = '';
 ?>
 
 <h3 class="comments-title">

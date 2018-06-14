@@ -4,6 +4,8 @@
    *
    * @package Log_Lolla_Pro
    */
+
+  $klass = '';
 ?>
 
 <nav class="breadcrumb breadcrumb-archives">

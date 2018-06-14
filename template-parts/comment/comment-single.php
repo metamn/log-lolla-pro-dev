@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
   if ( empty( $comment ) ) return;
 ?>
 

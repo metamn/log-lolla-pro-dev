@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $klass = '';
 ?>
 
 <a class="link" href="<?php echo esc_url( get_comment_link( $comment ) ) ?>" title="<?php echo esc_html( get_the_title( $comment->comment_post_ID ) ) ?>">

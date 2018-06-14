@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $klass = '';
 ?>
 
 <aside class="comment-post-title-with-arrows">
@@ -17,7 +19,7 @@
       get_template_part( 'template-parts/comment/parts/comment', 'post-title' )
     ?>
   </h3>
-  
+
   <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
   <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
   <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
