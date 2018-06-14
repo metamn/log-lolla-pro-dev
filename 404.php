@@ -11,7 +11,8 @@
 	 * @since 1.0.0
 	 */
 
-get_header(); ?>
+	 get_header();
+	 ?>
 
 	<section class="content content-none">
 		<h3 class="hidden">Page not found</h3>

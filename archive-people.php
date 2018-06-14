@@ -11,7 +11,8 @@
 	 * @since 1.0.0
 	 */
 
-get_header(); ?>
+	 get_header();
+	 ?>
 
 	<section class="content content-archive">
 		<h3 class="hidden">Archive for People</h3>

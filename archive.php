@@ -7,7 +7,8 @@
 	 * @package Log_Lolla_Pro
 	 */
 
-get_header(); ?>
+	 get_header();
+	 ?>
 
 	<section class="content content-archive">
 		<h3 class="hidden">Archive</h3>
