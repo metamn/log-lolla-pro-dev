@@ -1,6 +1,6 @@
 <?php
   /**
-   * Template part to display  a summary
+   * Template part to display a summary
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *

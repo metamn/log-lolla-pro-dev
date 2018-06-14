@@ -2,6 +2,7 @@
 /**
  * Template part for displaying sparklines
  *
+ * @package Log_Lolla_Pro
  */
 ?>
 
