@@ -177,7 +177,7 @@ if (! function_exists( 'log_lolla_create_custom_shortcode_topics' ) ) {
     $attrs = shortcode_atts( $default_attributes, $attributes );
 
     // Content
-    $content = log_lolla_display_topics_with_sparklines(
+    $content = log_lolla_get_topics_with_sparklines(
       10,
       $attr['categories'],
       $attrs['tags']

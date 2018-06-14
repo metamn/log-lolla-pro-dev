@@ -171,74 +171,16 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
 }
 
 
-
-if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
+ if ( ! function_exists( 'log_lolla_get_topics_with_sparklines' ) ) {
    /**
-    * Display topics (categories and tags) and their count of posts
-    *
-    * @param  integer $number_of_categories How many categories to show
-    * @param  integer $number_of_tags       How many tags to show
-    * @return string                        HTML
-    */
-   function log_lolla_display_topics_with_count($number_of_categories = 5, $number_of_tags = 5) {
-     $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
-     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
-     if ( empty( $categories ) && empty( $tags ) ) return;
-
-     $html = '';
-
-     foreach ($categories as $category) {
-       $html .= log_lolla_display_topic_with_count( 'category', $category );
-     }
-
-     foreach ($tags as $tag) {
-       $html .= log_lolla_display_topic_with_count( 'tag', $tag );
-     }
-
-     return $html;
-   }
- }
-
-
- if ( ! function_exists( 'log_lolla_display_topic_with_count' ) ) {
-   /**
-    * Display a topic with a count
-    *
-    * @param  string $item_class_name      The item class name
-    * @param  Object $item                 The item
-    * @return string                       HTML
-    */
-   function log_lolla_display_topic_with_count($item_class_name, $item) {
-     if ( empty( $item ) ) return;
-
-     $html = '';
-
-     ob_start();
-     set_query_var( 'list_item_class', $item_class_name );
-     set_query_var( 'list_item_url', get_term_link( $item ) );
-
-     set_query_var( 'list_item_primary_text', $item->name );
-     set_query_var( 'list_item_metadata', $item->count );
-
-     get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
-
-     $html .= ob_get_clean();
-
-     return $html;
-   }
- }
-
-
- if ( ! function_exists( 'log_lolla_display_topics_with_sparklines' ) ) {
-   /**
-    * Display topics (categories and tags) using sparklines
+    * Get topics (categories and tags) using sparklines
     *
     * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks
     * @param  integer $number_of_categories How many categories to show
     * @param  integer $number_of_tags       How many tags to show
     * @return string                        HTML
     */
-   function log_lolla_display_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
+   function log_lolla_get_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
      // Get an array of dates for each sparkline
      $sparkline_dates = log_lolla_get_sparkline_dates( $sparklines );
      if ( empty( $sparkline_dates ) ) return;
@@ -251,11 +193,11 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
      $html = '';
 
      foreach ($categories as $category) {
-       $html .= log_lolla_display_topic_with_sparklines( 'category', $category, $sparkline_dates );
+       $html .= log_lolla_get_topic_with_sparklines( 'category', $category, $sparkline_dates );
      }
 
      foreach ($tags as $tag) {
-       $html .= log_lolla_display_topic_with_sparklines( 'tag', $tag, $sparkline_dates );
+       $html .= log_lolla_get_topic_with_sparklines( 'tag', $tag, $sparkline_dates );
      }
 
      return $html;
@@ -263,16 +205,16 @@ if ( ! function_exists( 'log_lolla_display_topics_with_count' ) ) {
  }
 
 
- if ( ! function_exists( 'log_lolla_display_topic_with_sparklines' ) ) {
+ if ( ! function_exists( 'log_lolla_get_topic_with_sparklines' ) ) {
    /**
-    * Display a topic (category or tag) with sparklines
+    * Get a topic (category or tag) with sparklines
     *
     * @param  string  $item_class_name              The item class name
     * @param  Object  $item                         The item
     * @param  Object  $sparkline_dates              The sparkline dates array
     * @return string                                HTML
     */
-   function log_lolla_display_topic_with_sparklines( $item_class_name, $item, $sparkline_dates ) {
+   function log_lolla_get_topic_with_sparklines( $item_class_name, $item, $sparkline_dates ) {
      if ( empty( $item ) ) return;
      if ( empty( $sparkline_dates ) ) return;
 

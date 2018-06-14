@@ -265,7 +265,7 @@
     extract( $args );
 
     $title = apply_filters( 'widget_title', esc_html__( 'Topics' ) );
-    $content = log_lolla_display_topics_with_sparklines(
+    $content = log_lolla_get_topics_with_sparklines(
       10,
       $instance['number_of_categories'],
       $instance['number_of_tags']
