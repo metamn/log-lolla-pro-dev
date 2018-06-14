@@ -1,8 +1,7 @@
 <?php
   /**
-   * Comment template tags for this theme
+   * Comment template tags
    *
-   * Contains custom template tags related to comments
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
@@ -14,7 +13,7 @@
 
 if ( ! function_exists( 'log_lolla_get_comments_of_a_post' ) ) {
   /**
-   * Returns only the comments of a post without anything else like pingbacks and trackbacks
+   * Returns only the comments (no pingbacks and trackbacks) of a post
    *
    * @param  object $post The post
    * @return array        A list of comments

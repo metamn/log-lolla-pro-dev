@@ -6,7 +6,7 @@
  * @package Log_Lolla
  */
 ?>
-  <?php  if ( function_exists( 'log_lolla_header_menu_contents' ) ) { ?>
+  <?php  if ( function_exists( 'log_lolla_display_header_menu_contents' ) ) { ?>
     <nav class="menu-hamburger menu-hamburger--closed">
       <h3 class="hidden">Hamburger Menu Icon</h3>
 

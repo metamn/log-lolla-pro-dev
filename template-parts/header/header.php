@@ -9,8 +9,8 @@
 ?>
 
 <?php
-  if ( function_exists( 'log_lolla_header_class' ) ) {
-    $klass = log_lolla_header_class();
+  if ( function_exists( 'log_lolla_get_header_class' ) ) {
+    $klass = log_lolla_get_header_class();
   } else {
     $klass = '';
   }

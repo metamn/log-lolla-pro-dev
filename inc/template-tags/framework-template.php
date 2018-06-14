@@ -1,6 +1,6 @@
 <?php
   /**
-   * General template tags for this theme
+   * Common template tags
    *
    * Contains custom, reusable template tags specific for this theme
    *
