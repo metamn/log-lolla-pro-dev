@@ -1,8 +1,7 @@
 <?php
   /**
-   * Archive template tags for this theme
+   * Archive template tags
    *
-   * Contains custom template tags related to archives by date and time
    *
    * @link https://codex.wordpress.org/Template_Tags
    *

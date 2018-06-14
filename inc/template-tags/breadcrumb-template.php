@@ -1,15 +1,19 @@
 <?php
   /**
-   * Breadcrumb template
+   * Breadcrumb template tags
    *
-   * Contains custom breadcrumb navigation code
    *
    * @package Log_Lolla
    */
 
 
-if ( ! function_exists( 'log_lolla_archive_breadcrumbs' ) ) {
-  function log_lolla_archive_breadcrumbs() {
+if ( ! function_exists( 'log_lolla_display_breadcrumb_for_archive' ) ) {
+  /**
+   * Display breadcrumbs for an archive
+   *
+   * @return string HTML
+   */
+  function log_lolla_display_breadcrumb_for_archive() {
     $deco = array(
       'before_all' => '<ul class="ul">',
       'after_all' => '</ul>',
