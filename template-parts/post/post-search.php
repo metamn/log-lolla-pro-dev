@@ -1,15 +1,16 @@
 <?php
-/**
- * Template part for displaying results in search pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Log_Lolla
- */
+	/**
+	 * Template part for displaying results in search pages
+	 *
+	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+	 *
+	 * @package Log_Lolla
+	 */
 
+	 $klass = 'post';
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>
 	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
 	<?php

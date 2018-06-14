@@ -1,14 +1,12 @@
 <?php
-/**
- * Template part for displaying posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Log_Lolla
- */
-?>
+	/**
+	 * Template part for displaying posts
+	 *
+	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+	 *
+	 * @package Log_Lolla
+	 */
 
-<?php
 	$post_klass = log_lolla_get_post_class();
 	$post_klass_array = array(
 		'post',

@@ -6,10 +6,10 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
-  if ( is_sticky() ) { ?>
+  if ( is_sticky() ) {
+    ?>
+
     <div class="post-sticky">
       <span class="text">
         <?php
@@ -17,4 +17,7 @@
         ?>
       </span>
     </div>
-<?php } ?>
+    
+    <?php
+  }
+  ?>

@@ -1,17 +1,18 @@
 <?php
-/**
- * Template part for displaying a message that posts cannot be found
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package Log_Lolla
- */
+	/**
+	 * Template part for displaying a message that posts cannot be found
+	 *
+	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+	 *
+	 * @package Log_Lolla
+	 */
 
+	 $title = esc_html__( 'Nothing Found', 'log-lolla' );
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'log-lolla' ); ?></h1>
+		<h1 class="page-title"><?php echo $title ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">

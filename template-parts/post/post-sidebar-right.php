@@ -4,6 +4,8 @@
    *
    * @package Log_Lolla_Pro
    */
+
+  $klass = '';
 ?>
 
 <div class="post__sidebar post__sidebar--right">

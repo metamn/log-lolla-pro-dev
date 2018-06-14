@@ -6,23 +6,27 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php if ( has_post_thumbnail() ): ?>
-<aside class="post-featured-image">
-  <h3 class="hidden">Article Featured Image</h3>
+   if ( has_post_thumbnail() ) {
+     ?>
 
-  <figure class="figure">
-		<a class="link" href="<?php echo esc_url( get_permalink() ) ?>" title="<?php the_title_attribute(); ?>">
-      <?php the_post_thumbnail(); ?>
-    </a>
+    <aside class="post-featured-image">
+      <h3 class="hidden">Article Featured Image</h3>
+
+      <figure class="figure">
+    		<a class="link" href="<?php echo esc_url( get_permalink() ) ?>" title="<?php the_title_attribute(); ?>">
+          <?php the_post_thumbnail(); ?>
+        </a>
+
+        <?php
+          the_title(
+            '<figcaption class="figcaption"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">',
+            '</a></figcaption>'
+          );
+        ?>
+      </figure>
+    </aside>
 
     <?php
-      the_title(
-        '<figcaption class="figcaption"><a class="link" href="' . esc_url( get_permalink() ) . '" title="' . the_title_attribute( 'echo=0') . '">',
-        '</a></figcaption>'
-      );
-    ?>
-  </figure>
-</aside>
-<?php endif; ?>
+  }
+  ?>

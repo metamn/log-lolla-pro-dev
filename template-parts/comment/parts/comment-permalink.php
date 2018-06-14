@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $link = get_comment_link( $comment );
 ?>
 
 <aside class="comment-permalink">
@@ -14,7 +16,7 @@
   <?php
     printf(
       '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
-      esc_url( get_comment_link( $comment ) ),
+      esc_url( $link ),
       /* translators: %s: comment permalink. */
       esc_attr_x( esc_html_x( 'Comment permalink', 'comment permalink title', 'log-lolla' ) ),
       /* translators: %s: post permalink. */

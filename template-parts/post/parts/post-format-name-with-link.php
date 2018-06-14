@@ -6,10 +6,10 @@
    *
    * @package Log_Lolla_Pro
    */
+
+  get_query_var( 'post_format_name' );
 ?>
 
-<?php get_query_var( 'post_format_name' ); ?>
-
-<a class="link" title="<?php echo $post_format_name ?>" href="<?php echo get_post_format_link( $post_format_name ); ?>">
-  <?php echo ucfirst( $post_format_name ) ?>
-</a>
+  <a class="link" title="<?php echo $post_format_name ?>" href="<?php echo get_post_format_link( $post_format_name ); ?>">
+    <?php echo ucfirst( $post_format_name ) ?>
+  </a>

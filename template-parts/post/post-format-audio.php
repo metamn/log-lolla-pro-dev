@@ -1,16 +1,18 @@
 <?php
-/**
- * Template part for displaying audio posts
- *
- * audio – An audio file. Could be used for Podcasting.
- *
- * @link https://developer.wordpress.org/themes/functionality/post-formats/
- *
- * @package Log_Lolla
- */
+  /**
+   * Template part for displaying audio posts
+   *
+   * audio – An audio file. Could be used for Podcasting.
+   *
+   * @link https://developer.wordpress.org/themes/functionality/post-formats/
+   *
+   * @package Log_Lolla
+   */
+
+  $klass = 'post post-format-audio';
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-audio' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>
   <?php get_template_part( 'template-parts/post/post', 'sidebar-left' ); ?>
 
 	<div class="post__content">

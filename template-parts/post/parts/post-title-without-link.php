@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   the_title(
     '<h3 class="post-title"><span class="text">',
     '</span></h3>'

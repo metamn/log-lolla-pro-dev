@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla_Pro
    */
+
+  $klass = '';
 ?>
 
 <aside class="post-date-and-time">

@@ -1,17 +1,19 @@
 <?php
-/**
- * Template part for displaying gallery posts
- *
- * gallery – A gallery of images.
- * Post will likely contain a gallery shortcode and will have image attachments.
- *
- * @link https://developer.wordpress.org/themes/functionality/post-formats/
- *
- * @package Log_Lolla
- */
+	/**
+	 * Template part for displaying gallery posts
+	 *
+	 * gallery – A gallery of images.
+	 * Post will likely contain a gallery shortcode and will have image attachments.
+	 *
+	 * @link https://developer.wordpress.org/themes/functionality/post-formats/
+	 *
+	 * @package Log_Lolla
+	 */
+
+	$klass = 'post post-format-gallery';
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'post post-format-gallery' ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>
 	<?php get_template_part( 'template-parts/post/post', 'sidebar-left' ); ?>
 
 	<div class="post__content">

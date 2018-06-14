@@ -6,12 +6,8 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
-
-<?php
 
   if ( ! log_lolla_post_has_link() ) {
     get_template_part( 'template-parts/post/parts/post', 'permalink' );
   }
-
 ?>

@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   set_query_var( 'list_item_class', 'archive-counter' );
   set_query_var( 'list_item_primary_text', $pictogram['text'] );
   set_query_var( 'list_item_secondary_text', '' );
