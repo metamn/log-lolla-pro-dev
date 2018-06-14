@@ -6,9 +6,9 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php $arrow_direction = get_query_var( 'arrow_direction' ) ?>
+  $arrow_direction = get_query_var( 'arrow_direction' );
+?>
 
 <span class="arrow-with-triangle arrow-with-triangle--<?php echo $arrow_direction ?>">
   <span class="arrow-with-triangle__line"></span>

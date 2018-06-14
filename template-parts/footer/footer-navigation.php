@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $klass = '';
 ?>
 
 <nav class="footer-navigation">

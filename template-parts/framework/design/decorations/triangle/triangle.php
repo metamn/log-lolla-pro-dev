@@ -6,11 +6,11 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $direction = get_query_var( 'triangle_direction' );
   $klass = get_query_var( 'triangle_klass' );
 ?>
 
-<span class="triangle triangle--<?php echo $triangle_direction ?> <?php echo $triangle_klass ?>"></span>
+<span class="triangle triangle--<?php echo $triangle_direction ?>
+  <?php echo $triangle_klass ?>">
+</span>

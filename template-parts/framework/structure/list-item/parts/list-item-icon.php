@@ -9,9 +9,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   if ( empty( $list_item_icon ) ) {
     $list_item_icon = get_query_var( 'list_item_icon' );
   }

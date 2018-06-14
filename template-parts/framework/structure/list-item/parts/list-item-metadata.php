@@ -10,9 +10,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   if ( empty( $list_item_metadata ) ) {
     $list_item_metadata = get_query_var( 'list_item_metadata' );
   }
