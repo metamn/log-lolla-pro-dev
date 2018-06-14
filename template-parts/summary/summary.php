@@ -6,8 +6,9 @@
    *
    * @package Log_Lolla
    */
-?>
 
+  $klass = '';
+?>
 
 <article class="summary">
   <?php get_template_part( 'template-parts/summary/parts/summary', 'dates' ); ?>

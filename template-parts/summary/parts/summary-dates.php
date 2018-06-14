@@ -6,6 +6,8 @@
    *
    * @package Log_Lolla
    */
+
+  $klass = '';
 ?>
 
 <aside class="summary-dates">

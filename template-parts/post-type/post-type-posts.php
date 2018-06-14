@@ -4,9 +4,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $posts = log_lolla_get_posts_of_a_post_type( $post );
   if ( empty( $posts ) ) return;
 

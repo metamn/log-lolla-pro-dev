@@ -4,10 +4,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-
-<?php
   $topic_list_klass = get_query_var( 'topic_list_klass' );
   $topic_list_title = get_query_var( 'topic_list_title' );
   $topic_list_items = get_query_var( 'topic_list_items' );

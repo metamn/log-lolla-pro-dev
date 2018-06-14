@@ -1,7 +1,12 @@
 <?php
   /**
    * Template part to display a link to a topic
+   *
+   * @package Log_Lolla_Pro
+   * @since 1.0.0.
    */
+
+  $klass = '';
 ?>
 
 

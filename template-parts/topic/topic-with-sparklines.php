@@ -7,9 +7,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
   $topic = get_query_var( 'topic' );
   $sparklines = get_query_var( 'sparklines' );
 

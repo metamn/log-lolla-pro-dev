@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
   if ( empty( $shortcode_klass ) ) {
     $shortcode_klass = get_query_var( $shortcode_klass );
   }

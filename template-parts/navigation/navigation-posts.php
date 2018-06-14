@@ -6,9 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-<?php
   $args = array(
     'prev_text' => log_lolla_get_arrow_html( 'left' ) . 'Older',
     'next_text' => log_lolla_get_arrow_html( 'right' ) . 'Newer',

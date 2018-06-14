@@ -6,10 +6,7 @@
    *
    * @package Log_Lolla
    */
-?>
 
-
-<?php
   if ( empty( $shortcode_body ) ) {
     $shortcode_body = get_query_var( $shortcode_body );
   }

@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
 	set_query_var( 'archive_title', get_the_title() );
 
 	// `get_the_excerpt()` returns a read more link if the excerpt is empty
