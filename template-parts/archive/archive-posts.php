@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $archive_posts_klass = get_query_var( 'archive_posts_klass' );
   $archive_posts_title = get_query_var( 'archive_posts_title' );
   $archive_posts_posts = get_query_var( 'archive_posts_posts' );

@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $archive = get_queried_object();
   $standard_posts = log_lolla_display_standard_posts_for_archive( $archive );
 

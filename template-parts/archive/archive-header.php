@@ -5,6 +5,8 @@
    *
    * @package Log_Lolla_Pro
    */
+
+  $klass = '';
 ?>
 
 <header class="archive-header">

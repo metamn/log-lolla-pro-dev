@@ -5,10 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-
-<?php
   $topic = get_query_var( 'topic' );
 
   if ( empty( $topic) ) {

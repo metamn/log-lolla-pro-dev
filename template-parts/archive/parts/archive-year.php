@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $archive_year = get_query_var( 'archive_year' );
 ?>
 

@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $pictograms = get_query_var( 'pictograms' );
 
   if ( empty( $pictograms ) ) {

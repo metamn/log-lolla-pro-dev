@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $archive = get_queried_object();
   $summaries = log_lolla_display_summaries_for_archive( $archive );
 

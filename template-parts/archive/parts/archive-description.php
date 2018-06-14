@@ -5,9 +5,7 @@
    *
    * @package Log_Lolla_Pro
    */
-?>
 
-<?php
   $archive_description = get_query_var( 'archive_description' );
 
   if ( ! empty( $archive_description ) ) {
