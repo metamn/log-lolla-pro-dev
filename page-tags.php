@@ -1,15 +1,15 @@
 <?php
-	/**
-	 * Template Name: Tags Page
-	 *
-	 * Template to display an archive of tags
-	 *
-	 * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template Name: Tags Page
+ *
+ * Template to display an archive of tags
+ *
+ * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	get_header();
+get_header();
 ?>
 
 

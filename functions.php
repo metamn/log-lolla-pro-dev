@@ -1,11 +1,11 @@
 <?php
-	/**
-	 * Functions and definitions
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/theme-functions/
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Functions and definitions
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package Log_Lolla_Pro
+ */
 
 if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 	/**

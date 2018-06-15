@@ -1,13 +1,13 @@
 <?php
-	/**
-	 * Template for displaying a single post
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template for displaying a single post
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	get_header();
+get_header();
 ?>
 
 <section class="content content-single">

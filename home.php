@@ -1,13 +1,13 @@
 <?php
-	/**
-	 * Template for displaying the home page
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template for displaying the home page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	get_header();
+get_header();
 ?>
 
 <section class="content content-home">

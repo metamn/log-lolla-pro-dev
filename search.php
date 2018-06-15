@@ -1,13 +1,13 @@
 <?php
-	/**
-	 * Template for displaying search results
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template for displaying search results
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	get_header();
+get_header();
 ?>
 
 <section class="content content-search">

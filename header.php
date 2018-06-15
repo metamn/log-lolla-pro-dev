@@ -1,13 +1,13 @@
 <?php
-	/**
-	 * Template to display the site's header
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template to display the site's header
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	$klass = '';
+$klass = '';
 ?>
 
 <!doctype html>

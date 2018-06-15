@@ -1,11 +1,11 @@
 <?php
-	/**
-	 * Test comment here
-	 *
-	 * @package Log_Lolla_pr
-	 */
+/**
+ * Test comment here
+ *
+ * @package Log_Lolla_pr
+ */
 
-	get_header();
+get_header();
 ?>
 
 <section class="content content-index">
