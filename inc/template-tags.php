@@ -5,6 +5,8 @@
  * @package Log_Lolla_Pro
  */
 
+$klass = '';
+
 require get_template_directory() . '/inc/template-tags/framework-template.php';
 require get_template_directory() . '/inc/template-tags/header-template.php';
 require get_template_directory() . '/inc/template-tags/post-template.php';

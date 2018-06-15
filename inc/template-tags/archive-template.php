@@ -1,19 +1,17 @@
 <?php
-  /**
-   * Archive template tags
-   *
-   * @link https://codex.wordpress.org/Template_Tags
-   *
-   * @package Log_Lolla_Pro
-   */
-
-
+/**
+ * Archive template tags
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ *
+ * @package Log_Lolla_Pro
+ */
 
 if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
 	function log_lolla_pro_get_pictograms( $counters ) {
-		 $pictograms = [];
+		$pictograms = [];
 
-		 $pictograms[] = array(
+		$pictograms[] = array(
 			 'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
 			 'number'   => $counters[0],
 			 'scrollto' => 'archive-list--posts',
@@ -235,7 +233,3 @@ if ( ! function_exists( 'log_lolla_pro_get_archives_by_year_and_month' ) ) {
 		return $results;
 	}
 }
-
-
-
-

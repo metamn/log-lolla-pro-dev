@@ -55,7 +55,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'footer_copyright', array(
-			'type'              => 'theme_mod', // or 'option'.
+			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '', // Rarely needed.
 			'default'           => get_bloginfo( 'name' ),
@@ -77,7 +77,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'footer_copyright_link', array(
-			'type'              => 'theme_mod', // or 'option'.
+			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '', // Rarely needed.
 			'default'           => esc_url( home_url() ),
@@ -99,7 +99,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'footer_copyright_display', array(
-			'type'              => 'theme_mod', // or 'option'.
+			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '', // Rarely needed.
 			'default'           => '1',
@@ -121,7 +121,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting(
 		'footer_credits_display', array(
-			'type'              => 'theme_mod', // or 'option'.
+			'type'              => 'theme_mod',
 			'capability'        => 'edit_theme_options',
 			'theme_supports'    => '', // Rarely needed.
 			'default'           => '1',
