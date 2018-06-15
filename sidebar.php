@@ -7,9 +7,8 @@
 	 * @package Log_Lolla_Pro
 	 */
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		return;
-	}
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	return;
+}
 
-	dynamic_sidebar( 'sidebar-1' );
-	?>
+dynamic_sidebar( 'sidebar-1' );
