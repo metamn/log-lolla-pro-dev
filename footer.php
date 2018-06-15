@@ -7,9 +7,9 @@
 	 * @package Log_Lolla_Pro
 	 */
 
-	 get_template_part( 'template-parts/footer/footer' );
-	 wp_footer();
-	 ?>
+	get_template_part( 'template-parts/footer/footer' );
+	wp_footer();
+?>
 
 </body>
 </html>
