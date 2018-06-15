@@ -11,8 +11,8 @@
 	 * @since 1.0.0
 	 */
 
-	 get_header();
-	 ?>
+	get_header();
+?>
 
 	<section class="content content-none">
 		<h3 class="hidden">Page not found</h3>
@@ -25,11 +25,11 @@
 			</h3>
 
 			<aside class="post-content">
-			  <h3 class="hidden">Article content</h3>
+				<h3 class="hidden">Article content</h3>
 
-			  <div class="text">
-			    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' ); ?>
-			  </div>
+				<div class="text">
+					<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' ); ?>
+				</div>
 			</aside>
 
 			<aside class="search">

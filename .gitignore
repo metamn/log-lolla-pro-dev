@@ -77,9 +77,13 @@ typings/
 
 
 # composer
-composer.*
+composer.phar
 /vendor/
 /doc/
+
+
+# wp coding standards
+/wpcs/
 
 
 .sass-cache/
