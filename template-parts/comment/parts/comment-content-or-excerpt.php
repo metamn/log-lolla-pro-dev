@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $klass = '';
@@ -14,7 +14,7 @@
   <h3 class="hidden">Comment content or excerpt</h3>
 
   <?php
-    if ( log_lolla_word_count( get_comment_text() ) > 60 ) {
+    if ( log_lolla_pro_word_count( get_comment_text() ) > 60 ) {
       get_template_part( 'template-parts/comment/parts/comment', 'excerpt' );
     } else {
       get_template_part( 'template-parts/comment/parts/comment', 'content' );

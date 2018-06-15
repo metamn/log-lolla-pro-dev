@@ -16,7 +16,7 @@
 
 <section class="content content-archives">
   <h3 class="archives-title">
-    <?php esc_html_e( 'Archives', 'log-lolla-pro' ); ?>
+    <?php esc_html_e( 'Archives', 'log-lolla-pro-pro' ); ?>
   </h3>
 
   <?php

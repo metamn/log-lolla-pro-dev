@@ -4,10 +4,10 @@
 	 *
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 	 *
-	 * @package Log_Lolla
+	 * @package Log_Lolla_Pro
 	 */
 
-	 $title = esc_html__( 'Nothing Found', 'log-lolla' );
+	 $title = esc_html__( 'Nothing Found', 'log-lolla-pro' );
 ?>
 
 <section class="no-results not-found">
@@ -23,7 +23,7 @@
 				printf(
 					wp_kses(
 						/* translators: 1: link to WP admin new post page. */
-						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'log-lolla' ),
+						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'log-lolla-pro' ),
 						array(
 							'a' => array(
 								'href' => array(),
@@ -36,13 +36,13 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'log-lolla' ); ?></p>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'log-lolla-pro' ); ?></p>
 			<?php
 				get_search_form();
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'log-lolla' ); ?></p>
+			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'log-lolla-pro' ); ?></p>
 			<?php
 				get_search_form();
 

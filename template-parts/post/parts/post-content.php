@@ -15,7 +15,7 @@
 
   <div class="text">
     <?php
-      the_content( log_lolla_add_readmore_to_content() );
+      the_content( log_lolla_pro_add_readmore_to_content() );
     ?>
   </div>
 </aside>

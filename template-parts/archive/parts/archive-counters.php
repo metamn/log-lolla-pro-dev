@@ -9,7 +9,7 @@
   $pictograms = get_query_var( 'pictograms' );
 
   if ( empty( $pictograms ) ) {
-    $pictograms = log_lolla_get_pictograms( log_lolla_get_archive_counters() );
+    $pictograms = log_lolla_pro_get_pictograms( log_lolla_pro_get_archive_counters() );
   }
 
   if ( empty( $pictograms) ) return;

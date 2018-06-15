@@ -4,7 +4,7 @@
 	 *
 	 * Displays a page not found message and a search form
 	 *
-	 * @link https://morethemes.baby/log-lolla-pro-demo/peoplexxx Live example
+	 * @link https://morethemes.baby/log-lolla-pro-pro-demo/peoplexxx Live example
 	 * @link https://codex.wordpress.org/Creating_an_Error_404_Page Wordpress documentation
 	 *
 	 * @package Log_Lolla_Pro
@@ -20,7 +20,7 @@
 		<article class="post">
 			<h3 class="post-title">
 				<span class="text">
-					<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla' ); ?>
+					<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla-pro' ); ?>
 				</span>
 			</h3>
 
@@ -28,7 +28,7 @@
 			  <h3 class="hidden">Article content</h3>
 
 			  <div class="text">
-			    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla' ); ?>
+			    <?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' ); ?>
 			  </div>
 			</aside>
 

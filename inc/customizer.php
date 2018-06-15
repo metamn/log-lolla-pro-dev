@@ -1,8 +1,8 @@
 <?php
 /**
- * Log Lolla Theme Customizer
+ * Log Lolla Pro Theme Customizer
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 
@@ -23,7 +23,7 @@
   * @param string $nohtml The no-HTML content to sanitize.
   * @return string Sanitized no-HTML content.
   */
- function log_lolla_sanitize_nohtml( $nohtml ) {
+ function log_lolla_pro_sanitize_nohtml( $nohtml ) {
  	return wp_filter_nohtml_kses( $nohtml );
  }
 
@@ -37,7 +37,7 @@
  * @param bool $checked Whether the checkbox is checked.
  * @return bool Whether the checkbox is checked.
  */
-function log_lolla_sanitize_checkbox( $checked ) {
+function log_lolla_pro_sanitize_checkbox( $checked ) {
 	// Boolean check.
 	return ( ( isset( $checked ) && true == $checked ) ? true : false );
 }
@@ -49,7 +49,7 @@ function log_lolla_sanitize_checkbox( $checked ) {
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
-function log_lolla_customize_register( $wp_customize ) {
+function log_lolla_pro_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
@@ -61,14 +61,14 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => get_bloginfo( 'name' ),
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => 'log_lolla_sanitize_nohtml',
+	  'sanitize_callback' => 'log_lolla_pro_sanitize_nohtml',
 	) );
 
 	$wp_customize->add_control( 'footer_copyright', array(
 	  'type' => 'text',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Copyright text in footer', 'log-lolla' ),
+	  'label' => __( 'Copyright text in footer', 'log-lolla-pro' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -87,7 +87,7 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'type' => 'text',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Copyright link in footer', 'log-lolla' ),
+	  'label' => __( 'Copyright link in footer', 'log-lolla-pro' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -99,14 +99,14 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => '1',
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => 'log_lolla_sanitize_checkbox',
+	  'sanitize_callback' => 'log_lolla_pro_sanitize_checkbox',
 	) );
 
 	$wp_customize->add_control( 'footer_copyright_display', array(
 	  'type' => 'checkbox',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Display footer copyright', 'log-lolla' ),
+	  'label' => __( 'Display footer copyright', 'log-lolla-pro' ),
 	  'description' => '',
 	  'active_callback' => 'is_front_page',
 	) );
@@ -118,15 +118,15 @@ function log_lolla_customize_register( $wp_customize ) {
 	  'theme_supports' => '', // Rarely needed.
 	  'default' => '1',
 	  'transport' => 'postMessage', // or postMessage
-	  'sanitize_callback' => 'log_lolla_sanitize_checkbox',
+	  'sanitize_callback' => 'log_lolla_pro_sanitize_checkbox',
 	) );
 
 	$wp_customize->add_control( 'footer_credits_display', array(
 	  'type' => 'checkbox',
 	  'priority' => 10, // Within the section.
 	  'section' => 'title_tagline', // Required, core or custom.
-	  'label' => __( 'Display footer credits', 'log-lolla' ),
-	  'description' => __( 'Like Powered By Wordpress and the Log Lolla Theme', 'log-lolla' ),
+	  'label' => __( 'Display footer credits', 'log-lolla-pro' ),
+	  'description' => __( 'Like Powered By Wordpress and the Log Lolla Pro Theme', 'log-lolla-pro' ),
 	  'active_callback' => 'is_front_page',
 	) );
 
@@ -134,30 +134,30 @@ function log_lolla_customize_register( $wp_customize ) {
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
-			'render_callback' => 'log_lolla_customize_partial_blogname',
+			'render_callback' => 'log_lolla_pro_customize_partial_blogname',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'blogdescription', array(
 			'selector'        => '.site-description',
-			'render_callback' => 'log_lolla_customize_partial_blogdescription',
+			'render_callback' => 'log_lolla_pro_customize_partial_blogdescription',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'footer_copyright', array(
 			'selector'        => '.footer_copyright',
-			'render_callback' => 'log_lolla_customize_partial_footer_copyright',
+			'render_callback' => 'log_lolla_pro_customize_partial_footer_copyright',
 		) );
 		$wp_customize->selective_refresh->add_partial( 'footer_copyright_link', array(
 			'selector'        => '.footer_copyright',
-			'render_callback' => 'log_lolla_customize_partial_footer_copyright_link',
+			'render_callback' => 'log_lolla_pro_customize_partial_footer_copyright_link',
 		) );
 	}
 }
-add_action( 'customize_register', 'log_lolla_customize_register' );
+add_action( 'customize_register', 'log_lolla_pro_customize_register' );
 
 /**
  * Render the site title for the selective refresh partial.
  *
  * @return void
  */
-function log_lolla_customize_partial_blogname() {
+function log_lolla_pro_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
 
@@ -166,7 +166,7 @@ function log_lolla_customize_partial_blogname() {
  *
  * @return void
  */
-function log_lolla_customize_partial_blogdescription() {
+function log_lolla_pro_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
 
@@ -175,7 +175,7 @@ function log_lolla_customize_partial_blogdescription() {
  *
  * @return void
  */
-function log_lolla_customize_partial_footer_copyright() {
+function log_lolla_pro_customize_partial_footer_copyright() {
 	bloginfo( 'name' );
 }
 
@@ -185,7 +185,7 @@ function log_lolla_customize_partial_footer_copyright() {
  *
  * @return void
  */
-function log_lolla_customize_partial_footer_copyright_link() {
+function log_lolla_pro_customize_partial_footer_copyright_link() {
 	esc_url( home_url() );
 }
 
@@ -193,8 +193,8 @@ function log_lolla_customize_partial_footer_copyright_link() {
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
-function log_lolla_customize_preview_js() {
-	wp_enqueue_script( 'log-lolla-customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20151215', true );
+function log_lolla_pro_customize_preview_js() {
+	wp_enqueue_script( 'log-lolla-pro-customizer', get_template_directory_uri() . '/assets/js/customizer.js', array( 'customize-preview' ), '20151215', true );
 }
-add_action( 'customize_preview_init', 'log_lolla_customize_preview_js' );
+add_action( 'customize_preview_init', 'log_lolla_pro_customize_preview_js' );
 ?>

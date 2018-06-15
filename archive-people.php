@@ -4,7 +4,7 @@
 	 *
 	 * @uses ::archive-source.html Archive source
 	 *
-	 * @link https://morethemes.baby/log-lolla-pro-demo/people Live example
+	 * @link https://morethemes.baby/log-lolla-pro-pro-demo/people Live example
 	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
 	 *
 	 * @package Log_Lolla_Pro

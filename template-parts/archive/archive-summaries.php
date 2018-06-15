@@ -7,12 +7,12 @@
    */
 
   $archive = get_queried_object();
-  $summaries = log_lolla_display_summaries_for_archive( $archive );
+  $summaries = log_lolla_pro_display_summaries_for_archive( $archive );
 
   if ( ! empty( $summaries ) ) { ?>
     <section class="archive-list archive-list-summaries">
       <h3 class="archive-list-title">
-        <?php esc_html_e( 'Summaries ', 'log-lolla'); ?>
+        <?php esc_html_e( 'Summaries ', 'log-lolla-pro'); ?>
       </h3>
 
       <div class="archive-list-body">

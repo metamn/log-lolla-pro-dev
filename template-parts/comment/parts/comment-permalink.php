@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $link = get_comment_link( $comment );
@@ -18,9 +18,9 @@
       '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
       esc_url( $link ),
       /* translators: %s: comment permalink. */
-      esc_attr_x( esc_html_x( 'Comment permalink', 'comment permalink title', 'log-lolla' ) ),
+      esc_attr_x( esc_html_x( 'Comment permalink', 'comment permalink title', 'log-lolla-pro' ) ),
       /* translators: %s: post permalink. */
-      esc_html_x( '&infin;', 'post permalink', 'log-lolla' )
+      esc_html_x( '&infin;', 'post permalink', 'log-lolla-pro' )
     );
   ?>
 </aside>

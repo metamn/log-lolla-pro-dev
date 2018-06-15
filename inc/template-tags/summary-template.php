@@ -5,21 +5,21 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
-if ( ! function_exists( 'log_lolla_display_summary_dates' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
   /**
    * Display the dates for a summary
    *
    * @param  Object $summary The summary
    * @return string          HTML
    */
-  function log_lolla_display_summary_dates( $summary ) {
+  function log_lolla_pro_display_summary_dates( $summary ) {
     if ( empty( $summary ) ) return;
 
-    $dates = log_lolla_get_summary_dates( $summary );
+    $dates = log_lolla_pro_get_summary_dates( $summary );
     if ( empty( $dates ) ) return;
 
     printf(
@@ -31,7 +31,7 @@ if ( ! function_exists( 'log_lolla_display_summary_dates' ) ) {
    if ( ! empty( $dates[1] ) ) {
      printf(
       '<span class="dates-separator">%1$s</span><time class="date published" datetime="%2$s">%3$s</time>',
-      esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla' ),
+      esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla-pro' ),
       esc_attr( $dates[1] ),
       esc_html( $dates[1] )
     );
@@ -40,20 +40,20 @@ if ( ! function_exists( 'log_lolla_display_summary_dates' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_summary_dates' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_summary_dates' ) ) {
   /**
    * Get the dates for a summary
    *
    * @param  Object $summary The summary
    * @return Array           The dates
    */
-  function log_lolla_get_summary_dates( $summary ) {
+  function log_lolla_pro_get_summary_dates( $summary ) {
     if ( empty( $summary ) ) return;
 
     $dates = [];
 
     $dates[] = get_the_date( 'F j, Y', $summary );
-    $dates[] = log_lolla_get_summary_last_date( $summary );
+    $dates[] = log_lolla_pro_get_summary_last_date( $summary );
 
     return $dates;
   }
@@ -61,14 +61,14 @@ if ( ! function_exists( 'log_lolla_get_summary_dates' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_get_summary_last_date' ) ) {
-  function log_lolla_get_summary_last_date( $summary ) {
+if ( ! function_exists( 'log_lolla_pro_get_summary_last_date' ) ) {
+  function log_lolla_pro_get_summary_last_date( $summary ) {
     if ( empty( $summary ) ) return;
 
-    $topic = log_lolla_get_summary_topic( $summary );
+    $topic = log_lolla_pro_get_summary_topic( $summary );
     if ( empty( $topic ) ) return;
 
-    $summaries_for_topic = log_lolla_get_summaries_for_archive( $topic );
+    $summaries_for_topic = log_lolla_pro_get_summaries_for_archive( $topic );
     if ( empty( $summaries_for_topic ) ) return;
 
     if ( count( $summaries_for_topic ) < 2 ) return;
@@ -79,17 +79,17 @@ if ( ! function_exists( 'log_lolla_get_summary_last_date' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_get_summary_link_to_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_summary_link_to_topic' ) ) {
   /**
    * Get a link to a topic for a summary
    *
    * @param  Object $summary The summary
    * @return string          HTML
    */
-  function log_lolla_get_summary_link_to_topic( $summary ) {
+  function log_lolla_pro_get_summary_link_to_topic( $summary ) {
     if ( empty( $summary ) ) return;
 
-    $topic = log_lolla_get_summary_topic( $summary );
+    $topic = log_lolla_pro_get_summary_topic( $summary );
     if ( empty( $topic ) ) return;
 
     $html = '';
@@ -104,20 +104,20 @@ if ( ! function_exists( 'log_lolla_get_summary_link_to_topic' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_summary_link_to_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_summary_link_to_topic' ) ) {
   /**
    * Display a link to a topic for a summary
    *
    * @param  Object $summary The summary
    * @return string          HTML
    */
-  function log_lolla_display_summary_link_to_topic( $summary ) {
-    echo log_lolla_get_summary_link_to_topic( $summary );
+  function log_lolla_pro_display_summary_link_to_topic( $summary ) {
+    echo log_lolla_pro_get_summary_link_to_topic( $summary );
   }
 }
 
 
-if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_summary_topic' ) ) {
   /**
    * Get the topic of a summary
    *
@@ -125,7 +125,7 @@ if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
    * @param  Object $summary The summary
    * @return Object          The topic
    */
-  function log_lolla_get_summary_topic( $summary ) {
+  function log_lolla_pro_get_summary_topic( $summary ) {
     if ( empty( $summary ) ) return;
 
     $categories = get_the_category( $summary->ID );
@@ -137,8 +137,8 @@ if ( ! function_exists( 'log_lolla_get_summary_topic' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
-  function log_lolla_display_summaries( $number_of_summaries ) {
+if ( ! function_exists( 'log_lolla_pro_display_summaries' ) ) {
+  function log_lolla_pro_display_summaries( $number_of_summaries ) {
     $summaries = get_posts(
       array(
         'post_type' => 'summary',
@@ -166,17 +166,17 @@ if ( ! function_exists( 'log_lolla_display_summaries' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_summaries_for_archive' ) ) {
   /**
    * Display summaries for an archive
    *
    * @param  Object $archive The archive
    * @return string          HTML
    */
-  function log_lolla_display_summaries_for_archive( $archive ) {
+  function log_lolla_pro_display_summaries_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $summaries = log_lolla_get_summaries_for_archive( $archive );
+    $summaries = log_lolla_pro_get_summaries_for_archive( $archive );
     if ( empty( $summaries ) ) return;
 
     global $SUMMARIES_COUNT;
@@ -198,14 +198,14 @@ if ( ! function_exists( 'log_lolla_display_summaries_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_summaries_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_summaries_for_archive' ) ) {
   /**
    * Get summaries for an archive
    *
    * @param  Object $archive The archive
    * @return Array          The list of posts
    */
-  function log_lolla_get_summaries_for_archive( $archive ) {
+  function log_lolla_pro_get_summaries_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
     $posts = get_posts(

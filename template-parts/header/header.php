@@ -4,12 +4,12 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
-  if ( function_exists( 'log_lolla_get_header_class' ) ) {
-   $klass = log_lolla_get_header_class();
+  if ( function_exists( 'log_lolla_pro_get_header_class' ) ) {
+   $klass = log_lolla_pro_get_header_class();
   } else {
    $klass = '';
   }

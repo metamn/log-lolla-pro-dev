@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Log_Lolla
+ * @package Log_Lolla_Pro
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function log_lolla_jetpack_setup() {
+function log_lolla_pro_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
-		'render'    => 'log_lolla_infinite_scroll_render',
+		'render'    => 'log_lolla_pro_infinite_scroll_render',
 		'footer'    => 'page',
 	) );
 
@@ -28,7 +28,7 @@ function log_lolla_jetpack_setup() {
 	// Add theme support for Content Options.
 	add_theme_support( 'jetpack-content-options', array(
 		'post-details' => array(
-			'stylesheet' => 'log-lolla-style',
+			'stylesheet' => 'log-lolla-pro-style',
 			'date'       => '.posted-on',
 			'categories' => '.cat-links',
 			'tags'       => '.tags-links',
@@ -37,12 +37,12 @@ function log_lolla_jetpack_setup() {
 		),
 	) );
 }
-add_action( 'after_setup_theme', 'log_lolla_jetpack_setup' );
+add_action( 'after_setup_theme', 'log_lolla_pro_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function log_lolla_infinite_scroll_render() {
+function log_lolla_pro_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :

@@ -10,31 +10,31 @@
 
 
 
-if ( ! function_exists( 'log_lolla_get_post_format_link_to_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive' ) ) {
   /**
    * Get the link to the post format archive
    *
    * @return string HTML
    */
-  function log_lolla_get_post_format_link_to_archive() {
+  function log_lolla_pro_get_post_format_link_to_archive() {
     $format = get_post_format() ? : 'standard';
 
-    return log_lolla_display_post_format_archive_link( $format );
+    return log_lolla_pro_display_post_format_archive_link( $format );
   }
 }
 
 
-if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_standard_posts_for_archive' ) ) {
   /**
    * Display standard posts belonging to an archive
    *
    * @param  object $archive The archive object
    * @return string          HTML
    */
-  function log_lolla_display_standard_posts_for_archive( $archive ) {
+  function log_lolla_pro_display_standard_posts_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $standard_posts = log_lolla_get_standard_posts_for_archive( $archive );
+    $standard_posts = log_lolla_pro_get_standard_posts_for_archive( $archive );
     if ( empty( $standard_posts ) ) return;
 
     global $STANDARD_POSTS_COUNT;
@@ -57,7 +57,7 @@ if ( ! function_exists( 'log_lolla_display_standard_posts_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_standard_posts_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_standard_posts_for_archive' ) ) {
   /**
    * Get standard posts for an archive
    *
@@ -67,7 +67,7 @@ if ( ! function_exists( 'log_lolla_get_standard_posts_for_archive' ) ) {
    * @param  object $archive The archive object
    * @return array           The posts
    */
-  function log_lolla_get_standard_posts_for_archive( $archive ) {
+  function log_lolla_pro_get_standard_posts_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
     return get_posts(
@@ -109,20 +109,20 @@ if ( ! function_exists( 'log_lolla_get_standard_posts_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_post_formats_with_post_count' ) ) {
   /**
    * Display post formats with post count
    *
    * @return string HTML
    */
-  function log_lolla_display_post_formats_with_post_count() {
-    $post_formats = log_lolla_get_post_formats_with_post_count();
+  function log_lolla_pro_display_post_formats_with_post_count() {
+    $post_formats = log_lolla_pro_get_post_formats_with_post_count();
     if ( empty( $post_formats) ) return;
 
     $html = '';
 
     foreach ($post_formats as $post_format) {
-      $html .= log_lolla_display_post_format_with_post_count( $post_format );
+      $html .= log_lolla_pro_display_post_format_with_post_count( $post_format );
     }
 
     return $html;
@@ -131,14 +131,14 @@ if ( ! function_exists( 'log_lolla_display_post_formats_with_post_count' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_post_format_with_post_count' ) ) {
   /**
    * Display post format with post count
    *
    * @param  object $item The post format object with count
    * @return string       HTML
    */
-  function log_lolla_display_post_format_with_post_count( $item ) {
+  function log_lolla_pro_display_post_format_with_post_count( $item ) {
     if ( empty( $item) ) return;
 
     $html = '';
@@ -158,7 +158,7 @@ if ( ! function_exists( 'log_lolla_display_post_format_with_post_count' ) ) {
   }
 }
 
-if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_post_format_archive_link' ) ) {
   /**
    * Display a link to a post format archive
    *
@@ -167,7 +167,7 @@ if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
    * @param  string $post_format_name The name of a post format
    * @return string                   HTML
    */
-  function log_lolla_display_post_format_archive_link( $post_format_name ) {
+  function log_lolla_pro_display_post_format_archive_link( $post_format_name ) {
     $html = '';
 
     ob_start();
@@ -181,13 +181,13 @@ if ( ! function_exists( 'log_lolla_display_post_format_archive_link' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count' ) ) {
   /**
    * Get post formats with post count
    *
    * @return Array An array of objects with post format and post count
    */
-  function log_lolla_get_post_formats_with_post_count() {
+  function log_lolla_pro_get_post_formats_with_post_count() {
     $post_formats_list = get_post_format_strings();
     if ( empty( $post_formats_list) ) return;
 
@@ -223,12 +223,12 @@ if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count' ) ) {
       $post_formats_with_count[] = $obj;
     }
 
-    return log_lolla_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count );
+    return log_lolla_pro_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count );
   }
 }
 
 
-if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count_for_standard_posts' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count_for_standard_posts' ) ) {
   /**
    * Fix post format Standard post count
    *
@@ -239,7 +239,7 @@ if ( ! function_exists( 'log_lolla_get_post_formats_with_post_count_for_standard
    * @param  Array $post_formats_with_count An array of objects
    * @return Array                          An array of objects
    */
-  function log_lolla_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count ) {
+  function log_lolla_pro_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count ) {
     $total_number_of_posts = wp_count_posts()->publish;
 
     $total_number_of_posts_with_post_format = 0;

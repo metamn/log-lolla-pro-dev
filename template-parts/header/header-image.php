@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
    if ( get_header_image() ) {

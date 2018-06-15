@@ -12,13 +12,13 @@
 	 *
 	 * @link https://developer.wordpress.org/themes/functionality/post-formats/
 	 *
-	 * @package Log_Lolla
+	 * @package Log_Lolla_Pro
 	 */
 
-	$url = log_lolla_get_link_from_content();
-	$klass = log_lolla_get_link_from_content_class( $url );
-	$title = log_lolla_get_link_title_for_link_post_format( $url );
-	$arrow = log_lolla_get_arrow_html( 'right' );
+	$url = log_lolla_pro_get_link_from_content();
+	$klass = log_lolla_pro_get_link_from_content_class( $url );
+	$title = log_lolla_pro_get_link_title_for_link_post_format( $url );
+	$arrow = log_lolla_pro_get_arrow_html( 'right' );
 	$post_klass_array = array(
 		'post',
 		'post-format-link',

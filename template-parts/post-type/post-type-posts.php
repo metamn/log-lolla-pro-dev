@@ -5,12 +5,12 @@
    * @package Log_Lolla_Pro
    */
 
-  $posts = log_lolla_get_posts_of_a_post_type( $post );
+  $posts = log_lolla_pro_get_posts_of_a_post_type( $post );
   if ( empty( $posts ) ) return;
 
   $archive_posts_title = sprintf(
     '%1$s%2$s',
-    esc_html_x( 'Posts from ', 'post permalink', 'log-lolla' ),
+    esc_html_x( 'Posts from ', 'post permalink', 'log-lolla-pro' ),
     get_the_title()
   );
 

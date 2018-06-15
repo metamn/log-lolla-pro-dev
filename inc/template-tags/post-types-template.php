@@ -10,8 +10,8 @@
 
 
 
-if ( ! function_exists( 'log_lolla_display_post_type' ) ) {
-  function log_lolla_display_post_type( $post_type, $post ) {
+if ( ! function_exists( 'log_lolla_pro_display_post_type' ) ) {
+  function log_lolla_pro_display_post_type( $post_type, $post ) {
     $html = '';
 
     ob_start();
@@ -34,9 +34,9 @@ if ( ! function_exists( 'log_lolla_display_post_type' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
-  function log_lolla_display_latest_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
-    $items = log_lolla_get_latest_posts_of_post_type( $post_type, $number_of_items );
+if ( ! function_exists( 'log_lolla_pro_display_latest_posts_of_post_type' ) ) {
+  function log_lolla_pro_display_latest_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
+    $items = log_lolla_pro_get_latest_posts_of_post_type( $post_type, $number_of_items );
     if ( empty( $items ) ) return;
 
     $html = '';
@@ -49,7 +49,7 @@ if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
         'echo' => false,
         'post' => $item
       ) ) );
-      set_query_var( 'list_item_secondary_text', log_lolla_get_summary_link_to_topic( $item ) );
+      set_query_var( 'list_item_secondary_text', log_lolla_pro_get_summary_link_to_topic( $item ) );
 
       get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
@@ -61,7 +61,7 @@ if ( ! function_exists( 'log_lolla_display_latest_posts_of_post_type' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
   /**
    * Display the most poular posts of a post type
    *
@@ -72,8 +72,8 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
    * @param  string   $metadata         The metadata type, like `post count`, `sparkline`
    * @return string                     HTML
    */
-  function log_lolla_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
-    $items = log_lolla_get_popular_posts_of_post_type( $post_type, $number_of_items, $metadata );
+  function log_lolla_pro_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
+    $items = log_lolla_pro_get_popular_posts_of_post_type( $post_type, $number_of_items, $metadata );
     if ( empty( $items ) ) return;
 
     $html = '';
@@ -103,8 +103,8 @@ if ( ! function_exists( 'log_lolla_display_popular_posts_of_post_type' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_latest_posts_of_post_type' ) ) {
-  function log_lolla_get_latest_posts_of_post_type( $post_type, $number_of_items ) {
+if ( ! function_exists( 'log_lolla_pro_get_latest_posts_of_post_type' ) ) {
+  function log_lolla_pro_get_latest_posts_of_post_type( $post_type, $number_of_items ) {
     return get_posts(
       array(
         'post_type' => $post_type,
@@ -117,7 +117,7 @@ if ( ! function_exists( 'log_lolla_get_latest_posts_of_post_type' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_popular_posts_of_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_popular_posts_of_post_type' ) ) {
   /**
    * Get the most popular posts of a post type
    *
@@ -127,7 +127,7 @@ if ( ! function_exists( 'log_lolla_get_popular_posts_of_post_type' ) ) {
    * @param  integer  $number_of_items How many posts to get
    * @return Array                     An array of posts with the post count
    */
-  function log_lolla_get_popular_posts_of_post_type( $post_type, $number_of_items ) {
+  function log_lolla_pro_get_popular_posts_of_post_type( $post_type, $number_of_items ) {
 
     // Get all of post_type
     //
@@ -145,7 +145,7 @@ if ( ! function_exists( 'log_lolla_get_popular_posts_of_post_type' ) ) {
     //
     $posts_of_all_pts = [];
     foreach ($all_of_pt as $pt) {
-      $posts_of_a_pt = log_lolla_get_posts_of_a_post_type( $pt );
+      $posts_of_a_pt = log_lolla_pro_get_posts_of_a_post_type( $pt );
 
 
       // Create a new object
@@ -172,7 +172,7 @@ if ( ! function_exists( 'log_lolla_get_popular_posts_of_post_type' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_get_posts_of_a_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_posts_of_a_post_type' ) ) {
   /**
    * Get all posts of a post type
    *
@@ -184,7 +184,7 @@ if ( ! function_exists( 'log_lolla_get_posts_of_a_post_type' ) ) {
    * @param  object $custom_post  A custom post
    * @return Array                An array of posts which are tagged with the $custom_post post title
    */
-  function log_lolla_get_posts_of_a_post_type( $custom_post ) {
+  function log_lolla_pro_get_posts_of_a_post_type( $custom_post ) {
     if ( empty( $custom_post ) ) return;
 
     return get_posts(

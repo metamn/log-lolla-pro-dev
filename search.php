@@ -15,7 +15,7 @@
       <?php
         /* translators: %s: search query. */
         printf(
-          esc_html__( 'Search Results for: %s', 'log-lolla' ),
+          esc_html__( 'Search Results for: %s', 'log-lolla-pro' ),
           '<span>&quot;' . get_search_query() . '&quot;</span>'
         );
       ?>

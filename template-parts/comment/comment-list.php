@@ -4,12 +4,12 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   if ( post_password_required() ) return;
 
-  $comments = log_lolla_get_comments_of_a_post( $post );
+  $comments = log_lolla_pro_get_comments_of_a_post( $post );
 
   $number_of_comments = count( $comments );
   if ( ! $number_of_comments ) return;

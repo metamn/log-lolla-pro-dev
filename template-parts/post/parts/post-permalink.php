@@ -16,7 +16,7 @@
   <div class="permalink">
     <a class="link" href="<?php echo esc_url( get_permalink() ) ?>" title="<?php echo the_title_attribute( 'echo=0' ) ?>">
       <?php /* translators: %s: post permalink. */ ?>
-      <?php echo esc_html_x( '&infin;', 'post permalink', 'log-lolla' ) ?>
+      <?php echo esc_html_x( '&infin;', 'post permalink', 'log-lolla-pro' ) ?>
     </a>
   </div>
 

@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $klass = '';
@@ -20,7 +20,7 @@
     ?>
   </h3>
 
-  <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
-  <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
-  <?php echo wp_kses_post( log_lolla_get_arrow_html( 'bottom' ) ) ?>
+  <?php echo wp_kses_post( log_lolla_pro_get_arrow_html( 'bottom' ) ) ?>
+  <?php echo wp_kses_post( log_lolla_pro_get_arrow_html( 'bottom' ) ) ?>
+  <?php echo wp_kses_post( log_lolla_pro_get_arrow_html( 'bottom' ) ) ?>
 </aside>

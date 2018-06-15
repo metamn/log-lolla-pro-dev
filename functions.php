@@ -7,7 +7,7 @@
    * @package Log_Lolla_Pro
    */
 
-if ( ! function_exists( 'log_lolla_setup' ) ) :
+if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'log_lolla_setup' ) ) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function log_lolla_setup() {
+	function log_lolla_pro_setup() {
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Log Lolla, use a find and replace
-		 * to change 'log-lolla' to the name of your theme in all the template files.
+		 * If you're building a theme based on Log Lolla Pro, use a find and replace
+		 * to change 'log-lolla-pro' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'log-lolla', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'log-lolla-pro', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -44,7 +44,7 @@ if ( ! function_exists( 'log_lolla_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'log-lolla' ),
+			'menu-1' => esc_html__( 'Primary', 'log-lolla-pro' ),
 		) );
 
 		/*
@@ -60,7 +60,7 @@ if ( ! function_exists( 'log_lolla_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-		add_theme_support( 'custom-background', apply_filters( 'log_lolla_custom_background_args', array(
+		add_theme_support( 'custom-background', apply_filters( 'log_lolla_pro_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
@@ -97,7 +97,7 @@ if ( ! function_exists( 'log_lolla_setup' ) ) :
   	add_editor_style();
 	}
 endif;
-add_action( 'after_setup_theme', 'log_lolla_setup' );
+add_action( 'after_setup_theme', 'log_lolla_pro_setup' );
 
 
 /**
@@ -105,11 +105,11 @@ add_action( 'after_setup_theme', 'log_lolla_setup' );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function log_lolla_widgets_init() {
+function log_lolla_pro_widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Header Menu', 'log-lolla' ),
+    'name'          => esc_html__( 'Header Menu', 'log-lolla-pro' ),
     'id'            => 'sidebar-2',
-    'description'   => esc_html__( 'Add widgets here.', 'log-lolla' ),
+    'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
     'before_widget' => '<aside id="%1$s" class="widget %2$s">',
     'after_widget'  => '</aside>',
     'before_title'  => '<h3 class="widget-title">',
@@ -117,16 +117,16 @@ function log_lolla_widgets_init() {
   ) );
 
   register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'log-lolla' ),
+		'name'          => esc_html__( 'Sidebar', 'log-lolla-pro' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Add widgets here.', 'log-lolla' ),
+		'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h3 class="widget-title">',
 		'after_title'   => '</h3>',
 	) );
 }
-add_action( 'widgets_init', 'log_lolla_widgets_init' );
+add_action( 'widgets_init', 'log_lolla_pro_widgets_init' );
 
 
 /**
@@ -136,27 +136,27 @@ add_action( 'widgets_init', 'log_lolla_widgets_init' );
  *
  * @global int $content_width
  */
-function log_lolla_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'log_lolla_content_width', 640 );
+function log_lolla_pro_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'log_lolla_pro_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'log_lolla_content_width', 0 );
+add_action( 'after_setup_theme', 'log_lolla_pro_content_width', 0 );
 
 
 /**
  * Enqueue scripts and styles.
  */
-function log_lolla_scripts() {
+function log_lolla_pro_scripts() {
   $timestamp = filemtime( get_template_directory() . '/style.css' );
-	wp_enqueue_style( 'log-lolla-style', get_stylesheet_uri(), array(), $timestamp );
+	wp_enqueue_style( 'log-lolla-pro-style', get_stylesheet_uri(), array(), $timestamp );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-  $timestamp = filemtime( get_template_directory() . '/assets/js/log-lolla.js' );
-	wp_enqueue_script( 'log-lolla', get_theme_file_uri( '/assets/js/log-lolla.js' ), array(), $timestamp );
+  $timestamp = filemtime( get_template_directory() . '/assets/js/log-lolla-pro.js' );
+	wp_enqueue_script( 'log-lolla-pro', get_theme_file_uri( '/assets/js/log-lolla-pro.js' ), array(), $timestamp );
 }
-add_action( 'wp_enqueue_scripts', 'log_lolla_scripts' );
+add_action( 'wp_enqueue_scripts', 'log_lolla_pro_scripts' );
 
 /**
  * Implement the Custom Header feature.

@@ -5,38 +5,38 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
 
-   if ( ! function_exists( 'log_lolla_get_pictograms' ) ) {
-     function log_lolla_get_pictograms( $counters ) {
+   if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
+     function log_lolla_pro_get_pictograms( $counters ) {
        $pictograms = [];
 
        $pictograms[] = array(
-         'text' => esc_html__( 'Posts', 'log-lolla-pro' ),
+         'text' => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
          'number' => $counters[0],
          'scrollto' => 'archive-list--posts',
          'klass' => ( $counters[0] > 0 ) ? 'activable' : 'inactivable'
        );
 
        $pictograms[] = array(
-         'text' => esc_html__( 'Summaries', 'log-lolla-pro' ),
+         'text' => esc_html__( 'Summaries', 'log-lolla-pro-pro' ),
          'number' => $counters[1],
          'scrollto' => 'archive-list--summaries',
          'klass' => ( $counters[1] > 0 ) ? 'activable' : 'inactivable'
        );
 
        $pictograms[] = array(
-         'text' => esc_html__( 'Thoughts', 'log-lolla-pro' ),
+         'text' => esc_html__( 'Thoughts', 'log-lolla-pro-pro' ),
          'number' => $counters[2],
          'scrollto' => 'archive-list--standard-posts',
          'klass' => ( $counters[2] > 0 ) ? 'activable' : 'inactivable'
        );
 
        $pictograms[] = array(
-         'text' => esc_html__( 'Related topics', 'log-lolla-pro' ),
+         'text' => esc_html__( 'Related topics', 'log-lolla-pro-pro' ),
          'number' => $counters[3],
          'scrollto' => 'archive-list--related-topics',
          'klass' => ( $counters[3] > 0 ) ? 'activable' : 'inactivable'
@@ -47,8 +47,8 @@
    }
 
 
-   if ( ! function_exists( 'log_lolla_get_archive_counters' ) ) {
-     function log_lolla_get_archive_counters() {
+   if ( ! function_exists( 'log_lolla_pro_get_archive_counters' ) ) {
+     function log_lolla_pro_get_archive_counters() {
        $archive = get_queried_object();
        if ( empty( $archive ) ) return;
 
@@ -69,7 +69,7 @@
 
 
 
-if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_source_counters' ) ) {
  /**
   * Get the counters of a source
   *
@@ -78,12 +78,12 @@ if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
   * @param  object $post The source object
   * @return Array        An array of integers
   */
- function log_lolla_get_source_counters( $post ) {
+ function log_lolla_pro_get_source_counters( $post ) {
    global $SUMMARIES_COUNT;
    global $STANDARD_POSTS_COUNT;
    global $RELATED_TOPICS_COUNT;
 
-   $posts_of_a_source = log_lolla_get_posts_of_a_post_type( $post );
+   $posts_of_a_source = log_lolla_pro_get_posts_of_a_post_type( $post );
 
    $ret = [];
 
@@ -99,7 +99,7 @@ if ( ! function_exists( 'log_lolla_get_source_counters' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_first_post_and_last_post_date' ) ) {
   /**
    * Get first post and last post published dates
    *
@@ -107,7 +107,7 @@ if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
    *
    * @return array Of two dates
    */
-  function log_lolla_get_first_post_and_last_post_date() {
+  function log_lolla_pro_get_first_post_and_last_post_date() {
     $posts = get_posts(
       array(
         'posts_per_page' => -1,
@@ -128,16 +128,16 @@ if ( ! function_exists( 'log_lolla_get_first_post_and_last_post_date' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_display_archives_by_year_and_month' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_archives_by_year_and_month' ) ) {
   /**
    * Display archives by year and month
    *
    * @return string HTML
    */
-  function log_lolla_display_archives_by_year_and_month() {
-    $archives = log_lolla_get_archives_by_year_and_month();
+  function log_lolla_pro_display_archives_by_year_and_month() {
+    $archives = log_lolla_pro_get_archives_by_year_and_month();
 
-    $dates = log_lolla_group_archives_by_year_and_month($archives);
+    $dates = log_lolla_pro_group_archives_by_year_and_month($archives);
     if ( empty( $dates ) ) return;
 
     $html = '';
@@ -157,7 +157,7 @@ if ( ! function_exists( 'log_lolla_display_archives_by_year_and_month' ) ) {
 }
 
 
-if ( ! function_exists(' log_lolla_group_archives_by_year_and_month' ) ) {
+if ( ! function_exists(' log_lolla_pro_group_archives_by_year_and_month' ) ) {
   /**
    * Groups archives into an array of years and months
    *
@@ -167,7 +167,7 @@ if ( ! function_exists(' log_lolla_group_archives_by_year_and_month' ) ) {
    * @param  array $archives An array of objects
    * @return array           An array of arrays
    */
-  function log_lolla_group_archives_by_year_and_month($archives) {
+  function log_lolla_pro_group_archives_by_year_and_month($archives) {
     if ( empty( $archives ) ) return;
 
     // Get an array with timestamps like 2017-12-05 14:27:58
@@ -190,7 +190,7 @@ if ( ! function_exists(' log_lolla_group_archives_by_year_and_month' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_archives_by_year_and_month' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_archives_by_year_and_month' ) ) {
   /**
    * Get all years and months when there were posts published
    *
@@ -199,7 +199,7 @@ if ( ! function_exists( 'log_lolla_get_archives_by_year_and_month' ) ) {
    *
    * @return array
    */
-  function log_lolla_get_archives_by_year_and_month() {
+  function log_lolla_pro_get_archives_by_year_and_month() {
     global $wpdb;
 
     $results = $wpdb->get_results(

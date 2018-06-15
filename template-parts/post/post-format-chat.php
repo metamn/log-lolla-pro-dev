@@ -9,7 +9,7 @@
    *
    * @link https://developer.wordpress.org/themes/functionality/post-formats/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $klass = 'post post-format-chat';

@@ -7,7 +7,7 @@
    * @package Log_Lolla_Pro
    */
 
-  if ( ! log_lolla_post_has_link() ) {
+  if ( ! log_lolla_pro_post_has_link() ) {
     get_template_part( 'template-parts/post/parts/post', 'permalink' );
   }
 ?>

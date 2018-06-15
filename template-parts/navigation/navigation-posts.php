@@ -4,12 +4,12 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $args = array(
-    'prev_text' => log_lolla_get_arrow_html( 'left' ) . 'Older',
-    'next_text' => log_lolla_get_arrow_html( 'right' ) . 'Newer',
+    'prev_text' => log_lolla_pro_get_arrow_html( 'left' ) . 'Older',
+    'next_text' => log_lolla_pro_get_arrow_html( 'right' ) . 'Newer',
   );
 
   echo the_posts_navigation( $args );

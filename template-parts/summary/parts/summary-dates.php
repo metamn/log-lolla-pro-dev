@@ -4,7 +4,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $klass = '';
@@ -13,5 +13,5 @@
 <aside class="summary-dates">
   <h3 class="hidden">Summary dates</h3>
 
-  <?php log_lolla_display_summary_dates( $post ); ?>
+  <?php log_lolla_pro_display_summary_dates( $post ); ?>
 </aside>

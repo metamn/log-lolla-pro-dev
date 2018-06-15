@@ -5,20 +5,20 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
 
 
-if ( ! function_exists( 'log_lolla_get_comments_of_a_post' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_comments_of_a_post' ) ) {
   /**
    * Returns only the comments (no pingbacks and trackbacks) of a post
    *
    * @param  object $post The post
    * @return array        A list of comments
    */
-  function log_lolla_get_comments_of_a_post( $post ) {
+  function log_lolla_pro_get_comments_of_a_post( $post ) {
     return get_comments(
       array(
         'post_id' => $post->ID,
@@ -31,7 +31,7 @@ if ( ! function_exists( 'log_lolla_get_comments_of_a_post' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_get_comments_before_date' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_comments_before_date' ) ) {
   /**
    * Return comments created before a date
    *
@@ -39,7 +39,7 @@ if ( ! function_exists( 'log_lolla_get_comments_before_date' ) ) {
    * @param  string $post     A date
    * @return array            An array of comments
    */
-  function log_lolla_get_comments_before_date( $comments, $date ) {
+  function log_lolla_pro_get_comments_before_date( $comments, $date ) {
     if ( empty( $comments ) || empty( $date ) ) return;
 
     return array_map(
@@ -54,7 +54,7 @@ if ( ! function_exists( 'log_lolla_get_comments_before_date' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_comments_for_the_loop' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_comments_for_the_loop' ) ) {
   /**
    * Get comments between two dates defined by the loop
    *
@@ -63,7 +63,7 @@ if ( ! function_exists( 'log_lolla_get_comments_for_the_loop' ) ) {
    * @param  array $posts An array of posts from the loop
    * @return array        An array of comments
    */
-  function log_lolla_get_comments_for_the_loop( $posts ) {
+  function log_lolla_pro_get_comments_for_the_loop( $posts ) {
     if ( empty( $posts ) ) return;
 
     $first_post_date = get_the_date( '', $posts[0] );

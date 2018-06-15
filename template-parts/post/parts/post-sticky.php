@@ -13,7 +13,7 @@
     <div class="post-sticky">
       <span class="text">
         <?php
-          echo esc_html_x( 'Featured', 'sticky post text', 'log-lolla' );
+          echo esc_html_x( 'Featured', 'sticky post text', 'log-lolla-pro' );
         ?>
       </span>
     </div>

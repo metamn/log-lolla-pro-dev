@@ -7,7 +7,7 @@
 
 
 
-if ( ! function_exists( 'log_lolla_display_sparklines_for_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_sparklines_for_topic' ) ) {
  /**
   * Display sparklines for a topic
   *
@@ -15,11 +15,11 @@ if ( ! function_exists( 'log_lolla_display_sparklines_for_topic' ) ) {
   * @param  Object  $item                       A term
   * @return string                              HTML
   */
- function log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) {
-   $sparklines = log_lolla_get_sparklines_for_topic( $sparkline_dates, $item );
+ function log_lolla_pro_display_sparklines_for_topic( $sparkline_dates, $item ) {
+   $sparklines = log_lolla_pro_get_sparklines_for_topic( $sparkline_dates, $item );
    if ( empty( $sparklines ) ) return;
 
-   $sparklines = log_lolla_adjust_range_for_sparkline( $sparklines );
+   $sparklines = log_lolla_pro_adjust_range_for_sparkline( $sparklines );
 
    return '{' . implode( ',', $sparklines ) . '}';
  }
@@ -27,7 +27,7 @@ if ( ! function_exists( 'log_lolla_display_sparklines_for_topic' ) ) {
 
 
 
-if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
+if (! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
  /**
   * Get the sparklines for a topic (category, tag)
   *
@@ -35,7 +35,7 @@ if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
   * @param  Object  $item                       A term
   * @return Array                               An array of integers
   */
- function log_lolla_get_sparklines_for_topic( $sparkline_dates, $item ) {
+ function log_lolla_pro_get_sparklines_for_topic( $sparkline_dates, $item ) {
    if ( empty( $item ) ) return;
    if ( empty( $sparkline_dates ) ) return;
 
@@ -73,7 +73,7 @@ if (! function_exists( 'log_lolla_get_sparklines_for_topic' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_adjust_range_for_sparkline' ) ) {
+if ( ! function_exists( 'log_lolla_pro_adjust_range_for_sparkline' ) ) {
   /**
    * Adjust range for a sparkline
    *
@@ -87,14 +87,14 @@ if ( ! function_exists( 'log_lolla_adjust_range_for_sparkline' ) ) {
    * @param  Array $sparklines The array of sparklines
    * @return Array             The adjusted array of sparklines
    */
-  function log_lolla_adjust_range_for_sparkline( $sparklines ) {
+  function log_lolla_pro_adjust_range_for_sparkline( $sparklines ) {
     $adjusted = [];
 
     $min = min( $sparklines );
     $max = max( $sparklines );
 
     foreach ( $sparklines as $sparkline ) {
-      $adjusted[] = log_lolla_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
+      $adjusted[] = log_lolla_pro_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
     }
 
     return $adjusted;
@@ -102,16 +102,16 @@ if ( ! function_exists( 'log_lolla_adjust_range_for_sparkline' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_sparkline_dates' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
   /**
    * Get the dates corresponding to a set of sparkline
    *
    * @param  integer $sparklines Total number of sparkines
    * @return array               An array of dates
    */
-  function log_lolla_get_sparkline_dates( $sparklines ) {
+  function log_lolla_pro_get_sparkline_dates( $sparklines ) {
     // Get the first post and the last post dates
-    $post_dates = log_lolla_get_first_post_and_last_post_date();
+    $post_dates = log_lolla_pro_get_first_post_and_last_post_date();
     if ( empty( $post_dates ) ) return;
 
     // Number of days since the first post (ie. 110)

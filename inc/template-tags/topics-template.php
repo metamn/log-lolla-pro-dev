@@ -5,21 +5,21 @@
    *
    * @link https://codex.wordpress.org/Template_Tags
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
 
 
 
-if ( ! function_exists( 'log_lolla_get_topic_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_archive' ) ) {
   /**
    * Get topics for an archive
    *
    * @param  string $topic The type of a topic like 'category', 'post_tag'
    * @return string        HTML
    */
-  function log_lolla_get_topic_archive( $topic ) {
-    $terms = log_lolla_get_most_popular_terms_by_count( $topic, 0 );
+  function log_lolla_pro_get_topic_archive( $topic ) {
+    $terms = log_lolla_pro_get_most_popular_terms_by_count( $topic, 0 );
     if ( empty( $terms ) ) return;
 
     $html = '';
@@ -36,17 +36,17 @@ if ( ! function_exists( 'log_lolla_get_topic_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_related_topics_for_archive' ) ) {
   /**
    * Get related topics for an archive
    *
    * @param  [type] $archive [description]
    * @return [type]          [description]
    */
-  function log_lolla_get_related_topics_for_archive( $archive ) {
+  function log_lolla_pro_get_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $related_topics = log_lolla_get_data_for_related_topics_for_archive( $archive );
+    $related_topics = log_lolla_pro_get_data_for_related_topics_for_archive( $archive );
     if ( empty( $related_topics ) ) return;
 
     global $RELATED_TOPICS_COUNT;
@@ -66,17 +66,17 @@ if ( ! function_exists( 'log_lolla_get_related_topics_for_archive' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_get_data_for_related_topics_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_data_for_related_topics_for_archive' ) ) {
   /**
    * Get the data for the related topics of an archive
    *
    * @param  [type] $archive [description]
    * @return [type]          [description]
    */
-  function log_lolla_get_data_for_related_topics_for_archive( $archive ) {
+  function log_lolla_pro_get_data_for_related_topics_for_archive( $archive ) {
     if ( empty( $archive ) ) return;
 
-    $posts_for_archive = log_lolla_get_posts_for_topic( $archive );
+    $posts_for_archive = log_lolla_pro_get_posts_for_topic( $archive );
     if ( empty( $posts_for_archive ) ) return;
 
     $related_topics = [];
@@ -95,7 +95,7 @@ if ( ! function_exists( 'log_lolla_get_data_for_related_topics_for_archive' ) ) 
 
     $related_topics = array_unique( $related_topics, SORT_REGULAR );
 
-    return log_lolla_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
+    return log_lolla_pro_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
   }
 }
 
@@ -103,7 +103,7 @@ if ( ! function_exists( 'log_lolla_get_data_for_related_topics_for_archive' ) ) 
 
 
 
-if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topics_summary' ) ) {
   /**
    * Get topics summary
    *
@@ -119,17 +119,17 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
    * @param  integer $number_of_tags       How many tags to show
    * @return string                        HTML
    */
-  function log_lolla_get_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
+  function log_lolla_pro_get_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
     if ( $number_of_categories == 0) {
       $categories = [];
     } else {
-      $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
+      $categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
     }
 
     if ( $number_of_tags == 0) {
       $tags = [];
     } else {
-      $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+      $tags = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
     }
 
     if ( empty( $categories ) && empty( $tags ) ) return;
@@ -138,7 +138,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     $categories_descriptions = array_filter(
       array_map(
         function( $term ) {
-          return strtolower( log_lolla_get_term_description( $term->term_id, 'category' ) );
+          return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'category' ) );
         },
         $categories
       )
@@ -147,21 +147,21 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     $tags_descriptions = array_filter(
       array_map(
         function( $term ) {
-          return strtolower( log_lolla_get_term_description( $term->term_id, 'post_tag' ) );
+          return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'post_tag' ) );
         },
         $tags
       )
     );
 
     if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) return;
-    $sentence = log_lolla_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
+    $sentence = log_lolla_pro_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
 
 
     $html = '';
 
     ob_start();
     set_query_var( 'shortcode_klass', 'shortcode-topics-summary' );
-    set_query_var( 'shortcode_title', esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro' ) );
+    set_query_var( 'shortcode_title', esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro-pro' ) );
     set_query_var( 'shortcode_body', $sentence );
     get_template_part( 'template-parts/shortcode/shortcode' );
     $html .= ob_get_clean();
@@ -171,7 +171,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
 }
 
 
- if ( ! function_exists( 'log_lolla_get_topics_with_sparklines' ) ) {
+ if ( ! function_exists( 'log_lolla_pro_get_topics_with_sparklines' ) ) {
    /**
     * Get topics (categories and tags) using sparklines
     *
@@ -180,24 +180,24 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     * @param  integer $number_of_tags       How many tags to show
     * @return string                        HTML
     */
-   function log_lolla_get_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
+   function log_lolla_pro_get_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5) {
      // Get an array of dates for each sparkline
-     $sparkline_dates = log_lolla_get_sparkline_dates( $sparklines );
+     $sparkline_dates = log_lolla_pro_get_sparkline_dates( $sparklines );
      if ( empty( $sparkline_dates ) ) return;
 
      // Get most popular topics
-     $categories = log_lolla_get_most_popular_terms_by_count( 'category', $number_of_categories );
-     $tags = log_lolla_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+     $categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
+     $tags = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
      if ( empty( $categories ) && empty( $tags ) ) return;
 
      $html = '';
 
      foreach ($categories as $category) {
-       $html .= log_lolla_get_topic_with_sparklines( 'category', $category, $sparkline_dates );
+       $html .= log_lolla_pro_get_topic_with_sparklines( 'category', $category, $sparkline_dates );
      }
 
      foreach ($tags as $tag) {
-       $html .= log_lolla_get_topic_with_sparklines( 'tag', $tag, $sparkline_dates );
+       $html .= log_lolla_pro_get_topic_with_sparklines( 'tag', $tag, $sparkline_dates );
      }
 
      return $html;
@@ -205,7 +205,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
  }
 
 
- if ( ! function_exists( 'log_lolla_get_topic_with_sparklines' ) ) {
+ if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines' ) ) {
    /**
     * Get a topic (category or tag) with sparklines
     *
@@ -214,7 +214,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     * @param  Object  $sparkline_dates              The sparkline dates array
     * @return string                                HTML
     */
-   function log_lolla_get_topic_with_sparklines( $item_class_name, $item, $sparkline_dates ) {
+   function log_lolla_pro_get_topic_with_sparklines( $item_class_name, $item, $sparkline_dates ) {
      if ( empty( $item ) ) return;
      if ( empty( $sparkline_dates ) ) return;
 
@@ -226,7 +226,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
      set_query_var( 'list_item_primary_text', $item->name );
 
      ob_start();
-     set_query_var( 'sparklines', log_lolla_display_sparklines_for_topic( $sparkline_dates, $item ) );
+     set_query_var( 'sparklines', log_lolla_pro_display_sparklines_for_topic( $sparkline_dates, $item ) );
      get_template_part( 'template-parts/sparklines/sparklines', '' );
      set_query_var( 'list_item_metadata', ob_get_clean() );
 
@@ -240,7 +240,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
 
 
 
- if ( ! function_exists( 'log_lolla_get_most_popular_terms_by_count' ) ) {
+ if ( ! function_exists( 'log_lolla_pro_get_most_popular_terms_by_count' ) ) {
    /**
     * Get most popular terms by the count of posts they belong to
     *
@@ -253,7 +253,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     * @param  integer $how_many How many terms to get. Accepts 0 (all) or any positive number. Default 0 (all)
     * @return array             An array of term objects
     */
-   function log_lolla_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
+   function log_lolla_pro_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
      return get_terms(
        array(
          'taxonomy' => $taxonomy,
@@ -268,7 +268,7 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
 
 
 
- if ( ! function_exists( 'log_lolla_get_term_description' ) ) {
+ if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
    /**
     * Clean up the `term-description` Wordpress function which:
     * - It wraps the result in `<p>` tags
@@ -278,21 +278,21 @@ if ( ! function_exists( 'log_lolla_get_topics_summary' ) ) {
     * @param  string   $taxonomy The term's taxonomy
     * @return string             The cleaned up term description
     */
-   function log_lolla_get_term_description( $term_id, $taxonomy ) {
+   function log_lolla_pro_get_term_description( $term_id, $taxonomy ) {
      return trim( strip_tags( term_description( $term_id, $taxonomy ) ) );
    }
  }
 
 
 
- if ( ! function_exists( 'log_lolla_get_posts_for_topic' ) ) {
+ if ( ! function_exists( 'log_lolla_pro_get_posts_for_topic' ) ) {
    /**
     * Get all posts of a topic
     *
     * @param  object $topic The topic
     * @return Array         An array of posts
     */
-   function log_lolla_get_posts_for_topic( $topic ) {
+   function log_lolla_pro_get_posts_for_topic( $topic ) {
      if ( empty( $topic ) ) return;
 
      $taxonomy = is_category( $topic ) ? 'category_name' : 'tag';

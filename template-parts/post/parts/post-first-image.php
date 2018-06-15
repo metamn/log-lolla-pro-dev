@@ -15,7 +15,7 @@
 
   <figure class="figure">
 		<a class="link" href="<?php echo esc_url( get_permalink() ) ?>" title="<?php the_title_attribute(); ?>">
-      <img src="<?php echo esc_url( log_lolla_get_post_first_image_url() ); ?>" alt="<?php the_title_attribute(); ?>">
+      <img src="<?php echo esc_url( log_lolla_pro_get_post_first_image_url() ); ?>" alt="<?php the_title_attribute(); ?>">
     </a>
 
     <?php

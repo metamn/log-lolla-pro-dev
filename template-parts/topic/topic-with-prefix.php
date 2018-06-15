@@ -5,7 +5,7 @@
    *
    * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
    *
-   * @package Log_Lolla
+   * @package Log_Lolla_Pro
    */
 
   $topic = get_query_var( 'topic' );
@@ -14,7 +14,7 @@
 
     <div class="topic-with-prefix">
       <span class="prefix">
-        <?php echo esc_html_x( 'On&nbsp;', 'log-lolla' ) ?>
+        <?php echo esc_html_x( 'On&nbsp;', 'log-lolla-pro' ) ?>
       </span>
 
       <span class="topic">
