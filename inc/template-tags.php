@@ -1,10 +1,9 @@
 <?php
-  /**
-   * Custom template tags for this theme
-   *
-   * @package Log_Lolla_Pro
-   */
-
+/**
+ * Custom template tags for this theme
+ *
+ * @package Log_Lolla_Pro
+ */
 
 require get_template_directory() . '/inc/template-tags/framework-template.php';
 require get_template_directory() . '/inc/template-tags/header-template.php';
@@ -17,5 +16,3 @@ require get_template_directory() . '/inc/template-tags/archive-template.php';
 require get_template_directory() . '/inc/template-tags/sparklines-template.php';
 require get_template_directory() . '/inc/template-tags/topics-template.php';
 require get_template_directory() . '/inc/template-tags/summary-template.php';
-
-?>
