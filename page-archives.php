@@ -10,7 +10,7 @@
    * @package Log_Lolla_Pro
    */
 
-  get_header()
+  get_header();
 ?>
 
 

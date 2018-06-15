@@ -1,11 +1,11 @@
 <?php
-  /**
-   * Functions and definitions
-   *
-   * @link https://developer.wordpress.org/themes/basics/theme-functions/
-   *
-   * @package Log_Lolla_Pro
-   */
+	/**
+	 * Functions and definitions
+	 *
+	 * @link https://developer.wordpress.org/themes/basics/theme-functions/
+	 *
+	 * @package Log_Lolla_Pro
+	 */
 
 if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 	/**
@@ -68,6 +68,22 @@ if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+		// Add theme support for post formats.
+		add_theme_support( 'post-formats', array(
+			'aside',
+			'image',
+			'video',
+			'quote',
+			'link',
+			'gallery',
+			'status',
+			'audio',
+			'chat',
+		) );
+
+		// Add theme support for styling the ditor.
+		add_editor_style();
+
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -79,22 +95,6 @@ if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
-
-		/*
-     * Enable support for Post Formats.
-     *
-     * See: https://codex.wordpress.org/Post_Formats
-     */
-    add_theme_support( 'post-formats', array(
-			'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
-    ) );
-
-
-    /*
-  	 * This theme styles the visual editor to resemble the theme style,
-  	 * specifically font, colors, and column width.
-   	 */
-  	add_editor_style();
 	}
 endif;
 add_action( 'after_setup_theme', 'log_lolla_pro_setup' );
@@ -106,17 +106,17 @@ add_action( 'after_setup_theme', 'log_lolla_pro_setup' );
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 function log_lolla_pro_widgets_init() {
-  register_sidebar( array(
-    'name'          => esc_html__( 'Header Menu', 'log-lolla-pro' ),
-    'id'            => 'sidebar-2',
-    'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
-    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</aside>',
-    'before_title'  => '<h3 class="widget-title">',
-    'after_title'   => '</h3>',
-  ) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header Menu', 'log-lolla-pro' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 
-  register_sidebar( array(
+	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'log-lolla-pro' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
@@ -146,17 +146,18 @@ add_action( 'after_setup_theme', 'log_lolla_pro_content_width', 0 );
  * Enqueue scripts and styles.
  */
 function log_lolla_pro_scripts() {
-  $timestamp = filemtime( get_template_directory() . '/style.css' );
+	$timestamp = filemtime( get_template_directory() . '/style.css' );
 	wp_enqueue_style( 'log-lolla-pro-style', get_stylesheet_uri(), array(), $timestamp );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-  $timestamp = filemtime( get_template_directory() . '/assets/js/log-lolla-pro.js' );
+	$timestamp = filemtime( get_template_directory() . '/assets/js/log-lolla-pro.js' );
 	wp_enqueue_script( 'log-lolla-pro', get_theme_file_uri( '/assets/js/log-lolla-pro.js' ), array(), $timestamp );
 }
 add_action( 'wp_enqueue_scripts', 'log_lolla_pro_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -199,6 +200,3 @@ require get_template_directory() . '/inc/custom-post-types.php';
  * Custom shortcodes
  */
 require get_template_directory() . '/inc/custom-shortcodes.php';
-
-
-?>
