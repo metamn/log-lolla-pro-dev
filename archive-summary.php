@@ -3,8 +3,8 @@
  * Displays the archive page for the Summary post type.
  *
  * The page contains:
- *  * a Header from the Archive template parts
- *  * a Post list from the Archive template parts
+ *  * A Header from the Archive template part.
+ *  * A Post list from the Archive template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-pro-demo/summaries Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation

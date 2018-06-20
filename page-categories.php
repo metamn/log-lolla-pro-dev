@@ -2,11 +2,17 @@
 /**
  * Template Name: Categories Page
  *
- * Template to display an archive of categories
+ * Template to display the Categories archive.
  *
- * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/
+ * The page contains:
+ *  * A Header from the Topic template parts.
+ *  * A Topic list from the Topic template parts.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/categories Live example
+ * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();
@@ -14,7 +20,7 @@ get_header();
 
 
 <section class="content content-archive">
-	<h3 class="hidden">Category archive</h3>
+	<h3 class="hidden">Categories archive</h3>
 
 	<?php
 	set_query_var( 'topic_list_klass', 'categories' );

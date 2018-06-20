@@ -1,10 +1,14 @@
 <?php
 /**
- * Template for displaying the home page
+ * Displays the home page.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * The home page is a list of posts and comments.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/ Live example
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();

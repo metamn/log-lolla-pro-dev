@@ -1,10 +1,17 @@
 <?php
 /**
- * Template to display an archive of a single source
+ * Displays a Source's page.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * The page contains:
+ *  * A Header from the Post Type template tag.
+ *  * A Post list from the Post Type template tag.
+ *  * A Related topics list from the Post Type template tag.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/sources/stratechery/ Live example
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ WordPress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();

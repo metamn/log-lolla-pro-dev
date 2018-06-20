@@ -1,10 +1,13 @@
 <?php
 /**
- * Template to display the site's header
+ * Displays the site's header.
+ *
+ * The header contents are defined in the Header template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $klass = '';

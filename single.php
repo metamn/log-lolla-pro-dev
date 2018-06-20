@@ -1,10 +1,18 @@
 <?php
 /**
- * Template for displaying a single post
+ * Displays a single post.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
+ * The page contains:
+ *  * The Single post format template part.
+ *  * The Post footer template part.
+ *  * The Comment list template part.
+ *  * The Post navigation template part.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/2018/05/21/tech-platforms-and-the-knowledge-problem/ Live example
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ WordPress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();

@@ -6,10 +6,10 @@
  * It is used by every other special archive page like the one for the People post type.
  *
  * The page contains:
- *  * a Header from the Archive template parts
- *  * a Post list from the Archive template parts
- *  * a Summary from the Archive template parts
- *  * a Related topics list from the Archive template parts
+ *  * A Header from the Archive template part.
+ *  * A Post list from the Archive template part.
+ *  * A Summary from the Archive template part.
+ *  * A Related topics list from the Archive template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation

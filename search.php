@@ -1,10 +1,11 @@
 <?php
 /**
- * Template for displaying search results
+ * Displays search results.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();
