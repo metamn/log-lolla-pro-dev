@@ -1,10 +1,21 @@
 <?php
 /**
- * Template for displaying an archive page
+ * Displays a standard archive page.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * This is the default archive template.
+ * It is used by every other special archive page like the one for the People post type.
+ *
+ * The page contains:
+ *  * a Header from the Archive template parts
+ *  * a Post list from the Archive template parts
+ *  * a Summary from the Archive template parts
+ *  * a Related topics list from the Archive template parts
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();

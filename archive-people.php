@@ -1,8 +1,10 @@
 <?php
 /**
- * Displays the archive page for the People post type
+ * Displays the archive page for the People post type.
  *
- * @uses ::archive-source.html Archive source
+ * The page contains:
+ *  * a Header from the Archive template parts
+ *  * a Post list from the Archive template parts
  *
  * @link https://morethemes.baby/log-lolla-pro-pro-demo/people Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation

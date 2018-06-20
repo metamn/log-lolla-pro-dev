@@ -1,10 +1,16 @@
 <?php
 /**
- * Template for displaying the Sources archive page
+ * Displays the archive page for the Source post type.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * The page contains:
+ *  * a Header from the Archive template parts
+ *  * a Post list from the Archive template parts
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/sources Live example
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 get_header();

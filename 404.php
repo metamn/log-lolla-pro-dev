@@ -1,10 +1,12 @@
 <?php
 /**
- * Displays a 404 page (not found)
+ * Displays a 404 page (not found).
  *
- * Displays a page not found message and a search form
+ * The page contains:
+ *  * a 'not found' message
+ *  * a search form.
  *
- * @link https://morethemes.baby/log-lolla-pro-pro-demo/peoplexxx Live example
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/peoplexx Live example
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page Wordpress documentation
  *
  * @package Log_Lolla_Pro
