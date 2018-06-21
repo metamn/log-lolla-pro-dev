@@ -7,7 +7,7 @@
    */
 
   $archive = get_queried_object();
-  $summaries = log_lolla_pro_display_summaries_for_archive( $archive );
+  $posts = log_lolla_pro_get_summaries_for_archive( $archive );
 
   if ( ! empty( $summaries ) ) { ?>
     <section class="archive-list archive-list-summaries">

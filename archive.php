@@ -7,7 +7,7 @@
  *
  * The page contains:
  *  * A Header from the Archive template part.
- *  * A Post list from the Archive template part.
+ *  * A Post list from the Post template part.
  *  * A Summary from the Archive template part.
  *  * A Related topics list from the Archive template part.
  *
@@ -25,10 +25,17 @@ get_header();
 	<h3 class="hidden">Archive</h3>
 
 	<?php
-		set_query_var( 'post-list-klass', 'archive' );
+		set_query_var( 'post-list-klass', 'posts-of-an-archive' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>
-	<?php get_template_part( 'template-parts/archive/archive', 'summaries' ); ?>
+
+	<?php
+		set_query_var( 'post-list-klass', 'summaries' );
+		set_query_var( 'post-list-title', esc_html( 'Summaries ', 'log-lolla-pro') );
+		set_query_var( 'post-list-posts', log_lolla_pro_get_summaries_for_archive( get_queried_object() ) );
+		get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
+	?>
+	<?php //get_template_part( 'template-parts/archive/archive', 'summaries' ); ?>
 	<?php get_template_part( 'template-parts/archive/archive', 'standard-posts' ); ?>
 	<?php get_template_part( 'template-parts/archive/archive', 'related-topics' ); ?>
 	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>

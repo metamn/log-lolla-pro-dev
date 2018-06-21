@@ -4,7 +4,7 @@
  *
  * The page contains:
  *  * A Header from the Archive template part.
- *  * A Post list from the Archive template part.
+ *  * A Post list from the Post template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-pro-demo/sources Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation

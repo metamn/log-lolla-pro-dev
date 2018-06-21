@@ -255,6 +255,3 @@ if ( ! function_exists( 'log_lolla_pro_get_summaries_for_archive' ) ) {
 		return $posts;
 	}
 }
-
-
-
