@@ -1,25 +1,21 @@
 <?php
-  /**
-   * Display archive of years and months
-   *
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays an archive of a year and it's months.
+ *
+ * It contains:
+ * * A Year Archive template part.
+ * * A Month list  Archive template part.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $archive_year = get_query_var( 'archive_year' );
-  $archive_months = get_query_var( 'archive_months' );
+$archive_year   = get_query_var( 'archive_year' );
+$archive_months = get_query_var( 'archive_months' );
 ?>
 
 <div class="year-and-months">
-  <?php get_template_part( 'template-parts/archive/parts/archive', 'year' ); ?>
-
-  <?php $grid = round( count( $archive_months ) / 2 ); ?>
-  <div class="months grid-<?php echo $grid ?>">
-    <?php
-      foreach ($archive_months as $archive_month) {
-        set_query_var( 'archive_month', $archive_month );
-        get_template_part( 'template-parts/archive/parts/archive', 'month' );
-      }
-    ?>
-  </div>
+	<?php get_template_part( 'template-parts/archive/parts/archive', 'year' ); ?>
+	<?php get_template_part( 'template-parts/archive/parts/archive/month', 'list' ); ?>
 </div>
