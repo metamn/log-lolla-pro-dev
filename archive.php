@@ -3,13 +3,14 @@
  * Displays a standard archive page.
  *
  * This is the default archive template.
- * It is used by every other special archive page like the one for the People post type.
+ * Special archive pages like the one for the People post type are using another template.
  *
  * The page contains:
  *  * A Header from the Archive template part.
- *  * A Post list from the Post template part.
- *  * A Summary from the Archive template part.
- *  * A Related topics list from the Archive template part.
+ *  * A Post list for the posts of the archive from the Post template part.
+ *  * A Post list for the Summaries of the archive from the Post template part.
+ *  * A Post list for the Standard post types of the archive from the Post template part.
+ *  * A Topic list for the related topics from the Topic template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
