@@ -1,13 +1,12 @@
 <?php
-  /**
-   * Displaying a circle
-   *
-   * The corresponding SCSS code can be found in `assets/scss/framework/design/decorations`
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays a circle
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
 <div class="circle">
