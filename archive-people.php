@@ -19,7 +19,11 @@ get_header();
 <section class="content content-archive">
 	<h3 class="hidden">Archive for People</h3>
 
-	<?php get_template_part( 'template-parts/archive/archive', 'posts' ); ?>
+	<?php
+		set_query_var( 'post-list-klass', 'archive-people' );
+		get_template_part( 'template-parts/post/post', 'list' );
+	?>
+
 	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
 </section>
 

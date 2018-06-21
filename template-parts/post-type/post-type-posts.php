@@ -14,9 +14,9 @@
     get_the_title()
   );
 
-  set_query_var( 'archive_posts_klass', 'archive-list--posts' );
-  set_query_var( 'archive_posts_title', $archive_posts_title );
-  set_query_var( 'archive_posts_posts', $posts );
+  set_query_var( 'post-list-klass', 'post-type' );
+  set_query_var( 'post-list-title', $archive_posts_title );
+  set_query_var( 'post-list-posts', $posts );
+  get_template_part( 'template-parts/post/post', 'list' );
 
-  get_template_part( 'template-parts/archive/archive', 'posts' );
 ?>

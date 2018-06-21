@@ -24,7 +24,10 @@ get_header();
 <section class="content content-archive">
 	<h3 class="hidden">Archive</h3>
 
-	<?php get_template_part( 'template-parts/archive/archive', 'posts' ); ?>
+	<?php
+		set_query_var( 'post-list-klass', 'archive' );
+		get_template_part( 'template-parts/post/post', 'list' );
+	?>
 	<?php get_template_part( 'template-parts/archive/archive', 'summaries' ); ?>
 	<?php get_template_part( 'template-parts/archive/archive', 'standard-posts' ); ?>
 	<?php get_template_part( 'template-parts/archive/archive', 'related-topics' ); ?>
