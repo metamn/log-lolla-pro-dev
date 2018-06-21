@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays a link to an archive month.
+ * Displays a link to month archive.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0

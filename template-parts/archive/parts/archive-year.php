@@ -1,16 +1,16 @@
 <?php
-  /**
-   * Displaying a link to an archive year
-   *
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays a link to a year archive.
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $archive_year = get_query_var( 'archive_year' );
+$archive_year = get_query_var( 'archive_year' );
 ?>
 
 <div class="year">
-  <a class="link" href="<?php echo get_year_link( $archive_year ); ?>" title="<?php echo $archive_year ?>">
-    <?php echo $archive_year ?>
-  </a>
+	<a class="link" href="<?php echo esc_url( get_year_link( $archive_year ) ); ?>" title="<?php echo esc_attr( $archive_year ); ?>">
+		<?php echo esc_html( $archive_year ); ?>
+	</a>
 </div>
