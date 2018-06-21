@@ -25,19 +25,35 @@ get_header();
 	<h3 class="hidden">Archive</h3>
 
 	<?php
+		$archive = get_queried_object();
+	?>
+
+	<?php
 		set_query_var( 'post-list-klass', 'posts-of-an-archive' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>
 
 	<?php
 		set_query_var( 'post-list-klass', 'summaries' );
-		set_query_var( 'post-list-title', esc_html( 'Summaries ', 'log-lolla-pro') );
-		set_query_var( 'post-list-posts', log_lolla_pro_get_summaries_for_archive( get_queried_object() ) );
+		set_query_var( 'post-list-title', esc_html( 'Summaries', 'log-lolla-pro') );
+		set_query_var( 'post-list-posts', log_lolla_pro_get_summaries_for_archive( $archive ) );
 		get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
 	?>
-	<?php //get_template_part( 'template-parts/archive/archive', 'summaries' ); ?>
-	<?php get_template_part( 'template-parts/archive/archive', 'standard-posts' ); ?>
-	<?php get_template_part( 'template-parts/archive/archive', 'related-topics' ); ?>
+
+	<?php
+		set_query_var( 'post-list-klass', 'thoughts' );
+		set_query_var( 'post-list-title', esc_html( 'Thoughts', 'log-lolla-pro') );
+		set_query_var( 'post-list-posts', log_lolla_pro_get_standard_posts_for_archive( $archive ) );
+		get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
+	?>
+
+	<?php
+		set_query_var( 'topic_list_klass', 'topics' );
+		set_query_var( 'topic_list_title',  esc_html__( 'Related topics ', 'log-lolla-pro') );
+		set_query_var( 'topic_list_items', log_lolla_pro_get_related_topics_for_archive( $archive ) );
+		get_template_part( 'template-parts/topic/topic', 'list' );
+	?>
+
 	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
 </section>
 
