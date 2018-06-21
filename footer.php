@@ -2,7 +2,8 @@
 /**
  * Displays the site footer.
  *
- * The footer contents are defined in the Footer template part.
+ * It contains:
+ * * A Footer template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials Wordpress documentation
  *

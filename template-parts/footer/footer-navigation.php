@@ -1,23 +1,24 @@
 <?php
-  /**
-   * Template part for displaying the footer navigation
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the footer navigation.
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
 <nav class="footer-navigation">
-  <h3 class="hidden">Footer navigation</h3>
-  <?php
-    wp_nav_menu( array(
-      'theme_location' => 'menu-1',
-      'menu_id'        => 'primary-menu',
-      'before'         => '<span class="link">',
-      'after'          => '</span>'
-    ) );
-  ?>
+	<h3 class="hidden">Footer navigation</h3>
+	<?php
+	wp_nav_menu(
+		array(
+			'theme_location' => 'menu-1',
+			'menu_id'        => 'primary-menu',
+			'before'         => '<span class="link">',
+			'after'          => '</span>',
+		)
+	);
+	?>
 </nav>

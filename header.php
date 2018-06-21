@@ -2,7 +2,8 @@
 /**
  * Displays the site's header.
  *
- * The header contents are defined in the Header template part.
+ * It contains:
+ * * A Header template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
