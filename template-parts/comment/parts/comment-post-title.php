@@ -1,15 +1,14 @@
 <?php
-  /**
-   * Displaying post title associated to a comment
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the post title associated to a comment
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
-<a class="link" href="<?php echo esc_url( get_comment_link( $comment ) ) ?>" title="<?php echo esc_html( get_the_title( $comment->comment_post_ID ) ) ?>">
-  <?php echo esc_html( get_the_title( $comment->comment_post_ID ) ) ?>
+<a class="link" href="<?php echo esc_url( get_comment_link( $comment ) ); ?>" title="<?php echo esc_attr( get_the_title( $comment->comment_post_ID ) ); ?>">
+	<?php echo esc_html( get_the_title( $comment->comment_post_ID ) ); ?>
 </a>

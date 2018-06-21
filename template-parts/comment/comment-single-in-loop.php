@@ -1,11 +1,11 @@
 <?php
 /**
- * Displays a comment inside a post.
+ * Displays a comment inside a loop.
  *
  * It contains:
  * * A Date and time comment template part.
- * * A Content comment template part.
- * * A Permalink comment template part.
+ * * A Post title with arrows comment template part.
+ * * A Content or excerpt comment template part.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0
@@ -18,6 +18,6 @@ if ( empty( $comment ) ) {
 
 <article class="comment" id="comment-<?php echo esc_attr( get_comment_id( $comment ) ); ?>">
 	<?php get_template_part( 'template-parts/comment/parts/comment', 'date-and-time' ); ?>
-	<?php get_template_part( 'template-parts/comment/parts/comment', 'content' ); ?>
-	<?php get_template_part( 'template-parts/comment/parts/comment', 'permalink' ); ?>
+	<?php get_template_part( 'template-parts/comment/parts/comment', 'post-title-with-arrows' ); ?>
+	<?php get_template_part( 'template-parts/comment/parts/comment', 'content-or-excerpt' ); ?>
 </article>

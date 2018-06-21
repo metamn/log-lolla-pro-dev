@@ -1,22 +1,21 @@
 <?php
-  /**
-   * Displaying "Read more" for a comment excerpt
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the "Read more" link for a comment excerpt
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
 <div class="read-more">
-  <?php
-    printf(
-      '<a class="link" href="%1$s" title="%2$s">%3$s</a>',
-      esc_url( get_comment_link( $comment ) ),
-      esc_attr( get_the_title( $comment->comment_post_ID ) ),
-      log_lolla_pro_add_readmore_to_content()
-    );
-  ?>
+	<?php
+	printf(
+		'<a class="link" href="%1$s" title="%2$s">%3$s</a>',
+		esc_url( get_comment_link( $comment ) ),
+		esc_attr( get_the_title( $comment->comment_post_ID ) ),
+		esc_html( log_lolla_pro_add_readmore_to_content() )
+	);
+	?>
 </div>

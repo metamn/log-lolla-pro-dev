@@ -1,21 +1,23 @@
 <?php
-  /**
-   * Displaying comment excerpt
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the comment excerpt.
+ *
+ * It contains:
+ * * A Read more comment template part.
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
 <aside class="comment-excerpt">
-  <h3 class="hidden">Comment excerpt</h3>
+	<h3 class="hidden">Comment excerpt</h3>
 
-  <div class="text">
-    <?php echo get_comment_excerpt( $comment ) ?>
-  </div>
+	<div class="text">
+		<?php echo esc_html( get_comment_excerpt( $comment ) ); ?>
+	</div>
 
-  <?php get_template_part( 'template-parts/comment/parts/comment', 'read-more' ); ?>
+	<?php get_template_part( 'template-parts/comment/parts/comment', 'read-more' ); ?>
 </aside>

@@ -1,11 +1,9 @@
 <?php
-  /**
-   * Displaying "Updated on" for a comment
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the "Updated on" text for a comment.
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
-  echo esc_html_x( 'Update on ', 'comment updated text', 'log-lolla-pro' );
-?>
+echo esc_html_x( 'Update on ', 'comment updated text', 'log-lolla-pro' );
