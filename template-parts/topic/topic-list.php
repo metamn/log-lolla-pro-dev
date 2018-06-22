@@ -10,12 +10,12 @@
   $topic_list_items = get_query_var( 'topic_list_items' );
 ?>
 
-<section class="topic-list <?php echo $topic_list_klass ?>">
+<section class="topic-list <?php echo $topic_list_klass; ?>">
   <h3 class="topic-list-title">
-    <?php echo $topic_list_title ?>
+	<?php echo $topic_list_title; ?>
   </h3>
 
   <div class="topic-list-body">
-    <?php echo $topic_list_items ?>
+	<?php echo $topic_list_items; ?>
   </div>
 </section>

@@ -1,19 +1,21 @@
 <?php
-  /**
-   * Template part to display a shortcode body
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Template part to display a shortcode body
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-  if ( empty( $shortcode_body ) ) {
-    $shortcode_body = get_query_var( $shortcode_body );
-  }
+if ( empty( $shortcode_body ) ) {
+	$shortcode_body = get_query_var( $shortcode_body );
+}
 
-  if ( empty( $shortcode_body ) ) return;
+if ( empty( $shortcode_body ) ) {
+	return;
+}
 ?>
 
 <div class="shortcode-body">
-  <?php echo $shortcode_body; ?>
+	<?php echo wp_kses_post( $shortcode_body ); ?>
 </div>
