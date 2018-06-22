@@ -1,15 +1,15 @@
 <?php
-	/**
-	 * Template part for displaying status posts
-	 *
-	 * status – A short status update, similar to a Twitter status update.
-	 *
-	 * @link https://developer.wordpress.org/themes/functionality/post-formats/
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template part for displaying status posts
+ *
+ * Status – A short status update, similar to a Twitter status update.
+ *
+ * @link https://developer.wordpress.org/themes/functionality/post-formats/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	$klass = 'post post-format-status';
+$klass = 'post post-format-status';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>

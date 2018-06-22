@@ -1,24 +1,24 @@
 <?php
-	/**
-	 * Template part for displaying results in search pages
-	 *
-	 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-	 *
-	 * @package Log_Lolla_Pro
-	 */
+/**
+ * Template part for displaying results in search pages
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-	 $klass = 'post';
+$klass = 'post';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>
 	<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
 	<?php
-		$has_title = the_title_attribute( 'echo=0');
+		$has_title = the_title_attribute( 'echo=0' );
 
-		if (! $has_title ) {
-			get_template_part( 'template-parts/post/parts/post', 'permalink' );
-		}
+	if ( ! $has_title ) {
+		get_template_part( 'template-parts/post/parts/post', 'permalink' );
+	}
 	?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'date' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

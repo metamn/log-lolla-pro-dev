@@ -23,7 +23,7 @@ $post_list_posts = get_query_var( 'post-list-posts' );
 		if ( $post_list_posts ) {
 			$save_current_post = $post;
 
-			foreach ($post_list_posts as $post) {
+			foreach ( $post_list_posts as $post ) {
 				setup_postdata( $post );
 				get_template_part( 'template-parts/post/post-format', get_post_format() );
 			}

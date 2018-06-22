@@ -10,7 +10,7 @@ $post_list_klass = get_query_var( 'post-list-klass' );
 $post_list_title = get_query_var( 'post-list-title' );
 $post_list_posts = get_query_var( 'post-list-posts' );
 
-if ($post_list_posts) {
+if ( $post_list_posts ) {
 	?>
 	<section class="post-list <?php echo esc_attr( log_lolla_pro_display_klass( 'post-list', $post_list_klass ) ); ?>">
 		<h3 class="post-list-title">
@@ -21,7 +21,7 @@ if ($post_list_posts) {
 			<?php
 			$save_current_post = $post;
 
-			foreach ($post_list_posts as $post) {
+			foreach ( $post_list_posts as $post ) {
 				setup_postdata( $post );
 				get_template_part( 'template-parts/post/post-format', get_post_format() );
 			}
@@ -34,5 +34,5 @@ if ($post_list_posts) {
 		</div>
 	</section>
 	<?php
-	}
+}
 ?>
