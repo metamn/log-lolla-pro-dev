@@ -1,20 +1,21 @@
 <?php
-  /**
-   * Displaying post excerpt
-   * Only If the post has an excerpt defined, and we are on an archive page
-   *
-   * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Displays the post excerpt.
+ *
+ * Only if the post has an excerpt defined, and we are on an archive page
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ *
+ * @package Log_Lolla_Pro
+ */
 
-  $klass = '';
+$klass = '';
 ?>
 
 <aside class="post-excerpt">
-  <h3 class="hidden">Article excerpt</h3>
+	<h3 class="hidden">Article excerpt</h3>
 
-  <div class="text">
-    <?php the_excerpt(); ?>
-  </div>
+	<div class="text">
+		<?php the_excerpt(); ?>
+	</div>
 </aside>
