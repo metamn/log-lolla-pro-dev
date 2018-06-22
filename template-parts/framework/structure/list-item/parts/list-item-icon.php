@@ -1,8 +1,6 @@
 <?php
 /**
- * Displays a list item icon
- *
- * This list item is optional
+ * Displays a list item icon.
  *
  * @link https://material.io/design/components/lists.html
  * @link http://material-components-web.appspot.com/list.html
@@ -35,19 +33,12 @@ if ( empty( $list_item_icon ) ) {
 <div class="list-item-icon">
 	<?php
 	if ( ! empty( $list_item_icon_url ) ) {
-		?>
-		<a class="link" href="<?php echo esc_url( $list_item_url ); ?>" title="<?php echo esc_attr( $list_item_primary_text ); ?>">
-		<?php
-	}
-	?>
-
-	<?php echo esc_html( $list_item_icon ); ?>
-
-	<?php
-	if ( isset( $list_item_icon_url ) ) {
-		?>
-		</a>
-		<?php
+		set_query_var( 'list-url', $list_item_url );
+		set_query_var( 'list-title', $list_item_primary_text );
+		set_query_var( 'list-content', $list_item_icon );
+		get_template_part( 'template-parts/framework/design/typography/elements/link/link' );
+	} else {
+		echo wp_kses_post( $list_item_icon );
 	}
 	?>
 </div>
