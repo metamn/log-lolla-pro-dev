@@ -3,6 +3,7 @@
  * Functions which enhance the theme by hooking into WordPress
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 /**
