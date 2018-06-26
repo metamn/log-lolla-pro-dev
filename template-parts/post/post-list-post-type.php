@@ -1,8 +1,9 @@
 <?php
 /**
- * Template part to display posts of a post type (like source, people)
+ * Displays a list of posts of a certain post type (like source, people)
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $posts = log_lolla_pro_get_posts_of_a_post_type( $post );

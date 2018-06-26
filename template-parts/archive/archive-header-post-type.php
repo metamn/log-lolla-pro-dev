@@ -1,8 +1,9 @@
 <?php
 /**
- * Template part for displaying the header of a post type
+ * Displays the header of a post type archive
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 set_query_var( 'archive_title', get_the_title() );

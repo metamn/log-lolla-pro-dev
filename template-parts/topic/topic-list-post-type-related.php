@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part to display related topics for a post type (like source, people)
+ * Displays a list of related topics for a post type (like source, people)
  *
  * @package Log_Lolla_Pro
  */
