@@ -178,7 +178,8 @@ if ( ! function_exists( 'log_lolla_pro_display_summaries' ) ) {
 		ob_start();
 		foreach ( $summaries as $post ) {
 			setup_postdata( $post );
-			get_template_part( 'template-parts/summary/summary', '' );
+			// removed by cs
+			// get_template_part( 'template-parts/summary/summary', '' );
 		}
 		wp_reset_postdata();
 		$html .= ob_get_clean();
