@@ -21,6 +21,7 @@ get_header();
 
 	<?php
 		set_query_var( 'post-list-klass', 'archive-summaries' );
+		set_query_var( 'post-list-post-format', 'summary' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>
 
