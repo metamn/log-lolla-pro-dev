@@ -54,8 +54,8 @@ if ( ! function_exists( 'log_lolla_pro_get_related_topics_for_archive' ) ) {
 			return;
 		}
 
-		global $RELATED_TOPICS_COUNT;
-		$RELATED_TOPICS_COUNT = count( $related_topics );
+		global $related_topics_count;
+		$related_topics_count = count( $related_topics );
 
 		$html = '';
 
@@ -328,5 +328,3 @@ if ( ! function_exists( 'log_lolla_pro_get_posts_for_topic' ) ) {
 		);
 	}
 }
-
-

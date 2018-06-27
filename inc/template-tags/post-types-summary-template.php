@@ -206,8 +206,8 @@ if ( ! function_exists( 'log_lolla_pro_display_summaries_for_archive' ) ) {
 			return;
 		}
 
-		global $SUMMARIES_COUNT;
-		$SUMMARIES_COUNT = count( $summaries );
+		global $summaries_count;
+		$summaries_count = count( $summaries );
 
 		$html = '';
 
@@ -252,6 +252,9 @@ if ( ! function_exists( 'log_lolla_pro_get_summaries_for_archive' ) ) {
 				),
 			)
 		);
+
+		global $summaries_count;
+		$summaries_count = count( $summaries );
 
 		return $posts;
 	}
