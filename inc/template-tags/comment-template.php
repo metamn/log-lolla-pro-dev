@@ -1,14 +1,12 @@
 <?php
-  /**
-   * Comment template tags
-   *
-   * @link https://codex.wordpress.org/Template_Tags
-   *
-   * @package Log_Lolla_Pro
-   */
-
-
-
+/**
+ * Comment template tags
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
 if ( ! function_exists( 'log_lolla_pro_get_comments_of_a_post' ) ) {
 	/**
@@ -86,6 +84,3 @@ if ( ! function_exists( 'log_lolla_pro_get_comments_for_the_loop' ) ) {
 		);
 	}
 }
-
-
-

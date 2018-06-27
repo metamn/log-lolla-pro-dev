@@ -181,7 +181,7 @@ if ( ! function_exists( 'log_lolla_pro_get_triangle_html' ) ) {
 	/**
 	 * Return HTML markup for a triangle
 	 *
-	 * @param   string $direction The arrow direction like top, left, right, bottom
+	 * @param   string $direction The arrow direction like top, left, right, bottom.
 	 * @return  string            HTML
 	 */
 	function log_lolla_pro_get_triangle_html( $direction ) {

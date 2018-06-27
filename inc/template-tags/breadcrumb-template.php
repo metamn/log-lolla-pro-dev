@@ -1,16 +1,14 @@
 <?php
-  /**
-   * Breadcrumb template tags
-   *
-   * @package Log_Lolla_Pro
-   */
-
+/**
+ * Template tags for Breadcrumb.
+ *
+ * @package Log_Lolla_Pro
+ * @since 1.0.0
+ */
 
 if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 	/**
-	 * Display breadcrumbs for an archive
-	 *
-	 * @return string HTML
+	 * Display breadcrumb for an archive.
 	 */
 	function log_lolla_pro_display_breadcrumb_for_archive() {
 		$deco = array(
@@ -20,7 +18,6 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 			'after_each'  => '</li>',
 			'separator'   => '<li class="li">' . log_lolla_pro_get_triangle_html( 'right' ) . '</li>',
 		);
-		extract( $deco );
 
 		$links   = [];
 		$links[] = log_lolla_pro_get_link_html_for( 'Home' );
@@ -50,11 +47,10 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 
 		foreach ( $links as $link ) {
 			if ( ! empty( $link ) ) {
-				$list[] = $before_each . $link . $after_each;
+				$list[] = $deco['before_each'] . $link . $deco['after_each'];
 			}
 		}
 
-		echo $before_all . implode( $separator, $list ) . $after_all;
+		echo wp_kses_post( $deco['before_all'] . implode( $deco['separator'], $list ) . $deco['after_all'] );
 	}
 }
-
