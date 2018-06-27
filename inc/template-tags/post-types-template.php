@@ -1,16 +1,21 @@
 <?php
-  /**
-   * Template tags for custom post types
-   *
-   * Like sources, poeple, summaries etc.
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Template tags for custom post types
+ *
+ * Like sources, poeple, summaries etc.
+ *
+ * @package Log_Lolla_Pro
+ */
 
-
-
-if ( ! function_exists( 'log_lolla_pro_display_post_type' ) ) {
-	function log_lolla_pro_display_post_type( $post_type, $post ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_type_displayed_as_thumb_html' ) ) {
+	/**
+	 * Returns the HTML of a post type displayed as a thumbnail.
+	 *
+	 * @param  string $post_type The post type.
+	 * @param  object $post      The post.
+	 * @return string            The link to the post.
+	 */
+	function log_lolla_pro_get_post_type_displayed_as_thumb_html( $post_type, $post ) {
 		$html = '';
 
 		ob_start();
@@ -36,38 +41,6 @@ if ( ! function_exists( 'log_lolla_pro_display_post_type' ) ) {
 	}
 }
 
-
-if ( ! function_exists( 'log_lolla_pro_display_latest_posts_of_post_type' ) ) {
-	function log_lolla_pro_display_latest_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
-		$items = log_lolla_pro_get_latest_posts_of_post_type( $post_type, $number_of_items );
-		if ( empty( $items ) ) {
-			return;
-		}
-
-		$html = '';
-
-		foreach ( $items as $item ) {
-			ob_start();
-
-			set_query_var( 'list_item_class', $post_type );
-			set_query_var(
-				'list_item_primary_text', the_title_attribute(
-					array(
-						'echo' => false,
-						'post' => $item,
-					)
-				)
-			);
-			set_query_var( 'list_item_secondary_text', log_lolla_pro_get_post_type_summary_link_to_topic( $item ) );
-
-			get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
-
-			$html .= ob_get_clean();
-		}
-
-		return $html;
-	}
-}
 
 
 if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
