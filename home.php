@@ -21,7 +21,7 @@ get_header();
 	if ( have_posts() ) :
 
 		// Get comments for this set of posts.
-		$comments = log_lolla_pro_get_comments_for_the_loop( $wp_query->posts );
+		$comments = log_lolla_pro_get_comment_list_for_the_loop( $wp_query->posts );
 
 		// Start the Loop.
 		while ( have_posts() ) :
@@ -36,7 +36,7 @@ get_header();
 
 
 			// Get all comments before the post date.
-			$comments_before_post = log_lolla_pro_get_comments_before_date( $comments, get_the_date() );
+			$comments_before_post = log_lolla_pro_get_comments_created_before_date( $comments, get_the_date() );
 
 			// Display comments.
 			if ( ! empty( $comments_before_post ) ) {
