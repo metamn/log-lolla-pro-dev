@@ -1,16 +1,15 @@
 <?php
-  /**
-   * Common template tags
-   *
-   * Contains custom, reusable template tags specific for this theme
-   *
-   * @link https://codex.wordpress.org/Template_Tags
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Common template tags
+ *
+ * Contains custom, reusable template tags specific for this theme
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ *
+ * @package Log_Lolla_Pro
+ */
 
-
-if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 	/**
 	 * Get pictograms of an Archive.
 	 *
@@ -19,7 +18,7 @@ if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
 	 * @param  array $counters An array of counters for an Archive.
 	 * @return array           An array of counters formatted to be displayed as pictograms.
 	 */
-	function log_lolla_pro_get_pictograms( $counters ) {
+	function log_lolla_pro_get_pictogram_list( $counters ) {
 		$pictograms = [];
 
 		$pictograms[] = array(
@@ -55,19 +54,25 @@ if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_display_klass' ) ) {
-	function log_lolla_pro_display_klass( $klass_parent, $klass ) {
-		if ( empty( $klass ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
+	/**
+	 * Get a class name using the BEM convention.
+	 *
+	 * @param  string $block    The main part of the class.
+	 * @param  string $modifier The modifier part of a class.
+	 * @return string           A BEM classname.
+	 */
+	function log_lolla_pro_get_classname_bem( $block, $modifier ) {
+		if ( empty( $modifier ) ) {
 			return;
 		}
-		if ( empty( $klass_parent ) ) {
-			return $klass;
+		if ( empty( $block ) ) {
+			return $modifier;
 		}
 
-		return $klass_parent . '--' . $klass;
+		return $block . '--' . $modifier;
 	}
 }
-
 
 
 if ( ! function_exists( 'log_lolla_pro_get_link_html_for' ) ) {

@@ -12,7 +12,7 @@ $post_list_posts = get_query_var( 'post-list-posts' );
 
 if ( $post_list_posts ) {
 	?>
-	<section class="post-list <?php echo esc_attr( log_lolla_pro_display_klass( 'post-list', $post_list_klass ) ); ?>">
+	<section class="post-list <?php echo esc_attr( log_lolla_pro_get_classname_bem( 'post-list', $post_list_klass ) ); ?>">
 		<h3 class="post-list-title">
 			<?php echo esc_attr( $post_list_title ); ?>
 		</h3>
