@@ -41,14 +41,14 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 
 if ( ! function_exists( 'log_lolla_pro_display_archive_list_by_year_and_months' ) ) {
 	/**
-	 * Displays a year and months archive.
+	 * Displays a list of a year and months archive.
 	 *
 	 * @return string HTML
 	 */
 	function log_lolla_pro_display_archive_list_by_year_and_months() {
-		$archives = log_lolla_pro_get_archives_by_year_and_month();
+		$archives = log_lolla_pro_get_archive_list_by_year_and_months();
 
-		$dates = log_lolla_pro_group_archives_by_year_and_month( $archives );
+		$dates = log_lolla_pro_group_archive_list_by_year_and_months( $archives );
 		if ( empty( $dates ) ) {
 			return;
 		}
@@ -70,22 +70,22 @@ if ( ! function_exists( 'log_lolla_pro_display_archive_list_by_year_and_months' 
 }
 
 
-if ( ! function_exists( ' log_lolla_pro_group_archives_by_year_and_month' ) ) {
+if ( ! function_exists( 'log_lolla_pro_group_archive_list_by_year_and_months' ) ) {
 	/**
 	 * Groups archives into an array of years and months
 	 *
 	 * Return something like:
 	 *  Array ( [2017] => Array ( [0] => 12 ) [2018] => Array ( [0] => 01 [1] => 02 [2] => 03 ) )
 	 *
-	 * @param  array $archives An array of objects
+	 * @param  array $archives An array of objects.
 	 * @return array           An array of arrays
 	 */
-	function log_lolla_pro_group_archives_by_year_and_month( $archives ) {
+	function log_lolla_pro_group_archive_list_by_year_and_months( $archives ) {
 		if ( empty( $archives ) ) {
 			return;
 		}
 
-		// Get an array with timestamps like 2017-12-05 14:27:58
+		// Get an array with timestamps like 2017-12-05 14:27:58.
 		$timestamps = array_map(
 			function( $d ) {
 				return $d->post_date;
@@ -109,7 +109,7 @@ if ( ! function_exists( ' log_lolla_pro_group_archives_by_year_and_month' ) ) {
 			return;
 		}
 
-		// Create a multidimensional array like [2017] => [12], [2018] => [01, 02, 03]
+		// Create a multidimensional array like [2017] => [12], [2018] => [01, 02, 03].
 		$ret = [];
 		foreach ( $dates as $d ) {
 			$split              = explode( '-', $d );
@@ -121,16 +121,16 @@ if ( ! function_exists( ' log_lolla_pro_group_archives_by_year_and_month' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_archives_by_year_and_month' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months' ) ) {
 	/**
-	 * Get all years and months when there were posts published
+	 * Get all years and months when there were posts published.
 	 *
 	 * Returns an array of objects like:
 	 *  Array ( [0] => stdClass Object ( [post_date] => 2017-12-05 14:27:58 [post_status] => publish ) [1] => stdClass Object ( [post_date] => 2017-12-06 07:13:21 [post_status] => publish ) ...
 	 *
-	 * @return array
+	 * @return array An array of objects
 	 */
-	function log_lolla_pro_get_archives_by_year_and_month() {
+	function log_lolla_pro_get_archive_list_by_year_and_months() {
 		global $wpdb;
 
 		$results = $wpdb->get_results(
