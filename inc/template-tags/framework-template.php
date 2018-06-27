@@ -161,13 +161,13 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_image_not_found_url' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_image_url_not_found' ) ) {
 	/**
 	 * Get the image name / url to display when an image is not found
 	 *
 	 * @return string Image url and name
 	 */
-	function log_lolla_pro_get_image_not_found_url() {
+	function log_lolla_pro_get_image_url_not_found() {
 		return '/assets/images/image-not-found.png';
 	}
 }
