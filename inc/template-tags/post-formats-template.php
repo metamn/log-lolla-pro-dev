@@ -7,6 +7,7 @@
  * @package Log_Lolla_Pro
  */
 
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
 	/**
 	 * Return a class for the link post format

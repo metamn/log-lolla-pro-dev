@@ -98,14 +98,14 @@ if ( ! function_exists( 'log_lolla_pro_post_link_is_external' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_get_link_from_content' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_link_from_content' ) ) {
 	/**
-	 * Return link from post content for the link post format
+	 * Return link from post content.
 	 * Returns either the link, or the post permalink if the link cannot be get
 	 *
 	 * @return string
 	 */
-	function log_lolla_pro_get_link_from_content() {
+	function log_lolla_pro_get_post_link_from_content() {
 		$content = get_the_content();
 		$has_url = get_url_in_content( $content );
 
@@ -121,7 +121,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_class' ) ) {
 	 * @return string
 	 */
 	function log_lolla_pro_get_post_class() {
-		// Changing the post grid based on how long a post & it's excerpt is
+		// Changing the post grid based on how long a post & it's excerpt is.
 		$max_word_count = 40;
 
 		$post_word_count = log_lolla_pro_count_words( strip_tags( get_the_content() ) );
