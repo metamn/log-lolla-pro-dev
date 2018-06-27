@@ -15,8 +15,8 @@
  */
 
 $url   = log_lolla_pro_get_link_from_content();
-$klass = log_lolla_pro_get_link_from_content_class( $url );
-$title = log_lolla_pro_get_link_title_for_link_post_format( $url );
+$klass = log_lolla_pro_get_post_format_link_class( $url );
+$title = log_lolla_pro_get_post_format_link_title( $url );
 $arrow = log_lolla_pro_get_arrow_html( 'right' );
 
 $post_klass_array = array(

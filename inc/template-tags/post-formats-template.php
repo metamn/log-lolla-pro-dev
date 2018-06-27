@@ -7,9 +7,37 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
+	/**
+	 * Return a class for the link post format
+	 *
+	 * @param string $url The url of the post.
+	 * @return string
+	 */
+	function log_lolla_pro_get_post_format_link_class( $url ) {
+		return log_lolla_pro_post_link_is_external( $url ) ? 'local-link' : 'external-link';
+	}
+}
+
+
+if ( ! function_exists( 'log_lolla_pro_get_post_format_link_title' ) ) {
+	/**
+	 * Returns link title for the Link Post format
+	 *
+	 * @param string $url The url of the post.
+	 * @return string     Either the post title, or the $url where it points
+	 */
+	function log_lolla_pro_get_post_format_link_title( $url ) {
+		$has_title = the_title_attribute( 'echo=0' );
+
+		return ( ! empty( $has_title ) ) ? $has_title : $url;
+	}
+}
+
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive' ) ) {
 	/**
-	 * Get the link to the post format archive
+	 * Get the link to the Post format archive
 	 *
 	 * @return string HTML
 	 */

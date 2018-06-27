@@ -1,12 +1,11 @@
 <?php
-  /**
-   * Post template tags
-   *
-   * @link https://codex.wordpress.org/Template_Tags
-   *
-   * @package Log_Lolla_Pro
-   */
-
+/**
+ * Post template tags
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ *
+ * @package Log_Lolla_Pro
+ */
 
 if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 	/**
@@ -40,8 +39,6 @@ if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 		return $ret;
 	}
 }
-
-
 
 
 if ( ! function_exists( 'log_lolla_pro_get_post_first_image_url' ) ) {
@@ -83,45 +80,22 @@ if ( ! function_exists( 'log_lolla_pro_post_has_link' ) ) {
 }
 
 
-
-if ( ! function_exists( 'log_lolla_pro_get_link_title_for_link_post_format' ) ) {
-	/**
-	 * Return link title for the link post format
-	 * Returns either the post title, or url where it points
-	 *
-	 * @return string
-	 */
-	function log_lolla_pro_get_link_title_for_link_post_format( $url ) {
-		$has_title = the_title_attribute( 'echo=0' );
-
-		return ( ! empty( $has_title ) ) ? $has_title : $url;
-	}
-}
-
-
 if ( ! function_exists( 'log_lolla_pro_post_link_is_external' ) ) {
 	/**
 	 * Return true is the post link is external
 	 *
-	 * @return boolean
+	 * @param string $url The url to compare with the post permalink.
+	 * @return boolean  True if the post permalink is the same as the $url.
 	 */
-	function log_lolla_pro_post_link_is_external() {
-		$url = log_lolla_pro_get_link_from_content();
-		return ( $url === apply_filters( 'the_permalink', get_permalink() ) );
+	function log_lolla_pro_post_link_is_external( $url ) {
+		if ( $url === apply_filters( 'the_permalink', get_permalink() ) ) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
 
-
-if ( ! function_exists( 'log_lolla_pro_get_link_from_content_class' ) ) {
-	/**
-	 * Return a class for the link post format
-	 *
-	 * @return string
-	 */
-	function log_lolla_pro_get_link_from_content_class( $url ) {
-		return ( $url === apply_filters( 'the_permalink', get_permalink() ) ) ? 'local-link' : 'external-link';
-	}
-}
 
 
 if ( ! function_exists( 'log_lolla_pro_get_link_from_content' ) ) {

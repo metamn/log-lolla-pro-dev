@@ -7,6 +7,8 @@
  * @package Log_Lolla_Pro
  */
 
-if ( ! log_lolla_pro_post_link_is_external() ) {
+$url = log_lolla_pro_get_link_from_content();
+
+if ( ! log_lolla_pro_post_link_is_external( $url ) ) {
 	get_template_part( 'template-parts/post/parts/post', 'permalink' );
 }
