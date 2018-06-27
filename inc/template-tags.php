@@ -3,6 +3,7 @@
  * Custom template tags for this theme.
  *
  * Template tags are functions which retrieve content from the database.
+ * They do assembly the business logic which later is displayed via Template Parts.
  *
  * @link https://developer.wordpress.org/themes/basics/template-tags/ WordPress documentation
  * @package Log_Lolla_Pro
@@ -19,5 +20,6 @@ require get_template_directory() . '/inc/template-tags/header-template.php';
 require get_template_directory() . '/inc/template-tags/post-template.php';
 require get_template_directory() . '/inc/template-tags/post-formats-template.php';
 require get_template_directory() . '/inc/template-tags/post-types-template.php';
+require get_template_directory() . '/inc/template-tags/post-types-summary-template.php';
 require get_template_directory() . '/inc/template-tags/sparklines-template.php';
 require get_template_directory() . '/inc/template-tags/topics-template.php';

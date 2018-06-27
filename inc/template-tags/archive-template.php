@@ -12,11 +12,11 @@ if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
 		$pictograms = [];
 
 		$pictograms[] = array(
-			 'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
-			 'number'   => $counters[0],
-			 'scrollto' => 'archive-list--posts',
-			 'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
-		 );
+			'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
+			'number'   => $counters[0],
+			'scrollto' => 'archive-list--posts',
+			'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
+		);
 
 			 $pictograms[] = array(
 				 'text'     => esc_html__( 'Summaries', 'log-lolla-pro-pro' ),
