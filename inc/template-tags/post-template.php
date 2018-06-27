@@ -150,12 +150,12 @@ if ( ! function_exists( 'log_lolla_pro_get_post_class' ) ) {
 		// Changing the post grid based on how long a post & it's excerpt is
 		$max_word_count = 40;
 
-		$post_word_count = log_lolla_pro_word_count( strip_tags( get_the_content() ) );
+		$post_word_count = log_lolla_pro_count_words( strip_tags( get_the_content() ) );
 		$grid            = ( $post_word_count < $max_word_count ) ? ' display-horizontal' : ' display-vertical';
 		$klass           = '';
 
 		if ( has_excerpt() ) {
-			$excerpt_word_count = log_lolla_pro_word_count( strip_tags( get_the_excerpt() ) );
+			$excerpt_word_count = log_lolla_pro_count_words( strip_tags( get_the_excerpt() ) );
 			$grid               = ( $excerpt_word_count < $max_word_count ) ? ' display-horizontal' : ' display-vertical';
 			$klass             .= ' has-excerpt';
 		}

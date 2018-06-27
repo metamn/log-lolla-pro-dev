@@ -440,16 +440,16 @@ if ( ! function_exists( 'log_lolla_pro_get_linear_conversion_of_a_range' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_word_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_count_words' ) ) {
 	/**
 	 * Count words in a text
 	 *
 	 * @link http://www.thomashardy.me.uk/wordpress-word-count-function
 	 *
-	 * @param   string $text   The text
-	 * @return  integer         The number of words
+	 * @param   string $text   The text.
+	 * @return  integer        The number of words
 	 */
-	function log_lolla_pro_word_count( $text ) {
+	function log_lolla_pro_count_words( $text ) {
 		return str_word_count( $text );
 	}
 }
