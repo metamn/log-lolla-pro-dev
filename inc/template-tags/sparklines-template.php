@@ -100,7 +100,7 @@ if ( ! function_exists( 'log_lolla_pro_adjust_range_for_sparkline' ) ) {
 		$max = max( $sparklines );
 
 		foreach ( $sparklines as $sparkline ) {
-			$adjusted[] = log_lolla_pro_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
+			$adjusted[] = log_lolla_pro_get_linear_conversion_of_a_range( $sparkline, $min, $max, 0, 99 );
 		}
 
 		return $adjusted;
