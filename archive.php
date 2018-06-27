@@ -37,7 +37,7 @@ get_header();
 	<?php
 		set_query_var( 'post-list-klass', 'summaries' );
 		set_query_var( 'post-list-title', esc_html( 'Summaries', 'log-lolla-pro' ) );
-		set_query_var( 'post-list-posts', log_lolla_pro_get_summaries_for_archive( $archive ) );
+		set_query_var( 'post-list-posts', log_lolla_pro_get_post_format_standard_post_list_for_archive( $archive ) );
 		get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
 	?>
 
