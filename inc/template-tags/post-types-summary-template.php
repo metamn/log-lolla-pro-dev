@@ -35,7 +35,6 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_link_to_topic' ) ) 
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	/**
 	 * Get the topic of a summary
@@ -57,10 +56,14 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	}
 }
 
-
-
-if ( ! function_exists( 'log_lolla_pro_display_summaries' ) ) {
-	function log_lolla_pro_display_summaries( $number_of_summaries ) {
+if ( ! function_exists( 'log_lolla_pro_display_post_type_summary_post_list' ) ) {
+	/**
+	 * Display a list of posts of the Summary Post type.
+	 *
+	 * @param  integer $number_of_summaries The number of posts to display.
+	 * @return string                       HTML
+	 */
+	function log_lolla_pro_display_post_type_summary_post_list( $number_of_summaries ) {
 		$summaries = get_posts(
 			array(
 				'post_type'      => 'summary',
@@ -81,83 +84,11 @@ if ( ! function_exists( 'log_lolla_pro_display_summaries' ) ) {
 		foreach ( $summaries as $post ) {
 			setup_postdata( $post );
 			// removed by cs
-			// get_template_part( 'template-parts/summary/summary', '' );
+			// get_template_part( 'template-parts/summary/summary', '' ).
 		}
 		wp_reset_postdata();
 		$html .= ob_get_clean();
 
 		return $html;
-	}
-}
-
-
-if ( ! function_exists( 'log_lolla_pro_display_summaries_for_archive' ) ) {
-	/**
-	 * Display summaries for an archive
-	 *
-	 * @param  Object $archive The archive
-	 * @return string          HTML
-	 */
-	function log_lolla_pro_display_summaries_for_archive( $archive ) {
-		if ( empty( $archive ) ) {
-			return;
-		}
-
-		$summaries = log_lolla_pro_get_summaries_for_archive( $archive );
-		if ( empty( $summaries ) ) {
-			return;
-		}
-
-		global $summaries_count;
-		$summaries_count = count( $summaries );
-
-		$html = '';
-
-		global $post;
-		ob_start();
-		foreach ( $summaries as $post ) {
-			setup_postdata( $post );
-			get_template_part( 'template-parts/post/post', 'search' );
-		}
-		wp_reset_postdata();
-		$html .= ob_get_clean();
-
-		return $html;
-	}
-}
-
-
-if ( ! function_exists( 'log_lolla_pro_get_summaries_for_archive' ) ) {
-	/**
-	 * Get summaries for an archive
-	 *
-	 * @param  Object $archive The archive
-	 * @return Array          The list of posts
-	 */
-	function log_lolla_pro_get_summaries_for_archive( $archive ) {
-		if ( empty( $archive ) ) {
-			return;
-		}
-
-		$posts = get_posts(
-			array(
-				'post_type'      => 'summary',
-				'post_status'    => 'publish',
-				'posts_per_page' => -1,
-				'order'          => 'ASC',
-				'tax_query'      => array(
-					array(
-						'taxonomy' => $archive->taxonomy,
-						'field'    => 'slug',
-						'terms'    => $archive->slug,
-					),
-				),
-			)
-		);
-
-		global $summaries_count;
-		$summaries_count = count( $summaries );
-
-		return $posts;
 	}
 }
