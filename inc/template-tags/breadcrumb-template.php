@@ -20,27 +20,27 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 		);
 
 		$links   = [];
-		$links[] = log_lolla_pro_get_link_html_for( 'Home' );
-		$links[] = log_lolla_pro_get_link_html_for( 'Archives' );
+		$links[] = log_lolla_pro_get_link_html( 'Home' );
+		$links[] = log_lolla_pro_get_link_html( 'Archives' );
 
 		if ( is_tag() ) {
-			$links[] = log_lolla_pro_get_link_html_for( 'Tags' );
+			$links[] = log_lolla_pro_get_link_html( 'Tags' );
 		}
 
 		if ( is_category() ) {
-			$links[] = log_lolla_pro_get_link_html_for( 'Categories' );
+			$links[] = log_lolla_pro_get_link_html( 'Categories' );
 		}
 
 		if ( is_singular( 'source' ) ) {
-			$links[] = log_lolla_pro_get_link_html_for( 'Sources' );
+			$links[] = log_lolla_pro_get_link_html( 'Sources' );
 		}
 
 		if ( is_singular( 'people' ) ) {
-			$links[] = log_lolla_pro_get_link_html_for( 'People' );
+			$links[] = log_lolla_pro_get_link_html( 'People' );
 		}
 
 		if ( is_singular( 'summary' ) ) {
-			$links[] = log_lolla_pro_get_link_html_for( 'Summaries' );
+			$links[] = log_lolla_pro_get_link_html( 'Summaries' );
 		}
 
 		$list = [];

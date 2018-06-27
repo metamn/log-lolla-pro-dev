@@ -75,15 +75,15 @@ if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_link_html_for' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 	/**
 	 * Get the link for a special page or archive
 	 *
-	 * @param  string $object The special page or archive title
-	 * @return string         HTML
+	 * @param  string $item The special page or archive title.
+	 * @return string       HTML
 	 */
-	function log_lolla_pro_get_link_html_for( $object ) {
-		switch ( $object ) {
+	function log_lolla_pro_get_link_html( $item ) {
+		switch ( $item ) {
 			case 'Home':
 				$url     = esc_url( home_url( '/' ) );
 				$title   = esc_html__( 'Home', 'log-lolla-pro' );
@@ -143,9 +143,20 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html_for' ) ) {
 				break;
 		}
 
+		$html = '';
+
 		if ( isset( $url ) ) {
-			return '<a class="link" href="' . $url . '" title="' . $title . '">' . $content . '</a>';
+			ob_start();
+
+			set_query_var( 'link-url', $url );
+			set_query_var( 'link-title', $title );
+			set_query_var( 'link-content', $content );
+			get_template_part( 'template-parts/framework/design/typography/elements/link/link', '' );
+
+			$html .= ob_get_clean();
 		}
+
+		return $html;
 	}
 }
 
