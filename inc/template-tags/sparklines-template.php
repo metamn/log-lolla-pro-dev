@@ -117,7 +117,7 @@ if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 	 */
 	function log_lolla_pro_get_sparkline_dates( $sparklines ) {
 		// Get the first post and the last post dates
-		$post_dates = log_lolla_pro_get_first_post_and_last_post_date();
+		$post_dates = log_lolla_pro_get_posts_first_and_last_date();
 		if ( empty( $post_dates ) ) {
 			return;
 		}
@@ -142,5 +142,3 @@ if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 		return $dates;
 	}
 }
-
-

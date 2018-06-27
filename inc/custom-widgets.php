@@ -470,7 +470,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 			extract( $args );
 
 			$title   = apply_filters( 'widget_title', esc_html__( 'Archives by date', 'log-lolla-pro' ) );
-			$content = log_lolla_pro_display_archives_by_year_and_month();
+			$content = log_lolla_pro_display_archive_list_by_year_and_months();
 
 			if ( ! empty( $content ) ) {
 				echo $before_widget;

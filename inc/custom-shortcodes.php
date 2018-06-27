@@ -240,7 +240,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Get content.
-		$content = log_lolla_pro_display_archives_by_year_and_month();
+		$content = log_lolla_pro_display_archive_list_by_year_and_months();
 
 		return log_lolla_pro_display_shortcode( esc_html__( 'Archives by date', 'log-lolla-pro' ), $content );
 	}

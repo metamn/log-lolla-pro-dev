@@ -12,6 +12,6 @@ set_query_var( 'archive_title', get_the_title() );
 // so we get the excerpt directly from the database
 set_query_var( 'archive_description', esc_html( $post->post_excerpt ) );
 
-set_query_var( 'pictograms', log_lolla_pro_get_pictograms( log_lolla_pro_get_source_counters( $post ) ) );
+set_query_var( 'pictograms', log_lolla_pro_get_pictograms( log_lolla_pro_get_archive_counter_list( $post ) ) );
 
 get_template_part( 'template-parts/archive/archive', 'header' );

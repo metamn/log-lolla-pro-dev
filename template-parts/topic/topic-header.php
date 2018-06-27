@@ -8,6 +8,6 @@
  */
 
 set_query_var( 'archive_title', get_the_title() );
-set_query_var( 'pictograms', log_lolla_pro_get_pictograms( log_lolla_pro_get_source_counters( $post ) ) );
+set_query_var( 'pictograms', log_lolla_pro_get_pictograms( log_lolla_pro_get_archive_counter_list( $post ) ) );
 
 get_template_part( 'template-parts/archive/archive', 'header' );

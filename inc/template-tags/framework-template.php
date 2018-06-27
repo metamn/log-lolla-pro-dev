@@ -10,11 +10,59 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
+	/**
+	 * Get pictograms of an Archive.
+	 *
+	 * Pictograms are visual summaries of what's included in an Archive.
+	 *
+	 * @param  array $counters An array of counters for an Archive.
+	 * @return array           An array of counters formatted to be displayed as pictograms.
+	 */
+	function log_lolla_pro_get_pictograms( $counters ) {
+		$pictograms = [];
+
+		$pictograms[] = array(
+			'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
+			'number'   => $counters[0],
+			'scrollto' => 'archive-list--posts',
+			'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
+		);
+
+		$pictograms[] = array(
+			'text'     => esc_html__( 'Summaries', 'log-lolla-pro-pro' ),
+			'number'   => $counters[1],
+			'scrollto' => 'archive-list--summaries',
+			'klass'    => ( $counters[1] > 0 ) ? 'activable' : 'inactivable',
+		);
+
+		$pictograms[] = array(
+			'text'     => esc_html__( 'Thoughts', 'log-lolla-pro-pro' ),
+			'number'   => $counters[2],
+			'scrollto' => 'archive-list--standard-posts',
+			'klass'    => ( $counters[2] > 0 ) ? 'activable' : 'inactivable',
+		);
+
+		$pictograms[] = array(
+			'text'     => esc_html__( 'Related topics', 'log-lolla-pro-pro' ),
+			'number'   => $counters[3],
+			'scrollto' => 'archive-list--related-topics',
+			'klass'    => ( $counters[3] > 0 ) ? 'activable' : 'inactivable',
+		);
+
+		return $pictograms;
+	}
+}
+
 
 if ( ! function_exists( 'log_lolla_pro_display_klass' ) ) {
 	function log_lolla_pro_display_klass( $klass_parent, $klass ) {
-		if ( empty( $klass ) ) return;
-		if ( empty( $klass_parent ) ) return $klass;
+		if ( empty( $klass ) ) {
+			return;
+		}
+		if ( empty( $klass_parent ) ) {
+			return $klass;
+		}
 
 		return $klass_parent . '--' . $klass;
 	}

@@ -8,6 +8,41 @@
    */
 
 
+if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
+	/**
+	 * Get first post and last post published date
+	 *
+	 * Returns smnthg like Array ( [0] => 2018-03-27 06:21:26 [1] => 2017-12-05 14:27:58 )
+	 *
+	 * @return array Of two dates
+	 */
+	function log_lolla_pro_get_posts_first_and_last_date() {
+		$posts = new WP_Query(
+			array(
+				'posts_per_page' => -1,
+				'post_status'    => 'publish',
+			)
+		);
+		if ( empty( $posts ) ) {
+			return;
+		}
+
+		$first = reset( $posts );
+		$last  = end( $posts );
+		if ( ( false === $first ) || ( false === $last ) ) {
+			return;
+		}
+
+		$ret   = [];
+		$ret[] = $last->post_date;
+		$ret[] = $first->post_date;
+
+		return $ret;
+	}
+}
+
+
+
 
 if ( ! function_exists( 'log_lolla_pro_get_post_first_image_url' ) ) {
 	/**
@@ -132,5 +167,3 @@ if ( ! function_exists( 'log_lolla_pro_get_post_class' ) ) {
 		return $grid . $klass;
 	}
 }
-
-

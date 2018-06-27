@@ -8,62 +8,17 @@
  * @since 1.0.0
  */
 
-if ( ! function_exists( 'log_lolla_pro_get_pictograms' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 	/**
-	 * Get pictograms of an Archive.
-	 *
-	 * Pictograms are visual summaries of what's included in an Archive.
-	 *
-	 * @param  array $counters An array of counters for an Archive.
-	 * @return array           An array of counters formatted to be displayed as pictograms.
-	 */
-	function log_lolla_pro_get_pictograms( $counters ) {
-		$pictograms = [];
-
-		$pictograms[] = array(
-			'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
-			'number'   => $counters[0],
-			'scrollto' => 'archive-list--posts',
-			'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			'text'     => esc_html__( 'Summaries', 'log-lolla-pro-pro' ),
-			'number'   => $counters[1],
-			'scrollto' => 'archive-list--summaries',
-			'klass'    => ( $counters[1] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			'text'     => esc_html__( 'Thoughts', 'log-lolla-pro-pro' ),
-			'number'   => $counters[2],
-			'scrollto' => 'archive-list--standard-posts',
-			'klass'    => ( $counters[2] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			'text'     => esc_html__( 'Related topics', 'log-lolla-pro-pro' ),
-			'number'   => $counters[3],
-			'scrollto' => 'archive-list--related-topics',
-			'klass'    => ( $counters[3] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		return $pictograms;
-	}
-}
-
-
-if ( ! function_exists( 'log_lolla_pro_get_archive_counters' ) ) {
-	/**
-	 * Get counters of an Archive.
+	 * Get a list of Archive counters.
 	 *
 	 * Counters are like number of posts, number of related topics, and so on.
 	 * Some of the counters have to be calculated apriori and set as global variables which are reused here.
 	 *
-	 * @return array An array of numbers.
+	 * @param  array $archive A list of posts.
+	 * @return array          An array of numbers.
 	 */
-	function log_lolla_pro_get_archive_counters() {
-		$archive = get_queried_object();
+	function log_lolla_pro_get_archive_counter_list( $archive ) {
 		if ( empty( $archive ) ) {
 			return;
 		}
@@ -84,77 +39,13 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counters' ) ) {
 }
 
 
-
-if ( ! function_exists( 'log_lolla_pro_get_source_counters' ) ) {
+if ( ! function_exists( 'log_lolla_pro_display_archive_list_by_year_and_months' ) ) {
 	/**
-	 * Get the counters of a source.
-	 *
-	 * Counters are posts count, summaries count etc.
-	 *
-	 * @param  object $post The source object.
-	 * @return Array        An array of integers
-	 */
-	function log_lolla_pro_get_source_counters( $post ) {
-		global $summaries_count;
-		global $standard_posts_count;
-		global $related_topics_count;
-
-		$posts_of_a_source = log_lolla_pro_get_posts_of_a_post_type( $post );
-
-		$ret = [];
-
-		$ret[] = empty( $posts_of_a_source ) ? 0 : count( $posts_of_a_source );
-		$ret[] = is_null( $summaries_count ) ? 0 : $summaries_count;
-		$ret[] = is_null( $standard_posts_count ) ? 0 : $standard_posts_count;
-		$ret[] = is_null( $related_topics_count ) ? 0 : $related_topics_count;
-
-		return $ret;
-	}
-}
-
-
-
-
-if ( ! function_exists( 'log_lolla_pro_get_first_post_and_last_post_date' ) ) {
-	/**
-	 * Get first post and last post published dates
-	 *
-	 * Returns smnthg like Array ( [0] => 2018-03-27 06:21:26 [1] => 2017-12-05 14:27:58 )
-	 *
-	 * @return array Of two dates
-	 */
-	function log_lolla_pro_get_first_post_and_last_post_date() {
-		$posts = get_posts(
-			array(
-				'posts_per_page' => -1,
-			)
-		);
-		if ( empty( $posts ) ) {
-			return;
-		}
-
-		$first = reset( $posts );
-		$last  = end( $posts );
-		if ( ( $first == false ) || ( $last == false ) ) {
-			return;
-		}
-
-		$ret   = [];
-		$ret[] = $last->post_date;
-		$ret[] = $first->post_date;
-
-		return $ret;
-	}
-}
-
-
-if ( ! function_exists( 'log_lolla_pro_display_archives_by_year_and_month' ) ) {
-	/**
-	 * Display archives by year and month
+	 * Displays a year and months archive.
 	 *
 	 * @return string HTML
 	 */
-	function log_lolla_pro_display_archives_by_year_and_month() {
+	function log_lolla_pro_display_archive_list_by_year_and_months() {
 		$archives = log_lolla_pro_get_archives_by_year_and_month();
 
 		$dates = log_lolla_pro_group_archives_by_year_and_month( $archives );
