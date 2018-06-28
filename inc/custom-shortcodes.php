@@ -26,7 +26,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_display_post_type_summary_post_list( $attrs['summaries'] );
+		$content = log_lolla_pro_get_post_type_summary_post_list_as_html( $attrs['summaries'] );
 
 		return log_lolla_pro_display_shortcode( esc_html__( 'Summaries', 'log-lolla-pro' ), $content );
 	}

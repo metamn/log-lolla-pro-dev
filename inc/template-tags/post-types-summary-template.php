@@ -89,6 +89,39 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archi
 	}
 }
 
+if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' ) ) {
+	/**
+	 * Get a list of summaries as HTML.
+	 *
+	 * @param  string $number_of_summaries The number of summaries to get.
+	 * @return string                      HTML
+	 */
+	function log_lolla_pro_get_post_type_summary_post_list_as_html( $number_of_summaries ) {
+		$summaries = log_lolla_pro_get_post_type_summary_post_list( $number_of_summaries );
+
+		if ( empty( $summaries ) ) {
+			return;
+		}
+
+		$html = '';
+
+		global $post;
+		ob_start();
+
+		foreach ( $summaries as $post ) {
+			setup_postdata( $post );
+			get_template_part( 'template-parts/summary/summary', '' );
+		}
+
+		wp_reset_postdata();
+		$html .= ob_get_clean();
+
+		return $html;
+	}
+}
+
+
+
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list' ) ) {
 	/**
 	 * Get a list of posts of the Summary Post type.
