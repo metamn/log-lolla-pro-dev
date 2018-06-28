@@ -39,13 +39,13 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_display_archive_list_by_year_and_months' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_html' ) ) {
 	/**
 	 * Displays a list of a year and months archive.
 	 *
 	 * @return string HTML
 	 */
-	function log_lolla_pro_display_archive_list_by_year_and_months() {
+	function log_lolla_pro_get_archive_list_by_year_and_months_as_html() {
 		$archives = log_lolla_pro_get_archive_list_by_year_and_months();
 
 		$dates = log_lolla_pro_group_archive_list_by_year_and_months( $archives );
