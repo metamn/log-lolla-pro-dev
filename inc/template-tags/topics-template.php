@@ -15,7 +15,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 	 * @return string        HTML
 	 */
 	function log_lolla_pro_get_topic_post_list_as_html( $topic ) {
-		$terms = log_lolla_pro_get_most_popular_terms_by_count( $topic, 0 );
+		$terms = log_lolla_pro_get_topic_list_most_popular_by_post_count( $topic, 0 );
 
 		if ( empty( $terms ) ) {
 			return;
@@ -130,13 +130,13 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary_as_html' ) ) {
 		if ( 0 === $number_of_categories ) {
 			$categories = [];
 		} else {
-			$categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
+			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
 		}
 
 		if ( 0 === $number_of_tags ) {
 			$tags = [];
 		} else {
-			$tags = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
 		}
 
 		if ( empty( $categories ) && empty( $tags ) ) {
@@ -199,8 +199,8 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 		}
 
 		// Get most popular topics.
-		$categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
-		$tags       = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+		$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
+		$tags       = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
 
 		if ( empty( $categories ) && empty( $tags ) ) {
 			return;
@@ -260,7 +260,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines_as_html' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_get_most_popular_terms_by_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_list_most_popular_by_post_count' ) ) {
 	/**
 	 * Get most popular terms by the count of posts they belong to
 	 *
@@ -269,11 +269,11 @@ if ( ! function_exists( 'log_lolla_pro_get_most_popular_terms_by_count' ) ) {
 	 * Returns something like:
 	 *  Array ( [0] => WP_Term Object ( [term_id] => 2 [name] => Emerging [slug] => emerging [term_group] => 0 [term_taxonomy_id] => 2 [taxonomy] => category [description] => [parent] => 0 [count] => 41 [filter] => raw ) [1] => WP_Term Object ( [term_id] => 7 [name] => Wordpress Themes [slug] => wordpress-themes
 	 *
-	 * @param  string  $taxonomy The taxonomy id like 'category', 'post_tag'
-	 * @param  integer $how_many How many terms to get. Accepts 0 (all) or any positive number. Default 0 (all)
-	 * @return array             An array of term objects
+	 * @param  string  $taxonomy The taxonomy id like 'category', 'post_tag'.
+	 * @param  integer $how_many How many terms to get. Accepts 0 (all) or any positive number. Default 0 (all).
+	 * @return array             An array of term objects.
 	 */
-	function log_lolla_pro_get_most_popular_terms_by_count( $taxonomy, $how_many ) {
+	function log_lolla_pro_get_topic_list_most_popular_by_post_count( $taxonomy, $how_many ) {
 		return get_terms(
 			array(
 				'taxonomy'   => $taxonomy,
