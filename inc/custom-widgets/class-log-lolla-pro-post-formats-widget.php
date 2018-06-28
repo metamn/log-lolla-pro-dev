@@ -35,7 +35,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		$title = apply_filters( 'widget_title', esc_html__( 'Post Formats' ) );
 
-		$content = log_lolla_pro_display_post_formats_with_post_count();
+		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
 
 		if ( ! empty( $content ) ) {
 			printf(

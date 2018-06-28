@@ -24,7 +24,6 @@ if ( ! function_exists( 'log_lolla_pro_display_header_menu_contents' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_header_class' ) ) {
 	/**
 	 * Returns a custom header class

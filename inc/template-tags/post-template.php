@@ -9,7 +9,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 	/**
-	 * Get first post and last post published date
+	 * Returns first post and last post published date
 	 *
 	 * Returns smnthg like Array ( [0] => 2018-03-27 06:21:26 [1] => 2017-12-05 14:27:58 )
 	 *
@@ -40,15 +40,13 @@ if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_post_first_image_url' ) ) {
 	/**
-	 * Get the first image from each post and resize it.
-	 * Returns an URL
+	 * Returns the first image URL from a post.
 	 *
 	 * @link https://css-tricks.com/snippets/wordpress/get-the-first-image-from-a-post/
 	 *
-	 * @return string $first_img.
+	 * @return string URL to image.
 	 */
 	function log_lolla_pro_get_post_first_image_url() {
 		global $post;
@@ -65,10 +63,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_first_image_url' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_post_has_link' ) ) {
 	/**
-	 * Return true if post has link
+	 * Returns true if post has link
 	 *
 	 * @return boolen
 	 */
@@ -79,16 +76,17 @@ if ( ! function_exists( 'log_lolla_pro_post_has_link' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_post_link_is_external' ) ) {
 	/**
-	 * Return true is the post link is external
+	 * Returns true is the post link is external
 	 *
 	 * @param string $url The url to compare with the post permalink.
-	 * @return boolean  True if the post permalink is the same as the $url.
+	 * @return boolean    True if the post permalink is the same as the $url.
 	 */
 	function log_lolla_pro_post_link_is_external( $url ) {
-		if ( $url === apply_filters( 'the_permalink', get_permalink() ) ) {
+		$permalink = apply_filters( 'the_permalink', get_permalink() );
+
+		if ( $url === $permalink ) {
 			return true;
 		} else {
 			return false;
@@ -96,11 +94,9 @@ if ( ! function_exists( 'log_lolla_pro_post_link_is_external' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_post_link_from_content' ) ) {
 	/**
-	 * Return link from post content.
+	 * Returns link from post content.
 	 * Returns either the link, or the post permalink if the link cannot be get
 	 *
 	 * @return string
@@ -112,7 +108,6 @@ if ( ! function_exists( 'log_lolla_pro_get_post_link_from_content' ) ) {
 		return ( $has_url ) ? $has_url : apply_filters( 'the_permalink', get_permalink() );
 	}
 }
-
 
 if ( ! function_exists( 'log_lolla_pro_get_post_class' ) ) {
 	/**

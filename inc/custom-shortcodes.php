@@ -55,7 +55,10 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_display_popular_posts_of_post_type( 'source', $attrs['sources'] );
+		$content = log_lolla_pro_get_popular_post_list_of_post_type_as_html(
+			'source',
+			$attrs['sources']
+		);
 
 		return log_lolla_pro_display_shortcode( esc_html__( 'Sources', 'log-lolla-pro' ), $content );
 	}
@@ -82,7 +85,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_post_formats' ) )
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_display_post_formats_with_post_count();
+		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
 
 		return log_lolla_pro_display_shortcode( esc_html__( 'Post formats', 'log-lolla-pro' ), $content );
 	}
@@ -142,7 +145,10 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_display_popular_posts_of_post_type( 'people', $attrs['people'] );
+		$content = log_lolla_pro_get_popular_post_list_of_post_type_as_html(
+			'people',
+			$attrs['people']
+		);
 
 		return log_lolla_pro_display_shortcode( esc_html__( 'People', 'log-lolla-pro' ), $content );
 	}

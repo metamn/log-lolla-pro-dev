@@ -9,7 +9,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
 	/**
-	 * Return a class for the link post format
+	 * Returns a class for the link post format
 	 *
 	 * @param string $url The url of the post.
 	 * @return string
@@ -18,7 +18,6 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
 		return log_lolla_pro_post_link_is_external( $url ) ? 'local-link' : 'external-link';
 	}
 }
-
 
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_title' ) ) {
 	/**
@@ -34,10 +33,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_title' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive' ) ) {
 	/**
-	 * Get the link to the Post format archive
+	 * Returns the link to the Post format archive
 	 *
 	 * @return string HTML
 	 */
@@ -56,11 +54,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_archive' ) ) {
 	/**
-	 * Get a list of posts of standard Post format for an archive.
+	 * Returns a list of posts of standard Post format for an archive.
 	 *
 	 * Standard posts are tricky and buggy
 	 * - Standard posts = all posts - non standard posts
@@ -111,15 +107,14 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 	}
 }
 
-
-if ( ! function_exists( 'log_lolla_pro_display_post_formats_with_post_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_html' ) ) {
 	/**
-	 * Display post formats with post count
+	 * Returns the whole list of Post formats with post count, as HTML
 	 *
 	 * @return string HTML
 	 */
-	function log_lolla_pro_display_post_formats_with_post_count() {
-		$post_formats = log_lolla_pro_get_post_formats_with_post_count();
+	function log_lolla_pro_get_post_format_list_with_post_count_as_html() {
+		$post_formats = log_lolla_pro_get_post_format_list_with_post_count();
 
 		if ( empty( $post_formats ) ) {
 			return;
@@ -128,54 +123,20 @@ if ( ! function_exists( 'log_lolla_pro_display_post_formats_with_post_count' ) )
 		$html = '';
 
 		foreach ( $post_formats as $post_format ) {
-			$html .= log_lolla_pro_display_post_format_with_post_count( $post_format );
+			$html .= log_lolla_pro_get_post_format_with_post_count_as_html( $post_format );
 		}
 
 		return $html;
 	}
 }
 
-
-
-if ( ! function_exists( 'log_lolla_pro_display_post_format_with_post_count' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count' ) ) {
 	/**
-	 * Display post format with post count
-	 *
-	 * @param  object $item The post format object with count.
-	 * @return string       HTML
-	 */
-	function log_lolla_pro_display_post_format_with_post_count( $item ) {
-		if ( empty( $item ) ) {
-			return;
-		}
-
-		$html = '';
-
-		ob_start();
-		set_query_var( 'list_item_class', 'post-format' );
-		set_query_var( 'list_item_url', get_post_format_link( $item->post_format_name ) );
-
-		set_query_var( 'list_item_primary_text', $item->post_format_name );
-		set_query_var( 'list_item_metadata', $item->post_count );
-
-		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
-
-		$html .= ob_get_clean();
-
-		return $html;
-	}
-}
-
-
-
-
-if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count' ) ) {
-	/**
-	 * Get post formats with post count
+	 * Returns all Post formats with post count
 	 *
 	 * @return Array An array of objects with post format and post count
 	 */
-	function log_lolla_pro_get_post_formats_with_post_count() {
+	function log_lolla_pro_get_post_format_list_with_post_count() {
 		$post_formats_list = get_post_format_strings();
 
 		if ( empty( $post_formats_list ) ) {
@@ -214,14 +175,42 @@ if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count' ) ) {
 			$post_formats_with_count[] = $obj;
 		}
 
-		return log_lolla_pro_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count );
+		return log_lolla_pro_fix_post_format_list_with_post_count_for_standard_posts( $post_formats_with_count );
 	}
 }
 
-
-if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count_for_standard_posts' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_format_with_post_count_as_html' ) ) {
 	/**
-	 * Fix post format Standard post count
+	 * Returns a Post format with post count, as HTML
+	 *
+	 * @param  object $item The post format object with count.
+	 * @return string       HTML
+	 */
+	function log_lolla_pro_get_post_format_with_post_count_as_html( $item ) {
+		if ( empty( $item ) ) {
+			return;
+		}
+
+		$html = '';
+
+		ob_start();
+		set_query_var( 'list_item_class', 'post-format' );
+		set_query_var( 'list_item_url', get_post_format_link( $item->post_format_name ) );
+
+		set_query_var( 'list_item_primary_text', $item->post_format_name );
+		set_query_var( 'list_item_metadata', $item->post_count );
+
+		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
+
+		$html .= ob_get_clean();
+
+		return $html;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_fix_post_format_list_with_post_count_for_standard_posts' ) ) {
+	/**
+	 * Returns all Post formats with count with the Standard post format post count manually fixed.
 	 *
 	 * There is no such term / taxonomy as `post-format-standard` like `post-format-quote`
 	 * Therefore the post count for Standard posts is always 0
@@ -230,7 +219,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_formats_with_post_count_for_stan
 	 * @param  Array $post_formats_with_count An array of objects.
 	 * @return Array                          An array of objects
 	 */
-	function log_lolla_pro_get_post_formats_with_post_count_for_standard_posts( $post_formats_with_count ) {
+	function log_lolla_pro_fix_post_format_list_with_post_count_for_standard_posts( $post_formats_with_count ) {
 		$total_number_of_posts = wp_count_posts()->publish;
 
 		$total_number_of_posts_with_post_format = 0;

@@ -7,37 +7,9 @@
  * @package Log_Lolla_Pro
  */
 
-if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_link_to_topic' ) ) {
-	/**
-	 * Get a link to the topic for a Summary Post type
-	 *
-	 * @param  Object $summary The summary.
-	 * @return string          HTML
-	 */
-	function log_lolla_pro_get_post_type_summary_link_to_topic( $summary ) {
-		if ( empty( $summary ) ) {
-			return;
-		}
-
-		$topic = log_lolla_pro_get_post_type_summary_topic( $summary );
-		if ( empty( $topic ) ) {
-			return;
-		}
-
-		$html = '';
-
-		ob_start();
-		set_query_var( 'topic', $topic );
-		get_template_part( 'template-parts/topic/topic', 'with-prefix' );
-		$html .= ob_get_clean();
-
-		return $html;
-	}
-}
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	/**
-	 * Get the topic of a summary
+	 * Returns the topic of a summary
 	 *
 	 * @param  Object $summary The summary.
 	 * @return Object          The topic
@@ -56,10 +28,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archive' ) ) {
 	/**
-	 * Get summaries for an archive
+	 * Returns a list of summaries for an archive
 	 *
 	 * @param  Object $archive The archive.
 	 * @return Array          The list of posts
@@ -91,7 +62,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archi
 
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' ) ) {
 	/**
-	 * Get a list of summaries as HTML.
+	 * Returns a list of summaries as HTML.
 	 *
 	 * @param  string $number_of_summaries The number of summaries to get.
 	 * @return string                      HTML
@@ -120,11 +91,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' 
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list' ) ) {
 	/**
-	 * Get a list of posts of the Summary Post type.
+	 * Returns a list of posts of the Summary Post type.
 	 *
 	 * @param  integer $number_of_summaries The number of posts to display.
 	 * @return array                        An array of posts.

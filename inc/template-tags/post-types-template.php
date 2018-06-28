@@ -41,11 +41,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_displayed_as_thumb_html' ) 
 	}
 }
 
-
-
-if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_popular_post_list_of_post_type_as_html' ) ) {
 	/**
-	 * Display the most poular posts of a post type
+	 * Displays the most poular posts of a post type
 	 *
 	 * For example, the 5 most popular sources, or people
 	 *
@@ -54,7 +52,7 @@ if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
 	 * @param  string  $metadata         The metadata type, like `post count`, `sparkline`.
 	 * @return string                    HTML
 	 */
-	function log_lolla_pro_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata = '' ) {
+	function log_lolla_pro_get_popular_post_list_of_post_type_as_html( $post_type, $number_of_items, $metadata = '' ) {
 		$items = log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items, $metadata );
 
 		if ( empty( $items ) ) {
