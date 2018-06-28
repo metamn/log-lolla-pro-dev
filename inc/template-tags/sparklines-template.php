@@ -1,22 +1,21 @@
 <?php
-  /**
-   * Template tags for sparklines
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Template tags for sparklines
+ *
+ * @package Log_Lolla_Pro
+ */
 
-
-
-if ( ! function_exists( 'log_lolla_pro_display_sparklines_for_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic_as_html' ) ) {
 	/**
-	 * Display sparklines for a topic
+	 * Get sparklines for a topic
 	 *
-	 * @param  Array  $sparkline_dates              The array of dates for each sparkline
-	 * @param  Object $item                       A term
-	 * @return string                              HTML
+	 * @param  Array  $sparkline_dates The array of dates for each sparkline.
+	 * @param  Object $item            A term.
+	 * @return string                  HTML
 	 */
-	function log_lolla_pro_display_sparklines_for_topic( $sparkline_dates, $item ) {
+	function log_lolla_pro_get_sparklines_for_topic_as_html( $sparkline_dates, $item ) {
 		$sparklines = log_lolla_pro_get_sparklines_for_topic( $sparkline_dates, $item );
+
 		if ( empty( $sparklines ) ) {
 			return;
 		}

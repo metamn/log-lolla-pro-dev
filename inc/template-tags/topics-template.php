@@ -245,7 +245,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines' ) ) {
 		set_query_var( 'list_item_primary_text', $item->name );
 
 		ob_start();
-		set_query_var( 'sparklines', log_lolla_pro_display_sparklines_for_topic( $sparkline_dates, $item ) );
+		set_query_var( 'sparklines', log_lolla_pro_get_sparklines_for_topic_as_html( $sparkline_dates, $item ) );
 		get_template_part( 'template-parts/sparklines/sparklines', '' );
 		set_query_var( 'list_item_metadata', ob_get_clean() );
 
