@@ -47,7 +47,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as
 			return;
 		}
 
-		$related_topics = log_lolla_pro_get_data_for_related_topics_for_archive( $archive );
+		$related_topics = log_lolla_pro_get_topic_post_list_related_to_archive( $archive );
 		if ( empty( $related_topics ) ) {
 			return;
 		}
@@ -69,19 +69,20 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_data_for_related_topics_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' ) ) {
 	/**
 	 * Get the data for the related topics of an archive
 	 *
-	 * @param  [type] $archive [description]
-	 * @return [type]          [description]
+	 * @param  object $archive The Archive object.
+	 * @return array           An array of topics.
 	 */
-	function log_lolla_pro_get_data_for_related_topics_for_archive( $archive ) {
+	function log_lolla_pro_get_topic_post_list_related_to_archive( $archive ) {
 		if ( empty( $archive ) ) {
 			return;
 		}
 
 		$posts_for_archive = log_lolla_pro_get_posts_for_topic( $archive );
+
 		if ( empty( $posts_for_archive ) ) {
 			return;
 		}
@@ -90,11 +91,13 @@ if ( ! function_exists( 'log_lolla_pro_get_data_for_related_topics_for_archive' 
 
 		foreach ( $posts_for_archive as $post ) {
 			$categories = get_the_terms( $post->ID, 'category' );
+
 			if ( ! is_wp_error( $categories ) && ! empty( $categories ) ) {
 				$related_topics = array_merge( $related_topics, $categories );
 			}
 
 			$tags = get_the_terms( $post->ID, 'post_tag' );
+
 			if ( ! is_wp_error( $tags ) && ! empty( $tags ) ) {
 				$related_topics = array_merge( $related_topics, $tags );
 			}
@@ -107,10 +110,7 @@ if ( ! function_exists( 'log_lolla_pro_get_data_for_related_topics_for_archive' 
 }
 
 
-
-
-
-if ( ! function_exists( 'log_lolla_pro_get_topics_summary' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topics_summary_as_html' ) ) {
 	/**
 	 * Get topics summary
 	 *
@@ -122,18 +122,18 @@ if ( ! function_exists( 'log_lolla_pro_get_topics_summary' ) ) {
 	 *
 	 * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
 	 *
-	 * @param  integer $number_of_categories How many categories to show
-	 * @param  integer $number_of_tags       How many tags to show
+	 * @param  integer $number_of_categories How many categories to show.
+	 * @param  integer $number_of_tags       How many tags to show.
 	 * @return string                        HTML
 	 */
-	function log_lolla_pro_get_topics_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
-		if ( $number_of_categories == 0 ) {
+	function log_lolla_pro_get_topics_summary_as_html( $number_of_categories = 5, $number_of_tags = 5 ) {
+		if ( 0 === $number_of_categories ) {
 			$categories = [];
 		} else {
 			$categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
 		}
 
-		if ( $number_of_tags == 0 ) {
+		if ( 0 === $number_of_tags ) {
 			$tags = [];
 		} else {
 			$tags = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
@@ -164,6 +164,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topics_summary' ) ) {
 		if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) {
 			return;
 		}
+
 		$sentence = log_lolla_pro_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
 
 		$html = '';

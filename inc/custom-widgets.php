@@ -370,7 +370,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 			extract( $args );
 
 			$title   = apply_filters( 'widget_title', '' );
-			$content = log_lolla_pro_get_topics_summary(
+			$content = log_lolla_pro_get_topics_summary_as_html(
 				$instance['number_of_categories'],
 				$instance['number_of_tags']
 			);
