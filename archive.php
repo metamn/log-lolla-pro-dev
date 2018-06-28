@@ -51,7 +51,7 @@ get_header();
 	<?php
 		set_query_var( 'topic_list_klass', 'topics' );
 		set_query_var( 'topic_list_title', esc_html__( 'Related topics ', 'log-lolla-pro' ) );
-		set_query_var( 'topic_list_items', log_lolla_pro_get_related_topics_for_archive( $archive ) );
+		set_query_var( 'topic_list_items', log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $archive ) );
 		get_template_part( 'template-parts/topic/topic', 'list' );
 	?>
 

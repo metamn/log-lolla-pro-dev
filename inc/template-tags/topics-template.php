@@ -35,14 +35,14 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_related_topics_for_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as_html' ) ) {
 	/**
 	 * Get related topics for an archive
 	 *
-	 * @param  [type] $archive [description]
-	 * @return [type]          [description]
+	 * @param  object $archive The archive object.
+	 * @return string          HTML.
 	 */
-	function log_lolla_pro_get_related_topics_for_archive( $archive ) {
+	function log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $archive ) {
 		if ( empty( $archive ) ) {
 			return;
 		}
