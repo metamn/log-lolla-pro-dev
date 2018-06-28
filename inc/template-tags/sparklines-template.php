@@ -20,7 +20,7 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic_as_html' ) ) {
 			return;
 		}
 
-		$sparklines = log_lolla_pro_adjust_range_for_sparkline( $sparklines );
+		$sparklines = log_lolla_pro_adjust_sparkline_range( $sparklines );
 
 		return '{' . implode( ',', $sparklines ) . '}';
 	}
@@ -32,9 +32,9 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
 	/**
 	 * Get the sparklines for a topic (category, tag)
 	 *
-	 * @param  Array  $sparkline_dates              The array of dates for each sparkline
-	 * @param  Object $item                       A term
-	 * @return Array                               An array of integers
+	 * @param  Array  $sparkline_dates The array of dates for each sparkline.
+	 * @param  Object $item            A term.
+	 * @return Array                   An array of integers.
 	 */
 	function log_lolla_pro_get_sparklines_for_topic( $sparkline_dates, $item ) {
 		if ( empty( $item ) ) {
@@ -46,7 +46,8 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
 
 		$sparklines = [];
 
-		for ( $i = 0; $i < count( $sparkline_dates ) - 1; $i++ ) {
+		$cnt = count( $sparkline_dates );
+		for ( $i = 0; $i < $cnt - 1; $i++ ) {
 			$posts = get_posts(
 				array(
 					'post_type'      => 'post',
@@ -78,7 +79,7 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_adjust_range_for_sparkline' ) ) {
+if ( ! function_exists( 'log_lolla_pro_adjust_sparkline_range' ) ) {
 	/**
 	 * Adjust range for a sparkline
 	 *
@@ -89,10 +90,10 @@ if ( ! function_exists( 'log_lolla_pro_adjust_range_for_sparkline' ) ) {
 	 * What we need to to is to transform sparkline items to be less than 99, and,
 	 * multiply small items with 10 ... or something like this
 	 *
-	 * @param  Array $sparklines The array of sparklines
-	 * @return Array             The adjusted array of sparklines
+	 * @param  Array $sparklines The array of sparklines.
+	 * @return Array             The adjusted array of sparklines.
 	 */
-	function log_lolla_pro_adjust_range_for_sparkline( $sparklines ) {
+	function log_lolla_pro_adjust_sparkline_range( $sparklines ) {
 		$adjusted = [];
 
 		$min = min( $sparklines );
