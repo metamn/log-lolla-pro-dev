@@ -8,7 +8,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 	/**
-	 * Display breadcrumb for an archive.
+	 * Displays breadcrumb for an archive.
 	 */
 	function log_lolla_pro_display_breadcrumb_for_archive() {
 		$deco = array(
@@ -51,6 +51,11 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 			}
 		}
 
-		echo wp_kses_post( $deco['before_all'] . implode( $deco['separator'], $list ) . $deco['after_all'] );
+		printf(
+			'%1$s%2$s%3$s',
+			wp_kses_post( $deco['before_all'] ),
+			wp_kses_post( implode( $deco['separator'], $list ) ),
+			wp_kses_post( $deco['after_all'] )
+		);
 	}
 }

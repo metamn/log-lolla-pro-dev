@@ -10,7 +10,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 	/**
-	 * Get a list of Archive counters.
+	 * Returns a list of Archive counters.
 	 *
 	 * Counters are like number of posts, number of related topics, and so on.
 	 * Some of the counters have to be calculated apriori and set as global variables which are reused here.
@@ -38,10 +38,9 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_html' ) ) {
 	/**
-	 * Displays a list of a year and months archive.
+	 * Returns a list of a year and months archive.
 	 *
 	 * @return string HTML
 	 */
@@ -68,7 +67,6 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_ht
 		return $html;
 	}
 }
-
 
 if ( ! function_exists( 'log_lolla_pro_group_archive_list_by_year_and_months' ) ) {
 	/**
@@ -109,7 +107,7 @@ if ( ! function_exists( 'log_lolla_pro_group_archive_list_by_year_and_months' ) 
 			return;
 		}
 
-		// Create a multidimensional array like [2017] => [12], [2018] => [01, 02, 03].
+		// Create a multidimensional array like [2017] => [12], [2018] => [01, 02, 03] etc.
 		$ret = [];
 		foreach ( $dates as $d ) {
 			$split              = explode( '-', $d );
@@ -120,10 +118,9 @@ if ( ! function_exists( 'log_lolla_pro_group_archive_list_by_year_and_months' ) 
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months' ) ) {
 	/**
-	 * Get all years and months when there were posts published.
+	 * Returns all years and months when there were posts published.
 	 *
 	 * Returns an array of objects like:
 	 *  Array ( [0] => stdClass Object ( [post_date] => 2017-12-05 14:27:58 [post_status] => publish ) [1] => stdClass Object ( [post_date] => 2017-12-06 07:13:21 [post_status] => publish ) ...
@@ -133,10 +130,16 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months' ) ) 
 	function log_lolla_pro_get_archive_list_by_year_and_months() {
 		global $wpdb;
 
-		$results = $wpdb->get_results(
-			"SELECT `post_date`, `post_status` FROM $wpdb->posts WHERE `post_status` = 'publish' GROUP BY `post_date`",
-			OBJECT
-		);
+		$results = wp_cache_get( 'results--log_lolla_pro_get_archive_list_by_year_and_months' );
+
+		if ( false === $results ) {
+			$results = $wpdb->get_results(
+				"SELECT `post_date`, `post_status` FROM $wpdb->posts WHERE `post_status` = 'publish' GROUP BY `post_date`",
+				OBJECT
+			);
+
+			wp_cache_set( 'results--log_lolla_pro_get_archive_list_by_year_and_months', $results );
+		}
 
 		return $results;
 	}

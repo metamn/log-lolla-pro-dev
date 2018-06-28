@@ -11,7 +11,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 	/**
-	 * Get pictograms of an Archive.
+	 * Returns a list of pictograms of an Archive.
 	 *
 	 * Pictograms are visual summaries of what's included in an Archive.
 	 *
@@ -53,10 +53,11 @@ if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	/**
-	 * Get a class name using the BEM convention.
+	 * Returns a class name using the BEM convention.
+	 *
+	 * Currently only the `block` and `modifier` of BEM is supported.
 	 *
 	 * @param  string $block    The main part of the class.
 	 * @param  string $modifier The modifier part of a class.
@@ -74,10 +75,9 @@ if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 	/**
-	 * Get the link for a special page or archive
+	 * Returns the link for a special page or archive
 	 *
 	 * @param  string $item The special page or archive title.
 	 * @return string       HTML
@@ -85,18 +85,20 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 	function log_lolla_pro_get_link_html( $item ) {
 		switch ( $item ) {
 			case 'Home':
-				$url     = esc_url( home_url( '/' ) );
-				$title   = esc_html__( 'Home', 'log-lolla-pro' );
+				/* translators: Home page name */
+				$title   = esc_html_x( 'Home', 'Home page name', 'log-lolla-pro' );
 				$content = $title;
+				$url     = home_url( '/' );
 				break;
 
 			case 'Archives':
 				$page = get_page_by_title( 'Archives' );
 
 				if ( isset( $page ) ) {
-					$url     = esc_url( get_permalink( $page ) );
-					$title   = esc_html__( 'Archives', 'log-lolla-pro' );
+					/* translators: Archives page name name */
+					$title   = esc_html_x( 'Archives', 'Archives page name', 'log-lolla-pro' );
 					$content = $title;
+					$url     = get_permalink( $page );
 				}
 				break;
 
@@ -104,9 +106,10 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 				$page = get_page_by_title( 'Tags' );
 
 				if ( isset( $page ) ) {
-					$url     = esc_url( get_permalink( $page ) );
-					$title   = esc_html__( 'Tags', 'log-lolla-pro' );
+					/* translators: Tag Archive page name */
+					$title   = esc_html_x( 'Tags', 'Tag Archive page name', 'log-lolla-pro' );
 					$content = $title;
+					$url     = get_permalink( $page );
 				}
 				break;
 
@@ -114,28 +117,32 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 				$page = get_page_by_title( 'Categories' );
 
 				if ( isset( $page ) ) {
-					$url     = esc_url( get_permalink( $page ) );
-					$title   = esc_html__( 'Categories', 'log-lolla-pro' );
+					/* translators: Category Archive page name */
+					$title   = esc_html_x( 'Categories', 'Category Archive page name', 'log-lolla-pro' );
 					$content = $title;
+					$url     = get_permalink( $page );
 				}
 				break;
 
 			case 'Sources':
-				$url     = esc_url( get_post_type_archive_link( 'source' ) );
-				$title   = esc_html__( 'Sources', 'log-lolla-pro' );
+				/* translators: Source Archive page name */
+				$title   = esc_html_x( 'Sources', 'Source Archive page name', 'log-lolla-pro' );
 				$content = $title;
+				$url     = get_post_type_archive_link( 'source' );
 				break;
 
 			case 'People':
-				$url     = esc_url( get_post_type_archive_link( 'people' ) );
-				$title   = esc_html__( 'People', 'log-lolla-pro' );
+				/* translators: People Archive page name */
+				$title   = esc_html_x( 'People', 'People Archive page name', 'log-lolla-pro' );
 				$content = $title;
+				$url     = get_post_type_archive_link( 'people' );
 				break;
 
 			case 'Summaries':
-				$url     = esc_url( get_post_type_archive_link( 'summary' ) );
-				$title   = esc_html__( 'Summaries', 'log-lolla-pro' );
+				/* translators: Summary Archive page name */
+				$title   = esc_html_x( 'Summaries', 'Summary Archive page name', 'log-lolla-pro' );
 				$content = $title;
+				$url     = get_post_type_archive_link( 'summary' );
 				break;
 
 			default:
@@ -160,10 +167,9 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_image_url_not_found' ) ) {
 	/**
-	 * Get the image name / url to display when an image is not found
+	 * Returns the image name / url to display when an image is not found
 	 *
 	 * @return string Image url and name
 	 */
@@ -172,10 +178,9 @@ if ( ! function_exists( 'log_lolla_pro_get_image_url_not_found' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_arrow_html' ) ) {
 	/**
-	 * Return HTML markup for an arrow
+	 * Returns HTML markup for an arrow
 	 *
 	 * @param   string $direction The arrow direction like top, left, right, bottom.
 	 * @return  string            HTML
@@ -194,10 +199,9 @@ if ( ! function_exists( 'log_lolla_pro_get_arrow_html' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_triangle_html' ) ) {
 	/**
-	 * Return HTML markup for a triangle
+	 * Returns HTML markup for a triangle
 	 *
 	 * @param   string $direction The arrow direction like top, left, right, bottom.
 	 * @return  string            HTML
@@ -216,11 +220,9 @@ if ( ! function_exists( 'log_lolla_pro_get_triangle_html' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_remove_object_from_array_by_key' ) ) {
 	/**
-	 * Remove object from an array by key
+	 * Removes object from an array by key
 	 *
 	 * @link https://secure.php.net/manual/en/function.array-search.php
 	 *
@@ -240,10 +242,9 @@ if ( ! function_exists( 'log_lolla_pro_remove_object_from_array_by_key' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_remove_object_from_array' ) ) {
 	/**
-	 * Remove object from an array
+	 * Removes object from an array
 	 *
 	 * @link http://stackoverflow.com/questions/3573313/php-remove-object-from-array
 	 *
@@ -263,10 +264,9 @@ if ( ! function_exists( 'log_lolla_pro_remove_object_from_array' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_filter_array_of_duplicated_objects' ) ) {
 	/**
-	 * Filter out duplicated objects in an array.
+	 * Filters out duplicated objects in an array.
 	 *
 	 * Must be used in an `array_filter` function call.
 	 *
@@ -287,10 +287,11 @@ if ( ! function_exists( 'log_lolla_pro_filter_array_of_duplicated_objects' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_array_unique_objects' ) ) {
 	/**
-	 * PHP's array_unique of array of objects
+	 * Returns an arrat of unique objects.
+	 *
+	 * This is like PHP's `array_unique` function but adapated to an array of objects.
 	 *
 	 * @link https://stackoverflow.com/questions/2426557/array-unique-for-objects
 	 *
@@ -304,10 +305,9 @@ if ( ! function_exists( 'log_lolla_pro_get_array_unique_objects' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_flatten_array_multidimensional' ) ) {
 	/**
-	 * Flatten a multidimensional array.
+	 * Flattens a multidimensional array.
 	 *
 	 * @link https://stackoverflow.com/questions/1319903/how-to-flatten-a-multidimensional-array#1320156
 	 *
@@ -327,11 +327,9 @@ if ( ! function_exists( 'log_lolla_pro_flatten_array_multidimensional' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_create_sentence_from_arrays' ) ) {
 	/**
-	 * Create a sentence from two arrays of text
+	 * Creates a sentence from two arrays of text
 	 *
 	 * @param  Array $array1  The first array.
 	 * @param  Array $array2  The second array.
@@ -370,10 +368,11 @@ if ( ! function_exists( 'log_lolla_pro_create_sentence_from_arrays' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_implode_with_conjunction' ) ) {
 	/**
-	 * An `implode()` which adds $conjunction as the last $separator
+	 * Returns a string from an array.
+	 *
+	 * This is like PHP's `implode` but adds $conjunction as the last $separator
 	 *
 	 * Example: ['one', 'two', 'three'], ',', 'and' => one, two and three
 	 *
@@ -395,10 +394,9 @@ if ( ! function_exists( 'log_lolla_pro_implode_with_conjunction' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_convert_string_to_classname' ) ) {
 	/**
-	 * Convert a string to a classname
+	 * Converts a string to a classname
 	 *
 	 * @param  string $string The string to be converted.
 	 * @return string         The classname
@@ -413,10 +411,9 @@ if ( ! function_exists( 'log_lolla_pro_convert_string_to_classname' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_linear_conversion_of_a_range' ) ) {
 	/**
-	 * Convert a range to another range
+	 * Converts a range to another range
 	 *
 	 * Source: https://stackoverflow.com/questions/929103/convert-a-number-range-to-another-range-maintaining-ratio#929107
 	 *
@@ -439,10 +436,9 @@ if ( ! function_exists( 'log_lolla_pro_get_linear_conversion_of_a_range' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_count_words' ) ) {
 	/**
-	 * Count words in a text
+	 * Counts words in a text
 	 *
 	 * @link http://www.thomashardy.me.uk/wordpress-word-count-function
 	 *
