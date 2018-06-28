@@ -89,10 +89,9 @@ if ( ! function_exists( 'log_lolla_pro_get_popular_post_list_of_post_type_as_htm
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 	/**
-	 * Get the most popular posts of a post type
+	 * Returns the most popular posts of a post type
 	 *
 	 * For example: the 5 most popular sources
 	 *
@@ -114,6 +113,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 		}
 
 		$posts_of_all_pts = [];
+
 		foreach ( $all_of_pt as $pt ) {
 			$posts_of_a_pt = log_lolla_pro_get_post_type_post_list( $pt );
 
@@ -136,11 +136,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list' ) ) {
 	/**
-	 * Get all posts of a post type
+	 * Returns all posts of a post type
 	 *
 	 * By convention a post is tagged to mark it belongs to a certain post type
 	 * For example:

@@ -7,7 +7,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic_as_html' ) ) {
 	/**
-	 * Get sparklines for a topic
+	 * Returns sparklines for a topic as HTML
 	 *
 	 * @param  Array  $sparkline_dates The array of dates for each sparkline.
 	 * @param  Object $item            A term.
@@ -26,11 +26,9 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic_as_html' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
 	/**
-	 * Get the sparklines for a topic (category, tag)
+	 * Returns the sparklines for a topic (category, tag)
 	 *
 	 * @param  Array  $sparkline_dates The array of dates for each sparkline.
 	 * @param  Object $item            A term.
@@ -77,11 +75,9 @@ if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_adjust_sparkline_range' ) ) {
 	/**
-	 * Adjust range for a sparkline
+	 * Adjusts range for a sparkline
 	 *
 	 * The sparkline font takes value from 0-99
 	 * If a sparkline item is bigger than 100 the sparkline graphics is broken
@@ -107,10 +103,9 @@ if ( ! function_exists( 'log_lolla_pro_adjust_sparkline_range' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 	/**
-	 * Get the dates corresponding to a set of sparkline
+	 * Returns the dates corresponding to a set of sparkline
 	 *
 	 * @param  integer $sparklines Total number of sparkines.
 	 * @return array               An array of dates

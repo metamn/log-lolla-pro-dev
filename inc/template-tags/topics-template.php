@@ -9,7 +9,7 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 	/**
-	 * Get the list of posts for a topic
+	 * Returns the list of posts for a topic as HTML
 	 *
 	 * @param  string $topic The type of a topic like 'category', 'post_tag'.
 	 * @return string        HTML
@@ -34,10 +34,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as_html' ) ) {
 	/**
-	 * Get related topics for an archive
+	 * Returns related topics for an archive as HTML
 	 *
 	 * @param  object $archive The archive object.
 	 * @return string          HTML.
@@ -68,10 +67,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' ) ) {
 	/**
-	 * Get the data for the related topics of an archive
+	 * Returns the data for the related topics of an archive
 	 *
 	 * @param  object $archive The Archive object.
 	 * @return array           An array of topics.
@@ -109,10 +107,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' )
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary_as_html' ) ) {
 	/**
-	 * Get topics summary
+	 * Returns topics summary as HTML
 	 *
 	 * Displays a text / paragraph containing all the category and tag descriptions merged together
 	 *
@@ -180,10 +177,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary_as_html' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' ) ) {
 	/**
-	 * Get topics (categories and tags) using sparklines
+	 * Returns topics (categories and tags) using sparklines, as HTML
 	 *
 	 * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks.
 	 * @param  integer $number_of_categories How many categories to show.
@@ -220,10 +216,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines_as_html' ) ) {
 	/**
-	 * Get a topic (category or tag) with sparklines
+	 * Returns a topic (category or tag) with sparklines, as HTML
 	 *
 	 * @param  string $item_class_name The item class name.
 	 * @param  Object $item            The item.
@@ -258,11 +253,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines_as_html' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_list_most_popular_by_post_count' ) ) {
 	/**
-	 * Get most popular terms by the count of posts they belong to
+	 * Returns most popular terms by the count of posts they belong to
 	 *
 	 * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
 	 *
@@ -286,11 +279,12 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_most_popular_by_post_count
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
 	/**
-	 * Clean up the `term-description` WordPress function which:
+	 *
+	 * Returns a term description.
+	 *
+	 * Cleans up the `term-description` WordPress function which:
 	 * - It wraps the result in `<p>` tags
 	 * - It contains null strings
 	 *
@@ -303,11 +297,9 @@ if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
 	}
 }
 
-
-
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 	/**
-	 * Get all posts of a topic
+	 * Returns all posts of a topic
 	 *
 	 * @param  object $topic The topic.
 	 * @return Array         An array of posts
