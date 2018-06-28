@@ -117,7 +117,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 
 		$posts_of_all_pts = [];
 		foreach ( $all_of_pt as $pt ) {
-			$posts_of_a_pt = log_lolla_pro_get_posts_of_a_post_type( $pt );
+			$posts_of_a_pt = log_lolla_pro_get_post_type_post_list( $pt );
 
 			// Create a new object.
 			$entry              = new stdClass();
@@ -140,7 +140,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_get_posts_of_a_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list' ) ) {
 	/**
 	 * Get all posts of a post type
 	 *
@@ -149,10 +149,10 @@ if ( ! function_exists( 'log_lolla_pro_get_posts_of_a_post_type' ) ) {
 	 *  - if the post is tagged 'Hacker News', and we have a 'Hacker News' source custom post type
 	 *  - then the post belongs to the 'Hacker News' source
 	 *
-	 * @param  object $custom_post  A custom post
+	 * @param  object $custom_post  A custom post.
 	 * @return Array                An array of posts which are tagged with the $custom_post post title
 	 */
-	function log_lolla_pro_get_posts_of_a_post_type( $custom_post ) {
+	function log_lolla_pro_get_post_type_post_list( $custom_post ) {
 		if ( empty( $custom_post ) ) {
 			return;
 		}

@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-$posts = log_lolla_pro_get_posts_of_a_post_type( $post );
+$posts = log_lolla_pro_get_post_type_post_list( $post );
 if ( empty( $posts ) ) {
 	return;
 }
