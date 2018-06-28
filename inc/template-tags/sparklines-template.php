@@ -112,22 +112,22 @@ if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 	/**
 	 * Get the dates corresponding to a set of sparkline
 	 *
-	 * @param  integer $sparklines Total number of sparkines
+	 * @param  integer $sparklines Total number of sparkines.
 	 * @return array               An array of dates
 	 */
 	function log_lolla_pro_get_sparkline_dates( $sparklines ) {
-		// Get the first post and the last post dates
+		// Get the first post and the last post dates.
 		$post_dates = log_lolla_pro_get_posts_first_and_last_date();
 		if ( empty( $post_dates ) ) {
 			return;
 		}
 
-		// Number of days since the first post (ie. 110)
+		// Number of days since the first post (ie. 110).
 		$date1          = new DateTime( $post_dates[0] );
 		$date2          = new DateTime( $post_dates[1] );
 		$number_of_days = $date2->diff( $date1 )->format( '%a' );
 
-		// Number of days for a sparkline unit (ie 11, from 110 / $sparklines)
+		// Number of days for a sparkline unit (ie 11, from 110 / $sparklines).
 		$number_of_days_per_sparkline = round( $number_of_days / $sparklines );
 
 		$dates = [];

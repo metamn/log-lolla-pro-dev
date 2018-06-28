@@ -25,7 +25,7 @@ get_header();
 	<?php
 	set_query_var( 'topic_list_klass', 'categories' );
 	set_query_var( 'topic_list_title', '' );
-	set_query_var( 'topic_list_items', log_lolla_pro_get_topic_archive( 'category' ) );
+	set_query_var( 'topic_list_items', log_lolla_pro_get_topic_post_list_as_html( 'category' ) );
 	get_template_part( 'template-parts/topic/topic', 'list' );
 
 	get_template_part( 'template-parts/topic/topic', 'header' );

@@ -1,24 +1,22 @@
 <?php
-  /**
-   * Topics template tags
-   *
-   * @link https://codex.wordpress.org/Template_Tags
-   *
-   * @package Log_Lolla_Pro
-   */
+/**
+ * Topics template tags
+ *
+ * @link https://codex.wordpress.org/Template_Tags
+ *
+ * @package Log_Lolla_Pro
+ */
 
-
-
-
-if ( ! function_exists( 'log_lolla_pro_get_topic_archive' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 	/**
-	 * Get topics for an archive
+	 * Get the list of posts for a topic
 	 *
-	 * @param  string $topic The type of a topic like 'category', 'post_tag'
+	 * @param  string $topic The type of a topic like 'category', 'post_tag'.
 	 * @return string        HTML
 	 */
-	function log_lolla_pro_get_topic_archive( $topic ) {
+	function log_lolla_pro_get_topic_post_list_as_html( $topic ) {
 		$terms = log_lolla_pro_get_most_popular_terms_by_count( $topic, 0 );
+
 		if ( empty( $terms ) ) {
 			return;
 		}
