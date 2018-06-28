@@ -110,7 +110,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' )
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_topics_summary_as_html' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary_as_html' ) ) {
 	/**
 	 * Get topics summary
 	 *
@@ -126,7 +126,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topics_summary_as_html' ) ) {
 	 * @param  integer $number_of_tags       How many tags to show.
 	 * @return string                        HTML
 	 */
-	function log_lolla_pro_get_topics_summary_as_html( $number_of_categories = 5, $number_of_tags = 5 ) {
+	function log_lolla_pro_get_topic_list_summary_as_html( $number_of_categories = 5, $number_of_tags = 5 ) {
 		if ( 0 === $number_of_categories ) {
 			$categories = [];
 		} else {
@@ -181,25 +181,27 @@ if ( ! function_exists( 'log_lolla_pro_get_topics_summary_as_html' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_topics_with_sparklines' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' ) ) {
 	/**
 	 * Get topics (categories and tags) using sparklines
 	 *
-	 * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks
-	 * @param  integer $number_of_categories How many categories to show
-	 * @param  integer $number_of_tags       How many tags to show
-	 * @return string                        HTML
+	 * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks.
+	 * @param  integer $number_of_categories How many categories to show.
+	 * @param  integer $number_of_tags       How many tags to show.
+	 * @return string                        HTML.
 	 */
-	function log_lolla_pro_get_topics_with_sparklines( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5 ) {
-		// Get an array of dates for each sparkline
+	function log_lolla_pro_get_topic_list_with_sparklines_as_html( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5 ) {
+		// Get an array of dates for each sparkline.
 		$sparkline_dates = log_lolla_pro_get_sparkline_dates( $sparklines );
+
 		if ( empty( $sparkline_dates ) ) {
 			return;
 		}
 
-		// Get most popular topics
+		// Get most popular topics.
 		$categories = log_lolla_pro_get_most_popular_terms_by_count( 'category', $number_of_categories );
 		$tags       = log_lolla_pro_get_most_popular_terms_by_count( 'post_tag', $number_of_tags );
+
 		if ( empty( $categories ) && empty( $tags ) ) {
 			return;
 		}

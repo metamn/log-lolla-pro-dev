@@ -271,7 +271,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 			extract( $args );
 
 			$title   = apply_filters( 'widget_title', esc_html__( 'Topics' ) );
-			$content = log_lolla_pro_get_topics_with_sparklines(
+			$content = log_lolla_pro_get_topic_list_with_sparklines_as_html(
 				10,
 				$instance['number_of_categories'],
 				$instance['number_of_tags']
@@ -370,7 +370,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 			extract( $args );
 
 			$title   = apply_filters( 'widget_title', '' );
-			$content = log_lolla_pro_get_topics_summary_as_html(
+			$content = log_lolla_pro_get_topic_list_summary_as_html(
 				$instance['number_of_categories'],
 				$instance['number_of_tags']
 			);

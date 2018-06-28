@@ -173,7 +173,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_get_topics_with_sparklines(
+		$content = log_lolla_pro_get_topic_list_with_sparklines_as_html(
 			10,
 			$attr['categories'],
 			$attrs['tags']
@@ -213,7 +213,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' )
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_get_topics_summary_as_html( $attrs['categories'], $attrs['tags'] );
+		$content = log_lolla_pro_get_topic_list_summary_as_html( $attrs['categories'], $attrs['tags'] );
 
 		return log_lolla_pro_display_shortcode( '', $content );
 	}
