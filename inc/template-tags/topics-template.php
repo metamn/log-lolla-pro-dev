@@ -81,7 +81,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' )
 			return;
 		}
 
-		$posts_for_archive = log_lolla_pro_get_posts_for_topic( $archive );
+		$posts_for_archive = log_lolla_pro_get_topic_post_list( $archive );
 
 		if ( empty( $posts_for_archive ) ) {
 			return;
@@ -294,9 +294,9 @@ if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
 	 * - It wraps the result in `<p>` tags
 	 * - It contains null strings
 	 *
-	 * @param  integer $term     The term id
-	 * @param  string  $taxonomy The term's taxonomy
-	 * @return string             The cleaned up term description
+	 * @param  integer $term_id  The term id.
+	 * @param  string  $taxonomy The term's taxonomy.
+	 * @return string            The cleaned up term description
 	 */
 	function log_lolla_pro_get_term_description( $term_id, $taxonomy ) {
 		return trim( strip_tags( term_description( $term_id, $taxonomy ) ) );
@@ -305,14 +305,14 @@ if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_get_posts_for_topic' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 	/**
 	 * Get all posts of a topic
 	 *
-	 * @param  object $topic The topic
+	 * @param  object $topic The topic.
 	 * @return Array         An array of posts
 	 */
-	function log_lolla_pro_get_posts_for_topic( $topic ) {
+	function log_lolla_pro_get_topic_post_list( $topic ) {
 		if ( empty( $topic ) ) {
 			return;
 		}
