@@ -54,7 +54,7 @@ if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
 	 * @param  string  $metadata         The metadata type, like `post count`, `sparkline`.
 	 * @return string                    HTML
 	 */
-	function log_lolla_pro_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
+	function log_lolla_pro_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata = '' ) {
 		$items = log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items, $metadata );
 
 		if ( empty( $items ) ) {

@@ -21,8 +21,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 			'log_lolla_pro_post_formats_widget',
 			esc_html__( 'Log Lolla Pro Post Formats' ),
 			array(
-				'description'            => esc_html__( 'Display post formats archive', 'log_lolla_pro' ),
-				'number_of_post_formats' => esc_html__( 'Number of post formats to display', 'log_lolla_pro' ),
+				'description' => esc_html__( 'Display post formats archive', 'log_lolla_pro' ),
 			)
 		);
 	}
@@ -54,19 +53,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	 * @param  array $instance The widget instance.
 	 */
 	public function form( $instance ) {
-		$form = '';
-
-		$form .= '<p>';
-		$form .= log_lolla_pro_display_widget_form_label( $this, 'number_of_post_formats' );
-		$form .= log_lolla_pro_display_widget_form_input(
-			$this,
-			'number_of_post_formats',
-			'number',
-			$instance['number_of_post_formats']
-		);
-		$form .= '</p>';
-
-		echo wp_kses( $form );
+		echo wp_kses( log_lolla_pro_display_widget_form_no_settings_message() );
 	}
 
 	/**
@@ -74,13 +61,9 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	 *
 	 * @param  array $new_instance The new widget instance.
 	 * @param  array $old_instance The old widget instance.
-	 * @return array              An instance
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance                           = array();
-		$instance['number_of_post_formats'] = ( ! empty( $new_instance['number_of_post_formats'] ) ) ? filter_var( $new_instance['number_of_post_formats'], FILTER_SANITIZE_NUMBER_INT ) : '0';
-
-		return $instance;
+		// Nothing to process.
 	}
 }
 add_action(

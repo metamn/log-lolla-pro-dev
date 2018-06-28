@@ -9,6 +9,16 @@
  */
 
 /**
+ * Setting up global variables for custom widget
+ */
+global $log_lolla_pro_custom_kses_for_widgets;
+$log_lolla_pro_custom_kses_for_widgets = array(
+	'p'     => array(),
+	'input' => array(),
+	'label' => array(),
+);
+
+/**
  * Including custom widget classes.
  */
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-sources-widget.php';

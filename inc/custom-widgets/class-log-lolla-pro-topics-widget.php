@@ -81,7 +81,8 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 		);
 		$form .= '</p>';
 
-		echo wp_kses( $form );
+		global $log_lolla_pro_custom_kses_for_widgets;
+		echo wp_kses( $form, $log_lolla_pro_custom_kses_for_widgets );
 	}
 
 	/**
