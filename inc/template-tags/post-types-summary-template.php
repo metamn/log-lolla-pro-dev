@@ -56,15 +56,48 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	}
 }
 
-if ( ! function_exists( 'log_lolla_pro_display_post_type_summary_post_list' ) ) {
+
+if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archive' ) ) {
 	/**
-	 * Display a list of posts of the Summary Post type.
+	 * Get summaries for an archive
+	 *
+	 * @param  Object $archive The archive.
+	 * @return Array          The list of posts
+	 */
+	function log_lolla_pro_get_post_type_summary_post_list_for_archive( $archive ) {
+		if ( empty( $archive ) ) {
+			return;
+		}
+
+		$posts = get_posts(
+			array(
+				'post_type'      => 'summary',
+				'post_status'    => 'publish',
+				'posts_per_page' => -1,
+				'order'          => 'ASC',
+				'tax_query'      => array(
+					array(
+						'taxonomy' => $archive->taxonomy,
+						'field'    => 'slug',
+						'terms'    => $archive->slug,
+					),
+				),
+			)
+		);
+
+		return $posts;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list' ) ) {
+	/**
+	 * Get a list of posts of the Summary Post type.
 	 *
 	 * @param  integer $number_of_summaries The number of posts to display.
-	 * @return string                       HTML
+	 * @return array                        An array of posts.
 	 */
-	function log_lolla_pro_display_post_type_summary_post_list( $number_of_summaries ) {
-		$summaries = get_posts(
+	function log_lolla_pro_get_post_type_summary_post_list( $number_of_summaries ) {
+		return get_posts(
 			array(
 				'post_type'      => 'summary',
 				'post_status'    => 'publish',
@@ -72,23 +105,5 @@ if ( ! function_exists( 'log_lolla_pro_display_post_type_summary_post_list' ) ) 
 				'order'          => 'ASC',
 			)
 		);
-
-		if ( empty( $summaries ) ) {
-			return;
-		}
-
-		$html = '';
-
-		global $post;
-		ob_start();
-		foreach ( $summaries as $post ) {
-			setup_postdata( $post );
-			// removed by cs
-			// get_template_part( 'template-parts/summary/summary', '' ).
-		}
-		wp_reset_postdata();
-		$html .= ob_get_clean();
-
-		return $html;
 	}
 }
