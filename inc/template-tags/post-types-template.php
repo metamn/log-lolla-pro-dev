@@ -49,13 +49,14 @@ if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
 	 *
 	 * For example, the 5 most popular sources, or people
 	 *
-	 * @param  string  $post_type        The custom post type
-	 * @param  integer $number_of_items  How many posts to display
-	 * @param  string  $metadata         The metadata type, like `post count`, `sparkline`
-	 * @return string                     HTML
+	 * @param  string  $post_type        The custom post type.
+	 * @param  integer $number_of_items  How many posts to display.
+	 * @param  string  $metadata         The metadata type, like `post count`, `sparkline`.
+	 * @return string                    HTML
 	 */
 	function log_lolla_pro_display_popular_posts_of_post_type( $post_type, $number_of_items, $metadata ) {
-		$items = log_lolla_pro_get_popular_posts_of_post_type( $post_type, $number_of_items, $metadata );
+		$items = log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items, $metadata );
+
 		if ( empty( $items ) ) {
 			return;
 		}
@@ -91,34 +92,17 @@ if ( ! function_exists( 'log_lolla_pro_display_popular_posts_of_post_type' ) ) {
 }
 
 
-if ( ! function_exists( 'log_lolla_pro_get_latest_posts_of_post_type' ) ) {
-	function log_lolla_pro_get_latest_posts_of_post_type( $post_type, $number_of_items ) {
-		return get_posts(
-			array(
-				'post_type'      => $post_type,
-				'post_status'    => 'publish',
-				'posts_per_page' => $number_of_items,
-				'order'          => 'ASC',
-			)
-		);
-	}
-}
-
-
-if ( ! function_exists( 'log_lolla_pro_get_popular_posts_of_post_type' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 	/**
 	 * Get the most popular posts of a post type
 	 *
 	 * For example: the 5 most popular sources
 	 *
-	 * @param  string  $post_type       The custom post type ID
-	 * @param  integer $number_of_items How many posts to get
-	 * @return Array                     An array of posts with the post count
+	 * @param  string  $post_type       The custom post type ID.
+	 * @param  integer $number_of_items How many posts to get.
+	 * @return Array                     An array of posts with the post count.
 	 */
-	function log_lolla_pro_get_popular_posts_of_post_type( $post_type, $number_of_items ) {
-
-		// Get all of post_type
-		//
+	function log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items ) {
 		$all_of_pt = get_posts(
 			array(
 				'post_type'      => $post_type,
@@ -126,34 +110,30 @@ if ( ! function_exists( 'log_lolla_pro_get_popular_posts_of_post_type' ) ) {
 				'posts_per_page' => -1,
 			)
 		);
+
 		if ( empty( $all_of_pt ) ) {
 			return;
 		}
 
-		// Get posts of all from $all_of_post_type
-		//
 		$posts_of_all_pts = [];
 		foreach ( $all_of_pt as $pt ) {
 			$posts_of_a_pt = log_lolla_pro_get_posts_of_a_post_type( $pt );
 
-			// Create a new object
-			//
+			// Create a new object.
 			$entry              = new stdClass();
 			$entry->post        = $pt;
 			$entry->post_count  = count( $posts_of_a_pt );
 			$posts_of_all_pts[] = $entry;
 		}
 
-		// Sort posts
-		//
+		// Sort posts.
 		usort(
 			$posts_of_all_pts, function( $a, $b ) {
 				return ( $a->post_count < $b->post_count );
 			}
 		);
 
-		// Return the first x items only
-		//
+		// Return the first x items only.
 		return array_slice( $posts_of_all_pts, 0, $number_of_items );
 	}
 }
