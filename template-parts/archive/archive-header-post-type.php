@@ -1,7 +1,10 @@
 <?php
 /**
- * Displays the header of a post type archive
+ * Displays the archive header for a post type.
  *
+ * This template part prepares the data for, and includes the `archive-header` template part.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/people/ben-thompson/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

@@ -1,5 +1,5 @@
 /**
- * Javascript functions for the Log Lolla Theme
+ * Javascript functions for the Log Lolla Pro Theme
  */
 
 

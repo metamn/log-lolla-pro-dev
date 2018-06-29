@@ -1,7 +1,10 @@
 <?php
 /**
- * Displays the archive description
+ * Displays the archive description.
  *
+ * @param string $archive_description The archive description.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

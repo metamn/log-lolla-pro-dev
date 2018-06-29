@@ -3,9 +3,11 @@
  * Displays a list of months pointing to a monthly archive.
  *
  * It contains:
- *  * A list of Month acrhive template parts.
+ *  * A list of Month archive template parts.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ WordPress documentation
+ * @param array $archive_months An array of integers as months of the year.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/archives/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

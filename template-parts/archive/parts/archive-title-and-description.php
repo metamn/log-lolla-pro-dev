@@ -1,10 +1,13 @@
 <?php
 /**
- * Displays the archive title and description
+ * Displays the archive title and description.
+ *
+ * This template part prepares the data for, and includes the `list-item` template part.
  *
  * It contains:
  * A List Item from the Framework template part.
  *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

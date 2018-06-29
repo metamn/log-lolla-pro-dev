@@ -2,6 +2,9 @@
 /**
  * Displays a list of counters for an Archive.
  *
+ * @param array $pictograms An array of pictograms.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/tag/indie-web/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

@@ -2,6 +2,9 @@
 /**
  * Displays a link to a year archive.
  *
+ * @param integer $archive_year The archive year.
+ *
+ * @link https://morethemes.baby/log-lolla-pro-pro-demo/archives/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */
