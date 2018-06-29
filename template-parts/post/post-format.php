@@ -38,7 +38,7 @@ $post_klass_array = array(
 		if ( ! is_single() && has_excerpt() ) {
 			get_template_part( 'template-parts/post/parts/post', 'excerpt' );
 		} else {
-			get_template_part( 'template-parts/post/parts/post', 'content' );
+			get_template_part( 'template-parts/post/parts/post-content', 'standard' );
 			get_template_part( 'template-parts/post/parts/post', 'paginated-content' );
 		}
 		?>
