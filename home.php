@@ -41,7 +41,7 @@ get_header();
 			// Display comments.
 			if ( ! empty( $comments_before_post ) ) {
 				foreach ( $comments_before_post as $comment ) {
-					get_template_part( 'template-parts/comment/comment/single', 'in-loop' );
+					get_template_part( 'template-parts/comment/comment-single', 'in-loop' );
 
 					// Remove comment from the list.
 					$comments = log_lolla_pro_remove_object_from_array( $comments, $comment );

@@ -13,6 +13,6 @@ $text = get_comment_text();
 	<h3 class="hidden">Comment content</h3>
 
 	<div class="text">
-		<?php echo esc_html( $text ); ?>
+		<?php echo wp_kses_post( $text ); ?>
 	</div>
 </aside>

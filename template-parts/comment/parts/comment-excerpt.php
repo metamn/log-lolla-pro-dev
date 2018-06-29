@@ -16,7 +16,7 @@ $klass = '';
 	<h3 class="hidden">Comment excerpt</h3>
 
 	<div class="text">
-		<?php echo esc_html( get_comment_excerpt( $comment ) ); ?>
+		<?php echo wp_kses_post( get_comment_excerpt( $comment ) ); ?>
 	</div>
 
 	<?php get_template_part( 'template-parts/comment/parts/comment', 'read-more' ); ?>
