@@ -20,7 +20,7 @@ $klass = '';
 
 	<div class="text">
 		<?php
-		if ( strpos( $post->post_content, '<!--more-->' ) ) {
+		if ( preg_match( '/<!--more(.*?)?-->/', $post->post_content ) ) {
 			echo wp_kses_post( get_the_content( log_lolla_pro_add_readmore_to_content() ) );
 		} else {
 			the_content();

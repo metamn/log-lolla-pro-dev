@@ -6,13 +6,13 @@
  * @since 1.0.0
  */
 
-$text = get_comment_text();
+$klass = '';
 ?>
 
 <aside class="comment-content">
 	<h3 class="hidden">Comment content</h3>
 
 	<div class="text">
-		<?php echo wp_kses_post( $text ); ?>
+		<?php comment_text(); ?>
 	</div>
 </aside>

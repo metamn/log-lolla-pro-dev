@@ -8,6 +8,41 @@
  * @since 1.0.0
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_comment_excerpt_with_html_tags' ) ) {
+	/**
+	 * Returns a comment excerpt containing HTML tags.
+	 *
+	 * The original `comment_excerpt` strips all HTML tags and look ugly.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/get_comment_excerpt/ Original code
+	 * @param  object $comment The comment.
+	 * @return string          HTML
+	 */
+	function log_lolla_pro_get_comment_excerpt_with_html_tags( $comment ) {
+		// Capture comment text with HTML tags.
+		ob_start();
+		comment_text( $comment );
+		$comment_text = ob_get_clean();
+
+		// Borrow from original code.
+		$words                  = explode( ' ', $comment_text );
+		$comment_excerpt_length = apply_filters( 'comment_excerpt_length', 20 );
+		$use_ellipsis           = count( $words ) > $comment_excerpt_length;
+
+		if ( $use_ellipsis ) {
+			$words = array_slice( $words, 0, $comment_excerpt_length );
+		}
+
+		$excerpt = trim( join( ' ', $words ) );
+
+		if ( $use_ellipsis ) {
+			$excerpt .= '&hellip;';
+		}
+
+		return $excerpt;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_comment_list_of_a_post' ) ) {
 	/**
 	 * Returns only the comments (no pingbacks and trackbacks) of a post
