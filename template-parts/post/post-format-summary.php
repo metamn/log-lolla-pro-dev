@@ -21,9 +21,7 @@ $post_klass_array = array(
 
 	<div class="post__content">
 		<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
-		<?php get_template_part( 'template-parts/post/parts/post', 'title' ); ?>
-		<?php get_template_part( 'template-parts/post/parts/post', 'date-and-time' ); ?>
-		<?php get_template_part( 'template-parts/post/parts/post', 'summary-topic' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post-title', 'without-link' ); ?>
 	</div>
 
 	<?php get_template_part( 'template-parts/post/post', 'sidebar-right' ); ?>

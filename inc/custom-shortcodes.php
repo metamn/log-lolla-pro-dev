@@ -39,7 +39,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' )
 	add_shortcode( 'log-lolla-pro-topics-summary', 'log_lolla_pro_create_custom_shortcode_topics_summary' );
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 	/**
 	 * Display summaries archive

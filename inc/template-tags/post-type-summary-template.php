@@ -81,7 +81,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' 
 
 		foreach ( $summaries as $post ) {
 			setup_postdata( $post );
-			get_template_part( 'template-parts/summary/summary', '' );
+			get_template_part( 'template-parts/post/post-format', 'summary' );
 		}
 
 		wp_reset_postdata();
