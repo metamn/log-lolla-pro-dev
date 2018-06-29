@@ -1071,6 +1071,30 @@ html {
             html body .content.content-home .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-excerpt .text .more-link {
+              margin-right: 0; } }
       html body .content.content-home .post .post-content .text {
         word-wrap: break-word;
         width: 100%;
@@ -2116,6 +2140,30 @@ html {
             html body .content.content-home .post .post-content .text .more-link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-home .post .post-content .text .more-link {
+              margin-right: 0; } }
         html body .content.content-home .post .post-content .text .attachment img {
           border: 1px solid; }
           @media only screen and (max-width: 767.9px) {
@@ -5448,6 +5496,30 @@ html {
             html body .content.content-archive .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-excerpt .text .more-link {
+              margin-right: 0; } }
       html body .content.content-archive .post .post-content .text {
         word-wrap: break-word;
         width: 100%;
@@ -6493,6 +6565,30 @@ html {
             html body .content.content-archive .post .post-content .text .more-link .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .post .post-content .text .more-link {
+              margin-right: 0; } }
         html body .content.content-archive .post .post-content .text .attachment img {
           border: 1px solid; }
           @media only screen and (max-width: 767.9px) {
@@ -10477,6 +10573,30 @@ html {
               html body .content.content-none .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
         html body .content.content-none .post .post-content .text {
           word-wrap: break-word;
           width: 100%;
@@ -11522,6 +11642,30 @@ html {
               html body .content.content-none .post .post-content .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-none .post .post-content .text .more-link {
+                margin-right: 0; } }
           html body .content.content-none .post .post-content .text .attachment img {
             border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
@@ -14819,6 +14963,30 @@ html {
               html body .content.content-single .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
         html body .content.content-single .post .post-content .text {
           word-wrap: break-word;
           width: 100%;
@@ -15864,6 +16032,30 @@ html {
               html body .content.content-single .post .post-content .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-single .post .post-content .text .more-link {
+                margin-right: 0; } }
           html body .content.content-single .post .post-content .text .attachment img {
             border: 1px solid; }
             @media only screen and (max-width: 767.9px) {
@@ -20167,6 +20359,30 @@ html {
               html body .content.content-page .post .post-excerpt .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-excerpt .text .more-link {
+                margin-right: 0; } }
         html body .content.content-page .post .post-content .text {
           word-wrap: break-word;
           width: 100%;
@@ -21212,6 +21428,30 @@ html {
               html body .content.content-page .post .post-content .text .more-link .arrow-with-triangle--bottom {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-top: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-page .post .post-content .text .more-link {
+                margin-right: 0; } }
           html body .content.content-page .post .post-content .text .attachment img {
             border: 1px solid; }
             @media only screen and (max-width: 767.9px) {

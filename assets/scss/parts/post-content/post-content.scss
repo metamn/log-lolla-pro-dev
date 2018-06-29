@@ -16,6 +16,7 @@
     // More link
     .more-link {
       @include post-read-more;
+	  @include margin(yes, no, no, no);
     }
 
     // Styling attachments post formats

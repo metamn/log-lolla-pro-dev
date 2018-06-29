@@ -12,6 +12,7 @@
 
     .more-link {
       @include post-read-more;
+	  @include margin(yes, no, no, no);
     }
   }
 }
