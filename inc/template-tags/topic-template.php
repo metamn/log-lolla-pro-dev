@@ -7,6 +7,67 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary' ) ) {
+	/**
+	 * Returns topics summary
+	 *
+	 * Displays a text / paragraph containing all the category and tag descriptions merged together
+	 *
+	 * The $number_of_categories and $number_of_tags works like:
+	 * - negative: display all ??? bust mostly a random number
+	 * - 0: display none
+	 *
+	 * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
+	 *
+	 * @param  integer $number_of_categories How many categories to show.
+	 * @param  integer $number_of_tags       How many tags to show.
+	 * @return string                        HTML
+	 */
+	function log_lolla_pro_get_topic_list_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
+		if ( 0 === $number_of_categories ) {
+			$categories = [];
+		} else {
+			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
+		}
+
+		if ( 0 === $number_of_tags ) {
+			$tags = [];
+		} else {
+			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
+		}
+
+		if ( empty( $categories ) && empty( $tags ) ) {
+			return;
+		}
+
+		$categories_descriptions = array_filter(
+			array_map(
+				function( $term ) {
+					return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'category' ) );
+				},
+				$categories
+			)
+		);
+
+		$tags_descriptions = array_filter(
+			array_map(
+				function( $term ) {
+					return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'post_tag' ) );
+				},
+				$tags
+			)
+		);
+
+		if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) {
+			return;
+		}
+
+		$sentence = log_lolla_pro_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
+
+		return $sentence;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_as_html' ) ) {
 	/**
 	 * Returns the list of posts for a topic as HTML
@@ -104,76 +165,6 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' )
 		$related_topics = array_unique( $related_topics, SORT_REGULAR );
 
 		return log_lolla_pro_remove_object_from_array_by_key( $related_topics, $archive->term_id, 'term_id' );
-	}
-}
-
-if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary_as_html' ) ) {
-	/**
-	 * Returns topics summary as HTML
-	 *
-	 * Displays a text / paragraph containing all the category and tag descriptions merged together
-	 *
-	 * The $number_of_categories and $number_of_tags works like:
-	 * - negative: display all ??? bust mostly a random number
-	 * - 0: display none
-	 *
-	 * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
-	 *
-	 * @param  integer $number_of_categories How many categories to show.
-	 * @param  integer $number_of_tags       How many tags to show.
-	 * @return string                        HTML
-	 */
-	function log_lolla_pro_get_topic_list_summary_as_html( $number_of_categories = 5, $number_of_tags = 5 ) {
-		if ( 0 === $number_of_categories ) {
-			$categories = [];
-		} else {
-			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
-		}
-
-		if ( 0 === $number_of_tags ) {
-			$tags = [];
-		} else {
-			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
-		}
-
-		if ( empty( $categories ) && empty( $tags ) ) {
-			return;
-		}
-
-		$categories_descriptions = array_filter(
-			array_map(
-				function( $term ) {
-					return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'category' ) );
-				},
-				$categories
-			)
-		);
-
-		$tags_descriptions = array_filter(
-			array_map(
-				function( $term ) {
-					return strtolower( log_lolla_pro_get_term_description( $term->term_id, 'post_tag' ) );
-				},
-				$tags
-			)
-		);
-
-		if ( empty( $categories_descriptions ) && empty( $tags_descriptions ) ) {
-			return;
-		}
-
-		$sentence = log_lolla_pro_create_sentence_from_arrays( $categories_descriptions, $tags_descriptions );
-
-		$html = '';
-
-		ob_start();
-		set_query_var( 'shortcode_klass', 'shortcode-topics-summary' );
-		set_query_var( 'shortcode_title', esc_html_x( 'Shortcode Topics Summary', 'log-lolla-pro-pro' ) );
-		set_query_var( 'shortcode_body', $sentence );
-		get_template_part( 'template-parts/shortcode/shortcode' );
-		$html .= ob_get_clean();
-
-		return $html;
 	}
 }
 

@@ -7,6 +7,39 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' ) ) {
+	/**
+	 * Display topics summary
+	 *
+	 * Usage: [log-lolla-pro-topics-summary categories="5" tags="3"]
+	 *
+	 * Displays a text / paragraph containing all the category and tag descriptions merged together
+	 *
+	 * @link https://github.com/metamn/log-lolla-pro-pro-dev/issues/15
+	 *
+	 * @param  Array $attributes The attributes of the shortcode.
+	 * @return string            HTML
+	 */
+	function log_lolla_pro_create_custom_shortcode_topics_summary( $attributes ) {
+		// Default attributes.
+		$default_attributes = array(
+			'categories' => 5,
+			'tags'       => 5,
+		);
+
+		// Parse attributes.
+		$attrs = shortcode_atts( $default_attributes, $attributes );
+
+		// Content.
+		$content = log_lolla_pro_get_topic_list_summary( $attrs['categories'], $attrs['tags'] );
+
+		return log_lolla_pro_display_shortcode( '', $content );
+	}
+
+	add_shortcode( 'log-lolla-pro-topics-summary', 'log_lolla_pro_create_custom_shortcode_topics_summary' );
+}
+
+
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 	/**
 	 * Display summaries archive
@@ -193,39 +226,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 
 
 
-
-
-if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' ) ) {
-	/**
-	 * Display topics summary
-	 *
-	 * Usage: [log-lolla-pro-topics-summary categories="5" tags="3"]
-	 *
-	 * Displays a text / paragraph containing all the category and tag descriptions merged together
-	 *
-	 * @link https://github.com/metamn/log-lolla-pro-pro-dev/issues/15
-	 *
-	 * @param  Array $attributes The attributes of the shortcode.
-	 * @return string            HTML
-	 */
-	function log_lolla_pro_create_custom_shortcode_topics_summary( $attributes ) {
-		// Default attributes.
-		$default_attributes = array(
-			'categories' => 5,
-			'tags'       => 5,
-		);
-
-		// Parse attributes.
-		$attrs = shortcode_atts( $default_attributes, $attributes );
-
-		// Content.
-		$content = log_lolla_pro_get_topic_list_summary_as_html( $attrs['categories'], $attrs['tags'] );
-
-		return log_lolla_pro_display_shortcode( '', $content );
-	}
-
-	add_shortcode( 'log-lolla-pro-topics-summary', 'log_lolla_pro_create_custom_shortcode_topics_summary' );
-}
 
 
 
