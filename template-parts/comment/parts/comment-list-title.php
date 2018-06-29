@@ -29,9 +29,9 @@ $klass = '';
 
 	printf(
 		'<span class="arrows">%1$s</span><span class="number-of-comments">%2$s</span><span class="arrows">%3$s</span>',
-		esc_html( $arrows ),
+		wp_kses_post( $arrows ),
 		esc_html( $text ),
-		esc_html( $arrows )
+		wp_kses_post( $arrows )
 	);
 	?>
 </h3>
