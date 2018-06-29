@@ -6,6 +6,7 @@
  * The `read more` text has to be displayed without using the `the_content()` function.
  * If 'the_content( log_lolla_pro_add_readmore_to_content() )' is used the arrow will be spread across multiple lines because `the_content()` is applying `wpautop` to everything what's inside the content.
  *
+ * @link https://wordpress.stackexchange.com/questions/38030/is-there-a-has-more-tag-method-or-equivalent
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
