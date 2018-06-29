@@ -14,11 +14,15 @@
     width: 100%;
   }
 
+  .comment-content-or-excerpt {
+	  @include border(normal, all);
+      @include padding;
+  }
+
   .comment-content,
   .comment-excerpt,
   .comment-content-or-excerpt {
-    @include border(normal, all);
-    @include padding;
+      @include padding(yes, yes, yes, yes);
 
     .text {
       @include text-style(body-text-post);
