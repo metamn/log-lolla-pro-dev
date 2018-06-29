@@ -13,6 +13,8 @@
  *
  * We should create a page titled `Post Format Standard` with a special template.
  * Then use the following rewrite rule to map `post-format/standard` to that page.
+ *
+ * @link https://codex.wordpress.org/Rewrite_API/add_rewrite_rule
  */
 function log_lolla_pro_create_rewrite_rule_for_standard_post_format() {
 	add_rewrite_rule(
@@ -24,7 +26,9 @@ function log_lolla_pro_create_rewrite_rule_for_standard_post_format() {
 add_action( 'init', 'log_lolla_pro_create_rewrite_rule_for_standard_post_format' );
 
 /**
- * Rewrite post format archive slug
+ * Rewrite post format archive slug.
+ *
+ * The original slug is `type`. `post-fromat` sounds better.
  *
  * @link http://justintadlock.com/archives/2012/09/11/custom-post-format-urls
  * @param string $slug Required by the filter.

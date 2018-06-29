@@ -43,6 +43,14 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 			$links[] = log_lolla_pro_get_link_html( 'Summaries' );
 		}
 
+		if ( is_tax( 'post_format' ) ) {
+			$links[] = log_lolla_pro_get_link_html( 'Post Formats' );
+		}
+
+		if ( is_page( 'post-format-standard' ) ) {
+			$links[] = log_lolla_pro_get_link_html( 'Post Formats' );
+		}
+
 		$list = [];
 
 		foreach ( $links as $link ) {

@@ -145,6 +145,17 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 				$url     = get_post_type_archive_link( 'summary' );
 				break;
 
+			case 'Post Formats':
+				$page = get_page_by_path( 'archives/post-formats' );
+
+				if ( isset( $page ) ) {
+					/* translators: Post Formats Archive page name */
+					$title   = esc_html_x( 'Post Formats', 'Post Formats Archive page name', 'log-lolla-pro' );
+					$content = $title;
+					$url     = get_permalink( $page );
+				}
+				break;
+
 			default:
 				// code...
 				break;
