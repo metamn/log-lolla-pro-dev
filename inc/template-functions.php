@@ -7,6 +7,34 @@
  */
 
 /**
+ * Create an archive for the Standard post format.
+ *
+ * By default WordPress has no archive for Standard post formats.
+ *
+ * We should create a page titled `Post Format Standard` with a special template.
+ * Then use the following rewrite rule to map `post-format/standard` to that page.
+ */
+function log_lolla_pro_create_rewrite_rule_for_standard_post_format() {
+	add_rewrite_rule(
+		'post-format/standard',
+		'index.php?pagename=post-format-standard',
+		'top'
+	);
+}
+add_action( 'init', 'log_lolla_pro_create_rewrite_rule_for_standard_post_format' );
+
+/**
+ * Rewrite post format archive slug
+ *
+ * @link http://justintadlock.com/archives/2012/09/11/custom-post-format-urls
+ * @param string $slug Required by the filter.
+ */
+function log_lolla_pro_rewrite_post_format_slug( $slug ) {
+	return 'post-format';
+}
+add_filter( 'post_format_rewrite_base', 'log_lolla_pro_rewrite_post_format_slug' );
+
+/**
  * Remove archive type from archive title
  *
  * Example: `Category: News` => `News`
