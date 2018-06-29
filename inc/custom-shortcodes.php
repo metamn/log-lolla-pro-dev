@@ -66,7 +66,30 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 	add_shortcode( 'log-lolla-pro-summaries', 'log_lolla_pro_create_custom_shortcode_summaries' );
 }
 
+if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_post_formats' ) ) {
+	/**
+	 * Display post formats archive
+	 *
+	 * Usage: [log-lolla-pro-post-formats]
+	 *
+	 * @param  Array $attributes The attributes of the shortcode.
+	 * @return string            HTML
+	 */
+	function log_lolla_pro_create_custom_shortcode_post_formats( $attributes ) {
+		// Default attributes.
+		$default_attributes = array();
 
+		// Parse attributes.
+		$attrs = shortcode_atts( $default_attributes, $attributes );
+
+		// Content.
+		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
+
+		return log_lolla_pro_display_shortcode( esc_html__( 'Post formats', 'log-lolla-pro' ), $content );
+	}
+
+	add_shortcode( 'log-lolla-pro-post-formats', 'log_lolla_pro_create_custom_shortcode_post_formats' );
+}
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 	/**
@@ -100,30 +123,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 
 
 
-if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_post_formats' ) ) {
-	/**
-	 * Display post formats archive
-	 *
-	 * Usage: [log-lolla-pro-post-formats]
-	 *
-	 * @param  Array $attributes The attributes of the shortcode.
-	 * @return string            HTML
-	 */
-	function log_lolla_pro_create_custom_shortcode_post_formats( $attributes ) {
-		// Default attributes.
-		$default_attributes = array();
-
-		// Parse attributes.
-		$attrs = shortcode_atts( $default_attributes, $attributes );
-
-		// Content.
-		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
-
-		return log_lolla_pro_display_shortcode( esc_html__( 'Post formats', 'log-lolla-pro' ), $content );
-	}
-
-	add_shortcode( 'log-lolla-pro-post-formats', 'log_lolla_pro_create_custom_shortcode_post_formats' );
-}
 
 
 
