@@ -28,6 +28,7 @@ add_filter( 'get_the_archive_title', 'log_lolla_pro_get_the_archive_title', 10, 
 /**
  * Remove `<p>` and `<br>` tags added by WordPress.
  * If not, the 'Continue reading -->' arrow will be completely broken.
+ * For `the_content()` check the `post-content-standard.php`.
  *
  * @link https://wordpress.stackexchange.com/questions/130075/stop-wordpress-automatically-adding-br-tags-to-post-content
  */
