@@ -156,6 +156,14 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 				}
 				break;
 
+			case 'Post Format Standard':
+				/* translators: Standard Post Format name */
+				$title   = esc_html_x( 'Standard', 'Standard Post Format name', 'log-lolla-pro' );
+				$content = $title;
+				$url     = log_lolla_pro_get_post_format_link_to_archive( 'Standard' );
+
+				break;
+
 			default:
 				// code...
 				break;

@@ -37,18 +37,44 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive' ) ) {
 	/**
 	 * Returns the link to the Post format archive
 	 *
+	 * @param  string $post_format The name of the Post format.
+	 * @return string              The url
+	 */
+	function log_lolla_pro_get_post_format_link_to_archive( $post_format ) {
+		if ( 'Standard' === $post_format ) {
+			return home_url( '/' ) . 'post-format/standard';
+		} else {
+			return get_post_format_link( $post_format );
+		}
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive_as_html' ) ) {
+	/**
+	 * Returns the link to the Post format archive, as HTML
+	 *
 	 * @return string HTML
 	 */
-	function log_lolla_pro_get_post_format_link_to_archive() {
-		$format = get_post_format() ? : 'standard';
+	function log_lolla_pro_get_post_format_link_to_archive_as_html( $format = null ) {
+		if ( empty( $format ) ) {
+			$format = get_post_format() ? : 'Standard';
+		}
 
 		$html = '';
 
-		ob_start();
-		set_query_var( 'post_format_name', $format );
-		get_template_part( 'template-parts/post/parts/post-format', 'name-with-link' );
+		if ( 'Standard' === $format ) {
+			$html = log_lolla_pro_get_link_html( 'Post Format Standard' );
+		} else {
 
-		$html .= ob_get_clean();
+			ob_start();
+
+			set_query_var( 'link-url', get_post_format_link( $format ) );
+			set_query_var( 'link-title', ucfirst( $format ) );
+			set_query_var( 'link-content', ucfirst( $format ) );
+			get_template_part( 'template-parts/framework/design/typography/elements/link/link', '' );
+
+			$html = ob_get_clean();
+		}
 
 		return $html;
 	}
@@ -195,8 +221,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_with_post_count_as_html' 
 
 		ob_start();
 		set_query_var( 'list_item_class', 'post-format' );
-		set_query_var( 'list_item_url', get_post_format_link( $item->post_format_name ) );
-
+		set_query_var( 'list_item_url', log_lolla_pro_get_post_format_link_to_archive( $item->post_format_name ) );
 		set_query_var( 'list_item_primary_text', $item->post_format_name );
 		set_query_var( 'list_item_metadata', $item->post_count );
 
