@@ -50,7 +50,16 @@ if ( ! function_exists( 'log_lolla_pro_display_widget' ) ) {
 	 * @return string          HTML
 	 */
 	function log_lolla_pro_display_widget( $title, $content ) {
-		return log_lolla_pro_display_shortcode( $title, $content );
+		$html = '';
+
+		ob_start();
+		set_query_var( 'widget_title', $title );
+		set_query_var( 'widget_body', $content );
+		get_template_part( 'template-parts/widget/widget', '' );
+
+		$html .= ob_get_clean();
+
+		return $html;
 	}
 }
 

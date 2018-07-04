@@ -11,13 +11,14 @@ if ( empty( $shortcode_title ) ) {
 	$shortcode_title = get_query_var( $shortcode_title );
 }
 
+if ( empty( $shortcode_title ) ) {
+	return;
+}
+
 if ( empty( $shortcode_title_url ) ) {
 	$shortcode_title_url = get_query_var( $shortcode_title_url );
 }
 
-if ( empty( $shortcode_title ) ) {
-	return;
-}
 ?>
 
 <h3 class="shortcode-title">
