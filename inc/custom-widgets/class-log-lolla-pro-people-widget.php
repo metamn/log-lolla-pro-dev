@@ -36,7 +36,7 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		$title = apply_filters( 'widget_title', esc_html__( 'People' ) );
 
-		$content = log_lolla_pro_get_popular_post_list_of_post_type_as_html(
+		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
 			'people',
 			$instance['number_of_people']
 		);

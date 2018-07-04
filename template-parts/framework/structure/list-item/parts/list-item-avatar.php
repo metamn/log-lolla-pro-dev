@@ -34,9 +34,9 @@ if ( empty( $list_item_avatar ) ) {
 <figure class="list-item-avatar">
 	<?php
 	if ( ! empty( $list_item_avatar_url ) ) {
-		set_query_var( 'list-url', $list_item_url );
-		set_query_var( 'list-title', $list_item_primary_text );
-		set_query_var( 'list-content', $list_item_avatar );
+		set_query_var( 'link-url', $list_item_url );
+		set_query_var( 'link-title', $list_item_primary_text );
+		set_query_var( 'link-content', $list_item_avatar );
 		get_template_part( 'template-parts/framework/design/typography/elements/link/link' );
 	} else {
 		echo wp_kses_post( $list_item_avatar );

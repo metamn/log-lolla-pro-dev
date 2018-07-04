@@ -110,7 +110,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_get_popular_post_list_of_post_type_as_html(
+		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
 			'source',
 			$attrs['sources']
 		);
@@ -176,7 +176,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Content.
-		$content = log_lolla_pro_get_popular_post_list_of_post_type_as_html(
+		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
 			'people',
 			$attrs['people']
 		);
