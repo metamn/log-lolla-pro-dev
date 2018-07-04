@@ -14,7 +14,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary' ) ) {
 	 * Displays a text / paragraph containing all the category and tag descriptions merged together
 	 *
 	 * The $number_of_categories and $number_of_tags works like:
-	 * - negative: display all ??? bust mostly a random number
+	 * - -1: display all
 	 * - 0: display none
 	 *
 	 * @link https://developer.wordpress.org/reference/classes/wp_term_query/__construct/
@@ -23,15 +23,19 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary' ) ) {
 	 * @param  integer $number_of_tags       How many tags to show.
 	 * @return string                        HTML
 	 */
-	function log_lolla_pro_get_topic_list_summary( $number_of_categories = 5, $number_of_tags = 5 ) {
-		if ( 0 === $number_of_categories ) {
+	function log_lolla_pro_get_topic_list_summary( $number_of_categories = 0, $number_of_tags = 0 ) {
+		if ( '0' === $number_of_categories ) {
 			$categories = [];
+		} elseif ( '-1' === $number_of_categories ) {
+			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', 0 );
 		} else {
 			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
 		}
 
-		if ( 0 === $number_of_tags ) {
+		if ( '0' === $number_of_tags ) {
 			$tags = [];
+		} elseif ( '-1' === $number_of_tags ) {
+			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', 0 );
 		} else {
 			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
 		}
@@ -177,19 +181,33 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 	 * @param  integer $number_of_tags       How many tags to show.
 	 * @return string                        HTML.
 	 */
-	function log_lolla_pro_get_topic_list_with_sparklines_as_html( $sparklines = 10, $number_of_categories = 5, $number_of_tags = 5 ) {
+	function log_lolla_pro_get_topic_list_with_sparklines_as_html( $sparklines = 10, $number_of_categories = 0, $number_of_tags = 0 ) {
+		// Get most popular categories.
+		if ( '0' === $number_of_categories ) {
+			$categories = [];
+		} elseif ( '-1' === $number_of_categories ) {
+			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', 0 );
+		} else {
+			$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
+		}
+
+		// .... and tags.
+		if ( '0' === $number_of_tags ) {
+			$tags = [];
+		} elseif ( '-1' === $number_of_tags ) {
+			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', 0 );
+		} else {
+			$tags = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
+		}
+
+		if ( empty( $categories ) && empty( $tags ) ) {
+			return;
+		}
+
 		// Get an array of dates for each sparkline.
 		$sparkline_dates = log_lolla_pro_get_sparkline_dates( $sparklines );
 
 		if ( empty( $sparkline_dates ) ) {
-			return;
-		}
-
-		// Get most popular topics.
-		$categories = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'category', $number_of_categories );
-		$tags       = log_lolla_pro_get_topic_list_most_popular_by_post_count( 'post_tag', $number_of_tags );
-
-		if ( empty( $categories ) && empty( $tags ) ) {
 			return;
 		}
 

@@ -120,6 +120,7 @@ if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 
 		$date1 = new DateTime( $post_dates[0] );
 		$date2 = new DateTime( $post_dates[1] );
+
 		// Number of days since the first post (ie. 110).
 		$number_of_days = $date2->diff( $date1 )->format( '%a' );
 

@@ -14,8 +14,17 @@
 global $log_lolla_pro_custom_kses_for_widgets;
 $log_lolla_pro_custom_kses_for_widgets = array(
 	'p'     => array(),
-	'input' => array(),
-	'label' => array(),
+	'br'    => array(),
+	'input' => array(
+		'id'    => array(),
+		'name'  => array(),
+		'type'  => array(),
+		'value' => array(),
+		'min'   => array(),
+	),
+	'label' => array(
+		'for' => array(),
+	),
 );
 
 /**
@@ -81,7 +90,10 @@ if ( ! function_exists( 'log_lolla_pro_display_widget_form_input' ) ) {
 		$input_id   = esc_attr( $that->get_field_id( $field_id ) );
 		$input_name = esc_attr( $that->get_field_name( $field_id ) );
 
-		$html = '<input id="' . $input_id . '" name="' . $input_name . '" type="' . $input_type . '" value="' . $input_value . '">';
+		$html  = '<input id="' . $input_id . '" name="' . $input_name . '"';
+		$html .= ' type="' . $input_type . '" value="' . $input_value . '" min="-1">';
+		$html .= '<br/>';
+		$html .= '(-1 displays all items)';
 
 		return $html;
 	}

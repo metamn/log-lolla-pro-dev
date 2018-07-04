@@ -100,6 +100,10 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 	 * @return Array                     An array of posts with the post count.
 	 */
 	function log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items ) {
+		if ( '0' === $number_of_items ) {
+			return;
+		}
+
 		$all_of_pt = get_posts(
 			array(
 				'post_type'      => $post_type,
@@ -132,7 +136,11 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular' ) ) {
 		);
 
 		// Return the first x items only.
-		return array_slice( $posts_of_all_pts, 0, $number_of_items );
+		if ( $number_of_items > 0 ) {
+			return array_slice( $posts_of_all_pts, 0, $number_of_items );
+		} else {
+			return $posts_of_all_pts;
+		}
 	}
 }
 

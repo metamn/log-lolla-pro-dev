@@ -61,6 +61,7 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 
 		$form .= '<p>';
 		$form .= log_lolla_pro_display_widget_form_label( $this, 'number_of_people' );
+		$form .= '<br/>';
 		$form .= log_lolla_pro_display_widget_form_input(
 			$this,
 			'number_of_people',

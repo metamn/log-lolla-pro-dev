@@ -53,7 +53,7 @@ class Log_Lolla_Pro_Archives_Widget extends WP_Widget {
 	 * @param  array $instance The widget instance.
 	 */
 	public function form( $instance ) {
-		echo wp_kses( log_lolla_pro_display_widget_form_no_settings_message() );
+		echo wp_kses_post( log_lolla_pro_display_widget_form_no_settings_message() );
 	}
 
 	/**

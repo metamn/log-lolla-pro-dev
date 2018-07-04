@@ -63,6 +63,7 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 
 		$form .= '<p>';
 		$form .= log_lolla_pro_display_widget_form_label( $this, 'number_of_categories' );
+		$form .= '<br/>';
 		$form .= log_lolla_pro_display_widget_form_input(
 			$this,
 			'number_of_categories',
@@ -73,6 +74,7 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 
 		$form .= '<p>';
 		$form .= log_lolla_pro_display_widget_form_label( $this, 'number_of_tags' );
+		$form .= '<br/>';
 		$form .= log_lolla_pro_display_widget_form_input(
 			$this,
 			'number_of_tags',
