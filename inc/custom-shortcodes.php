@@ -121,11 +121,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 	add_shortcode( 'log-lolla-pro-sources', 'log_lolla_pro_create_custom_shortcode_sources' );
 }
 
-
-
-
-
-
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_person' ) ) {
 	/**
 	 * Create custom shortcode for persons
@@ -154,8 +149,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_person' ) ) {
 
 	add_shortcode( 'log-lolla-pro-person', 'log_lolla_pro_create_custom_shortcode_person' );
 }
-
-
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 	/**
@@ -186,9 +179,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 
 	add_shortcode( 'log-lolla-pro-people', 'log_lolla_pro_create_custom_shortcode_people' );
 }
-
-
-
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 	/**
@@ -221,11 +211,6 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 
 	add_shortcode( 'log-lolla-pro-topics', 'log_lolla_pro_create_custom_shortcode_topics' );
 }
-
-
-
-
-
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives' ) ) {
 	/**

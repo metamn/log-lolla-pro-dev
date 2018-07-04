@@ -16,7 +16,7 @@ if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 	 * @return array Of two dates
 	 */
 	function log_lolla_pro_get_posts_first_and_last_date() {
-		$posts = new WP_Query(
+		$posts = get_posts(
 			array(
 				'posts_per_page' => -1,
 				'post_status'    => 'publish',
