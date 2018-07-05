@@ -175,6 +175,17 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 
 				break;
 
+			case 'Years and months':
+				$page = get_page_by_title( 'Years and months' );
+
+				if ( isset( $page ) ) {
+					/* translators: Years and months Archive page name */
+					$title   = esc_html_x( 'Years and months', 'Years and months Archive page name', 'log-lolla-pro' );
+					$content = $title;
+					$url     = get_permalink( $page );
+				}
+				break;
+
 			default:
 				// code...
 				break;

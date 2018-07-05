@@ -51,6 +51,10 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 			$links[] = log_lolla_pro_get_link_html( 'Post Formats' );
 		}
 
+		if ( is_date() ) {
+			$links[] = log_lolla_pro_get_link_html( 'Years and months' );
+		}
+
 		$list = [];
 
 		foreach ( $links as $link ) {
