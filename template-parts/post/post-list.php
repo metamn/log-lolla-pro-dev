@@ -30,6 +30,10 @@ $klassname = log_lolla_pro_get_classname_bem( 'post-list', $post_list_klass );
 		if ( $post_list_posts ) {
 			$save_current_post = $post;
 
+			// Set up the archive counter.
+			global $archive_posts_count;
+			$archive_posts_count = count( $post_list_posts );
+
 			foreach ( $post_list_posts as $post ) {
 				setup_postdata( $post );
 				get_template_part( 'template-parts/post/post-format', $post_list_post_format );
@@ -41,6 +45,11 @@ $klassname = log_lolla_pro_get_classname_bem( 'post-list', $post_list_klass );
 			$post = $save_current_post;
 		} else {
 			if ( have_posts() ) {
+
+				// Set up the archive counter.
+				global $archive_posts_count;
+				$archive_posts_count = $wp_query->found_posts;
+
 				while ( have_posts() ) {
 					the_post();
 					get_template_part( 'template-parts/post/post-format', $post_list_post_format );

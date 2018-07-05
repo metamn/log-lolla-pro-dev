@@ -13,23 +13,19 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 	 * Returns a list of Archive counters.
 	 *
 	 * Counters are like number of posts, number of related topics, and so on.
-	 * Some of the counters have to be calculated apriori and set as global variables which are reused here.
+	 * The counters have to be calculated apriori and set as global variables which are reused here.
 	 *
-	 * @param  array $archive A list of posts.
 	 * @return array          An array of numbers.
 	 */
-	function log_lolla_pro_get_archive_counter_list( $archive ) {
-		if ( empty( $archive ) ) {
-			return;
-		}
-
+	function log_lolla_pro_get_archive_counter_list() {
+		global $archive_posts_count;
 		global $summaries_count;
 		global $standard_posts_count;
 		global $related_topics_count;
 
 		$ret = [];
 
-		$ret[] = $archive->count ? $archive->count : 0;
+		$ret[] = is_null( $archive_posts_count ) ? 0 : $archive_posts_count;
 		$ret[] = is_null( $summaries_count ) ? 0 : $summaries_count;
 		$ret[] = is_null( $standard_posts_count ) ? 0 : $standard_posts_count;
 		$ret[] = is_null( $related_topics_count ) ? 0 : $related_topics_count;
