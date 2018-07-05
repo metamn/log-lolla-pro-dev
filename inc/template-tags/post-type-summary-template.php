@@ -56,6 +56,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archi
 			)
 		);
 
+		global $summaries_count;
+		$summaries_count = count( $posts );
+
 		return $posts;
 	}
 }

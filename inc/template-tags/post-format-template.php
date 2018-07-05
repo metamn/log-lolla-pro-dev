@@ -95,7 +95,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 			return;
 		}
 
-		return get_posts(
+		$posts = get_posts(
 			array(
 				'post_type'     => 'post',
 				'post_status'   => 'publish',
@@ -130,6 +130,11 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 				),
 			)
 		);
+
+		global $standard_posts_count;
+		$standard_posts_count = count( $posts );
+
+		return $posts;
 	}
 }
 
