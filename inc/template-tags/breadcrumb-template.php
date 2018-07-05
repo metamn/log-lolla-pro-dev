@@ -24,11 +24,11 @@ if ( ! function_exists( 'log_lolla_pro_display_breadcrumb_for_archive' ) ) {
 		$links[] = log_lolla_pro_get_link_html( 'Archives' );
 
 		if ( is_tag() ) {
-			$links[] = log_lolla_pro_get_link_html( 'Tags' );
+			$links[] = log_lolla_pro_get_link_html( 'Topics' );
 		}
 
 		if ( is_category() ) {
-			$links[] = log_lolla_pro_get_link_html( 'Categories' );
+			$links[] = log_lolla_pro_get_link_html( 'Topics' );
 		}
 
 		if ( is_singular( 'source' ) ) {

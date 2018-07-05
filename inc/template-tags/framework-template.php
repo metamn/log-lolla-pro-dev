@@ -124,6 +124,17 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 				}
 				break;
 
+			case 'Topics':
+				$page = get_page_by_title( 'Topics' );
+
+				if ( isset( $page ) ) {
+					/* translators: Topics Archive page name */
+					$title   = esc_html_x( 'Topics', 'Topics Archive page name', 'log-lolla-pro' );
+					$content = $title;
+					$url     = get_permalink( $page );
+				}
+				break;
+
 			case 'Sources':
 				/* translators: Source Archive page name */
 				$title   = esc_html_x( 'Sources', 'Source Archive page name', 'log-lolla-pro' );
