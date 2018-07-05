@@ -12,13 +12,7 @@
 $pictograms = get_query_var( 'pictograms' );
 
 if ( empty( $pictograms ) ) {
-	$archive = get_queried_object();
-
-	if ( empty( $archive ) ) {
-		return;
-	}
-
-	$archive_counter_list = log_lolla_pro_get_archive_counter_list( $archive );
+	$archive_counter_list = log_lolla_pro_get_archive_counter_list();
 	$pictograms           = log_lolla_pro_get_pictogram_list( $archive_counter_list );
 }
 

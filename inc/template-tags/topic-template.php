@@ -144,7 +144,11 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive' )
 			return;
 		}
 
-		$posts_for_archive = log_lolla_pro_get_topic_post_list( $archive );
+		if ( empty( $archive->date_query ) ) {
+			$posts_for_archive = log_lolla_pro_get_topic_post_list( $archive );
+		} else {
+			$posts_for_archive = log_lolla_pro_get_post_list_by_date( $archive );
+		}
 
 		if ( empty( $posts_for_archive ) ) {
 			return;
@@ -308,7 +312,7 @@ if ( ! function_exists( 'log_lolla_pro_get_term_description' ) ) {
 
 if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 	/**
-	 * Returns all posts of a topic
+	 * Returns all posts of a topic.
 	 *
 	 * @param  object $topic The topic.
 	 * @return Array         An array of posts

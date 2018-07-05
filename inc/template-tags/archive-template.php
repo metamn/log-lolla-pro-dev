@@ -140,3 +140,68 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months' ) ) 
 		return $results;
 	}
 }
+
+if ( ! function_exists( 'log_lolla_pro_get_archive_object_for_date_archives' ) ) {
+	/**
+	 * Returns an object which helps generating archives for a date.
+	 *
+	 * @return object An archive object.
+	 */
+	function log_lolla_pro_get_archive_object_for_date_archives() {
+		global $wp_query;
+
+		$archive = new stdClass();
+		$year    = $wp_query->query['year'];
+		$month   = $wp_query->query['monthnum'];
+
+		if ( empty( $year ) ) {
+			return;
+		}
+
+		$archive->taxonomy = 'post_tag';
+
+		if ( empty( $month ) ) {
+			$archive->slug       = $year;
+			$archive->date_query = array(
+				array(
+					'year' => $year,
+				),
+			);
+		} else {
+			$archive->slug       = $year . '-' . $month;
+			$archive->date_query = array(
+				array(
+					'year'  => $year,
+					'month' => $month,
+				),
+			);
+		}
+
+		return $archive;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_post_list_by_date' ) ) {
+	/**
+	 * Returns a list of posts belonging to a date.
+	 *
+	 * @param  object $archive The archive object.
+	 * @return array           A list of posts.
+	 */
+	function log_lolla_pro_get_post_list_by_date( $archive ) {
+		if ( empty( $archive ) ) {
+			return;
+		}
+
+		$posts = get_posts(
+			array(
+				'post_type'   => 'post',
+				'post_status' => 'publish',
+				'numberposts' => -1,
+				'date_query'  => $archive->date_query,
+			)
+		);
+
+		return $posts;
+	}
+}

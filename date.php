@@ -2,9 +2,7 @@
 /**
  * Displays an archive page for a date.
  *
- * Date archives needs different code than other archives.
- *
- * @see https://wordpress.stackexchange.com/questions/128685/get-queried-object-returns-null-on-post-date-archive
+ * Date archives needs different code than other archives. @see https://wordpress.stackexchange.com/questions/128685/get-queried-object-returns-null-on-post-date-archive
  *
  * The page contains:
  *  * A Header from the Archive template part.
@@ -27,7 +25,8 @@ get_header();
 	<h3 class="hidden">Date archive</h3>
 
 	<?php
-		$archive = get_queried_object();
+		$archive = log_lolla_pro_get_archive_object_for_date_archives();
+		print_r($archive);
 	?>
 
 	<?php
@@ -47,7 +46,7 @@ get_header();
 
 	<?php
 		$title = esc_html( 'Thoughts', 'log-lolla-pro' );
-		$posts = log_lolla_pro_get_post_format_standard_post_list_for_archive( $archive );
+		$posts = log_lolla_pro_get_post_format_standard_post_list_for_date_archive( $archive );
 
 		set_query_var( 'post-list-klass', 'thoughts' );
 		set_query_var( 'post-list-title', $title );

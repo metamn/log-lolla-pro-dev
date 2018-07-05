@@ -7,6 +7,38 @@
  * @package Log_Lolla_Pro
  */
 
+/**
+ * Global variables for post formats.
+ */
+global $post_format_standard_tax_query;
+$post_format_standard_tax_query = array(
+	array(
+		'taxonomy' => 'post_format',
+		'field'    => 'slug',
+		'terms'    => array(
+			'post-format-aside',
+			'post-format-audio',
+			'post-format-chat',
+			'post-format-gallery',
+			'post-format-image',
+			'post-format-link',
+			'post-format-quote',
+			'post-format-status',
+			'post-format-video',
+			'aside',
+			'audio',
+			'chat',
+			'gallery',
+			'image',
+			'link',
+			'quote',
+			'status',
+			'video',
+		),
+		'operator' => 'NOT IN',
+	),
+);
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
 	/**
 	 * Returns a class for the link post format
@@ -80,6 +112,36 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive_as_html' 
 	}
 }
 
+if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_date_archive' ) ) {
+	/**
+	 * Returns a list of posts of standard Post format for a date archive.
+	 *
+	 * @param  object $archive The archive object.
+	 * @return array           An array of posts.
+	 */
+	function log_lolla_pro_get_post_format_standard_post_list_for_date_archive( $archive ) {
+		if ( empty( $archive ) ) {
+			return;
+		}
+
+		global $post_format_standard_tax_query;
+		$posts = get_posts(
+			array(
+				'post_type'   => 'post',
+				'post_status' => 'publish',
+				'numberposts' => -1,
+				'tax_query'   => $post_format_standard_tax_query,
+				'date_query'  => $archive->date_query,
+			)
+		);
+
+		global $standard_posts_count;
+		$standard_posts_count = count( $posts );
+
+		return $posts;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_archive' ) ) {
 	/**
 	 * Returns a list of posts of standard Post format for an archive.
@@ -95,39 +157,14 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 			return;
 		}
 
+		global $post_format_standard_tax_query;
 		$posts = get_posts(
 			array(
 				'post_type'     => 'post',
 				'post_status'   => 'publish',
 				'numberposts'   => -1,
 				'category_name' => $archive->slug,
-				'tax_query'     => array(
-					array(
-						'taxonomy' => 'post_format',
-						'field'    => 'slug',
-						'terms'    => array(
-							'post-format-aside',
-							'post-format-audio',
-							'post-format-chat',
-							'post-format-gallery',
-							'post-format-image',
-							'post-format-link',
-							'post-format-quote',
-							'post-format-status',
-							'post-format-video',
-							'aside',
-							'audio',
-							'chat',
-							'gallery',
-							'image',
-							'link',
-							'quote',
-							'status',
-							'video',
-						),
-						'operator' => 'NOT IN',
-					),
-				),
+				'tax_query'     => $post_format_standard_tax_query,
 			)
 		);
 
