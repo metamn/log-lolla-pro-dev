@@ -26,7 +26,6 @@ get_header();
 
 	<?php
 		$archive = log_lolla_pro_get_archive_object_for_date_archives();
-		print_r($archive);
 	?>
 
 	<?php

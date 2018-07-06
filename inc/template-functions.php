@@ -46,7 +46,7 @@ add_filter( 'post_format_rewrite_base', 'log_lolla_pro_rewrite_post_format_slug'
  * @param  string $title Archive title with archive type.
  * @return string        Archive title
  */
-function log_lolla_pro_get_the_archive_title( $title ) {
+function log_lolla_pro_filter_the_archive_title( $title ) {
 	$split = explode( ': ', $title );
 
 	if ( $split[1] ) {
@@ -55,7 +55,7 @@ function log_lolla_pro_get_the_archive_title( $title ) {
 		return $title;
 	}
 }
-add_filter( 'get_the_archive_title', 'log_lolla_pro_get_the_archive_title', 10, 1 );
+add_filter( 'get_the_archive_title', 'log_lolla_pro_filter_the_archive_title', 10, 1 );
 
 /**
  * Remove `<p>` and `<br>` tags added by WordPress.

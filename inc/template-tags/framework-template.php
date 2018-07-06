@@ -9,6 +9,12 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_dummy') ) {
+	function log_lolla_pro_dummy() {
+		//
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 	/**
 	 * Returns a list of pictograms of an Archive.
