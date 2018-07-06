@@ -27,6 +27,7 @@ get_header();
 
 	<?php
 		$archive = get_queried_object();
+		print_r($archive);
 	?>
 
 	<?php

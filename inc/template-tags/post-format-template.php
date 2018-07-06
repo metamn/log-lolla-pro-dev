@@ -85,6 +85,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive_as_html' 
 	/**
 	 * Returns the link to the Post format archive, as HTML
 	 *
+	 * @param string $format The post format.
 	 * @return string HTML
 	 */
 	function log_lolla_pro_get_post_format_link_to_archive_as_html( $format = null ) {

@@ -38,11 +38,17 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_archi
 	 * Returns a list of summaries for an archive
 	 *
 	 * @param  Object $archive The archive.
-	 * @return Array          The list of posts
+	 * @return Array           The list of posts
 	 */
 	function log_lolla_pro_get_post_type_summary_post_list_for_archive( $archive ) {
 		if ( empty( $archive ) ) {
 			return;
+		}
+
+		// The only taxonomy supported by Summaries are categories and tags.
+		// - this below makes possible to have summaries for Post formats.
+		if ( 'post_format' === $archive->taxonomy ) {
+			$archive->taxonomy = 'post_tag';
 		}
 
 		$posts = get_posts(
