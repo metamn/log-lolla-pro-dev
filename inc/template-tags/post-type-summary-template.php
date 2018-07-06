@@ -9,7 +9,9 @@
 
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	/**
-	 * Returns the topic of a summary
+	 * Returns the topic of a summary.
+	 *
+	 * The topic is either the first category, or the first tag.
 	 *
 	 * @param  Object $summary The summary.
 	 * @return Object          The topic
@@ -20,11 +22,14 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 		}
 
 		$categories = get_the_category( $summary->ID );
-		if ( empty( $categories[0] ) ) {
-			return;
+		if ( ! empty( $categories[0] ) ) {
+			return $categories[0];
 		}
 
-		return $categories[0];
+		$tags = get_the_terms( $summary->ID, 'post_tag' );
+		if ( ! empty( $tags[0] ) ) {
+			return $tags[0];
+		}
 	}
 }
 
