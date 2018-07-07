@@ -9,5 +9,5 @@ $klass = '';
 ?>
 
 <div class="post__sidebar post__sidebar--right">
-	<?php get_template_part( 'template-parts/post/parts/post', 'categories-as-list' ); ?>
+	<?php get_template_part( 'template-parts/post/parts/post', 'categories-or-tags-as-list' ); ?>
 </div>
