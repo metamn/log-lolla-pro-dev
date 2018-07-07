@@ -50,6 +50,38 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_the_s
 	}
 }
 
+if ( ! function_exists( 'log_lolla_pro_display_summary_dates_prefix' ) ) {
+	/**
+	 * Display the prefix for the dates of a summary
+	 *
+	 * @param  Object $summary The summary.
+	 * @return string          HTML
+	 */
+	function log_lolla_pro_display_summary_dates_prefix( $summary ) {
+		if ( empty( $summary ) ) {
+			return;
+		}
+
+		$dates = log_lolla_pro_get_summary_dates( $summary );
+
+		if ( empty( $dates ) ) {
+			return;
+		}
+
+		if ( ! empty( $dates->from ) ) {
+			printf(
+				'<span class="date-prefix">%1$s</span>',
+				esc_html_x( 'Between&nbsp;', 'log-lolla-pro' )
+			);
+		} else {
+			printf(
+				'<span class="date-prefix">%1$s</span>',
+				esc_html_x( 'From&nbsp;', 'log-lolla-pro' )
+			);
+		}
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
 	/**
 	 * Display the dates for a summary
@@ -68,7 +100,7 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
 			return;
 		}
 
-		if ( ! empty( $dates->to ) ) {
+		if ( ! empty( $dates->from ) ) {
 			printf(
 				'<time class="date published" datetime="%1$s">%2$s</time>',
 				esc_attr( $dates->from ),
@@ -77,15 +109,15 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
 
 			printf(
 				'<span class="dates-separator">%1$s</span><time class="date published" datetime="%2$s">%3$s</time>',
-				esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla' ),
+				esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla-pro' ),
 				esc_attr( $dates->to ),
 				esc_html( $dates->to )
 			);
 		} else {
 			printf(
 				'<time class="date published" datetime="%1$s">%2$s</time>',
-				esc_attr( $dates->from ),
-				esc_html( $dates->from )
+				esc_attr( $dates->to ),
+				esc_html( $dates->to )
 			);
 		}
 	}
@@ -103,10 +135,27 @@ if ( ! function_exists( 'log_lolla_pro_get_summary_dates' ) ) {
 			return;
 		}
 
-		$dates = new stdClass();
+		$dates     = new stdClass();
+		$dates->to = get_the_date( 'F j, Y', $summary );
 
-		$dates->to   = get_the_date( 'F j, Y', $summary );
-		$dates->from = log_lolla_pro_get_summary_last_date( $summary );
+		$topic = log_lolla_pro_get_post_type_summary_topic( $summary );
+
+		if ( empty( $topic ) ) {
+			return;
+		}
+
+		$summaries_for_topic = log_lolla_pro_get_post_type_summary_post_list_for_archive( $topic );
+
+		if ( empty( $summaries_for_topic ) ) {
+			return;
+		}
+
+		foreach ( $summaries_for_topic as $summary_for_topic ) {
+			if ( $summary_for_topic->post_date < $summary->post_date ) {
+				$dates->from = get_the_date( 'F j, Y', $summary_for_topic );
+				break;
+			}
+		}
 
 		return $dates;
 	}
