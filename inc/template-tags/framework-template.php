@@ -81,121 +81,79 @@ if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	}
 }
 
-if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
+
+if ( ! function_exists( 'log_lolla_pro_get_link' ) ) {
 	/**
 	 * Returns the link for a special page or archive
 	 *
 	 * @param  string $item The special page or archive title.
-	 * @return string       HTML
+	 * @return string       An URL
 	 */
-	function log_lolla_pro_get_link_html( $item ) {
+	function log_lolla_pro_get_link( $item ) {
 		switch ( $item ) {
 			case 'Home':
-				/* translators: Home page name */
-				$title   = esc_html_x( 'Home', 'Home page name', 'log-lolla-pro' );
-				$content = $title;
-				$url     = home_url( '/' );
-				break;
+				return home_url( '/' );
 
 			case 'Archives':
 				$page = get_page_by_title( 'Archives' );
-
-				if ( isset( $page ) ) {
-					/* translators: Archives page name name */
-					$title   = esc_html_x( 'Archives', 'Archives page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			case 'Tags':
 				$page = get_page_by_title( 'Tags' );
-
-				if ( isset( $page ) ) {
-					/* translators: Tag Archive page name */
-					$title   = esc_html_x( 'Tags', 'Tag Archive page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			case 'Categories':
 				$page = get_page_by_title( 'Categories' );
-
-				if ( isset( $page ) ) {
-					/* translators: Category Archive page name */
-					$title   = esc_html_x( 'Categories', 'Category Archive page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			case 'Topics':
 				$page = get_page_by_title( 'Topics' );
-
-				if ( isset( $page ) ) {
-					/* translators: Topics Archive page name */
-					$title   = esc_html_x( 'Topics', 'Topics Archive page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			case 'Sources':
-				/* translators: Source Archive page name */
-				$title   = esc_html_x( 'Sources', 'Source Archive page name', 'log-lolla-pro' );
-				$content = $title;
-				$url     = get_post_type_archive_link( 'source' );
-				break;
+				return get_post_type_archive_link( 'source' );
 
 			case 'People':
-				/* translators: People Archive page name */
-				$title   = esc_html_x( 'People', 'People Archive page name', 'log-lolla-pro' );
-				$content = $title;
-				$url     = get_post_type_archive_link( 'people' );
-				break;
+				return get_post_type_archive_link( 'people' );
 
 			case 'Summaries':
-				/* translators: Summary Archive page name */
-				$title   = esc_html_x( 'Summaries', 'Summary Archive page name', 'log-lolla-pro' );
-				$content = $title;
-				$url     = get_post_type_archive_link( 'summary' );
-				break;
+				return get_post_type_archive_link( 'summary' );
 
 			case 'Post Formats':
 				$page = get_page_by_path( 'archives/post-formats' );
-
-				if ( isset( $page ) ) {
-					/* translators: Post Formats Archive page name */
-					$title   = esc_html_x( 'Post Formats', 'Post Formats Archive page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			case 'Post Format Standard':
-				/* translators: Standard Post Format name */
-				$title   = esc_html_x( 'Standard', 'Standard Post Format name', 'log-lolla-pro' );
-				$content = $title;
-				$url     = log_lolla_pro_get_post_format_link_to_archive( 'Standard' );
-
-				break;
+				return log_lolla_pro_get_post_format_link_to_archive( 'Standard' );
 
 			case 'Years and months':
 				$page = get_page_by_title( 'Years and months' );
-
-				if ( isset( $page ) ) {
-					/* translators: Years and months Archive page name */
-					$title   = esc_html_x( 'Years and months', 'Years and months Archive page name', 'log-lolla-pro' );
-					$content = $title;
-					$url     = get_permalink( $page );
-				}
-				break;
+				return get_permalink( $page );
 
 			default:
-				// code...
-				break;
+				return '';
 		}
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
+	/**
+	 * Returns the link for a special page or archive, as HTML
+	 *
+	 * @param  string $item    The special page or archive title.
+	 * @param  string $title   The title of the link.
+	 * @param  string $content The content of the link.
+	 * @return string          HTML
+	 */
+	function log_lolla_pro_get_link_html( $item, $title = null, $content = null ) {
+		$url = log_lolla_pro_get_link( $item );
+
+		if ( empty( $url ) ) {
+			return;
+		}
+
+		$title   = $title ? $title : $item;
+		$content = $content ? $content : $title;
 
 		$html = '';
 
