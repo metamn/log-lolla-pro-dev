@@ -12,15 +12,15 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_the_s
 	 * Returns the list of posts based on a Summary was created.
 	 *
 	 * @param  object $summary The summary.
-	 * @param  object $archive The archive the Summary refers to.
+	 * @param  object $topic   The topic the Summary refers to.
 	 * @return array           The list of posts.
 	 */
-	function log_lolla_pro_get_post_type_summary_post_list_for_the_summary( $summary, $archive ) {
+	function log_lolla_pro_get_post_type_summary_post_list_for_the_summary( $summary, $topic ) {
 		if ( empty( $summary ) ) {
 			return;
 		}
 
-		if ( empty( $archive ) ) {
+		if ( empty( $topic ) ) {
 			return;
 		}
 
@@ -30,14 +30,17 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_the_s
 			return;
 		}
 
+		$taxonomy = ( 'category' === $topic->taxonomy ) ? 'category_name' : 'tag';
+
 		$posts = get_posts(
 			array(
-				'post_status' => 'publish',
+				'post_status'    => 'publish',
 				'posts_per_page' => -1,
-				'date_query' => array(
+				$taxonomy        => $topic->slug,
+				'date_query'     => array(
 					array(
-						'before' => $dates[1],
-						'after'  => $dates[0],
+						'before' => $dates->to,
+						'after'  => $dates->from,
 					),
 				),
 			)
@@ -65,18 +68,24 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
 			return;
 		}
 
-		printf(
-			'<time class="date published" datetime="%1$s">%2$s</time>',
-			esc_attr( $dates[0] ),
-			esc_html( $dates[0] )
-		);
+		if ( ! empty( $dates->to ) ) {
+			printf(
+				'<time class="date published" datetime="%1$s">%2$s</time>',
+				esc_attr( $dates->from ),
+				esc_html( $dates->from )
+			);
 
-		if ( ! empty( $dates[1] ) ) {
 			printf(
 				'<span class="dates-separator">%1$s</span><time class="date published" datetime="%2$s">%3$s</time>',
 				esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla' ),
-				esc_attr( $dates[1] ),
-				esc_html( $dates[1] )
+				esc_attr( $dates->to ),
+				esc_html( $dates->to )
+			);
+		} else {
+			printf(
+				'<time class="date published" datetime="%1$s">%2$s</time>',
+				esc_attr( $dates->from ),
+				esc_html( $dates->from )
 			);
 		}
 	}
@@ -87,17 +96,17 @@ if ( ! function_exists( 'log_lolla_pro_get_summary_dates' ) ) {
 	 * Get the dates for a summary
 	 *
 	 * @param  Object $summary The summary.
-	 * @return Array           The dates
+	 * @return Object          The dates
 	 */
 	function log_lolla_pro_get_summary_dates( $summary ) {
 		if ( empty( $summary ) ) {
 			return;
 		}
 
-		$dates = [];
+		$dates = new stdClass();
 
-		$dates[] = get_the_date( 'F j, Y', $summary );
-		$dates[] = log_lolla_pro_get_summary_last_date( $summary );
+		$dates->to   = get_the_date( 'F j, Y', $summary );
+		$dates->from = log_lolla_pro_get_summary_last_date( $summary );
 
 		return $dates;
 	}
