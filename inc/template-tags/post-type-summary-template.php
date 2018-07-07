@@ -7,6 +7,134 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_the_summary' ) ) {
+	/**
+	 * Returns the list of posts based on a Summary was created.
+	 *
+	 * @param  object $summary The summary.
+	 * @param  object $archive The archive the Summary refers to.
+	 * @return array           The list of posts.
+	 */
+	function log_lolla_pro_get_post_type_summary_post_list_for_the_summary( $summary, $archive ) {
+		if ( empty( $summary ) ) {
+			return;
+		}
+
+		if ( empty( $archive ) ) {
+			return;
+		}
+
+		$dates = log_lolla_pro_get_summary_dates( $summary );
+
+		if ( empty( $dates ) ) {
+			return;
+		}
+
+		$posts = get_posts(
+			array(
+				'post_status' => 'publish',
+				'posts_per_page' => -1,
+				'date_query' => array(
+					array(
+						'before' => $dates[1],
+						'after'  => $dates[0],
+					),
+				),
+			)
+		);
+
+		return $posts;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_display_summary_dates' ) ) {
+	/**
+	 * Display the dates for a summary
+	 *
+	 * @param  Object $summary The summary.
+	 * @return string          HTML
+	 */
+	function log_lolla_pro_display_summary_dates( $summary ) {
+		if ( empty( $summary ) ) {
+			return;
+		}
+
+		$dates = log_lolla_pro_get_summary_dates( $summary );
+
+		if ( empty( $dates ) ) {
+			return;
+		}
+
+		printf(
+			'<time class="date published" datetime="%1$s">%2$s</time>',
+			esc_attr( $dates[0] ),
+			esc_html( $dates[0] )
+		);
+
+		if ( ! empty( $dates[1] ) ) {
+			printf(
+				'<span class="dates-separator">%1$s</span><time class="date published" datetime="%2$s">%3$s</time>',
+				esc_html( '&nbsp;&mdash;&nbsp;', 'log-lolla' ),
+				esc_attr( $dates[1] ),
+				esc_html( $dates[1] )
+			);
+		}
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_summary_dates' ) ) {
+	/**
+	 * Get the dates for a summary
+	 *
+	 * @param  Object $summary The summary.
+	 * @return Array           The dates
+	 */
+	function log_lolla_pro_get_summary_dates( $summary ) {
+		if ( empty( $summary ) ) {
+			return;
+		}
+
+		$dates = [];
+
+		$dates[] = get_the_date( 'F j, Y', $summary );
+		$dates[] = log_lolla_pro_get_summary_last_date( $summary );
+
+		return $dates;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_summary_last_date' ) ) {
+	/**
+	 * Get the last date for a Summary.
+	 *
+	 * @param  object $summary The summary.
+	 * @return object          The date.
+	 */
+	function log_lolla_pro_get_summary_last_date( $summary ) {
+		if ( empty( $summary ) ) {
+			return;
+		}
+
+		$topic = log_lolla_pro_get_post_type_summary_topic( $summary );
+
+		if ( empty( $topic ) ) {
+			return;
+		}
+
+		$summaries_for_topic = log_lolla_pro_get_post_type_summary_post_list_for_archive( $topic );
+
+		if ( empty( $summaries_for_topic ) ) {
+			return;
+		}
+
+		if ( count( $summaries_for_topic ) < 2 ) {
+			return;
+		}
+
+		return get_the_date( 'F j, Y', $summaries_for_topic[1] );
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	/**
 	 * Returns the topic of a summary.
