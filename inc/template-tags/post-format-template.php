@@ -159,6 +159,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 		}
 
 		global $post_format_standard_tax_query;
+
 		$posts = get_posts(
 			array(
 				'post_type'     => 'post',

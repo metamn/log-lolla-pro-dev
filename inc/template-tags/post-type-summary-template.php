@@ -76,7 +76,7 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates_prefix' ) ) {
 		} else {
 			printf(
 				'<span class="date-prefix">%1$s</span>',
-				esc_html_x( 'From&nbsp;', 'log-lolla-pro' )
+				esc_html_x( 'Until&nbsp;', 'log-lolla-pro' )
 			);
 		}
 	}

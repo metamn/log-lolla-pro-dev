@@ -112,6 +112,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list_related_to_archive_as
 		}
 
 		$related_topics = log_lolla_pro_get_topic_post_list_related_to_archive( $archive );
+
 		if ( empty( $related_topics ) ) {
 			return;
 		}
