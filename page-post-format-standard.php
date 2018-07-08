@@ -20,6 +20,8 @@ get_header();
 	<h3 class="hidden">Archive for Standard post format</h3>
 
 	<?php
+		$posts = log_lolla_pro_get_post_format_standard_post_list();
+		set_query_var( 'post-list-posts', $posts );
 		set_query_var( 'post-list-klass', 'archive-standard-post-format' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>

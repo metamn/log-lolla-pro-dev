@@ -113,6 +113,32 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive_as_html' 
 	}
 }
 
+if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list' ) ) {
+	/**
+	 * Returns a list of posts of standard Post format.
+	 *
+	 * @return array           An array of posts.
+	 */
+	function log_lolla_pro_get_post_format_standard_post_list() {
+		global $post_format_standard_tax_query;
+
+		$posts = get_posts(
+			array(
+				'post_type'   => 'post',
+				'post_status' => 'publish',
+				'numberposts' => -1,
+				'tax_query'   => $post_format_standard_tax_query,
+			)
+		);
+
+		global $standard_posts_count;
+
+		$standard_posts_count = count( $posts );
+
+		return $posts;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_date_archive' ) ) {
 	/**
 	 * Returns a list of posts of standard Post format for a date archive.
@@ -126,6 +152,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_da
 		}
 
 		global $post_format_standard_tax_query;
+
 		$posts = get_posts(
 			array(
 				'post_type'   => 'post',
@@ -137,6 +164,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_da
 		);
 
 		global $standard_posts_count;
+
 		$standard_posts_count = count( $posts );
 
 		return $posts;
@@ -171,6 +199,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_standard_post_list_for_ar
 		);
 
 		global $standard_posts_count;
+
 		$standard_posts_count = count( $posts );
 
 		return $posts;
