@@ -9,12 +9,6 @@
  * @package Log_Lolla_Pro
  */
 
-if ( ! function_exists( 'log_lolla_pro_dummy') ) {
-	function log_lolla_pro_dummy() {
-		//
-	}
-}
-
 if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 	/**
 	 * Returns a list of pictograms of an Archive.
@@ -298,12 +292,14 @@ if ( ! function_exists( 'log_lolla_pro_get_array_unique_objects' ) ) {
 	 *
 	 * This is like PHP's `array_unique` function but adapated to an array of objects.
 	 *
+	 * @ignore This function is not yet used.
+	 *
 	 * @link https://stackoverflow.com/questions/2426557/array-unique-for-objects
 	 *
 	 * @param  array $array An array of objects.
 	 * @return array        An array of unique objects.
 	 */
-	function log_lolla_pro_array_unique_objects( $array ) {
+	function log_lolla_pro_get_array_unique_objects( $array ) {
 		$unique = array_filter( $array, 'log_lolla_pro_filter_array_of_duplicated_objects' );
 
 		return $unique;
@@ -313,6 +309,8 @@ if ( ! function_exists( 'log_lolla_pro_get_array_unique_objects' ) ) {
 if ( ! function_exists( 'log_lolla_pro_flatten_array_multidimensional' ) ) {
 	/**
 	 * Flattens a multidimensional array.
+	 *
+	 * @ignore This function is not yet used.
 	 *
 	 * @link https://stackoverflow.com/questions/1319903/how-to-flatten-a-multidimensional-array#1320156
 	 *

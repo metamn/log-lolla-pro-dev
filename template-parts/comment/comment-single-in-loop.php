@@ -17,6 +17,7 @@ if ( empty( $comment ) ) {
 ?>
 
 <article class="post post-format-comment" id="comment-<?php echo esc_attr( get_comment_id( $comment ) ); ?>">
+	<h3 class="hidden">Comment</h3>
 	<?php get_template_part( 'template-parts/comment/parts/comment', 'date-and-time' ); ?>
 	<?php get_template_part( 'template-parts/comment/parts/comment', 'post-title-with-arrows' ); ?>
 	<?php get_template_part( 'template-parts/comment/parts/comment', 'content-or-excerpt' ); ?>
