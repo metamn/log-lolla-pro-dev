@@ -20,13 +20,41 @@ get_header();
 	<h3 class="hidden">Archive for Standard post format</h3>
 
 	<?php
+		$archive = get_queried_object();
+	?>
+
+	<?php
 		$posts = log_lolla_pro_get_post_format_standard_post_list();
 		set_query_var( 'post-list-posts', $posts );
 		set_query_var( 'post-list-klass', 'archive-standard-post-format' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>
 
-	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+	<?php
+		$title = esc_html( 'Summaries', 'log-lolla-pro' );
+		$posts = log_lolla_pro_get_post_type_summary_post_list_for_archive( $archive );
+
+		set_query_var( 'post-list-klass', 'summaries' );
+		set_query_var( 'post-list-title', $title );
+		set_query_var( 'post-list-posts', $posts );
+		get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
+	?>
+
+	<?php
+		$title = esc_html__( 'Related topics ', 'log-lolla-pro' );
+		$items = log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $archive );
+
+		set_query_var( 'topic_list_klass', 'topics' );
+		set_query_var( 'topic_list_title', $title );
+		set_query_var( 'topic_list_items', $items );
+		get_template_part( 'template-parts/topic/topic', 'list' );
+	?>
+
+	<?php
+		$title = esc_html_x( 'Standard', 'Standard posts', 'log-lolla-pro' );
+		set_query_var( 'archive_title', $title );
+		get_template_part( 'template-parts/archive/archive', 'header' );
+	?>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

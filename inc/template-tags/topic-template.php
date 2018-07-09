@@ -325,7 +325,11 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 
 		$taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
 
-		return get_posts(
+		if ( false !== strpos( $topic->slug, 'post-format' ) ) {
+			$taxonomy = 'post_format';
+		}
+
+		$posts = get_posts(
 			array(
 				'post_type'   => 'post',
 				'post_status' => 'publish',
@@ -333,5 +337,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 				$taxonomy     => $topic->slug,
 			)
 		);
+
+		return $posts;
 	}
 }
