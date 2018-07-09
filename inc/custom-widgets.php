@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-post
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-people-widget.php';
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-topics-widget.php';
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php';
-require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-archives-widget.php';
+require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-archives-by-date-widget.php';
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-summaries-widget.php';
 
 /**

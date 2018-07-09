@@ -217,7 +217,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 	add_shortcode( 'log-lolla-pro-topics', 'log_lolla_pro_create_custom_shortcode_topics' );
 }
 
-if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives' ) ) {
+if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives_by_date' ) ) {
 	/**
 	 * Display archives of years and month
 	 *
@@ -226,7 +226,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives' ) ) {
 	 * @param  Array $attributes The attributes of the shortcode.
 	 * @return string            HTML
 	 */
-	function log_lolla_pro_create_custom_shortcode_archives( $attributes ) {
+	function log_lolla_pro_create_custom_shortcode_archives_by_date( $attributes ) {
 		// Default attributes.
 		$default_attributes = array();
 
@@ -240,7 +240,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives' ) ) {
 		return log_lolla_pro_display_shortcode( $title, $content, $url );
 	}
 
-	add_shortcode( 'log-lolla-pro-archives', 'log_lolla_pro_create_custom_shortcode_archives' );
+	add_shortcode( 'log-lolla-pro-archives-by-date', 'log_lolla_pro_create_custom_shortcode_archives_by_date' );
 }
 
 

@@ -126,8 +126,8 @@ if ( ! function_exists( 'log_lolla_pro_get_link' ) ) {
 			case 'Post Format Standard':
 				return log_lolla_pro_get_post_format_link_to_archive( 'Standard' );
 
-			case 'Years and months':
-				$page = get_page_by_title( 'Years and months' );
+			case 'Archives by date':
+				$page = get_page_by_title( 'Archives by date' );
 				return get_permalink( $page );
 
 			default:

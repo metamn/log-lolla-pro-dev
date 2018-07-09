@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Years and months Page
+ * Template Name: Archives by date Page
  *
  * Template to display a yearly / monthly archive.
  *
@@ -20,13 +20,13 @@ get_header();
 
 
 <section class="content content-archive">
-	<h3 class="hidden">Years and months archive</h3>
+	<h3 class="hidden">Archives by date</h3>
 
-	<?php echo do_shortcode( '[log-lolla-pro-archives]' ); ?>
+	<?php echo do_shortcode( '[log-lolla-pro-archives-by-date]' ); ?>
 
 	<?php
 	/* translators: Years and months Archive page name */
-	$title = esc_html_x( 'Years and months', 'Years and months Archive page name', 'log-lolla-pro' );
+	$title = esc_html_x( 'Archives by date', 'Archives by date page name', 'log-lolla-pro' );
 
 	set_query_var( 'archive_title', $title );
 	get_template_part( 'template-parts/archive/archive', 'header' );

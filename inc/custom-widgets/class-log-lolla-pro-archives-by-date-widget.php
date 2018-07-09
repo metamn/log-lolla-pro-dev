@@ -1,25 +1,25 @@
 <?php
 /**
- * The source code of the Archives widget.
+ * The source code of the Archives by date widget.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */
 
 /**
- * The Archives Widget.
+ * The Archives by date Widget.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */
-class Log_Lolla_Pro_Archives_Widget extends WP_Widget {
+class Log_Lolla_Pro_Archives_By_Date_Widget extends WP_Widget {
 	/**
 	 * Register Widget
 	 */
 	public function __construct() {
 		parent::__construct(
-			'log_lolla_pro_archives_widget',
-			esc_html__( 'Log Lolla Pro Archives' ),
+			'log_lolla_pro_archives_by_date_widget',
+			esc_html__( 'Log Lolla Pro Archives by date' ),
 			array(
 				'description' => __( 'Display archives of years and months', 'log_lolla_pro' ),
 			)
@@ -33,9 +33,9 @@ class Log_Lolla_Pro_Archives_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title   = apply_filters( 'widget_title', esc_html__( 'Archives' ) );
+		$title   = apply_filters( 'widget_title', esc_html__( 'Archives by date' ) );
 		$content = log_lolla_pro_get_archive_list_by_year_and_months_as_html();
-		$url     = log_lolla_pro_get_link( 'Years and months' );
+		$url     = log_lolla_pro_get_link( 'Archives by date' );
 
 		if ( ! empty( $content ) ) {
 			printf(
@@ -68,6 +68,6 @@ class Log_Lolla_Pro_Archives_Widget extends WP_Widget {
 }
 add_action(
 	'widgets_init', function() {
-		register_widget( 'Log_Lolla_Pro_Archives_Widget' );
+		register_widget( 'Log_Lolla_Pro_Archives_By_Date_Widget' );
 	}
 );
