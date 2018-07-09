@@ -27,7 +27,6 @@ get_header();
 	<?php
 	/* translators: Years and months Archive page name */
 	$title = esc_html_x( 'Archives by date', 'Archives by date page name', 'log-lolla-pro' );
-
 	set_query_var( 'archive_title', $title );
 	get_template_part( 'template-parts/archive/archive', 'header' );
 	?>

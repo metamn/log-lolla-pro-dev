@@ -22,23 +22,12 @@ get_header();
 
 	<?php
 	get_template_part( 'template-parts/post/post-list', 'post-type' );
+	get_template_part( 'template-parts/post/post-list', 'summaries-for-post-type' );
 
-	$archive = get_queried_object();
+	$topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
+	set_query_var( 'related-to', $topic );
+	get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
 
-	// Convert post to archive.
-	$archive->taxonomy = 'post_tag';
-	$archive->slug     = $archive->post_name;
-
-	$title = esc_html( 'Summaries', 'log-lolla-pro' );
-	$posts = log_lolla_pro_get_post_type_summary_post_list_for_archive( $archive );
-
-	set_query_var( 'post-list-klass', 'summaries' );
-	set_query_var( 'post-list-title', $title );
-	set_query_var( 'post-list-posts', $posts );
-	get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );
-
-
-	get_template_part( 'template-parts/topic/topic-list', 'post-type-related' );
 	get_template_part( 'template-parts/archive/archive-header', 'post-type' );
 	?>
 </section>
