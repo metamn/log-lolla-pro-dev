@@ -33,15 +33,15 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title = apply_filters( 'widget_title', esc_html__( 'Post Formats' ) );
-
+		$title   = apply_filters( 'widget_title', esc_html__( 'Post Formats' ) );
+		$url     = log_lolla_pro_get_link( 'Post Formats' );
 		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
 
 		if ( ! empty( $content ) ) {
 			printf(
 				'%1$s%2$s%3$s',
 				wp_kses_post( $args['before_widget'] ),
-				wp_kses_post( log_lolla_pro_display_widget( $title, $content ) ),
+				wp_kses_post( log_lolla_pro_display_widget( $title, $content, $url ) ),
 				wp_kses_post( $args['after_widget'] )
 			);
 		}

@@ -34,8 +34,8 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title = apply_filters( 'widget_title', esc_html__( 'People' ) );
-
+		$title   = apply_filters( 'widget_title', esc_html__( 'People' ) );
+		$url     = log_lolla_pro_get_link( 'People' );
 		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
 			'people',
 			$instance['number_of_people']
@@ -45,7 +45,7 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 			printf(
 				'%1$s%2$s%3$s',
 				wp_kses_post( $args['before_widget'] ),
-				wp_kses_post( log_lolla_pro_display_widget( $title, $content ) ),
+				wp_kses_post( log_lolla_pro_display_widget( $title, $content, $url ) ),
 				wp_kses_post( $args['after_widget'] )
 			);
 		}
