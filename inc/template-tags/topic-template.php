@@ -323,10 +323,16 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_post_list' ) ) {
 			return;
 		}
 
-		$taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
-
-		if ( false !== strpos( $topic->slug, 'post-format' ) ) {
-			$taxonomy = 'post_format';
+		switch ( true ) {
+			case ( 'post-format-standard' === $topic->post_name ):
+				$posts = log_lolla_pro_get_post_format_standard_post_list();
+				return $posts;
+			case ( false !== strpos( $topic->slug, 'post-format' ) ):
+				$taxonomy = 'post_format';
+				break;
+			default:
+				$taxonomy = is_category( $topic ) ? 'category_name' : 'tag';
+				break;
 		}
 
 		$posts = get_posts(
