@@ -161,38 +161,6 @@ if ( ! function_exists( 'log_lolla_pro_get_summary_dates' ) ) {
 	}
 }
 
-if ( ! function_exists( 'log_lolla_pro_get_summary_last_date' ) ) {
-	/**
-	 * Get the last date for a Summary.
-	 *
-	 * @param  object $summary The summary.
-	 * @return object          The date.
-	 */
-	function log_lolla_pro_get_summary_last_date( $summary ) {
-		if ( empty( $summary ) ) {
-			return;
-		}
-
-		$topic = log_lolla_pro_get_post_type_summary_topic( $summary );
-
-		if ( empty( $topic ) ) {
-			return;
-		}
-
-		$summaries_for_topic = log_lolla_pro_get_post_type_summary_post_list_for_archive( $topic );
-
-		if ( empty( $summaries_for_topic ) ) {
-			return;
-		}
-
-		if ( count( $summaries_for_topic ) < 2 ) {
-			return;
-		}
-
-		return get_the_date( 'F j, Y', $summaries_for_topic[1] );
-	}
-}
-
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_topic' ) ) {
 	/**
 	 * Returns the topic of a summary.

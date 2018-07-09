@@ -36,6 +36,7 @@ require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-peop
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-topics-widget.php';
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php';
 require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-archives-widget.php';
+require get_template_directory() . '/inc/custom-widgets/class-log-lolla-pro-summaries-widget.php';
 
 /**
  * Custom widget helpers.
@@ -47,12 +48,16 @@ if ( ! function_exists( 'log_lolla_pro_display_widget' ) ) {
 	 *
 	 * @param  string $title   Widget title.
 	 * @param  string $content Widget content, HTML.
+	 * @param  string $url     The widget URL.
 	 * @return string          HTML
 	 */
-	function log_lolla_pro_display_widget( $title, $content ) {
+	function log_lolla_pro_display_widget( $title, $content, $url = '' ) {
 		$html = '';
 
 		ob_start();
+		if ( ! empty( $url ) ) {
+			set_query_var( 'widget_title_url', $url );
+		}
 		set_query_var( 'widget_title', $title );
 		set_query_var( 'widget_body', $content );
 		get_template_part( 'template-parts/widget/widget', '' );
