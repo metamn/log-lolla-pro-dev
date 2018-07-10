@@ -8,6 +8,6 @@
   }
 
   + .header-title {
-    margin-top: $lem;
+    @include margin(half, no, no, no);
   }
 }
