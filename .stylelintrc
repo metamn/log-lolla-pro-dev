@@ -1,6 +1,7 @@
 {
   "extends": "stylelint-config-sass-guidelines",
   "rules": {
-    "indentation": "tab"
+    "indentation": "tab",
+	"max-nesting-depth": 4
   }
 }

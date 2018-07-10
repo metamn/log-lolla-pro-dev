@@ -1,26 +1,17 @@
 // Settings for the content section on the home page
 //
 @mixin content-home {
-
 	@include width--full;
+	@include list--vertical('.post');
+
 	align-items: center;
-	display: flex;
-	flex-direction: column;
 
 	.post {
 		@include post;
 		@include post--home;
-
-		+ .post {
-			@include margin(yes, no, no, no);
-		}
 	}
 
 	.navigation {
 		@include width;
-	}
-
-	@if ($home-grid-columns == 'true') {
-		@include content-home__grid;
 	}
 }

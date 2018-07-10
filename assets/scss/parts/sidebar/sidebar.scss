@@ -2,19 +2,12 @@
 	@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
+
+	@include list--vertical('.widget');
 	align-items: center;
-
-	display: flex;
-	flex-direction: column;
-
-	width: 100%;
 
 	.widget {
 		max-width: $text-block-width;
 		width: 100%;
-
-		+ .widget {
-			@include margin(yes, no, no, no);
-		}
 	}
 }
