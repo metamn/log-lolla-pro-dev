@@ -9,14 +9,14 @@
 
 if ( function_exists( 'log_lolla_pro_display_header_menu_contents' ) ) {
 	?>
-	<nav class="menu-hamburger menu-hamburger--closed">
+	<nav class="header-menu-hamburger header-menu-hamburger--closed">
 		<h3 class="hidden">Hamburger Menu Icon</h3>
 
-		<div class="hamburger-icon hamburger-icon--closed">
+		<div class="header-menu-hamburger-icon header-menu-hamburger-icon--closed">
 			<span class="icon">&#x2630;</span>
 		</div>
 
-		<div class="hamburger-icon hamburger-icon--opened">
+		<div class="header-menu-hamburger-icon header-menu-hamburger-icon--opened">
 			<span class="icon">&times;</span>
 		</div>
 	</nav>

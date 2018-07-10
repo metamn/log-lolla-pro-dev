@@ -34,12 +34,12 @@ var postContentClick = function() {
 
 // Click on the hamburger menu
 var menuHamburgerClick = function(ID) {
-  var menuHamburger = document.querySelector('.menu-hamburger');
+  var menuHamburger = document.querySelector('.header-menu-hamburger');
   var menuMain = document.querySelector('.header-menu');
 
   function onViewChange(event) {
     menuMain.classList.toggle('header-menu--closed');
-    menuHamburger.classList.toggle('menu-hamburger--closed');
+    menuHamburger.classList.toggle('header-menu-hamburger--closed');
     event.stopPropagation();
   }
 
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   // Hamburger menu
-  if (document.querySelector('.menu-hamburger')) {
-    menuHamburgerClick('.menu-hamburger');
+  if (document.querySelector('.header-menu-hamburger')) {
+    menuHamburgerClick('.header-menu-hamburger');
   }
 }, false);
