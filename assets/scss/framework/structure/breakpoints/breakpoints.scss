@@ -18,56 +18,56 @@ $breakpoint-desktop: 1600px;
 
 
 @mixin portrait {
-  @media only screen and (orientation: portrait) {
-    @content
+	@media only screen and (orientation: portrait) {
+		@content
   }
 }
 
 @mixin landscape {
-  @media only screen and (orientation: landscape) {
-    @content
+	@media only screen and (orientation: landscape) {
+		@content
   }
 }
 
 @mixin mobile {
-  @media only screen and (max-width: $breakpoint-mobile - 0.1) {
-    @content
+	@media only screen and (max-width: $breakpoint-mobile - 0.1) {
+		@content
   }
 }
 
 @mixin mobile-and-up {
-  @media only screen and (min-width: $breakpoint-mobile) {
-    @content
+	@media only screen and (min-width: $breakpoint-mobile) {
+		@content
   }
 }
 
 @mixin tablet {
-  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
-    @content
+	@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+		@content
   }
 }
 
 @mixin tablet-landscape {
-  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)  and (orientation: landscape){
-    @content
+	@media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)  and (orientation: landscape){
+		@content
   }
 }
 
 @mixin laptop {
-  @media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) {
-    @content
+	@media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) {
+		@content
   }
 }
 
 @mixin laptop-and-up {
-  @media only screen and (min-width: $breakpoint-tablet + 1) {
-    @content
+	@media only screen and (min-width: $breakpoint-tablet + 1) {
+		@content
   }
 }
 
 
 @mixin desktop {
-  @media only screen and (min-width: $breakpoint-desktop + 0.1) {
-    @content
+	@media only screen and (min-width: $breakpoint-desktop + 0.1) {
+		@content
   }
 }

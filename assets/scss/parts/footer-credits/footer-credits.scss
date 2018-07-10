@@ -1,7 +1,7 @@
 @mixin footer-credits {
-  margin-top: $lem;
+	margin-top: $lem;
 
-  .link {
-    @include link;
-  }
+	.link {
+		@include link;
+	}
 }

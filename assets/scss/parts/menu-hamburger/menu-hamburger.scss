@@ -1,31 +1,31 @@
 @mixin menu-hamburger {
-  @include cursor(pointer);
+	@include cursor(pointer);
 
-  .hamburger-icon {
-    @include colors(text-color-on-transparent);
+	.hamburger-icon {
+		@include colors(text-color-on-transparent);
 
-    &--closed {
-      display: none;
-    }
+		&--closed {
+			display: none;
+		}
 
-    &--opened {
-      display: flex;
+		&--opened {
+			display: flex;
 
-      // enlarge it
-      transform: scale(1.5) translateX(-2px) translateY(-3px);
-    }
-  }
+			// enlarge it
+			transform: scale(1.5) translateX(-2px) translateY(-3px);
+		}
+	}
 
 
-  &--closed {
-    .hamburger-icon {
-      &--closed {
-        display: flex;
-      }
+	&--closed {
+		.hamburger-icon {
+			&--closed {
+				display: flex;
+			}
 
-      &--opened {
-        display: none;
-      }
-    }
-  }
+			&--opened {
+				display: none;
+			}
+		}
+	}
 }

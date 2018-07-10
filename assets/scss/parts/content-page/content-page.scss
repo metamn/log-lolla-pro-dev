@@ -1,15 +1,15 @@
 @mixin content-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 
-  > * {
-    width: 100%;
-  }
+	> * {
+		width: 100%;
+	}
 
-  .post {
-    @include post;
-    @include post--single;
-    @include margin(no, no, yes, no);
-  }
+	.post {
+		@include post;
+		@include post--single;
+		@include margin(no, no, yes, no);
+	}
 }

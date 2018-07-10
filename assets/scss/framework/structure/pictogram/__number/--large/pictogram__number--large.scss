@@ -1,5 +1,5 @@
 @mixin pictogram__number--large {
-  .number {
-    @include text-style(headline);
-  }
+	.number {
+		@include text-style(headline);
+	}
 }

@@ -1,6 +1,6 @@
 @mixin post__sidebar--fixed-height {
-  aside {
-    word-wrap: break-word;
-    height: $lem;
-  }
+	aside {
+		height: $lem;
+		word-wrap: break-word;
+	}
 }

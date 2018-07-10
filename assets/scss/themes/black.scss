@@ -81,7 +81,7 @@ $letter-spacing-larger: 2.5px;
 $button-padding: $lem / 4 $lem / 2;
 
 
- /**
+/**
   * Layout
   *
   */
@@ -111,24 +111,24 @@ $home-grid-columns: 'false';
  *
  */
 
- // Cursors
- // - cursors can be found in the `assets/images` folder
- $cursor-default: 'brutalist_line_SVGicon_cursor1-64x64--black';
- $cursor-pointer: 'brutalist_line_SVGicon_cursor2-64x64--black';
+// Cursors
+// - cursors can be found in the `assets/images` folder
+$cursor-default: 'brutalist_line_SVGicon_cursor1-64x64--black';
+$cursor-pointer: 'brutalist_line_SVGicon_cursor2-64x64--black';
 
- // Cursor position needs to be fine tuned
- // - when the default cursor is switched into a pointer it usually flicks
- // - or the default cursor is not switched into a pointer at the right position
- // - the top of the cursor needs to be adjusted with the following settings
- // - `x` - move top of the cursor left
- // - `y` - move top of the cursor up
- // - `x, y` are two unitless nonnegative numbers less than 32
- // - `x, y` needs to be adjusted both for the default and pointer cursors by trial and error
- // - see https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
- $cursor-default-x: 32;
- $cursor-default-y: 0;
- $cursor-pointer-x: 20;
- $cursor-pointer-y: 0;
+// Cursor position needs to be fine tuned
+// - when the default cursor is switched into a pointer it usually flicks
+// - or the default cursor is not switched into a pointer at the right position
+// - the top of the cursor needs to be adjusted with the following settings
+// - `x` - move top of the cursor left
+// - `y` - move top of the cursor up
+// - `x, y` are two unitless nonnegative numbers less than 32
+// - `x, y` needs to be adjusted both for the default and pointer cursors by trial and error
+// - see https://developer.mozilla.org/en-US/docs/Web/CSS/cursor
+$cursor-default-x: 32;
+$cursor-default-y: 0;
+$cursor-pointer-x: 20;
+$cursor-pointer-y: 0;
 
 // Border size
 // - borders are the main design element of the theme

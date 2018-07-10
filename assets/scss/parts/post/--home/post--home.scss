@@ -1,22 +1,23 @@
 @mixin post--home {
-  .post__content {
-    @include post__content;
-  }
 
-  .post__sidebar {
-    @include post__sidebar;
-    @include post__sidebar--hidden;
-  }
+	@include portrait {
+		@include post__grid--display-vertical;
+	}
 
-  &.post--clicked {
-    @include post--clicked;
-  }
+	@include landscape {
+		@include post__grid--display-horizontal;
+	}
 
-  @include portrait {
-    @include post__grid--display-vertical;
-  }
+	.post__content {
+		@include post__content;
+	}
 
-  @include landscape {
-    @include post__grid--display-horizontal;
-  }
+	.post__sidebar {
+		@include post__sidebar;
+		@include post__sidebar--hidden;
+	}
+
+	&.post--clicked {
+		@include post--clicked;
+	}
 }

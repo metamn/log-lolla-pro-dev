@@ -7,51 +7,51 @@
 //
 // Styleguide arrow-with-triangle
 @mixin arrow-with-triangle($direction: right, $size: $lem * 3, $color: $text-color) {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
 
-  width: $size;
+	width: $size;
 
-  &__line {
-    width: calc(#{$size - $size / 6});
-    @include border;
-  }
+	&__line {
+		@include border;
+		width: calc(#{$size - $size / 6});
+	}
 
-  &__triangle {
-    @include triangle($direction: $direction, $size: $size / 6, $color: $color);
-  }
+	&__triangle {
+		@include triangle($direction: $direction, $size: $size / 6, $color: $color);
+	}
 
-  @if ($direction == right) {
-    @include arrow-with-triangle--right;
-  }
+	&--right {
+		@include arrow-with-triangle--right;
+	}
 
-  @if ($direction == left) {
-    @include arrow-with-triangle--left;
-  }
+	&--left {
+		@include arrow-with-triangle--left;
+	}
 
-  @if ($direction == top) {
-    @include arrow-with-triangle--top;
-  }
+	&--top {
+		@include arrow-with-triangle--top;
+	}
 
-  @if ($direction == bottom) {
-    @include arrow-with-triangle--bottom;
-  }
+	&--bottom {
+		@include arrow-with-triangle--bottom;
+	}
 
-  &--right {
-    @include arrow-with-triangle--right;
-  }
+	@if ($direction == right) {
+		@include arrow-with-triangle--right;
+	}
 
-  &--left {
-    @include arrow-with-triangle--left;
-  }
+	@if ($direction == left) {
+		@include arrow-with-triangle--left;
+	}
 
-  &--top {
-    @include arrow-with-triangle--top;
-  }
+	@if ($direction == top) {
+		@include arrow-with-triangle--top;
+	}
 
-  &--bottom {
-    @include arrow-with-triangle--bottom;
-  }
+	@if ($direction == bottom) {
+		@include arrow-with-triangle--bottom;
+	}
 }

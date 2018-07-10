@@ -4,15 +4,15 @@
 //
 // 
 @mixin circle($radius: $lem * 3, $color-scheme: inverted) {
-  width: $radius;
-  height: $radius;
-  border-radius: $radius;
 
-  @include colors($color-scheme);
+	@include colors($color-scheme);
+	align-items: center;
+	border-radius: $radius;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	height: $radius;
+	justify-content: center;
 
-  overflow: hidden;
+	overflow: hidden;
+	width: $radius;
 }

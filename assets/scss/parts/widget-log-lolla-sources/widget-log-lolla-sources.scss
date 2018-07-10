@@ -1,7 +1,7 @@
 @mixin widget-log-lolla-sources {
-  @include widget-log-lolla;
+	@include widget-log-lolla;
 
-  .widget-body {
-    @include archives-sources;
-  }
+	.widget-body {
+		@include archives-sources;
+	}
 }

@@ -1,11 +1,11 @@
 @mixin dl {
-  dl,
-  .dl {
-    @include margin(yes, no, no, no);
+	dl,
+	.dl {
+		@include margin(yes, no, no, no);
 
-    dd,
-    .dd {
-      @include margin(no, no, no, yes);
-    }
-  }
+		dd,
+		.dd {
+			@include margin(no, no, no, yes);
+		}
+	}
 }

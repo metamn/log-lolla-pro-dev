@@ -1,15 +1,15 @@
 @mixin figure {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 
-  img {
-    @include image;
-    @include image--do-not-stretch;
-  }
+	img {
+		@include image;
+		@include image--do-not-stretch;
+	}
 
-  figcaption,
-  .wp-caption-text {
-    @include figure__figcaption;
-  }
+	figcaption,
+	.wp-caption-text {
+		@include figure__figcaption;
+	}
 }

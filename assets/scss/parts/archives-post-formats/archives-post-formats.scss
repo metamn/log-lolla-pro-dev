@@ -1,16 +1,16 @@
 @mixin archives-post-formats {
-  .post-formats {
-    display: flex;
-    flex-wrap: wrap;
+	.post-formats {
+		display: flex;
+		flex-wrap: wrap;
 
-    .post-format {
-      display: flex;
+		.post-format {
 
-      @include margin(no, yes, yes, no);
+			@include margin(no, yes, yes, no);
+			display: flex;
 
-      .post-count {
-        margin-left: $lem / 4;
-      }
-    }
-  }
+			.post-count {
+				margin-left: $lem / 4;
+			}
+		}
+	}
 }

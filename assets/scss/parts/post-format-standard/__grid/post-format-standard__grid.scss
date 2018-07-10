@@ -1,23 +1,24 @@
 @mixin post-format-standard__grid {
-  .post__content {
-    @include mobile-and-up {
-      @include post__content--display-vertical;
-    }
-  }
 
-  &.display-horizontal {
-    .post__content {
-      @include mobile-and-up {
-        @include post__content--display-horizontal;
-      }
-    }
-  }
+	@include portrait {
+		&.has-excerpt.has-thumbnail {
+			.post__content {
+				@include post__content--display-vertical;
+			}
+		}
+	}
 
-  @include portrait {
-    &.has-excerpt.has-thumbnail {
-      .post__content {
-        @include post__content--display-vertical;
-      }
-    }
-  }
+	.post__content {
+		@include mobile-and-up {
+			@include post__content--display-vertical;
+		}
+	}
+
+	&.display-horizontal {
+		.post__content {
+			@include mobile-and-up {
+				@include post__content--display-horizontal;
+			}
+		}
+	}
 }

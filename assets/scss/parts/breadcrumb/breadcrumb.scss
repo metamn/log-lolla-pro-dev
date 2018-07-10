@@ -1,22 +1,22 @@
 @mixin breadcrumb {
-  .ul {
-    @include ul;
-    @include ul--horizontal($lem / 2);
-    @include list--multiline($lem);
+	.ul {
+		@include ul;
+		@include ul--horizontal($lem / 2);
+		@include list--multiline($lem);
 
-    @include mobile {
-      @include list--multiline($lem / 2);
-    }
+		@include mobile {
+			@include list--multiline($lem / 2);
+		}
 
-    .li {
-      .link {
-        @include link;
-      }
+		.li {
+			.link {
+				@include link;
+			}
 
-      .triangle {
-        display: block;
-        @include triangle($size: $lem / 4);
-      }
-    }
-  }
+			.triangle {
+				@include triangle($size: $lem / 4);
+				display: block;
+			}
+		}
+	}
 }

@@ -1,31 +1,31 @@
 @mixin summary {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-  .summary-link-to-topic,
-  .summary-dates {
-    @include text-style(small);
-  }
+	.summary-link-to-topic,
+	.summary-dates {
+		@include text-style(small);
+	}
 
-  .summary-dates {
-    display: none;
-  }
-
-
-  .summary-link-to-topic {
-    display: flex;
-
-    .text {
-      display: inline-flex;
-    }
-  }
+	.summary-dates {
+		display: none;
+	}
 
 
-  .summary-title-without-link {
-    width: 100%;
-  }
+	.summary-link-to-topic {
+		display: flex;
 
-  + .summary {
-    @include margin(yes, no, no, no);
-  }
+		.text {
+			display: inline-flex;
+		}
+	}
+
+
+	.summary-title-without-link {
+		width: 100%;
+	}
+
+	+ .summary {
+		@include margin(yes, no, no, no);
+	}
 }

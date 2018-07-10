@@ -1,8 +1,8 @@
 @mixin link--hover--linethrough {
-  @include transition(text-decoration);
+	@include transition(text-decoration);
 
-  &:hover,
-  &:active {
-    @include link--linethrough;
-  }
+	&:hover,
+	&:active {
+		@include link--linethrough;
+	}
 }

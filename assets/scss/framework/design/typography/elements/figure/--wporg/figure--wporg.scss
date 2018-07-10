@@ -1,51 +1,51 @@
 @mixin figure--wporg {
-  .figure,
-  figure,
-  .wp-caption {
-    max-width: 100% !important;
-    display: block;
+	.figure,
+	figure,
+	.wp-caption {
+		display: block;
+		max-width: 100% !important;
 
-    a,
-    .link {
-      @include link(text-color-on-transparent);
-    }
+		a,
+		.link {
+			@include link(text-color-on-transparent);
+		}
 
-    figcaption,
-    .figcaption,
-    .wp-caption-text,
-    .gallery-caption {
-      @include text-style(figcaption);
-      display: inline-block; // do not overflow the image on large screens
-      // display: block; // otherwise it breaks the wp test data
+		figcaption,
+		.figcaption,
+		.wp-caption-text,
+		.gallery-caption {
+			@include text-style(figcaption);
+			display: inline-block; // do not overflow the image on large screens
+			// display: block; // otherwise it breaks the wp test data
 
-      .link,
-      a {
-        @include link;
-      }
-    }
+			.link,
+			a {
+				@include link;
+			}
+		}
 
-    &.alignright {
-      float: right;
-      margin: $lem 0 $lem $lem;
-    }
+		&.alignright {
+			float: right;
+			margin: $lem 0 $lem $lem;
+		}
 
-    &.alignleft {
-      float: left;
-      margin: $lem $lem $lem 0;
-    }
+		&.alignleft {
+			float: left;
+			margin: $lem $lem $lem 0;
+		}
 
-    &.aligncenter {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+		&.aligncenter {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
 
-    &.alignnone {
-      text-align: unset;
-    }
+		&.alignnone {
+			text-align: unset;
+		}
 
-    + p {
-      margin-top: $lem;
-    }
-  }
+		+ p {
+			margin-top: $lem;
+		}
+	}
 }

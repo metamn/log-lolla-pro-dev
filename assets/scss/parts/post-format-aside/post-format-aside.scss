@@ -1,21 +1,21 @@
 @mixin post-format-aside {
-  .post__content {
-    display: flex;
-    flex-direction: column;
+	.post__content {
+		display: flex;
+		flex-direction: column;
 
-    .post-content {
-      .text {
-        @include colors(inverted);
-        @include padding;
+		.post-content {
+			.text {
+				@include colors(inverted);
+				@include padding;
 
-        @include mobile-and-up {
-          @include text-style(large);
-        }
-      }
-    }
+				@include mobile-and-up {
+					@include text-style(large);
+				}
+			}
+		}
 
-    .post-permalink {
-      align-self: center;
-    }
-  }
+		.post-permalink {
+			align-self: center;
+		}
+	}
 }

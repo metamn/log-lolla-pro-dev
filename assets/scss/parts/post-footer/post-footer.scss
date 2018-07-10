@@ -1,27 +1,27 @@
 @mixin post-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
 
-  @include margin(yes, no, no, no);
+	@include margin(yes, no, no, no);
+	align-items: baseline;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 
-  .post-date,
-  .post-author,
-  .link,
-  a[rel="tag"],
-  a[rel="category"],
-  a[rel="category tag"],
-  .edit-link {
-    @include button--with-border;
-    margin-bottom: $lem / 4;
-  }
+	.post-date,
+	.post-author,
+	.link,
+	a[rel='tag'],
+	a[rel='category'],
+	a[rel='category tag'],
+	.edit-link {
+		@include button--with-border;
+		margin-bottom: $lem / 4;
+	}
 
-  .edit-link {
-    display: block;
-  }
+	.edit-link {
+		display: block;
+	}
 
-  a {
-    @include link($type: not-underlined);
-  }
+	a {
+		@include link($type: not-underlined);
+	}
 }

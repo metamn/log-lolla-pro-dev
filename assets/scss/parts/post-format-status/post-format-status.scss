@@ -1,30 +1,30 @@
 @mixin post-format-status {
-  .post__content {
+	.post__content {
 
-    @if ($post-format-status-background-color and $post-format-status-text-color) {
-      @include set-colors($post-format-status-background-color, $post-format-status-text-color);
-    }
+		@if ($post-format-status-background-color and $post-format-status-text-color) {
+			@include set-colors($post-format-status-background-color, $post-format-status-text-color);
+		}
+		border: none;
 
-    flex-wrap: wrap;
-    border: none;
+		flex-wrap: wrap;
 
-    .post-content {
-      @include border(normal, all);
-      @include padding(no, no, yes, no);
-      width: 100%;
-    }
+		.post-content {
+			@include border(normal, all);
+			@include padding(no, no, yes, no);
+			width: 100%;
+		}
 
-    .post-author-linking-to-post {
-      display: flex;
-      align-items: flex-start;
+		.post-author-linking-to-post {
+			align-items: flex-start;
+			display: flex;
 
-      .arrow-with-triangle {
-        @include arrow-with-triangle;
-      }
+			.arrow-with-triangle {
+				@include arrow-with-triangle;
+			}
 
-      .byline {
-        @include padding(yes, no, no, no);
-      }
-    }
-  }
+			.byline {
+				@include padding(yes, no, no, no);
+			}
+		}
+	}
 }

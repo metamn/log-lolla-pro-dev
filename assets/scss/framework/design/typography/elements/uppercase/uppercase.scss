@@ -4,6 +4,6 @@
 //
 // Styleguide uppercase
 @mixin uppercase($letter-spacing) {
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing;
+	letter-spacing: $letter-spacing;
+	text-transform: uppercase;
 }

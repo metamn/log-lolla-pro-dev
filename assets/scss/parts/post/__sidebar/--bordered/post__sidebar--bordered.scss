@@ -1,5 +1,5 @@
 @mixin post__sidebar--bordered {
-  aside {
-    @include border(normal, all);
-  }
+	aside {
+		@include border(normal, all);
+	}
 }

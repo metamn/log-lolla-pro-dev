@@ -1,33 +1,33 @@
 @mixin content-archives {
-  max-width: none;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	@include background-pattern--horizontal-lines-white;
+	@include padding;
+	align-items: center;
 
-  @include background-pattern--horizontal-lines-white;
-  @include padding;
+	display: flex;
+	flex-direction: column;
+	max-width: none;
 
-  .shortcode {
-    @include width;
-    @include margin(no, no, yes, no);
+	.shortcode {
+		@include width;
+		@include margin(no, no, yes, no);
 
-    .shortcode-title {
-      @include text-style(section-title);
-    }
+		.shortcode-title {
+			@include text-style(section-title);
+		}
 
-    .shortcode-body {
-      @include colors;
-      @include padding(yes, yes, yes, yes);
-    }
-  }
+		.shortcode-body {
+			@include colors;
+			@include padding(yes, yes, yes, yes);
+		}
+	}
 
-  .summary {
-    @include summary;
-  }
+	.summary {
+		@include summary;
+	}
 
-  .archives-title,
-  .shortcode-topics-summary .shortcode-title {
-    display: none;
-  }
+	.archives-title,
+	.shortcode-topics-summary .shortcode-title {
+		display: none;
+	}
 }

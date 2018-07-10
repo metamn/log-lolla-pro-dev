@@ -1,5 +1,5 @@
 @mixin shortcode-people {
-  .shortcode-body {
-    @include archives-people;
-  }
+	.shortcode-body {
+		@include archives-people;
+	}
 }

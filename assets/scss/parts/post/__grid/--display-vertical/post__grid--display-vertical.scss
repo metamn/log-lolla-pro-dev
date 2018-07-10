@@ -1,24 +1,24 @@
 @mixin post__grid--display-vertical {
-  @include width;
+	@include width;
 
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-  position: relative;
+	position: relative;
 
-  .post__content {
-    width: 100%;
-  }
+	.post__content {
+		width: 100%;
+	}
 
-  .post__sidebar {
-    position: absolute;
+	.post__sidebar {
+		position: absolute;
 
-    &--left {
-      top: -$lem;
-    }
+		&--left {
+			top: -$lem;
+		}
 
-    &--right {
-      bottom: -$lem;
-    }
-  }
+		&--right {
+			bottom: -$lem;
+		}
+	}
 }

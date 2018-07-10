@@ -1,10 +1,10 @@
 @mixin content-archive {
-  .archive-header {
-    @include archive-header;
-    order: -1;
-  }
+	.archive-header {
+		@include archive-header;
+		order: -1;
+	}
 
-  .archive-list {
-    @include archive-list;
-  }
+	.archive-list {
+		@include archive-list;
+	}
 }

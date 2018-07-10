@@ -1,6 +1,6 @@
 @mixin address {
-  .address,
-  address {
-    @include font(italic);
-  }
+	.address,
+	address {
+		@include font(italic);
+	}
 }

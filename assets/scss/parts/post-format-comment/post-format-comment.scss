@@ -1,68 +1,68 @@
 @mixin post-format-comment {
-  flex-wrap: wrap;
-  justify-content: flex-start;
 
-  border: none;
+	@include width;
 
-  @include width;
+	border: none;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 
-  @if ($post-format-comment-background-color and $post-format-comment-text-color) {
-    @include set-colors($post-format-comment-background-color, $post-format-comment-text-color);
-  }
+	> * {
+		width: 100%;
+	}
 
-  > * {
-    width: 100%;
-  }
+	.comment-content-or-excerpt {
+		@include border(normal, all);
+		@include padding;
+	}
 
-  .comment-content-or-excerpt {
-	  @include border(normal, all);
-      @include padding;
-  }
+	.comment-content,
+	.comment-excerpt,
+	.comment-content-or-excerpt {
+		@include padding(yes, yes, yes, yes);
 
-  .comment-content,
-  .comment-excerpt,
-  .comment-content-or-excerpt {
-      @include padding(yes, yes, yes, yes);
+		.text {
+			@include text-style(body-text-post);
+		}
 
-    .text {
-      @include text-style(body-text-post);
-    }
+		.read-more {
+			@include margin(yes, no, no, no);
 
-    .read-more {
-      @include margin(yes, no, no, no);
+			.link {
+				display: flex;
+				flex-wrap: wrap;
 
-      .link {
-        display: flex;
-        flex-wrap: wrap;
+				.arrow-with-triangle {
+					@include arrow-with-triangle;
+					@include margin(no, no, no, half);
+				}
+			}
+		}
+	}
 
-        .arrow-with-triangle {
-          @include arrow-with-triangle;
-          @include margin(no, no, no, half);
-        }
-      }
-    }
-  }
+	.comment-date-and-time,
+	.comment-post-title-with-arrows {
+		@include text-style(small);
+	}
 
-  .comment-date-and-time,
-  .comment-post-title-with-arrows {
-    @include text-style(small);
-  }
+	.comment-post-title-with-arrows {
+		align-items: flex-end;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
 
-  .comment-post-title-with-arrows {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    justify-content: space-between;
+		.arrow-with-triangle {
+			@include arrow-with-triangle;
+			@include margin(yes, no, no, no);
 
-    .arrow-with-triangle {
-      @include arrow-with-triangle;
+			position: relative;
+		}
 
-      position: relative;
-      @include margin(yes, no, no, no);
-    }
+		.comment-title {
+			@include padding(no, no, yes, no);
+		}
+	}
 
-    .comment-title {
-      @include padding(no, no, yes, no);
-    }
-  }
+	@if ($post-format-comment-background-color and $post-format-comment-text-color) {
+		@include set-colors($post-format-comment-background-color, $post-format-comment-text-color);
+	}
 }

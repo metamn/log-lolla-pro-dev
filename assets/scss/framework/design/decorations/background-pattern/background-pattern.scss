@@ -6,33 +6,33 @@
 // 
 //
 @mixin background-pattern($pattern, $pattern-color: 'white') {
-  @if ($pattern == 'dotted') {
-    @if ($pattern-color == 'white') {
-      @include background-pattern--dotted-white;
-    }
+	@if ($pattern == 'dotted') {
+		@if ($pattern-color == 'white') {
+			@include background-pattern--dotted-white;
+		}
 
-    @if ($pattern-color == 'black') {
-      @include background-pattern--dotted-black;
-    }
-  }
+		@if ($pattern-color == 'black') {
+			@include background-pattern--dotted-black;
+		}
+	}
 
-  @if ($pattern == 'horizontal-lines') {
-    @if ($pattern-color == 'white') {
-      @include background-pattern--horizontal-lines-white;
-    }
+	@if ($pattern == 'horizontal-lines') {
+		@if ($pattern-color == 'white') {
+			@include background-pattern--horizontal-lines-white;
+		}
 
-    @if ($pattern-color == 'black') {
-      @include background-pattern--horizontal-lines-black;
-    }
-  }
+		@if ($pattern-color == 'black') {
+			@include background-pattern--horizontal-lines-black;
+		}
+	}
 
-  @if ($pattern == 'horizontal-lines-thick') {
-    @if ($pattern-color == 'white') {
-      @include background-pattern--horizontal-lines-thick-white;
-    }
+	@if ($pattern == 'horizontal-lines-thick') {
+		@if ($pattern-color == 'white') {
+			@include background-pattern--horizontal-lines-thick-white;
+		}
 
-    @if ($pattern-color == 'black') {
-      @include background-pattern--horizontal-lines-thick-black;
-    }
-  }
+		@if ($pattern-color == 'black') {
+			@include background-pattern--horizontal-lines-thick-black;
+		}
+	}
 }

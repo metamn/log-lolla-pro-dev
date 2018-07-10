@@ -1,14 +1,14 @@
 @mixin post-format-video {
-  .post__content {
-    .post-content {
-      .text {
-        iframe {
-          // otherwise is ugly ....
-          @include mobile {
-            height: auto;
-          }
-        }
-      }
-    }
-  }
+	.post__content {
+		.post-content {
+			.text {
+				iframe {
+					// otherwise is ugly ....
+					@include mobile {
+						height: auto;
+					}
+				}
+			}
+		}
+	}
 }

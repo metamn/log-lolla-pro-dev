@@ -1,4 +1,4 @@
 @mixin figure__figcaption {
-  @include text-style(figcaption);
-  display: inline-block;
+	@include text-style(figcaption);
+	display: inline-block;
 }

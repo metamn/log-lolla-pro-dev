@@ -1,7 +1,7 @@
 @mixin ol {
-  ol,
-  .ol {
-    @include ul-nested;
-    list-style-position: inside;
-  }
+	ol,
+	.ol {
+		@include ul-nested;
+		list-style-position: inside;
+	}
 }

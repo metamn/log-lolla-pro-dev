@@ -14,59 +14,59 @@
 //
 
 $modular-scale-major-third: (
-  small-1: 0.8em,
-  large-1: 1.25em,
-  large-2: 1.563em,
-  large-3: 1.953em
+	small-1: 0.8em,
+	large-1: 1.25em,
+	large-2: 1.563em,
+	large-3: 1.953em
 );
 
 $modular-scale-minor-fourth: (
-  small-1: 0.75em,
-  large-1: 1.333em,
-  large-2: 1.777em,
-  large-3: 2.369em
+	small-1: 0.75em,
+	large-1: 1.333em,
+	large-2: 1.777em,
+	large-3: 2.369em
 );
 
 
 @mixin scale($variant) {
 
-  // Get the scale
-  //
-  $map: $modular-scale-major-third;
+	// Get the scale
+	//
+	$map: $modular-scale-major-third;
 
-  @if ($scale == 'minor-fourth') {
-    $map: $modular-scale-minor-fourth;
-  }
+	@if ($scale == 'minor-fourth') {
+		$map: $modular-scale-minor-fourth;
+	}
 
-  // The default font size and line height
-  @if ($variant == 'default') {
-    font-size: 100%;
-    line-height: $line-height;
-  }
+	// The default font size and line height
+	@if ($variant == 'default') {
+		font-size: 100%;
+		line-height: $line-height;
+	}
 
-  // Smaller than default font size with 1 scale
-  @if ($variant == 'small-1') {
-    font-size: #{map-get($map, 'small-1')};
-  }
+	// Smaller than default font size with 1 scale
+	@if ($variant == 'small-1') {
+		font-size: #{map-get($map, 'small-1')};
+	}
 
-  // Larger according to the browser's scale
-  @if ($variant == 'larger') {
-    font-size: larger;
-    line-height: $line-height-larger;
-  }
+	// Larger according to the browser's scale
+	@if ($variant == 'larger') {
+		font-size: larger;
+		line-height: $line-height-larger;
+	}
 
-  // Larger than default font size with 1 scale
-  @if ($variant == 'large-1') {
-    font-size: #{map-get($map, 'large-1')};
-  }
+	// Larger than default font size with 1 scale
+	@if ($variant == 'large-1') {
+		font-size: #{map-get($map, 'large-1')};
+	}
 
-  // Larger than default font size with 2 scalse
-  @if ($variant == 'large-2') {
-    font-size: #{map-get($map, 'large-2')};
-  }
+	// Larger than default font size with 2 scalse
+	@if ($variant == 'large-2') {
+		font-size: #{map-get($map, 'large-2')};
+	}
 
-  // Larger than default font size with 3 scales
-  @if ($variant == 'large-3') {
-    font-size: #{map-get($map, 'large-3')};
-  }
+	// Larger than default font size with 3 scales
+	@if ($variant == 'large-3') {
+		font-size: #{map-get($map, 'large-3')};
+	}
 }

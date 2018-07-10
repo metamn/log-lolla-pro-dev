@@ -1,20 +1,20 @@
 @mixin sidebar {
-  @include background-pattern($sidebar-pattern, $sidebar-pattern-color);
+	@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
+	@include padding(yes, no, yes, no);
+	@include margin(yes, no, no, no);
+	align-items: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
 
-  width: 100%;
-  @include padding(yes, no, yes, no);
-  @include margin(yes, no, no, no);
+	width: 100%;
 
-  .widget {
-    width: 100%;
-    max-width: $text-block-width;
+	.widget {
+		max-width: $text-block-width;
+		width: 100%;
 
-    + .widget {
-      @include margin(yes, no, no, no);
-    }
-  }
+		+ .widget {
+			@include margin(yes, no, no, no);
+		}
+	}
 }

@@ -1,5 +1,5 @@
 @mixin post-title--large {
-  .text {
-    @include text-style(headline-title);
-  }
+	.text {
+		@include text-style(headline-title);
+	}
 }

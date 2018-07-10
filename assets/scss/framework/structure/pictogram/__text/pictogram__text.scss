@@ -1,9 +1,9 @@
 @mixin pictogram__text {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  .text {
-    text-align: center;
-    word-wrap: break-word;
-  }
+	.text {
+		text-align: center;
+		word-wrap: break-word;
+	}
 }

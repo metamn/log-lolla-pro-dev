@@ -7,44 +7,44 @@
 
 
 $font-family-nimbus-sans: (
-  regular: ('nimbus_sans_lregular',Arial,"Helvetica Neue",Helvetica,sans-serif),
-  bold: ('nimbus_sans_lbold',Arial,"Helvetica Neue",Helvetica,sans-serif),
-  italic: ('nimbus_sans_lregular_italic',Arial,"Helvetica Neue",Helvetica,sans-serif),
-  bold-italic: ('nimbus_sans_lbold_italic',Arial,"Helvetica Neue",Helvetica,sans-serif)
+	regular: ('nimbus_sans_lregular',Arial,'Helvetica Neue',Helvetica,sans-serif),
+	bold: ('nimbus_sans_lbold',Arial,'Helvetica Neue',Helvetica,sans-serif),
+	italic: ('nimbus_sans_lregular_italic',Arial,'Helvetica Neue',Helvetica,sans-serif),
+	bold-italic: ('nimbus_sans_lbold_italic',Arial,'Helvetica Neue',Helvetica,sans-serif)
 );
 
 
 
 @mixin fonts--nimbus-sans {
-  @font-face {
-      font-family: 'nimbus_sans_lbold_italic';
-      src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),
-           url('assets/fonts/nimbussanl-bolita-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'nimbus_sans_lbold_italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/nimbussanl-bolita-webfont.woff2') format('woff2'),
+			url('assets/fonts/nimbussanl-bolita-webfont.woff') format('woff');
+	}
 
-  @font-face {
-      font-family: 'nimbus_sans_lbold';
-      src: url('assets/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
-           url('assets/fonts/nimbussanl-bol-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'nimbus_sans_lbold';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/nimbussanl-bol-webfont.woff2') format('woff2'),
+			url('assets/fonts/nimbussanl-bol-webfont.woff') format('woff');
+	}
 
-  @font-face {
-      font-family: 'nimbus_sans_lregular_italic';
-      src: url('assets/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
-           url('assets/fonts/nimbussanl-regita-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'nimbus_sans_lregular_italic';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/nimbussanl-regita-webfont.woff2') format('woff2'),
+			url('assets/fonts/nimbussanl-regita-webfont.woff') format('woff');
+	}
 
-  @font-face {
-      font-family: 'nimbus_sans_lregular';
-      src: url('assets/fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
-           url('assets/fonts/nimbussanl-reg-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'nimbus_sans_lregular';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/nimbussanl-reg-webfont.woff2') format('woff2'),
+			url('assets/fonts/nimbussanl-reg-webfont.woff') format('woff');
+	}
 }

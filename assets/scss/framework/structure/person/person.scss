@@ -1,16 +1,16 @@
 @mixin person($avatar-width: $left) {
-  display: flex;
-  align-items: center;
+	align-items: center;
+	display: flex;
 
-  &__name {
-    order: 2;
-    margin: 0;
-    margin-left: $lem / 4;
-  }
+	&__name {
+		margin: 0;
+		margin-left: $lem / 4;
+		order: 2;
+	}
 
-  &__avatar,
-  .figure {
-    @include figure;
-    width: $avatar-width;
-  }
+	&__avatar,
+	.figure {
+		@include figure;
+		width: $avatar-width;
+	}
 }

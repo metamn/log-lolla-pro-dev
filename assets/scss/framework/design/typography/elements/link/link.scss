@@ -6,27 +6,27 @@
 // Styleguide link
 @mixin link($color-scheme: default, $type: underlined, $hover: linethrough) {
 
-  @if ($color-scheme != none) {
-    @include colors($color-scheme);
-  }
+	@if ($color-scheme != none) {
+		@include colors($color-scheme);
+	}
 
-  @if ($type == underlined) {
-    @include link--underlined;
-  }
+	@if ($type == underlined) {
+		@include link--underlined;
+	}
 
-  @if ($type == not-underlined) {
-    @include link--not-underlined;
-  }
+	@if ($type == not-underlined) {
+		@include link--not-underlined;
+	}
 
-  @if ($type == linethrough) {
-    @include link--linethrough;
-  }
+	@if ($type == linethrough) {
+		@include link--linethrough;
+	}
 
-  @if ($hover == underlined) {
-    @include link--hover--underlined;
-  }
+	@if ($hover == underlined) {
+		@include link--hover--underlined;
+	}
 
-  @if ($hover == linethrough) {
-    @include link--hover--linethrough;
-  }
+	@if ($hover == linethrough) {
+		@include link--hover--linethrough;
+	}
 }

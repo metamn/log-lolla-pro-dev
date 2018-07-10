@@ -1,8 +1,8 @@
 // Links inside articles
 @mixin a {
-  a,
-  .link {
-    @include link;
-    @include colors(default);
-  }
+	a,
+	.link {
+		@include link;
+		@include colors(default);
+	}
 }

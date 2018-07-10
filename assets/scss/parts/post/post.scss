@@ -1,90 +1,90 @@
 @mixin post {
-  .post-sticky {
-    @include post-sticky;
-  }
+	.post-sticky {
+		@include post-sticky;
+	}
 
-  .sticky {
-    // Needed by WP Theme check ...
-    @include colors(default);
-  }
+	.sticky {
+		// Needed by WP Theme check ...
+		@include colors(default);
+	}
 
-  .post-title {
-    @include post-title;
-  }
+	.post-title {
+		@include post-title;
+	}
 
-  .post-date {
-    @include post-date;
-  }
+	.post-date {
+		@include post-date;
+	}
 
-  .post-date-and-time {
-    @include post-date-and-time;
-  }
+	.post-date-and-time {
+		@include post-date-and-time;
+	}
 
-  .post-author {
-    @include post-author;
-  }
+	.post-author {
+		@include post-author;
+	}
 
-  .post-permalink {
-    @include post-permalink;
-  }
+	.post-permalink {
+		@include post-permalink;
+	}
 
-  .post-featured-image {
-    @include post-featured-image;
-  }
+	.post-featured-image {
+		@include post-featured-image;
+	}
 
-  .post-excerpt {
-    @include post-excerpt;
-  }
+	.post-excerpt {
+		@include post-excerpt;
+	}
 
-  .post-content {
-    @include post-content;
-  }
+	.post-content {
+		@include post-content;
+	}
 
-  .post-paginated-content {
-    @include post-paginated-content;
-  }
+	.post-paginated-content {
+		@include post-paginated-content;
+	}
 
-  &.post-format-link {
-    @include post-format-link;
-  }
+	&.post-format-link {
+		@include post-format-link;
+	}
 
-  &.post-format-image {
-    @include post-format-image;
-  }
+	&.post-format-image {
+		@include post-format-image;
+	}
 
-  &.post-format-gallery {
-    @include post-format-gallery;
-  }
+	&.post-format-gallery {
+		@include post-format-gallery;
+	}
 
-  &.post-format-audio {
-    @include post-format-audio;
-  }
+	&.post-format-audio {
+		@include post-format-audio;
+	}
 
-  &.post-format-video {
-    @include post-format-video;
-  }
+	&.post-format-video {
+		@include post-format-video;
+	}
 
-  &.post-format-aside {
-    @include post-format-aside;
-  }
+	&.post-format-aside {
+		@include post-format-aside;
+	}
 
-  &.post-format-status {
-    @include post-format-status;
-  }
+	&.post-format-status {
+		@include post-format-status;
+	}
 
-  &.post-format-quote {
-    @include post-format-quote;
-  }
+	&.post-format-quote {
+		@include post-format-quote;
+	}
 
-  &.post-format-chat {
-    @include post-format-chat;
-  }
+	&.post-format-chat {
+		@include post-format-chat;
+	}
 
-  &.post-format-standard {
-    @include post-format-standard;
-  }
+	&.post-format-standard {
+		@include post-format-standard;
+	}
 
-  &.post-format-comment {
-    @include post-format-comment;
-  }
+	&.post-format-comment {
+		@include post-format-comment;
+	}
 }

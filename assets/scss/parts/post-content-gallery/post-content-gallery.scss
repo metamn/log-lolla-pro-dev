@@ -4,22 +4,22 @@
 //
 // What we have to do here is to grid images from 1 to 9 columns with `gallery-columns-x` classes
 @mixin post-content-gallery {
-  @for $i from 1 through 9 {
-    &.gallery-columns-#{$i} {
-      @if ($i == 1) {
-        @include flexbox-grid(1, '0px', $lem, $grid-title: false, $iepx: 1px);
-      } @else {
-        @include flexbox-grid($i, $lem, $lem, $grid-title: false, $iepx: 1px);
-      }
-    }
-  }
+	@for $i from 1 through 9 {
+		&.gallery-columns-#{$i} {
+			@if ($i == 1) {
+				@include flexbox-grid(1, '0px', $lem, $grid-title: false, $iepx: 1px);
+			} @else {
+				@include flexbox-grid($i, $lem, $lem, $grid-title: false, $iepx: 1px);
+			}
+		}
+	}
 
-  figure {
-    @include figure;
-    @include figure--with-border;
+	figure {
+		@include figure;
+		@include figure--with-border;
 
-    .gallery-icon {
-      line-height: 0;
-    }
-  }
+		.gallery-icon {
+			line-height: 0;
+		}
+	}
 }

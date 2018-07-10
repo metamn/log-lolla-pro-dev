@@ -1,25 +1,25 @@
 @mixin shortcode {
-  &.shortcode-archives-by-date {
-    @include shortcode-archives-by-date;
-  }
+	&.shortcode-archives-by-date {
+		@include shortcode-archives-by-date;
+	}
 
-  &.shortcode-topics {
-    @include shortcode-topics;
-  }
+	&.shortcode-topics {
+		@include shortcode-topics;
+	}
 
-  &.shortcode-people {
-    @include shortcode-people;
-  }
+	&.shortcode-people {
+		@include shortcode-people;
+	}
 
-  &.shortcode-post-formats {
-    @include shortcode-post-formats;
-  }
+	&.shortcode-post-formats {
+		@include shortcode-post-formats;
+	}
 
-  &.shortcode-sources {
-    @include shortcode-sources;
-  }
+	&.shortcode-sources {
+		@include shortcode-sources;
+	}
 
-  &.shortcode-topics-summary {
-    @include shortcode-topics-summary;
-  }
+	&.shortcode-topics-summary {
+		@include shortcode-topics-summary;
+	}
 }

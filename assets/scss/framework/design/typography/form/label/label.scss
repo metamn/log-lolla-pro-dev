@@ -1,5 +1,5 @@
 @mixin label {
-  display: flex;
-  padding-top: $lem;
-  padding-bottom: $lem / 2;
+	display: flex;
+	padding-bottom: $lem / 2;
+	padding-top: $lem;
 }

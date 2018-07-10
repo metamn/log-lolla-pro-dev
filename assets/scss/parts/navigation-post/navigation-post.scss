@@ -1,13 +1,13 @@
 @mixin navigation-post {
-  .ul {
-    .li {
-      display: flex;
-      flex-wrap: nowrap;
-      align-items: center;
+	.ul {
+		.li {
+			align-items: center;
+			display: flex;
+			flex-wrap: nowrap;
 
-      + .li {
-        margin-top: $lem / 2;
-      }
-    }
-  }
+			+ .li {
+				margin-top: $lem / 2;
+			}
+		}
+	}
 }

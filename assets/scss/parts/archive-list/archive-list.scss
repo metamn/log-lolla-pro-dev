@@ -1,36 +1,36 @@
 @mixin archive-list {
-  .archive-list-title {
-    @include text-style(section-title-bordered);
-  }
+	.archive-list-title {
+		@include text-style(section-title-bordered);
+	}
 
 
-  &--terms,
-  &--topics {
-    @include width;
-    @include border(normal, all);
-    @include padding(yes, yes, half, yes);
+	&--terms,
+	&--topics {
+		@include width;
+		@include border(normal, all);
+		@include padding(yes, yes, half, yes);
 
-    .archive-list-body {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
+		.archive-list-body {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
 
-      .term {
-        @include button--with-border;
-        @include margin(no, half, half, no);
+			.term {
+				@include button--with-border;
+				@include margin(no, half, half, no);
 
-        .link {
-          @include link($type: not-underlined);
-        }
-      }
-    }
-  }
+				.link {
+					@include link($type: not-underlined);
+				}
+			}
+		}
+	}
 
-  .summary {
-    @include summary;
-  }
+	.summary {
+		@include summary;
+	}
 
-  +.archive-list {
-    @include margin(yes, no, no, no);
-  }
+	+.archive-list {
+		@include margin(yes, no, no, no);
+	}
 }

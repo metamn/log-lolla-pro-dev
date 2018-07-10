@@ -3,6 +3,6 @@
 // A simple button
 //
 @mixin button {
-  @include text-style(action);
-  @include cursor(pointer);
+	@include text-style(action);
+	@include cursor(pointer);
 }

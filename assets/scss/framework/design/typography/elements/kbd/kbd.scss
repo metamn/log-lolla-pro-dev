@@ -1,8 +1,8 @@
 @mixin kbd {
-  kbd,
-  .kbd,
-  tt,
-  .tt {
-    @include font(monospace);
-  }
+	kbd,
+	.kbd,
+	tt,
+	.tt {
+		@include font(monospace);
+	}
 }

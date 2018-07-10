@@ -1,42 +1,42 @@
 @mixin post-format-quote {
-  .post__content {
-    @include mobile-and-up {
-      @include post__content--display-vertical;
-    }
+	.post__content {
+		@include mobile-and-up {
+			@include post__content--display-vertical;
+		}
 
-    > * {
-      order: 2;
-    }
+		> * {
+			order: 2;
+		}
 
-    .post-content {
-      @include background-pattern($quote-pattern, $quote-pattern-color);
-      padding: 0;
-      order: 1;
+		.post-content {
+			@include background-pattern($quote-pattern, $quote-pattern-color);
+			order: 1;
+			padding: 0;
 
-      .text {
-        @include colors(default);
-        @include border(thin, all);
-        @include padding;
-        @include margin;
-        transform: translateX(-$left) skew(5deg);
+			@include mobile-and-up {
+				@include blockquote--large;
+			}
 
-        @include landscape {
-          padding: $top * 1.5 $left * 1.5;
-        }
+			.text {
+				@include colors(default);
+				@include border(thin, all);
+				@include padding;
+				@include margin;
+				transform: translateX(-$left) skew(5deg);
 
-        blockquote,
-        q {
-          @include blockquote--naked;
-        }
-      }
+				@include landscape {
+					padding: $top * 1.5 $left * 1.5;
+				}
 
-      @include mobile-and-up {
-        @include blockquote--large;
-      }
-    }
+				blockquote,
+				q {
+					@include blockquote--naked;
+				}
+			}
+		}
 
-    .post-permalink {
-      align-self: center;
-    }
-  }
+		.post-permalink {
+			align-self: center;
+		}
+	}
 }

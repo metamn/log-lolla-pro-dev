@@ -4,13 +4,13 @@
 //
 // Styleguide link-hover
 @mixin link--hover($color-scheme: none) {
-  @if ($color-scheme != none) {
-    @include transition(color);
+	@if ($color-scheme != none) {
+		@include transition(color);
 
-    &:hover,
-    &:focus,
-    &:active {
-      @include colors($color-scheme);
-    }
-  }
+		&:hover,
+		&:focus,
+		&:active {
+			@include colors($color-scheme);
+		}
+	}
 }

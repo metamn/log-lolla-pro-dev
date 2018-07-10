@@ -1,16 +1,16 @@
 @mixin footer {
-  @include width;
-  @include padding(yes, no, yes, no);
+	@include width;
+	@include padding(yes, no, yes, no);
 
-  .footer-copyright {
-    @include footer-copyright;
-  }
+	.footer-copyright {
+		@include footer-copyright;
+	}
 
-  .footer-navigation {
-    @include footer-navigation;
-  }
+	.footer-navigation {
+		@include footer-navigation;
+	}
 
-  .footer-credits {
-    @include footer-credits;
-  }
+	.footer-credits {
+		@include footer-credits;
+	}
 }

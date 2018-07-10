@@ -5,15 +5,15 @@
 // 
 //
 @mixin border($type: normal, $position: bottom) {
-  @if ($type == normal) {
-    @include border--normal($position);
-  }
+	@if ($type == normal) {
+		@include border--normal($position);
+	}
 
-  @if ($type == thin) {
-    @include border--thin($position);
-  }
+	@if ($type == thin) {
+		@include border--thin($position);
+	}
 
-  @if ($type == thick) {
-    @include border--thick($position);
-  }
+	@if ($type == thick) {
+		@include border--thick($position);
+	}
 }

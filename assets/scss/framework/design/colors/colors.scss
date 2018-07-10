@@ -14,24 +14,24 @@
 //
 @mixin colors($name: default) {
 
-  @if ($name == 'default') {
-    color: $text-color;
-    background-color: $background-color;
-  }
+	@if ($name == 'default') {
+		background-color: $background-color;
+		color: $text-color;
+	}
 
-  @if ($name == 'text-color-on-transparent') {
-    color: $text-color;
-    background-color: transparent;
-  }
+	@if ($name == 'text-color-on-transparent') {
+		background-color: transparent;
+		color: $text-color;
+	}
 
-  @if ($name == 'background-color-on-transparent') {
-    color: $background-color;
-    background-color: transparent;
-  }
+	@if ($name == 'background-color-on-transparent') {
+		background-color: transparent;
+		color: $background-color;
+	}
 
-  @if ($name == 'inverted') {
-    color: $background-color;
-    background-color: $text-color;
-  }
+	@if ($name == 'inverted') {
+		background-color: $text-color;
+		color: $background-color;
+	}
 
 }

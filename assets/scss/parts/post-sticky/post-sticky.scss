@@ -1,9 +1,9 @@
 @mixin post-sticky {
-  display: flex;
+	display: flex;
 
-  .text {
-    @include text-style(sticky);
-    width: $lem * 3;
-    padding: $lem / 4 0 $lem / 4 $lem / 2;
-  }
+	.text {
+		@include text-style(sticky);
+		padding: $lem / 4 0 $lem / 4 $lem / 2;
+		width: $lem * 3;
+	}
 }

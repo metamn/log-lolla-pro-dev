@@ -1,19 +1,19 @@
 @mixin post--archive {
-  @include post__grid--display-horizontal;
-  justify-content: space-between;
+	@include post__grid--display-horizontal;
 
-  @include padding;
-  @include border(normal, all);
+	@include padding;
+	@include border(normal, all);
+	justify-content: space-between;
 
-  .post-title {
-    @include margin(no, no, no, no);
+	.post-title {
+		@include margin(no, no, no, no);
 
-    + .post-date {
-      @include margin(no, no, no, yes);
-    }
-  }
+		+ .post-date {
+			@include margin(no, no, no, yes);
+		}
+	}
 
-  + .post {
-    @include margin(yes, no, no, no);
-  }
+	+ .post {
+		@include margin(yes, no, no, no);
+	}
 }

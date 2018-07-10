@@ -1,18 +1,18 @@
 @mixin post__content {
-  @include border(normal, all);
+	@include border(normal, all);
 
-  // On small screens all posts will be displayed vertically
-  // On bigger screens the display will be decided by the post format
-  @include mobile {
-    @include post__content--display-vertical;
-  }
+	// On small screens all posts will be displayed vertically
+	// On bigger screens the display will be decided by the post format
+	@include mobile {
+		@include post__content--display-vertical;
+	}
 
-  .post-title,
-  .post-meta,
-  .post-excerpt,
-  .post-content,
-  .post-paginated-content,
-  .post-footer {
-    @include padding;
-  }
+	.post-title,
+	.post-meta,
+	.post-excerpt,
+	.post-content,
+	.post-paginated-content,
+	.post-footer {
+		@include padding;
+	}
 }

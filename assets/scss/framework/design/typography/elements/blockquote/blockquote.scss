@@ -1,13 +1,13 @@
 @mixin blockquote {
-  blockquote,
-  .blockquote {
-    @include border(normal, left);
-    @include padding;
-  }
+	blockquote,
+	.blockquote {
+		@include border(normal, left);
+		@include padding;
+	}
 
-  q,
-  .q {
-    @include border(normal, left);
-    @include padding(no, yes, no, yes);
-  }
+	q,
+	.q {
+		@include border(normal, left);
+		@include padding(no, yes, no, yes);
+	}
 }

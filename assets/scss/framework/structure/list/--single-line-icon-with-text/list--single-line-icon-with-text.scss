@@ -1,28 +1,26 @@
 @mixin list--single-line-icon-with-text($icon-position: left, $selector: '.icon', $margin: $lem) {
-  display: flex;
-  align-items: center;
+	align-items: center;
+	display: flex;
 
-  @if ($icon-position == right) {
-    justify-content: flex-end;
+	@if ($icon-position == right) {
+		justify-content: flex-end;
 
-    #{$selector} {
-      order: 2;
-      margin-left: $margin;
-      margin-right: 0;
-    }
+		#{$selector} {
+			margin-left: $margin;
+			margin-right: 0;
+			order: 2;
+		}
 
-  } @elseif ($icon-position == left) {
+	} @elseif ($icon-position == left) {
+		#{$selector} {
+			margin-left: 0;
+			margin-right: $margin;
+		}
 
-    #{$selector} {
-      margin-right: $margin;
-      margin-left: 0;
-    }
+	} @elseif ($icon-position == hidden) {
+		#{$selector} {
+			display: none;
+		}
 
-  } @elseif ($icon-position == hidden) {
-
-    #{$selector} {
-      display: none;
-    }
-
-  }
+	}
 }

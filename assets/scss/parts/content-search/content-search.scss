@@ -1,21 +1,21 @@
 @mixin content-search {
-  .search-title {
-    margin-bottom: $lem;
+	.search-title {
+		margin-bottom: $lem;
 
-    span {
-      @include font(bold);
-    }
-  }
+		span {
+			@include font(bold);
+		}
+	}
 
-  .post {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	.post {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
 
-    .post-title,
-    .post-permalink,
-    .post-date {
-      padding: $lem;
-    }
-  }
+		.post-title,
+		.post-permalink,
+		.post-date {
+			padding: $lem;
+		}
+	}
 }

@@ -1,35 +1,35 @@
 @mixin comments {
-  @include margin(yes, no, no, no);
+	@include margin(yes, no, no, no);
 
-  .comments-title {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+	.comments-title {
 
-    @include margin(yes, no, no, no);
+		@include margin(yes, no, no, no);
+		align-items: baseline;
+		display: flex;
+		justify-content: space-between;
 
-    .number-of-comments {
-      @include text-style(section-title);
-    }
+		.number-of-comments {
+			@include text-style(section-title);
+		}
 
-    .arrows {
-      display: flex;
+		.arrows {
+			display: flex;
 
-      .arrow-with-triangle {
-        @include arrow-with-triangle;
-      }
-    }
-  }
+			.arrow-with-triangle {
+				@include arrow-with-triangle;
+			}
+		}
+	}
 
-  .comments-body {
-    @include margin(yes, no, no, no);
+	.comments-body {
+		@include margin(yes, no, no, no);
 
-    .comment {
-      @include comment;
+		.comment {
+			@include comment;
 
-      + .comment {
-        @include margin(yes, no, no, no);
-      }
-    }
-  }
+			+ .comment {
+				@include margin(yes, no, no, no);
+			}
+		}
+	}
 }

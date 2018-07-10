@@ -1,12 +1,12 @@
 @mixin post-paginated-content {
-  @include width;
+	@include width;
 
-  .text {
-    display: flex;
-    flex-wrap: wrap;
+	.text {
+		display: flex;
+		flex-wrap: wrap;
 
-    .page-links-title {
-      margin-right: $lem / 2;
-    }
-  }
+		.page-links-title {
+			margin-right: $lem / 2;
+		}
+	}
 }

@@ -1,14 +1,14 @@
 @mixin ul--horizontal($margin: $lem) {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
 
-  .li {
-    margin-right: $margin;
-    margin-bottom: $margin;
+	.li {
+		margin-bottom: $margin;
+		margin-right: $margin;
 
-    + .li {
-      margin-left: 0;
-    }
-  }
+		+ .li {
+			margin-left: 0;
+		}
+	}
 }

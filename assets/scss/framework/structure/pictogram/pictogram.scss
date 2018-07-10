@@ -1,23 +1,23 @@
 @mixin pictogram($width: $lem * 6, $centered: false) {
-  width: $width;
+	width: $width;
 
-  &__text {
-    @include pictogram__text;
-  }
+	&__text {
+		@include pictogram__text;
+	}
 
-  &__icon {
-    @include pictogram__icon($width / 3);
-  }
+	&__icon {
+		@include pictogram__icon($width / 3);
+	}
 
-  &__number {
-    @include pictogram__number($width);
-  }
+	&__number {
+		@include pictogram__number($width);
+	}
 
-  &--activable {
-    @include pictogram--activable;
-  }
+	&--activable {
+		@include pictogram--activable;
+	}
 
-  &--inactivable {
-    @include pictogram--inactivable;
-  }
+	&--inactivable {
+		@include pictogram--inactivable;
+	}
 }

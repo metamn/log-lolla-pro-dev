@@ -1,18 +1,18 @@
 @mixin post-excerpt {
-  .text {
-    // to clear floats for an <img> inside
-    // - https://www.quirksmode.org/css/clearing.html
-    width: 100%;
-    overflow: hidden;
+	.text {
+		overflow: hidden;
+		// to clear floats for an <img> inside
+		// - https://www.quirksmode.org/css/clearing.html
+		width: 100%;
 
-    // margin for the Continue reading link
-    p + p {
-      @include margin(yes, no, no, no);
-    }
+		// margin for the Continue reading link
+		p + p {
+			@include margin(yes, no, no, no);
+		}
 
-    .more-link {
-      @include post-read-more;
-	  @include margin(yes, no, no, no);
-    }
-  }
+		.more-link {
+			@include post-read-more;
+			@include margin(yes, no, no, no);
+		}
+	}
 }

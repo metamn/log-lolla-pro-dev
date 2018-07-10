@@ -3,19 +3,19 @@
 // The corresponding template is `home.php`
 //
 html {
-  body {
-    &.home {
-      .header {
-        .header-image {
-          @include header-image--full-sized;
-        }
-      }
+	body {
+		&.home {
+			.header {
+				.header-image {
+					@include header-image--full-sized;
+				}
+			}
 
-      .footer {
-        .footer-navigation {
-          @include footer-navigation--hide-current-item;
-        }
-      }
-    }
-  }
+			.footer {
+				.footer-navigation {
+					@include footer-navigation--hide-current-item;
+				}
+			}
+		}
+	}
 }

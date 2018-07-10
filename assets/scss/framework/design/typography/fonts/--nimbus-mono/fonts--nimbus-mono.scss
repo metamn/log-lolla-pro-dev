@@ -7,16 +7,16 @@
 
 
 $font-family-nimbus-mono: (
-  regular: ('nimbus_monoregular',"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace)
+	regular: ('nimbus_monoregular','Courier New',Courier,'Lucida Sans Typewriter','Lucida Typewriter',monospace)
 );
 
 
 @mixin fonts--nimbus-mono {
-  @font-face {
-      font-family: 'nimbus_monoregular';
-      src: url('assets/fonts/nimbusmono-regular-webfont.woff2') format('woff2'),
-           url('assets/fonts/nimbusmono-regular-webfont.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-  }
+	@font-face {
+		font-family: 'nimbus_monoregular';
+		font-style: normal;
+		font-weight: normal;
+		src: url('assets/fonts/nimbusmono-regular-webfont.woff2') format('woff2'),
+			url('assets/fonts/nimbusmono-regular-webfont.woff') format('woff');
+	}
 }

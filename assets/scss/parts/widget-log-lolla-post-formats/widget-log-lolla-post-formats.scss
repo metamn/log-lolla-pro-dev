@@ -1,7 +1,7 @@
 @mixin widget-log-lolla-post-formats {
-  @include widget-log-lolla;
+	@include widget-log-lolla;
 
-  .widget-body {
-    @include archives-post-formats;
-  }
+	.widget-body {
+		@include archives-post-formats;
+	}
 }

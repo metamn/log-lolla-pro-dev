@@ -1,4 +1,4 @@
 @mixin button--with-border {
-  @include border(normal, all);
-  padding: $button-padding;
+	@include border(normal, all);
+	padding: $button-padding;
 }

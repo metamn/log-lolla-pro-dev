@@ -1,42 +1,42 @@
 @mixin post-format-standard {
-  @include post-format-standard__grid;
+	@include post-format-standard__grid;
 
-  .post__content {
-    @if ($post-format-standard-background-color and $post-format-standard-text-color) {
-      @include set-colors($post-format-standard-background-color, $post-format-standard-text-color);
-    }
-  }
+	.post__content {
+		@if ($post-format-standard-background-color and $post-format-standard-text-color) {
+			@include set-colors($post-format-standard-background-color, $post-format-standard-text-color);
+		}
+	}
 
-  .post-featured-image {
-    @include mobile {
-      @include border(normal, top);
-      @include border(normal, bottom);
-    }
-  }
+	.post-featured-image {
+		@include mobile {
+			@include border(normal, top);
+			@include border(normal, bottom);
+		}
+	}
 
-  &.display-horizontal.has-thumbnail {
-    .post-featured-image {
-      @include mobile-and-up {
-        margin: $top $left-mobile;
+	&.display-horizontal.has-thumbnail {
+		.post-featured-image {
+			@include mobile-and-up {
+				margin: $top $left-mobile;
 
-        figure {
-          @include figure--with-border;
-          padding: $lem;;
-        }
-      }
-    }
-  }
+				figure {
+					@include figure--with-border;
+					padding: $lem;;
+				}
+			}
+		}
+	}
 
-  &.display-vertical.has-thumbnail {
-    .post-featured-image {
-      @include mobile-and-up {
-        @include margin;
+	&.display-vertical.has-thumbnail {
+		.post-featured-image {
+			@include mobile-and-up {
+				@include margin;
 
-        figure {
-          @include figure--with-border;
-          @include padding;
-        }
-      }
-    }
-  }
+				figure {
+					@include figure--with-border;
+					@include padding;
+				}
+			}
+		}
+	}
 }

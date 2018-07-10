@@ -1,24 +1,24 @@
 // Settings for the content section on the single post page
 //
 @mixin content-single {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 
-  > * {
-    width: 100%;
-  }
+	> * {
+		width: 100%;
+	}
 
-  .post {
-    @include post;
-    @include post--single;
-  }
+	.post {
+		@include post;
+		@include post--single;
+	}
 
-  .post-footer {
-    @include post-footer;
-  }
+	.post-footer {
+		@include post-footer;
+	}
 
-  .comments {
-    @include comments;
-  }
+	.comments {
+		@include comments;
+	}
 }

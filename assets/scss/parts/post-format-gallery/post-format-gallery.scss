@@ -1,19 +1,19 @@
 @mixin post-format-gallery {
-  .post__content {
-    @include mobile-and-up {
-      @include post__content--display-vertical;
-    }
+	.post__content {
+		@include mobile-and-up {
+			@include post__content--display-vertical;
+		}
 
-    .post-gallery {
-      @include padding;
+		.post-gallery {
+			@include padding;
 
-      .gallery {
-        @include post-content-gallery;
+			.gallery {
+				@include post-content-gallery;
 
-        figure {
-          @include figure--without-figcaption;
-        }
-      }
-    }
-  }
+				figure {
+					@include figure--without-figcaption;
+				}
+			}
+		}
+	}
 }

@@ -2,21 +2,21 @@
 //
 //
 @mixin all__grid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 
-  // Making blockquotes do not overflow
-  overflow-x: hidden;
+	// Making blockquotes do not overflow
+	overflow-x: hidden;
+	width: 100%;
 
-  // Making header, content to have a fixed with
-  > * {
-    @include width;
-  }
+	// Making header, content to have a fixed with
+	> * {
+		@include width;
+	}
 
-  // Sidebar is an exception, it is always full width
-  .sidebar {
-    @include width--full;
-  }
+	// Sidebar is an exception, it is always full width
+	.sidebar {
+		@include width--full;
+	}
 }

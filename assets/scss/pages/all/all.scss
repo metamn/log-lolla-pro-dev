@@ -6,67 +6,68 @@
 @include html-css-reset;
 
 html {
-  @include grid-reset;
+	@include grid-reset;
 
-  body {
-    @include typography-reset;
-    @include form-reset;
-    @include form;
-    @include text-style(default);
+	body {
+		@include typography-reset;
+		@include form-reset;
+		@include form;
+		@include text-style(default);
 
-    @include all__grid;
-
-    .header {
-      @include header;
-    }
-
-    .header-menu {
-      @include header-menu;
-    }
-
-    .content {
-      @include content;
-    }
-
-    .sidebar {
-      @include sidebar;
-    }
-
-    .footer {
-      @include footer;
-    }
-
-    .footer-navigation {
-      @include footer-navigation--highlight-current-item;
-    }
-
-    .widget {
-      @include widget;
-    }
-
-    .shortcode {
-      @include shortcode;
-    }
-
-    .breadcrumb {
-      @include breadcrumb;
-    }
+		@include all__grid;
 
 
-    @include cursor;
-    a {
-      @include cursor(pointer);
-    }
+		@include cursor;
+
+		.header {
+			@include header;
+		}
+
+		.header-menu {
+			@include header-menu;
+		}
+
+		.content {
+			@include content;
+		}
+
+		.sidebar {
+			@include sidebar;
+		}
+
+		.footer {
+			@include footer;
+		}
+
+		.footer-navigation {
+			@include footer-navigation--highlight-current-item;
+		}
+
+		.widget {
+			@include widget;
+		}
+
+		.shortcode {
+			@include shortcode;
+		}
+
+		.breadcrumb {
+			@include breadcrumb;
+		}
+
+		a {
+			@include cursor(pointer);
+		}
 
 
-    // Common classes
-    .hidden {
-      display: none;
-    }
+		// Common classes
+		.hidden {
+			display: none;
+		}
 
-    // Wordpress specific
-    .screen-reader-text {
-      display: none;
-    }
-  }
+		// Wordpress specific
+		.screen-reader-text {
+			display: none;
+		}
+	}
 }

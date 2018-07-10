@@ -1,31 +1,31 @@
 @mixin header__grid {
-  display: flex;
 
-  @include padding(yes, no, yes, no);
+	@include padding(yes, no, yes, no);
+	display: flex;
 
-  &.without-header-menu {
-    flex-direction: column;
-  }
+	&.without-header-menu {
+		flex-direction: column;
+	}
 
-  &.with-header-menu {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; // to align hamburger icon
+	&.with-header-menu {
+		align-items: center; // to align hamburger icon
+		flex-wrap: wrap;
+		justify-content: space-between;
 
-    .header-title,
-    .header-subtitle,
-    .header-logo {
-      width: 90%;
-    }
+		.header-title,
+		.header-subtitle,
+		.header-logo {
+			width: 90%;
+		}
 
-    .menu-hamburger {
-      width: 10%;
-      display: flex;
-      justify-content: flex-end;
-    }
+		.menu-hamburger {
+			display: flex;
+			justify-content: flex-end;
+			width: 10%;
+		}
 
-    &.without-logo.without-header-text {
-      justify-content: flex-end;
-    }
-  }
+		&.without-logo.without-header-text {
+			justify-content: flex-end;
+		}
+	}
 }

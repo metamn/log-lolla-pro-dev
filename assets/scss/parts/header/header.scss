@@ -1,24 +1,25 @@
 @mixin header {
-  .header-logo {
-    @include header-logo;
-  }
 
-  .header-image {
-    @include header-image;
-    @include header-image--half-sized;
-  }
+	@include header__grid;
 
-  .header-title {
-    @include header-title;
-  }
+	.header-logo {
+		@include header-logo;
+	}
 
-  .header-subtitle {
-    @include header-subtitle;
-  }
+	.header-image {
+		@include header-image;
+		@include header-image--half-sized;
+	}
 
-  .menu-hamburger {
-    @include menu-hamburger;
-  }
+	.header-title {
+		@include header-title;
+	}
 
-  @include header__grid;
+	.header-subtitle {
+		@include header-subtitle;
+	}
+
+	.menu-hamburger {
+		@include menu-hamburger;
+	}
 }

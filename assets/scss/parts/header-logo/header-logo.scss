@@ -1,13 +1,17 @@
 @mixin header-logo {
-  figure {
-    img {
-      width: auto;
-      height: auto;
-      max-height: $top * 2;
-    }
-  }
+	figure {
+		img {
+			height: auto;
+			max-height: $top * 2;
+			width: auto;
+		}
+	}
 
-  + .header-title {
-    @include margin(half, no, no, no);
-  }
+	+ .header-title {
+		@include margin(half, no, no, no);
+	}
+
+	.test {
+		margin: 0;
+	}
 }

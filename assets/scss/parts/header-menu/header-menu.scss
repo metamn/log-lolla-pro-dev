@@ -1,14 +1,14 @@
 @mixin header-menu {
-  @include colors(default);
-  @include border(normal, all);
+	@include colors(default);
+	@include border(normal, all);
 
-  // Active state
-  display: flex;
+	@include header-menu__grid;
 
-  // Inactive state
-  &--closed {
-    display: none;
-  }
+	// Active state
+	display: flex;
 
-  @include header-menu__grid;
+	// Inactive state
+	&--closed {
+		display: none;
+	}
 }

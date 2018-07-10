@@ -1,24 +1,24 @@
 @mixin table {
-  table,
-  .table {
-    border-collapse: collapse;
+	table,
+	.table {
+		border-collapse: collapse;
 
-    .th,
-    th,
-    .td,
-    td {
-      @include border(normal, bottom);
-      @include padding(no, half, half, no);
-      text-align: left;
-    }
+		.th,
+		th,
+		.td,
+		td {
+			@include border(normal, bottom);
+			@include padding(no, half, half, no);
+			text-align: left;
+		}
 
-    .th,
-    th {
-      @include font(bold);
+		.th,
+		th {
+			@include font(bold);
 
-      > * {
-        @include font(bold);
-      }
-    }
-  }
+			> * {
+				@include font(bold);
+			}
+		}
+	}
 }

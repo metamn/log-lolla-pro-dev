@@ -1,38 +1,38 @@
 @mixin post-content {
-  .text {
-    @include text-style(body-text-post);
-    @include margin(no, no, no, no); // the bottom margin is provided by the `body-text-post`
+	.text {
+		@include text-style(body-text-post);
+		@include margin(no, no, no, no); // the bottom margin is provided by the `body-text-post`
+		overflow: hidden;
 
-    // to clear floats for an <img> inside
-    // - https://www.quirksmode.org/css/clearing.html
-    width: 100%;
-    overflow: hidden;
+		// to clear floats for an <img> inside
+		// - https://www.quirksmode.org/css/clearing.html
+		width: 100%;
 
-    // Gallery support
-    .gallery {
-      @include post-content-gallery;
-    }
+		// Gallery support
+		.gallery {
+			@include post-content-gallery;
+		}
 
-    // More link
-    .more-link {
-      @include post-read-more;
-	  @include margin(yes, no, no, no);
-    }
+		// More link
+		.more-link {
+			@include post-read-more;
+			@include margin(yes, no, no, no);
+		}
 
-    // Styling attachments post formats
-    // - we simply can't do it elsewhere  like in a `post-format-attachment` ...
-    .attachment {
-      img {
-        @include border(normal, all);
-        @include padding;
-      }
-    }
+		// Styling attachments post formats
+		// - we simply can't do it elsewhere  like in a `post-format-attachment` ...
+		.attachment {
+			img {
+				@include border(normal, all);
+				@include padding;
+			}
+		}
 
 
-    // Remove top padding on embedded content
-    // - https://github.com/metamn/log-lolla-dev/issues/11
-    .wp-embedded-content + p {
-      margin-top: 0;
-    }
-  }
+		// Remove top padding on embedded content
+		// - https://github.com/metamn/log-lolla-dev/issues/11
+		.wp-embedded-content + p {
+			margin-top: 0;
+		}
+	}
 }

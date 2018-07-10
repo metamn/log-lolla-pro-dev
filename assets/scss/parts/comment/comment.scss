@@ -1,15 +1,15 @@
 @mixin comment {
-  .comment-content {
-    @include padding;
-    @include border(normal, all);
+	.comment-content {
+		@include padding;
+		@include border(normal, all);
 
-    .text {
-      @include text-style(body-text-post);
-    }
-  }
+		.text {
+			@include text-style(body-text-post);
+		}
+	}
 
-  .comment-permalink {
-    display: flex;
-    justify-content: center;
-  }
+	.comment-permalink {
+		display: flex;
+		justify-content: center;
+	}
 }

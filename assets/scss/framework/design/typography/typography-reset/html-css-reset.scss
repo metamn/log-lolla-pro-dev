@@ -4,6 +4,6 @@
 //
 // Styleguide html-css-reset
 @mixin html-css-reset {
-  @include normalize;
-  @include flexbox-bugfix;
+	@include normalize;
+	@include flexbox-bugfix;
 }

@@ -1,25 +1,25 @@
 @mixin archive-counters {
-  @include padding(half, no, no, no);
-  @include border(normal, top);
+	@include padding(half, no, no, no);
+	@include border(normal, top);
 
-  .archive-counter {
-    display: flex;
-    align-items: center;
+	@include archive-counters__grid;
 
-    .pictogram {
-      @include pictogram;
-      @include pictogram--vertical;
+	.archive-counter {
+		align-items: center;
+		display: flex;
 
-      &__number {
-        @include pictogram__number--large;
-      }
-    }
+		.pictogram {
+			@include pictogram;
+			@include pictogram--vertical;
 
-    .arrow-with-triangle {
-      @include arrow-with-triangle;
-      @include text-style(small);
-    }
-  }
+			&__number {
+				@include pictogram__number--large;
+			}
+		}
 
-  @include archive-counters__grid;
+		.arrow-with-triangle {
+			@include arrow-with-triangle;
+			@include text-style(small);
+		}
+	}
 }

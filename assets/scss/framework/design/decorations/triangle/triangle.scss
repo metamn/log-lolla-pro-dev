@@ -8,40 +8,40 @@
 //
 // Styleguide triangle
 @mixin triangle($direction: right, $size: $lem / 2, $color: $text-color) {
-  width: 0;
-  height: 0;
-  border-style: solid;
+	border-style: solid;
+	height: 0;
+	width: 0;
 
-  @if ($direction == right) {
-    @include triangle--right($size, $color);
-  }
+	@if ($direction == right) {
+		@include triangle--right($size, $color);
+	}
 
-  @if ($direction == left) {
-    @include triangle--left($size, $color);
-  }
+	@if ($direction == left) {
+		@include triangle--left($size, $color);
+	}
 
-  @if ($direction == top) {
-    @include triangle--top($size, $color);
-  }
+	@if ($direction == top) {
+		@include triangle--top($size, $color);
+	}
 
-  @if ($direction == bottom) {
-    @include triangle--bottom($size, $color);
-  }
+	@if ($direction == bottom) {
+		@include triangle--bottom($size, $color);
+	}
 
 
-  &--right {
-    @include triangle--right($size, $color);
-  }
+	&--right {
+		@include triangle--right($size, $color);
+	}
 
-  &--left {
-    @include triangle--left($size, $color);
-  }
+	&--left {
+		@include triangle--left($size, $color);
+	}
 
-  &--top {
-    @include triangle--top($size, $color);
-  }
+	&--top {
+		@include triangle--top($size, $color);
+	}
 
-  &--bottom {
-    @include triangle--bottom($size, $color);
-  }
+	&--bottom {
+		@include triangle--bottom($size, $color);
+	}
 }

@@ -4,23 +4,23 @@
 // - https://stackoverflow.com/questions/33476762/reset-remove-all-styles-for-input-select-and-button-across-all-browsers-includi
 // 
 @mixin form-reset {
-  button,
-  input,
-  optgroup,
-  select,
-  textarea,
-  input[type="button"],
-  input[type="reset"],
-  input[type="submit"],
-  input[type="checkbox"],
-  input[type="radio"],
-  input[type="number"],
-  input[type="search"],
-  input[type="url"] {
-    @include font(default);
-    @include colors(default);
-    border: none;
-    border-radius: 0;
-    -webkit-appearance: none;
-  }
+	button,
+	input,
+	optgroup,
+	select,
+	textarea,
+	input[type='button'],
+	input[type='reset'],
+	input[type='submit'],
+	input[type='checkbox'],
+	input[type='radio'],
+	input[type='number'],
+	input[type='search'],
+	input[type='url'] {
+		@include font(default);
+		@include colors(default);
+		-webkit-appearance: none;
+		border: none;
+		border-radius: 0;
+	}
 }

@@ -1,20 +1,20 @@
 // - https://css-tricks.com/numbering-in-style/
 @mixin ol--custom-counter {
-  ol,
-  .ol {
-    counter-reset: li;
+	ol,
+	.ol {
+		counter-reset: li;
 
-    > li,
-    > .li {
-      list-style: none;
-      display: flex;
-      @include margin(no, no, half, no);
+		> li,
+		> .li {
+			@include margin(no, no, half, no);
+			display: flex;
+			list-style: none;
 
-      &:before {
-        content: counter(li);
-        counter-increment: li;
-        @include margin(no, yes, no, no);
-      }
-    }
-  }
+			&::before {
+				@include margin(no, yes, no, no);
+				content: counter(li);
+				counter-increment: li;
+			}
+		}
+	}
 }
