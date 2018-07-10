@@ -24735,7 +24735,7 @@ html {
         will-change: text-decoration; }
         html body .footer .footer-copyright .link:hover, html body .footer .footer-copyright .link:active {
           text-decoration: line-through; }
-      html body .footer .footer-navigation ul {
+      html body .footer .footer-navigation .menu {
         list-style: none;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -24744,65 +24744,87 @@ html {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column; }
-        html body .footer .footer-navigation ul li > ul,
-        html body .footer .footer-navigation ul li > .ul,
-        html body .footer .footer-navigation ul li > ol,
-        html body .footer .footer-navigation ul li > .ol,
-        html body .footer .footer-navigation ul .li > ul,
-        html body .footer .footer-navigation ul .li > .ul,
-        html body .footer .footer-navigation ul .li > ol,
-        html body .footer .footer-navigation ul .li > .ol {
+        html body .footer .footer-navigation .menu li > ul,
+        html body .footer .footer-navigation .menu li > .ul,
+        html body .footer .footer-navigation .menu li > ol,
+        html body .footer .footer-navigation .menu li > .ol,
+        html body .footer .footer-navigation .menu .li > ul,
+        html body .footer .footer-navigation .menu .li > .ul,
+        html body .footer .footer-navigation .menu .li > ol,
+        html body .footer .footer-navigation .menu .li > .ol {
           margin-top: 0; }
           @media only screen and (max-width: 767.9px) {
-            html body .footer .footer-navigation ul li > ul,
-            html body .footer .footer-navigation ul li > .ul,
-            html body .footer .footer-navigation ul li > ol,
-            html body .footer .footer-navigation ul li > .ol,
-            html body .footer .footer-navigation ul .li > ul,
-            html body .footer .footer-navigation ul .li > .ul,
-            html body .footer .footer-navigation ul .li > ol,
-            html body .footer .footer-navigation ul .li > .ol {
+            html body .footer .footer-navigation .menu li > ul,
+            html body .footer .footer-navigation .menu li > .ul,
+            html body .footer .footer-navigation .menu li > ol,
+            html body .footer .footer-navigation .menu li > .ol,
+            html body .footer .footer-navigation .menu .li > ul,
+            html body .footer .footer-navigation .menu .li > .ul,
+            html body .footer .footer-navigation .menu .li > ol,
+            html body .footer .footer-navigation .menu .li > .ol {
               padding-left: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .footer .footer-navigation ul li > ul,
-            html body .footer .footer-navigation ul li > .ul,
-            html body .footer .footer-navigation ul li > ol,
-            html body .footer .footer-navigation ul li > .ol,
-            html body .footer .footer-navigation ul .li > ul,
-            html body .footer .footer-navigation ul .li > .ul,
-            html body .footer .footer-navigation ul .li > ol,
-            html body .footer .footer-navigation ul .li > .ol {
+            html body .footer .footer-navigation .menu li > ul,
+            html body .footer .footer-navigation .menu li > .ul,
+            html body .footer .footer-navigation .menu li > ol,
+            html body .footer .footer-navigation .menu li > .ol,
+            html body .footer .footer-navigation .menu .li > ul,
+            html body .footer .footer-navigation .menu .li > .ul,
+            html body .footer .footer-navigation .menu .li > ol,
+            html body .footer .footer-navigation .menu .li > .ol {
               padding-left: 2.5em; } }
-        html body .footer .footer-navigation ul .li,
-        html body .footer .footer-navigation ul li {
+        html body .footer .footer-navigation .menu .li,
+        html body .footer .footer-navigation .menu li {
           border-bottom: 1px solid;
           margin-bottom: 0.625em;
           padding-bottom: 0.625em; }
-        html body .footer .footer-navigation ul li a {
+        html body .footer .footer-navigation .menu li a {
           background-color: white;
           color: black;
           text-decoration: none;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .footer .footer-navigation ul li a:hover, html body .footer .footer-navigation ul li a:active {
+          html body .footer .footer-navigation .menu li a:hover, html body .footer .footer-navigation .menu li a:active {
             text-decoration: line-through; }
-        html body .footer .footer-navigation ul li.page_item_has_children {
+        html body .footer .footer-navigation .menu li.page_item_has_children {
           border-bottom: none;
           padding-bottom: 0; }
-          html body .footer .footer-navigation ul li.page_item_has_children a + ul {
+          html body .footer .footer-navigation .menu li.page_item_has_children a + ul {
             border-top: 1px solid;
             margin-top: 0.625em;
             padding-top: 0.625em; }
-      html body .footer .footer-credits {
-        margin-top: 1.25em; }
-        html body .footer .footer-credits .link {
-          background-color: white;
-          color: black;
-          text-decoration: underline;
-          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-          will-change: text-decoration; }
-          html body .footer .footer-credits .link:hover, html body .footer .footer-credits .link:active {
-            text-decoration: line-through; }
+      @media only screen and (max-width: 767.9px) {
+        html body .footer .footer-credits {
+          margin-top: 1.25em; } }
+      @media only screen and (min-width: 768px) {
+        html body .footer .footer-credits {
+          margin-top: 1.25em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .footer .footer-credits {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .footer .footer-credits {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .footer .footer-credits {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .footer .footer-credits {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .footer .footer-credits {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .footer .footer-credits {
+          margin-right: 0; } }
+      html body .footer .footer-credits .link {
+        background-color: white;
+        color: black;
+        text-decoration: underline;
+        transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+        will-change: text-decoration; }
+        html body .footer .footer-credits .link:hover, html body .footer .footer-credits .link:active {
+          text-decoration: line-through; }
     html body .footer-navigation ul li.current-menu-item a {
       text-decoration: line-through; }
     html body .widget {
