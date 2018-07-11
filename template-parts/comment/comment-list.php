@@ -23,8 +23,8 @@ if ( ! $number_of_comments ) {
 
 <section class="comments" id="comments-for-post-<?php echo esc_attr( get_the_ID( $post ) ); ?>">
 	<?php
-	set_query_var( 'number_of_comments', $number_of_comments );
-	get_template_part( 'template-parts/comment/parts/comment', 'list-title' );
+		set_query_var( 'number_of_comments', $number_of_comments );
+		get_template_part( 'template-parts/comment/parts/comment', 'list-title' );
 	?>
 
 	<div class="comments-body">

@@ -8,8 +8,8 @@
  */
 
 $format     = log_lolla_pro_get_post_format_link_to_archive_as_html();
-$categories = get_the_category_list( esc_html_x( ' ', 'list item separator', 'log-lolla-pro' ) );
-$tags       = get_the_tag_list( '', esc_html_x( ' ', 'list item separator', 'log-lolla-pro' ) );
+$categories = get_the_term_list( $post->ID, 'category', '<div class="topic">', '</div><div class="topic">', '</div>' );
+$tags       = get_the_term_list( $post->ID, 'post_tag', '<div class="topic">', '</div><div class="topic">', '</div>' );
 
-$all = $format . ' ' . $categories . ' ' . $tags;
-echo wp_kses_post( str_replace( '.', '', $all ) );
+$all = '<div class="topic">' . $format . '</div>' . $categories . $tags;
+echo wp_kses_post( $all );

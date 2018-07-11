@@ -214,7 +214,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_h
 	 * @param  string $url   The link to the title of the post list.
 	 * @return string        HTML
 	 */
-	function log_lolla_pro_get_post_format_list_with_post_count_as_html( $title = '', $url = '') {
+	function log_lolla_pro_get_post_format_list_with_post_count_as_html( $title = '', $url = '' ) {
 		$post_formats = log_lolla_pro_get_post_format_list_with_post_count();
 
 		if ( empty( $post_formats ) ) {
@@ -232,7 +232,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_h
 
 		ob_start();
 
-		set_query_var( 'topic-list-klass', 'topic-list--post-fromats' );
+		set_query_var( 'topic-list-klass', 'topic-list--post-formats' );
 		set_query_var( 'topic-list-title', $title );
 		set_query_var( 'topic-list-items', $items );
 		get_template_part( 'template-parts/topic/topic-list', '' );
