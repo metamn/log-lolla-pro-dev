@@ -87,11 +87,13 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular_as_html' 
 			$html .= ob_get_clean();
 		}
 
-		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+		$title  = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+		$object = get_post_type_object( $post_type );
+		$label  = log_lolla_pro_convert_string_to_classname( $object->labels->name );
 
 		ob_start();
 
-		set_query_var( 'topic-list-klass', 'topic-list--' . $post_type );
+		set_query_var( 'topic-list-klass', 'topic-list--' . $label );
 		set_query_var( 'topic-list-title', $title );
 		set_query_var( 'topic-list-items', $html );
 		get_template_part( 'template-parts/topic/topic-list', '' );

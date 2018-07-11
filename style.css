@@ -24677,32 +24677,96 @@ html {
         html body .sidebar {
           margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .widget {
+        html body .sidebar > * {
           margin-right: 0; } }
-      html body .sidebar .widget {
+      html body .sidebar > * {
         max-width: 37.5em;
         width: 100%; }
+      html body .sidebar .post-list,
+      html body .sidebar .topic-list {
+        background-color: white;
+        color: black;
+        border: 1px solid; }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .post-list,
+          html body .sidebar .topic-list {
+            padding-right: 2.5em; } }
+        html body .sidebar .post-list a,
+        html body .sidebar .post-list .link,
+        html body .sidebar .topic-list a,
+        html body .sidebar .topic-list .link {
+          background-color: white;
+          color: black;
+          text-decoration: underline;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: text-decoration; }
+          html body .sidebar .post-list a:hover, html body .sidebar .post-list a:active,
+          html body .sidebar .post-list .link:hover,
+          html body .sidebar .post-list .link:active,
+          html body .sidebar .topic-list a:hover,
+          html body .sidebar .topic-list a:active,
+          html body .sidebar .topic-list .link:hover,
+          html body .sidebar .topic-list .link:active {
+            text-decoration: line-through; }
+        html body .sidebar .post-list.widget_tag_cloud .tagcloud a,
+        html body .sidebar .topic-list.widget_tag_cloud .tagcloud a {
+          font-size: 1em !important; }
+        html body .sidebar .post-list.widget_calendar .calendar_wrap,
+        html body .sidebar .topic-list.widget_calendar .calendar_wrap {
+          overflow-x: auto; }
+        html body .sidebar .post-list.widget_media_audio .mejs-horizontal-volume-slider,
+        html body .sidebar .topic-list.widget_media_audio .mejs-horizontal-volume-slider {
+          background-color: black;
+          color: white; }
     html body .footer {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -24900,530 +24964,6 @@ html {
       html body .widget.widget_media_audio .mejs-horizontal-volume-slider {
         background-color: black;
         color: white; }
-      html body .widget.widget_log_lolla_archives_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_archives_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-bottom: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-bottom: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-right: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-right: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-top: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-top: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months {
-            margin-left: 0; } }
-        html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .year,
-        html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .month {
-          min-width: 2.5em; }
-        html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-orient: horizontal;
-          -webkit-box-direction: normal;
-              -ms-flex-direction: row;
-                  flex-direction: row;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          border: 1px solid;
-          padding: 0.3125em; }
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > * {
-            box-sizing: border-box;
-            margin-bottom: 0;
-            margin-right: 0; }
-          html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > * {
-            width: calc(16.66667% - (((6 - 1) * 0) / 6) - 1px); }
-            html body .widget.widget_log_lolla_archives_widget .widget-body .year-and-months .months > *:nth-child(6n) {
-              margin-right: 0; }
-      html body .widget.widget_log_lolla_topics_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_topics_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_topics_widget .widget-body .categories,
-      html body .widget.widget_log_lolla_topics_widget .widget-body .tags {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-right: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category,
-            html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag {
-              margin-left: 0; } }
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category-sparklines,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-sparklines,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category-sparklines,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-sparklines {
-          margin-left: 0.20833em; }
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .category-count,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .categories .tag-count,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .category-count,
-        html body .widget.widget_log_lolla_topics_widget .widget-body .tags .tag-count {
-          margin-left: 0.625em; }
-      html body .widget.widget_log_lolla_people_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_people_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_people_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_people_widget .widget-body {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        html body .widget.widget_log_lolla_people_widget .widget-body .people {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-          html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
-            @media only screen and (max-width: 767.9px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-bottom: 2.5em; } }
-            @media only screen and (min-width: 768px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-bottom: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-right: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-right: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-top: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-top: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count {
-                margin-left: 0; } }
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person {
-              -webkit-box-align: center;
-                  -ms-flex-align: center;
-                      align-items: center;
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex; }
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__name {
-                margin: 0;
-                margin-left: 0.3125em;
-                -webkit-box-ordinal-group: 3;
-                    -ms-flex-order: 2;
-                        order: 2; }
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar,
-              html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                    -ms-flex-direction: column;
-                        flex-direction: column;
-                width: 100%;
-                width: 2.5em; }
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar img,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure img {
-                  display: block;
-                  height: auto;
-                  max-width: 100%;
-                  width: auto; }
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar figcaption,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person__avatar .wp-caption-text,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure figcaption,
-                html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .person .figure .wp-caption-text {
-                  background-color: white;
-                  color: black;
-                  font-size: 0.8em;
-                  line-height: 1.5;
-                  display: inline-block; }
-            html body .widget.widget_log_lolla_people_widget .widget-body .people .person-with-count .post-count {
-              margin-left: 0.3125em; }
-      html body .widget.widget_log_lolla_post_formats_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_post_formats_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_post_formats_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-right: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format {
-              margin-left: 0; } }
-          html body .widget.widget_log_lolla_post_formats_widget .widget-body .post-formats .post-format .post-count {
-            margin-left: 0.3125em; }
-      html body .widget.widget_log_lolla_sources_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_sources_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_sources_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_sources_widget .widget-body .sources {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-right: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count {
-              margin-left: 0; } }
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source {
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__name {
-              margin: 0;
-              margin-left: 0.3125em;
-              -webkit-box-ordinal-group: 3;
-                  -ms-flex-order: 2;
-                      order: 2; }
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar,
-            html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure {
-              display: -webkit-box;
-              display: -ms-flexbox;
-              display: flex;
-              -webkit-box-orient: vertical;
-              -webkit-box-direction: normal;
-                  -ms-flex-direction: column;
-                      flex-direction: column;
-              width: 100%;
-              width: 2.5em; }
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar img,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure img {
-                display: block;
-                height: auto;
-                max-width: 100%;
-                width: auto; }
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar figcaption,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source__avatar .wp-caption-text,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure figcaption,
-              html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .source .figure .wp-caption-text {
-                background-color: white;
-                color: black;
-                font-size: 0.8em;
-                line-height: 1.5;
-                display: inline-block; }
-          html body .widget.widget_log_lolla_sources_widget .widget-body .sources .source-with-count .post-count {
-            margin-left: 0.3125em;
-            -webkit-box-ordinal-group: 3;
-                -ms-flex-order: 2;
-                    order: 2; }
-      html body .widget.widget_log_lolla_topics_summary_widget .widget-title {
-        border: 1px solid; }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .widget.widget_log_lolla_topics_summary_widget .widget-title + .widget-body {
-            margin-right: 0; } }
-      html body .widget.widget_log_lolla_topics_summary_widget .widget-body {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-      html body .widget.widget_log_lolla_topics_summary_widget .widget-body .text p {
-        display: inline; }
     html body .shortcode.shortcode-archives-by-date .shortcode-body .year-and-months {
       -webkit-box-align: center;
           -ms-flex-align: center;
@@ -25804,6 +25344,532 @@ html {
       will-change: all; }
       html body a:hover {
         cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
+    html body .post-list--summaries {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .post-list--summaries > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .post-list--summaries > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .post-list--summaries > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .post-list--summaries > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .post-list--summaries > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .post-list--summaries > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .post-list--summaries > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .post-list--summaries > * {
+          margin-right: 0; } }
+      html body .post-list--summaries .post-list-posts {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .post-list--summaries .post-list-posts .post {
+            margin-right: 0; } }
+    html body .topic-list--topics-with-sparklines {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--topics-with-sparklines > * {
+          margin-right: 0; } }
+      html body .topic-list--topics-with-sparklines .topic-list-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+              margin-left: 0; } }
+        html body .topic-list--topics-with-sparklines .topic-list-body .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-left: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--topics-with-sparklines .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+    html body .topic-list--post-formats {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--post-formats > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--post-formats > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--post-formats > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--post-formats > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--post-formats > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--post-formats > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--post-formats > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--post-formats > * {
+          margin-right: 0; } }
+      html body .topic-list--post-formats .topic-list-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .topic-list--post-formats .topic-list-body .list-item {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item {
+              margin-left: 0; } }
+        html body .topic-list--post-formats .topic-list-body .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-left: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+    html body .topic-list--people {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--people > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--people > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--people > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--people > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--people > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--people > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--people > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--people > * {
+          margin-right: 0; } }
+      html body .topic-list--people .topic-list-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .topic-list--people .topic-list-body .list-item {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item {
+              margin-left: 0; } }
+        html body .topic-list--people .topic-list-body .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: flex; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-left: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--people .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          html body .topic-list--people .topic-list-body .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar figcaption,
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .figcaption,
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .wp-caption-text,
+            html body .topic-list--people .topic-list-body .list-item .list-item-avatar figcaption {
+              display: none; }
+    html body .topic-list--sources {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--sources > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--sources > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--sources > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--sources > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--sources > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--sources > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--sources > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--sources > * {
+          margin-right: 0; } }
+      html body .topic-list--sources .topic-list-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .topic-list--sources .topic-list-body .list-item {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item {
+              margin-left: 0; } }
+        html body .topic-list--sources .topic-list-body .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          display: flex; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-left: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--sources .topic-list-body .list-item > * + * {
+              margin-right: 0; } }
+          html body .topic-list--sources .topic-list-body .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar figcaption,
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .figcaption,
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .wp-caption-text,
+            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar figcaption {
+              display: none; }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

@@ -1,0 +1,11 @@
+@mixin topic-list--topics-with-sparklines {
+	@include list--vertical('> *');
+
+	.topic-list-body {
+		@include list--horizontal('.list-item');
+
+		.list-item {
+			@include list-item--horizontal;
+		}
+	}
+}

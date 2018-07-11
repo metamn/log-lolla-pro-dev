@@ -1,0 +1,17 @@
+@mixin topic-list {
+	&--topics-with-sparklines {
+		@include topic-list--topics-with-sparklines;
+	}
+
+	&--post-formats {
+		@include topic-list--post-formats;
+	}
+
+	&--people {
+		@include topic-list--people;
+	}
+
+	&--sources {
+		@include topic-list--sources;
+	}
+}

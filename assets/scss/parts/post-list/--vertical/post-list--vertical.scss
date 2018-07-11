@@ -1,0 +1,3 @@
+@mixin post-list--vertical($item) {
+	@include list--vertical($item);
+}

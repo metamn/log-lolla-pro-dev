@@ -2,12 +2,16 @@
 	@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
+	@include post-list--vertical('> *');
+	@include post-list--centered;
 
-	@include list--vertical('.widget');
-	align-items: center;
-
-	.widget {
+	> * {
 		max-width: $text-block-width;
 		width: 100%;
+	}
+
+	.post-list,
+	.topic-list {
+		@include widget;
 	}
 }

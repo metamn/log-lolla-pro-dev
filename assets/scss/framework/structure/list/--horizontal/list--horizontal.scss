@@ -1,0 +1,11 @@
+@mixin list--horizontal($item) {
+	display: flex;
+	flex-wrap: wrap;
+
+	#{$item} {
+		@include margin(no, yes, yes, no);
+		align-items: flex-start;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

@@ -24,6 +24,7 @@ class Log_Lolla_Pro_Topics_Summary_Widget extends WP_Widget {
 				'description'          => __( 'Display a short summary based on main topics', 'log_lolla_pro' ),
 				'number_of_categories' => esc_html__( 'Number of categories to use', 'log_lolla_pro' ),
 				'number_of_tags'       => esc_html__( 'Number of tags to use', 'log_lolla_pro' ),
+				'classname'            => 'widget-log-lolla-pro widget-log-lolla-pro--topics-summary',
 			)
 		);
 	}

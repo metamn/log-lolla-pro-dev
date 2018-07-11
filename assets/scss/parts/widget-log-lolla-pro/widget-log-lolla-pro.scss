@@ -1,9 +1,14 @@
-@mixin widget-log-lolla-pro {
+@mixin widget-log-lolla {
 	.widget-title {
-		font-weight: bold;
-
+		@include border(normal, all);
+    
 		+ .widget-body {
 			@include margin(yes, no, no, no);
 		}
+	}
+
+	.widget-body {
+		display: flex;
+		flex-wrap: wrap;
 	}
 }

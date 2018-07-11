@@ -2,9 +2,8 @@
 //
 @mixin content-home {
 	@include width--full;
-	@include list--vertical('.post');
-
-	align-items: center;
+	@include post-list--vertical('.post');
+	@include post-list--centered;
 
 	.post {
 		@include post;

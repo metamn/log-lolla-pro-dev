@@ -19,28 +19,4 @@
 	&.widget_media_audio {
 		@include widget-audio;
 	}
-
-	&.widget_log_lolla_archives_widget {
-		@include widget-log-lolla-archives;
-	}
-
-	&.widget_log_lolla_topics_widget {
-		@include widget-log-lolla-topics;
-	}
-
-	&.widget_log_lolla_people_widget {
-		@include widget-log-lolla-people;
-	}
-
-	&.widget_log_lolla_post_formats_widget {
-		@include widget-log-lolla-post-formats;
-	}
-
-	&.widget_log_lolla_sources_widget {
-		@include widget-log-lolla-sources;
-	}
-
-	&.widget_log_lolla_topics_summary_widget {
-		@include widget-log-lolla-topics-summary;
-	}
 }

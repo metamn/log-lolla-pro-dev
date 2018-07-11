@@ -58,6 +58,14 @@ html {
 			@include cursor(pointer);
 		}
 
+		.post-list {
+			@include post-list;
+		}
+
+		.topic-list {
+			@include topic-list;
+		}
+
 
 		// Common classes
 		.hidden {
