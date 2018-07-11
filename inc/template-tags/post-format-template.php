@@ -210,20 +210,34 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_h
 	/**
 	 * Returns the whole list of Post formats with post count, as HTML
 	 *
-	 * @return string HTML
+	 * @param  string $title The title of the post list.
+	 * @param  string $url   The link to the title of the post list.
+	 * @return string        HTML
 	 */
-	function log_lolla_pro_get_post_format_list_with_post_count_as_html() {
+	function log_lolla_pro_get_post_format_list_with_post_count_as_html( $title = '', $url = '') {
 		$post_formats = log_lolla_pro_get_post_format_list_with_post_count();
 
 		if ( empty( $post_formats ) ) {
 			return;
 		}
 
-		$html = '';
+		$items = '';
 
 		foreach ( $post_formats as $post_format ) {
-			$html .= log_lolla_pro_get_post_format_with_post_count_as_html( $post_format );
+			$items .= log_lolla_pro_get_post_format_with_post_count_as_html( $post_format );
 		}
+
+		$title = log_lolla_pro_get_list_title( $title, $url, 'List of post formats' );
+		$html  = '';
+
+		ob_start();
+
+		set_query_var( 'topic-list-klass', 'topic-list--post-fromats' );
+		set_query_var( 'topic-list-title', $title );
+		set_query_var( 'topic-list-items', $items );
+		get_template_part( 'template-parts/topic/topic-list', '' );
+
+		$html .= ob_get_clean();
 
 		return $html;
 	}

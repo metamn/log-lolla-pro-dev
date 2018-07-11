@@ -235,26 +235,27 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' 
 	 * Returns a list of summaries as HTML.
 	 *
 	 * @param  string $number_of_summaries The number of summaries to get.
+	 * @param  string $title               The title of the post list.
+	 * @param  string $url                 The link to the title of the post list.
 	 * @return string                      HTML
 	 */
-	function log_lolla_pro_get_post_type_summary_post_list_as_html( $number_of_summaries ) {
+	function log_lolla_pro_get_post_type_summary_post_list_as_html( $number_of_summaries, $title = '', $url = '' ) {
 		$summaries = log_lolla_pro_get_post_type_summary_post_list( $number_of_summaries );
 
 		if ( empty( $summaries ) ) {
 			return;
 		}
 
-		$html = '';
+		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+		$html  = '';
 
-		global $post;
 		ob_start();
 
-		foreach ( $summaries as $post ) {
-			setup_postdata( $post );
-			get_template_part( 'template-parts/post/post-format', 'summary' );
-		}
+		set_query_var( 'post-list-klass', 'post-list--summaries' );
+		set_query_var( 'post-list-title', $title );
+		set_query_var( 'post-list-posts', $summaries );
+		get_template_part( 'template-parts/post/post-list', '' );
 
-		wp_reset_postdata();
 		$html .= ob_get_clean();
 
 		return $html;

@@ -184,9 +184,11 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 	 * @param  integer $sparklines           Number of sparklines. See @link https://github.com/aftertheflood/sparks.
 	 * @param  integer $number_of_categories How many categories to show.
 	 * @param  integer $number_of_tags       How many tags to show.
+	 * @param  string  $title               The title of the post list.
+	 * @param  string  $url                 The link to the title of the post list.
 	 * @return string                        HTML.
 	 */
-	function log_lolla_pro_get_topic_list_with_sparklines_as_html( $sparklines = 10, $number_of_categories = 0, $number_of_tags = 0 ) {
+	function log_lolla_pro_get_topic_list_with_sparklines_as_html( $sparklines = 10, $number_of_categories = 0, $number_of_tags = 0, $title = '', $url = '' ) {
 		// Get most popular categories.
 		if ( '0' === $number_of_categories ) {
 			$categories = [];
@@ -216,15 +218,27 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 			return;
 		}
 
-		$html = '';
+		$items = '';
 
 		foreach ( $categories as $category ) {
-			$html .= log_lolla_pro_get_topic_with_sparklines_as_html( 'category', $category, $sparkline_dates );
+			$items .= log_lolla_pro_get_topic_with_sparklines_as_html( 'category', $category, $sparkline_dates );
 		}
 
 		foreach ( $tags as $tag ) {
-			$html .= log_lolla_pro_get_topic_with_sparklines_as_html( 'tag', $tag, $sparkline_dates );
+			$items .= log_lolla_pro_get_topic_with_sparklines_as_html( 'tag', $tag, $sparkline_dates );
 		}
+
+		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+		$html  = '';
+
+		ob_start();
+
+		set_query_var( 'topic-list-klass', 'topic-list--with-sparklines' );
+		set_query_var( 'topic-list-title', $title );
+		set_query_var( 'topic-list-items', $items );
+		get_template_part( 'template-parts/topic/topic-list', '' );
+
+		$html .= ob_get_clean();
 
 		return $html;
 	}

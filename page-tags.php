@@ -23,9 +23,9 @@ get_header();
 	<h3 class="hidden">Tags archive</h3>
 
 	<?php
-	set_query_var( 'topic_list_klass', 'topic-list--tags' );
-	set_query_var( 'topic_list_title', '' );
-	set_query_var( 'topic_list_items', log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ) );
+	set_query_var( 'topic-list-klass', 'topic-list--tags' );
+	set_query_var( 'topic-list-title', '' );
+	set_query_var( 'topic-list-items', log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ) );
 	get_template_part( 'template-parts/topic/topic', 'list' );
 
 	get_template_part( 'template-parts/topic/topic', 'header' );

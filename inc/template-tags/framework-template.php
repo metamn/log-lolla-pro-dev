@@ -166,6 +166,39 @@ if ( ! function_exists( 'log_lolla_pro_get_link_html' ) ) {
 	}
 }
 
+if ( ! function_exists( 'log_lolla_pro_get_list_title' ) ) {
+	/**
+	 * Returns a list title.
+	 *
+	 * @param  string $title   The list title.
+	 * @param  string $url     The list url.
+	 * @param  string $default The default list title, when there is no title.
+	 * @return string          A title either or not wrapped inside a link.
+	 */
+	function log_lolla_pro_get_list_title( $title, $url, $default ) {
+		if ( empty( $title ) ) {
+			return $default;
+		}
+
+		if ( empty( $url ) ) {
+			return $title;
+		}
+
+		$html = '';
+
+		ob_start();
+
+		set_query_var( 'link-url', $url );
+		set_query_var( 'link-title', $title );
+		set_query_var( 'link-content', $title );
+		get_template_part( 'template-parts/framework/design/typography/elements/link/link', '' );
+
+		$html .= ob_get_clean();
+
+		return $html;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_image_url_not_found' ) ) {
 	/**
 	 * Returns the image name / url to display when an image is not found

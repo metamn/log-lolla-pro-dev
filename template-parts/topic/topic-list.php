@@ -5,9 +5,9 @@
  * @package Log_Lolla_Pro
  */
 
-$topic_list_klass = get_query_var( 'topic_list_klass' );
-$topic_list_title = get_query_var( 'topic_list_title' );
-$topic_list_items = get_query_var( 'topic_list_items' );
+$topic_list_klass = get_query_var( 'topic-list-klass' );
+$topic_list_title = get_query_var( 'topic-list-title' );
+$topic_list_items = get_query_var( 'topic-list-items' );
 
 if ( $topic_list_items ) {
 	?>

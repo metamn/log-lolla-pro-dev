@@ -35,22 +35,15 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title   = apply_filters( 'widget_title', esc_html__( 'Topics' ) );
-		$url     = log_lolla_pro_get_link( 'Topics' );
-		$content = log_lolla_pro_get_topic_list_with_sparklines_as_html(
-			10,
-			$instance['number_of_categories'],
-			$instance['number_of_tags']
+		echo wp_kses_post(
+			log_lolla_pro_get_topic_list_with_sparklines_as_html(
+				10,
+				$instance['number_of_categories'],
+				$instance['number_of_tags'],
+				apply_filters( 'widget_title', esc_html__( 'Topics' ) ),
+				log_lolla_pro_get_link( 'Topics' )
+			)
 		);
-
-		if ( ! empty( $content ) ) {
-			printf(
-				'%1$s%2$s%3$s',
-				wp_kses_post( $args['before_widget'] ),
-				wp_kses_post( log_lolla_pro_display_widget( $title, $content, $url ) ),
-				wp_kses_post( $args['after_widget'] )
-			);
-		}
 	}
 
 	/**
