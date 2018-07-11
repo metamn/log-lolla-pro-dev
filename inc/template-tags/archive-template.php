@@ -38,9 +38,11 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_ht
 	/**
 	 * Returns a list of a year and months archive.
 	 *
-	 * @return string HTML
+	 * @param  string $title The title of the post list.
+	 * @param  string $url   The link to the title of the post list.
+	 * @return string        HTML
 	 */
-	function log_lolla_pro_get_archive_list_by_year_and_months_as_html() {
+	function log_lolla_pro_get_archive_list_by_year_and_months_as_html( $title = '', $url = '' ) {
 		$archives = log_lolla_pro_get_archive_list_by_year_and_months();
 
 		$dates = log_lolla_pro_group_archive_list_by_year_and_months( $archives );
@@ -59,6 +61,17 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_ht
 		}
 
 		$html .= ob_get_clean();
+
+		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+
+		ob_start();
+
+		set_query_var( 'topic-list-klass', 'topic-list--archives-by-date' );
+		set_query_var( 'topic-list-title', $title );
+		set_query_var( 'topic-list-items', $html );
+		get_template_part( 'template-parts/topic/topic-list', '' );
+
+		$html = ob_get_clean();
 
 		return $html;
 	}

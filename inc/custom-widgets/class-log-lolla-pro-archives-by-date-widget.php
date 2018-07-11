@@ -33,18 +33,12 @@ class Log_Lolla_Pro_Archives_By_Date_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title   = apply_filters( 'widget_title', esc_html__( 'Archives by date' ) );
-		$content = log_lolla_pro_get_archive_list_by_year_and_months_as_html();
-		$url     = log_lolla_pro_get_link( 'Archives by date' );
-
-		if ( ! empty( $content ) ) {
-			printf(
-				'%1$s%2$s%3$s',
-				wp_kses_post( $args['before_widget'] ),
-				wp_kses_post( log_lolla_pro_display_widget( $title, $content, $url ) ),
-				wp_kses_post( $args['after_widget'] )
-			);
-		}
+		echo wp_kses_post(
+			log_lolla_pro_get_archive_list_by_year_and_months_as_html(
+				apply_filters( 'widget_title', esc_html__( 'Archives by date' ) ),
+				log_lolla_pro_get_link( 'Archives by date' )
+			)
+		);
 	}
 
 	/**

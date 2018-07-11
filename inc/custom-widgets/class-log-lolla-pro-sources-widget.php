@@ -34,22 +34,15 @@ class Log_Lolla_Pro_Sources_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title   = apply_filters( 'widget_title', esc_html__( 'Sources' ) );
-		$url     = log_lolla_pro_get_link( 'Sources' );
-		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
-			'source',
-			$instance['number_of_sources'],
-			'post count'
+		echo wp_kses_post(
+			log_lolla_pro_get_post_type_post_list_popular_as_html(
+				'source',
+				$instance['number_of_sources'],
+				'post count',
+				apply_filters( 'widget_title', esc_html__( 'Sources' ) ),
+				log_lolla_pro_get_link( 'Sources' )
+			)
 		);
-
-		if ( ! empty( $content ) ) {
-			printf(
-				'%1$s%2$s%3$s',
-				wp_kses_post( $args['before_widget'] ),
-				wp_kses_post( log_lolla_pro_display_widget( $title, $content, $url ) ),
-				wp_kses_post( $args['after_widget'] )
-			);
-		}
 	}
 
 	/**

@@ -50,9 +50,11 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular_as_html' 
 	 * @param  string  $post_type        The custom post type.
 	 * @param  integer $number_of_items  How many posts to display.
 	 * @param  string  $metadata         The metadata type, like `post count`, `sparkline`.
+	 * @param  string  $title            The title of the post list.
+	 * @param  string  $url              The link to the title of the post list.
 	 * @return string                    HTML
 	 */
-	function log_lolla_pro_get_post_type_post_list_popular_as_html( $post_type, $number_of_items, $metadata = '' ) {
+	function log_lolla_pro_get_post_type_post_list_popular_as_html( $post_type, $number_of_items, $metadata = '', $title = '', $url = '' ) {
 		$items = log_lolla_pro_get_post_type_post_list_popular( $post_type, $number_of_items, $metadata );
 
 		if ( empty( $items ) ) {
@@ -84,6 +86,17 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular_as_html' 
 
 			$html .= ob_get_clean();
 		}
+
+		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
+
+		ob_start();
+
+		set_query_var( 'topic-list-klass', 'topic-list--' . $post_type );
+		set_query_var( 'topic-list-title', $title );
+		set_query_var( 'topic-list-items', $html );
+		get_template_part( 'template-parts/topic/topic-list', '' );
+
+		$html = ob_get_clean();
 
 		return $html;
 	}
