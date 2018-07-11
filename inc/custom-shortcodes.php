@@ -57,11 +57,13 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'Summaries', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'Summaries' );
-		$content = log_lolla_pro_get_post_type_summary_post_list_as_html( $attrs['summaries'] );
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
+		return wp_kses_post(
+			log_lolla_pro_get_post_type_summary_post_list_as_html(
+				$attrs['summaries'],
+				esc_html__( 'Summaries', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'Summaries' )
+			)
+		);
 	}
 
 	add_shortcode( 'log-lolla-pro-summaries', 'log_lolla_pro_create_custom_shortcode_summaries' );
@@ -83,11 +85,12 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_post_formats' ) )
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'Post formats', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'Post Formats' );
-		$content = log_lolla_pro_get_post_format_list_with_post_count_as_html();
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
+		return wp_kses_post(
+			log_lolla_pro_get_post_format_list_with_post_count_as_html(
+				esc_html__( 'Post formats', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'Post Formats' )
+			)
+		);
 	}
 
 	add_shortcode( 'log-lolla-pro-post-formats', 'log_lolla_pro_create_custom_shortcode_post_formats' );
@@ -111,14 +114,15 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'Sources', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'Sources' );
-		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
-			'source',
-			$attrs['sources']
+		return wp_kses_post(
+			log_lolla_pro_get_post_type_post_list_popular_as_html(
+				'source',
+				$attrs['sources'],
+				'post count',
+				esc_html__( 'Sources', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'Sources' )
+			)
 		);
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
 	}
 
 	add_shortcode( 'log-lolla-pro-sources', 'log_lolla_pro_create_custom_shortcode_sources' );
@@ -171,14 +175,15 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'People', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'People' );
-		$content = log_lolla_pro_get_post_type_post_list_popular_as_html(
-			'people',
-			$attrs['people']
+		return wp_kses_post(
+			log_lolla_pro_get_post_type_post_list_popular_as_html(
+				'people',
+				$attrs['people'],
+				'post count',
+				esc_html__( 'People', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'People' )
+			)
 		);
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
 	}
 
 	add_shortcode( 'log-lolla-pro-people', 'log_lolla_pro_create_custom_shortcode_people' );
@@ -203,15 +208,15 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'Topics', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'Topics' );
-		$content = log_lolla_pro_get_topic_list_with_sparklines_as_html(
-			10,
-			$attr['categories'],
-			$attrs['tags']
+		return wp_kses_post(
+			log_lolla_pro_get_topic_list_with_sparklines_as_html(
+				10,
+				$attr['categories'],
+				$attrs['tags'],
+				esc_html__( 'Topics', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'Topics' )
+			)
 		);
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
 	}
 
 	add_shortcode( 'log-lolla-pro-topics', 'log_lolla_pro_create_custom_shortcode_topics' );
@@ -233,11 +238,12 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives_by_date'
 		// Parse attributes.
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
-		$title   = esc_html__( 'Archives by date', 'log-lolla-pro' );
-		$url     = log_lolla_pro_get_link( 'Archives by date' );
-		$content = log_lolla_pro_get_archive_list_by_year_and_months_as_html();
-
-		return log_lolla_pro_display_shortcode( $title, $content, $url );
+		return wp_kses_post(
+			log_lolla_pro_get_archive_list_by_year_and_months_as_html(
+				esc_html__( 'Archives by date', 'log-lolla-pro' ),
+				log_lolla_pro_get_link( 'Archives by date' )
+			)
+		);
 	}
 
 	add_shortcode( 'log-lolla-pro-archives-by-date', 'log_lolla_pro_create_custom_shortcode_archives_by_date' );
