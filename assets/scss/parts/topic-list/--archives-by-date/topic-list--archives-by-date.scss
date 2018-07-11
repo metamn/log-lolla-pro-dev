@@ -1,0 +1,22 @@
+@mixin topic-list--archives-by-date($padding: half) {
+	@include list--vertical('> *');
+
+	.topic-list-body {
+		@include list--horizontal('.year-and-months');
+
+		.year-and-months {
+			align-items: center;
+
+			.year,
+			.month {
+				min-width: $lem * 2; // Do not break 2018 into 210 and 8
+			}
+
+			.months {
+				@include flexbox-grid(6, 0, 0, $grid-title:false, $iepx: 1px);
+				@include border(normal, all);
+				@include padding($padding, $padding, $padding, $padding);
+			}
+		}
+	}
+}

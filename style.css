@@ -25870,6 +25870,128 @@ html {
             html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .wp-caption-text,
             html body .topic-list--sources .topic-list-body .list-item .list-item-avatar figcaption {
               display: none; }
+    html body .topic-list--archives-by-date {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--archives-by-date > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--archives-by-date > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--archives-by-date > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--archives-by-date > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--archives-by-date > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--archives-by-date > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .topic-list--archives-by-date > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .topic-list--archives-by-date > * {
+          margin-right: 0; } }
+      html body .topic-list--archives-by-date .topic-list-body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-right: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-right: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+              margin-left: 0; } }
+        html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          html body .topic-list--archives-by-date .topic-list-body .year-and-months .year,
+          html body .topic-list--archives-by-date .topic-list-body .year-and-months .month {
+            min-width: 2.5em; }
+          html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            border: 1px solid; }
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months .months > * {
+              box-sizing: border-box;
+              margin-bottom: 0;
+              margin-right: 0; }
+            html body .topic-list--archives-by-date .topic-list-body .year-and-months .months > * {
+              width: calc(16.66667% - (((6 - 1) * 0) / 6) - 1px); }
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months > *:nth-child(6n) {
+                margin-right: 0; }
+            @media only screen and (max-width: 767.9px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-top: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-left: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-left: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+                padding-right: 1.25em; } }
     html body .hidden {
       display: none; }
     html body .screen-reader-text {

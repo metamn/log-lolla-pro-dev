@@ -14,4 +14,8 @@
 	&--sources {
 		@include topic-list--sources;
 	}
+
+	&--archives-by-date {
+		@include topic-list--archives-by-date;
+	}
 }
