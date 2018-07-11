@@ -20,7 +20,7 @@ get_header();
 	<h3 class="hidden">Archive for People</h3>
 
 	<?php
-		set_query_var( 'post-list-klass', 'archive-people' );
+		set_query_var( 'post-list-klass', 'post-list--posts' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>
 

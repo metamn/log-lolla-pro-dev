@@ -1,0 +1,9 @@
+@mixin widget-log-lolla-pro {
+	.widget-title {
+		font-weight: bold;
+
+		+ .widget-body {
+			@include margin(yes, no, no, no);
+		}
+	}
+}

@@ -20,7 +20,7 @@ get_header();
 	<h3 class="hidden">Archive for Summaries</h3>
 
 	<?php
-		set_query_var( 'post-list-klass', 'archive-summaries' );
+		set_query_var( 'post-list-klass', 'post-list--posts' );
 		set_query_var( 'post-list-post-format', 'summary' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>

@@ -23,12 +23,12 @@ get_header();
 	<h3 class="hidden">Topics archive</h3>
 
 	<?php
-	set_query_var( 'topic_list_klass', 'categories' );
+	set_query_var( 'topic_list_klass', 'topic-list--categories' );
 	set_query_var( 'topic_list_title', '' );
 	set_query_var( 'topic_list_items', log_lolla_pro_get_topic_post_list_as_html( 'category' ) );
 	get_template_part( 'template-parts/topic/topic', 'list' );
 
-	set_query_var( 'topic_list_klass', 'tags' );
+	set_query_var( 'topic_list_klass', 'topic-list--tags' );
 	set_query_var( 'topic_list_title', '' );
 	set_query_var( 'topic_list_items', log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ) );
 	get_template_part( 'template-parts/topic/topic', 'list' );
