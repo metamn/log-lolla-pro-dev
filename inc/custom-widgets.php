@@ -75,7 +75,8 @@ if ( ! function_exists( 'log_lolla_pro_display_widget_form_no_settings_message' 
 	 * @return string HTML
 	 */
 	function log_lolla_pro_display_widget_form_no_settings_message() {
-		$html  = '<p>';
+		$html = '<p>';
+		/* translators: A widget's `no options to set` text on the admin screen */
 		$html .= esc_html__( 'There are no options to set for this widget', 'log-lolla-pro' );
 		$html .= '</p>';
 
@@ -107,7 +108,8 @@ if ( ! function_exists( 'log_lolla_pro_display_widget_form_input' ) ) {
 		$html  = '<input id="' . $input_id . '" name="' . $input_name . '"';
 		$html .= ' type="' . $input_type . '" value="' . $input_value . '" min="-1">';
 		$html .= '<br/>';
-		$html .= '(-1 displays all items)';
+		/* translators: A widget's form helper text on the admin screen */
+		$html .= esc_html__( '(-1 displays all items)', 'log-lolla-pro' );
 
 		return $html;
 	}
