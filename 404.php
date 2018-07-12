@@ -22,7 +22,10 @@ get_header();
 	<article class="post">
 		<h3 class="post-title">
 			<span class="text">
-				<?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla-pro' ); ?>
+				<?php
+				/* translators: The not found (404) page title */
+				esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla-pro' );
+				?>
 			</span>
 		</h3>
 
@@ -30,7 +33,10 @@ get_header();
 			<h3 class="hidden">Article content</h3>
 
 			<div class="text">
-				<?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' ); ?>
+				<?php
+				/* translators: The not found (404) page text */
+				esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' );
+				?>
 			</div>
 		</aside>
 

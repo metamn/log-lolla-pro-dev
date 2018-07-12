@@ -49,7 +49,8 @@ if ( ! function_exists( 'log_lolla_pro_setup' ) ) :
 		 * This theme uses wp_nav_menu() in one location.
 		 */
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'log-lolla-pro' ),
+			/* translators: The primary menu name */
+			'menu-1' => esc_html_x( 'Primary', 'The primary menu name', 'log-lolla-pro' ),
 		) );
 
 		/**
@@ -121,8 +122,10 @@ add_action( 'after_setup_theme', 'log_lolla_pro_setup' );
  */
 function log_lolla_pro_widgets_init() {
 	register_sidebar( array(
+		/* translators: The name of the Header Menu widget area */
 		'name'          => esc_html__( 'Header Menu', 'log-lolla-pro' ),
 		'id'            => 'sidebar-2',
+		/* translators: The description of the Header Menu widget area */
 		'description'   => esc_html__( 'Add widgets here.', 'log-lolla-pro' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
