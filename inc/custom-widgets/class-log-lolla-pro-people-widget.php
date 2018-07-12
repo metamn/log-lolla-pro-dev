@@ -39,7 +39,7 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 				'people',
 				$instance['number_of_people'],
 				'post count',
-				log_lolla_pro_get_post_format_label( 'people' ),
+				log_lolla_pro_get_post_type_label( 'people' ),
 				log_lolla_pro_get_link( 'People' )
 			)
 		);

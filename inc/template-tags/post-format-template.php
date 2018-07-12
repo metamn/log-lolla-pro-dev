@@ -11,18 +11,21 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_label' ) ) {
 	/**
 	 * Returns the label of a post format.
 	 *
-	 * @param  string $post_format The post type slug.
-	 * @return string              The post type name.
+	 * @param  string $post_format The post format name.
+	 * @return string              The translated post format name.
 	 */
 	function log_lolla_pro_get_post_format_label( $post_format ) {
 		if ( empty( $post_format ) ) {
 			return;
 		}
 
-		$obj   = get_post_type_object( $post_format );
-		$label = $obj->labels->name;
-
-		return $label;
+		switch ( $post_format ) {
+			case 'Post Formats':
+				/* translators: The Post Formats name */
+				return esc_html__( 'Post Formats', 'log-lolla-pro' );
+			default:
+				return '';
+		}
 	}
 }
 

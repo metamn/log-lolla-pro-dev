@@ -35,7 +35,7 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo wp_kses_post(
 			log_lolla_pro_get_post_format_list_with_post_count_as_html(
-				apply_filters( 'widget_title', esc_html__( 'Post Formats' ) ),
+				log_lolla_pro_get_post_format_label( 'Post Formats' ),
 				log_lolla_pro_get_link( 'Post Formats' )
 			)
 		);

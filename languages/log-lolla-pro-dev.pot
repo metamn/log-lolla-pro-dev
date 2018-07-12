@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Log Lolla Pro 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/log-lolla-pro-dev\n"
-"POT-Creation-Date: 2018-07-12 12:02:12+00:00\n"
+"POT-Creation-Date: 2018-07-12 12:17:49+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -254,24 +254,8 @@ msgctxt "The description of the People post type"
 msgid "People to learn from"
 msgstr ""
 
-#: inc/custom-shortcodes.php:63
-#: inc/custom-widgets/class-log-lolla-pro-summaries-widget.php:40
-#: inc/template-tags/framework-template.php:32
-msgid "Summaries"
-msgstr ""
-
 #: inc/custom-shortcodes.php:90
 msgid "Post formats"
-msgstr ""
-
-#: inc/custom-shortcodes.php:122
-#: inc/custom-widgets/class-log-lolla-pro-sources-widget.php:42
-msgid "Sources"
-msgstr ""
-
-#: inc/custom-shortcodes.php:183
-#: inc/custom-widgets/class-log-lolla-pro-people-widget.php:42
-msgid "People"
 msgstr ""
 
 #: inc/custom-shortcodes.php:216
@@ -416,6 +400,10 @@ msgstr ""
 msgid "Posts"
 msgstr ""
 
+#: inc/template-tags/framework-template.php:32
+msgid "Summaries"
+msgstr ""
+
 #: inc/template-tags/framework-template.php:39
 msgid "Thoughts"
 msgstr ""
@@ -424,17 +412,17 @@ msgstr ""
 msgid "Related topics"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:377
+#: inc/template-tags/framework-template.php:376
 msgctxt "log-lolla-pro"
 msgid "This site is about"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:380
+#: inc/template-tags/framework-template.php:379
 msgctxt "log-lolla-pro"
 msgid ", "
 msgstr ""
 
-#: inc/template-tags/framework-template.php:381
+#: inc/template-tags/framework-template.php:380
 msgctxt "log-lolla-pro"
 msgid "and"
 msgstr ""

@@ -7,6 +7,25 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_post_type_label' ) ) {
+	/**
+	 * Returns the label of a post type.
+	 *
+	 * @param  string $post_type The post type slug.
+	 * @return string            The post type name.
+	 */
+	function log_lolla_pro_get_post_type_label( $post_type ) {
+		if ( empty( $post_type ) ) {
+			return;
+		}
+
+		$obj   = get_post_type_object( $post_type );
+		$label = $obj->labels->name;
+
+		return $label;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_post_type_displayed_as_thumb_html' ) ) {
 	/**
 	 * Returns the HTML of a post type displayed as a thumbnail.
