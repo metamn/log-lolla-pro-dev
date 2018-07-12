@@ -8,6 +8,28 @@
  * @since 1.0.0
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_archive_label' ) ) {
+	/**
+	 * Returns the label of an archive.
+	 *
+	 * @param  string $archive_type The archive name.
+	 * @return string               The translated archive name.
+	 */
+	function log_lolla_pro_get_archive_label( $archive_type ) {
+		if ( empty( $archive_type ) ) {
+			return;
+		}
+
+		switch ( $archive_type ) {
+			case 'Archives by date':
+				/* translators: The Archives by date name */
+				return esc_html__( 'Archives by date', 'log-lolla-pro' );
+			default:
+				return '';
+		}
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 	/**
 	 * Returns a list of Archive counters.

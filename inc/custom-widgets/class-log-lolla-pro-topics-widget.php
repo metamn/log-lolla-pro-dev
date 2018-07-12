@@ -40,7 +40,7 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 				10,
 				$instance['number_of_categories'],
 				$instance['number_of_tags'],
-				apply_filters( 'widget_title', esc_html__( 'Topics' ) ),
+				log_lolla_pro_get_topic_label( 'Topics' ),
 				log_lolla_pro_get_link( 'Topics' )
 			)
 		);

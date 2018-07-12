@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Log Lolla Pro 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/log-lolla-pro-dev\n"
-"POT-Creation-Date: 2018-07-12 12:17:49+00:00\n"
+"POT-Creation-Date: 2018-07-12 12:39:18+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -254,10 +254,6 @@ msgctxt "The description of the People post type"
 msgid "People to learn from"
 msgstr ""
 
-#: inc/custom-shortcodes.php:90
-msgid "Post formats"
-msgstr ""
-
 #: inc/custom-shortcodes.php:216
 #: inc/custom-widgets/class-log-lolla-pro-topics-widget.php:43
 msgid "Topics"
@@ -294,10 +290,6 @@ msgstr ""
 
 #: inc/custom-widgets/class-log-lolla-pro-post-formats-widget.php:24
 msgid "Display post formats archive"
-msgstr ""
-
-#: inc/custom-widgets/class-log-lolla-pro-post-formats-widget.php:38
-msgid "Post Formats"
 msgstr ""
 
 #: inc/custom-widgets/class-log-lolla-pro-sources-widget.php:22
@@ -431,6 +423,11 @@ msgstr ""
 #: inc/template-tags/header-template.php:22
 msgctxt "empty header menu text"
 msgid "Use the `Header Menu` widget to define what content goes here"
+msgstr ""
+
+#. translators: The Post Formats name
+#: inc/template-tags/post-format-template.php:25
+msgid "Post Formats"
 msgstr ""
 
 #: inc/template-tags/post-type-summary-template.php:74

@@ -213,7 +213,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics' ) ) {
 				10,
 				$attr['categories'],
 				$attrs['tags'],
-				esc_html__( 'Topics', 'log-lolla-pro' ),
+				log_lolla_pro_get_topic_label( 'Topics' ),
 				log_lolla_pro_get_link( 'Topics' )
 			)
 		);
@@ -240,7 +240,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_archives_by_date'
 
 		return wp_kses_post(
 			log_lolla_pro_get_archive_list_by_year_and_months_as_html(
-				esc_html__( 'Archives by date', 'log-lolla-pro' ),
+				log_lolla_pro_get_archive_label( 'Archives by date' ),
 				log_lolla_pro_get_link( 'Archives by date' )
 			)
 		);

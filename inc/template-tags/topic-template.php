@@ -7,6 +7,28 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_topic_label' ) ) {
+	/**
+	 * Returns the label of a topic.
+	 *
+	 * @param  string $topic_type The topic name.
+	 * @return string             The translated topic name.
+	 */
+	function log_lolla_pro_get_topic_label( $topic_type ) {
+		if ( empty( $topic_type ) ) {
+			return;
+		}
+
+		switch ( $topic_type ) {
+			case 'Topics':
+				/* translators: The Topics name */
+				return esc_html__( 'Topics', 'log-lolla-pro' );
+			default:
+				return '';
+		}
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_topic_list_summary' ) ) {
 	/**
 	 * Returns topics summary

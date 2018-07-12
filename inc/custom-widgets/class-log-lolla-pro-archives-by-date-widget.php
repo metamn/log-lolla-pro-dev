@@ -35,7 +35,7 @@ class Log_Lolla_Pro_Archives_By_Date_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		echo wp_kses_post(
 			log_lolla_pro_get_archive_list_by_year_and_months_as_html(
-				apply_filters( 'widget_title', esc_html__( 'Archives by date' ) ),
+				log_lolla_pro_get_archive_label( 'Archives by date' ),
 				log_lolla_pro_get_link( 'Archives by date' )
 			)
 		);
