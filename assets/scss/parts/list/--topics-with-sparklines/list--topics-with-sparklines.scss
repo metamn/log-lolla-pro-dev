@@ -1,12 +1,11 @@
-@mixin topic-list--sources {
+@mixin list--topics-with-sparklines {
 	@include list--vertical('> *');
 
-	.topic-list-body {
+	.list-body {
 		@include list--horizontal('.list-item');
 
 		.list-item {
 			@include list-item--horizontal;
-			@include list-item--person;
 		}
 	}
 }

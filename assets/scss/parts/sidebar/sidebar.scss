@@ -6,12 +6,8 @@
 	@include post-list--centered;
 
 	> * {
+		@include widget;
 		max-width: $text-block-width;
 		width: 100%;
-	}
-
-	.post-list,
-	.topic-list {
-		@include widget;
 	}
 }

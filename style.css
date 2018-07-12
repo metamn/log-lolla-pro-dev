@@ -24703,68 +24703,50 @@ html {
       html body .sidebar > * {
         max-width: 37.5em;
         width: 100%; }
-      html body .sidebar .post-list,
-      html body .sidebar .topic-list {
+      html body .sidebar > * {
         background-color: white;
         color: black;
         border: 1px solid; }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-bottom: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-left: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-left: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-right: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .post-list,
-          html body .sidebar .topic-list {
+          html body .sidebar > * {
             padding-right: 2.5em; } }
-        html body .sidebar .post-list a,
-        html body .sidebar .post-list .link,
-        html body .sidebar .topic-list a,
-        html body .sidebar .topic-list .link {
+        html body .sidebar > * a,
+        html body .sidebar > * .link {
           background-color: white;
           color: black;
           text-decoration: underline;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .sidebar .post-list a:hover, html body .sidebar .post-list a:active,
-          html body .sidebar .post-list .link:hover,
-          html body .sidebar .post-list .link:active,
-          html body .sidebar .topic-list a:hover,
-          html body .sidebar .topic-list a:active,
-          html body .sidebar .topic-list .link:hover,
-          html body .sidebar .topic-list .link:active {
+          html body .sidebar > * a:hover, html body .sidebar > * a:active,
+          html body .sidebar > * .link:hover,
+          html body .sidebar > * .link:active {
             text-decoration: line-through; }
-        html body .sidebar .post-list.widget_tag_cloud .tagcloud a,
-        html body .sidebar .topic-list.widget_tag_cloud .tagcloud a {
+        html body .sidebar > *.widget_tag_cloud .tagcloud a {
           font-size: 1em !important; }
-        html body .sidebar .post-list.widget_calendar .calendar_wrap,
-        html body .sidebar .topic-list.widget_calendar .calendar_wrap {
+        html body .sidebar > *.widget_calendar .calendar_wrap {
           overflow-x: auto; }
-        html body .sidebar .post-list.widget_media_audio .mejs-horizontal-volume-slider,
-        html body .sidebar .topic-list.widget_media_audio .mejs-horizontal-volume-slider {
+        html body .sidebar > *.widget_media_audio .mejs-horizontal-volume-slider {
           background-color: black;
           color: white; }
     html body .footer {
@@ -25410,7 +25392,7 @@ html {
         @media only screen and (min-width: 768px) {
           html body .post-list--summaries .post-list-posts .post {
             margin-right: 0; } }
-    html body .topic-list--with-sparklines {
+    html body .list--topics-with-sparklines {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -25420,36 +25402,36 @@ html {
               flex-direction: column;
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--with-sparklines > * {
+        html body .list--topics-with-sparklines > * {
           margin-right: 0; } }
-      html body .topic-list--with-sparklines .topic-list-body {
+      html body .list--topics-with-sparklines .list-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        html body .topic-list--with-sparklines .topic-list-body .list-item {
+        html body .list--topics-with-sparklines .list-body .list-item {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -25459,58 +25441,58 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-right: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item {
+            html body .list--topics-with-sparklines .list-body .list-item {
               margin-left: 0; } }
-        html body .topic-list--with-sparklines .topic-list-body .list-item {
+        html body .list--topics-with-sparklines .list-body .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-left: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-left: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-right: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--with-sparklines .topic-list-body .list-item > * + * {
+            html body .list--topics-with-sparklines .list-body .list-item > * + * {
               margin-right: 0; } }
-    html body .topic-list--post-formats {
+    html body .list--post-formats {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -25520,36 +25502,36 @@ html {
               flex-direction: column;
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--post-formats > * {
+        html body .list--post-formats > * {
           margin-right: 0; } }
-      html body .topic-list--post-formats .topic-list-body {
+      html body .list--post-formats .list-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        html body .topic-list--post-formats .topic-list-body .list-item {
+        html body .list--post-formats .list-body .list-item {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -25559,58 +25541,58 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-right: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item {
+            html body .list--post-formats .list-body .list-item {
               margin-left: 0; } }
-        html body .topic-list--post-formats .topic-list-body .list-item {
+        html body .list--post-formats .list-body .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-left: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-left: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-right: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--post-formats .topic-list-body .list-item > * + * {
+            html body .list--post-formats .list-body .list-item > * + * {
               margin-right: 0; } }
-    html body .topic-list--people {
+    html body .list--people {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -25620,36 +25602,36 @@ html {
               flex-direction: column;
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--people > * {
+        html body .list--people > * {
           margin-right: 0; } }
-      html body .topic-list--people .topic-list-body {
+      html body .list--people .list-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        html body .topic-list--people .topic-list-body .list-item {
+        html body .list--people .list-body .list-item {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -25659,30 +25641,30 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-right: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item {
+            html body .list--people .list-body .list-item {
               margin-left: 0; } }
-        html body .topic-list--people .topic-list-body .list-item {
+        html body .list--people .list-body .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -25691,30 +25673,30 @@ html {
                   align-items: center;
           display: flex; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-left: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-left: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-right: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--people .topic-list-body .list-item > * + * {
+            html body .list--people .list-body .list-item > * + * {
               margin-right: 0; } }
-          html body .topic-list--people .topic-list-body .list-item .list-item-avatar {
+          html body .list--people .list-body .list-item .list-item-avatar {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -25724,23 +25706,23 @@ html {
                     flex-direction: column;
             width: 100%;
             width: 2.5em; }
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar img {
+            html body .list--people .list-body .list-item .list-item-avatar img {
               display: block;
               height: auto;
               max-width: 100%;
               width: auto; }
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar figcaption,
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .wp-caption-text {
+            html body .list--people .list-body .list-item .list-item-avatar figcaption,
+            html body .list--people .list-body .list-item .list-item-avatar .wp-caption-text {
               background-color: white;
               color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .figcaption,
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar .wp-caption-text,
-            html body .topic-list--people .topic-list-body .list-item .list-item-avatar figcaption {
+            html body .list--people .list-body .list-item .list-item-avatar .figcaption,
+            html body .list--people .list-body .list-item .list-item-avatar .wp-caption-text,
+            html body .list--people .list-body .list-item .list-item-avatar figcaption {
               display: none; }
-    html body .topic-list--sources {
+    html body .list--sources {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -25750,36 +25732,36 @@ html {
               flex-direction: column;
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--sources > * {
+        html body .list--sources > * {
           margin-right: 0; } }
-      html body .topic-list--sources .topic-list-body {
+      html body .list--sources .list-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        html body .topic-list--sources .topic-list-body .list-item {
+        html body .list--sources .list-body .list-item {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -25789,30 +25771,30 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-bottom: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-right: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item {
+            html body .list--sources .list-body .list-item {
               margin-left: 0; } }
-        html body .topic-list--sources .topic-list-body .list-item {
+        html body .list--sources .list-body .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -25821,30 +25803,30 @@ html {
                   align-items: center;
           display: flex; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-left: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-left: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-right: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--sources .topic-list-body .list-item > * + * {
+            html body .list--sources .list-body .list-item > * + * {
               margin-right: 0; } }
-          html body .topic-list--sources .topic-list-body .list-item .list-item-avatar {
+          html body .list--sources .list-body .list-item .list-item-avatar {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -25854,23 +25836,23 @@ html {
                     flex-direction: column;
             width: 100%;
             width: 2.5em; }
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar img {
+            html body .list--sources .list-body .list-item .list-item-avatar img {
               display: block;
               height: auto;
               max-width: 100%;
               width: auto; }
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar figcaption,
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .wp-caption-text {
+            html body .list--sources .list-body .list-item .list-item-avatar figcaption,
+            html body .list--sources .list-body .list-item .list-item-avatar .wp-caption-text {
               background-color: white;
               color: black;
               font-size: 0.8em;
               line-height: 1.5;
               display: inline-block; }
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .figcaption,
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar .wp-caption-text,
-            html body .topic-list--sources .topic-list-body .list-item .list-item-avatar figcaption {
+            html body .list--sources .list-body .list-item .list-item-avatar .figcaption,
+            html body .list--sources .list-body .list-item .list-item-avatar .wp-caption-text,
+            html body .list--sources .list-body .list-item .list-item-avatar figcaption {
               display: none; }
-    html body .topic-list--archives-by-date {
+    html body .list--archives-by-date {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -25880,36 +25862,36 @@ html {
               flex-direction: column;
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .topic-list--archives-by-date > * {
+        html body .list--archives-by-date > * {
           margin-right: 0; } }
-      html body .topic-list--archives-by-date .topic-list-body {
+      html body .list--archives-by-date .list-body {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
-        html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+        html body .list--archives-by-date .list-body .year-and-months {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -25919,44 +25901,44 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-bottom: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-right: 1.25em; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+            html body .list--archives-by-date .list-body .year-and-months {
               margin-left: 0; } }
-        html body .topic-list--archives-by-date .topic-list-body .year-and-months {
+        html body .list--archives-by-date .list-body .year-and-months {
           -webkit-box-align: center;
               -ms-flex-align: center;
                   align-items: center; }
-          html body .topic-list--archives-by-date .topic-list-body .year-and-months .year,
-          html body .topic-list--archives-by-date .topic-list-body .year-and-months .month {
+          html body .list--archives-by-date .list-body .year-and-months .year,
+          html body .list--archives-by-date .list-body .year-and-months .month {
             min-width: 2.5em; }
-          html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+          html body .list--archives-by-date .list-body .year-and-months .months {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
             border: 1px solid; }
-            html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+            html body .list--archives-by-date .list-body .year-and-months .months .month {
               -webkit-box-align: start;
                   -ms-flex-align: start;
                       align-items: flex-start;
@@ -25966,40 +25948,40 @@ html {
               -ms-flex-wrap: wrap;
                   flex-wrap: wrap; }
               @media only screen and (max-width: 767.9px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-bottom: 2.5em; } }
               @media only screen and (min-width: 768px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-bottom: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-right: 1.25em; } }
               @media only screen and (min-width: 768px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-right: 2.5em; } }
               @media only screen and (max-width: 767.9px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-top: 0; } }
               @media only screen and (min-width: 768px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-top: 0; } }
               @media only screen and (max-width: 767.9px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-left: 0; } }
               @media only screen and (min-width: 768px) {
-                html body .topic-list--archives-by-date .topic-list-body .year-and-months .months .month {
+                html body .list--archives-by-date .list-body .year-and-months .months .month {
                   margin-left: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+              html body .list--archives-by-date .list-body .year-and-months .months {
                 padding-top: 1.25em; } }
             @media only screen and (min-width: 768px) {
-              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+              html body .list--archives-by-date .list-body .year-and-months .months {
                 padding-top: 1.25em; } }
             @media only screen and (max-width: 767.9px) {
-              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+              html body .list--archives-by-date .list-body .year-and-months .months {
                 padding-left: 0.625em; } }
             @media only screen and (min-width: 768px) {
-              html body .topic-list--archives-by-date .topic-list-body .year-and-months .months {
+              html body .list--archives-by-date .list-body .year-and-months .months {
                 padding-left: 1.25em; } }
     html body .hidden {
       display: none; }

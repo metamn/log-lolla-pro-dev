@@ -62,8 +62,8 @@ html {
 			@include post-list;
 		}
 
-		.topic-list {
-			@include topic-list;
+		.list {
+			@include list;
 		}
 
 

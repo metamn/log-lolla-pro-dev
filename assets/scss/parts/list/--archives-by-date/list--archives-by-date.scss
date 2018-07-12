@@ -1,7 +1,7 @@
-@mixin topic-list--archives-by-date($padding: half) {
+@mixin list--archives-by-date($padding: half) {
 	@include list--vertical('> *');
 
-	.topic-list-body {
+	.list-body {
 		@include list--horizontal('.year-and-months');
 
 		.year-and-months {

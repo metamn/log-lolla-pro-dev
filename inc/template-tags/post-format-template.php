@@ -232,10 +232,10 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_h
 
 		ob_start();
 
-		set_query_var( 'topic-list-klass', 'topic-list--post-formats' );
-		set_query_var( 'topic-list-title', $title );
-		set_query_var( 'topic-list-items', $items );
-		get_template_part( 'template-parts/topic/topic-list', '' );
+		set_query_var( 'list-klass', 'list--post-formats' );
+		set_query_var( 'list-title', $title );
+		set_query_var( 'list-items', $items );
+		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
 		$html .= ob_get_clean();
 

@@ -1,7 +1,7 @@
-@mixin topic-list--post-formats {
+@mixin list--post-formats {
 	@include list--vertical('> *');
 
-	.topic-list-body {
+	.list-body {
 		@include list--horizontal('.list-item');
 
 		.list-item {
