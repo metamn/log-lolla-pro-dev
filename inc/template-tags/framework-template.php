@@ -75,7 +75,6 @@ if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	}
 }
 
-
 if ( ! function_exists( 'log_lolla_pro_get_link' ) ) {
 	/**
 	 * Returns the link for a special page or archive

@@ -39,7 +39,7 @@ class Log_Lolla_Pro_Sources_Widget extends WP_Widget {
 				'source',
 				$instance['number_of_sources'],
 				'post count',
-				apply_filters( 'widget_title', esc_html__( 'Sources' ) ),
+				log_lolla_pro_get_post_format_label( 'source' ),
 				log_lolla_pro_get_link( 'Sources' )
 			)
 		);

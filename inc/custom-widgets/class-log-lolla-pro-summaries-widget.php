@@ -37,7 +37,7 @@ class Log_Lolla_Pro_Summaries_Widget extends WP_Widget {
 		echo wp_kses_post(
 			log_lolla_pro_get_post_type_summary_post_list_as_html(
 				$instance['number_of_summaries'],
-				apply_filters( 'widget_title', esc_html__( 'Summaries' ) ),
+				log_lolla_pro_get_post_format_label( 'summary' ),
 				log_lolla_pro_get_link( 'Summaries' )
 			)
 		);

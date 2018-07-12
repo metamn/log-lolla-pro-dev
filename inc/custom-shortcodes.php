@@ -60,7 +60,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_summaries' ) ) {
 		return wp_kses_post(
 			log_lolla_pro_get_post_type_summary_post_list_as_html(
 				$attrs['summaries'],
-				esc_html__( 'Summaries', 'log-lolla-pro' ),
+				log_lolla_pro_get_post_format_label( 'summary' ),
 				log_lolla_pro_get_link( 'Summaries' )
 			)
 		);
@@ -119,7 +119,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_sources' ) ) {
 				'source',
 				$attrs['sources'],
 				'post count',
-				esc_html__( 'Sources', 'log-lolla-pro' ),
+				log_lolla_pro_get_post_format_label( 'source' ),
 				log_lolla_pro_get_link( 'Sources' )
 			)
 		);
@@ -180,7 +180,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_people' ) ) {
 				'people',
 				$attrs['people'],
 				'post count',
-				esc_html__( 'People', 'log-lolla-pro' ),
+				log_lolla_pro_get_post_format_label( 'people' ),
 				log_lolla_pro_get_link( 'People' )
 			)
 		);

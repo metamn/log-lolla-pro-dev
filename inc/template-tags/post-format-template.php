@@ -7,6 +7,25 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_post_format_label' ) ) {
+	/**
+	 * Returns the label of a post format.
+	 *
+	 * @param  string $post_format The post type slug.
+	 * @return string              The post type name.
+	 */
+	function log_lolla_pro_get_post_format_label( $post_format ) {
+		if ( empty( $post_format ) ) {
+			return;
+		}
+
+		$obj   = get_post_type_object( $post_format );
+		$label = $obj->labels->name;
+
+		return $label;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_post_format_link_class' ) ) {
 	/**
 	 * Returns a class for the link post format
