@@ -19,6 +19,7 @@ require get_template_directory() . '/inc/template-tags/framework-template.php';
 require get_template_directory() . '/inc/template-tags/header-template.php';
 require get_template_directory() . '/inc/template-tags/post-template.php';
 require get_template_directory() . '/inc/template-tags/post-format-template.php';
+require get_template_directory() . '/inc/template-tags/post-format-standard-template.php';
 require get_template_directory() . '/inc/template-tags/post-type-template.php';
 require get_template_directory() . '/inc/template-tags/post-type-summary-template.php';
 require get_template_directory() . '/inc/template-tags/sparkline-template.php';
