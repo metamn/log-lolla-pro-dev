@@ -19,10 +19,13 @@ class Log_Lolla_Pro_Topics_Summary_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_topics_summary_widget',
-			esc_html__( 'Log Lolla Pro Topics Summary' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_topic_label( 'Topics Summary' ),
 			array(
+				/* translators: The Topics Summary widget description on the admin screen */
 				'description'          => __( 'Display a short summary based on main topics', 'log_lolla_pro' ),
+				/* translators: The Topics Summary widget `number of categories to use` text on the admin screen */
 				'number_of_categories' => esc_html__( 'Number of categories to use', 'log_lolla_pro' ),
+				/* translators: The Topics Summary widget `number of tags to use` text on the admin screen */
 				'number_of_tags'       => esc_html__( 'Number of tags to use', 'log_lolla_pro' ),
 				'classname'            => 'widget-log-lolla-pro widget-log-lolla-pro--topics-summary',
 			)

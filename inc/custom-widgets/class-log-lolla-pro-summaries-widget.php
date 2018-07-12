@@ -19,9 +19,11 @@ class Log_Lolla_Pro_Summaries_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_summaries_widget',
-			esc_html__( 'Log Lolla Pro Summaries' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_post_type_label( 'summary' ),
 			array(
+				/* translators: The Summary widget description on the admin screen */
 				'description'         => esc_html__( 'Display summaries archive', 'log_lolla_pro' ),
+				/* translators: The Summary widget `number of summaries to display` text on the admin screen */
 				'number_of_summaries' => esc_html__( 'Number of summaries to display', 'log_lolla_pro' ),
 			)
 		);

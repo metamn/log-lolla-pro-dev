@@ -19,8 +19,9 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_post_formats_widget',
-			esc_html__( 'Log Lolla Pro Post Formats' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_post_format_label( 'POst Formats' ),
 			array(
+				/* translators: The Post Formats widget description on the admin screen */
 				'description' => esc_html__( 'Display post formats archive', 'log_lolla_pro' ),
 			)
 		);

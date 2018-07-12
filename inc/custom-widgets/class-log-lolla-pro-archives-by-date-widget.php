@@ -19,9 +19,10 @@ class Log_Lolla_Pro_Archives_By_Date_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_archives_by_date_widget',
-			esc_html__( 'Log Lolla Pro Archives by date' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_archive_label( 'Archives by date' ),
 			array(
-				'description' => __( 'Display archives of years and months', 'log_lolla_pro' ),
+				/* translators: The Archives by date widget description on the admin screen */
+				'description' => esc_html__( 'Display archives of years and months', 'log-lolla-pro' ),
 			)
 		);
 	}

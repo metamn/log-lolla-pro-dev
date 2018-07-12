@@ -19,9 +19,11 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_people_widget',
-			esc_html__( 'Log Lolla Pro People' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_post_type_label( 'people' ),
 			array(
+				/* translators: The People widget description on the admin screen */
 				'description'      => esc_html__( 'Display most popular people', 'log_lolla_pro' ),
+				/* translators: The People widget `number of people to display` text on the admin screen */
 				'number_of_people' => esc_html__( 'Number of people to display', 'log_lolla_pro' ),
 			)
 		);

@@ -19,10 +19,13 @@ class Log_Lolla_Pro_Topics_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_topics_widget',
-			esc_html__( 'Log Lolla Pro Topics' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_topic_label( 'Topics' ),
 			array(
+				/* translators: The Topics widget description on the admin screen */
 				'description'          => __( 'Display popular topics (categories, tags)', 'log_lolla_pro' ),
+				/* translators: The Topics widget `number of categories to display` text on the admin screen */
 				'number_of_categories' => esc_html__( 'Number of categories to display', 'log_lolla_pro' ),
+				/* translators: The Topics widget `number of tags to display` text on the admin screen */
 				'number_of_tags'       => esc_html__( 'Number of tags to display', 'log_lolla_pro' ),
 			)
 		);

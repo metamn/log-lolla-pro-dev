@@ -19,9 +19,11 @@ class Log_Lolla_Pro_Sources_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'log_lolla_pro_sources_widget',
-			esc_html__( 'Log Lolla Pro Sources' ),
+			'Log Lolla Pro ' . log_lolla_pro_get_post_type_label( 'source' ),
 			array(
+				/* translators: The Source widget description on the admin screen */
 				'description'       => esc_html__( 'Display sources archive', 'log_lolla_pro' ),
+				/* translators: The Source widget `number of sources to display` text on the admin screen */
 				'number_of_sources' => esc_html__( 'Number of sources to display', 'log_lolla_pro' ),
 			)
 		);
