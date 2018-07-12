@@ -58,13 +58,30 @@ function log_lolla_pro_filter_the_archive_title( $title ) {
 add_filter( 'get_the_archive_title', 'log_lolla_pro_filter_the_archive_title', 10, 1 );
 
 /**
- * Remove `<p>` and `<br>` tags added by WordPress.
+ * Remove `<p>` and `<br>` tags from excerpts added by WordPress.
  * If not, the 'Continue reading -->' arrow will be completely broken.
- * For `the_content()` check the `post-content-standard.php`.
  *
  * @link https://wordpress.stackexchange.com/questions/130075/stop-wordpress-automatically-adding-br-tags-to-post-content
  */
 remove_filter( 'the_excerpt', 'wpautop' );
+
+/**
+ * Remove `<p>` and `<br>` tags from Archives page added by WordPress.
+ * If not there will be empty paragraphs on the page.
+ *
+ * @param string $content The page content.
+ *
+ * @link https://stackoverflow.com/questions/6285812/wordpress-apply-remove-filter-only-on-one-page#15293279
+ */
+function log_lolla_pro_filter_archives_page_content( $content ) {
+	if ( is_page( 'Archives' ) ) {
+		remove_filter( 'the_content', 'wpautop' );
+		return $content;
+	} else {
+		return $content;
+	}
+}
+add_filter( 'the_content', 'log_lolla_pro_filter_archives_page_content', 9 );
 
 
 /**

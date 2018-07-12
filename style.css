@@ -10277,9 +10277,6 @@ html {
           margin-right: 0; } }
     html body .content.content-archives {
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -10287,6 +10284,10 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
+      width: 100%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       max-width: none; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives {
@@ -10302,159 +10303,160 @@ html {
           padding-bottom: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives {
-          padding-left: 1.25em; } }
+          margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
         html body .content.content-archives {
-          padding-left: 2.5em; } }
+          margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives {
-          padding-right: 1.25em; } }
+          margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
         html body .content.content-archives {
-          padding-right: 2.5em; } }
-      html body .content.content-archives .shortcode {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives {
+          margin-right: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives > * {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives > * {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives > * {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives > * {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives > * {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives > * {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archives > * {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archives > * {
+          margin-right: 0; } }
+      html body .content.content-archives > * {
+        background-color: white;
+        color: black;
+        border: 1px solid;
+        max-width: 37.5em;
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .shortcode {
-            max-width: calc(100% - 2.5em); } }
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-          html body .content.content-archives .shortcode {
-            max-width: calc(100% - 5em); } }
-        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-          html body .content.content-archives .shortcode {
-            max-width: 37.5em; } }
-        @media only screen and (min-width: 1600.1px) {
-          html body .content.content-archives .shortcode {
-            max-width: 37.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .shortcode {
-            margin-bottom: 2.5em; } }
+          html body .content.content-archives > * {
+            padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .shortcode {
-            margin-bottom: 2.5em; } }
+          html body .content.content-archives > * {
+            padding-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .shortcode {
-            margin-top: 0; } }
+          html body .content.content-archives > * {
+            padding-bottom: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .shortcode {
-            margin-top: 0; } }
+          html body .content.content-archives > * {
+            padding-bottom: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .shortcode {
-            margin-left: 0; } }
+          html body .content.content-archives > * {
+            padding-left: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .shortcode {
-            margin-left: 0; } }
+          html body .content.content-archives > * {
+            padding-left: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .shortcode {
-            margin-right: 0; } }
+          html body .content.content-archives > * {
+            padding-right: 1.25em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .shortcode {
-            margin-right: 0; } }
-        html body .content.content-archives .shortcode .shortcode-title {
+          html body .content.content-archives > * {
+            padding-right: 2.5em; } }
+        html body .content.content-archives > * a,
+        html body .content.content-archives > * .link {
           background-color: white;
           color: black;
-          display: -webkit-inline-box;
-          display: -ms-inline-flexbox;
-          display: inline-flex; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-top: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-top: 1.25em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-bottom: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-bottom: 1.25em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-title {
-              padding-right: 2.5em; } }
-        html body .content.content-archives .shortcode .shortcode-body {
+          text-decoration: underline;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: text-decoration; }
+          html body .content.content-archives > * a:hover, html body .content.content-archives > * a:active,
+          html body .content.content-archives > * .link:hover,
+          html body .content.content-archives > * .link:active {
+            text-decoration: line-through; }
+        html body .content.content-archives > *.widget_tag_cloud .tagcloud a {
+          font-size: 1em !important; }
+        html body .content.content-archives > *.widget_calendar .calendar_wrap {
+          overflow-x: auto; }
+        html body .content.content-archives > *.widget_media_audio .mejs-horizontal-volume-slider {
+          background-color: black;
+          color: white; }
+      html body .content.content-archives > * {
+        width: 100%;
+        background-color: white;
+        color: black;
+        border: 1px solid;
+        max-width: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives > * {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-archives > * {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-archives > * {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-archives > * {
+            max-width: 37.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives > * {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives > * {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives > * {
+            padding-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives > * {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives > * {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives > * {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives > * {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives > * {
+            padding-right: 2.5em; } }
+        html body .content.content-archives > * a,
+        html body .content.content-archives > * .link {
           background-color: white;
-          color: black; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-top: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archives .shortcode .shortcode-body {
-              padding-right: 2.5em; } }
-      html body .content.content-archives .summary {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
-        html body .content.content-archives .summary .summary-link-to-topic,
-        html body .content.content-archives .summary .summary-dates {
-          font-size: 0.8em; }
-        html body .content.content-archives .summary .summary-dates {
-          display: none; }
-        html body .content.content-archives .summary .summary-link-to-topic {
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex; }
-          html body .content.content-archives .summary .summary-link-to-topic .text {
-            display: -webkit-inline-box;
-            display: -ms-inline-flexbox;
-            display: inline-flex; }
-        html body .content.content-archives .summary .summary-title-without-link {
-          width: 100%; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .summary + .summary {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .summary + .summary {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .summary + .summary {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .summary + .summary {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .summary + .summary {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .summary + .summary {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .summary + .summary {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .summary + .summary {
-            margin-right: 0; } }
-      html body .content.content-archives .archives-title,
-      html body .content.content-archives .shortcode-topics-summary .shortcode-title {
-        display: none; }
+          color: black;
+          text-decoration: underline;
+          transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+          will-change: text-decoration; }
+          html body .content.content-archives > * a:hover, html body .content.content-archives > * a:active,
+          html body .content.content-archives > * .link:hover,
+          html body .content.content-archives > * .link:active {
+            text-decoration: line-through; }
+        html body .content.content-archives > *.widget_tag_cloud .tagcloud a {
+          font-size: 1em !important; }
+        html body .content.content-archives > *.widget_calendar .calendar_wrap {
+          overflow-x: auto; }
+        html body .content.content-archives > *.widget_media_audio .mejs-horizontal-volume-slider {
+          background-color: black;
+          color: white; }
     html body .content.content-search .search-title {
       margin-bottom: 1.25em; }
       html body .content.content-search .search-title span {
@@ -24701,12 +24703,11 @@ html {
         html body .sidebar > * {
           margin-right: 0; } }
       html body .sidebar > * {
-        max-width: 37.5em;
-        width: 100%; }
-      html body .sidebar > * {
         background-color: white;
         color: black;
-        border: 1px solid; }
+        border: 1px solid;
+        max-width: 37.5em;
+        width: 100%; }
         @media only screen and (max-width: 767.9px) {
           html body .sidebar > * {
             padding-top: 2.5em; } }
