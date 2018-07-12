@@ -1,7 +1,0 @@
-@mixin widget-log-lolla-topics {
-	@include widget-log-lolla;
-
-	.widget-body {
-		@include archives-topics;
-	}
-}

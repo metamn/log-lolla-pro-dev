@@ -46,10 +46,6 @@ html {
 			@include widget;
 		}
 
-		.shortcode {
-			@include shortcode;
-		}
-
 		.breadcrumb {
 			@include breadcrumb;
 		}

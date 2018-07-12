@@ -1,7 +1,0 @@
-@mixin widget-log-lolla-archives {
-	@include widget-log-lolla;
-
-	.widget-body {
-		@include archives-by-date;
-	}
-}

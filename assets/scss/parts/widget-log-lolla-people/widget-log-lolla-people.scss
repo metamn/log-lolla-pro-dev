@@ -1,8 +1,0 @@
-@mixin widget-log-lolla-people {
-	@include widget-log-lolla;
-
-	.widget-body {
-		@include archives-people;
-		align-items: center;
-	}
-}
