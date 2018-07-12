@@ -24,7 +24,7 @@ get_header();
 			<span class="text">
 				<?php
 				/* translators: The not found (404) page title */
-				esc_html_e( 'Oops! That page can&rsquo;t be found.', 'log-lolla-pro' );
+				echo esc_html_x( 'Oops! That page can&rsquo;t be found.', 'The not found (404) page title', 'log-lolla-pro' );
 				?>
 			</span>
 		</h3>
@@ -35,7 +35,7 @@ get_header();
 			<div class="text">
 				<?php
 				/* translators: The not found (404) page text */
-				esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'log-lolla-pro' );
+				echo esc_html_x( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'The not found (404) page text', 'log-lolla-pro' );
 				?>
 			</div>
 		</aside>
