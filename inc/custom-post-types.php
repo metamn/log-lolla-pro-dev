@@ -19,7 +19,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_summary' ) ) {
 			'singular_name'      => _x( 'Summary', 'post type singular name', 'log-lolla-pro' ),
 			'menu_name'          => _x( 'Summaries', 'admin menu', 'log-lolla-pro' ),
 			'name_admin_bar'     => _x( 'Summary', 'add new on admin bar', 'log-lolla-pro' ),
-			'add_new'            => _x( 'Add New', 'book', 'log-lolla-pro' ),
+			'add_new'            => _x( 'Add New', 'summary', 'log-lolla-pro' ),
 			'add_new_item'       => __( 'Add New Summary', 'log-lolla-pro' ),
 			'new_item'           => __( 'New Summary', 'log-lolla-pro' ),
 			'edit_item'          => __( 'Edit Summary', 'log-lolla-pro' ),
@@ -27,13 +27,13 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_summary' ) ) {
 			'all_items'          => __( 'All Summaries', 'log-lolla-pro' ),
 			'search_items'       => __( 'Search Summaries', 'log-lolla-pro' ),
 			'parent_item_colon'  => __( 'Parent Summaries:', 'log-lolla-pro' ),
-			'not_found'          => __( 'No people found.', 'log-lolla-pro' ),
-			'not_found_in_trash' => __( 'No people found in Trash.', 'log-lolla-pro' ),
+			'not_found'          => __( 'No summary found.', 'log-lolla-pro' ),
+			'not_found_in_trash' => __( 'No summary found in Trash.', 'log-lolla-pro' ),
 		);
 
 		$args = array(
 			'labels'             => $labels,
-			'description'        => __( 'High level summaries of a topic', 'log-lolla-pro' ),
+			'description'        => _x( 'High level summaries of a topic', 'The description of the Summary post type', 'log-lolla-pro' ),
 			'public'             => true,
 			'publicly_queryable' => true,
 			'show_ui'            => true,
@@ -69,7 +69,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_source' ) ) {
 			'singular_name'      => _x( 'Source', 'post type singular name', 'log-lolla-pro' ),
 			'menu_name'          => _x( 'Sources', 'admin menu', 'log-lolla-pro' ),
 			'name_admin_bar'     => _x( 'Source', 'add new on admin bar', 'log-lolla-pro' ),
-			'add_new'            => _x( 'Add New', 'book', 'log-lolla-pro' ),
+			'add_new'            => _x( 'Add New', 'source', 'log-lolla-pro' ),
 			'add_new_item'       => __( 'Add New Source', 'log-lolla-pro' ),
 			'new_item'           => __( 'New Source', 'log-lolla-pro' ),
 			'edit_item'          => __( 'Edit Source', 'log-lolla-pro' ),
@@ -83,7 +83,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_source' ) ) {
 
 		$args = array(
 			'labels'             => $labels,
-			'description'        => __( 'Frequently used sources of information', 'log-lolla-pro' ),
+			'description'        => _x( 'Frequently used sources of information', 'The description of the Source post type', 'log-lolla-pro' ),
 			'public'             => true,
 			'publicly_queryable' => true,
 			'show_ui'            => true,
@@ -115,7 +115,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_people' ) ) {
 			'singular_name'      => _x( 'Person', 'post type singular name', 'log-lolla-pro' ),
 			'menu_name'          => _x( 'People', 'admin menu', 'log-lolla-pro' ),
 			'name_admin_bar'     => _x( 'Person', 'add new on admin bar', 'log-lolla-pro' ),
-			'add_new'            => _x( 'Add New', 'book', 'log-lolla-pro' ),
+			'add_new'            => _x( 'Add New', 'person', 'log-lolla-pro' ),
 			'add_new_item'       => __( 'Add New Person', 'log-lolla-pro' ),
 			'new_item'           => __( 'New Person', 'log-lolla-pro' ),
 			'edit_item'          => __( 'Edit Person', 'log-lolla-pro' ),
@@ -129,7 +129,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_people' ) ) {
 
 		$args = array(
 			'labels'             => $labels,
-			'description'        => __( 'People to learn from', 'log-lolla-pro' ),
+			'description'        => _x( 'People to learn from', 'The description of the People post type', 'log-lolla-pro' ),
 			'public'             => true,
 			'publicly_queryable' => true,
 			'show_ui'            => true,
