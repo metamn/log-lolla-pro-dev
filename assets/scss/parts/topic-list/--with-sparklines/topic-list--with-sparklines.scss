@@ -1,4 +1,4 @@
-@mixin topic-list--topics-with-sparklines {
+@mixin topic-list--with-sparklines {
 	@include list--vertical('> *');
 
 	.topic-list-body {

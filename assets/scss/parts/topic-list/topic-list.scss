@@ -1,6 +1,6 @@
 @mixin topic-list {
-	&--topics-with-sparklines {
-		@include topic-list--topics-with-sparklines;
+	&--with-sparklines {
+		@include topic-list--with-sparklines;
 	}
 
 	&--post-formats {

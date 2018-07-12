@@ -13,9 +13,9 @@
 			}
 
 			.months {
-				@include flexbox-grid(6, 0, 0, $grid-title:false, $iepx: 1px);
+				@include list--horizontal('.month');
 				@include border(normal, all);
-				@include padding($padding, $padding, $padding, $padding);
+				@include padding($padding, no, no, $padding);
 			}
 		}
 	}
