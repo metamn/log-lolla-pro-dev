@@ -1,0 +1,3 @@
+@mixin list-item__primary-text {
+	@include text-style(headline);
+}

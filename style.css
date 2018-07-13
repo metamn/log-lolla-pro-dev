@@ -9894,12 +9894,12 @@ html {
             html body .content.content-archive .archive-header .breadcrumb {
               padding-right: 1.25em; } }
         html body .content.content-archive .archive-header .archive-title-and-description {
-          -webkit-box-align: center;
-              -ms-flex-align: center;
-                  align-items: center;
           display: -webkit-box;
           display: -ms-flexbox;
-          display: flex; }
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
           @media only screen and (max-width: 767.9px) {
             html body .content.content-archive .archive-header .archive-title-and-description {
               padding-top: 1.25em; } }
@@ -9913,18 +9913,60 @@ html {
             html body .content.content-archive .archive-header .archive-title-and-description {
               padding-bottom: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-left: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-left: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-right: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork {
+            html body .content.content-archive .archive-header .archive-title-and-description {
               padding-right: 1.25em; } }
-          html body .content.content-archive .archive-header .archive-title-and-description .archive-artwork .circle {
+          html body .content.content-archive .archive-header .archive-title-and-description > * {
+            -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 1;
+                    order: 1; }
+          html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+            -webkit-box-ordinal-group: 1;
+                -ms-flex-order: 0;
+                    order: 0; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-header .archive-title-and-description .list-item-graphic {
+                margin-left: 0; } }
+          html body .content.content-archive .archive-header .archive-title-and-description .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+            html body .content.content-archive .archive-header .archive-title-and-description .list-item-primary-and-secondary-text .list-item-primary-text {
+              font-size: 1.953em; }
+          html body .content.content-archive .archive-header .archive-title-and-description .circle {
             background-color: black;
             color: white;
             -webkit-box-align: center;
@@ -9940,16 +9982,6 @@ html {
                     justify-content: center;
             overflow: hidden;
             width: 3.75em; }
-          html body .content.content-archive .archive-header .archive-title-and-description .archive-text {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column; }
-            html body .content.content-archive .archive-header .archive-title-and-description .archive-text .archive-title {
-              font-size: 1.953em; }
         html body .content.content-archive .archive-header .archive-counters {
           border-top: 1px solid; }
           @media only screen and (max-width: 767.9px) {

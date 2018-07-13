@@ -1,23 +1,12 @@
 @mixin archive-title-and-description {
+	@include padding(half, half, half, half);
+	@include list-item--with-graphic;
 
-	@include padding(half, no, half, no);
-	align-items: center;
-	display: flex;
-
-	.archive-artwork {
-		@include padding(no, half, no, half);
-
-		.circle {
-			@include circle;
-		}
+	.list-item-primary-and-secondary-text {
+		@include list-item--with-primary-and-secondary-text;
 	}
 
-	.archive-text {
-		display: flex;
-		flex-direction: column;
-
-		.archive-title {
-			@include text-style(headline);
-		}
+	.circle {
+		@include circle;
 	}
 }
