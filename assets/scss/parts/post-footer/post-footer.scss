@@ -1,27 +1,19 @@
 @mixin post-footer {
-
 	@include margin(yes, no, no, no);
-	align-items: baseline;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 
-	.post-date,
-	.post-author,
-	.link,
-	a[rel='tag'],
-	a[rel='category'],
-	a[rel='category tag'],
-	.edit-link {
-		@include button--with-border;
-		margin-bottom: $lem / 4;
+	.list {
+		@include list--horizontal('> *', half, half);
+		justify-content: space-between;
+
+		.topic,
+		.posted-on,
+		.posted-by,
+		.edit-link {
+			@include topic;
+		}
 	}
 
 	.edit-link {
 		display: block;
-	}
-
-	a {
-		@include link($type: not-underlined);
 	}
 }

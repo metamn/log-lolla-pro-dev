@@ -1,0 +1,7 @@
+@mixin topic {
+	@include button--with-border;
+
+	a {
+		@include link($type: not-underlined);
+	}
+}

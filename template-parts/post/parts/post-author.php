@@ -13,7 +13,7 @@ $klass = '';
 <aside class="post-author">
 	<h3 class="hidden">Article author</h3>
 
-	<div class="byline">
+	<div class="posted-by">
 		<?php
 		/* translators: The `by` text before the post author. */
 		echo esc_html_x( 'by', 'post author', 'log-lolla-pro' );

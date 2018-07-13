@@ -1,9 +1,9 @@
-@mixin list--horizontal($item) {
+@mixin list--horizontal($item, $margin-right: yes, $margin-bottom: yes) {
 	display: flex;
 	flex-wrap: wrap;
 
 	#{$item} {
-		@include margin(no, yes, yes, no);
+		@include margin(no, $margin-right, $margin-bottom, no);
 		align-items: flex-start;
 		display: flex;
 		flex-wrap: wrap;

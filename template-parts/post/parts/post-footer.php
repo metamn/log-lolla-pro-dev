@@ -13,8 +13,10 @@ $klass = '';
 <aside class="post-footer">
 	<h3 class="hidden">Article footer</h3>
 
-	<?php get_template_part( 'template-parts/post/parts/post', 'format-and-topics' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'date' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'author' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'edit-link' ); ?>
+	<div class="list">
+		<?php get_template_part( 'template-parts/post/parts/post', 'format-and-topics' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'date' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'author' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'edit-link' ); ?>
+	</div>
 </aside>
