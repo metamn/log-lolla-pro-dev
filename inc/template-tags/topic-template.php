@@ -26,6 +26,9 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_label' ) ) {
 			case 'Topics Summary':
 				/* translators: The Topics Summary name */
 				return esc_html__( 'Topics Summary', 'log-lolla-pro' );
+			case 'Related topics':
+				/* translators: The Related topics name */
+				return esc_html__( 'Related topics', 'log-lolla-pro' );
 			default:
 				return '';
 		}

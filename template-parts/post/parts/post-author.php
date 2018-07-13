@@ -15,7 +15,7 @@ $klass = '';
 
 	<div class="byline">
 		<?php
-		/* translators: %s: post author. */
+		/* translators: The `by` text before the post author. */
 		echo esc_html_x( 'by', 'post author', 'log-lolla-pro' );
 		?>
 

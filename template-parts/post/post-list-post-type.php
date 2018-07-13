@@ -13,7 +13,8 @@ if ( empty( $posts ) ) {
 
 $archive_posts_title = sprintf(
 	'%1$s%2$s',
-	esc_html_x( 'Posts from ', 'post permalink', 'log-lolla-pro' ),
+	/* translators: The title of the Source, People (post type) posts lists. */
+	esc_html_x( 'Posts from ', 'The title of the Source, People (post type) posts lists', 'log-lolla-pro' ),
 	get_the_title()
 );
 

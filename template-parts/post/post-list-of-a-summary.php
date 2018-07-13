@@ -13,7 +13,8 @@ if ( empty( $posts ) ) {
 	return;
 }
 
-$posts_title = esc_html_x( 'Based on these posts:', 'post permalink', 'log-lolla-pro' );
+/* translators: The title of the Summary posts lists. */
+$posts_title = esc_html_x( 'Based on these posts:', 'The title of the Summary posts lists', 'log-lolla-pro' );
 
 set_query_var( 'post-list-klass', 'post-list--posts' );
 set_query_var( 'post-list-title', $posts_title );

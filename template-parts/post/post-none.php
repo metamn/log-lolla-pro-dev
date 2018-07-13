@@ -7,13 +7,15 @@
  * @package Log_Lolla_Pro
  */
 
-$title = esc_html__( 'Nothing Found', 'log-lolla-pro' );
 ?>
 
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title">
-			<?php echo esc_html( $title ); ?>
+			<?php
+			/* translators: The title of the section when no posts was found in the loop. */
+			esc_html__( 'Nothing Found', 'log-lolla-pro' );
+			?>
 		</h1>
 	</header><!-- .page-header -->
 
@@ -23,32 +25,44 @@ $title = esc_html__( 'Nothing Found', 'log-lolla-pro' );
 			?>
 
 			<p>
-			<?php
-				printf(
-					wp_kses(
-						/* translators: 1: link to WP admin new post page. */
-						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'log-lolla-pro' ),
-						array(
-							'a' => array(
-								'href' => array(),
-							),
-						)
-					),
-					esc_url( admin_url( 'post-new.php' ) )
-				);
-			?>
+				<?php
+					printf(
+						wp_kses(
+							/* translators: The text when no posts was found in the loop, and the user can publish posts. */
+							__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'log-lolla-pro' ),
+							array(
+								'a' => array(
+									'href' => array(),
+								),
+							)
+						),
+						esc_url( admin_url( 'post-new.php' ) )
+					);
+				?>
 			</p>
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'log-lolla-pro' ); ?></p>
+			<p>
+				<?php
+				/* translators: The text when no posts was found in a search. */
+				esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'log-lolla-pro' );
+				?>
+			</p>
+
 			<?php
 				get_search_form();
 
 		else :
 			?>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'log-lolla-pro' ); ?></p>
+			<p>
+				<?php
+				/* translators: The text when no posts was found in the loop. */
+				esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'log-lolla-pro' );
+				?>
+			</p>
+
 			<?php
 				get_search_form();
 

@@ -10,7 +10,10 @@
 
 <div class="link-with-prefix">
 	<span class="prefix">
-		<?php echo esc_html_x( 'A&nbsp;', 'log-lolla-pro' ); ?>
+		<?php
+		/* translators: The prefix for the link to the Summary archive. */
+		echo esc_html_x( 'A&nbsp;', 'log-lolla-pro' );
+		?>
 	</span>
 
 	<?php echo wp_kses_post( log_lolla_pro_get_link_html( 'Summaries', 'Summary' ) ); ?>

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Log Lolla Pro 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/log-lolla-pro-dev\n"
-"POT-Creation-Date: 2018-07-12 13:13:50+00:00\n"
+"POT-Creation-Date: 2018-07-13 06:41:07+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -354,23 +354,28 @@ msgstr ""
 msgid "(-1 displays all items)"
 msgstr ""
 
-#: inc/customizer.php:72
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:73
 msgid "Copyright text in footer"
 msgstr ""
 
-#: inc/customizer.php:94
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:96
 msgid "Copyright link in footer"
 msgstr ""
 
-#: inc/customizer.php:116
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:119
 msgid "Display footer copyright"
 msgstr ""
 
-#: inc/customizer.php:138
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:142
 msgid "Display footer credits"
 msgstr ""
 
-#: inc/customizer.php:139
+#. translators: The description of the customizer on the admin screen.
+#: inc/customizer.php:144
 msgid "Like Powered By Wordpress and the Log Lolla Pro Theme"
 msgstr ""
 
@@ -385,40 +390,54 @@ msgstr ""
 msgid "Archives by date"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:25
+#. translators: The Archives page name
+#: inc/template-tags/archive-template.php:29
+msgid "Archives"
+msgstr ""
+
+#. translators: The title of the `Posts` counter in the archive header.
+#: inc/template-tags/framework-template.php:26
 msgid "Posts"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:32
+#. translators: The title of the `Summaries` counter in the archive header.
+#: inc/template-tags/framework-template.php:34
 msgid "Summaries"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:39
+#. translators: The title of the `Thoughts` counter in the archive header.
+#: inc/template-tags/framework-template.php:42
 msgid "Thoughts"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:46
+#. translators: The title of the `Related topics` counter in the archive
+#. header.
+#. translators: The Related topics name
+#: inc/template-tags/framework-template.php:50
+#: inc/template-tags/topic-template.php:31
 msgid "Related topics"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:376
-msgctxt "log-lolla-pro"
+#. translators: The introductory text in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:381
 msgid "This site is about"
 msgstr ""
 
-#: inc/template-tags/framework-template.php:379
-msgctxt "log-lolla-pro"
+#. translators: The topic separator in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:385
+msgctxt "The topic separator in the Topics Summary widget"
 msgid ", "
 msgstr ""
 
-#: inc/template-tags/framework-template.php:380
-msgctxt "log-lolla-pro"
+#. translators: The topic connector in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:387
+msgctxt "The topic connector in the Topics Summary widget"
 msgid "and"
 msgstr ""
 
-#. translators: empty header menu text.
+#. translators: The default text for the Header Menu widget.
 #: inc/template-tags/header-template.php:22
-msgctxt "empty header menu text"
+msgctxt "The default text for the Header Menu widget"
 msgid "Use the `Header Menu` widget to define what content goes here"
 msgstr ""
 
@@ -427,13 +446,20 @@ msgstr ""
 msgid "Post Formats"
 msgstr ""
 
-#: inc/template-tags/post-type-summary-template.php:74
-msgctxt "log-lolla-pro"
+#. translators: The Standard Post Format name
+#: inc/template-tags/post-format-template.php:28
+msgid "Standard"
+msgstr ""
+
+#. translators: The date prefix for the Summary post format.
+#: inc/template-tags/post-type-summary-template.php:75
+msgctxt "The date prefix for the Summary post format"
 msgid "Between&nbsp;"
 msgstr ""
 
-#: inc/template-tags/post-type-summary-template.php:79
-msgctxt "log-lolla-pro"
+#. translators: The date prefix for the Summary post format.
+#: inc/template-tags/post-type-summary-template.php:81
+msgctxt "he date prefix for the Summary post format"
 msgid "Until&nbsp;"
 msgstr ""
 
@@ -448,73 +474,64 @@ msgctxt "Archives by date page name"
 msgid "Archives by date"
 msgstr ""
 
-#: page-archives.php:21
-msgid "Archives"
-msgstr ""
-
-#: page-post-format-standard.php:43
-msgctxt "Standard posts"
-msgid "Standard"
-msgstr ""
-
 #. translators: Post Formats Archive page name
 #: page-post-formats.php:21
 msgctxt "Post Formats Archive page name"
 msgid "Post Formats"
 msgstr ""
 
-#. translators: %s: search query.
+#. translators: Search page title.
 #: search.php:19
 msgid "Search Results for: %s"
 msgstr ""
 
-#. translators: %s: 1 comment.
+#. translators: The Comment section title for a single comment.
 #: template-parts/comment/parts/comment-list-title.php:20
 msgctxt "one comment"
 msgid "One update"
 msgstr ""
 
-#. translators: %s: comments.
+#. translators: The Comment section title for multiple comments.
 #: template-parts/comment/parts/comment-list-title.php:23
 msgctxt " comments"
 msgid " updates"
 msgstr ""
 
-#. translators: %s: comment permalink.
+#. translators: The comment permalink title attribute ( <a title="" ...>).
 #: template-parts/comment/parts/comment-permalink.php:19
 msgctxt "comment permalink title"
 msgid "Comment permalink"
 msgstr ""
 
-#. translators: %s: post permalink.
+#. translators: The comment permalink text.
 #: template-parts/comment/parts/comment-permalink.php:21
-#: template-parts/post/parts/post-permalink.php:19
-msgctxt "post permalink"
+msgctxt "comment permalink text"
 msgid "&infin;"
 msgstr ""
 
-#: template-parts/comment/parts/comment-updated-text.php:9
+#. translators: The comment updated text.
+#: template-parts/comment/parts/comment-updated-text.php:10
 msgctxt "comment updated text"
 msgid "Update on "
 msgstr ""
 
-#. translators: %s: CMS name, i.e. WordPress.
+#. translators: The `Powered by` text in the footer.
 #: template-parts/footer/footer-credits.php:21
 msgid "powered by %1$s"
 msgstr ""
 
-#. translators: 1: Theme name, 2: Theme author.
+#. translators: The `and the` text in the footer.
 #: template-parts/footer/footer-credits.php:31
 msgid "and the %1$s"
 msgstr ""
 
-#. translators: %s: status update by.
+#. translators: The `status update by` text for the Status post format.
 #: template-parts/post/parts/post-author-linking-to-post.php:25
 msgctxt "status update by"
 msgid "status update by "
 msgstr ""
 
-#. translators: %s: post author.
+#. translators: The `by` text before the post author.
 #: template-parts/post/parts/post-author.php:19
 msgctxt "post author"
 msgid "by"
@@ -525,58 +542,70 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: template-parts/post/parts/post-paginated-content.php:13
+#. translators: The `Pages:` text for the post pagination.
+#: template-parts/post/parts/post-paginated-content.php:11
 msgid "Pages:"
 msgstr ""
 
-#: template-parts/post/parts/post-sticky.php:15
+#. translators: %s: post permalink.
+#: template-parts/post/parts/post-permalink.php:19
+msgctxt "post permalink"
+msgid "&infin;"
+msgstr ""
+
+#. translators: The `Featured` text for the Sticky posts.
+#: template-parts/post/parts/post-sticky.php:16
 msgctxt "sticky post text"
 msgid "Featured"
 msgstr ""
 
-#: template-parts/post/parts/post-summary-link-to-archive.php:13
+#. translators: The prefix for the link to the Summary archive.
+#: template-parts/post/parts/post-summary-link-to-archive.php:15
 msgctxt "log-lolla-pro"
 msgid "A&nbsp;"
 msgstr ""
 
-#: template-parts/post/post-list-of-a-summary.php:16
-msgctxt "post permalink"
+#. translators: The title of the Summary posts lists.
+#: template-parts/post/post-list-of-a-summary.php:17
+msgctxt "The title of the Summary posts lists"
 msgid "Based on these posts:"
 msgstr ""
 
-#: template-parts/post/post-list-post-type.php:16
-msgctxt "post permalink"
+#. translators: The title of the Source, People (post type) posts lists.
+#: template-parts/post/post-list-post-type.php:17
+msgctxt "The title of the Source, People (post type) posts lists"
 msgid "Posts from "
 msgstr ""
 
-#: template-parts/post/post-none.php:10
+#. translators: The title of the section when no posts was found in the loop.
+#: template-parts/post/post-none.php:17
 msgid "Nothing Found"
 msgstr ""
 
-#. translators: 1: link to WP admin new post page.
-#: template-parts/post/post-none.php:30
+#. translators: The text when no posts was found in the loop, and the user can
+#. publish posts.
+#: template-parts/post/post-none.php:32
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: template-parts/post/post-none.php:44
+#. translators: The text when no posts was found in a search.
+#: template-parts/post/post-none.php:49
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: template-parts/post/post-none.php:51
+#. translators: The text when no posts was found in the loop.
+#: template-parts/post/post-none.php:62
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: template-parts/topic/topic-list-related-topics.php:14
-msgid "Related topics "
-msgstr ""
-
-#: template-parts/topic/topic-with-prefix.php:16
-msgctxt "log-lolla-pro"
+#. translators: The prefix of a topic
+#: template-parts/topic/topic-with-prefix.php:18
+msgctxt "The prefix of a topic"
 msgid "On&nbsp;"
 msgstr ""
 

@@ -7,10 +7,13 @@
  * @package Log_Lolla_Pro
  */
 
+/* translators: The `Pages:` text for the post pagination. */
+$title = __( 'Pages:', 'log-lolla-pro' );
+
 // Cannot be wrapped into an <ul>,<li> structure ....
 $wp_link_pages = wp_link_pages(
 	array(
-		'before'    => '<span class="page-links-title">' . __( 'Pages:', 'log-lolla-pro' ) . '</span><div class="ul page-links">',
+		'before'    => '<span class="page-links-title">' . $title . '</span><div class="ul page-links">',
 		'after'     => '</div>',
 		'separator' => '&nbsp;',
 		'echo'      => 0,

@@ -13,7 +13,10 @@ if ( ! empty( $topic ) ) {
 
 	<div class="topic-with-prefix">
 		<span class="prefix">
-			<?php echo esc_html_x( 'On&nbsp;', 'log-lolla-pro' ); ?>
+			<?php
+			/* translators: The prefix of a topic */
+			echo esc_html_x( 'On&nbsp;', 'The prefix of a topic', 'log-lolla-pro' );
+			?>
 		</span>
 
 		<span class="topic">

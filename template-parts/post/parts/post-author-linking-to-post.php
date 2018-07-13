@@ -21,7 +21,7 @@ $klass = '';
 		<span class="author vcard">
 			<a class="link" href="<?php echo esc_url( get_permalink() ); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>">
 				<?php
-				/* translators: %s: status update by. */
+				/* translators: The `status update by` text for the Status post format. */
 				echo esc_html_x( 'status update by ', 'status update by', 'log-lolla-pro' );
 				echo esc_html( get_the_author() );
 				?>

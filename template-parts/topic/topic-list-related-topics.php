@@ -11,7 +11,7 @@ if ( empty( $related_to ) ) {
 	return;
 }
 
-$title = esc_html__( 'Related topics ', 'log-lolla-pro' );
+$title = log_lolla_pro_get_topic_label( 'Related topics' );
 $items = log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $related_to );
 
 set_query_var( 'list-klass', 'list--related-topics' );
