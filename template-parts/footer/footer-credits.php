@@ -17,7 +17,7 @@ if ( get_theme_mod( 'footer_credits_display' ) ) {
 			<div class="powered-by">
 				<?php
 				printf(
-					/* translators: %s: CMS name, i.e. WordPress. */
+					/* translators: The `Powered by` text in the footer. */
 					esc_html__( 'powered by %1$s', 'log-lolla-pro' ),
 					'<a class="link" href="https://wordpress.org/" title="WordpPess">WordPress</a>'
 				);
@@ -27,7 +27,7 @@ if ( get_theme_mod( 'footer_credits_display' ) ) {
 			<div class="theme-by">
 				<?php
 				printf(
-					/* translators: 1: Theme name, 2: Theme author. */
+					/* translators: The `and the` text in the footer. */
 					esc_html__( 'and the %1$s', 'log-lolla-pro' ),
 					'<a class="link" href="https://morethemes.baby/themes/log-lolla-pro" title="Log Lolla Pro Theme">Log Lolla Pro theme</a>'
 				);

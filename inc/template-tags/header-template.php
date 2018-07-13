@@ -18,8 +18,8 @@ if ( ! function_exists( 'log_lolla_pro_display_header_menu_contents' ) ) {
 		if ( is_active_sidebar( 'sidebar-2' ) ) {
 			dynamic_sidebar( 'sidebar-2' );
 		} else {
-			/* translators: empty header menu text. */
-			echo esc_html_x( 'Use the `Header Menu` widget to define what content goes here', 'empty header menu text', 'log-lolla-pro' );
+			/* translators: The default text for the Header Menu widget. */
+			echo esc_html_x( 'Use the `Header Menu` widget to define what content goes here', 'The default text for the Header Menu widget', 'log-lolla-pro' );
 		}
 	}
 }

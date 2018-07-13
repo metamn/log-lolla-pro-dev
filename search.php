@@ -15,7 +15,7 @@ get_header();
 	<h3 class="search-title">
 	<?php
 	printf(
-		/* translators: %s: search query. */
+		/* translators: Search page title. */
 		esc_html__( 'Search Results for: %s', 'log-lolla-pro' ),
 		'<span>&quot;' . get_search_query() . '&quot;</span>'
 	);

@@ -71,12 +71,14 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates_prefix' ) ) {
 		if ( ! empty( $dates->from ) ) {
 			printf(
 				'<span class="date-prefix">%1$s</span>',
-				esc_html_x( 'Between&nbsp;', 'log-lolla-pro' )
+				/* translators: The date prefix for the Summary post format. */
+				esc_html_x( 'Between&nbsp;', 'The date prefix for the Summary post format', 'log-lolla-pro' )
 			);
 		} else {
 			printf(
 				'<span class="date-prefix">%1$s</span>',
-				esc_html_x( 'Until&nbsp;', 'log-lolla-pro' )
+				/* translators: The date prefix for the Summary post format. */
+				esc_html_x( 'Until&nbsp;', 'he date prefix for the Summary post format', 'log-lolla-pro' )
 			);
 		}
 	}

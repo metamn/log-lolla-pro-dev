@@ -40,7 +40,7 @@ get_header();
 	?>
 
 	<?php
-		$title = esc_html_x( 'Standard', 'Standard posts', 'log-lolla-pro' );
+		$title = log_lolla_pro_get_post_format_label( 'Standard' );
 		set_query_var( 'archive_title', $title );
 		get_template_part( 'template-parts/archive/archive', 'header' );
 	?>

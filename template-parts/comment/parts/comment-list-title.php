@@ -16,10 +16,10 @@ $klass = '';
 	$number_of_comments = get_query_var( 'number_of_comments' );
 
 	if ( 1 === $number_of_comments ) {
-		/* translators: %s: 1 comment. */
+		/* translators: The Comment section title for a single comment. */
 		$text = esc_html_x( 'One update', 'one comment', 'log-lolla-pro' );
 	} else {
-		/* translators: %s: comments. */
+		/* translators: The Comment section title for multiple comments. */
 		$text = $number_of_comments . esc_html_x( ' updates', ' comments', 'log-lolla-pro' );
 	}
 

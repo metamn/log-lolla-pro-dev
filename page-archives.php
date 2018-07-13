@@ -18,7 +18,7 @@ get_header();
 
 <section class="content content-archives">
 	<h3 class="archives-title">
-		<?php esc_html_e( 'Archives', 'log-lolla-pro' ); ?>
+		<?php echo esc_attr( log_lolla_pro_get_archive_label( 'Archives' ) ); ?>
 	</h3>
 
 	<?php

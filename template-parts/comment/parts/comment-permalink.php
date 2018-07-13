@@ -15,10 +15,10 @@ $link = get_comment_link( $comment );
 	printf(
 		'<a class="link" href="%1$s" title="%2$s">%3$s</a>',
 		esc_url( $link ),
-		/* translators: %s: comment permalink. */
+		/* translators: The comment permalink title attribute ( <a title="" ...>). */
 		esc_attr( esc_html_x( 'Comment permalink', 'comment permalink title', 'log-lolla-pro' ) ),
-		/* translators: %s: post permalink. */
-		esc_html_x( '&infin;', 'post permalink', 'log-lolla-pro' )
+		/* translators: The comment permalink text. */
+		esc_html_x( '&infin;', 'comment permalink text', 'log-lolla-pro' )
 	);
 	?>
 </aside>

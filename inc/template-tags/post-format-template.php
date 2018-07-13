@@ -23,6 +23,9 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_label' ) ) {
 			case 'Post Formats':
 				/* translators: The Post Formats name */
 				return esc_html__( 'Post Formats', 'log-lolla-pro' );
+			case 'Standard':
+				/* translators: The Standard Post Format name */
+				return esc_html__( 'Standard', 'log-lolla-pro' );
 			default:
 				return '';
 		}

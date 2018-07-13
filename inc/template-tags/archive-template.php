@@ -24,6 +24,9 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_label' ) ) {
 			case 'Archives by date':
 				/* translators: The Archives by date name */
 				return esc_html__( 'Archives by date', 'log-lolla-pro' );
+			case 'Archives':
+				/* translators: The Archives page name */
+				return esc_html__( 'Archives', 'log-lolla-pro' );
 			default:
 				return '';
 		}

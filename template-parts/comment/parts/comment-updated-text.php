@@ -6,4 +6,5 @@
  * @since 1.0.0
  */
 
+/* translators: The comment updated text. */
 echo esc_html_x( 'Update on ', 'comment updated text', 'log-lolla-pro' );
