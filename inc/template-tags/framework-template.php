@@ -22,28 +22,32 @@ if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 		$pictograms = [];
 
 		$pictograms[] = array(
-			'text'     => esc_html__( 'Posts', 'log-lolla-pro-pro' ),
+			/* translators: The title of the `Posts` counter in the archive header. */
+			'text'     => esc_html__( 'Posts', 'log-lolla-pro' ),
 			'number'   => $counters[0],
 			'scrollto' => 'archive-list--posts',
 			'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
 		);
 
 		$pictograms[] = array(
-			'text'     => esc_html__( 'Summaries', 'log-lolla-pro-pro' ),
+			/* translators: The title of the `Summaries` counter in the archive header. */
+			'text'     => esc_html__( 'Summaries', 'log-lolla-pro' ),
 			'number'   => $counters[1],
 			'scrollto' => 'archive-list--summaries',
 			'klass'    => ( $counters[1] > 0 ) ? 'activable' : 'inactivable',
 		);
 
 		$pictograms[] = array(
-			'text'     => esc_html__( 'Thoughts', 'log-lolla-pro-pro' ),
+			/* translators: The title of the `Thoughts` counter in the archive header. */
+			'text'     => esc_html__( 'Thoughts', 'log-lolla-pro' ),
 			'number'   => $counters[2],
 			'scrollto' => 'archive-list--standard-posts',
 			'klass'    => ( $counters[2] > 0 ) ? 'activable' : 'inactivable',
 		);
 
 		$pictograms[] = array(
-			'text'     => esc_html__( 'Related topics', 'log-lolla-pro-pro' ),
+			/* translators: The title of the `Related topics` counter in the archive header. */
+			'text'     => esc_html__( 'Related topics', 'log-lolla-pro' ),
 			'number'   => $counters[3],
 			'scrollto' => 'archive-list--related-topics',
 			'klass'    => ( $counters[3] > 0 ) ? 'activable' : 'inactivable',
@@ -373,11 +377,14 @@ if ( ! function_exists( 'log_lolla_pro_create_sentence_from_arrays' ) ) {
 	function log_lolla_pro_create_sentence_from_arrays( $array1, $array2 ) {
 		$ret = '';
 
-		$ret .= esc_html_x( 'This site is about', 'log-lolla-pro' );
+		/* translators: The introductory text in the Topics Summary widget. */
+		$ret .= esc_html__( 'This site is about', 'log-lolla-pro' );
 		$ret .= ' ';
 
-		$separator = esc_html_x( ', ', 'log-lolla-pro' );
-		$connector = esc_html_x( 'and', 'log-lolla-pro' );
+		/* translators: The topic separator in the Topics Summary widget. */
+		$separator = esc_html_x( ', ', 'The topic separator in the Topics Summary widget', 'log-lolla-pro' );
+		/* translators: The topic connector in the Topics Summary widget. */
+		$connector = esc_html_x( 'and', 'The topic connector in the Topics Summary widget', 'log-lolla-pro' );
 
 		if ( ! empty( $array1 ) ) {
 			if ( ! empty( $array2 ) ) {

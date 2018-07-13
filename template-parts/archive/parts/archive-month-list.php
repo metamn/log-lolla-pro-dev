@@ -7,7 +7,7 @@
  *
  * @param array $archive_months An array of integers as months of the year.
  *
- * @link https://morethemes.baby/log-lolla-pro-pro-demo/archives/ Live example
+ * @link https://morethemes.baby/log-lolla-pro-demo/archives/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

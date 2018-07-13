@@ -15,7 +15,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' )
 	 *
 	 * Displays a text / paragraph containing all the category and tag descriptions merged together
 	 *
-	 * @link https://github.com/metamn/log-lolla-pro-pro-dev/issues/15
+	 * @link https://github.com/metamn/log-lolla-pro-dev/issues/15
 	 *
 	 * @param  Array $attributes The attributes of the shortcode.
 	 * @return string            HTML

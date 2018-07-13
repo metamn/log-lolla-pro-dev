@@ -4,7 +4,7 @@
  *
  * The home page is a list of posts and comments.
  *
- * @link https://morethemes.baby/log-lolla-pro-pro-demo/ Live example
+ * @link https://morethemes.baby/log-lolla-pro-demo/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro

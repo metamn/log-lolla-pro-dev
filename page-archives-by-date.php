@@ -8,7 +8,7 @@
  *  * A Header from the Topic template parts.
  *  * Two Topic lists from the Topic template parts. One for categories, one for tags.
  *
- * @link https://morethemes.baby/log-lolla-pro-pro-demo/years-and-months Live example
+ * @link https://morethemes.baby/log-lolla-pro-demo/years-and-months Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation
  *
  * @package Log_Lolla_Pro
