@@ -2,8 +2,6 @@
 	@include margin(yes, no, no, no);
 
 	.comments-title {
-
-		@include margin(yes, no, no, no);
 		align-items: baseline;
 		display: flex;
 		justify-content: space-between;
@@ -23,13 +21,10 @@
 
 	.comments-body {
 		@include margin(yes, no, no, no);
+		@include list--vertical('.comment');
 
 		.comment {
 			@include comment;
-
-			+ .comment {
-				@include margin(yes, no, no, no);
-			}
 		}
 	}
 }
