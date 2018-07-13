@@ -69,6 +69,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 			'type'            => 'text',
 			'priority'        => 10, // Within the section.
 			'section'         => 'title_tagline', // Required, core or custom.
+			/* translators: The label of the customizer on the admin screen. */
 			'label'           => __( 'Copyright text in footer', 'log-lolla-pro' ),
 			'description'     => '',
 			'active_callback' => 'is_front_page',
@@ -91,6 +92,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 			'type'            => 'text',
 			'priority'        => 10, // Within the section.
 			'section'         => 'title_tagline', // Required, core or custom.
+			/* translators: The label of the customizer on the admin screen. */
 			'label'           => __( 'Copyright link in footer', 'log-lolla-pro' ),
 			'description'     => '',
 			'active_callback' => 'is_front_page',
@@ -113,6 +115,7 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 			'type'            => 'checkbox',
 			'priority'        => 10, // Within the section.
 			'section'         => 'title_tagline', // Required, core or custom.
+			/* translators: The label of the customizer on the admin screen. */
 			'label'           => __( 'Display footer copyright', 'log-lolla-pro' ),
 			'description'     => '',
 			'active_callback' => 'is_front_page',
@@ -135,7 +138,9 @@ function log_lolla_pro_customize_register( $wp_customize ) {
 			'type'            => 'checkbox',
 			'priority'        => 10, // Within the section.
 			'section'         => 'title_tagline', // Required, core or custom.
+			/* translators: The label of the customizer on the admin screen. */
 			'label'           => __( 'Display footer credits', 'log-lolla-pro' ),
+			/* translators: The description of the customizer on the admin screen. */
 			'description'     => __( 'Like Powered By Wordpress and the Log Lolla Pro Theme', 'log-lolla-pro' ),
 			'active_callback' => 'is_front_page',
 		)
