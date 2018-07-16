@@ -1,12 +1,12 @@
-@mixin list--vertical($item, $margin-top: yes) {
+@mixin list--vertical-mixed-elements($margin-top: yes) {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
 
-	#{$item} {
+	> * {
 		background: red;
 
-		+ #{$item} {
+		+ * {
 			background: blue;
 			@include margin($margin-top, no, no, no);
 		}

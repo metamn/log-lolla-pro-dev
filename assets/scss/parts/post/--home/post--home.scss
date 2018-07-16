@@ -1,5 +1,4 @@
 @mixin post--home {
-
 	@include portrait {
 		@include post__grid--display-vertical;
 	}

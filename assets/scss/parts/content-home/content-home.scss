@@ -4,13 +4,8 @@
 	@include width--full;
 
 	.post-list {
-		.post-list-title {
-			display: none;
-		}
-
-		.post-list-posts {
-			@include list--vertical('.post');
-		}
+		@include post-list--vertical('.post');
+		@include post-list--hide-title;
 
 		.post {
 			@include post;
