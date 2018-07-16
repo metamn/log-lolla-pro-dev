@@ -1,5 +1,5 @@
 @mixin archive-counters {
-	@include padding(half, no, no, no);
+	@include padding(half, no, no, half);
 	@include border(normal, top);
 
 	@include list--horizontal('.list-item', half, half);

@@ -30,6 +30,7 @@ get_header();
 	?>
 
 	<?php
+		set_query_var( 'post-list-title', 'Posts' );
 		set_query_var( 'post-list-klass', 'post-list--posts' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>

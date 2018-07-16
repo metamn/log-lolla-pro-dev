@@ -9996,6 +9996,12 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-header .archive-counter-list {
               padding-top: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-header .archive-counter-list {
+              padding-left: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-header .archive-counter-list {
+              padding-left: 1.25em; } }
           html body .content.content-archive .archive-header .archive-counter-list .list-item {
             -webkit-box-align: start;
                 -ms-flex-align: start;
