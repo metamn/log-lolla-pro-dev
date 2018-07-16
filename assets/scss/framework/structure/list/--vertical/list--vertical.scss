@@ -4,6 +4,8 @@
 	width: 100%;
 
 	#{$item} {
-		@include margin($margin-top, no, no, no);
+		+ #{$item} {
+			@include margin($margin-top, no, no, no);
+		}
 	}
 }

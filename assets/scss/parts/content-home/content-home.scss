@@ -2,12 +2,20 @@
 //
 @mixin content-home {
 	@include width--full;
-	@include post-list--vertical('.post');
-	@include post-list--centered;
 
-	.post {
-		@include post;
-		@include post--home;
+	.post-list {
+		.post-list-title {
+			display: none;
+		}
+
+		.post-list-posts {
+			@include list--vertical('.post');
+		}
+
+		.post {
+			@include post;
+			@include post--home;
+		}
 	}
 
 	.navigation {

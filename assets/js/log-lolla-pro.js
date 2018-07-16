@@ -5,7 +5,7 @@
 
 // Click on post content
 var postContentClick = function() {
-  var postContent = document.querySelectorAll('.content-home .post .post__content');
+  var postContent = document.querySelectorAll('.post-list .post .post__content');
 
   function postContentRemoveClicks() {
     for (var i = 0; i < postContent.length; i++) {
@@ -50,7 +50,7 @@ var menuHamburgerClick = function(ID) {
 // Run functions once the document is ready
 document.addEventListener('DOMContentLoaded', function(){
   // Post content hover
-  if (document.querySelector('.content-home')) {
+  if (document.querySelector('.post-list')) {
     postContentClick();
   }
 
