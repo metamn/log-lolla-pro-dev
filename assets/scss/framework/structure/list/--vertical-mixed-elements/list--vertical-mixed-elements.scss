@@ -4,10 +4,7 @@
 	width: 100%;
 
 	> * {
-		background: red;
-
 		+ * {
-			background: blue;
 			@include margin($margin-top, no, no, no);
 		}
 	}

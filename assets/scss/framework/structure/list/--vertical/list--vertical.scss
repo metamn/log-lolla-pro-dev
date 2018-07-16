@@ -4,10 +4,7 @@
 	width: 100%;
 
 	#{$item} {
-		background: red;
-
 		+ #{$item} {
-			background: blue;
 			@include margin($margin-top, no, no, no);
 		}
 	}

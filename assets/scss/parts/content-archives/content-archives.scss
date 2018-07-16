@@ -3,9 +3,14 @@
 
 	max-width: none;
 
-	> * {
-		@include width;
-		@include widget;
-		max-width: none;
+	.archives-title {
+		display: none;
+	}
+
+	.widget-list {
+		> * {
+			@include width;
+			max-width: none;
+		}
 	}
 }

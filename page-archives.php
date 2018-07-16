@@ -21,22 +21,24 @@ get_header();
 		<?php echo esc_attr( log_lolla_pro_get_archive_label( 'Archives' ) ); ?>
 	</h3>
 
-	<?php
-	// Display the content of the page.
-	if ( have_posts() ) {
+	<div class="widget-list">
+		<?php
+		// Display the content of the page.
+		if ( have_posts() ) {
 
-		/* Start the Loop */
-		while ( have_posts() ) :
-			the_post();
-			the_content();
-		endwhile;
+			/* Start the Loop */
+			while ( have_posts() ) :
+				the_post();
+				the_content();
+			endwhile;
 
-	} else {
-		get_template_part( 'template-parts/post/post', 'none' );
-	}
+		} else {
+			get_template_part( 'template-parts/post/post', 'none' );
+		}
 
-	wp_reset_postdata();
-	?>
+		wp_reset_postdata();
+		?>
+	</div>
 </section>
 
 
