@@ -1,0 +1,5 @@
+@mixin list-item__avatar($avatar-width: $left) {
+	@include figure;
+	@include figure--without-figcaption;
+	width: $avatar-width;
+}

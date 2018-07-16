@@ -3,10 +3,5 @@
 
 	.list-body {
 		@include list--horizontal('.list-item');
-
-		.list-item {
-			@include list-item--horizontal;
-			@include list-item--person;
-		}
 	}
 }

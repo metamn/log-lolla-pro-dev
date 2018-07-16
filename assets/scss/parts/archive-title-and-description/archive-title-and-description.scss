@@ -1,12 +1,18 @@
 @mixin archive-title-and-description {
 	@include padding(half, half, half, half);
-	@include list-item--with-graphic;
+	@include list--horizontal('div', half, no);
 
-	.list-item-primary-and-secondary-text {
-		@include list-item--with-primary-and-secondary-text;
+	align-items: center;
+
+	.list-item-primary-text {
+		@include list-item__primary-text--large;
 	}
 
-	.circle {
-		@include circle;
+	.list-item-graphic {
+		order: -1;
+
+		.circle {
+			@include circle;
+		}
 	}
 }

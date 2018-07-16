@@ -2,24 +2,17 @@
 	@include padding(half, no, no, no);
 	@include border(normal, top);
 
-	@include archive-counters__grid;
+	@include list--horizontal('.list-item', half, half);
+	flex-wrap: nowrap;
 
 	.archive-counter {
-		align-items: center;
-		display: flex;
+		@include list--horizontal('>*', half, half);
 
-		.pictogram {
-			@include pictogram;
-			@include pictogram--vertical;
-
-			&__number {
-				@include pictogram__number--large;
+		.list-item-icon {
+			.arrow-with-triangle {
+				@include arrow-with-triangle;
+				@include text-style(small);
 			}
-		}
-
-		.arrow-with-triangle {
-			@include arrow-with-triangle;
-			@include text-style(small);
 		}
 	}
 }

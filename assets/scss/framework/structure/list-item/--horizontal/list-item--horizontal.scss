@@ -1,9 +1,0 @@
-@mixin list-item--horizontal($margin-left: half) {
-	display: flex;
-
-	> * {
-		+ * {
-			@include margin(no, no, no, $margin-left);
-		}
-	}
-}

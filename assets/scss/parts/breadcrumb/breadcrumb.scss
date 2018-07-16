@@ -1,14 +1,11 @@
 @mixin breadcrumb {
 	.ul {
 		@include ul;
-		@include ul--horizontal($lem / 2);
-		@include list--multiline($lem);
-
-		@include mobile {
-			@include list--multiline($lem / 2);
-		}
+		@include list--horizontal('.li', half, half);
 
 		.li {
+			align-self: center;
+			
 			.link {
 				@include link;
 			}

@@ -62,6 +62,10 @@ html {
 			@include list;
 		}
 
+		.list-item {
+			@include list-item;
+		}
+
 
 		// Common classes
 		.hidden {

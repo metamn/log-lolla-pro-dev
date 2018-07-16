@@ -1,3 +1,25 @@
 @mixin list-item {
-	//
+	.list-item-avatar {
+		@include list-item__avatar;
+	}
+
+	.list-item-graphic {
+		@include list-item__graphic;
+	}
+
+	.list-item-icon {
+		@include list-item__icon;
+	}
+
+	.list-item-primary-and-secondary-text {
+		@include list-item__primary-and-secondary-text;
+	}
+
+	.list-item-primary-text {
+		@include list-item__primary-text;
+	}
+
+	.list-item-secondary-text-text {
+		@include list-item__secondary-text;
+	}
 }
