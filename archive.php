@@ -30,7 +30,8 @@ get_header();
 	?>
 
 	<?php
-		set_query_var( 'post-list-title', 'Posts' );
+		$title = log_lolla_pro_get_archive_label( 'Posts' );
+		set_query_var( 'post-list-title', $title );
 		set_query_var( 'post-list-klass', 'post-list--posts' );
 		get_template_part( 'template-parts/post/post', 'list' );
 	?>

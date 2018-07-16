@@ -12,7 +12,7 @@ if ( empty( $archive ) ) {
 	return;
 }
 
-$title = esc_html( 'Summaries', 'log-lolla-pro' );
+$title = log_lolla_pro_get_archive_label( 'Summaries' );
 $posts = log_lolla_pro_get_post_type_summary_post_list_for_archive( $archive );
 
 set_query_var( 'post-list-klass', 'post-list--summaries' );

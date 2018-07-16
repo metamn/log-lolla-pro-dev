@@ -12,7 +12,7 @@ if ( empty( $posts ) ) {
 	return;
 }
 
-$title = esc_html( 'Thoughts', 'log-lolla-pro' );
+$title = log_lolla_pro_get_archive_label( 'Thoughts' );
 
 set_query_var( 'post-list-klass', 'post-list--thoughts' );
 set_query_var( 'post-list-title', $title );

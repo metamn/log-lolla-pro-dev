@@ -27,6 +27,16 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_label' ) ) {
 			case 'Archives':
 				/* translators: The Archives page name */
 				return esc_html__( 'Archives', 'log-lolla-pro' );
+			case 'Posts':
+				/* translators: The title of the `Posts` counter in the archive header. */
+				return esc_html__( 'Posts', 'log-lolla-pro' );
+			case 'Summaries':
+				return log_lolla_pro_get_post_type_label( 'summary' );
+			case 'Thoughts':
+				/* translators: The title of the `Thoughts` counter in the archive header. */
+				return esc_html__( 'Thoughts', 'log-lolla-pro' );
+			case 'Related topics':
+				return log_lolla_pro_get_topic_label( 'Related topics' );
 			default:
 				return '';
 		}
