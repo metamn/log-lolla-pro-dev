@@ -22,34 +22,36 @@ get_header();
 ?>
 
 <section class="content content-archive">
-	<h3 class="hidden">Date archive</h3>
+	<h3 class="archive-title">Date archive</h3>
 
-	<?php
-		$archive = log_lolla_pro_get_archive_object_for_date_archives();
-	?>
+	<div class="archive-items">
+		<?php
+			$archive = log_lolla_pro_get_archive_object_for_date_archives();
+		?>
 
-	<?php
-		set_query_var( 'post-list-klass', 'post-list--posts' );
-		get_template_part( 'template-parts/post/post', 'list' );
-	?>
+		<?php
+			set_query_var( 'post-list-klass', 'post-list-for-archive' );
+			get_template_part( 'template-parts/post/post', 'list' );
+		?>
 
-	<?php
-		set_query_var( 'archive', $archive );
-		get_template_part( 'template-parts/post/post-list', 'summaries' );
-	?>
+		<?php
+			set_query_var( 'archive', $archive );
+			get_template_part( 'template-parts/post/post-list', 'summaries' );
+		?>
 
-	<?php
-		$posts = log_lolla_pro_get_post_format_standard_post_list_for_date_archive( $archive );
-		set_query_var( 'posts', $posts );
-		get_template_part( 'template-parts/post/post-list', 'thoughts' );
-	?>
+		<?php
+			$posts = log_lolla_pro_get_post_format_standard_post_list_for_date_archive( $archive );
+			set_query_var( 'posts', $posts );
+			get_template_part( 'template-parts/post/post-list', 'thoughts' );
+		?>
 
-	<?php
-		set_query_var( 'related-to', $archive );
-		get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
-	?>
+		<?php
+			set_query_var( 'related-to', $archive );
+			get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
+		?>
 
-	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+		<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+	</div>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

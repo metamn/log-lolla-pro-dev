@@ -17,14 +17,16 @@ get_header();
 ?>
 
 <section class="content content-archive">
-	<h3 class="hidden">Archive for Sources</h3>
+	<h3 class="archive-title">Archive for Sources</h3>
 
-	<?php
-		set_query_var( 'post-list-klass', 'post-list--posts' );
-		get_template_part( 'template-parts/post/post', 'list' );
-	?>
+	<div class="archive-items">
+		<?php
+			set_query_var( 'post-list-klass', 'post-list-for-archive' );
+			get_template_part( 'template-parts/post/post', 'list' );
+		?>
 
-	<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+		<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+	</div>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

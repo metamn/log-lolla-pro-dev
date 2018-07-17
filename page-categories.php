@@ -20,16 +20,18 @@ get_header();
 
 
 <section class="content content-archive">
-	<h3 class="hidden">Categories archive</h3>
+	<h3 class="archive-title">Categories archive</h3>
 
-	<?php
-	set_query_var( 'list-klass', 'list--categories' );
-	set_query_var( 'list-title', '' );
-	set_query_var( 'list-items', log_lolla_pro_get_topic_post_list_as_html( 'category' ) );
-	get_template_part( 'template-parts/framework/structure/list/list', '' );
+	<div class="archive-items">
+		<?php
+		set_query_var( 'list-klass', 'list--categories' );
+		set_query_var( 'list-title', '' );
+		set_query_var( 'list-items', log_lolla_pro_get_topic_post_list_as_html( 'category' ) );
+		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
-	get_template_part( 'template-parts/topic/topic', 'header' );
-	?>
+		get_template_part( 'template-parts/topic/topic', 'header' );
+		?>
+	</div>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

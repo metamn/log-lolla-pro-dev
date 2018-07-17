@@ -20,16 +20,18 @@ get_header();
 
 
 <section class="content content-archive">
-	<h3 class="hidden">Archives by date</h3>
+	<h3 class="archive-title">Archives by date</h3>
 
-	<?php echo do_shortcode( '[log-lolla-pro-archives-by-date]' ); ?>
+	<div class="archive-items">
+		<?php echo do_shortcode( '[log-lolla-pro-archives-by-date]' ); ?>
 
-	<?php
-	/* translators: Years and months Archive page name */
-	$title = esc_html_x( 'Archives by date', 'Archives by date page name', 'log-lolla-pro' );
-	set_query_var( 'archive_title', $title );
-	get_template_part( 'template-parts/archive/archive', 'header' );
-	?>
+		<?php
+		/* translators: Years and months Archive page name */
+		$title = esc_html_x( 'Archives by date', 'Archives by date page name', 'log-lolla-pro' );
+		set_query_var( 'archive_title', $title );
+		get_template_part( 'template-parts/archive/archive', 'header' );
+		?>
+	</div>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

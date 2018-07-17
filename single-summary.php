@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays a single Summarypost.
+ * Displays a single Summar ypost.
  *
  * The page contains:
  *  * The Single post format template part.
@@ -19,7 +19,7 @@ get_header();
 ?>
 
 <section class="content content-single">
-	<h3 class="hidden">Single post</h3>
+	<h3 class="hidden">Single Summary post</h3>
 
 	<?php
 	while ( have_posts() ) :

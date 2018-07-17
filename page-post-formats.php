@@ -12,17 +12,19 @@ get_header();
 ?>
 
 <section class="content content-archive">
-	<h3 class="hidden">Post formats archive</h3>
+	<h3 class="archive-title">Post formats archive</h3>
 
-	<?php echo do_shortcode( '[log-lolla-pro-post-formats]' ); ?>
+	<div class="archive-items">
+		<?php echo do_shortcode( '[log-lolla-pro-post-formats]' ); ?>
 
-	<?php
-	/* translators: Post Formats Archive page name */
-	$title = esc_html_x( 'Post Formats', 'Post Formats Archive page name', 'log-lolla-pro' );
+		<?php
+		/* translators: Post Formats Archive page name */
+		$title = esc_html_x( 'Post Formats', 'Post Formats Archive page name', 'log-lolla-pro' );
 
-	set_query_var( 'archive_title', $title );
-	get_template_part( 'template-parts/archive/archive', 'header' );
-	?>
+		set_query_var( 'archive_title', $title );
+		get_template_part( 'template-parts/archive/archive', 'header' );
+		?>
+	</div>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

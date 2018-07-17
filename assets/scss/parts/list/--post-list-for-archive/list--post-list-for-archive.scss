@@ -1,0 +1,3 @@
+@mixin list--post-list-for-archive {
+	@include list('.post-list-title', '.post-list-posts', '.post', $show-navigation: true);
+}
