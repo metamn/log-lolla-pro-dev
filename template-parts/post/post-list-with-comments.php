@@ -7,7 +7,7 @@
 
 ?>
 
-<section class="post-list post-list--with-coments">
+<section class="list list--post-list-with-coments">
 	<h3 class="post-list-title">
 		Post list with comments
 	</h3>

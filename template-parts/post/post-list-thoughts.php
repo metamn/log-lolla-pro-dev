@@ -14,7 +14,7 @@ if ( empty( $posts ) ) {
 
 $title = log_lolla_pro_get_archive_label( 'Thoughts' );
 
-set_query_var( 'post-list-klass', 'post-list--thoughts' );
+set_query_var( 'post-list-klass', 'thoughts' );
 set_query_var( 'post-list-title', $title );
 set_query_var( 'post-list-posts', $posts );
 get_template_part( 'template-parts/post/post-list', 'outside-the-loop' );

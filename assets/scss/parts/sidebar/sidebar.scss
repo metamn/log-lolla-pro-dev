@@ -3,9 +3,9 @@
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
 
-	.widget-list {
-		@include list--vertical-mixed-elements;
+	@include list('.sidebar-title', '.sidebar-widget-list', $show-title: false);
 
+	.sidebar-widget-list {
 		> * {
 			@include widget;
 			max-width: $text-block-width;

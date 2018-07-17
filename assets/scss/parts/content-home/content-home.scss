@@ -3,9 +3,8 @@
 @mixin content-home {
 	@include width--full;
 
-	.post-list {
-		@include post-list--vertical('.post');
-		@include post-list--hide-title;
+	.list--post-list-with-coments {
+		@include list('.post-list-title', '.post-list-posts', '.post', $show-title: false, $show-navigation: true);
 
 		.post {
 			@include post;

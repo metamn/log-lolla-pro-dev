@@ -8,6 +8,10 @@
 		@include link;
 	}
 
+	&.list--summaries {
+		@include list--summaries;
+	}
+
 	&.widget_tag_cloud {
 		@include widget-tag-cloud;
 	}

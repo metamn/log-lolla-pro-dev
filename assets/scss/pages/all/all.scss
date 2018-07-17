@@ -54,18 +54,6 @@ html {
 			@include cursor(pointer);
 		}
 
-		.post-list {
-			@include post-list;
-		}
-
-		.list {
-			@include list;
-		}
-
-		.list-item {
-			@include list-item;
-		}
-
 
 		// Common classes
 		.hidden {

@@ -1,21 +1,27 @@
-@mixin list {
-	&--topics-with-sparklines {
-		@include list--topics-with-sparklines;
+@mixin list($title, $items, $item-type: mixed, $show-title: true, $show-navigation: false, $direction: vertical) {
+	#{$title} {
+		@if ($show-title == false) {
+			display: none;
+		} @else {
+			+ #{$items} {
+				@include margin(yes, no, no, no);
+			}
+		}
 	}
 
-	&--post-formats {
-		@include list--post-formats;
-	}
+	#{$items} {
+		@if ($direction == vertical) {
+			@if ($item-type == mixed) {
+				@include list--vertical-mixed-elements;
+			} @else {
+				@include list--vertical($item-type);
+			}
+		}
 
-	&--people {
-		@include list--people;
-	}
-
-	&--sources {
-		@include list--sources;
-	}
-
-	&--archives-by-date {
-		@include list--archives-by-date;
+		.navigation {
+			@if ($show-navigation == false) {
+				display: none;
+			}
+		}
 	}
 }

@@ -18,7 +18,7 @@ $archive_posts_title = sprintf(
 	get_the_title()
 );
 
-set_query_var( 'post-list-klass', 'post-list--posts' );
+set_query_var( 'post-list-klass', 'post-list' );
 set_query_var( 'post-list-title', $archive_posts_title );
 set_query_var( 'post-list-posts', $posts );
 get_template_part( 'template-parts/post/post', 'list' );

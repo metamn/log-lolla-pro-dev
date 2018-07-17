@@ -1,0 +1,3 @@
+@mixin list--summaries {
+	@include list('.post-list-title', '.post-list-posts', '.post');
+}

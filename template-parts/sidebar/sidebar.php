@@ -10,9 +10,9 @@ $klass = '';
 ?>
 
 <section id="sidebar" class="sidebar">
-	<h3 class="hidden">Sidebar</h3>
+	<h3 class="sidebar-title">Sidebar</h3>
 
-	<div class="widget-list">
+	<div class="sidebar-widget-list">
 		<?php get_sidebar(); ?>
 	</div>
 </section>
