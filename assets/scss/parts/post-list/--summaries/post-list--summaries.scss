@@ -1,7 +1,0 @@
-@mixin post-list--summaries {
-	@include post-list--vertical('> *');
-
-	.post-list-posts {
-		@include post-list--vertical('.post');
-	}
-}

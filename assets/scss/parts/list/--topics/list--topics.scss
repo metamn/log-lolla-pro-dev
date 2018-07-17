@@ -1,4 +1,5 @@
 @mixin list--topics {
+	@include width;
 	@include list($item: '.topic', $direction: horizontal);
 
 	.topic {

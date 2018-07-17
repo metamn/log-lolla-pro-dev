@@ -1,0 +1,8 @@
+@mixin list--post-list-with-comments {
+	@include list('.post-list-title', '.post-list-posts', '.post', $show-title: false, $show-navigation: true);
+
+	.post {
+		@include post;
+		@include post--home;
+	}
+}

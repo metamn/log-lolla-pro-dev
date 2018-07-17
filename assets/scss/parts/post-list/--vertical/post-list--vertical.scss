@@ -1,5 +1,0 @@
-@mixin post-list--vertical($item) {
-	.post-list-posts {
-		@include list--vertical($item);
-	}
-}

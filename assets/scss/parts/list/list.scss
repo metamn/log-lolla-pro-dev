@@ -1,4 +1,4 @@
-@mixin list($title: '.list-title', $items: '.list-items', $item: '.list-item', $show-title: true, $show-navigation: false, $direction: vertical) {
+@mixin list($title: '.list-title', $items: '.list-items', $item: '.list-item', $show-title: true, $show-navigation: false, $direction: vertical, $centered-vertically: true) {
 	#{$title} {
 		@if ($show-title == false) {
 			display: none;
@@ -15,6 +15,10 @@
 				@include list--vertical-mixed-elements;
 			} @else {
 				@include list--vertical($item);
+			}
+
+			@if ($centered-vertically == true) {
+				align-items: center;
 			}
 		} @else {
 			@if ($direction == horizontal) {
