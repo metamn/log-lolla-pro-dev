@@ -16,7 +16,7 @@ if ( $list_items ) {
 			<?php echo wp_kses_post( $list_title ); ?>
 		</h3>
 
-		<div class="list-body">
+		<div class="list-items">
 			<?php echo wp_kses_post( $list_items ); ?>
 		</div>
 	</section>

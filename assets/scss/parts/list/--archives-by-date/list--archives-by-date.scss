@@ -1,9 +1,7 @@
 @mixin list--archives-by-date($padding: half) {
-	@include list--vertical('> *');
+	@include list;
 
-	.list-body {
-		@include list--horizontal('.year-and-months');
-
+	.list-items {
 		.year-and-months {
 			align-items: center;
 

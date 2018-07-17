@@ -1,6 +1,6 @@
 @mixin wp-nav-menu {
 	@include ul;
-	@include list--vertical('li', no);
+	@include list--vertical('li', half);
 	@include ul-nested;
 	@include ul--underlined;
 

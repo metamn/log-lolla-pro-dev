@@ -1,7 +1,3 @@
 @mixin list--people {
-	@include list--vertical('> *');
-
-	.list-body {
-		@include list--horizontal('.list-item');
-	}
+	@include list($direction: horizontal);
 }
