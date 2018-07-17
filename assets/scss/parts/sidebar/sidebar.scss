@@ -8,6 +8,7 @@
 	.sidebar-widget-list {
 		> * {
 			@include widget;
+			@include widget-list;
 			max-width: $text-block-width;
 			width: 100%;
 		}

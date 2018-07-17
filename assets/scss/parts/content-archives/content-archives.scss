@@ -1,14 +1,15 @@
 @mixin content-archives {
-	@include sidebar;
-
+	@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
+	@include padding(yes, no, yes, no);
+	@include margin(yes, no, no, no);
 	max-width: none;
 
-	.archives-title {
-		display: none;
-	}
+	@include list('.archives-title', '.archives-widget-list', mixed, $show-title: false);
 
-	.widget-list {
+	.archives-widget-list {
 		> * {
+			@include widget;
+			@include widget-list;
 			@include width;
 			max-width: none;
 		}

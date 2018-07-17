@@ -1,0 +1,25 @@
+@mixin widget-list {
+	&.list--summaries {
+		@include list--summaries;
+	}
+
+	&.list--topics-with-sparklines {
+		@include list--topics-with-sparklines;
+	}
+
+	&.list--post-formats {
+		@include list--post-formats;
+	}
+
+	&.list--people {
+		@include list--post-formats;
+	}
+
+	&.list--sources {
+		@include list--post-formats;
+	}
+
+	&.list--archives-by-date {
+		@include list--archives-by-date;
+	}
+}
