@@ -18,11 +18,10 @@ get_header();
 		<?php echo do_shortcode( '[log-lolla-pro-post-formats]' ); ?>
 
 		<?php
-		/* translators: Post Formats Archive page name */
-		$title = esc_html_x( 'Post Formats', 'Post Formats Archive page name', 'log-lolla-pro' );
+		$title = log_lolla_pro_get_post_format_label( 'Post Formats' );
 
 		set_query_var( 'archive_title', $title );
-		get_template_part( 'template-parts/archive/archive', 'header' );
+		get_template_part( 'template-parts/archive/archive-header', 'without-counters' );
 		?>
 	</div>
 </section>

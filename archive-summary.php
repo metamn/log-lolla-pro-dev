@@ -28,7 +28,7 @@ get_header();
 			get_template_part( 'template-parts/post/post', 'list' );
 		?>
 
-		<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+		<?php get_template_part( 'template-parts/archive/archive-header', 'without-counters' ); ?>
 	</div>
 </section>
 

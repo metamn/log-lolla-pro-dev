@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays a single Summar ypost.
+ * Displays a single Summar post.
  *
  * The page contains:
  *  * The Single post format template part.
