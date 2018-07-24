@@ -11,7 +11,7 @@
  * @since 1.0.0
  */
 
-if ( empty( $list_item_graphic ) ) {
+if ( ! isset( $list_item_graphic ) ) {
 	$list_item_graphic = get_query_var( 'list_item_graphic' );
 }
 
@@ -27,7 +27,7 @@ if ( empty( $list_item_primary_text ) ) {
 	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
 }
 
-if ( empty( $list_item_graphic ) ) {
+if ( ! isset( $list_item_graphic ) ) {
 	return;
 }
 ?>

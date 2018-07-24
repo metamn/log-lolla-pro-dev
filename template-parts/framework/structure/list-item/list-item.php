@@ -34,7 +34,7 @@ $list_item_icon_url       = get_query_var( 'list_item_icon_url' );
 
 	if ( ! empty( $list_item_avatar ) ) {
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'avatar' );
-	} elseif ( ! empty( $list_item_graphic ) ) {
+	} elseif ( isset( $list_item_graphic ) ) {
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'graphic' );
 	}
 

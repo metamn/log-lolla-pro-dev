@@ -65,8 +65,6 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 		$ret[] = is_null( $standard_posts_count ) ? 0 : $standard_posts_count;
 		$ret[] = is_null( $related_topics_count ) ? 0 : $related_topics_count;
 
-		print_r($ret);
-
 		return $ret;
 	}
 }
@@ -106,7 +104,7 @@ if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 				'text'     => $pictogram_text,
 				'number'   => $counters[ $index ],
 				'scrollto' => 'list--' . $pictogram_classes[ $index ],
-				'klass'    => ( $counters[ $index ] > 0 ) ? 'activable' : 'inactivable',
+				'klass'    => ( 0 !== $counters[ $index ] ) ? 'activable' : 'inactivable',
 			);
 		}
 
