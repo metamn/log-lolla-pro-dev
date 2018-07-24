@@ -65,7 +65,52 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_counter_list' ) ) {
 		$ret[] = is_null( $standard_posts_count ) ? 0 : $standard_posts_count;
 		$ret[] = is_null( $related_topics_count ) ? 0 : $related_topics_count;
 
+		print_r($ret);
+
 		return $ret;
+	}
+}
+
+if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
+	/**
+	 * Returns a list of pictograms of an Archive.
+	 *
+	 * Pictograms are visual summaries of what's included in an Archive.
+	 *
+	 * @param  array $counters An array of counters for an Archive.
+	 * @return array           An array of counters formatted to be displayed as pictograms.
+	 */
+	function log_lolla_pro_get_pictogram_list( $counters ) {
+		if ( empty( $counters ) ) {
+			return;
+		}
+
+		$pictograms = [];
+
+		$pictogram_texts = array(
+			log_lolla_pro_get_archive_label( 'Posts' ),
+			log_lolla_pro_get_archive_label( 'Summaries' ),
+			log_lolla_pro_get_archive_label( 'Thoughts' ),
+			log_lolla_pro_get_archive_label( 'Related topics' ),
+		);
+
+		$pictogram_classes = array(
+			'post-list-for-archive',
+			'summaries',
+			'thoughts',
+			'related-topics',
+		);
+
+		foreach ( $pictogram_texts as $index => $pictogram_text ) {
+			$pictograms[] = array(
+				'text'     => $pictogram_text,
+				'number'   => $counters[ $index ],
+				'scrollto' => 'list--' . $pictogram_classes[ $index ],
+				'klass'    => ( $counters[ $index ] > 0 ) ? 'activable' : 'inactivable',
+			);
+		}
+
+		return $pictograms;
 	}
 }
 

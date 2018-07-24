@@ -9,54 +9,6 @@
  * @package Log_Lolla_Pro
  */
 
-if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
-	/**
-	 * Returns a list of pictograms of an Archive.
-	 *
-	 * Pictograms are visual summaries of what's included in an Archive.
-	 *
-	 * @param  array $counters An array of counters for an Archive.
-	 * @return array           An array of counters formatted to be displayed as pictograms.
-	 */
-	function log_lolla_pro_get_pictogram_list( $counters ) {
-		$pictograms = [];
-
-		$pictograms[] = array(
-			/* translators: The title of the `Posts` counter in the archive header. */
-			'text'     => esc_html__( 'Posts', 'log-lolla-pro' ),
-			'number'   => $counters[0],
-			'scrollto' => 'archive-list--posts',
-			'klass'    => ( $counters[0] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			/* translators: The title of the `Summaries` counter in the archive header. */
-			'text'     => esc_html__( 'Summaries', 'log-lolla-pro' ),
-			'number'   => $counters[1],
-			'scrollto' => 'archive-list--summaries',
-			'klass'    => ( $counters[1] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			/* translators: The title of the `Thoughts` counter in the archive header. */
-			'text'     => esc_html__( 'Thoughts', 'log-lolla-pro' ),
-			'number'   => $counters[2],
-			'scrollto' => 'archive-list--standard-posts',
-			'klass'    => ( $counters[2] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		$pictograms[] = array(
-			/* translators: The title of the `Related topics` counter in the archive header. */
-			'text'     => esc_html__( 'Related topics', 'log-lolla-pro' ),
-			'number'   => $counters[3],
-			'scrollto' => 'archive-list--related-topics',
-			'klass'    => ( $counters[3] > 0 ) ? 'activable' : 'inactivable',
-		);
-
-		return $pictograms;
-	}
-}
-
 if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	/**
 	 * Returns a class name using the BEM convention.
