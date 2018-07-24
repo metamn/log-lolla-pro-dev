@@ -22,7 +22,7 @@ get_header();
 
 	<div class="archive-items">
 		<?php
-		get_template_part( 'template-parts/post/post-list', 'post-list--posts' );
+		get_template_part( 'template-parts/post/post-list', 'post-type' );
 		get_template_part( 'template-parts/post/post-list', 'summaries-for-post-type' );
 
 		$topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
