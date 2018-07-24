@@ -9874,6 +9874,10 @@ html {
           margin-right: 0; } }
       html body .content.content-archive .archive-items .navigation {
         display: none; }
+    html body .content.content-archive .archive-items .widget-log-lolla-pro--topics-summary .widget-title {
+      display: none; }
+    html body .content.content-archive .archive-items .shortcode--topics-summary .shortcode-title {
+      display: none; }
     @media only screen and (max-width: 767.9px) {
       html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
         margin-top: 2.5em; } }
@@ -15369,6 +15373,10 @@ html {
             margin-right: 0; } }
         html body .content.content-archives .archives-widget-list .navigation {
           display: none; }
+      html body .content.content-archives .archives-widget-list .widget-log-lolla-pro--topics-summary .widget-title {
+        display: none; }
+      html body .content.content-archives .archives-widget-list .shortcode--topics-summary .shortcode-title {
+        display: none; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
           margin-top: 2.5em; } }
@@ -30452,6 +30460,10 @@ html {
             margin-right: 0; } }
         html body .sidebar .sidebar-widget-list .navigation {
           display: none; }
+      html body .sidebar .sidebar-widget-list .widget-log-lolla-pro--topics-summary .widget-title {
+        display: none; }
+      html body .sidebar .sidebar-widget-list .shortcode--topics-summary .shortcode-title {
+        display: none; }
       @media only screen and (max-width: 767.9px) {
         html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
           margin-top: 2.5em; } }

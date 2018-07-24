@@ -33,7 +33,10 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' )
 		// Content.
 		$content = log_lolla_pro_get_topic_list_summary( $attrs['categories'], $attrs['tags'] );
 
-		return log_lolla_pro_display_shortcode( '', $content );
+		// Title.
+		$title = log_lolla_pro_get_topic_label( 'Topics Summary' );
+
+		return log_lolla_pro_display_shortcode( $title, $content );
 	}
 
 	add_shortcode( 'log-lolla-pro-topics-summary', 'log_lolla_pro_create_custom_shortcode_topics_summary' );
@@ -270,8 +273,10 @@ if ( ! function_exists( 'log_lolla_pro_display_shortcode' ) ) {
 	function log_lolla_pro_display_shortcode( $title, $content, $url = '' ) {
 		$html = '';
 
+		$klass = 'shortcode--' . log_lolla_pro_convert_string_to_classname( $title );
+
 		ob_start();
-		set_query_var( 'shortcode_klass', log_lolla_pro_convert_string_to_classname( $title ) );
+		set_query_var( 'shortcode_klass', $klass );
 		set_query_var( 'shortcode_title', $title );
 		set_query_var( 'shortcode_body', $content );
 

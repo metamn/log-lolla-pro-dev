@@ -1,4 +1,16 @@
 @mixin widget-list {
+	.widget-log-lolla-pro--topics-summary {
+		.widget-title {
+			display: none;
+		}
+	}
+
+	.shortcode--topics-summary {
+		.shortcode-title {
+			display: none;
+		}
+	}
+
 	.list--summaries {
 		@include list--summaries;
 	}
