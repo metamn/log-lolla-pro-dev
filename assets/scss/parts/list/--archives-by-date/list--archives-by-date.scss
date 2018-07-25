@@ -6,7 +6,7 @@
 		@include list--vertical('.year-and-months');
 
 		.year-and-months {
-			@include list--horizontal('> *', half, half);
+			@include list--horizontal-mixed-items(half, no);
 
 			align-items: center;
 			flex-wrap: nowrap;

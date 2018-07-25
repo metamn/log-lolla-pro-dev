@@ -10003,6 +10003,30 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item {
             margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-top: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-top: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .list-item:last-of-type {
+            margin-right: 0; } }
       html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .navigation {
         display: none; }
     html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item {
@@ -10078,6 +10102,30 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
             margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-top: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-top: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > *:last-child {
+            margin-right: 0; } }
     html body .content.content-archive .archive-items .list--post-formats {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10143,6 +10191,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--post-formats .list-items .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-items .list-item:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .list--post-formats .list-items .navigation {
           display: none; }
       @media only screen and (max-width: 767.9px) {
@@ -10230,6 +10302,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--post-formats .list-item > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > *:last-child {
+              margin-right: 0; } }
     html body .content.content-archive .archive-items .list--people {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10295,6 +10391,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--people .list-items .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-items .list-item:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .list--people .list-items .navigation {
           display: none; }
       @media only screen and (max-width: 767.9px) {
@@ -10382,6 +10502,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--people .list-item > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > *:last-child {
+              margin-right: 0; } }
     html body .content.content-archive .archive-items .list--sources {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10447,6 +10591,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--sources .list-items .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-items .list-item:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .list--sources .list-items .navigation {
           display: none; }
       @media only screen and (max-width: 767.9px) {
@@ -10534,6 +10702,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > *:last-child {
+              margin-right: 0; } }
     html body .content.content-archive .archive-items .list--archives-by-date {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10666,12 +10858,6 @@ html {
                 flex-wrap: wrap; }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
-                margin-bottom: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
-                margin-bottom: 1.25em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
                 margin-right: 0.625em; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
@@ -10684,10 +10870,40 @@ html {
                 margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
                 margin-left: 0; } }
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > *:last-child {
+                margin-right: 0; } }
           html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .year,
           html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .month {
             min-width: 2.5em; }
@@ -10734,6 +10950,30 @@ html {
               @media only screen and (min-width: 768px) {
                 html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
                   margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                  margin-right: 0; } }
             @media only screen and (max-width: 767.9px) {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
                 padding-top: 1.25em; } }
@@ -10991,6 +11231,46 @@ html {
             html body .content.content-archive .archive-items .list--tags .list-items .topic,
             html body .content.content-archive .archive-items .list--categories .list-items .topic {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--related-topics .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--tags .list-items .topic:last-of-type,
+            html body .content.content-archive .archive-items .list--categories .list-items .topic:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .list--related-topics .list-items .navigation,
         html body .content.content-archive .archive-items .list--tags .list-items .navigation,
         html body .content.content-archive .archive-items .list--categories .list-items .navigation {
@@ -11112,7 +11392,7 @@ html {
         @media only screen and (min-width: 768px) {
           html body .content.content-archive .archive-items .archive-header .archive-title-and-description {
             padding-right: 1.25em; } }
-        html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+        html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -11122,29 +11402,53 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-right: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-right: 1.25em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-bottom: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .archive-header .archive-title-and-description div {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-title-and-description > *:last-child {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .archive-header .archive-title-and-description .list-item-primary-and-secondary-text {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -11155,28 +11459,24 @@ html {
                   flex-direction: column; }
         html body .content.content-archive .archive-items .archive-header .archive-title-and-description .list-item-primary-text {
           font-size: 1.953em; }
-        html body .content.content-archive .archive-items .archive-header .archive-title-and-description .list-item-graphic {
-          -webkit-box-ordinal-group: 0;
-              -ms-flex-order: -1;
-                  order: -1; }
-          html body .content.content-archive .archive-items .archive-header .archive-title-and-description .list-item-graphic .circle {
-            background-color: black;
-            color: white;
-            border-radius: 3.75em;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            height: 3.75em;
-            min-height: 3.75em;
-            min-width: 3.75em;
-            width: 3.75em;
-            overflow: hidden; }
+        html body .content.content-archive .archive-items .archive-header .archive-title-and-description .list-item-graphic .circle {
+          background-color: black;
+          color: white;
+          border-radius: 3.75em;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          height: 3.75em;
+          min-height: 3.75em;
+          min-width: 3.75em;
+          width: 3.75em;
+          overflow: hidden; }
       html body .content.content-archive .archive-items .archive-header .archive-counter-list {
         border-top: 1px solid;
         display: -webkit-box;
@@ -11231,6 +11531,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .archive-header .archive-counter-list .list-item:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -11270,6 +11594,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter > *:last-child {
+                margin-right: 0; } }
           html body .content.content-archive .archive-items .archive-header .archive-counter-list .archive-counter .list-item-icon .arrow-with-triangle {
             -webkit-box-align: center;
                 -ms-flex-align: center;
@@ -15897,6 +16245,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-right: 0; } }
         html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .navigation {
           display: none; }
       html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item {
@@ -15972,6 +16344,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-right: 0; } }
       html body .content.content-archives .archives-widget-list .list--post-formats {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -16037,6 +16433,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .content.content-archives .archives-widget-list .list--post-formats .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -16124,6 +16544,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > *:last-child {
+                margin-right: 0; } }
       html body .content.content-archives .archives-widget-list .list--people {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -16189,6 +16633,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--people .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .content.content-archives .archives-widget-list .list--people .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -16276,6 +16744,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--people .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > *:last-child {
+                margin-right: 0; } }
       html body .content.content-archives .archives-widget-list .list--sources {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -16341,6 +16833,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .content.content-archives .archives-widget-list .list--sources .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -16428,6 +16944,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > *:last-child {
+                margin-right: 0; } }
       html body .content.content-archives .archives-widget-list .list--archives-by-date {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -16560,12 +17100,6 @@ html {
                   flex-wrap: wrap; }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
-                  margin-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
-                  margin-bottom: 1.25em; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
@@ -16578,10 +17112,40 @@ html {
                   margin-top: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-left: 0; } }
               @media only screen and (min-width: 768px) {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-right: 0; } }
             html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .year,
             html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .month {
               min-width: 2.5em; }
@@ -16628,6 +17192,30 @@ html {
                 @media only screen and (min-width: 768px) {
                   html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
                     margin-left: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-left: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-left: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-right: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
                   padding-top: 1.25em; } }
@@ -16885,6 +17473,46 @@ html {
               html body .content.content-archives .archives-widget-list .list--tags .list-items .topic,
               html body .content.content-archives .archives-widget-list .list--categories .list-items .topic {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .content.content-archives .archives-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-right: 0; } }
           html body .content.content-archives .archives-widget-list .list--related-topics .list-items .navigation,
           html body .content.content-archives .archives-widget-list .list--tags .list-items .navigation,
           html body .content.content-archives .archives-widget-list .list--categories .list-items .navigation {
@@ -25786,6 +26414,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content.content-single .post-footer .list > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-single .post-footer .list > *:last-of-type {
+              margin-right: 0; } }
         html body .content.content-single .post-footer .list .topic,
         html body .content.content-single .post-footer .list .posted-on,
         html body .content.content-single .post-footer .list .posted-by,
@@ -31367,6 +32019,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-bottom: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .list-item:last-of-type {
+              margin-right: 0; } }
         html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .navigation {
           display: none; }
       html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item {
@@ -31442,6 +32118,30 @@ html {
           @media only screen and (min-width: 768px) {
             html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
               margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > *:last-child {
+              margin-right: 0; } }
       html body .sidebar .sidebar-widget-list .list--post-formats {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -31507,6 +32207,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .sidebar .sidebar-widget-list .list--post-formats .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -31594,6 +32318,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > *:last-child {
+                margin-right: 0; } }
       html body .sidebar .sidebar-widget-list .list--people {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -31659,6 +32407,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--people .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .sidebar .sidebar-widget-list .list--people .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -31746,6 +32518,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--people .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > *:last-child {
+                margin-right: 0; } }
       html body .sidebar .sidebar-widget-list .list--sources {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -31811,6 +32607,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-items .list-item:last-of-type {
+                margin-right: 0; } }
           html body .sidebar .sidebar-widget-list .list--sources .list-items .navigation {
             display: none; }
         @media only screen and (max-width: 767.9px) {
@@ -31898,6 +32718,30 @@ html {
             @media only screen and (min-width: 768px) {
               html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > *:last-child {
+                margin-right: 0; } }
       html body .sidebar .sidebar-widget-list .list--archives-by-date {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -32030,12 +32874,6 @@ html {
                   flex-wrap: wrap; }
               @media only screen and (max-width: 767.9px) {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
-                  margin-bottom: 1.25em; } }
-              @media only screen and (min-width: 768px) {
-                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
-                  margin-bottom: 1.25em; } }
-              @media only screen and (max-width: 767.9px) {
-                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-right: 0.625em; } }
               @media only screen and (min-width: 768px) {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
@@ -32048,10 +32886,40 @@ html {
                   margin-top: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-left: 0; } }
               @media only screen and (min-width: 768px) {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
                   margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-bottom: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-bottom: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-right: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > *:last-child {
+                  margin-right: 0; } }
             html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .year,
             html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .month {
               min-width: 2.5em; }
@@ -32098,6 +32966,30 @@ html {
                 @media only screen and (min-width: 768px) {
                   html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
                     margin-left: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-left: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-left: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-right: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month:last-of-type {
+                    margin-right: 0; } }
               @media only screen and (max-width: 767.9px) {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
                   padding-top: 1.25em; } }
@@ -32355,6 +33247,46 @@ html {
               html body .sidebar .sidebar-widget-list .list--tags .list-items .topic,
               html body .sidebar .sidebar-widget-list .list--categories .list-items .topic {
                 margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-bottom: 2.5em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-right: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--related-topics .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--tags .list-items .topic:last-of-type,
+              html body .sidebar .sidebar-widget-list .list--categories .list-items .topic:last-of-type {
+                margin-right: 0; } }
           html body .sidebar .sidebar-widget-list .list--related-topics .list-items .navigation,
           html body .sidebar .sidebar-widget-list .list--tags .list-items .navigation,
           html body .sidebar .sidebar-widget-list .list--categories .list-items .navigation {
@@ -32687,6 +33619,30 @@ html {
         @media only screen and (min-width: 768px) {
           html body .breadcrumb .ul .li {
             margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-bottom: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-bottom: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-top: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-top: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .breadcrumb .ul .li:last-of-type {
+            margin-right: 0; } }
       html body .breadcrumb .ul .li {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;

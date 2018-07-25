@@ -5,8 +5,13 @@
 
 	#{$item} {
 		@include margin(no, $margin-right, $margin-bottom, no);
+
 		align-items: flex-start;
 		display: flex;
 		flex-wrap: wrap;
+
+		&:last-of-type {
+			@include margin(no, no, $margin-bottom, no);
+		}
 	}
 }

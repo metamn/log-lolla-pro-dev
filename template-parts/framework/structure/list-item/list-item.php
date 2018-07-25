@@ -26,16 +26,16 @@ $list_item_icon_url       = get_query_var( 'list_item_icon_url' );
 
 <aside class="list-item <?php echo esc_attr( $list_item_class ); ?>">
 	<?php
-	if ( ! empty( $list_item_secondary_text ) ) {
-		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-and-secondary-text' );
-	} else {
-		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-text' );
-	}
-
 	if ( ! empty( $list_item_avatar ) ) {
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'avatar' );
 	} elseif ( ! log_lolla_pro_empty( $list_item_graphic ) ) {
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'graphic' );
+	}
+
+	if ( ! empty( $list_item_secondary_text ) ) {
+		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-and-secondary-text' );
+	} else {
+		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-text' );
 	}
 
 	get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'metadata' );

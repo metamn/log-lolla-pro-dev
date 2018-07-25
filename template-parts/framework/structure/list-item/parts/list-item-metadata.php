@@ -10,7 +10,7 @@
  * @package Log_Lolla_Pro
  */
 
-if ( empty( $list_item_metadata ) ) {
+if ( log_lolla_pro_empty( $list_item_metadata ) ) {
 	$list_item_metadata = get_query_var( 'list_item_metadata' );
 }
 
@@ -26,7 +26,7 @@ if ( empty( $list_item_primary_text ) ) {
 	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
 }
 
-if ( empty( $list_item_metadata ) ) {
+if ( log_lolla_pro_empty( $list_item_metadata ) ) {
 	return;
 }
 ?>

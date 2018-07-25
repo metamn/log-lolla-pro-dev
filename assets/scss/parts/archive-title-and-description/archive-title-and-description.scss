@@ -1,6 +1,6 @@
 @mixin archive-title-and-description {
 	@include padding(half, half, half, half);
-	@include list--horizontal('div', half, no);
+	@include list--horizontal-mixed-items(half, no);
 
 	align-items: center;
 	flex-wrap: nowrap;
@@ -15,8 +15,6 @@
 	}
 
 	.list-item-graphic {
-		order: -1;
-
 		.circle {
 			@include circle;
 		}

@@ -6,7 +6,7 @@
 	flex-wrap: nowrap;
 
 	.archive-counter {
-		@include list--horizontal('>*', half, half);
+		@include list--horizontal-mixed-items(half, half);
 
 		.list-item-icon {
 			.arrow-with-triangle {
