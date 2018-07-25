@@ -9,6 +9,29 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_empty' ) ) {
+	/**
+	 * Returns true if a variable is not an empty string.
+	 *
+	 * @param  anything $value The variable to be checked.
+	 * @return boolean         True or false.
+	 */
+	function log_lolla_pro_empty( $value ) {
+		switch ( true ) {
+			case is_string( $value ):
+				$ret = empty( $value );
+				break;
+			case is_int( $value ):
+				$ret = false;
+				break;
+			default:
+				$ret = isset( $value );
+		}
+
+		return $ret;
+	}
+}
+
 if ( ! function_exists( 'log_lolla_pro_get_classname_bem' ) ) {
 	/**
 	 * Returns a class name using the BEM convention.
