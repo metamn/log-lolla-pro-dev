@@ -1,9 +1,16 @@
 @mixin list--archives-by-date($padding: half) {
 	@include list;
+	@include width;
 
 	.list-items {
+		@include list--vertical('.year-and-months');
+
 		.year-and-months {
+			@include list--horizontal('> *', half, half);
+
 			align-items: center;
+			flex-wrap: nowrap;
+			width: 100%;
 
 			.year,
 			.month {
@@ -11,9 +18,11 @@
 			}
 
 			.months {
-				@include list--horizontal('.month');
+				@include list--horizontal('.month', half, half);
 				@include border(normal, all);
 				@include padding($padding, no, no, $padding);
+
+				align-items: center;
 			}
 		}
 	}

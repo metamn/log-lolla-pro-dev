@@ -10005,6 +10005,79 @@ html {
             margin-left: 0; } }
       html body .content.content-archive .archive-items .list--topics-with-sparklines .list-items .navigation {
         display: none; }
+    html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        width: 2.5em; }
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar img {
+          display: block;
+          height: auto;
+          max-width: 100%;
+          width: auto; }
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar figcaption,
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text {
+          background-color: white;
+          color: black;
+          font-size: 0.8em;
+          line-height: 1.5;
+          display: inline-block; }
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar .figcaption,
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text,
+        html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-avatar figcaption {
+          display: none; }
+      html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item .list-item-primary-and-secondary-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-right: 0.625em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-right: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-top: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-top: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--topics-with-sparklines .list-item > * {
+            margin-left: 0; } }
     html body .content.content-archive .archive-items .list--post-formats {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10084,6 +10157,79 @@ html {
       @media only screen and (min-width: 1600.1px) {
         html body .content.content-archive .archive-items .list--post-formats {
           max-width: 37.5em; } }
+      html body .content.content-archive .archive-items .list--post-formats .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          width: 2.5em; }
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto; }
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar figcaption,
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar .wp-caption-text {
+            background-color: white;
+            color: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            display: inline-block; }
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar .figcaption,
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar .wp-caption-text,
+          html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-avatar figcaption {
+            display: none; }
+        html body .content.content-archive .archive-items .list--post-formats .list-item .list-item-primary-and-secondary-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-right: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-right: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--post-formats .list-item > * {
+              margin-left: 0; } }
     html body .content.content-archive .archive-items .list--people {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10163,6 +10309,79 @@ html {
       @media only screen and (min-width: 1600.1px) {
         html body .content.content-archive .archive-items .list--people {
           max-width: 37.5em; } }
+      html body .content.content-archive .archive-items .list--people .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          width: 2.5em; }
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto; }
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar figcaption,
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar .wp-caption-text {
+            background-color: white;
+            color: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            display: inline-block; }
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar .figcaption,
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar .wp-caption-text,
+          html body .content.content-archive .archive-items .list--people .list-item .list-item-avatar figcaption {
+            display: none; }
+        html body .content.content-archive .archive-items .list--people .list-item .list-item-primary-and-secondary-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        html body .content.content-archive .archive-items .list--people .list-item > * {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-right: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-right: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--people .list-item > * {
+              margin-left: 0; } }
     html body .content.content-archive .archive-items .list--sources {
       width: 100%; }
       @media only screen and (max-width: 767.9px) {
@@ -10242,83 +10461,47 @@ html {
       @media only screen and (min-width: 1600.1px) {
         html body .content.content-archive .archive-items .list--sources {
           max-width: 37.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-top: 2.5em; } }
-    @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-top: 2.5em; } }
-    @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-bottom: 0; } }
-    @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-bottom: 0; } }
-    @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-left: 0; } }
-    @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-left: 0; } }
-    @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-right: 0; } }
-    @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
-        margin-right: 0; } }
-    html body .content.content-archive .archive-items .list--archives-by-date .list-items {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      width: 100%;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
-          margin-right: 0; } }
-      html body .content.content-archive .archive-items .list--archives-by-date .list-items .navigation {
-        display: none; }
-    html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .year,
-      html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .month {
-        min-width: 2.5em; }
-      html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
+      html body .content.content-archive .archive-items .list--sources .list-item {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        border: 1px solid; }
-        html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            flex-wrap: wrap; }
+        html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          width: 2.5em; }
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto; }
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar figcaption,
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar .wp-caption-text {
+            background-color: white;
+            color: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            display: inline-block; }
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar .figcaption,
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar .wp-caption-text,
+          html body .content.content-archive .archive-items .list--sources .list-item .list-item-avatar figcaption {
+            display: none; }
+        html body .content.content-archive .archive-items .list--sources .list-item .list-item-primary-and-secondary-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        html body .content.content-archive .archive-items .list--sources .list-item > * {
           -webkit-box-align: start;
               -ms-flex-align: start;
                   align-items: flex-start;
@@ -10328,41 +10511,241 @@ html {
           -ms-flex-wrap: wrap;
               flex-wrap: wrap; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
-              margin-bottom: 2.5em; } }
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
+              margin-right: 0.625em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
-              margin-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
-              margin-right: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-top: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-top: 0; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-left: 0; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+            html body .content.content-archive .archive-items .list--sources .list-item > * {
               margin-left: 0; } }
+    html body .content.content-archive .archive-items .list--archives-by-date {
+      width: 100%; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-top: 2.5em; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-top: 2.5em; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content.content-archive .archive-items .list--archives-by-date .list-title + .list-items {
+          margin-right: 0; } }
+      html body .content.content-archive .archive-items .list--archives-by-date .list-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
-            padding-top: 1.25em; } }
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
-            padding-top: 1.25em; } }
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
-            padding-left: 0.625em; } }
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .list-item + .list-item {
+            margin-right: 0; } }
+        html body .content.content-archive .archive-items .list--archives-by-date .list-items .navigation {
+          display: none; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content.content-archive .archive-items .list--archives-by-date {
+          max-width: calc(100% - 2.5em); } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html body .content.content-archive .archive-items .list--archives-by-date {
+          max-width: calc(100% - 5em); } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .content.content-archive .archive-items .list--archives-by-date {
+          max-width: 37.5em; } }
+      @media only screen and (min-width: 1600.1px) {
+        html body .content.content-archive .archive-items .list--archives-by-date {
+          max-width: 37.5em; } }
+      html body .content.content-archive .archive-items .list--archives-by-date .list-items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months + .year-and-months {
+            margin-right: 0; } }
+        html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+          width: 100%; }
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months > * {
+                margin-left: 0; } }
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .year,
+          html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .month {
+            min-width: 2.5em; }
           html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
-            padding-left: 1.25em; } }
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            border: 1px solid;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center; }
+            html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-right: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-right: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months .month {
+                  margin-left: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
+                padding-top: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
+                padding-top: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
+                padding-left: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
+                padding-left: 1.25em; } }
     @media only screen and (max-width: 767.9px) {
       html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
         margin-top: 2.5em; } }
@@ -15504,6 +15887,79 @@ html {
               margin-left: 0; } }
         html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-items .navigation {
           display: none; }
+      html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          width: 2.5em; }
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto; }
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar figcaption,
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text {
+            background-color: white;
+            color: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            display: inline-block; }
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .figcaption,
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text,
+          html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-avatar figcaption {
+            display: none; }
+        html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item .list-item-primary-and-secondary-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-right: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-right: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-left: 0; } }
       html body .content.content-archives .archives-widget-list .list--post-formats {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -15583,6 +16039,79 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-archives .archives-widget-list .list--post-formats {
             max-width: 37.5em; } }
+        html body .content.content-archives .archives-widget-list .list--post-formats .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar figcaption,
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar .figcaption,
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar .wp-caption-text,
+            html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .content.content-archives .archives-widget-list .list--post-formats .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--post-formats .list-item > * {
+                margin-left: 0; } }
       html body .content.content-archives .archives-widget-list .list--people {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -15662,6 +16191,79 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-archives .archives-widget-list .list--people {
             max-width: 37.5em; } }
+        html body .content.content-archives .archives-widget-list .list--people .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar figcaption,
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar .figcaption,
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar .wp-caption-text,
+            html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .content.content-archives .archives-widget-list .list--people .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--people .list-item > * {
+                margin-left: 0; } }
       html body .content.content-archives .archives-widget-list .list--sources {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -15741,83 +16343,47 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content.content-archives .archives-widget-list .list--sources {
             max-width: 37.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-right: 0; } }
-      html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-right: 0; } }
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .navigation {
-          display: none; }
-      html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .year,
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .month {
-          min-width: 2.5em; }
-        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
+        html body .content.content-archives .archives-widget-list .list--sources .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          border: 1px solid; }
-          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              flex-wrap: wrap; }
+          html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar figcaption,
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar .figcaption,
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar .wp-caption-text,
+            html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .content.content-archives .archives-widget-list .list--sources .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: flex-start;
@@ -15827,41 +16393,241 @@ html {
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-bottom: 2.5em; } }
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
+                margin-right: 0.625em; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-bottom: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-right: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-right: 2.5em; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-top: 0; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
             @media only screen and (min-width: 768px) {
-              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .content.content-archives .archives-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
+      html body .content.content-archives .archives-widget-list .list--archives-by-date {
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-right: 0; } }
+        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-top: 1.25em; } }
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-top: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-top: 1.25em; } }
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-top: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-left: 0.625em; } }
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-right: 0; } }
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .navigation {
+            display: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content.content-archives .archives-widget-list .list--archives-by-date {
+            max-width: 37.5em; } }
+        html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-right: 0; } }
+          html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            width: 100%; }
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-right: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-right: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-left: 0; } }
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .year,
+            html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .month {
+              min-width: 2.5em; }
             html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-left: 1.25em; } }
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              border: 1px solid;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-right: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-right: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-left: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-top: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-left: 1.25em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
           margin-top: 2.5em; } }
@@ -30591,6 +31357,79 @@ html {
               margin-left: 0; } }
         html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-items .navigation {
           display: none; }
+      html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+        html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          width: 2.5em; }
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar img {
+            display: block;
+            height: auto;
+            max-width: 100%;
+            width: auto; }
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar figcaption,
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text {
+            background-color: white;
+            color: black;
+            font-size: 0.8em;
+            line-height: 1.5;
+            display: inline-block; }
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .figcaption,
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar .wp-caption-text,
+          html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-avatar figcaption {
+            display: none; }
+        html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item .list-item-primary-and-secondary-text {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+        html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-right: 0.625em; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-right: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-item > * {
+              margin-left: 0; } }
       html body .sidebar .sidebar-widget-list .list--post-formats {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -30670,6 +31509,79 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .sidebar .sidebar-widget-list .list--post-formats {
             max-width: 37.5em; } }
+        html body .sidebar .sidebar-widget-list .list--post-formats .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar figcaption,
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar .figcaption,
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar .wp-caption-text,
+            html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .sidebar .sidebar-widget-list .list--post-formats .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--post-formats .list-item > * {
+                margin-left: 0; } }
       html body .sidebar .sidebar-widget-list .list--people {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -30749,6 +31661,79 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .sidebar .sidebar-widget-list .list--people {
             max-width: 37.5em; } }
+        html body .sidebar .sidebar-widget-list .list--people .list-item {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+          html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar figcaption,
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar .figcaption,
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar .wp-caption-text,
+            html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .sidebar .sidebar-widget-list .list--people .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--people .list-item > * {
+                margin-left: 0; } }
       html body .sidebar .sidebar-widget-list .list--sources {
         width: 100%; }
         @media only screen and (max-width: 767.9px) {
@@ -30828,83 +31813,47 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .sidebar .sidebar-widget-list .list--sources {
             max-width: 37.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
-          margin-right: 0; } }
-      html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        width: 100%;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
-            margin-right: 0; } }
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .navigation {
-          display: none; }
-      html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months {
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .year,
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .month {
-          min-width: 2.5em; }
-        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
+        html body .sidebar .sidebar-widget-list .list--sources .list-item {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
           -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          border: 1px solid; }
-          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              flex-wrap: wrap; }
+          html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 100%;
+            width: 2.5em; }
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar img {
+              display: block;
+              height: auto;
+              max-width: 100%;
+              width: auto; }
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar figcaption,
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar .wp-caption-text {
+              background-color: white;
+              color: black;
+              font-size: 0.8em;
+              line-height: 1.5;
+              display: inline-block; }
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar .figcaption,
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar .wp-caption-text,
+            html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-avatar figcaption {
+              display: none; }
+          html body .sidebar .sidebar-widget-list .list--sources .list-item .list-item-primary-and-secondary-text {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column; }
+          html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
             -webkit-box-align: start;
                 -ms-flex-align: start;
                     align-items: flex-start;
@@ -30914,41 +31863,241 @@ html {
             -ms-flex-wrap: wrap;
                 flex-wrap: wrap; }
             @media only screen and (max-width: 767.9px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-bottom: 2.5em; } }
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
+                margin-right: 0.625em; } }
             @media only screen and (min-width: 768px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-bottom: 2.5em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-right: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
-                margin-right: 2.5em; } }
             @media only screen and (max-width: 767.9px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-top: 0; } }
             @media only screen and (min-width: 768px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-top: 0; } }
             @media only screen and (max-width: 767.9px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
+                margin-bottom: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
             @media only screen and (min-width: 768px) {
-              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+              html body .sidebar .sidebar-widget-list .list--sources .list-item > * {
                 margin-left: 0; } }
+      html body .sidebar .sidebar-widget-list .list--archives-by-date {
+        width: 100%; }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-title + .list-items {
+            margin-right: 0; } }
+        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
           @media only screen and (max-width: 767.9px) {
-            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-top: 1.25em; } }
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-top: 2.5em; } }
           @media only screen and (min-width: 768px) {
-            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-top: 1.25em; } }
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-top: 2.5em; } }
           @media only screen and (max-width: 767.9px) {
-            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-left: 0.625em; } }
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-bottom: 0; } }
           @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .list-item + .list-item {
+              margin-right: 0; } }
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .navigation {
+            display: none; }
+        @media only screen and (max-width: 767.9px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .sidebar .sidebar-widget-list .list--archives-by-date {
+            max-width: 37.5em; } }
+        html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          width: 100%; }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-bottom: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-bottom: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months + .year-and-months {
+              margin-right: 0; } }
+          html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            width: 100%; }
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+              -webkit-box-align: start;
+                  -ms-flex-align: start;
+                      align-items: flex-start;
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap; }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-bottom: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-right: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-right: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-top: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-top: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-left: 0; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months > * {
+                  margin-left: 0; } }
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .year,
+            html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .month {
+              min-width: 2.5em; }
             html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
-              padding-left: 1.25em; } }
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -ms-flex-wrap: wrap;
+                  flex-wrap: wrap;
+              border: 1px solid;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                -webkit-box-align: start;
+                    -ms-flex-align: start;
+                        align-items: flex-start;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                    flex-wrap: wrap; }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-bottom: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-right: 0.625em; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-right: 1.25em; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-top: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-top: 0; } }
+                @media only screen and (max-width: 767.9px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-left: 0; } }
+                @media only screen and (min-width: 768px) {
+                  html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months .month {
+                    margin-left: 0; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-top: 1.25em; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-top: 1.25em; } }
+              @media only screen and (max-width: 767.9px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-left: 0.625em; } }
+              @media only screen and (min-width: 768px) {
+                html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
+                  padding-left: 1.25em; } }
       @media only screen and (max-width: 767.9px) {
         html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
           margin-top: 2.5em; } }

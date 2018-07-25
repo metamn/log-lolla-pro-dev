@@ -1,3 +1,4 @@
+// the margin right must be set. if not, multiline lists will look ugly starting from the second line, which will be indented by an empty margin
 @mixin list--horizontal($item, $margin-right: yes, $margin-bottom: yes) {
 	display: flex;
 	flex-wrap: wrap;

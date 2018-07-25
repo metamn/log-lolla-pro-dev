@@ -1,4 +1,9 @@
 @mixin list--post-formats {
 	@include list($direction: horizontal);
 	@include width;
+
+	.list-item {
+		@include list-item;
+		@include list--horizontal('>*', half, no);
+	}
 }

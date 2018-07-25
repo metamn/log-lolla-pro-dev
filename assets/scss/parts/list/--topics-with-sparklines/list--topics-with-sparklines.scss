@@ -1,3 +1,8 @@
 @mixin list--topics-with-sparklines {
 	@include list($direction: horizontal);
+
+	.list-item {
+		@include list-item;
+		@include list--horizontal('>*', half, no);
+	}
 }
