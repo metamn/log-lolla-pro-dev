@@ -2,7 +2,7 @@
 
 	@include width;
 
-	border: none;
+	border: 0;
 	flex-wrap: wrap;
 	justify-content: flex-start;
 
@@ -10,15 +10,11 @@
 		width: 100%;
 	}
 
-	.comment-content-or-excerpt {
-		@include border(normal, all);
-		@include padding;
-	}
 
 	.comment-content,
-	.comment-excerpt,
-	.comment-content-or-excerpt {
+	.comment-excerpt {
 		@include padding(yes, yes, yes, yes);
+		@include border(normal, all);
 
 		.text {
 			@include text-style(body-text-post);
