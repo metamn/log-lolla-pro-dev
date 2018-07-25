@@ -3,6 +3,12 @@
 	@include list--horizontal('div', half, no);
 
 	align-items: center;
+	flex-wrap: nowrap;
+
+	.list-item-primary-and-secondary-text {
+		display: flex;
+		flex-direction: column;
+	}
 
 	.list-item-primary-text {
 		@include list-item__primary-text--large;

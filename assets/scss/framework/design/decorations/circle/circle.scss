@@ -2,17 +2,20 @@
 //
 // Draw a circle with a radius and fill with a color
 //
-// 
+//
 @mixin circle($radius: $lem * 3, $color-scheme: inverted) {
-
 	@include colors($color-scheme);
-	align-items: center;
+
 	border-radius: $radius;
 
 	display: flex;
-	height: $radius;
+	align-items: center;
 	justify-content: center;
 
-	overflow: hidden;
+	height: $radius;
+	min-height: $radius;
+	min-width: $radius;
 	width: $radius;
+
+	overflow: hidden;
 }
