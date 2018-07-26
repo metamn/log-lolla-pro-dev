@@ -27,7 +27,7 @@ get_header();
 
 		$topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
 		set_query_var( 'related-to', $topic );
-		get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
+		get_template_part( 'template-parts/topic-list/topic-list', 'related-topics' );
 
 		get_template_part( 'template-parts/archive-header/archive-header', 'for-post-type' );
 		?>

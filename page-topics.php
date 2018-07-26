@@ -34,7 +34,7 @@ get_header();
 		set_query_var( 'list-items', log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ) );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
-		get_template_part( 'template-parts/topic/topic-header', 'without-counters' );
+		get_template_part( 'template-parts/topic-header/topic-header', 'without-counters' );
 		?>
 	</div>
 </section>

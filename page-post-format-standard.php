@@ -37,7 +37,7 @@ get_header();
 
 		<?php
 			set_query_var( 'related-to', $archive );
-			get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
+			get_template_part( 'template-parts/topic-list/topic-list', 'related-topics' );
 		?>
 
 		<?php
