@@ -41,5 +41,5 @@ get_header();
 	</div>
 </section>
 
-
+<?php set_query_var( 'display-sidebar', false ); ?>
 <?php get_footer(); ?>

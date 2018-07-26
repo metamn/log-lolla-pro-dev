@@ -20,7 +20,5 @@ get_header();
 	<?php get_template_part( 'template-parts/post-list/post-list', 'with-comments' ); ?>
 </section>
 
-<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
-
 <?php
 get_footer();

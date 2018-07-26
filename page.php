@@ -42,7 +42,5 @@ get_header();
 	?>
 </section>
 
-<?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>
-
 <?php
 get_footer();

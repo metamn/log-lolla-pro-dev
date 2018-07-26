@@ -35,3 +35,6 @@ $klass = '';
 	<h1 class="hidden"><?php bloginfo( 'name' ); ?></h1>
 
 	<?php get_template_part( 'template-parts/header/header', '' ); ?>
+
+	<?php // Will be closed in the footer. ?>
+	<div class="content">
