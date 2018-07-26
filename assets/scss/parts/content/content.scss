@@ -1,7 +1,6 @@
 // General settings for the content section
 //
 // For different content types there are different mixins
-//
 @mixin content {
 	a,
 	.link {
@@ -10,6 +9,15 @@
 
 	.navigation {
 		@include navigation;
+		@include width;
+	}
+
+	.content-home,
+	.content-archive {
+		.post {
+			@include post;
+			@include post--home;
+		}
 	}
 
 	.content-home {
@@ -17,8 +25,7 @@
 	}
 
 	.content-archive {
-		@include content-home;
-		@include content-archive;;
+		@include content-archive;
 	}
 
 	.content-archives {

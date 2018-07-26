@@ -3,7 +3,6 @@
 
 	@include padding;
 	@include border(normal, all);
-	@include width--full;
 
 	.post-title {
 		@include post-title--large;

@@ -1,4 +1,6 @@
 @mixin width--full {
+	width: 100%;
+	
 	@include laptop {
 		max-width: none;
 	}

@@ -3,15 +3,10 @@
 
 	.archive-items {
 		@include widget-list;
-		
+
 		.archive-header {
 			@include archive-header;
 			order: -1;
 		}
-	}
-
-	.post {
-		@include post;
-		@include post--home;
 	}
 }

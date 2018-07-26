@@ -13,10 +13,30 @@ html {
 		@include form-reset;
 		@include form;
 		@include text-style(default);
-
-		@include all__grid;
-
 		@include cursor;
+
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+
+		// Making blockquotes do not overflow
+		overflow-x: hidden;
+		width: 100%;
+
+		.header,
+		.header-menu,
+		.footer {
+			@include width;
+		}
+
+		.content,
+		.sidebar {
+			@include width--full;
+		}
+
+		a {
+			@include cursor(pointer);
+		}
 
 		.header {
 			@include header;
@@ -44,10 +64,6 @@ html {
 
 		.widget {
 			@include widget;
-		}
-
-		a {
-			@include cursor(pointer);
 		}
 
 

@@ -1,13 +1,7 @@
 // Settings for the content section on the home page
 //
 @mixin content-home {
-	@include width--full;
-
 	.list--post-list-with-comments {
 		@include list--post-list-with-comments;
-	}
-
-	.navigation {
-		@include width;
 	}
 }

@@ -115,7 +115,6 @@ The site has only a few page types but much more templates. We have the homepage
 
 Archive pages have multiple templates associated like `archive-people.php`, `page-categories.php`, `single-people.php` etc. All of these templates has to be prefixed with an `archive` class, and, their specific classnames like `page`, `single` has to be removed.
 
-
 ##### Default site structure
 
 The site has a default structure given by a few main sections: `header`, `content`, `sidebar`, `footer`.
