@@ -14,7 +14,7 @@ Following the WordPress Template Hierarchy: https://developer.wordpress.org/them
 
 Template parts are included with the `get_template_part($slug, $name)` function: https://developer.wordpress.org/reference/functions/get_template_part/
 
-Here we use *special* conditions:
+Here we use a few *special* conditions / conventions:
 
 * `$slug` has to be a separate entity. For example `post-list` and `post-format` has to be separated from `post`:
 
@@ -83,7 +83,9 @@ template-parts/post/
 ├── post-single.php
 ```
 
-### Elements and modifiers
+### HTML classes
+
+#### Naming conventions
 
 We try to use the BEM standards (https://en.bem.info/methodology/quick-start/) but without the `__` prefix for Elements.
 
@@ -92,6 +94,31 @@ For example `Archive header` will become `archive-header` instead of `archive__h
 On Modifiers we try to use a special prefix whenever possible to mark the scope of the modifier.
 
 For example `archive-header-post-type` is incorrect vs. the `archive-header-for-post-type`.
+
+#### Synchronization
+
+Ideally we would a need a single rule to sync the PHP/HTML structure with the SCSS structure: each PHP file should contain its name as a classname.
+
+But WordPress structure and naming conventions are messy. For example the `date.php` stands for the date archives page; `archive-people.php` stands for the people archives page. If we use that single rule we will have `date` and `archive-people` classes which don't tells both of them are archive pages.
+
+Here we need to add a handy transformation / new conventions:
+
+##### Prefixing
+
+Each PHP file should contain its name as a classname, transformed if necessary. For example `date.php` will have to have an `archive-date` classname.
+
+##### Staying semantic
+
+The site has only a few page types but much more templates. We have the homepage, post pages, standard pages, not-found and archive pages as page types.  
+
+Archive pages have multiple templates associated like `archive-people.php`, `page-categories.php`, `single-people.php` etc. All of these templates has to be prefixed with an `archive` class, and, their specific classnames like `page`, `single` has to be removed.
+
+
+##### Default site structure 
+
+The site has a default structure given by a few main sections: `header`, `content`, `sidebar`, `footer`.
+
+While we all have PHP templates for `header`, `sidebar`, `footer` we have no template for `content`. This needs to be added by hand.
 
 
 ## Internationalization
