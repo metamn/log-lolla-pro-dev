@@ -27,7 +27,7 @@ if ( $post_list_posts ) {
 			}
 
 			wp_reset_postdata();
-			get_template_part( 'template-parts/navigation/navigation', 'posts' );
+			get_template_part( 'template-parts/navigation/navigation', 'for-posts' );
 
 			$post = $save_current_post;
 			?>

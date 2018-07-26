@@ -39,7 +39,7 @@ $post_list_post_format = get_query_var( 'post-list-post-format' );
 			}
 
 			wp_reset_postdata();
-			get_template_part( 'template-parts/navigation/navigation', 'posts' );
+			get_template_part( 'template-parts/navigation/navigation', 'for-posts' );
 
 			$post = $save_current_post;
 		} else {
@@ -59,7 +59,7 @@ $post_list_post_format = get_query_var( 'post-list-post-format' );
 					}
 				}
 
-				get_template_part( 'template-parts/navigation/navigation', 'posts' );
+				get_template_part( 'template-parts/navigation/navigation', 'for-posts' );
 			} else {
 				get_template_part( 'template-parts/post/post', 'none' );
 			}

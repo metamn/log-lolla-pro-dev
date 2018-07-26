@@ -27,7 +27,7 @@ get_header();
 		get_template_part( 'template-parts/post/post', 'single' );
 		get_template_part( 'template-parts/post/parts/post', 'footer' );
 		get_template_part( 'template-parts/comment/comment', 'list' );
-		get_template_part( 'template-parts/navigation/navigation', 'post' );
+		get_template_part( 'template-parts/navigation/navigation', 'for-post' );
 	endwhile; // End of the loop.
 	?>
 </section>

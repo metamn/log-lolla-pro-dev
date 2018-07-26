@@ -31,7 +31,7 @@ get_header();
 
 		endwhile;
 
-		get_template_part( 'template-parts/navigation/navigation', 'posts' );
+		get_template_part( 'template-parts/navigation/navigation', 'for-posts' );
 
 	} else {
 
