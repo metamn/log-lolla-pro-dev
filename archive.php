@@ -53,7 +53,7 @@ get_header();
 			get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
 		?>
 
-		<?php get_template_part( 'template-parts/archive/archive', 'header' ); ?>
+		<?php get_template_part( 'template-parts/archive-header/archive-header', '' ); ?>
 	</div>
 </section>
 

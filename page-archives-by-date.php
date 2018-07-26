@@ -28,7 +28,7 @@ get_header();
 		<?php
 		$title = log_lolla_pro_get_archive_label( 'Archives by date' );
 		set_query_var( 'archive_title', $title );
-		get_template_part( 'template-parts/archive/archive-header', 'without-counters' );
+		get_template_part( 'template-parts/archive-header/archive-header', 'without-counters' );
 		?>
 	</div>
 </section>

@@ -29,7 +29,7 @@ get_header();
 		set_query_var( 'related-to', $topic );
 		get_template_part( 'template-parts/topic/topic-list', 'related-topics' );
 
-		get_template_part( 'template-parts/archive/archive-header', 'post-type' );
+		get_template_part( 'template-parts/archive-header/archive-header', 'for-post-type' );
 		?>
 	</div>
 </section>

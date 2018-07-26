@@ -83,6 +83,16 @@ template-parts/post/
 ├── post-single.php
 ```
 
+### Elements and modifiers
+
+We try to use the BEM standards (https://en.bem.info/methodology/quick-start/) but without the `__` prefix for Elements.
+
+For example `Archive header` will become `archive-header` instead of `archive__header` for the sake of clarity.
+
+On Modifiers we try to use a special prefix whenever possible to mark the scope of the modifier.
+
+For example `archive-header-post-type` is incorrect vs. the `archive-header-for-post-type`.
+
 
 ## Internationalization
 

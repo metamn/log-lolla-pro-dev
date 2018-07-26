@@ -17,4 +17,4 @@ set_query_var( 'archive_description', esc_html( $post->post_excerpt ) );
 
 set_query_var( 'pictograms', log_lolla_pro_get_pictogram_list( log_lolla_pro_get_archive_counter_list( $post ) ) );
 
-get_template_part( 'template-parts/archive/archive', 'header' );
+get_template_part( 'template-parts/archive-header/archive-header', '' );
