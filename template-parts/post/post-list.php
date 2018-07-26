@@ -32,9 +32,9 @@ $post_list_post_format = get_query_var( 'post-list-post-format' );
 				setup_postdata( $post );
 
 				if ( empty( $post_list_post_format ) ) {
-					get_template_part( 'template-parts/post/post-format', get_post_format() );
+					get_template_part( 'template-parts/post-format/post-format', get_post_format() );
 				} else {
-					get_template_part( 'template-parts/post/post-format', $post_list_post_format );
+					get_template_part( 'template-parts/post-format/post-format', $post_list_post_format );
 				}
 			}
 
@@ -53,9 +53,9 @@ $post_list_post_format = get_query_var( 'post-list-post-format' );
 					the_post();
 
 					if ( empty( $post_list_post_format ) ) {
-						get_template_part( 'template-parts/post/post-format', get_post_format() );
+						get_template_part( 'template-parts/post-format/post-format', get_post_format() );
 					} else {
-						get_template_part( 'template-parts/post/post-format', $post_list_post_format );
+						get_template_part( 'template-parts/post-format/post-format', $post_list_post_format );
 					}
 				}
 

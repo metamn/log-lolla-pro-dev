@@ -23,7 +23,7 @@ if ( $post_list_posts ) {
 
 			foreach ( $post_list_posts as $post ) {
 				setup_postdata( $post );
-				get_template_part( 'template-parts/post/post-format', get_post_format() );
+				get_template_part( 'template-parts/post-format/post-format', get_post_format() );
 			}
 
 			wp_reset_postdata();
