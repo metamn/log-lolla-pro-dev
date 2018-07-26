@@ -26,7 +26,7 @@ get_header();
 		the_post();
 		get_template_part( 'template-parts/post/post-single', 'summary' );
 		get_template_part( 'template-parts/post/parts/post-footer', 'summary' );
-		get_template_part( 'template-parts/post-list/post-list', 'of-a-summary' );
+		get_template_part( 'template-parts/post-list/post-list', 'for-a-summary' );
 		get_template_part( 'template-parts/comment/comment', 'list' );
 		get_template_part( 'template-parts/navigation/navigation', 'for-post' );
 	endwhile; // End of the loop.
