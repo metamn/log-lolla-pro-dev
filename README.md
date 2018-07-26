@@ -111,7 +111,7 @@ Each PHP file should contain its name as a classname, transformed if necessary. 
 
 ##### Staying semantic
 
-The site has only a few page types but much more templates. We have the homepage, post pages, standard pages, not-found and archive pages as page types.  
+The site has only a few page types but much more templates. We have the homepage, post pages, standard pages, not-found, archives and single archive pages as page types.  
 
 Archive pages have multiple templates associated like `archive-people.php`, `page-categories.php`, `single-people.php` etc. All of these templates has to be prefixed with an `archive` class, and, their specific classnames like `page`, `single` has to be removed.
 

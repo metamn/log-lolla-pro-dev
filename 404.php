@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<section class="content content-none">
+<section class="content-none">
 	<h3 class="hidden">Page not found</h3>
 
 	<article class="post">

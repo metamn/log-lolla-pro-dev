@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-<section class="content content-search">
+<section class="content-search">
 	<h3 class="search-title">
 	<?php
 	printf(

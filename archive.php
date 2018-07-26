@@ -22,7 +22,7 @@
 get_header();
 ?>
 
-<section class="content content-archive">
+<section class="content-archive archive">
 	<h3 class="archive-title">Archive</h3>
 
 	<div class="archive-items">

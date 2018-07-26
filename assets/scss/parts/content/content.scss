@@ -1,7 +1,7 @@
 // General settings for the content section
 //
 // For different content types there are different mixins
-// 
+//
 @mixin content {
 	a,
 	.link {
@@ -12,32 +12,32 @@
 		@include navigation;
 	}
 
-	&.content-home {
+	.content-home {
 		@include content-home;
 	}
 
-	&.content-archive {
+	.content-archive {
 		@include content-home;
 		@include content-archive;;
 	}
 
-	&.content-archives {
+	.content-archives {
 		@include content-archives;
 	}
 
-	&.content-search {
+	.content-search {
 		@include content-search;
 	}
 
-	&.content-none {
+	.content-none {
 		@include content-none;
 	}
 
-	&.content-single {
+	.content-single {
 		@include content-single;
 	}
 
-	&.content-page {
+	.content-page {
 		@include content-page;
 	}
 }

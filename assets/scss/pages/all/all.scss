@@ -46,10 +46,6 @@ html {
 			@include widget;
 		}
 
-		.breadcrumb {
-			@include breadcrumb;
-		}
-
 		a {
 			@include cursor(pointer);
 		}

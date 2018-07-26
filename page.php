@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-<section class="content content-page">
+<section class="content-page">
 	<h3 class="hidden">Page</h3>
 
 	<?php

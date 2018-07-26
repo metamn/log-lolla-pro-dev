@@ -14,8 +14,8 @@
 get_header();
 ?>
 
-<section class="content content-home">
-	<h3 class="hidden">Home</h3>
+<section class="content-home">
+	<h3 class="hidden">The content of the homepage</h3>
 
 	<?php get_template_part( 'template-parts/post-list/post-list', 'with-comments' ); ?>
 </section>

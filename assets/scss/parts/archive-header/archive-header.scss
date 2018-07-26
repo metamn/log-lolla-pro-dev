@@ -4,6 +4,7 @@
 	@include margin(no, no, yes, no);
 
 	.breadcrumb {
+		@include breadcrumb;
 		@include padding(half, half, no, half);
 		@include border(normal, bottom);
 		@include text-style(small);

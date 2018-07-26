@@ -14,7 +14,7 @@
 get_header();
 ?>
 
-<section class="content content-index">
+<section class="content-index">
 	<h3 class="hidden">Index</h3>
 </section>
 

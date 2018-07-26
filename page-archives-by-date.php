@@ -19,7 +19,7 @@ get_header();
 ?>
 
 
-<section class="content content-archive">
+<section class="content-archive archives archives-date">
 	<h3 class="archive-title">Archives by date</h3>
 
 	<div class="archive-items">
