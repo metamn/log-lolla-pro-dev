@@ -19,4 +19,4 @@ $posts_title = esc_html_x( 'Based on these posts:', 'The title of the Summary po
 set_query_var( 'post-list-klass', 'post-list' );
 set_query_var( 'post-list-title', $posts_title );
 set_query_var( 'post-list-posts', $posts );
-get_template_part( 'template-parts/post/post', 'list' );
+get_template_part( 'template-parts/post-list/post-list', '' );

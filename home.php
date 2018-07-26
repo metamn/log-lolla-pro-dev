@@ -17,7 +17,7 @@ get_header();
 <section class="content content-home">
 	<h3 class="hidden">Home</h3>
 
-	<?php get_template_part( 'template-parts/post/post', 'list-with-comments' ); ?>
+	<?php get_template_part( 'template-parts/post-list/post-list', 'with-comments' ); ?>
 </section>
 
 <?php get_template_part( 'template-parts/sidebar/sidebar' ); ?>

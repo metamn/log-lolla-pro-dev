@@ -33,18 +33,18 @@ get_header();
 			$title = log_lolla_pro_get_archive_label( 'Posts' );
 			set_query_var( 'post-list-title', $title );
 			set_query_var( 'post-list-klass', 'post-list-for-archive' );
-			get_template_part( 'template-parts/post/post', 'list' );
+			get_template_part( 'template-parts/post-list/post-list', '' );
 		?>
 
 		<?php
 			set_query_var( 'archive', $archive );
-			get_template_part( 'template-parts/post/post-list', 'summaries' );
+			get_template_part( 'template-parts/post-list/post-list', 'summaries' );
 		?>
 
 		<?php
 			$posts = log_lolla_pro_get_post_format_standard_post_list_for_date_archive( $archive );
 			set_query_var( 'posts', $posts );
-			get_template_part( 'template-parts/post/post-list', 'thoughts' );
+			get_template_part( 'template-parts/post-list/post-list', 'thoughts' );
 		?>
 
 		<?php

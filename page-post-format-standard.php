@@ -27,12 +27,12 @@ get_header();
 		<?php
 			$posts = log_lolla_pro_get_post_format_standard_post_list();
 			set_query_var( 'posts', $posts );
-			get_template_part( 'template-parts/post/post-list', 'thoughts' );
+			get_template_part( 'template-parts/post-list/post-list', 'thoughts' );
 		?>
 
 		<?php
 			set_query_var( 'archive', $archive );
-			get_template_part( 'template-parts/post/post-list', 'summaries' );
+			get_template_part( 'template-parts/post-list/post-list', 'summaries' );
 		?>
 
 		<?php

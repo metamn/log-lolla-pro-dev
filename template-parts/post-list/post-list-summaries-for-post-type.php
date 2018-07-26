@@ -11,4 +11,4 @@ $archive->taxonomy = 'post_tag';
 $archive->slug     = $archive->post_name;
 
 set_query_var( 'archive', $archive );
-get_template_part( 'template-parts/post/post-list', 'summaries' );
+get_template_part( 'template-parts/post-list/post-list', 'summaries' );

@@ -22,8 +22,8 @@ get_header();
 
 	<div class="archive-items">
 		<?php
-		get_template_part( 'template-parts/post/post-list', 'post-type' );
-		get_template_part( 'template-parts/post/post-list', 'summaries-for-post-type' );
+		get_template_part( 'template-parts/post-list/post-list', 'post-type' );
+		get_template_part( 'template-parts/post-list/post-list', 'summaries-for-post-type' );
 
 		$topic = get_term_by( 'slug', $post->post_name, 'post_tag' );
 		set_query_var( 'related-to', $topic );

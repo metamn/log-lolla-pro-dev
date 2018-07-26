@@ -256,7 +256,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' 
 		set_query_var( 'post-list-klass', 'summaries' );
 		set_query_var( 'post-list-title', $title );
 		set_query_var( 'post-list-posts', $summaries );
-		get_template_part( 'template-parts/post/post-list', '' );
+		get_template_part( 'template-parts/post-list/post-list', '' );
 
 		$html .= ob_get_clean();
 
