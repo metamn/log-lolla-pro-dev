@@ -6,11 +6,11 @@ Developer documentation.
 
 ### Folder structure
 
-Following WordPress standards: https://developer.wordpress.org/themes/basics/organizing-theme-files/
+Follows WordPress standards: https://developer.wordpress.org/themes/basics/organizing-theme-files/
 
 ### Templates
 
-Following the WordPress Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hierarchy/
+Follows the WordPress Template Hierarchy: https://developer.wordpress.org/themes/basics/template-hierarchy/
 
 ### Template parts
 
@@ -18,7 +18,7 @@ Template parts are included with the `get_template_part($slug, $name)` function:
 
 Here we use a few *special* conditions / conventions:
 
-* `$slug` has to be a separate entity. For example `post-list` and `post-format` has to be separated from `post`:
+1. `$slug` has to be a separate entity. For example `post-list` and `post-format` has to be separated from `post`:
 
 ```
 template-parts/post/
@@ -49,7 +49,7 @@ template-parts/post/
 └── post-single-summary.php
 ```
 
-* Each entity has to have a `/parts` subfolder where all the partials making the entity are stored:
+2. Each entity has to have a `/parts` subfolder where all the partials making the entity are stored:
 
 ```
 template-parts/post/
