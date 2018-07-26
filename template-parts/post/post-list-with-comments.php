@@ -8,11 +8,11 @@
 ?>
 
 <section class="list list--post-list-with-comments">
-	<h3 class="post-list-title">
+	<h3 class="list-title">
 		Post list with comments
 	</h3>
 
-	<div class="post-list-posts">
+	<div class="list-items post-list">
 		<?php
 		if ( have_posts() ) :
 

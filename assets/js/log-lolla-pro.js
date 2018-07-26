@@ -5,7 +5,7 @@
 
 // Click on post content
 var postContentClick = function() {
-  var postContent = document.querySelectorAll('.post-list .post .post__content');
+  var postContent = document.querySelectorAll('.post .post__content');
 
   function postContentRemoveClicks() {
     for (var i = 0; i < postContent.length; i++) {

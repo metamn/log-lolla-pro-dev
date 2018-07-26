@@ -1,5 +1,5 @@
 @mixin list--post-list-with-comments {
-	@include list('.post-list-title', '.post-list-posts', '.post', $show-title: false, $show-navigation: true);
+	@include list('.list-title', '.list-items', '.post', $show-title: false, $show-navigation: true);
 
 	.post {
 		@include post;

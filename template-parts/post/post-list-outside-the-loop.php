@@ -13,11 +13,11 @@ $post_list_posts = get_query_var( 'post-list-posts' );
 if ( $post_list_posts ) {
 	?>
 	<section class="list list--<?php echo esc_attr( $post_list_klass ); ?>">
-		<h3 class="post-list-title">
+		<h3 class="list-title">
 			<?php echo esc_attr( $post_list_title ); ?>
 		</h3>
 
-		<div class="post-list-posts">
+		<div class="list-items post-list">
 			<?php
 			$save_current_post = $post;
 

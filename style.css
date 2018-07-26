@@ -984,9 +984,9 @@ html {
     @media only screen and (min-width: 1600.1px) {
       html body .content.content-home {
         max-width: none; } }
-    html body .content.content-home .list--post-list-with-comments .post-list-title {
+    html body .content.content-home .list--post-list-with-comments .list-title {
       display: none; }
-    html body .content.content-home .list--post-list-with-comments .post-list-posts {
+    html body .content.content-home .list--post-list-with-comments .list-items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -999,28 +999,28 @@ html {
           -ms-flex-align: center;
               align-items: center; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-home .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-home .list--post-list-with-comments .list-items .post + .post {
           margin-right: 0; } }
     html body .content.content-home .list--post-list-with-comments .post .post-sticky {
       display: -webkit-box;
@@ -4828,9 +4828,9 @@ html {
     @media only screen and (min-width: 1600.1px) {
       html body .content.content-archive {
         max-width: none; } }
-    html body .content.content-archive .list--post-list-with-comments .post-list-title {
+    html body .content.content-archive .list--post-list-with-comments .list-title {
       display: none; }
-    html body .content.content-archive .list--post-list-with-comments .post-list-posts {
+    html body .content.content-archive .list--post-list-with-comments .list-items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -4843,28 +4843,28 @@ html {
           -ms-flex-align: center;
               align-items: center; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .list--post-list-with-comments .post-list-posts .post + .post {
+        html body .content.content-archive .list--post-list-with-comments .list-items .post + .post {
           margin-right: 0; } }
     html body .content.content-archive .list--post-list-with-comments .post .post-sticky {
       display: -webkit-box;
@@ -8711,30 +8711,30 @@ html {
     html body .content.content-archive .archive-items .shortcode--topics-summary .shortcode-title {
       display: none; }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-right: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--summaries .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--summaries .list-title + .list-items {
         margin-right: 0; } }
-    html body .content.content-archive .archive-items .list--summaries .post-list-posts {
+    html body .content.content-archive .archive-items .list--summaries .list-items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -8747,30 +8747,30 @@ html {
           -ms-flex-align: center;
               align-items: center; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--summaries .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--summaries .list-items .post + .post {
           margin-right: 0; } }
-      html body .content.content-archive .archive-items .list--summaries .post-list-posts .navigation {
+      html body .content.content-archive .archive-items .list--summaries .list-items .navigation {
         display: none; }
     @media only screen and (max-width: 767.9px) {
       html body .content.content-archive .archive-items .list--topics-with-sparklines .list-title + .list-items {
@@ -9819,30 +9819,30 @@ html {
               html body .content.content-archive .archive-items .list--archives-by-date .list-items .year-and-months .months {
                 padding-left: 1.25em; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-right: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--post-list-for-archive .list-title + .list-items {
         margin-right: 0; } }
-    html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts {
+    html body .content.content-archive .archive-items .list--post-list-for-archive .list-items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -9855,54 +9855,54 @@ html {
           -ms-flex-align: center;
               align-items: center; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--post-list-for-archive .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--post-list-for-archive .list-items .post + .post {
           margin-right: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-top: 2.5em; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-bottom: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-left: 0; } }
     @media only screen and (max-width: 767.9px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-right: 0; } }
     @media only screen and (min-width: 768px) {
-      html body .content.content-archive .archive-items .list--thoughts .post-list-title + .post-list-posts {
+      html body .content.content-archive .archive-items .list--thoughts .list-title + .list-items {
         margin-right: 0; } }
-    html body .content.content-archive .archive-items .list--thoughts .post-list-posts {
+    html body .content.content-archive .archive-items .list--thoughts .list-items {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -9915,30 +9915,30 @@ html {
           -ms-flex-align: center;
               align-items: center; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archive .archive-items .list--thoughts .post-list-posts .post + .post {
+        html body .content.content-archive .archive-items .list--thoughts .list-items .post + .post {
           margin-right: 0; } }
-      html body .content.content-archive .archive-items .list--thoughts .post-list-posts .navigation {
+      html body .content.content-archive .archive-items .list--thoughts .list-items .navigation {
         display: none; }
     html body .content.content-archive .archive-items .list--related-topics,
     html body .content.content-archive .archive-items .list--tags,
@@ -14369,30 +14369,30 @@ html {
       html body .content.content-archives .archives-widget-list .shortcode--topics-summary .shortcode-title {
         display: none; }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-title + .list-items {
           margin-right: 0; } }
-      html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts {
+      html body .content.content-archives .archives-widget-list .list--summaries .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -14405,30 +14405,30 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--summaries .list-items .post + .post {
             margin-right: 0; } }
-        html body .content.content-archives .archives-widget-list .list--summaries .post-list-posts .navigation {
+        html body .content.content-archives .archives-widget-list .list--summaries .list-items .navigation {
           display: none; }
       @media only screen and (max-width: 767.9px) {
         html body .content.content-archives .archives-widget-list .list--topics-with-sparklines .list-title + .list-items {
@@ -15477,30 +15477,30 @@ html {
                 html body .content.content-archives .archives-widget-list .list--archives-by-date .list-items .year-and-months .months {
                   padding-left: 1.25em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-right: 0; } }
-      html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts {
+      html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -15513,54 +15513,54 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-title + .list-items {
           margin-right: 0; } }
-      html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts {
+      html body .content.content-archives .archives-widget-list .list--thoughts .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -15573,30 +15573,30 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .content.content-archives .archives-widget-list .list--thoughts .list-items .post + .post {
             margin-right: 0; } }
-        html body .content.content-archives .archives-widget-list .list--thoughts .post-list-posts .navigation {
+        html body .content.content-archives .archives-widget-list .list--thoughts .list-items .navigation {
           display: none; }
       html body .content.content-archives .archives-widget-list .list--related-topics,
       html body .content.content-archives .archives-widget-list .list--tags,
@@ -28391,30 +28391,30 @@ html {
       html body .sidebar .sidebar-widget-list .shortcode--topics-summary .shortcode-title {
         display: none; }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-title + .list-items {
           margin-right: 0; } }
-      html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts {
+      html body .sidebar .sidebar-widget-list .list--summaries .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -28427,30 +28427,30 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--summaries .list-items .post + .post {
             margin-right: 0; } }
-        html body .sidebar .sidebar-widget-list .list--summaries .post-list-posts .navigation {
+        html body .sidebar .sidebar-widget-list .list--summaries .list-items .navigation {
           display: none; }
       @media only screen and (max-width: 767.9px) {
         html body .sidebar .sidebar-widget-list .list--topics-with-sparklines .list-title + .list-items {
@@ -29499,30 +29499,30 @@ html {
                 html body .sidebar .sidebar-widget-list .list--archives-by-date .list-items .year-and-months .months {
                   padding-left: 1.25em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-title + .list-items {
           margin-right: 0; } }
-      html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts {
+      html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -29535,54 +29535,54 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--post-list-for-archive .list-items .post + .post {
             margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-title + .post-list-posts {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-title + .list-items {
           margin-right: 0; } }
-      html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts {
+      html body .sidebar .sidebar-widget-list .list--thoughts .list-items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -29595,30 +29595,30 @@ html {
             -ms-flex-align: center;
                 align-items: center; }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-top: 2.5em; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-bottom: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-left: 0; } }
         @media only screen and (max-width: 767.9px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-right: 0; } }
         @media only screen and (min-width: 768px) {
-          html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .post + .post {
+          html body .sidebar .sidebar-widget-list .list--thoughts .list-items .post + .post {
             margin-right: 0; } }
-        html body .sidebar .sidebar-widget-list .list--thoughts .post-list-posts .navigation {
+        html body .sidebar .sidebar-widget-list .list--thoughts .list-items .navigation {
           display: none; }
       html body .sidebar .sidebar-widget-list .list--related-topics,
       html body .sidebar .sidebar-widget-list .list--tags,
