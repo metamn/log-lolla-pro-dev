@@ -8,8 +8,6 @@
 	}
 
 	.post {
-		@include post;
-		@include post--single;
 		@include margin(no, no, yes, no);
 
 		.search {

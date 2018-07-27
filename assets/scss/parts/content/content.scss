@@ -10,6 +10,10 @@
 		@include post-with-sidebar;
 	}
 
+	.post-single {
+		@include post-single;
+	}
+
 	a,
 	.link {
 		@include link;

@@ -9,7 +9,6 @@
 
 $post_klass       = log_lolla_pro_get_post_class();
 $post_klass_array = array(
-	'post',
 	'post-single',
 	$post_klass,
 );
