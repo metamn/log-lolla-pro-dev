@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-gallery">
-	<h3 class="hidden">Article gallery</h3>
+	<h3 class="hidden">Post gallery</h3>
 
 	<?php
 	if ( get_post_gallery() ) :

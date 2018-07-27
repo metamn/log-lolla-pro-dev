@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-author">
-	<h3 class="hidden">Article author</h3>
+	<h3 class="hidden">Post author</h3>
 
 	<div class="posted-by">
 		<?php

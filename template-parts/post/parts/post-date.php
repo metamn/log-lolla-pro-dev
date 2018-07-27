@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-date">
-	<h3 class="hidden">Article date</h3>
+	<h3 class="hidden">Post date</h3>
 
 	<div class="posted-on">
 		<time class="date published" datetime="<?php echo esc_attr( get_the_date( 'c' ) ); ?>">

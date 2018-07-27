@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-permalink">
-	<h3 class="hidden">Article permalink</h3>
+	<h3 class="hidden">Post permalink</h3>
 
 	<div class="permalink">
 		<a class="link" href="<?php echo esc_url( get_permalink() ); ?>" title="<?php echo the_title_attribute( 'echo=0' ); ?>">

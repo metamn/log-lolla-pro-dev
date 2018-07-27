@@ -10,7 +10,7 @@
 if ( is_user_logged_in() ) {
 	?>
 	<aside class="post-edit-link">
-		<h3 class="hidden">Article edit link</h3>
+		<h3 class="hidden">Post edit link</h3>
 
 		<?php
 		edit_post_link(

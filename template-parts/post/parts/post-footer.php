@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-footer">
-	<h3 class="hidden">Article footer</h3>
+	<h3 class="hidden">Post footer</h3>
 
 	<div class="list">
 		<?php get_template_part( 'template-parts/post/parts/post', 'format-and-topics' ); ?>

@@ -10,7 +10,7 @@
 if ( has_post_thumbnail() ) { ?>
 
 <aside class="post-featured-image">
-	<h3 class="hidden">Article Featured Image</h3>
+	<h3 class="hidden">Post featured image</h3>
 
 	<figure class="figure">
 		<a class="link" href="<?php echo esc_url( get_permalink() ); ?>" title="<?php the_title_attribute(); ?>">

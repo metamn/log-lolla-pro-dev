@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-content">
-	<h3 class="hidden">Article content</h3>
+	<h3 class="hidden">Post content</h3>
 
 	<div class="text">
 		<?php the_content(); ?>

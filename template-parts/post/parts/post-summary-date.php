@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-date-with-prefix">
-	<h3 class="hidden">Post type Summary date</h3>
+	<h3 class="hidden">Post date for Summary Post type</h3>
 
 	<?php echo wp_kses_post( log_lolla_pro_display_summary_dates_prefix( $post ) ); ?>
 

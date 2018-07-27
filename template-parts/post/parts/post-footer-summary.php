@@ -11,7 +11,7 @@ $klass = '';
 ?>
 
 <aside class="post-footer post-footer-summary">
-	<h3 class="hidden">Summary post footer</h3>
+	<h3 class="hidden">Post footer for Summary Post type</h3>
 
 	<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-archive' ); ?>
 	<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-topic' ); ?>

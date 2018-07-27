@@ -23,7 +23,7 @@ $wp_link_pages = wp_link_pages(
 if ( ! empty( $wp_link_pages ) ) {
 	?>
 	<nav class="post-paginated-content">
-		<h3 class="hidden">Paginated content navigation</h3>
+		<h3 class="hidden">Post paginated content navigation</h3>
 
 		<div class="text">
 			<?php echo wp_kses_post( $wp_link_pages ); ?>
