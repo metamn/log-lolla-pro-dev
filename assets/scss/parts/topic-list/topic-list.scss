@@ -10,4 +10,12 @@
 	&--related-topics {
 		@include topic-list--related-topics;
 	}
+
+	&--categories {
+		@include topic-list--categories;
+	}
+
+	&--tags {
+		@include topic-list--tags;
+	}
 }

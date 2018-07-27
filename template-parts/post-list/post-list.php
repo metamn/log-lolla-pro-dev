@@ -19,7 +19,7 @@ $post_list_post_format = get_query_var( 'post-list-post-format' );
 		<?php echo wp_kses_post( $post_list_title ); ?>
 	</h3>
 
-	<div class="list-items post-list">
+	<div class="list-items">
 		<?php
 		if ( $post_list_posts ) {
 			$save_current_post = $post;

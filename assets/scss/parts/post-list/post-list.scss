@@ -14,4 +14,8 @@
 	&--for-a-post-type {
 		@include post-list--for-a-post-type;
 	}
+
+	&--for-archive {
+		@include post-list--for-archive;
+	}
 }
