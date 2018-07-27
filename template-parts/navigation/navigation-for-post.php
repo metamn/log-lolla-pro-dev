@@ -15,7 +15,7 @@ $next = get_next_post_link("$arrow_right%link");
 
 if ( ! empty( $prev ) || ! empty( $next ) ) {
 	?>
-	<nav class="navigation post-navigation">
+	<nav class="navigation navigation-for-post">
 		<h3 class="hidden">Post navigation</h3>
 
 		<ul class="ul">

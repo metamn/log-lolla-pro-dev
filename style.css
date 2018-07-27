@@ -978,7 +978,7 @@ html {
         html body .content .navigation .link:hover,
         html body .content .navigation .link:active {
           text-decoration: line-through; }
-      html body .content .navigation.post-navigation .ul .li {
+      html body .content .navigation.navigation-for-post .ul .li {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
@@ -987,7 +987,7 @@ html {
         display: flex;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap; }
-        html body .content .navigation.post-navigation .ul .li + .li {
+        html body .content .navigation.navigation-for-post .ul .li + .li {
           margin-top: 0.625em; }
       html body .content .navigation.posts-navigation .nav-links .nav-previous a,
       html body .content .navigation.posts-navigation .nav-links .nav-next a {

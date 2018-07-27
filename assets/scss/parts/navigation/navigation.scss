@@ -17,12 +17,12 @@
 	}
 
 	// Inside a post
-	&.post-navigation {
-		@include navigation-post;
+	&.navigation-for-post {
+		@include navigation-for-post;
 	}
 
 	// In the loop
 	&.posts-navigation {
-		@include navigation-posts;
+		@include navigation-for-posts;
 	}
 }
