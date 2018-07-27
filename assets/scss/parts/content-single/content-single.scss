@@ -18,7 +18,7 @@
 		@include post-footer;
 	}
 
-	.comments {
-		@include comments;
+	.comment-list {
+		@include comment-list;
 	}
 }

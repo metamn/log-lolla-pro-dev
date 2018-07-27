@@ -20,10 +20,10 @@
 			@include text-style(body-text-post);
 		}
 
-		.read-more {
+		.comment-read-more {
 			@include margin(yes, no, no, no);
 
-			.link {
+			.comment-read-more-link {
 				display: flex;
 				flex-wrap: wrap;
 

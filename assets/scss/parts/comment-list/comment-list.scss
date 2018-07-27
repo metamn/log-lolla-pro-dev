@@ -1,0 +1,14 @@
+@mixin comment-list {
+	@include list('.list-title', '.list-items', '.comment');
+
+	.comment-list-title {
+		@include comment-list-title;
+	}
+
+	.comment-list-items {
+		.comment {
+			@include comment;
+			@include width;
+		}
+	}
+}

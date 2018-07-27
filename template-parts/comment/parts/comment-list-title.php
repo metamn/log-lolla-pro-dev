@@ -9,10 +9,9 @@
 $klass = '';
 ?>
 
-<h3 class="comments-title">
+<h3 class="comment-list-title list-title">
 	<?php
-	$text = '';
-
+	$text               = '';
 	$number_of_comments = get_query_var( 'number_of_comments' );
 
 	if ( 1 === $number_of_comments ) {

@@ -21,16 +21,16 @@ if ( ! $number_of_comments ) {
 }
 ?>
 
-<section class="comments" id="comments-for-post-<?php echo esc_attr( get_the_ID( $post ) ); ?>">
+<section class="comment-list list list--comments" id="comments-for-post-<?php echo esc_attr( get_the_ID( $post ) ); ?>">
 	<?php
 		set_query_var( 'number_of_comments', $number_of_comments );
 		get_template_part( 'template-parts/comment/parts/comment', 'list-title' );
 	?>
 
-	<div class="comments-body">
+	<div class="comment-list-items list-items">
 		<?php
 		foreach ( $comments as $comment ) {
-			get_template_part( 'template-parts/comment/comment', 'single' );
+			get_template_part( 'template-parts/comment/comment', '' );
 		}
 		?>
 	</div>

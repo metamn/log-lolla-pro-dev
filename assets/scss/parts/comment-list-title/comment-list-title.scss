@@ -1,0 +1,17 @@
+@mixin comment-list-title {
+	align-items: baseline;
+	display: flex;
+	justify-content: space-between;
+
+	.number-of-comments {
+		@include text-style(section-title);
+	}
+
+	.arrows {
+		display: flex;
+
+		.arrow-with-triangle {
+			@include arrow-with-triangle;
+		}
+	}
+}
