@@ -1,0 +1,9 @@
+@mixin post-grid {
+	@include portrait {
+		@include post-grid--display-vertical;
+	}
+
+	@include landscape {
+		@include post-grid--display-horizontal;
+	}
+}

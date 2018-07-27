@@ -1,7 +1,7 @@
 @mixin post-format-standard {
 	@include post-format-standard__grid;
 
-	.post__content {
+	.post-content-between-sidebars {
 		@if ($post-format-standard-background-color and $post-format-standard-text-color) {
 			@include set-colors($post-format-standard-background-color, $post-format-standard-text-color);
 		}

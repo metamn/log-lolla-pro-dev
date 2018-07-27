@@ -1,0 +1,5 @@
+@mixin post-with-sidebar--clicked {
+	.post-sidebar {
+		@include post-sidebar--visible;
+	}
+}

@@ -21,15 +21,16 @@ $arrow = log_lolla_pro_get_arrow_html( 'right' );
 
 $post_klass_array = array(
 	'post',
+	'post-with-sidebar',
 	'post-format-link',
 	$klass,
 );
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php esc_attr( post_class( $post_klass_array ) ); ?>>
-	<?php get_template_part( 'template-parts/post/parts/post', 'sidebar-left' ); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $post_klass_array ); ?>>
+	<?php get_template_part( 'template-parts/post-sidebar/post-sidebar', 'left' ); ?>
 
-	<div class="post__content">
+	<div class="post-content-between-sidebars">
 		<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
 
 		<h3 class="post-title">
@@ -41,5 +42,5 @@ $post_klass_array = array(
 		<?php get_template_part( 'template-parts/post/parts/post', 'permalink-if-link-is-external' ); ?>
 	</div>
 
-	<?php get_template_part( 'template-parts/post/parts/post', 'sidebar-right' ); ?>
+	<?php get_template_part( 'template-parts/post-sidebar/post-sidebar', 'right' ); ?>
 </article><!-- #post-<?php the_ID(); ?> -->

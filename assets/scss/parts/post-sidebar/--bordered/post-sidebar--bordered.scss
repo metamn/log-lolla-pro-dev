@@ -1,4 +1,4 @@
-@mixin post__sidebar--bordered {
+@mixin post-sidebar--bordered {
 	aside {
 		@include border(normal, all);
 	}

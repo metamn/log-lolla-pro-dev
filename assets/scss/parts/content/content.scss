@@ -2,6 +2,14 @@
 //
 // For different content types there are different mixins
 @mixin content {
+	.post {
+		@include post;
+	}
+
+	.post-with-sidebar {
+		@include post-with-sidebar;
+	}
+
 	a,
 	.link {
 		@include link;
@@ -10,14 +18,6 @@
 	.navigation {
 		@include navigation;
 		@include width;
-	}
-
-	.content-home,
-	.content-archive {
-		.post {
-			@include post;
-			@include post--home;
-		}
 	}
 
 	.content-home {

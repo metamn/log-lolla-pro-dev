@@ -1,0 +1,23 @@
+@mixin post-sidebar {
+	@include portrait {
+		@include post-sidebar--bordered;
+	}
+
+	@include landscape {
+		@include laptop-and-up {
+			@include post-sidebar--fixed-height;
+		}
+	}
+
+	&.post-sidebar-left {
+		@include landscape {
+			@include post-sidebar--bordered;
+		}
+	}
+
+	&.post-sidebar-right {
+		@include landscape {
+			@include post-sidebar--fixed-height;
+		}
+	}
+}

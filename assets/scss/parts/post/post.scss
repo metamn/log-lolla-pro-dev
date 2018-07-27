@@ -1,4 +1,6 @@
 @mixin post {
+	@include post-grid;
+
 	.post-sticky {
 		@include post-sticky;
 	}

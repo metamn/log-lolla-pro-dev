@@ -2,22 +2,22 @@
 
 	@include portrait {
 		&.has-excerpt.has-thumbnail {
-			.post__content {
-				@include post__content--display-vertical;
+			.post-content-between-sidebars {
+				@include post-content-between-sidebars--display-vertical;
 			}
 		}
 	}
 
-	.post__content {
+	.post-content-between-sidebars {
 		@include mobile-and-up {
-			@include post__content--display-vertical;
+			@include post-content-between-sidebars--display-vertical;
 		}
 	}
 
 	&.display-horizontal {
-		.post__content {
+		.post-content-between-sidebars {
 			@include mobile-and-up {
-				@include post__content--display-horizontal;
+				@include post-content-between-sidebars--display-horizontal;
 			}
 		}
 	}

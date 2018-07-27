@@ -1,5 +1,5 @@
 @mixin post-format-audio {
-	.post__content {
+	.post-content-between-sidebars {
 		.post-content {
 			@include margin(yes, no, no, no);
 

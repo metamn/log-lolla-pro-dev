@@ -1,0 +1,22 @@
+@mixin post-with-sidebar {
+	@include portrait {
+		@include post-with-sidebar--display-vertical;
+	}
+
+	@include landscape {
+		@include post-with-sidebar--display-horizontal;
+	}
+
+	.post-sidebar {
+		@include post-sidebar;
+		@include post-sidebar--hidden;
+	}
+
+	.post-content-between-sidebars {
+		@include post-content-between-sidebars;
+	}
+
+	&--clicked {
+		@include post-with-sidebar--clicked;
+	}
+}

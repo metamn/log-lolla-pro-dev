@@ -8,6 +8,6 @@
 $klass = '';
 ?>
 
-<div class="post__sidebar post__sidebar--right">
+<div class="post-sidebar post-sidebar-right">
 	<?php get_template_part( 'template-parts/post/parts/post', 'categories-or-tags-as-list' ); ?>
 </div>

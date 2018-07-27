@@ -5,22 +5,22 @@
 
 // Click on post content
 var postContentClick = function() {
-  var postContent = document.querySelectorAll('.post .post__content');
+  var postContent = document.querySelectorAll('.post-with-sidebar .post-content-between-sidebars');
 
   function postContentRemoveClicks() {
     for (var i = 0; i < postContent.length; i++) {
-      postContent[i].parentNode.classList.remove('post--clicked');
+      postContent[i].parentNode.classList.remove('post-with-sidebar--clicked');
     }
   }
 
   function onMouseClick(index, event) {
     var post = postContent[index].parentNode;
 
-    if (post.classList.contains('post--clicked')) {
-      post.classList.remove('post--clicked')
+    if (post.classList.contains('post-with-sidebar--clicked')) {
+      post.classList.remove('post-with-sidebar--clicked')
     } else {
       postContentRemoveClicks();
-      post.classList.add('post--clicked');
+      post.classList.add('post-with-sidebar--clicked');
     }
 
     event.stopPropagation();

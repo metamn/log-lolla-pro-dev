@@ -1,10 +1,10 @@
-@mixin post__content {
+@mixin post-content-between-sidebars {
 	@include border(normal, all);
 
 	// On small screens all posts will be displayed vertically
 	// On bigger screens the display will be decided by the post format
 	@include mobile {
-		@include post__content--display-vertical;
+		@include post-content-between-sidebars--display-vertical;
 	}
 
 	.post-title,

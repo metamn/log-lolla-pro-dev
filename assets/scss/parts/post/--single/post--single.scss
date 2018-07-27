@@ -1,5 +1,5 @@
 @mixin post--single {
-	@include post__grid--display-vertical;
+	@include post-grid--display-vertical;
 
 	@include padding;
 	@include border(normal, all);
