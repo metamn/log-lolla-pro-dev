@@ -261,7 +261,7 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 
 		ob_start();
 
-		set_query_var( 'list-klass', 'list--topics-with-sparklines' );
+		set_query_var( 'list-klass', 'topic-list topic-list--with-sparklines' );
 		set_query_var( 'list-title', $title );
 		set_query_var( 'list-items', $items );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );

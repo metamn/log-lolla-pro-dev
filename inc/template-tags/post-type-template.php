@@ -112,7 +112,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular_as_html' 
 
 		ob_start();
 
-		set_query_var( 'list-klass', 'list--' . $label );
+		set_query_var( 'list-klass', 'post-list post-list--for-a-post-type' );
 		set_query_var( 'list-title', $title );
 		set_query_var( 'list-items', $html );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );

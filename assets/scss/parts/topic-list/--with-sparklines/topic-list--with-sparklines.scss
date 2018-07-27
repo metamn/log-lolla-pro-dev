@@ -1,0 +1,8 @@
+@mixin topic-list--with-sparklines {
+	@include list($direction: horizontal);
+
+	.list-item {
+		@include list-item;
+		@include list--horizontal-mixed-items(half, no);
+	}
+}

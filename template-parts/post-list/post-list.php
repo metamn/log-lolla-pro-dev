@@ -14,7 +14,7 @@ $post_list_posts       = get_query_var( 'post-list-posts' );
 $post_list_post_format = get_query_var( 'post-list-post-format' );
 ?>
 
-<section class="list list--<?php echo esc_attr( $post_list_klass ); ?>">
+<section class="post-list post-list--<?php echo esc_attr( $post_list_klass ); ?>">
 	<h3 class="list-title">
 		<?php echo wp_kses_post( $post_list_title ); ?>
 	</h3>

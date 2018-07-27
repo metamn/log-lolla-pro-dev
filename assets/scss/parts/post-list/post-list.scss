@@ -1,0 +1,17 @@
+@mixin post-list {
+	&--with-comments {
+		@include post-list--with-comments;
+	}
+
+	&--thoughts {
+		@include post-list--thoughts;
+	}
+
+	&--summaries {
+		@include post-list--summaries;
+	}
+
+	&--for-a-post-type {
+		@include post-list--for-a-post-type;
+	}
+}

@@ -144,7 +144,7 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_ht
 
 		ob_start();
 
-		set_query_var( 'list-klass', 'list--archives-by-date' );
+		set_query_var( 'list-klass', 'archive-list archive-list--by-date' );
 		set_query_var( 'list-title', $title );
 		set_query_var( 'list-items', $html );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );

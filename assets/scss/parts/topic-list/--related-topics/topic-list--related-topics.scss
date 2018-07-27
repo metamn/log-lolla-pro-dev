@@ -1,4 +1,4 @@
-@mixin list--topics {
+@mixin topic-list--related-topics {
 	@include width;
 	@include list($item: '.topic', $direction: horizontal);
 

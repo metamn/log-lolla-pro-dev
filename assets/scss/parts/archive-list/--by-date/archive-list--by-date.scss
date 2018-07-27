@@ -1,4 +1,4 @@
-@mixin list--archives-by-date($padding: half) {
+@mixin archive-list--by-date($padding: half) {
 	@include list;
 	@include width;
 

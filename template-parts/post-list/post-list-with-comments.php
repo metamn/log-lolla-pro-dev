@@ -7,12 +7,12 @@
 
 ?>
 
-<section class="list list--post-list-with-comments">
+<section class="post-list post-list--with-comments">
 	<h3 class="list-title">
 		Post list with comments
 	</h3>
 
-	<div class="list-items post-list">
+	<div class="list-items">
 		<?php
 		if ( have_posts() ) :
 
