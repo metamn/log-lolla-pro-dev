@@ -7,6 +7,19 @@
  * @package Log_Lolla_Pro
  */
 
+if ( ! function_exists( 'log_lolla_pro_get_the_excerpt' ) ) {
+	/**
+	 * Returns the post excerpt directly from the database.
+	 *
+	 * `get_the_excerpt()` returns a read more link if the excerpt is empty. We need to avoid that.
+	 *
+	 * @param  object $post The post.
+	 * @return string       The excerpt.
+	 */
+	function log_lolla_pro_get_the_excerpt( $post ) {
+		return esc_html( $post->post_excerpt );
+	}
+}
 if ( ! function_exists( 'log_lolla_pro_get_posts_first_and_last_date' ) ) {
 	/**
 	 * Returns first post and last post published date

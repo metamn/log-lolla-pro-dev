@@ -11,10 +11,9 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
-<header class="archive-header">
+<header class="archive-header archive-header--without-counters">
 	<?php get_template_part( 'template-parts/breadcrumb/breadcrumb', 'for-archives' ); ?>
 	<?php get_template_part( 'template-parts/archive/parts/archive', 'title-and-description' ); ?>
 </header>
