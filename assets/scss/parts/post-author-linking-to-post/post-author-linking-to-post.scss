@@ -1,0 +1,12 @@
+@mixin post-author-linking-to-post {
+	align-items: flex-start;
+	display: flex;
+
+	.arrow-with-triangle {
+		@include arrow-with-triangle;
+	}
+
+	.post-author-link {
+		@include padding(yes, no, no, no);
+	}
+}

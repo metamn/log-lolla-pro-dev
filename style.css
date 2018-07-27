@@ -3543,12 +3543,12 @@ html {
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg); }
         @media only screen and (max-width: 767.9px) {
-          html body .content .content-home .post.post-format-status .post__content .post-author-linking-to-post .byline,
-          html body .content .content-archive .post.post-format-status .post__content .post-author-linking-to-post .byline {
+          html body .content .content-home .post.post-format-status .post__content .post-author-linking-to-post .post-author-link,
+          html body .content .content-archive .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
             padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content .content-home .post.post-format-status .post__content .post-author-linking-to-post .byline,
-          html body .content .content-archive .post.post-format-status .post__content .post-author-linking-to-post .byline {
+          html body .content .content-home .post.post-format-status .post__content .post-author-linking-to-post .post-author-link,
+          html body .content .content-archive .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
             padding-top: 2.5em; } }
     @media only screen and (min-width: 768px) {
       html body .content .content-home .post.post-format-quote .post__content,
@@ -8669,10 +8669,10 @@ html {
             -webkit-transform: rotate(90deg);
                     transform: rotate(90deg); }
         @media only screen and (max-width: 767.9px) {
-          html body .content .content-home .list--post-list-with-comments .post.post-format-status .post__content .post-author-linking-to-post .byline {
+          html body .content .content-home .list--post-list-with-comments .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
             padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
-          html body .content .content-home .list--post-list-with-comments .post.post-format-status .post__content .post-author-linking-to-post .byline {
+          html body .content .content-home .list--post-list-with-comments .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
             padding-top: 2.5em; } }
     @media only screen and (min-width: 768px) {
       html body .content .content-home .list--post-list-with-comments .post.post-format-quote .post__content {
@@ -15984,10 +15984,10 @@ html {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
             @media only screen and (max-width: 767.9px) {
-              html body .content .content-none .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-none .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
             @media only screen and (min-width: 768px) {
-              html body .content .content-none .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-none .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
           html body .content .content-none .post.post-format-quote .post__content {
@@ -19796,10 +19796,10 @@ html {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
             @media only screen and (max-width: 767.9px) {
-              html body .content .content-single .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-single .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
             @media only screen and (min-width: 768px) {
-              html body .content .content-single .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-single .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
           html body .content .content-single .post.post-format-quote .post__content {
@@ -24641,10 +24641,10 @@ html {
                 -webkit-transform: rotate(90deg);
                         transform: rotate(90deg); }
             @media only screen and (max-width: 767.9px) {
-              html body .content .content-page .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-page .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
             @media only screen and (min-width: 768px) {
-              html body .content .content-page .post.post-format-status .post__content .post-author-linking-to-post .byline {
+              html body .content .content-page .post.post-format-status .post__content .post-author-linking-to-post .post-author-link {
                 padding-top: 2.5em; } }
         @media only screen and (min-width: 768px) {
           html body .content .content-page .post.post-format-quote .post__content {

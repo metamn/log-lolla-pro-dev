@@ -15,16 +15,7 @@
 		}
 
 		.post-author-linking-to-post {
-			align-items: flex-start;
-			display: flex;
-
-			.arrow-with-triangle {
-				@include arrow-with-triangle;
-			}
-
-			.byline {
-				@include padding(yes, no, no, no);
-			}
+			@include post-author-linking-to-post;
 		}
 	}
 }

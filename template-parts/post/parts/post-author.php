@@ -19,8 +19,8 @@ $klass = '';
 		echo esc_html_x( 'by', 'post author', 'log-lolla-pro' );
 		?>
 
-		<span class="author vcard">
-			<a class="url fn n" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
+		<span class="post-author-link">
+			<a class="link" href="<?php echo esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ); ?>">
 				<?php echo esc_html( get_the_author() ); ?>
 			</a>
 		</span>
