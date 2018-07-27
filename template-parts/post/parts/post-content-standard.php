@@ -15,7 +15,7 @@
 $klass = '';
 ?>
 
-<aside class="post-content">
+<aside class="post-content post-content-standard">
 	<h3 class="hidden">Article content</h3>
 
 	<div class="text">

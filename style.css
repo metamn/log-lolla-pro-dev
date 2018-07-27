@@ -12141,19 +12141,19 @@ html {
       html body .content .content-archive .archive-items .list--categories .topic {
         border: 1px solid;
         padding: 0.3125em 0.625em; }
-        html body .content .content-archive .archive-items .list--related-topics .topic a,
-        html body .content .content-archive .archive-items .list--tags .topic a,
-        html body .content .content-archive .archive-items .list--categories .topic a {
+        html body .content .content-archive .archive-items .list--related-topics .topic .topic-link,
+        html body .content .content-archive .archive-items .list--tags .topic .topic-link,
+        html body .content .content-archive .archive-items .list--categories .topic .topic-link {
           background-color: white;
           color: black;
           text-decoration: none;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .content .content-archive .archive-items .list--related-topics .topic a:hover, html body .content .content-archive .archive-items .list--related-topics .topic a:active,
-          html body .content .content-archive .archive-items .list--tags .topic a:hover,
-          html body .content .content-archive .archive-items .list--tags .topic a:active,
-          html body .content .content-archive .archive-items .list--categories .topic a:hover,
-          html body .content .content-archive .archive-items .list--categories .topic a:active {
+          html body .content .content-archive .archive-items .list--related-topics .topic .topic-link:hover, html body .content .content-archive .archive-items .list--related-topics .topic .topic-link:active,
+          html body .content .content-archive .archive-items .list--tags .topic .topic-link:hover,
+          html body .content .content-archive .archive-items .list--tags .topic .topic-link:active,
+          html body .content .content-archive .archive-items .list--categories .topic .topic-link:hover,
+          html body .content .content-archive .archive-items .list--categories .topic .topic-link:active {
             text-decoration: line-through; }
     html body .content .content-archive .archive-items .archive-header {
       border: 1px solid;
@@ -14107,19 +14107,19 @@ html {
         html body .content .content-archives .archives-widget-list .list--categories .topic {
           border: 1px solid;
           padding: 0.3125em 0.625em; }
-          html body .content .content-archives .archives-widget-list .list--related-topics .topic a,
-          html body .content .content-archives .archives-widget-list .list--tags .topic a,
-          html body .content .content-archives .archives-widget-list .list--categories .topic a {
+          html body .content .content-archives .archives-widget-list .list--related-topics .topic .topic-link,
+          html body .content .content-archives .archives-widget-list .list--tags .topic .topic-link,
+          html body .content .content-archives .archives-widget-list .list--categories .topic .topic-link {
             background-color: white;
             color: black;
             text-decoration: none;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             will-change: text-decoration; }
-            html body .content .content-archives .archives-widget-list .list--related-topics .topic a:hover, html body .content .content-archives .archives-widget-list .list--related-topics .topic a:active,
-            html body .content .content-archives .archives-widget-list .list--tags .topic a:hover,
-            html body .content .content-archives .archives-widget-list .list--tags .topic a:active,
-            html body .content .content-archives .archives-widget-list .list--categories .topic a:hover,
-            html body .content .content-archives .archives-widget-list .list--categories .topic a:active {
+            html body .content .content-archives .archives-widget-list .list--related-topics .topic .topic-link:hover, html body .content .content-archives .archives-widget-list .list--related-topics .topic .topic-link:active,
+            html body .content .content-archives .archives-widget-list .list--tags .topic .topic-link:hover,
+            html body .content .content-archives .archives-widget-list .list--tags .topic .topic-link:active,
+            html body .content .content-archives .archives-widget-list .list--categories .topic .topic-link:hover,
+            html body .content .content-archives .archives-widget-list .list--categories .topic .topic-link:active {
               text-decoration: line-through; }
       html body .content .content-archives .archives-widget-list > * {
         background-color: white;
@@ -21860,22 +21860,22 @@ html {
         html body .content .content-single .post-footer .list .edit-link {
           border: 1px solid;
           padding: 0.3125em 0.625em; }
-          html body .content .content-single .post-footer .list .topic a,
-          html body .content .content-single .post-footer .list .posted-on a,
-          html body .content .content-single .post-footer .list .posted-by a,
-          html body .content .content-single .post-footer .list .edit-link a {
+          html body .content .content-single .post-footer .list .topic .topic-link,
+          html body .content .content-single .post-footer .list .posted-on .topic-link,
+          html body .content .content-single .post-footer .list .posted-by .topic-link,
+          html body .content .content-single .post-footer .list .edit-link .topic-link {
             background-color: white;
             color: black;
             text-decoration: none;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             will-change: text-decoration; }
-            html body .content .content-single .post-footer .list .topic a:hover, html body .content .content-single .post-footer .list .topic a:active,
-            html body .content .content-single .post-footer .list .posted-on a:hover,
-            html body .content .content-single .post-footer .list .posted-on a:active,
-            html body .content .content-single .post-footer .list .posted-by a:hover,
-            html body .content .content-single .post-footer .list .posted-by a:active,
-            html body .content .content-single .post-footer .list .edit-link a:hover,
-            html body .content .content-single .post-footer .list .edit-link a:active {
+            html body .content .content-single .post-footer .list .topic .topic-link:hover, html body .content .content-single .post-footer .list .topic .topic-link:active,
+            html body .content .content-single .post-footer .list .posted-on .topic-link:hover,
+            html body .content .content-single .post-footer .list .posted-on .topic-link:active,
+            html body .content .content-single .post-footer .list .posted-by .topic-link:hover,
+            html body .content .content-single .post-footer .list .posted-by .topic-link:active,
+            html body .content .content-single .post-footer .list .edit-link .topic-link:hover,
+            html body .content .content-single .post-footer .list .edit-link .topic-link:active {
               text-decoration: line-through; }
       html body .content .content-single .post-footer .edit-link {
         display: block; }
@@ -28117,19 +28117,19 @@ html {
         html body .sidebar .sidebar-widget-list .list--categories .topic {
           border: 1px solid;
           padding: 0.3125em 0.625em; }
-          html body .sidebar .sidebar-widget-list .list--related-topics .topic a,
-          html body .sidebar .sidebar-widget-list .list--tags .topic a,
-          html body .sidebar .sidebar-widget-list .list--categories .topic a {
+          html body .sidebar .sidebar-widget-list .list--related-topics .topic .topic-link,
+          html body .sidebar .sidebar-widget-list .list--tags .topic .topic-link,
+          html body .sidebar .sidebar-widget-list .list--categories .topic .topic-link {
             background-color: white;
             color: black;
             text-decoration: none;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             will-change: text-decoration; }
-            html body .sidebar .sidebar-widget-list .list--related-topics .topic a:hover, html body .sidebar .sidebar-widget-list .list--related-topics .topic a:active,
-            html body .sidebar .sidebar-widget-list .list--tags .topic a:hover,
-            html body .sidebar .sidebar-widget-list .list--tags .topic a:active,
-            html body .sidebar .sidebar-widget-list .list--categories .topic a:hover,
-            html body .sidebar .sidebar-widget-list .list--categories .topic a:active {
+            html body .sidebar .sidebar-widget-list .list--related-topics .topic .topic-link:hover, html body .sidebar .sidebar-widget-list .list--related-topics .topic .topic-link:active,
+            html body .sidebar .sidebar-widget-list .list--tags .topic .topic-link:hover,
+            html body .sidebar .sidebar-widget-list .list--tags .topic .topic-link:active,
+            html body .sidebar .sidebar-widget-list .list--categories .topic .topic-link:hover,
+            html body .sidebar .sidebar-widget-list .list--categories .topic .topic-link:active {
               text-decoration: line-through; }
       html body .sidebar .sidebar-widget-list > * {
         background-color: white;

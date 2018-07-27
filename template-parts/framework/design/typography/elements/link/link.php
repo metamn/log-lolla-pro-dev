@@ -18,9 +18,13 @@ if ( empty( $link_content ) ) {
 	$link_content = get_query_var( 'link-content' );
 }
 
+if ( empty( $link_klass ) ) {
+	$link_klass = get_query_var( 'link-klass' );
+}
+
 if ( ! empty( $link_url ) ) {
 	?>
-	<a class="link" href="<?php echo esc_url( $link_url ); ?>" title="<?php echo esc_attr( $link_title ); ?>">
+	<a class="link <?php echo esc_attr( $link_klass ); ?>" href="<?php echo esc_url( $link_url ); ?>" title="<?php echo esc_attr( $link_title ); ?>">
 	<?php
 }
 

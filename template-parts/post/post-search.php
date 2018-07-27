@@ -7,7 +7,7 @@
  * @package Log_Lolla_Pro
  */
 
-$klass = 'post';
+$klass = 'post post-search';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class( $klass ); ?>>

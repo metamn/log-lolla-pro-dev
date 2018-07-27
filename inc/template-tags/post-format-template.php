@@ -97,6 +97,7 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_link_to_archive_as_html' 
 			set_query_var( 'link-url', get_post_format_link( $format ) );
 			set_query_var( 'link-title', ucfirst( $format ) );
 			set_query_var( 'link-content', ucfirst( $format ) );
+			set_query_var( 'link-klass', 'topic-link' );
 			get_template_part( 'template-parts/framework/design/typography/elements/link/link', '' );
 
 			$html = ob_get_clean();

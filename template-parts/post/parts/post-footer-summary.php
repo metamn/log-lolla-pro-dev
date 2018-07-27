@@ -10,7 +10,7 @@
 $klass = '';
 ?>
 
-<aside class="post-footer">
+<aside class="post-footer post-footer-summary">
 	<h3 class="hidden">Summary post footer</h3>
 
 	<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-archive' ); ?>
