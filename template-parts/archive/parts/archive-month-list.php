@@ -16,7 +16,7 @@ $archive_months = get_query_var( 'archive_months' );
 $grid           = round( count( $archive_months ) / 2 );
 ?>
 
-<div class="months grid-<?php echo esc_attr( $grid ); ?>">
+<div class="archive-month-list grid-<?php echo esc_attr( $grid ); ?>">
 	<?php
 	foreach ( $archive_months as $archive_month ) {
 		set_query_var( 'archive_month', $archive_month );

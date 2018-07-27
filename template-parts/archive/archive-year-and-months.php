@@ -18,7 +18,7 @@ $archive_year   = get_query_var( 'archive_year' );
 $archive_months = get_query_var( 'archive_months' );
 ?>
 
-<div class="year-and-months">
+<div class="archive-year-and-months">
 	<?php get_template_part( 'template-parts/archive/parts/archive', 'year' ); ?>
-	<?php get_template_part( 'template-parts/archive/parts/archive-month', 'list' ); ?>
+	<?php get_template_part( 'template-parts/archive/parts/archive', 'month-list' ); ?>
 </div>

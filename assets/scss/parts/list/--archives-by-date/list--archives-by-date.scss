@@ -3,27 +3,10 @@
 	@include width;
 
 	.list-items {
-		@include list--vertical('.year-and-months');
+		@include list--vertical('.archive-year-and-months');
 
-		.year-and-months {
-			@include list--horizontal-mixed-items(half, no);
-
-			align-items: center;
-			flex-wrap: nowrap;
-			width: 100%;
-
-			.year,
-			.month {
-				min-width: $lem * 2; // Do not break 2018 into 210 and 8
-			}
-
-			.months {
-				@include list--horizontal('.month', half, half);
-				@include border(normal, all);
-				@include padding($padding, no, no, $padding);
-
-				align-items: center;
-			}
+		.archive-year-and-months {
+			@include archive-year-and-months($padding);
 		}
 	}
 }
