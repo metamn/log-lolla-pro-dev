@@ -89,4 +89,8 @@
 	&.post-format-comment {
 		@include post-format-comment;
 	}
+
+	&.post-format-summary {
+		@include post-format-summary;
+	}
 }

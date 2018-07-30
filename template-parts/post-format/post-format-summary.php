@@ -22,7 +22,7 @@ $post_klass_array = array(
 
 	<div class="post-content-between-sidebars">
 		<?php get_template_part( 'template-parts/post/parts/post', 'sticky' ); ?>
-		<?php get_template_part( 'template-parts/post/parts/post-title', 'without-link' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post-title', '' ); ?>
 	</div>
 
 	<?php get_template_part( 'template-parts/post-sidebar/post-sidebar', 'right' ); ?>

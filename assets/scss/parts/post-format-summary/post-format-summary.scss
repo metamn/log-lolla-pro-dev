@@ -1,0 +1,19 @@
+@mixin post-format-summary {
+	@include width;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	.post-sidebar-left {
+		order: 1;
+	}
+
+	.post-content-between-sidebars {
+		@include border(normal, all);
+		@include padding;
+		@include margin(half, no, no, no);
+
+		order: 2;
+	}
+}

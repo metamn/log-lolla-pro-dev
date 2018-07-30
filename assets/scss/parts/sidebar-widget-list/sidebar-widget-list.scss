@@ -15,6 +15,10 @@
 
 	.post-list--summaries {
 		@include post-list--summaries;
+
+		.post-format-summary {
+			@include post-format-summary;
+		}
 	}
 
 	.topic-list--with-sparklines {
