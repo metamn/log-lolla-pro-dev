@@ -1,3 +1,10 @@
 @mixin post-list--for-a-post-type {
-	@include list('.list-title', '.list-items', '.post');
+	@include list($direction: horizontal);
+
+	.list-items {
+		.list-item {
+			@include list-item;
+			@include list--horizontal-mixed-items(half, no);
+		}
+	}
 }
