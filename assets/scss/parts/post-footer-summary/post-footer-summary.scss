@@ -1,0 +1,22 @@
+@mixin post-footer-summary {
+	@include margin(yes, no, half, no);
+
+	.list {
+		align-items: last baseline;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		.link-with-prefix .link,
+		.topic-with-prefix .topic,
+		.posted-on,
+		.posted-by {
+			@include topic;
+			@include margin(no, half, half, no);
+		}
+
+		.link-with-prefix .link {
+			@include link($type: not-underlined);
+		}
+	}
+}

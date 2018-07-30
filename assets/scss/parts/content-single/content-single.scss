@@ -13,7 +13,15 @@
 		@include post-footer;
 	}
 
+	.post-footer-summary {
+		@include post-footer-summary;
+	}
+
 	.comment-list {
 		@include comment-list;
+	}
+
+	.post-list--for-a-summary {
+		@include post-list--for-a-summary;
 	}
 }

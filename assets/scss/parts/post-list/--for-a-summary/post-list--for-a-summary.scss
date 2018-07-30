@@ -1,0 +1,14 @@
+@mixin post-list--for-a-summary {
+	@include list($item: '.post');
+	@include width--full;
+
+	.list-items {
+		.post {
+			@include post;
+		}
+
+		.post-with-sidebar {
+			@include post-with-sidebar;
+		}
+	}
+}

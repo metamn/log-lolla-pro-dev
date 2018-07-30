@@ -10,12 +10,14 @@
 $klass = '';
 ?>
 
-<aside class="post-footer post-footer-summary">
+<aside class="post-footer-summary">
 	<h3 class="hidden">Post footer for Summary Post type</h3>
 
-	<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-archive' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-topic' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'summary-date' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'author' ); ?>
-	<?php get_template_part( 'template-parts/post/parts/post', 'edit-link' ); ?>
+	<div class="list">
+		<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-archive' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'summary-link-to-topic' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'summary-date' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'author' ); ?>
+		<?php get_template_part( 'template-parts/post/parts/post', 'edit-link' ); ?>
+	</div>
 </aside>
