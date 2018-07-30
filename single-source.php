@@ -17,7 +17,7 @@
 get_header();
 ?>
 
-<section class="content-archive archive archive-single-source">
+<section class="content-archive">
 	<h3 class="archive-title">Single source archive</h3>
 
 	<div class="archive-items">

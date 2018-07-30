@@ -19,7 +19,7 @@ get_header();
 ?>
 
 
-<section class="content-archive archive archive-topics">
+<section class="content-archive">
 	<h3 class="archive-title">Topics archive</h3>
 
 	<div class="archive-items">
