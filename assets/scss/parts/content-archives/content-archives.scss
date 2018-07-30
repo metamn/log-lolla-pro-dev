@@ -6,10 +6,9 @@
 	@include list('.archives-title', '.archives-widget-list', mixed, $show-title: false);
 
 	.archives-widget-list {
-		@include widget-list;
+		@include sidebar-widget-list;
 
 		> * {
-			@include widget;
 			@include width;
 		}
 	}

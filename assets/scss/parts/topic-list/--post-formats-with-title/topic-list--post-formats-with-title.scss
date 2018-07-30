@@ -1,0 +1,9 @@
+@mixin topic-list--post-formats-with-title {
+	@include list($direction: horizontal);
+	@include width;
+
+	.list-item {
+		@include list-item;
+		@include list--horizontal-mixed-items(half, no);
+	}
+}

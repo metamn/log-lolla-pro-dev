@@ -1,0 +1,35 @@
+@mixin sidebar-widget-list {
+	> * {
+		@include widget;
+		max-width: $text-block-width;
+		width: 100%;
+	}
+
+	.widget--topics-summary {
+		@include list('.widget-title', $show-title: false);
+	}
+
+	.shortcode--topics-summary {
+		@include list('.shortcode-title', $show-title: false);
+	}
+
+	.post-list--summaries {
+		@include post-list--summaries;
+	}
+
+	.topic-list--with-sparklines {
+		@include topic-list--with-sparklines;
+	}
+
+	.topic-list--post-formats {
+		@include topic-list--post-formats-with-title;
+	}
+
+	.post-list--for-a-post-type {
+		@include post-list--for-a-post-type;
+	}
+
+	.archive-list--by-date {
+		@include archive-list--by-date-with-title;
+	}
+}

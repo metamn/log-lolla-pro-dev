@@ -2,11 +2,42 @@
 	@include list('.archive-title', '.archive-items', mixed, false);
 
 	.archive-items {
-		@include widget-list;
-
 		.archive-header {
 			@include archive-header;
 			order: -1;
+		}
+
+		.post-list--for-archive,
+		.post-list--for-a-post-type {
+			@include post-list--for-archive;
+		}
+
+		.post-list--summaries {
+			@include post-list--summaries;
+		}
+
+		.post-list--thoughts {
+			@include post-list--thoughts;
+		}
+
+		.topic-list--related-topics {
+			@include topic-list--related-topics;
+		}
+
+		.topic-list--categories {
+			@include topic-list--categories;
+		}
+
+		.topic-list--tags {
+			@include topic-list--tags;
+		}
+
+		.topic-list--post-formats {
+			@include topic-list--post-formats;
+		}
+
+		.archive-list--by-date {
+			@include archive-list--by-date;
 		}
 	}
 }

@@ -1,5 +1,5 @@
-@mixin archive-list--by-date($padding: half) {
-	@include list($show-title: false);
+@mixin archive-list--by-date-with-title($padding: half) {
+	@include list;
 	@include width;
 
 	.list-items {

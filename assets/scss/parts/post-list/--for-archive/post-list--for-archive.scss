@@ -1,3 +1,4 @@
 @mixin post-list--for-archive {
 	@include list('.list-title', '.list-items', '.post');
+	width: 100%;
 }

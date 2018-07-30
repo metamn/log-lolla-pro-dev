@@ -27,7 +27,7 @@ class Log_Lolla_Pro_Topics_Summary_Widget extends WP_Widget {
 				'number_of_categories' => esc_html__( 'Number of categories to use', 'log_lolla_pro' ),
 				/* translators: The Topics Summary widget `number of tags to use` text on the admin screen */
 				'number_of_tags'       => esc_html__( 'Number of tags to use', 'log_lolla_pro' ),
-				'classname'            => 'widget-log-lolla-pro widget-log-lolla-pro--topics-summary',
+				'classname'            => 'widget-log-lolla-pro widget--topics-summary',
 			)
 		);
 	}

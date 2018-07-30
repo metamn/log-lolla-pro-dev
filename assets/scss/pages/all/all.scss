@@ -62,22 +62,6 @@ html {
 			@include footer-navigation--highlight-current-item;
 		}
 
-		.widget {
-			@include widget;
-		}
-
-		.post-list {
-			@include post-list;
-		}
-
-		.topic-list {
-			@include topic-list;
-		}
-
-		.archive-list {
-			@include archive-list;
-		}
-
 
 		// Common classes
 		.hidden {

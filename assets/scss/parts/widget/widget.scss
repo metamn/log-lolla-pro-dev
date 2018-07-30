@@ -7,16 +7,4 @@
 	.link {
 		@include link;
 	}
-
-	&.widget_tag_cloud {
-		@include widget-tag-cloud;
-	}
-
-	&.widget_calendar {
-		@include widget-calendar;
-	}
-
-	&.widget_media_audio {
-		@include widget-audio;
-	}
 }
