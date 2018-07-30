@@ -2,14 +2,6 @@
 //
 // For different content types there are different mixins
 @mixin content {
-	.post {
-		@include post;
-	}
-
-	.post-with-sidebar {
-		@include post-with-sidebar;
-	}
-
 	.post-single {
 		@include post-single;
 	}

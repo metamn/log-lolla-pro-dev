@@ -4,4 +4,12 @@
 	.post-list--with-comments {
 		@include post-list--with-comments;
 	}
+
+	.post {
+		@include post;
+	}
+
+	.post-with-sidebar {
+		@include post-with-sidebar;
+	}
 }
