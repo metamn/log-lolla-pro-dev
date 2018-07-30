@@ -1,8 +1,11 @@
 @mixin post-footer {
-	@include margin(yes, no, no, no);
+	@include margin(yes, no, half, no);
 
 	.list {
-		@include list--horizontal('> *', half, half);
+		align-items: baseline;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		justify-content: space-between;
 
 		.topic,
@@ -10,10 +13,15 @@
 		.posted-by,
 		.edit-link {
 			@include topic;
+			@include margin(no, no, half, no);
 		}
 	}
 
 	.edit-link {
 		display: block;
+	}
+
+	+.navigation-for-post {
+		@include margin(no, no, no, no);
 	}
 }

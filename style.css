@@ -5664,16 +5664,16 @@ html {
             max-width: 37.5em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content .content-single .post-footer {
-          margin-top: 2.5em; } }
+          margin-bottom: 1.25em; } }
       @media only screen and (min-width: 768px) {
         html body .content .content-single .post-footer {
-          margin-top: 2.5em; } }
+          margin-bottom: 1.25em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content .content-single .post-footer {
-          margin-bottom: 0; } }
+          margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
         html body .content .content-single .post-footer {
-          margin-bottom: 0; } }
+          margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
         html body .content .content-single .post-footer {
           margin-left: 0; } }
@@ -5687,6 +5687,9 @@ html {
         html body .content .content-single .post-footer {
           margin-right: 0; } }
       html body .content .content-single .post-footer .list {
+        -webkit-box-align: baseline;
+            -ms-flex-align: baseline;
+                align-items: baseline;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -5694,64 +5697,8 @@ html {
             flex-wrap: wrap;
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
-                justify-content: space-between; }
-        html body .content .content-single .post-footer .list > * {
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-bottom: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-bottom: 1.25em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-right: 0.625em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-right: 1.25em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > * {
-              margin-left: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-bottom: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-bottom: 1.25em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-top: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-top: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-left: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-left: 0; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-right: 0; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .content-single .post-footer .list > *:last-of-type {
-              margin-right: 0; } }
+                justify-content: space-between;
+        justify-content: space-between; }
         html body .content .content-single .post-footer .list .topic,
         html body .content .content-single .post-footer .list .posted-on,
         html body .content .content-single .post-footer .list .posted-by,
@@ -5759,24 +5706,108 @@ html {
           border: 1px solid;
           padding: 0.3125em 0.625em; }
           html body .content .content-single .post-footer .list .topic .topic-link,
+          html body .content .content-single .post-footer .list .topic a,
           html body .content .content-single .post-footer .list .posted-on .topic-link,
+          html body .content .content-single .post-footer .list .posted-on a,
           html body .content .content-single .post-footer .list .posted-by .topic-link,
-          html body .content .content-single .post-footer .list .edit-link .topic-link {
+          html body .content .content-single .post-footer .list .posted-by a,
+          html body .content .content-single .post-footer .list .edit-link .topic-link,
+          html body .content .content-single .post-footer .list .edit-link a {
             background-color: white;
             color: black;
             text-decoration: none;
             transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
             will-change: text-decoration; }
             html body .content .content-single .post-footer .list .topic .topic-link:hover, html body .content .content-single .post-footer .list .topic .topic-link:active,
+            html body .content .content-single .post-footer .list .topic a:hover,
+            html body .content .content-single .post-footer .list .topic a:active,
             html body .content .content-single .post-footer .list .posted-on .topic-link:hover,
             html body .content .content-single .post-footer .list .posted-on .topic-link:active,
+            html body .content .content-single .post-footer .list .posted-on a:hover,
+            html body .content .content-single .post-footer .list .posted-on a:active,
             html body .content .content-single .post-footer .list .posted-by .topic-link:hover,
             html body .content .content-single .post-footer .list .posted-by .topic-link:active,
+            html body .content .content-single .post-footer .list .posted-by a:hover,
+            html body .content .content-single .post-footer .list .posted-by a:active,
             html body .content .content-single .post-footer .list .edit-link .topic-link:hover,
-            html body .content .content-single .post-footer .list .edit-link .topic-link:active {
+            html body .content .content-single .post-footer .list .edit-link .topic-link:active,
+            html body .content .content-single .post-footer .list .edit-link a:hover,
+            html body .content .content-single .post-footer .list .edit-link a:active {
               text-decoration: line-through; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-top: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-top: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .content-single .post-footer .list .topic,
+            html body .content .content-single .post-footer .list .posted-on,
+            html body .content .content-single .post-footer .list .posted-by,
+            html body .content .content-single .post-footer .list .edit-link {
+              margin-right: 0; } }
       html body .content .content-single .post-footer .edit-link {
         display: block; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-top: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-top: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-bottom: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-left: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-left: 0; } }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-right: 0; } }
+      @media only screen and (min-width: 768px) {
+        html body .content .content-single .post-footer + .navigation-for-post {
+          margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
         html body .content .content-single .comment-list .list-title + .list-items {
           margin-top: 2.5em; } }
@@ -8045,13 +8076,16 @@ html {
       html body .topic-list--related-topics .topic {
         border: 1px solid;
         padding: 0.3125em 0.625em; }
-        html body .topic-list--related-topics .topic .topic-link {
+        html body .topic-list--related-topics .topic .topic-link,
+        html body .topic-list--related-topics .topic a {
           background-color: white;
           color: black;
           text-decoration: none;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .topic-list--related-topics .topic .topic-link:hover, html body .topic-list--related-topics .topic .topic-link:active {
+          html body .topic-list--related-topics .topic .topic-link:hover, html body .topic-list--related-topics .topic .topic-link:active,
+          html body .topic-list--related-topics .topic a:hover,
+          html body .topic-list--related-topics .topic a:active {
             text-decoration: line-through; }
     html body .topic-list--categories {
       width: 100%; }
@@ -8159,13 +8193,16 @@ html {
       html body .topic-list--categories .topic {
         border: 1px solid;
         padding: 0.3125em 0.625em; }
-        html body .topic-list--categories .topic .topic-link {
+        html body .topic-list--categories .topic .topic-link,
+        html body .topic-list--categories .topic a {
           background-color: white;
           color: black;
           text-decoration: none;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .topic-list--categories .topic .topic-link:hover, html body .topic-list--categories .topic .topic-link:active {
+          html body .topic-list--categories .topic .topic-link:hover, html body .topic-list--categories .topic .topic-link:active,
+          html body .topic-list--categories .topic a:hover,
+          html body .topic-list--categories .topic a:active {
             text-decoration: line-through; }
     html body .topic-list--tags {
       width: 100%; }
@@ -8273,13 +8310,16 @@ html {
       html body .topic-list--tags .topic {
         border: 1px solid;
         padding: 0.3125em 0.625em; }
-        html body .topic-list--tags .topic .topic-link {
+        html body .topic-list--tags .topic .topic-link,
+        html body .topic-list--tags .topic a {
           background-color: white;
           color: black;
           text-decoration: none;
           transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
           will-change: text-decoration; }
-          html body .topic-list--tags .topic .topic-link:hover, html body .topic-list--tags .topic .topic-link:active {
+          html body .topic-list--tags .topic .topic-link:hover, html body .topic-list--tags .topic .topic-link:active,
+          html body .topic-list--tags .topic a:hover,
+          html body .topic-list--tags .topic a:active {
             text-decoration: line-through; }
     html body .archive-list--by-date {
       width: 100%; }
