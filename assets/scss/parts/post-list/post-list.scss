@@ -1,0 +1,8 @@
+@mixin post-list {
+	@include list--vertical-mixed-elements;
+	align-items: center;
+	
+	.list-title {
+		@include width;
+	}
+}
