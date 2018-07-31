@@ -3,6 +3,14 @@
 		width: $post-width;
 	}
 
+	// Here we use an `anomaly`:
+	// - The post container `max-width` is set to `$post-width`.
+	// - The post with sidebar is larger than `post-with`.
+	// - The post container is extended beyond `max-width` by the browser automatically.
+	//
+	// If we try to use another metric like `$post-with-sidebar-width`
+	// everything becomes utterly complicated.
+	// So we stick to one width throughout the entire site, and use this `anomaly`.
 	.post-sidebar {
 		padding-top: $lem;
 		width: calc((100% - #{$post-width}) / 2);
