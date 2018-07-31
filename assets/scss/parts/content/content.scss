@@ -1,11 +1,4 @@
-// General settings for the content section
-//
-// For different content types there are different mixins
 @mixin content {
-	.post-single {
-		@include post-single;
-	}
-
 	a,
 	.link {
 		@include link;

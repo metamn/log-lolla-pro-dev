@@ -9,6 +9,10 @@
 		@include width;
 	}
 
+	.post-single {
+		@include post-single;
+	}
+
 	.post-footer {
 		@include post-footer;
 	}

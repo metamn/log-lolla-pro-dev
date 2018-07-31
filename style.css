@@ -865,111 +865,6 @@ html {
                   justify-content: space-between; } }
       html body .header-menu--closed {
         display: none; }
-    html body .content .post-single {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      position: relative;
-      border: 1px solid; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single {
-          max-width: calc(100% - 2.5em); } }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        html body .content .post-single {
-          max-width: calc(100% - 5em); } }
-      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-        html body .content .post-single {
-          max-width: 37.5em; } }
-      @media only screen and (min-width: 1600.1px) {
-        html body .content .post-single {
-          max-width: 37.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single {
-          padding-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single {
-          padding-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single {
-          padding-bottom: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single {
-          padding-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single {
-          padding-left: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single {
-          padding-left: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single {
-          padding-right: 1.25em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single {
-          padding-right: 2.5em; } }
-      html body .content .post-single .post-title .text {
-        font-size: 1.953em;
-        letter-spacing: 0.625em;
-        line-height: 1.1; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-title {
-          margin-bottom: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-title {
-          margin-bottom: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-title {
-          margin-top: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-title {
-          margin-top: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-title {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-title {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-title {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-title {
-          margin-right: 0; } }
-      html body .content .post-single figure {
-        border: 1px solid;
-        padding: 1.25em; }
-        html body .content .post-single figure .figcaption,
-        html body .content .post-single figure figcaption {
-          display: inline-block; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-top: 2.5em; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-top: 2.5em; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-bottom: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-bottom: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-left: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-left: 0; } }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-right: 0; } }
-      @media only screen and (min-width: 768px) {
-        html body .content .post-single .post-featured-image + .post-content {
-          margin-right: 0; } }
     html body .content a,
     html body .content .link {
       background-color: white;
@@ -4966,6 +4861,111 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content .single > * {
             max-width: 37.5em; } }
+      html body .content .single .post-single {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: relative;
+        border: 1px solid; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single {
+            max-width: calc(100% - 2.5em); } }
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+          html body .content .single .post-single {
+            max-width: calc(100% - 5em); } }
+        @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+          html body .content .single .post-single {
+            max-width: 37.5em; } }
+        @media only screen and (min-width: 1600.1px) {
+          html body .content .single .post-single {
+            max-width: 37.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single {
+            padding-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single {
+            padding-right: 2.5em; } }
+        html body .content .single .post-single .post-title .text {
+          font-size: 1.953em;
+          letter-spacing: 0.625em;
+          line-height: 1.1; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-title {
+            margin-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-title {
+            margin-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-title {
+            margin-top: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-title {
+            margin-top: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-title {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-title {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-title {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-title {
+            margin-right: 0; } }
+        html body .content .single .post-single figure {
+          border: 1px solid;
+          padding: 1.25em; }
+          html body .content .single .post-single figure .figcaption,
+          html body .content .single .post-single figure figcaption {
+            display: inline-block; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .single .post-single .post-featured-image + .post-content {
+            margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
         html body .content .single .post-footer {
           margin-bottom: 1.25em; } }
