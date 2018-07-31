@@ -3,8 +3,6 @@
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
 
-	@include list('.sidebar-title', '.sidebar-widget-list', mixed, $show-title: false);
-
 	.sidebar-widget-list {
 		@include sidebar-widget-list;
 	}

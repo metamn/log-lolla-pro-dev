@@ -6,6 +6,8 @@
 
 	@include colors(default);
 
+	width: 100%;
+
 	.arrow-with-triangle {
 		@include arrow-with-triangle;
 		margin-right: $lem / 2;

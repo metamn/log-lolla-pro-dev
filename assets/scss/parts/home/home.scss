@@ -1,4 +1,7 @@
 @mixin home {
+	@include width;
+	@include width--post-with-sidebar;
+
 	.post-list--with-comments {
 		@include post-list--with-comments;
 	}
@@ -9,5 +12,10 @@
 
 	.post-with-sidebar {
 		@include post-with-sidebar;
+	}
+
+	.post-format-comment,
+	.navigation {
+		@include width--post;
 	}
 }

@@ -1,0 +1,17 @@
+@mixin width--post-with-sidebar {
+	width: 100%;
+
+	$post-with-sidebar-width: calc(#{$post-width} + (#{$post-sidebar-width} * 2));
+
+	@include landscape {
+		max-width: $post-with-sidebar-width;
+	}
+
+	@include laptop {
+		max-width: $post-with-sidebar-width;
+	}
+
+	@include desktop {
+		max-width: $post-with-sidebar-width;
+	}
+}

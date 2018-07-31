@@ -1,6 +1,5 @@
 @mixin archive-list--by-date($padding: half) {
 	@include list($show-title: false);
-	@include width;
 
 	.list-items {
 		@include list--vertical('.archive-year-and-months');

@@ -10,10 +10,10 @@
 	}
 
 	@include laptop {
-		max-width: $text-block-width;
+		max-width: $post-width;
 	}
 
 	@include desktop {
-		max-width: $text-block-width;
+		max-width: $post-width;
 	}
 }

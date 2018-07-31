@@ -1,7 +1,13 @@
 @mixin sidebar-widget-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	@include width;
+	@include width--post;
+
 	> * {
 		@include widget;
-		@include width;
 	}
 
 	.widget--topics-summary {

@@ -1,8 +1,6 @@
 @mixin post-grid--display-vertical {
-	@include width;
-
 	display: flex;
 	flex-direction: column;
-
 	position: relative;
+	width: 100%;
 }

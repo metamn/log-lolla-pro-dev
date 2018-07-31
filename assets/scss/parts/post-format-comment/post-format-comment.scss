@@ -1,7 +1,4 @@
 @mixin post-format-comment {
-
-	@include width;
-
 	border: 0;
 	flex-wrap: wrap;
 	justify-content: flex-start;

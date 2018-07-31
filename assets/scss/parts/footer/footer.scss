@@ -1,5 +1,6 @@
 @mixin footer {
 	@include width;
+	@include width--post;
 	@include padding(yes, no, yes, no);
 
 	.footer-copyright {
