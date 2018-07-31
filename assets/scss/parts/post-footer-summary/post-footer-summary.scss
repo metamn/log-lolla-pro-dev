@@ -18,5 +18,9 @@
 		.link-with-prefix .link {
 			@include link($type: not-underlined);
 		}
+
+		.post-date-with-prefix {
+			display: flex;
+		}
 	}
 }

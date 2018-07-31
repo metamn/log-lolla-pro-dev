@@ -11853,6 +11853,10 @@ html {
           will-change: text-decoration; }
           html body .content .content-single .post-footer-summary .list .link-with-prefix .link:hover, html body .content .content-single .post-footer-summary .list .link-with-prefix .link:active {
             text-decoration: line-through; }
+        html body .content .content-single .post-footer-summary .list .post-date-with-prefix {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
       @media only screen and (max-width: 767.9px) {
         html body .content .content-single .comment-list .list-title + .list-items {
           margin-top: 2.5em; } }
