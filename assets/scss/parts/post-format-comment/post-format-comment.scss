@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 
-	@include width--post;
+	@include width;
 
 	.comment-content,
 	.comment-excerpt {

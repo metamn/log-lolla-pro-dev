@@ -1,0 +1,15 @@
+@mixin width {
+	width: 100%;
+
+	@include mobile {
+		max-width: calc(100% - #{$left-mobile * 2});
+	}
+
+	@include tablet {
+		max-width: calc(100% - #{$left * 2});
+	}
+
+	@include landscape {
+		max-width: $post-width;
+	}
+}

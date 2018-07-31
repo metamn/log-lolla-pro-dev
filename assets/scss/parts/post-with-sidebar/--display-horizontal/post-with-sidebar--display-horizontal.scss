@@ -5,6 +5,6 @@
 
 	.post-sidebar {
 		padding-top: $lem;
-		width: $post-sidebar-width;
+		width: calc((100% - #{$post-width}) / 2);
 	}
 }
