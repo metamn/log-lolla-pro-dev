@@ -21,7 +21,7 @@ get_header();
 		<?php echo esc_attr( log_lolla_pro_get_archive_label( 'Archives' ) ); ?>
 	</h3>
 
-	<div class="archives-widget-list">
+	<div class="archives-items">
 		<?php
 		// Display the content of the page.
 		if ( have_posts() ) {

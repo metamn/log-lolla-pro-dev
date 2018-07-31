@@ -12,14 +12,6 @@
 			@include post-list;
 		}
 
-		.post {
-			@include post;
-		}
-
-		.post-with-sidebar {
-			@include post-with-sidebar;
-		}
-
 		.post-list--for-archive,
 		.post-list--for-a-post-type {
 			@include post-list--for-archive;

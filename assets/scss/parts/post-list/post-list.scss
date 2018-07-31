@@ -1,8 +1,18 @@
 @mixin post-list {
 	@include list--vertical-mixed-elements;
 	align-items: center;
-	
+
 	.list-title {
 		@include width;
+	}
+
+	.list-items {
+		.post {
+			@include post;
+		}
+
+		.post-with-sidebar {
+			@include post-with-sidebar;
+		}
 	}
 }
