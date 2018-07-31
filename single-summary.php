@@ -18,7 +18,7 @@
 get_header();
 ?>
 
-<section class="content-single">
+<section class="single single-for-a-summary">
 	<h3 class="hidden">Single Summary post</h3>
 
 	<?php

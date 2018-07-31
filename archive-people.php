@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<section class="content-archive">
+<section class="archive archive-for-people">
 	<h3 class="archive-title">Archive for People</h3>
 
 	<div class="archive-items">

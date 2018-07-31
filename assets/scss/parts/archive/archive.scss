@@ -1,9 +1,10 @@
-@mixin content-archive {
+@mixin archive {
 	@include list('.archive-title', '.archive-items', mixed, false);
 
 	.archive-items {
 		.archive-header {
 			@include archive-header;
+			@include margin(no, no, yes, no);
 			order: -1;
 		}
 
@@ -53,5 +54,9 @@
 		.archive-list--by-date {
 			@include archive-list--by-date;
 		}
+	}
+
+	&.archive-for-summaries {
+		@include archive-for-summaries;
 	}
 }

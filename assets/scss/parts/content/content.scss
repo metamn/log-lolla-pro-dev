@@ -24,12 +24,12 @@
 		@include single;
 	}
 
-	.content-archive {
-		@include content-archive;
+	.archive {
+		@include archive;
 	}
 
-	.content-archives {
-		@include content-archives;
+	.archives {
+		@include archives;
 	}
 
 	.content-search {

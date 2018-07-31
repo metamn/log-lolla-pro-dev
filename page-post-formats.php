@@ -11,7 +11,7 @@
 get_header();
 ?>
 
-<section class="content-archive">
+<section class="archive archive-for-post-formats">
 	<h3 class="archive-title">Post formats archive</h3>
 
 	<div class="archive-items">

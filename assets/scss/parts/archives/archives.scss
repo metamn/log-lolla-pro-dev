@@ -1,4 +1,4 @@
-@mixin content-archives {
+@mixin archives {
 	@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
