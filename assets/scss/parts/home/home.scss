@@ -1,6 +1,4 @@
-// Settings for the content section on the home page
-//
-@mixin content-home {
+@mixin home {
 	.post-list--with-comments {
 		@include post-list--with-comments;
 	}
