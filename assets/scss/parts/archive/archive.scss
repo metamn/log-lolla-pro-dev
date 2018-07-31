@@ -17,12 +17,6 @@
 			@include post-list--for-archive;
 		}
 
-		.post-list--for-archive {
-			.post-format-summary {
-				@include post-format-summary;
-			}
-		}
-
 		.post-list--summaries {
 			@include post-list--summaries;
 		}

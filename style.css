@@ -14505,93 +14505,6 @@ html {
         html body .content .archive .archive-items .post-list--for-archive .list-items .navigation,
         html body .content .archive .archive-items .post-list--for-a-post-type .list-items .navigation {
           display: none; }
-    html body .content .archive .archive-items .post-list--for-archive .post-format-summary {
-      width: 100%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-      @media only screen and (max-width: 767.9px) {
-        html body .content .archive .archive-items .post-list--for-archive .post-format-summary {
-          max-width: calc(100% - 2.5em); } }
-      @media only screen and (min-width: 768px) and (max-width: 1024px) {
-        html body .content .archive .archive-items .post-list--for-archive .post-format-summary {
-          max-width: calc(100% - 5em); } }
-      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
-        html body .content .archive .archive-items .post-list--for-archive .post-format-summary {
-          max-width: 37.5em; } }
-      @media only screen and (min-width: 1600.1px) {
-        html body .content .archive .archive-items .post-list--for-archive .post-format-summary {
-          max-width: 37.5em; } }
-      html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-sidebar-left {
-        -webkit-box-ordinal-group: 2;
-            -ms-flex-order: 1;
-                order: 1; }
-      html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-        border: 1px solid;
-        -webkit-box-ordinal-group: 3;
-            -ms-flex-order: 2;
-                order: 2; }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-bottom: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-bottom: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-left: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-left: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-right: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            padding-right: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-top: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-top: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-bottom: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-bottom: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars {
-            margin-right: 0; } }
-      html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-sidebar {
-        max-width: none;
-        width: auto;
-        visibility: visible; }
-      html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-content-between-sidebars .post-title {
-        padding: 0 !important; }
-      html body .content .archive .archive-items .post-list--for-archive .post-format-summary .post-sidebar-left .post-date {
-        border: 0; }
     @media only screen and (max-width: 767.9px) {
       html body .content .archive .archive-items .post-list--summaries .list-title + .list-items {
         margin-top: 2.5em; } }
@@ -15493,6 +15406,93 @@ html {
         margin-right: 0; } }
     html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-title {
       display: none; }
+    html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      @media only screen and (max-width: 767.9px) {
+        html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary {
+          max-width: calc(100% - 2.5em); } }
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary {
+          max-width: calc(100% - 5em); } }
+      @media only screen and (min-width: 1025px) and (max-width: 1600px) {
+        html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary {
+          max-width: 37.5em; } }
+      @media only screen and (min-width: 1600.1px) {
+        html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary {
+          max-width: 37.5em; } }
+      html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-sidebar-left {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1; }
+      html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+        border: 1px solid;
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-top: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-top: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-bottom: 2.5em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-bottom: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-left: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-left: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-right: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            padding-right: 2.5em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-top: 1.25em; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-top: 1.25em; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-bottom: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-bottom: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-left: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-left: 0; } }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-right: 0; } }
+        @media only screen and (min-width: 768px) {
+          html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars {
+            margin-right: 0; } }
+      html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-sidebar {
+        max-width: none;
+        width: auto;
+        visibility: visible; }
+      html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-content-between-sidebars .post-title {
+        padding: 0 !important; }
+      html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-sidebar-left .post-date {
+        border: 0; }
     html body .content .archives {
       display: -webkit-box;
       display: -ms-flexbox;
