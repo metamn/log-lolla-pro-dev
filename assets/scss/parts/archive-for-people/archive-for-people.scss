@@ -1,0 +1,13 @@
+@mixin archive-for-people {
+	.archive-items {
+		.archive-header {
+			@include margin(no, no, no, no);
+		}
+
+		.post-list--for-archive {
+			.list-title {
+				display: none;
+			}
+		}
+	}
+}

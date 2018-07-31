@@ -15493,6 +15493,58 @@ html {
         padding: 0 !important; }
       html body .content .archive.archive-for-summaries .archive-items .post-list--for-archive .list-items .post-format-summary .post-sidebar-left .post-date {
         border: 0; }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-top: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-top: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-bottom: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-left: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-left: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-right: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-sources .archive-items .archive-header {
+        margin-right: 0; } }
+    html body .content .archive.archive-for-sources .archive-items .post-list--for-archive .list-title {
+      display: none; }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-top: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-top: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-bottom: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-left: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-left: 0; } }
+    @media only screen and (max-width: 767.9px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-right: 0; } }
+    @media only screen and (min-width: 768px) {
+      html body .content .archive.archive-for-people .archive-items .archive-header {
+        margin-right: 0; } }
+    html body .content .archive.archive-for-people .archive-items .post-list--for-archive .list-title {
+      display: none; }
     html body .content .archives {
       display: -webkit-box;
       display: -ms-flexbox;

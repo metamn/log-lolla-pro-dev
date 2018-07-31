@@ -49,4 +49,12 @@
 	&.archive-for-summaries {
 		@include archive-for-summaries;
 	}
+
+	&.archive-for-sources {
+		@include archive-for-sources;
+	}
+
+	&.archive-for-people {
+		@include archive-for-people;
+	}
 }
