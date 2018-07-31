@@ -1,4 +1,6 @@
 @mixin comment {
+	width: 100%;
+	
 	.comment-content {
 		@include padding;
 		@include border(normal, all);

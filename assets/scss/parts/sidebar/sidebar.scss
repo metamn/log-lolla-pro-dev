@@ -3,7 +3,7 @@
 	@include padding(yes, no, yes, no);
 	@include margin(yes, no, no, no);
 
-	.sidebar-widget-list {
-		@include sidebar-widget-list;
+	.widget-list {
+		@include widget-list;
 	}
 }

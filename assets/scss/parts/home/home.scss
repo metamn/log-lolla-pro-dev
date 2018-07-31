@@ -1,6 +1,7 @@
 @mixin home {
-	@include width;
-	@include width--post-with-sidebar;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 
 	.post-list--with-comments {
 		@include post-list--with-comments;
@@ -14,8 +15,8 @@
 		@include post-with-sidebar;
 	}
 
-	.post-format-comment,
+	.post-list--with-comments,
 	.navigation {
-		@include width--post;
+		@include width--post-with-sidebar;
 	}
 }

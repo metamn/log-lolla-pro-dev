@@ -1,6 +1,4 @@
 @mixin post-paginated-content {
-	@include width;
-
 	.text {
 		display: flex;
 		flex-wrap: wrap;

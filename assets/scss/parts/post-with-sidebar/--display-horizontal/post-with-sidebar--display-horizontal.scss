@@ -1,6 +1,6 @@
 @mixin post-with-sidebar--display-horizontal {
 	.post-content-between-sidebars {
-		@include width;
+		width: $post-width;
 	}
 
 	.post-sidebar {

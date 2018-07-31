@@ -26,12 +26,7 @@ html {
 		.header,
 		.header-menu,
 		.footer {
-			@include width;
-		}
-
-		.content,
-		.sidebar {
-			width: 100%;
+			@include width--layout;
 		}
 
 		a {

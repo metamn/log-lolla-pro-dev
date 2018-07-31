@@ -5,17 +5,17 @@
 	align-items: center;
 
 	.archives-title {
-		@include width;
+		// @include width;
 	}
 
 	.archives-items {
 		@include background-pattern($sidebar-pattern, $sidebar-pattern-color);
 		@include padding(yes, no, yes, no);
 
-		@include sidebar-widget-list;
+		@include widget-list;
 
 		> * {
-			@include width;
+			// @include width;
 		}
 	}
 }

@@ -3,11 +3,6 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 
-	> * {
-		width: 100%;
-	}
-
-
 	.comment-content,
 	.comment-excerpt {
 		@include padding(yes, yes, yes, yes);
