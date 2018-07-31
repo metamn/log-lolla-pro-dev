@@ -1,8 +1,7 @@
 @mixin sidebar-widget-list {
 	> * {
 		@include widget;
-		max-width: $text-block-width;
-		width: 100%;
+		@include width;
 	}
 
 	.widget--topics-summary {
