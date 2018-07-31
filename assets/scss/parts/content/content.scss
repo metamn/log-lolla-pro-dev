@@ -32,15 +32,15 @@
 		@include archives;
 	}
 
-	.content-search {
-		@include content-search;
+	.search {
+		@include search;
 	}
 
-	.content-none {
-		@include content-none;
+	.page-404 {
+		@include page-404;
 	}
 
-	.content-page {
-		@include content-page;
+	.page {
+		@include page;
 	}
 }

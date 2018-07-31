@@ -16,7 +16,7 @@
 get_header();
 ?>
 
-<section class="content-none">
+<section class="none page-404">
 	<h3 class="hidden">Page not found</h3>
 
 	<article class="post">

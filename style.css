@@ -16637,13 +16637,13 @@ html {
         @media only screen and (min-width: 1600.1px) {
           html body .content .archives .archives-widget-list > * {
             max-width: 37.5em; } }
-    html body .content .content-search .search-title {
+    html body .content .search .search-title {
       margin-bottom: 1.25em; }
-      html body .content .content-search .search-title span {
+      html body .content .search .search-title span {
         font-style: normal;
         font-weight: normal;
         font-family: nimbus_sans_lbold, Arial, Helvetica Neue, Helvetica, sans-serif; }
-    html body .content .content-search .post {
+    html body .content .search .post {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -16653,11 +16653,11 @@ html {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
-      html body .content .content-search .post .post-title,
-      html body .content .content-search .post .post-permalink,
-      html body .content .content-search .post .post-date {
+      html body .content .search .post .post-title,
+      html body .content .search .post .post-permalink,
+      html body .content .search .post .post-date {
         padding: 1.25em; }
-    html body .content .content-none {
+    html body .content .page-404 {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -16668,57 +16668,57 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      html body .content .content-none > * {
+      html body .content .page-404 > * {
         width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-bottom: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-bottom: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-top: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-top: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post {
+        html body .content .page-404 .post {
           margin-right: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-top: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-bottom: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-bottom: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-none .post .search {
+        html body .content .page-404 .post .search {
           margin-right: 0; } }
-    html body .content .content-page {
+    html body .content .page {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -16729,31 +16729,31 @@ html {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      html body .content .content-page > * {
+      html body .content .page > * {
         width: 100%; }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-bottom: 2.5em; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-bottom: 2.5em; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-top: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-top: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-left: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-left: 0; } }
       @media only screen and (max-width: 767.9px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-right: 0; } }
       @media only screen and (min-width: 768px) {
-        html body .content .content-page .post {
+        html body .content .page .post {
           margin-right: 0; } }
     html body .sidebar {
       background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=); }

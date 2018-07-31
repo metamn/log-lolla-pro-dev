@@ -1,4 +1,4 @@
-@mixin content-none {
+@mixin page {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
@@ -9,9 +9,5 @@
 
 	.post {
 		@include margin(no, no, yes, no);
-
-		.search {
-			@include margin(yes, no, no, no);
-		}
 	}
 }
