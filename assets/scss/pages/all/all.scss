@@ -25,6 +25,7 @@ html {
 
 		.header,
 		.header-menu,
+		.content,
 		.footer {
 			@include width;
 		}

@@ -1,41 +1,39 @@
 @mixin widget-list {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	@include list($item: mixed, $show-title: false);
 
-	> * {
-		@include widget;
-	}
-
-	.widget--topics-summary {
-		@include list('.widget-title', $show-title: false);
-	}
-
-	.shortcode--topics-summary {
-		@include list('.shortcode-title', $show-title: false);
-	}
-
-	.post-list--summaries {
-		@include post-list--summaries;
-
-		.post-format-summary {
-			@include post-format-summary;
+	.list-items {
+		.widget--topics-summary {
+			@include widget;
+			@include list('.widget-title', $show-title: false);
 		}
-	}
 
-	.topic-list--with-sparklines {
-		@include topic-list--with-sparklines;
-	}
+		.post-list--summaries {
+			@include widget;
+			@include post-list--summaries;
 
-	.topic-list--post-formats {
-		@include topic-list--post-formats-with-title;
-	}
+			.post-format-summary {
+				@include post-format-summary;
+			}
+		}
 
-	.post-list--for-a-post-type {
-		@include post-list--for-a-post-type;
-	}
+		.topic-list--with-sparklines {
+			@include widget;
+			@include topic-list--with-sparklines;
+		}
 
-	.archive-list--by-date {
-		@include archive-list--by-date-with-title;
+		.topic-list--post-formats {
+			@include widget;
+			@include topic-list--post-formats-with-title;
+		}
+
+		.post-list--for-a-post-type {
+			@include widget;
+			@include post-list--for-a-post-type;
+		}
+
+		.archive-list--by-date {
+			@include widget;
+			@include archive-list--by-date-with-title;
+		}
 	}
 }

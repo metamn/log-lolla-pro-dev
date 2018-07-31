@@ -1,9 +1,17 @@
 @mixin post-with-sidebar {
-	@include portrait {
+	@include mobile {
 		@include post-with-sidebar--display-vertical;
 	}
 
-	@include landscape {
+	@include tablet {
+		@include post-with-sidebar--display-vertical;
+	}
+
+	@include laptop {
+		@include post-with-sidebar--display-horizontal;
+	}
+
+	@include desktop {
 		@include post-with-sidebar--display-horizontal;
 	}
 

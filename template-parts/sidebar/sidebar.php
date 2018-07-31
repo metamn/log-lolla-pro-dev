@@ -18,5 +18,5 @@ $klass = '';
 		<div class="list-items">
 			<?php get_sidebar(); ?>
 		</div>
-	</div>
+	</section>
 </section>

@@ -7,6 +7,19 @@
 		@include post-list--with-comments;
 	}
 
+	// We need to reinforce the width here,
+	// because post sidebar enlarges the container
+	.post-format-comment,
+	.navigation {
+		@include laptop {
+			max-width: $post-width;
+		}
+
+		@include desktop {
+			max-width: $post-width;
+		}
+	}
+
 	.post {
 		@include post;
 	}

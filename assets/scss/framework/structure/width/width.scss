@@ -9,7 +9,11 @@
 		max-width: calc(100% - #{$left * 2});
 	}
 
-	@include landscape {
+	@include laptop {
+		max-width: $post-width;
+	}
+
+	@include desktop {
 		max-width: $post-width;
 	}
 }
