@@ -2,14 +2,14 @@
 	width: 100%;
 
 	@include landscape {
-		max-width: $post-width;
+		width: $post-width;
 	}
 
 	@include laptop {
-		max-width: $post-width;
+		width: $post-width;
 	}
 
 	@include desktop {
-		max-width: $post-width;
+		width: $post-width;
 	}
 }

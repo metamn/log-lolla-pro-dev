@@ -4,8 +4,6 @@
 	@include margin(yes, no, no, no);
 	@include padding(half, no, half, no);
 
-	@include colors(default);
-
 	width: 100%;
 
 	.arrow-with-triangle {

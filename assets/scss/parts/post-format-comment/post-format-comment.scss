@@ -3,6 +3,8 @@
 	flex-wrap: wrap;
 	justify-content: flex-start;
 
+	@include width--post;
+
 	.comment-content,
 	.comment-excerpt {
 		@include padding(yes, yes, yes, yes);

@@ -1,4 +1,6 @@
 @mixin list($title: '.list-title', $items: '.list-items', $item: '.list-item', $show-title: true, $show-navigation: false, $direction: vertical, $centered-vertically: true) {
+	width: 100%;
+
 	#{$title} {
 		@if ($show-title == false) {
 			display: none;
@@ -10,6 +12,8 @@
 	}
 
 	#{$items} {
+		width: 100%;
+		
 		@if ($direction == vertical) {
 			@if ($item == mixed) {
 				@include list--vertical-mixed-elements;

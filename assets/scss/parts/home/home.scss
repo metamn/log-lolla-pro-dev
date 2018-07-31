@@ -3,6 +3,8 @@
 	flex-direction: column;
 	align-items: center;
 
+	@include width--layout;
+
 	.post-list--with-comments {
 		@include post-list--with-comments;
 	}
@@ -13,10 +15,5 @@
 
 	.post-with-sidebar {
 		@include post-with-sidebar;
-	}
-
-	.post-list--with-comments,
-	.navigation {
-		@include width--post-with-sidebar;
 	}
 }
