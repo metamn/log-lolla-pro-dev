@@ -20,6 +20,10 @@
 		@include home;
 	}
 
+	.single {
+		@include single;
+	}
+
 	.content-archive {
 		@include content-archive;
 	}
@@ -34,10 +38,6 @@
 
 	.content-none {
 		@include content-none;
-	}
-
-	.content-single {
-		@include content-single;
 	}
 
 	.content-page {

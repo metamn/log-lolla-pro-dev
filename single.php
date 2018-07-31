@@ -18,7 +18,7 @@
 get_header();
 ?>
 
-<section class="content-single">
+<section class="single">
 	<h3 class="hidden">Single post</h3>
 
 	<?php
