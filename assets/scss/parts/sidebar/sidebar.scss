@@ -11,8 +11,15 @@
 		display: none;
 	}
 
-	.widget-list {
-		@include widget-list;
-		@include width;
+	.sidebar-widget-list {
+		@include list('.widget-list-title', '.widget-list-items', mixed, $show-title: false);
+
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.widget-list-items {
+			@include widget-list;
+		}
 	}
 }

@@ -1,0 +1,9 @@
+html {
+	body {
+		&.page-template-page-archives {
+			.content {
+				max-width: none;
+			}
+		}
+	}
+}

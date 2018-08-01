@@ -12,7 +12,7 @@ $klass = '';
 <section id="sidebar" class="sidebar">
 	<h3 class="sidebar-title">Sidebar</h3>
 
-	<section class="widget-list">
+	<section class="sidebar-widget-list">
 		<h3 class="widget-list-title">Widget list</h3>
 
 		<div class="widget-list-items">

@@ -2,6 +2,7 @@
 	@include colors(default);
 	@include border(normal, all);
 	@include padding;
+	@include width;
 
 	a,
 	.link {
