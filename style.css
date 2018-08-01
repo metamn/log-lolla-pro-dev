@@ -2675,10 +2675,10 @@ html {
                 order: 2; }
       html body .content .post.post-format-quote .post-content-between-sidebars .post-content {
         background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
+        padding: 0 !important;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
-                order: 1;
-        padding: 0; }
+                order: 1; }
         @media only screen and (min-width: 768px) {
           html body .content .post.post-format-quote .post-content-between-sidebars .post-content blockquote {
             font-size: 1.25em; } }
