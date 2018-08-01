@@ -1,5 +1,6 @@
 @mixin post-footer {
 	@include margin(yes, no, half, no);
+	width: 100%;
 
 	.list {
 		align-items: baseline;
