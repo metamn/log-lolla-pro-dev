@@ -1,0 +1,4 @@
+@mixin archive-counters--horizontal {
+	@include list--horizontal('.list-item', half, half);
+	flex-wrap: nowrap;
+}

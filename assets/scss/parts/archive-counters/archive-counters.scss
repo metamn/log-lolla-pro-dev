@@ -2,9 +2,6 @@
 	@include padding(half, no, no, half);
 	@include border(normal, top);
 
-	@include list--horizontal('.list-item', half, half);
-	flex-wrap: nowrap;
-
 	.archive-counter {
 		@include list--horizontal-mixed-items(half, half);
 
@@ -14,5 +11,13 @@
 				@include text-style(small);
 			}
 		}
+	}
+
+	@include mobile {
+		@include archive-counters--vertical;
+	}
+
+	@include mobile-and-up {
+		@include archive-counters--horizontal;
 	}
 }

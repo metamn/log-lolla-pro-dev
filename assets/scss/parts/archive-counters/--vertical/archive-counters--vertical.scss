@@ -1,0 +1,15 @@
+@mixin archive-counters--vertical {
+	@include flexbox-grid(2, 0px, $top);
+
+	.archive-counter {
+		width: 50%;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: first baseline;
+
+		&:nth-of-type(3),
+		&:nth-of-type(4) {
+			margin-bottom: 0;
+		}
+	}
+}
