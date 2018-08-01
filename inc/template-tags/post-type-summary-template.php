@@ -78,7 +78,7 @@ if ( ! function_exists( 'log_lolla_pro_display_summary_dates_prefix' ) ) {
 			printf(
 				'<span class="date-prefix">%1$s</span>',
 				/* translators: The date prefix for the Summary post format. */
-				esc_html_x( 'Until&nbsp;', 'he date prefix for the Summary post format', 'log-lolla-pro' )
+				esc_html_x( 'At&nbsp;', 'The date prefix for the Summary post format', 'log-lolla-pro' )
 			);
 		}
 	}

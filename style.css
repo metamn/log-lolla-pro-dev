@@ -5065,137 +5065,144 @@ html {
           @media only screen and (min-width: 768px) {
             html body .content .single .post-footer + .navigation-for-post {
               margin-right: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .single .post-footer-summary {
-            margin-bottom: 1.25em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .single .post-footer-summary {
-            margin-bottom: 1.25em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .single .post-footer-summary {
-            margin-top: 2.5em; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .single .post-footer-summary {
-            margin-top: 2.5em; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .single .post-footer-summary {
-            margin-left: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .single .post-footer-summary {
-            margin-left: 0; } }
-        @media only screen and (max-width: 767.9px) {
-          html body .content .single .post-footer-summary {
-            margin-right: 0; } }
-        @media only screen and (min-width: 768px) {
-          html body .content .single .post-footer-summary {
-            margin-right: 0; } }
-        html body .content .single .post-footer-summary .list {
-          -webkit-box-align: last baseline;
-              -ms-flex-align: last baseline;
-                  align-items: last baseline;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-          -webkit-box-pack: justify;
-              -ms-flex-pack: justify;
-                  justify-content: space-between; }
-          html body .content .single .post-footer-summary .list .link-with-prefix .link,
-          html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-          html body .content .single .post-footer-summary .list .posted-on,
-          html body .content .single .post-footer-summary .list .posted-by {
-            border: 1px solid;
-            padding: 0.3125em 0.625em; }
-            html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link,
-            html body .content .single .post-footer-summary .list .link-with-prefix .link a,
-            html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link,
-            html body .content .single .post-footer-summary .list .topic-with-prefix .topic a,
-            html body .content .single .post-footer-summary .list .posted-on .topic-link,
-            html body .content .single .post-footer-summary .list .posted-on a,
-            html body .content .single .post-footer-summary .list .posted-by .topic-link,
-            html body .content .single .post-footer-summary .list .posted-by a {
+        html body .content .single .post-footer-summary {
+          width: 100%; }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .single .post-footer-summary {
+              margin-bottom: 1.25em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .single .post-footer-summary {
+              margin-bottom: 1.25em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .single .post-footer-summary {
+              margin-top: 2.5em; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .single .post-footer-summary {
+              margin-top: 2.5em; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .single .post-footer-summary {
+              margin-left: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .single .post-footer-summary {
+              margin-left: 0; } }
+          @media only screen and (max-width: 767.9px) {
+            html body .content .single .post-footer-summary {
+              margin-right: 0; } }
+          @media only screen and (min-width: 768px) {
+            html body .content .single .post-footer-summary {
+              margin-right: 0; } }
+          html body .content .single .post-footer-summary .list {
+            -webkit-box-align: last baseline;
+                -ms-flex-align: last baseline;
+                    align-items: last baseline;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between; }
+            html body .content .single .post-footer-summary .list .link-with-prefix .link,
+            html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
+            html body .content .single .post-footer-summary .list .posted-on,
+            html body .content .single .post-footer-summary .list .posted-by {
+              border: 1px solid;
+              padding: 0.3125em 0.625em; }
+              html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link,
+              html body .content .single .post-footer-summary .list .link-with-prefix .link a,
+              html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link,
+              html body .content .single .post-footer-summary .list .topic-with-prefix .topic a,
+              html body .content .single .post-footer-summary .list .posted-on .topic-link,
+              html body .content .single .post-footer-summary .list .posted-on a,
+              html body .content .single .post-footer-summary .list .posted-by .topic-link,
+              html body .content .single .post-footer-summary .list .posted-by a {
+                background-color: white;
+                color: black;
+                text-decoration: none;
+                transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+                will-change: text-decoration; }
+                html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link:hover, html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link:active,
+                html body .content .single .post-footer-summary .list .link-with-prefix .link a:hover,
+                html body .content .single .post-footer-summary .list .link-with-prefix .link a:active,
+                html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link:hover,
+                html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link:active,
+                html body .content .single .post-footer-summary .list .topic-with-prefix .topic a:hover,
+                html body .content .single .post-footer-summary .list .topic-with-prefix .topic a:active,
+                html body .content .single .post-footer-summary .list .posted-on .topic-link:hover,
+                html body .content .single .post-footer-summary .list .posted-on .topic-link:active,
+                html body .content .single .post-footer-summary .list .posted-on a:hover,
+                html body .content .single .post-footer-summary .list .posted-on a:active,
+                html body .content .single .post-footer-summary .list .posted-by .topic-link:hover,
+                html body .content .single .post-footer-summary .list .posted-by .topic-link:active,
+                html body .content .single .post-footer-summary .list .posted-by a:hover,
+                html body .content .single .post-footer-summary .list .posted-by a:active {
+                  text-decoration: line-through; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-bottom: 1.25em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-bottom: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-right: 0.625em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-right: 1.25em; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-top: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-top: 0; } }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-left: 0; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .single .post-footer-summary .list .link-with-prefix,
+              html body .content .single .post-footer-summary .list .topic-with-prefix,
+              html body .content .single .post-footer-summary .list .post-date-with-prefix,
+              html body .content .single .post-footer-summary .list .post-author {
+                margin-left: 0; } }
+            html body .content .single .post-footer-summary .list .link-with-prefix .link {
               background-color: white;
               color: black;
               text-decoration: none;
               transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
               will-change: text-decoration; }
-              html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link:hover, html body .content .single .post-footer-summary .list .link-with-prefix .link .topic-link:active,
-              html body .content .single .post-footer-summary .list .link-with-prefix .link a:hover,
-              html body .content .single .post-footer-summary .list .link-with-prefix .link a:active,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link:hover,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic .topic-link:active,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic a:hover,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic a:active,
-              html body .content .single .post-footer-summary .list .posted-on .topic-link:hover,
-              html body .content .single .post-footer-summary .list .posted-on .topic-link:active,
-              html body .content .single .post-footer-summary .list .posted-on a:hover,
-              html body .content .single .post-footer-summary .list .posted-on a:active,
-              html body .content .single .post-footer-summary .list .posted-by .topic-link:hover,
-              html body .content .single .post-footer-summary .list .posted-by .topic-link:active,
-              html body .content .single .post-footer-summary .list .posted-by a:hover,
-              html body .content .single .post-footer-summary .list .posted-by a:active {
+              html body .content .single .post-footer-summary .list .link-with-prefix .link:hover, html body .content .single .post-footer-summary .list .link-with-prefix .link:active {
                 text-decoration: line-through; }
-            @media only screen and (max-width: 767.9px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-bottom: 1.25em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-bottom: 1.25em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-right: 0.625em; } }
-            @media only screen and (min-width: 768px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-right: 1.25em; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-top: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-top: 0; } }
-            @media only screen and (max-width: 767.9px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-left: 0; } }
-            @media only screen and (min-width: 768px) {
-              html body .content .single .post-footer-summary .list .link-with-prefix .link,
-              html body .content .single .post-footer-summary .list .topic-with-prefix .topic,
-              html body .content .single .post-footer-summary .list .posted-on,
-              html body .content .single .post-footer-summary .list .posted-by {
-                margin-left: 0; } }
-          html body .content .single .post-footer-summary .list .link-with-prefix .link {
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            transition: text-decoration 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-            will-change: text-decoration; }
-            html body .content .single .post-footer-summary .list .link-with-prefix .link:hover, html body .content .single .post-footer-summary .list .link-with-prefix .link:active {
-              text-decoration: line-through; }
-          html body .content .single .post-footer-summary .list .post-date-with-prefix {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex; }
+            html body .content .single .post-footer-summary .list .post-date-with-prefix {
+              display: -webkit-box;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+                  -ms-flex-align: center;
+                      align-items: center; }
+              html body .content .single .post-footer-summary .list .post-date-with-prefix .date-prefix {
+                word-wrap: break-word; }
         html body .content .single .comment-list {
           width: 100%; }
           @media only screen and (max-width: 767.9px) {
