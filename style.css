@@ -13886,6 +13886,9 @@ html {
               min-width: 3.75em;
               width: 3.75em;
               overflow: hidden; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .archive .archive-items .archive-header .archive-title-and-description .list-item-graphic {
+                display: none; } }
           html body .content .archive .archive-items .archive-header .archive-counter-list {
             border-top: 1px solid; }
             @media only screen and (max-width: 767.9px) {
@@ -14025,7 +14028,7 @@ html {
                     flex-wrap: wrap; }
                 html body .content .archive .archive-items .archive-header .archive-counter-list > * {
                   box-sizing: border-box;
-                  margin-bottom: 2.5em;
+                  margin-bottom: 0px;
                   margin-right: 0px; }
                 html body .content .archive .archive-items .archive-header .archive-counter-list > *:not(h3) {
                   width: calc(50% - (((2 - 1) * 0px) / 2) - 0); }
@@ -14041,8 +14044,13 @@ html {
                   -webkit-box-align: first baseline;
                       -ms-flex-align: first baseline;
                           align-items: first baseline; }
-                  html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter:nth-of-type(3), html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter:nth-of-type(4) {
-                    margin-bottom: 0; } }
+                  html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter:nth-of-type(1), html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter:nth-of-type(2) {
+                    border-bottom: 1px solid;
+                    margin-bottom: 1.25em;
+                    padding-bottom: 1.25em; }
+                  html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter .list-item-primary-text {
+                    word-wrap: break-word;
+                    display: inline; } }
             @media only screen and (min-width: 768px) {
               html body .content .archive .archive-items .archive-header .archive-counter-list {
                 display: -webkit-box;
@@ -18748,7 +18756,7 @@ html {
                     margin-right: 0; } }
               html body .content .archive .archive-items .archive-list--by-date .list-items .archive-year-and-months .archive-year,
               html body .content .archive .archive-items .archive-list--by-date .list-items .archive-year-and-months .archive-month {
-                min-width: 2.5em; }
+                min-width: 3.75em; }
               html body .content .archive .archive-items .archive-list--by-date .list-items .archive-year-and-months .archive-month-list {
                 display: -webkit-box;
                 display: -ms-flexbox;
@@ -20197,7 +20205,7 @@ html {
                       margin-right: 0; } }
                 html body .content .archives .archives-items .archive-list--by-date .list-items .archive-year-and-months .archive-year,
                 html body .content .archives .archives-items .archive-list--by-date .list-items .archive-year-and-months .archive-month {
-                  min-width: 2.5em; }
+                  min-width: 3.75em; }
                 html body .content .archives .archives-items .archive-list--by-date .list-items .archive-year-and-months .archive-month-list {
                   display: -webkit-box;
                   display: -ms-flexbox;
@@ -21546,7 +21554,7 @@ html {
                     margin-right: 0; } }
               html body .sidebar .sidebar-widget-list .widget-list-items .archive-list--by-date .list-items .archive-year-and-months .archive-year,
               html body .sidebar .sidebar-widget-list .widget-list-items .archive-list--by-date .list-items .archive-year-and-months .archive-month {
-                min-width: 2.5em; }
+                min-width: 3.75em; }
               html body .sidebar .sidebar-widget-list .widget-list-items .archive-list--by-date .list-items .archive-year-and-months .archive-month-list {
                 display: -webkit-box;
                 display: -ms-flexbox;

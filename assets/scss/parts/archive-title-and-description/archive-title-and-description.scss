@@ -18,5 +18,9 @@
 		.circle {
 			@include circle;
 		}
+
+		@include mobile {
+			display: none;
+		}
 	}
 }
