@@ -6650,6 +6650,11 @@ html {
                 html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter .list-item-icon .arrow-with-triangle--bottom {
                   -webkit-transform: rotate(90deg);
                           transform: rotate(90deg); }
+              html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter--activable {
+                transition: all 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+                will-change: all; }
+                html body .content .archive .archive-items .archive-header .archive-counter-list .archive-counter--activable:hover {
+                  cursor: url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.png") 20 0, url("assets/images/brutalist_line_SVGicon_cursor2-64x64--white.cur"), pointer; }
             @media only screen and (max-width: 767.9px) {
               html body .content .archive .archive-items .archive-header .archive-counter-list {
                 display: -webkit-box;

@@ -20,7 +20,7 @@ if ( empty( $pictogram ) ) {
 	return;
 }
 
-set_query_var( 'list_item_class', 'archive-counter' );
+set_query_var( 'list_item_class', 'archive-counter archive-counter--' . $pictogram['klass'] );
 set_query_var( 'list_item_primary_text', $pictogram['text'] );
 set_query_var( 'list_item_secondary_text', '' );
 set_query_var( 'list_item_metadata', $pictogram['number'] );

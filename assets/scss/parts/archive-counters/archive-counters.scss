@@ -3,14 +3,7 @@
 	@include border(normal, top);
 
 	.archive-counter {
-		@include list--horizontal-mixed-items(half, half);
-
-		.list-item-icon {
-			.arrow-with-triangle {
-				@include arrow-with-triangle;
-				@include text-style(small);
-			}
-		}
+		@include archive-counter;
 	}
 
 	@include mobile {

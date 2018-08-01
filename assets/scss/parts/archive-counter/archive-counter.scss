@@ -1,0 +1,14 @@
+@mixin archive-counter {
+	@include list--horizontal-mixed-items(half, half);
+
+	.list-item-icon {
+		.arrow-with-triangle {
+			@include arrow-with-triangle;
+			@include text-style(small);
+		}
+	}
+
+	&--activable {
+		@include archive-counter--activable;
+	}
+}
