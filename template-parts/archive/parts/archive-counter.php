@@ -25,6 +25,7 @@ set_query_var( 'list_item_primary_text', $pictogram['text'] );
 set_query_var( 'list_item_secondary_text', '' );
 set_query_var( 'list_item_metadata', $pictogram['number'] );
 set_query_var( 'list_item_graphic', '' );
+set_query_var( 'list_item_data_attr', 'data-scrollto=' . $pictogram['scrollto'] );
 
 ob_start();
 set_query_var( 'arrow_direction', 'bottom' );

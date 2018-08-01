@@ -22,9 +22,10 @@ $list_item_avatar_url     = get_query_var( 'list_item_avatar_url' );
 $list_item_graphic_url    = get_query_var( 'list_item_graphic_url' );
 $list_item_metadata_url   = get_query_var( 'list_item_metadata_url' );
 $list_item_icon_url       = get_query_var( 'list_item_icon_url' );
+$list_item_data_attr      = get_query_var( 'list_item_data_attr' );
 ?>
 
-<aside class="list-item <?php echo esc_attr( $list_item_class ); ?>">
+<aside class="list-item <?php echo esc_attr( $list_item_class ); ?>" <?php echo esc_attr( $list_item_data_attr ); ?>>
 	<?php
 	if ( ! empty( $list_item_avatar ) ) {
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'avatar' );

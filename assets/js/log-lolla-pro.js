@@ -3,6 +3,28 @@
  */
 
 
+// Click on an archive counter
+var archiveCounterClick = function() {
+	var archiveCounters = document.querySelectorAll('.archive-counter-list .archive-counter');
+
+	function onMouseClick(index, event) {
+		var target = '.' + archiveCounters[index].dataset.scrollto;
+		console.log('target:' + target);
+		console.log(jQuery(target));
+
+		jQuery('html, body').animate(
+			{
+				scrollTop: jQuery(target).offset().top
+        	},
+			1000
+		);
+	}
+
+	for (var i = 0; i < archiveCounters.length; i++) {
+    	archiveCounters[i].addEventListener('click', onMouseClick.bind(null, i), false);
+    }
+}
+
 // Click on post content
 var postContentClick = function() {
   var postContent = document.querySelectorAll('.post-with-sidebar .post-content-between-sidebars');
@@ -26,7 +48,6 @@ var postContentClick = function() {
     event.stopPropagation();
   }
 
-
   for (var i = 0; i < postContent.length; i++) {
     postContent[i].addEventListener('click', onMouseClick.bind(null, i), false);
   }
@@ -49,13 +70,18 @@ var menuHamburgerClick = function(ID) {
 
 // Run functions once the document is ready
 document.addEventListener('DOMContentLoaded', function(){
-  // Post content hover
-  if (document.querySelector('.post-list')) {
-    postContentClick();
-  }
+	// Archive counter click
+	if (document.querySelector('.archive-counter-list')) {
+		archiveCounterClick();
+	}
 
-  // Hamburger menu
-  if (document.querySelector('.header-menu-hamburger')) {
-    menuHamburgerClick('.header-menu-hamburger');
-  }
+	// Post content click
+	if (document.querySelector('.post-list')) {
+		postContentClick();
+	}
+
+	// Hamburger menu
+	if (document.querySelector('.header-menu-hamburger')) {
+		menuHamburgerClick('.header-menu-hamburger');
+	}
 }, false);

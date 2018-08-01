@@ -99,11 +99,18 @@ if ( ! function_exists( 'log_lolla_pro_get_pictogram_list' ) ) {
 			'related-topics',
 		);
 
+		$pictogram_targets = array(
+			'post-list--for-archive',
+			'post-list--summaries',
+			'post-list--thoughts',
+			'topic-list--related-topics',
+		);
+
 		foreach ( $pictogram_texts as $index => $pictogram_text ) {
 			$pictograms[] = array(
 				'text'     => $pictogram_text,
 				'number'   => $counters[ $index ],
-				'scrollto' => 'list--' . $pictogram_classes[ $index ],
+				'scrollto' => $pictogram_targets[ $index ],
 				'klass'    => ( 0 !== $counters[ $index ] ) ? 'activable' : 'inactivable',
 			);
 		}
