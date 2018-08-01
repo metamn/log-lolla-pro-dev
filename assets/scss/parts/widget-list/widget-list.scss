@@ -1,7 +1,7 @@
 @mixin widget-list {
-	@include list($item: mixed, $show-title: false);
+	@include list('.widget-list-title', '.widget-list-items', mixed, $show-title: false);
 
-	.list-items {
+	.widget-list-items {
 		.widget--topics-summary {
 			@include widget;
 			@include list('.widget-title', $show-title: false);

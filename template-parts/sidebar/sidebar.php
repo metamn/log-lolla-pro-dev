@@ -13,9 +13,9 @@ $klass = '';
 	<h3 class="sidebar-title">Sidebar</h3>
 
 	<section class="widget-list">
-		<h3 class="list-title">Widget list</h3>
+		<h3 class="widget-list-title">Widget list</h3>
 
-		<div class="list-items">
+		<div class="widget-list-items">
 			<?php get_sidebar(); ?>
 		</div>
 	</section>
