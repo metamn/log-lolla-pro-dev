@@ -3,7 +3,7 @@
 	@include list--horizontal-mixed-items(half, no);
 
 	align-items: center;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 
 	.list-item-primary-and-secondary-text {
 		display: flex;

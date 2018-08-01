@@ -1,4 +1,6 @@
 @mixin post-format-summary {
+	@include post-with-sidebar-removed;
+	
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -14,25 +16,5 @@
 
 		order: 2;
 		width: 100%;
-	}
-
-	// remove old stuff from post-with-sidebar
-	.post-sidebar {
-		@include padding(no, no, no, no);
-		max-width: none;
-		width: auto;
-		visibility: visible;
-	}
-
-	.post-content-between-sidebars {
-		.post-title {
-			padding: 0 !important;
-		}
-	}
-
-	.post-sidebar-left {
-		.post-date {
-			border: 0;
-		}
 	}
 }

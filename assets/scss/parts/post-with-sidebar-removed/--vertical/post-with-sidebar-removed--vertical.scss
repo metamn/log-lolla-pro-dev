@@ -1,0 +1,15 @@
+@mixin post-with-sidebar-removed--vertical {
+	flex-direction: row;
+
+	.post-sidebar {
+		position: unset;
+	}
+
+	.post-sidebar-left {
+		top: 0;
+	}
+
+	.post-sidebar-right {
+		bottom: 0;
+	}
+}

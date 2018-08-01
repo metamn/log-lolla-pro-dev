@@ -1,5 +1,6 @@
 @mixin archive-header {
 	@include border(normal, all);
+	width: 100%;
 
 	.breadcrumb {
 		@include breadcrumb;

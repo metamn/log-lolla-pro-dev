@@ -1,0 +1,35 @@
+@mixin post-with-sidebar-removed {
+	@include mobile {
+		@include post-with-sidebar-removed--vertical;
+	}
+
+	@include tablet {
+		@include post-with-sidebar-removed--vertical;
+	}
+
+	@include laptop {
+		@include post-with-sidebar-removed--horizontal;
+	}
+
+	@include desktop {
+		@include post-with-sidebar-removed--horizontal;
+	}
+
+	.post-sidebar {
+		@include padding(no, no, no, no);
+		max-width: none;
+		width: auto;
+		visibility: visible;
+
+		.post-date,
+		aside {
+			border: 0;
+		}
+	}
+
+	.post-content-between-sidebars {
+		.post-title {
+			padding: 0 !important;
+		}
+	}
+}

@@ -1,0 +1,10 @@
+@mixin post-with-sidebar-removed--horizontal {
+	.post-content-between-sidebars {
+		width: 100%;
+	}
+
+	.post-sidebar {
+		padding-top: $lem;
+		width: auto;
+	}
+}
