@@ -5,6 +5,7 @@
 	@include border(normal, all);
 
 	.post-title {
+		@include post-title;
 		@include post-title--large;
 		@include margin(no, no, yes, no);
 	}

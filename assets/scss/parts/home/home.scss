@@ -19,12 +19,4 @@
 			max-width: $post-width;
 		}
 	}
-
-	.post {
-		@include post;
-	}
-
-	.post-with-sidebar {
-		@include post-with-sidebar;
-	}
 }

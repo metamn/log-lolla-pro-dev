@@ -8,6 +8,10 @@
 		@include link;
 	}
 
+	.post {
+		@include post;
+	}
+
 	.navigation {
 		@include navigation;
 	}

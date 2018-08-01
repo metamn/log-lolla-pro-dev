@@ -5,14 +5,4 @@
 	.list-title {
 		width: 100%;
 	}
-
-	.list-items {
-		.post {
-			@include post;
-		}
-
-		.post-with-sidebar {
-			@include post-with-sidebar;
-		}
-	}
 }
