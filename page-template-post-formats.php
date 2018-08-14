@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Post Formats Archive
+ * Template Name: Post Formats Archive Template
  *
  * Template to display the Post Formats archive.
  *

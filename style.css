@@ -10718,7 +10718,7 @@ html {
     html body .screen-reader-text {
       display: none; }
 
-html body.page-template-page-archives .content {
+html body.page-template-page-template-archives .content {
   max-width: none; }
 
 html body.home .header .header-image {

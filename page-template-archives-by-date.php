@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archives by date Page
+ * Template Name: Archives by date Template
  *
  * Template to display a yearly / monthly archive.
  *

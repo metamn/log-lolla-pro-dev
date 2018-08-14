@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Archives Page
+ * Template Name: Archives Template
  *
  * Template to display the main Archives page.
  * The content of the page should consist of different shortcodes which are displayed here.

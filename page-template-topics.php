@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Topics Page
+ * Template Name: Topics Archive Template
  *
  * Template to display the Topics archive.
  *
