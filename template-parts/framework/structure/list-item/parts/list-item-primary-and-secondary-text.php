@@ -36,7 +36,7 @@ $list_item_url            = $list_item_part_primary_and_secondary_text_query_var
 
 	<?php
 	$list_item_part_secondary_text_query_vars = array(
-		'secondary-text-text' => $list_item_secondary_text,
+		'secondary-text' => $list_item_secondary_text,
 	);
 	set_query_var( 'list-item-part-secondary-text-query-vars', $list_item_part_secondary_text_query_vars );
 	get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'secondary-text' );

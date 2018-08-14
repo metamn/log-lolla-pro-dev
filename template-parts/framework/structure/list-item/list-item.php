@@ -69,6 +69,12 @@ $list_item_data_attr      = $list_item_query_vars['data-attr'];
 	}
 
 	if ( ! empty( $list_item_secondary_text ) ) {
+		$list_item_part_primary_and_secondary_text_query_vars = array(
+			'primary-text'   => $list_item_primary_text,
+			'secondary-text' => $list_item_secondary_text,
+			'url'            => $list_item_url,
+		);
+		set_query_var( 'list-item-part-primary-and-secondary-text-query-vars', $list_item_part_primary_and_secondary_text_query_vars );
 		get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-and-secondary-text' );
 	} else {
 		$list_item_part_primary_text_query_vars = array(
