@@ -1,12 +1,15 @@
 @mixin post-format-status {
 	.post-content-between-sidebars {
-
 		@if ($post-format-status-background-color and $post-format-status-text-color) {
 			@include set-colors($post-format-status-background-color, $post-format-status-text-color);
 		}
-		border: none;
 
+		border: 0;
 		flex-wrap: wrap;
+
+		.post-date-and-time {
+			@include post-date-and-time;
+		}
 
 		.post-content {
 			@include border(normal, all);

@@ -15,6 +15,12 @@
 	}
 
 	&.display-horizontal.has-thumbnail {
+		.post-title {
+			@include mobile-and-up {
+				min-width: 30%;
+			}
+		}
+
 		.post-featured-image {
 			@include mobile-and-up {
 				margin: $top $left-mobile;

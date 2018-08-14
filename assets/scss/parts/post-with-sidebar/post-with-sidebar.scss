@@ -24,6 +24,12 @@
 		@include post-content-between-sidebars;
 	}
 
+	&.post-format-status {
+		.post-content-between-sidebars {
+			border: 0;
+		}
+	}
+
 	&--clicked {
 		@include post-with-sidebar--clicked;
 	}

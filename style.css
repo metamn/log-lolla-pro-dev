@@ -923,6 +923,8 @@ html {
         color: black; }
       html body .content .post .post-title .text {
         word-wrap: break-word; }
+      html body .content .post .post-date-and-time .posted-on {
+        font-size: 0.8em; }
       @media only screen and (max-width: 767.9px) {
         html body .content .post .post-permalink {
           padding-bottom: 2.5em; } }
@@ -2583,13 +2585,15 @@ html {
       html body .content .post.post-format-status .post-content-between-sidebars {
         background-color: "";
         color: "";
-        border: none;
+        border: 0;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
         html body .content .post.post-format-status .post-content-between-sidebars a,
         html body .content .post.post-format-status .post-content-between-sidebars .link {
           background-color: "" !important;
           color: "" !important; }
+        html body .content .post.post-format-status .post-content-between-sidebars .post-date-and-time .posted-on {
+          font-size: 0.8em; }
         html body .content .post.post-format-status .post-content-between-sidebars .post-content {
           border: 1px solid;
           width: 100%; }
@@ -2654,12 +2658,14 @@ html {
             html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .arrow-with-triangle--bottom {
               -webkit-transform: rotate(90deg);
                       transform: rotate(90deg); }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .post-author-link {
-              padding-top: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .post-author-link {
-              padding-top: 2.5em; } }
+          html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .post-author-link {
+            font-size: 0.8em; }
+            @media only screen and (max-width: 767.9px) {
+              html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .post-author-link {
+                padding-top: 2.5em; } }
+            @media only screen and (min-width: 768px) {
+              html body .content .post.post-format-status .post-content-between-sidebars .post-author-linking-to-post .post-author-link {
+                padding-top: 2.5em; } }
       @media only screen and (min-width: 768px) {
         html body .content .post.post-format-quote .post-content-between-sidebars {
           display: -webkit-box;
@@ -2866,6 +2872,9 @@ html {
           border-top: 1px solid;
           border-bottom: 1px solid; } }
       @media only screen and (min-width: 768px) {
+        html body .content .post.post-format-standard.display-horizontal.has-thumbnail .post-title {
+          min-width: 30%; } }
+      @media only screen and (min-width: 768px) {
         html body .content .post.post-format-standard.display-horizontal.has-thumbnail .post-featured-image {
           margin: 2.5em 1.25em; }
           html body .content .post.post-format-standard.display-horizontal.has-thumbnail .post-featured-image figure {
@@ -2936,14 +2945,15 @@ html {
         border: 0;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-        -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         background-color: "";
         color: ""; }
         html body .content .post.post-format-comment .comment-content,
         html body .content .post.post-format-comment .comment-excerpt {
-          border: 1px solid; }
+          border: 1px solid;
+          width: 100%; }
           @media only screen and (max-width: 767.9px) {
             html body .content .post.post-format-comment .comment-content,
             html body .content .post.post-format-comment .comment-excerpt {
@@ -4628,6 +4638,8 @@ html {
           html body .content .post.post-with-sidebar .post-content-between-sidebars .post-paginated-content,
           html body .content .post.post-with-sidebar .post-content-between-sidebars .post-footer {
             padding-right: 2.5em; } }
+      html body .content .post.post-with-sidebar.post-format-status .post-content-between-sidebars {
+        border: 0; }
       html body .content .post.post-with-sidebar--clicked .post-sidebar {
         visibility: visible; }
       html body .content .navigation {

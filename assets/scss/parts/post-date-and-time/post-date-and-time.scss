@@ -1,3 +1,5 @@
 @mixin post-date-and-time {
-	//
+	.posted-on {
+		@include text-style(small);
+	}
 }

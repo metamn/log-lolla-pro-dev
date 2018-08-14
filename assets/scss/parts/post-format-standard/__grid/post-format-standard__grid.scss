@@ -1,5 +1,4 @@
 @mixin post-format-standard__grid {
-
 	@include portrait {
 		&.has-excerpt.has-thumbnail {
 			.post-content-between-sidebars {
