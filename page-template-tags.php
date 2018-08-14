@@ -24,9 +24,12 @@ get_header();
 
 	<div class="archive-items">
 		<?php
-		set_query_var( 'list-klass', 'list--tags' );
-		set_query_var( 'list-title', '' );
-		set_query_var( 'list-items', log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ) );
+		$list_query_vars = array(
+			'klass' => 'list--tags',
+			'title' => '',
+			'items' => log_lolla_pro_get_topic_post_list_as_html( 'post_tag' ),
+		);
+		set_query_var( 'list-query-vars', $list_query_vars );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
 		get_template_part( 'template-parts/topic-header/topic-header', '' );

@@ -262,14 +262,16 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_list_with_sparklines_as_html' )
 			$items .= log_lolla_pro_get_topic_with_sparklines_as_html( 'tag', $tag, $sparkline_dates );
 		}
 
-		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
-		$html  = '';
+		$html = '';
 
 		ob_start();
 
-		set_query_var( 'list-klass', 'topic-list topic-list--with-sparklines' );
-		set_query_var( 'list-title', $title );
-		set_query_var( 'list-items', $items );
+		$list_query_vars = array(
+			'klass' => 'topic-list topic-list--with-sparklines',
+			'title' => log_lolla_pro_get_list_title( $title, $url, 'List of posts' ),
+			'items' => $items,
+		);
+		set_query_var( 'list-query-vars', $list_query_vars );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
 		$html .= ob_get_clean();

@@ -11,10 +11,10 @@ if ( empty( $related_to ) ) {
 	return;
 }
 
-$title = log_lolla_pro_get_topic_label( 'Related topics' );
-$items = log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $related_to );
-
-set_query_var( 'list-klass', 'topic-list topic-list--related-topics' );
-set_query_var( 'list-title', $title );
-set_query_var( 'list-items', $items );
+$list_query_vars = array(
+	'klass' => 'topic-list topic-list--related-topics',
+	'title' => log_lolla_pro_get_topic_label( 'Related topics' ),
+	'items' => log_lolla_pro_get_topic_post_list_related_to_archive_as_html( $related_to ),
+);
+set_query_var( 'list-query-vars', $list_query_vars );
 get_template_part( 'template-parts/framework/structure/list/list', '' );

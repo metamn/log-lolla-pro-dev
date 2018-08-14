@@ -147,13 +147,14 @@ if ( ! function_exists( 'log_lolla_pro_get_archive_list_by_year_and_months_as_ht
 
 		$html .= ob_get_clean();
 
-		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
-
 		ob_start();
 
-		set_query_var( 'list-klass', 'archive-list archive-list--by-date' );
-		set_query_var( 'list-title', $title );
-		set_query_var( 'list-items', $html );
+		$list_query_vars = array(
+			'klass' => 'archive-list archive-list--by-date',
+			'title' => log_lolla_pro_get_list_title( $title, $url, 'List of posts' ),
+			'items' => $html,
+		);
+		set_query_var( 'list-query-vars', $list_query_vars );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
 		$html = ob_get_clean();

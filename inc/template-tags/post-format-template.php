@@ -128,14 +128,16 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_list_with_post_count_as_h
 			$items .= log_lolla_pro_get_post_format_with_post_count_as_html( $post_format );
 		}
 
-		$title = log_lolla_pro_get_list_title( $title, $url, 'List of post formats' );
-		$html  = '';
+		$html = '';
 
 		ob_start();
 
-		set_query_var( 'list-klass', 'topic-list topic-list--post-formats' );
-		set_query_var( 'list-title', $title );
-		set_query_var( 'list-items', $items );
+		$list_query_vars = array(
+			'klass' => 'topic-list topic-list--post-formats',
+			'title' => log_lolla_pro_get_list_title( $title, $url, 'List of post formats' ),
+			'items' => $items,
+		);
+		set_query_var( 'list-query-vars', $list_query_vars );
 		get_template_part( 'template-parts/framework/structure/list/list', '' );
 
 		$html .= ob_get_clean();

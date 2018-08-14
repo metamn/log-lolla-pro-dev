@@ -5,9 +5,20 @@
  * @package Log_Lolla_Pro
  */
 
-$list_klass = get_query_var( 'list-klass' );
-$list_title = get_query_var( 'list-title' );
-$list_items = get_query_var( 'list-items' );
+$list_query_vars_defaults = array(
+	'klass' => '',
+	'title' => '',
+	'items' => '',
+);
+
+$list_query_vars = array_merge(
+	$list_query_vars_defaults,
+	get_query_var( 'list-query-vars' )
+);
+
+$list_klass = $list_query_vars['klass'];
+$list_title = $list_query_vars['title'];
+$list_items = $list_query_vars['items'];
 
 if ( $list_items ) {
 	?>
