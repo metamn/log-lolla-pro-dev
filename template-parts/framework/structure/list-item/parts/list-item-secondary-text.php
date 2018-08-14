@@ -8,9 +8,16 @@
  * @package Log_Lolla_Pro
  */
 
-if ( empty( $list_item_secondary_text ) ) {
-	$list_item_primary_text = get_query_var( 'list_item_secondary_text' );
-}
+$list_item_part_secondary_text_query_vars_defaults = array(
+	'secondary-text' => '',
+);
+
+$list_item_part_secondary_text_query_vars = array_merge(
+	$list_item_part_secondary_text_query_vars_defaults,
+	get_query_var( 'list-item-part-secondary-text-query-vars' )
+);
+
+$list_item_secondary_text = $list_item_part_secondary_text_query_vars['secondary-text'];
 
 if ( empty( $list_item_secondary_text ) ) {
 	return;

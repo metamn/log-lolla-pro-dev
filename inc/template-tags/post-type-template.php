@@ -38,20 +38,20 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_displayed_as_thumb_html' ) 
 		$html = '';
 
 		ob_start();
-		set_query_var( 'list_item_class', $post_type );
-		set_query_var( 'list_item_url', get_permalink( $post ) );
-		set_query_var( 'list_item_avatar_url', 'yes' );
 
-		set_query_var(
-			'list_item_primary_text', the_title_attribute(
+		$list_item_query_vars = array(
+			'klass'        => $post_type,
+			'primary-text' => the_title_attribute(
 				array(
 					'echo' => false,
 					'post' => $post,
 				)
-			)
+			),
+			'avatar'       => get_the_post_thumbnail( $post->ID, 'thumbnail' ),
+			'url'          => get_permalink( $post ),
+			'avatar-url'   => 'yes',
 		);
-		set_query_var( 'list_item_avatar', get_the_post_thumbnail( $post->ID, 'thumbnail' ) );
-
+		set_query_var( 'list-item-query-vars', $list_item_query_vars );
 		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
 		$html .= ob_get_clean();
@@ -85,22 +85,20 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_post_list_popular_as_html' 
 		foreach ( $items as $item ) {
 			ob_start();
 
-			set_query_var( 'list_item_class', $post_type );
-			set_query_var( 'list_item_url', get_permalink( $item->post ) );
-			set_query_var( 'list_item_avatar_url', 'yes' );
-
-			set_query_var(
-				'list_item_primary_text', the_title_attribute(
+			$list_item_query_vars = array(
+				'klass'        => $post_type,
+				'primary-text' => the_title_attribute(
 					array(
 						'echo' => false,
 						'post' => $item->post,
 					)
-				)
+				),
+				'avatar'       => get_the_post_thumbnail( $item->post->ID, 'thumbnail' ),
+				'url'          => get_permalink( $item->post ),
+				'avatar-url'   => 'yes',
+				'metadata'     => $item->post_count,
 			);
-			set_query_var( 'list_item_secondary_text', '' );
-
-			set_query_var( 'list_item_avatar', get_the_post_thumbnail( $item->post->ID, 'thumbnail' ) );
-			set_query_var( 'list_item_metadata', $item->post_count );
+			set_query_var( 'list-item-query-vars', $list_item_query_vars );
 			get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
 			$html .= ob_get_clean();

@@ -210,11 +210,14 @@ if ( ! function_exists( 'log_lolla_pro_get_post_format_with_post_count_as_html' 
 		$html = '';
 
 		ob_start();
-		set_query_var( 'list_item_class', 'post-format' );
-		set_query_var( 'list_item_url', log_lolla_pro_get_post_format_link_to_archive( $item->post_format_name ) );
-		set_query_var( 'list_item_primary_text', $item->post_format_name );
-		set_query_var( 'list_item_metadata', $item->post_count );
 
+		$list_item_query_vars = array(
+			'klass'        => 'post-format',
+			'primary-text' => $item->post_format_name,
+			'metadata'     => $item->post_count,
+			'url'          => log_lolla_pro_get_post_format_link_to_archive( $item->post_format_name ),
+		);
+		set_query_var( 'list-item-query-vars', $list_item_query_vars );
 		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
 		$html .= ob_get_clean();

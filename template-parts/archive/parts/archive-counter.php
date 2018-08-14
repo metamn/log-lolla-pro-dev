@@ -20,16 +20,18 @@ if ( empty( $pictogram ) ) {
 	return;
 }
 
-set_query_var( 'list_item_class', 'archive-counter archive-counter--' . $pictogram['klass'] );
-set_query_var( 'list_item_primary_text', $pictogram['text'] );
-set_query_var( 'list_item_secondary_text', '' );
-set_query_var( 'list_item_metadata', $pictogram['number'] );
-set_query_var( 'list_item_graphic', '' );
-set_query_var( 'list_item_data_attr', 'data-scrollto=' . $pictogram['scrollto'] );
-
 ob_start();
 set_query_var( 'arrow_direction', 'bottom' );
 get_template_part( 'template-parts/framework/design/decorations/arrow-with-triangle/arrow-with-triangle', '' );
-set_query_var( 'list_item_icon', ob_get_clean() );
+$list_item_icon = ob_get_clean();
 
+
+$list_item_query_vars = array(
+	'klass'        => 'archive-counter archive-counter--' . $pictogram['klass'],
+	'primary-text' => $pictogram['text'],
+	'metadata'     => $pictogram['number'],
+	'icon'         => $list_item_icon,
+	'data-attr'    => 'data-scrollto=' . $pictogram['scrollto'],
+);
+set_query_var( 'list-item-query-vars', $list_item_query_vars );
 get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );

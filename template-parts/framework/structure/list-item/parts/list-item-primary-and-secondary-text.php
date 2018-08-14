@@ -8,20 +8,37 @@
  * @package Log_Lolla_Pro
  */
 
-if ( empty( $list_item_primary_text ) ) {
-	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
-}
+$list_item_part_primary_and_secondary_text_query_vars_defaults = array(
+	'primary-text'   => '',
+	'secondary-text' => '',
+	'url'            => '',
+);
 
-if ( empty( $list_item_secondary_text ) ) {
-	$list_item_secondary_text = get_query_var( 'list_item_secondary_text' );
-}
+$list_item_part_primary_and_secondary_text_query_vars = array_merge(
+	$list_item_part_primary_and_secondary_text_query_vars_defaults,
+	get_query_var( 'list-item-part-primary-and-secondary-text-query-vars' )
+);
 
-if ( empty( $list_item_primary_text ) && empty( $list_item_secondary_text ) ) {
-	return;
-}
+$list_item_primary_text   = $list_item_part_primary_and_secondary_text_query_vars['primary-text'];
+$list_item_secondary_text = $list_item_part_primary_and_secondary_text_query_vars['secondary-text'];
+$list_item_url            = $list_item_part_primary_and_secondary_text_query_vars['url'];
 ?>
 
 <div class="list-item-primary-and-secondary-text">
-	<?php get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-text' ); ?>
-	<?php get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'secondary-text' ); ?>
+	<?php
+	$list_item_part_primary_text_query_vars = array(
+		'primary-text' => $list_item_primary_text,
+		'url'          => $list_item_url,
+	);
+	set_query_var( 'list-item-part-primary-text-query-vars', $list_item_part_primary_text_query_vars );
+	get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'primary-text' );
+	?>
+
+	<?php
+	$list_item_part_secondary_text_query_vars = array(
+		'secondary-text-text' => $list_item_secondary_text,
+	);
+	set_query_var( 'list-item-part-secondary-text-query-vars', $list_item_part_secondary_text_query_vars );
+	get_template_part( 'template-parts/framework/structure/list-item/parts/list-item', 'secondary-text' );
+	?>
 </div>

@@ -10,21 +10,22 @@
  * @package Log_Lolla_Pro
  */
 
-if ( empty( $list_item_avatar ) ) {
-	$list_item_avatar = get_query_var( 'list_item_avatar' );
-}
+$list_item_part_avatar_query_vars_defaults = array(
+	'primary-text' => '',
+	'avatar'       => '',
+	'url'          => '',
+	'avatar-url'   => '',
+);
 
-if ( empty( $list_item_avatar_url ) ) {
-	$list_item_avatar_url = get_query_var( 'list_item_avatar_url' );
-}
+$list_item_part_avatar_query_vars = array_merge(
+	$list_item_part_avatar_query_vars_defaults,
+	get_query_var( 'list-item-part-avatar-query-vars' )
+);
 
-if ( empty( $list_item_url ) ) {
-	$list_item_url = get_query_var( 'list_item_url' );
-}
-
-if ( empty( $list_item_primary_text ) ) {
-	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
-}
+$list_item_primary_text = $list_item_part_avatar_query_vars['primary-text'];
+$list_item_avatar       = $list_item_part_avatar_query_vars['avatar'];
+$list_item_url          = $list_item_part_avatar_query_vars['url'];
+$list_item_avatar_url   = $list_item_part_avatar_query_vars['avatar-url'];
 
 if ( empty( $list_item_avatar ) ) {
 	return;

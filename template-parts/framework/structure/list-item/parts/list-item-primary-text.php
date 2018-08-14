@@ -10,14 +10,20 @@
  * @package Log_Lolla_Pro
  */
 
-if ( empty( $list_item_primary_text ) ) {
-	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
-}
+$list_item_part_primary_text_query_vars_defaults = array(
+	'primary-text' => '',
+	'url'          => '',
+);
 
-if ( empty( $list_item_url ) ) {
-	$list_item_url = get_query_var( 'list_item_url' );
-}
+$list_item_part_primary_text_query_vars = array_merge(
+	$list_item_part_primary_text_query_vars_defaults,
+	get_query_var( 'list-item-part-primary-text-query-vars' )
+);
+
+$list_item_primary_text = $list_item_part_primary_text_query_vars['primary-text'];
+$list_item_url          = $list_item_part_primary_text_query_vars['url'];
 ?>
+
 
 <h3 class="list-item-primary-text">
 	<?php

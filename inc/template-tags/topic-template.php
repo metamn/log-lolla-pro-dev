@@ -300,15 +300,19 @@ if ( ! function_exists( 'log_lolla_pro_get_topic_with_sparklines_as_html' ) ) {
 		$html = '';
 
 		ob_start();
-		set_query_var( 'list_item_class', $item_class_name );
-		set_query_var( 'list_item_url', get_term_link( $item ) );
-		set_query_var( 'list_item_primary_text', $item->name );
-
-		ob_start();
 		set_query_var( 'sparklines', log_lolla_pro_get_sparklines_for_topic_as_html( $sparkline_dates, $item ) );
 		get_template_part( 'template-parts/sparklines/sparklines', '' );
-		set_query_var( 'list_item_metadata', ob_get_clean() );
+		$list_item_metadata = ob_get_clean();
 
+		ob_start();
+
+		$list_item_query_vars = array(
+			'klass'        => $item_class_name,
+			'primary-text' => $item->name,
+			'metadata'     => $list_item_metadata,
+			'url'          => get_term_link( $item ),
+		);
+		set_query_var( 'list-item-query-vars', $list_item_query_vars );
 		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
 
 		$html .= ob_get_clean();

@@ -10,21 +10,23 @@
  * @package Log_Lolla_Pro
  */
 
-if ( log_lolla_pro_empty( $list_item_metadata ) ) {
-	$list_item_metadata = get_query_var( 'list_item_metadata' );
-}
+$list_item_part_metadata_query_vars_defaults = array(
+	'primary-text' => '',
+	'metadata'     => '',
+	'url'          => '',
+	'metadata-url' => '',
+);
 
-if ( empty( $list_item_metadata_url ) ) {
-	$list_item_metadata_url = get_query_var( 'list_item_metadata_url' );
-}
+$list_item_part_metadata_query_vars = array_merge(
+	$list_item_part_metadata_query_vars_defaults,
+	get_query_var( 'list-item-part-metadata-query-vars' )
+);
 
-if ( empty( $list_item_url ) ) {
-	$list_item_url = get_query_var( 'list_item_url' );
-}
+$list_item_primary_text = $list_item_part_metadata_query_vars['primary-text'];
+$list_item_metadata     = $list_item_part_metadata_query_vars['metadata'];
+$list_item_url          = $list_item_part_metadata_query_vars['url'];
+$list_item_metadata_url = $list_item_part_metadata_query_vars['metadata-url'];
 
-if ( empty( $list_item_primary_text ) ) {
-	$list_item_primary_text = get_query_var( 'list_item_primary_text' );
-}
 
 if ( log_lolla_pro_empty( $list_item_metadata ) ) {
 	return;
@@ -34,9 +36,9 @@ if ( log_lolla_pro_empty( $list_item_metadata ) ) {
 <div class="list-item-metadata">
 	<?php
 	if ( ! empty( $list_item_metadata_url ) ) {
-		set_query_var( 'list-url', $list_item_url );
-		set_query_var( 'list-title', $list_item_primary_text );
-		set_query_var( 'list-content', $list_item_metadata );
+		set_query_var( 'link-url', $list_item_url );
+		set_query_var( 'link-title', $list_item_primary_text );
+		set_query_var( 'link-content', $list_item_metadata );
 		get_template_part( 'template-parts/framework/design/typography/elements/link/link' );
 	} else {
 		echo wp_kses_post( $list_item_metadata );
