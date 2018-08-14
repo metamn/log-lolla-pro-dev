@@ -7,8 +7,12 @@
 		> li,
 		> .li {
 			@include margin(no, no, half, no);
-			display: flex;
+			display: block;
 			list-style: none;
+
+			> * {
+				display: inline-block;
+			}
 
 			&::before {
 				@include margin(no, yes, no, no);

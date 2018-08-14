@@ -21,7 +21,9 @@
 		}
 	}
 
-	.post-content {
-		// @include post-content--large;
+	&.post_format-post-format-image {
+		.post-featured-image {
+			display: none;
+		}
 	}
 }
