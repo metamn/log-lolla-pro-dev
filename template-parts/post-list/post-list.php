@@ -8,10 +8,22 @@
  * @since 1.0.0
  */
 
-$post_list_klass       = get_query_var( 'post-list-klass' );
-$post_list_title       = get_query_var( 'post-list-title' );
-$post_list_posts       = get_query_var( 'post-list-posts' );
-$post_list_post_format = get_query_var( 'post-list-post-format' );
+$post_list_query_vars_defaults = array(
+	'klass'       => '',
+	'title'       => '',
+	'posts'       => array(),
+	'post-format' => '',
+);
+
+$post_list_query_vars = array_merge(
+	$post_list_query_vars_defaults,
+	get_query_var( 'post-list-query-vars' )
+);
+
+$post_list_klass       = $post_list_query_vars['klass'];
+$post_list_title       = $post_list_query_vars['title'];
+$post_list_posts       = $post_list_query_vars['posts'];
+$post_list_post_format = $post_list_query_vars['post-format'];
 ?>
 
 <section class="post-list post-list--<?php echo esc_attr( $post_list_klass ); ?>">

@@ -248,15 +248,17 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_as_html' 
 			return;
 		}
 
-		$title = log_lolla_pro_get_list_title( $title, $url, 'List of posts' );
 		$html  = '';
 
 		ob_start();
 
-		set_query_var( 'post-list-klass', 'summaries' );
-		set_query_var( 'post-list-title', $title );
-		set_query_var( 'post-list-posts', $summaries );
-		set_query_var( 'post-list-post-format', 'summary' );
+		$post_list_query_vars = array(
+			'title'       => log_lolla_pro_get_list_title( $title, $url, 'List of posts' ),
+			'klass'       => 'summaries',
+			'posts'       => $summaries,
+			'post-format' => 'summary',
+		);
+		set_query_var( 'post-list-query-vars', $post_list_query_vars );
 		get_template_part( 'template-parts/post-list/post-list', '' );
 
 		$html .= ob_get_clean();

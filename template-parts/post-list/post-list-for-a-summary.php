@@ -14,9 +14,12 @@ if ( empty( $posts ) ) {
 }
 
 /* translators: The title of the Summary posts lists. */
-$posts_title = esc_html_x( 'Based on these posts:', 'The title of the Summary posts lists', 'log-lolla-pro' );
+$title = esc_html_x( 'Based on these posts:', 'The title of the Summary posts lists', 'log-lolla-pro' );
 
-set_query_var( 'post-list-klass', 'for-a-summary' );
-set_query_var( 'post-list-title', $posts_title );
-set_query_var( 'post-list-posts', $posts );
+$post_list_query_vars = array(
+	'title' => $title,
+	'klass' => 'for-a-summary',
+	'posts' => $posts,
+);
+set_query_var( 'post-list-query-vars', $post_list_query_vars );
 get_template_part( 'template-parts/post-list/post-list', '' );

@@ -8,6 +8,18 @@
  * @since 1.0.0
  */
 
+$post_list_query_vars_defaults = array(
+	'klass'       => '',
+	'title'       => '',
+	'posts'       => array(),
+	'post-format' => '',
+);
+
+$post_list_query_vars = array_merge(
+	$post_list_query_vars_defaults,
+	get_query_var( 'post-list-query-vars' )
+);
+
 $post_list_klass       = get_query_var( 'post-list-klass' );
 $post_list_title       = get_query_var( 'post-list-title' );
 $post_list_posts       = get_query_var( 'post-list-posts' );

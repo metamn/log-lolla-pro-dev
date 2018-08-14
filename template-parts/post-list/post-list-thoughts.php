@@ -12,9 +12,10 @@ if ( empty( $posts ) ) {
 	return;
 }
 
-$title = log_lolla_pro_get_archive_label( 'Thoughts' );
-
-set_query_var( 'post-list-klass', 'thoughts' );
-set_query_var( 'post-list-title', $title );
-set_query_var( 'post-list-posts', $posts );
+$post_list_query_vars = array(
+	'title' => log_lolla_pro_get_archive_label( 'Thoughts' ),
+	'klass' => 'thoughts',
+	'posts' => $posts,
+);
+set_query_var( 'post-list-query-vars', $post_list_query_vars );
 get_template_part( 'template-parts/post-list/post-list', 'outside-the-loop' );

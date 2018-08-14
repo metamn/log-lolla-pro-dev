@@ -21,12 +21,14 @@ get_header();
 
 	<div class="archive-items">
 		<?php
-			$title = log_lolla_pro_get_archive_label( 'Posts' );
-			set_query_var( 'post-list-title', $title );
-			set_query_var( 'post-list-klass', 'for-archive' );
-			set_query_var( 'post-list-post-format', 'summary' );
+			$post_list_query_vars = array(
+				'title'       => log_lolla_pro_get_archive_label( 'Posts' ),
+				'klass'       => 'for-archive',
+				'post-format' => 'summary',
+			);
+			set_query_var( 'post-list-query-vars', $post_list_query_vars );
 			get_template_part( 'template-parts/post-list/post-list', '' );
-		?>
+			?>
 
 		<?php get_template_part( 'template-parts/archive-header/archive-header', 'without-counters' ); ?>
 	</div>
