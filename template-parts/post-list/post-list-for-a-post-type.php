@@ -12,7 +12,7 @@ if ( empty( $posts ) ) {
 }
 
 $post_list_query_vars = array(
-	'title' => llog_lolla_pro_get_archive_label( 'Posts' ),
+	'title' => log_lolla_pro_get_archive_label( 'Posts' ),
 	'klass' => 'for-a-post-type',
 	'posts' => $posts,
 );
