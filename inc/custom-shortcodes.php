@@ -152,9 +152,7 @@ if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_person' ) ) {
 		$attrs = shortcode_atts( $default_attributes, $attributes );
 
 		// Display the person.
-		$person = get_page_by_title( $attrs['name'], OBJECT, 'people' );
-
-		return log_lolla_pro_get_post_type_displayed_as_thumb_html( 'person', $person );
+		return log_lolla_pro_get_post_type_person_displayed_as_thumb_html( $attrs['name'] );
 	}
 
 	add_shortcode( 'log-lolla-pro-person', 'log_lolla_pro_create_custom_shortcode_person' );

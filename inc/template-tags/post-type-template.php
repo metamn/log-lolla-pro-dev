@@ -26,30 +26,50 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_label' ) ) {
 	}
 }
 
-if ( ! function_exists( 'log_lolla_pro_get_post_type_displayed_as_thumb_html' ) ) {
+if ( ! function_exists( 'log_lolla_pro_get_post_type_person_displayed_as_thumb_html' ) ) {
 	/**
-	 * Returns the HTML of a post type displayed as a thumbnail.
+	 * Returns the HTML of a post type Person displayed as a thumbnail.
 	 *
-	 * @param  string $post_type The post type.
-	 * @param  object $post      The post.
+	 * @param  string $name      The person name.
 	 * @return string            The link to the post.
 	 */
-	function log_lolla_pro_get_post_type_displayed_as_thumb_html( $post_type, $post ) {
+	function log_lolla_pro_get_post_type_person_displayed_as_thumb_html( $name ) {
 		$html = '';
+
+		$person = get_page_by_title( $name, OBJECT, 'people' );
+
+		if ( ! empty( $person ) ) {
+			$primary_text = the_title_attribute(
+				array(
+					'echo' => false,
+					'post' => $person,
+				)
+			);
+
+			$url        = get_permalink( $person );
+			$avatar_url = 'yes';
+			$avatar     = get_the_post_thumbnail( $person->ID, 'thumbnail' );
+
+			if ( empty( $avatar ) ) {
+				$src    = get_template_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64';
+				$avatar = '<img src="' . $src . '" alt="' . $primary_text . '">';
+			}
+		} else {
+			$primary_text = $name;
+			$url          = '';
+			$avatar_url   = '';
+			$src          = get_template_directory_uri() . '/assets/images/brutalist_line_SVGicon_author2-64x64';
+			$avatar       = '<img src="' . $src . '" alt="' . $primary_text . '">';
+		}
 
 		ob_start();
 
 		$list_item_query_vars = array(
 			'klass'        => $post_type,
-			'primary-text' => the_title_attribute(
-				array(
-					'echo' => false,
-					'post' => $post,
-				)
-			),
-			'avatar'       => get_the_post_thumbnail( $post->ID, 'thumbnail' ),
-			'url'          => get_permalink( $post ),
-			'avatar-url'   => 'yes',
+			'primary-text' => $primary_text,
+			'avatar'       => $avatar,
+			'url'          => $url,
+			'avatar-url'   => $avatar_url,
 		);
 		set_query_var( 'list-item-query-vars', $list_item_query_vars );
 		get_template_part( 'template-parts/framework/structure/list-item/list-item', '' );
