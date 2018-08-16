@@ -6945,6 +6945,11 @@ html {
             html body .content .archive .archive-items .post-list--for-archive .list-items .navigation,
             html body .content .archive .archive-items .post-list--for-a-post-type .list-items .navigation {
               display: none; }
+          html body .content .archive .archive-items .post-list--for-archive .list-items .posts-navigation,
+          html body .content .archive .archive-items .post-list--for-a-post-type .list-items .posts-navigation {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex; }
         html body .content .archive .archive-items .post-list--summaries {
           width: 100%; }
           @media only screen and (max-width: 767.9px) {

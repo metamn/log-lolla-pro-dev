@@ -67,19 +67,19 @@ if ( ! function_exists( 'log_lolla_pro_get_link' ) ) {
 				return home_url( '/' );
 
 			case 'Archives':
-				$page = get_page_by_title( 'Archives' );
+				$page = get_page_by_path( 'archives' );
 				return get_permalink( $page );
 
 			case 'Tags':
-				$page = get_page_by_title( 'Tags' );
+				$page = get_page_by_path( 'archives/tags' );
 				return get_permalink( $page );
 
 			case 'Categories':
-				$page = get_page_by_title( 'Categories' );
+				$page = get_page_by_path( 'archives/categories' );
 				return get_permalink( $page );
 
 			case 'Topics':
-				$page = get_page_by_title( 'Topics' );
+				$page = get_page_by_path( 'archives/topics' );
 				return get_permalink( $page );
 
 			case 'Sources':
@@ -99,7 +99,7 @@ if ( ! function_exists( 'log_lolla_pro_get_link' ) ) {
 				return log_lolla_pro_get_post_format_link_to_archive( 'Standard' );
 
 			case 'Archives by date':
-				$page = get_page_by_title( 'Archives by date' );
+				$page = get_page_by_path( 'archives/archives-by-date' );
 				return get_permalink( $page );
 
 			default:
