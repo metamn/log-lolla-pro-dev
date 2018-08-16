@@ -4784,6 +4784,9 @@ html {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center; }
+        @media only screen and (max-width: 767.9px) {
+          html body .content .home {
+            width: 100%; } }
         html body .content .home .post-list--with-comments {
           width: 100%; }
           html body .content .home .post-list--with-comments .list-title {

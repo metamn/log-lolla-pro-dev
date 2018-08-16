@@ -3,6 +3,10 @@
 	flex-direction: column;
 	align-items: center;
 
+	@include mobile {
+		width: 100%;
+	}
+
 	.post-list--with-comments {
 		@include post-list--with-comments;
 	}
