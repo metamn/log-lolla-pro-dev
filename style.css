@@ -4857,32 +4857,43 @@ html {
               -ms-flex-direction: column;
                   flex-direction: column;
           position: relative;
-          width: 100%;
-          border: 1px solid; }
+          width: 100%; }
           @media only screen and (max-width: 767.9px) {
             html body .content .single .post-single {
-              padding-top: 2.5em; } }
+              border-bottom: 1px solid; } }
+  @media only screen and (max-width: 767.9px) and (max-width: 767.9px) {
+    html body .content .single .post-single {
+      padding-bottom: 2.5em; } }
+  @media only screen and (max-width: 767.9px) and (min-width: 768px) {
+    html body .content .single .post-single {
+      padding-bottom: 2.5em; } }
           @media only screen and (min-width: 768px) {
             html body .content .single .post-single {
-              padding-top: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .single .post-single {
-              padding-bottom: 2.5em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .single .post-single {
-              padding-bottom: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .single .post-single {
-              padding-left: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .single .post-single {
-              padding-left: 2.5em; } }
-          @media only screen and (max-width: 767.9px) {
-            html body .content .single .post-single {
-              padding-right: 1.25em; } }
-          @media only screen and (min-width: 768px) {
-            html body .content .single .post-single {
-              padding-right: 2.5em; } }
+              border: 1px solid; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content .single .post-single {
+      padding-top: 2.5em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content .single .post-single {
+      padding-top: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content .single .post-single {
+      padding-bottom: 2.5em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content .single .post-single {
+      padding-bottom: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content .single .post-single {
+      padding-left: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content .single .post-single {
+      padding-left: 2.5em; } }
+  @media only screen and (min-width: 768px) and (max-width: 767.9px) {
+    html body .content .single .post-single {
+      padding-right: 1.25em; } }
+  @media only screen and (min-width: 768px) and (min-width: 768px) {
+    html body .content .single .post-single {
+      padding-right: 2.5em; } }
           html body .content .single .post-single .post-title .text {
             word-wrap: break-word; }
           html body .content .single .post-single .post-title .text {

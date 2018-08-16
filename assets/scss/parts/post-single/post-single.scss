@@ -1,8 +1,15 @@
 @mixin post-single {
 	@include post-grid--display-vertical;
 
-	@include padding;
-	@include border(normal, all);
+	@include mobile {
+		@include padding(no, no, yes, no);
+		@include border;
+	}
+
+	@include mobile-and-up {
+		@include padding;
+		@include border(normal, all);
+	}
 
 	.post-title {
 		@include post-title;
