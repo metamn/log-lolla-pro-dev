@@ -10,8 +10,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
-
 require get_template_directory() . '/inc/template-tags/archive-template.php';
 require get_template_directory() . '/inc/template-tags/breadcrumb-template.php';
 require get_template_directory() . '/inc/template-tags/comment-template.php';

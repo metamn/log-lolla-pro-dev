@@ -5,6 +5,7 @@
  * Like sources, poeple, summaries etc.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'log_lolla_pro_get_post_type_label' ) ) {

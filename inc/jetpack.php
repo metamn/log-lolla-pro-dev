@@ -5,6 +5,7 @@
  * @link https://jetpack.com/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 /**
@@ -56,4 +57,3 @@ function log_lolla_pro_infinite_scroll_render() {
 		endif;
 	}
 }
-

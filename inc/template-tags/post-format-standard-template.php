@@ -3,6 +3,7 @@
  * Standard Post format template tags
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 /**

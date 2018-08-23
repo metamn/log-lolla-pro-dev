@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Post_Types
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_post_type_summary' ) ) {

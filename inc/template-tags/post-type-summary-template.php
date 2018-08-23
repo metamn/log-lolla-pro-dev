@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Template_Tags
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'log_lolla_pro_get_post_type_summary_post_list_for_the_summary' ) ) {

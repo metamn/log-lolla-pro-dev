@@ -5,6 +5,7 @@
  * @link https://codex.wordpress.org/Shortcode_API
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'log_lolla_pro_create_custom_shortcode_topics_summary' ) ) {

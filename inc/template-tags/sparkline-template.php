@@ -3,6 +3,7 @@
  * Template tags for sparklines
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( ! function_exists( 'log_lolla_pro_get_sparklines_for_topic_as_html' ) ) {
