@@ -2,6 +2,11 @@
 /**
  * Displays a link.
  *
+ * @param string $link_url     The URL of the link.
+ * @param string $link_title   The title of the link.
+ * @param string $link_content The content of the link.
+ * @param string $link_klass   The additional class of the link.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

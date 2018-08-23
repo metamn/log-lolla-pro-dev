@@ -1,6 +1,9 @@
 <?php
 /**
- * Displays a triangle
+ * Displays a triangle.
+ *
+ * @param string $trinagle_direction The direction of the triangle.
+ * @param string $triangle_klass The additional klass of this component.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0

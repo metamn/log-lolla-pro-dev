@@ -6,7 +6,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <h3 class="comment-list-title list-title">

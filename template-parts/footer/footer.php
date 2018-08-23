@@ -11,7 +11,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <footer class="footer">

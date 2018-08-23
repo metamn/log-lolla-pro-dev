@@ -6,7 +6,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <div class="comment-read-more">

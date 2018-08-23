@@ -1,6 +1,11 @@
 <?php
 /**
- * Displays an arrow with triangle
+ * Displays an arrow with triangle.
+ *
+ * It contains:
+ * * A Triangle from the Framework decorations template part.
+ *
+ * @param string $arrow_direction The direction of the arrow.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0

@@ -2,7 +2,8 @@
 /**
  * Displays the archive header for a post type.
  *
- * This template part prepares the data for, and includes the `archive-header` template part.
+ * It contains:
+ * * An Archive header template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/people/ben-thompson/ Live example
  * @package Log_Lolla_Pro

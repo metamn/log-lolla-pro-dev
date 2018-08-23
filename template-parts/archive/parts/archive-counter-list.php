@@ -2,6 +2,9 @@
 /**
  * Displays a list of counters for an Archive.
  *
+ * It contains:
+ * * A list of Archive Counter template parts.
+ *
  * @param array $pictograms An array of pictograms.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/tag/indie-web/ Live example

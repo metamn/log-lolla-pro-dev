@@ -5,6 +5,7 @@
  * It is only displayed if there is a custom function to provide content for the header menu
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( function_exists( 'log_lolla_pro_display_header_menu_contents' ) ) {

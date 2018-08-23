@@ -12,7 +12,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <aside class="comment-excerpt">

@@ -2,10 +2,12 @@
 /**
  * Displays the archive header.
  *
- * The archive header contains:
+ * It contains:
  *  * A Breadcrumb template part.
  *  * The Archive title and description template part.
  *  * The Archive counter list template part.
+ *
+ * @param string $archive_klass Additional classes for this component.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/tag/indie-web/ Live example
  * @package Log_Lolla_Pro

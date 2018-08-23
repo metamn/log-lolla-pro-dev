@@ -2,9 +2,17 @@
 /**
  * Displays the site header.
  *
+ * It contains:
+ * * A Header image template part.
+ * * A Header logo template part.
+ * * A Header title template part.
+ * * A Header subtitle template part.
+ * * A Header hamburger menu template part.
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( function_exists( 'log_lolla_pro_get_header_class' ) ) {

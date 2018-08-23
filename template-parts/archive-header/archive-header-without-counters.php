@@ -2,8 +2,8 @@
 /**
  * Displays the archive header without the archive counters.
  *
- * The archive header contains:
- *  * A Breadcrumb template part.
+ * It contains:
+ *  * A Breadcrumb for archives template part.
  *  * The Archive title and description template part.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/tag/indie-web/ Live example

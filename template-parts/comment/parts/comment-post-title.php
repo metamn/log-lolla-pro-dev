@@ -6,7 +6,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <a class="link comment-post-title" href="<?php echo esc_url( get_comment_link( $comment ) ); ?>" title="<?php echo esc_attr( get_the_title( $comment->comment_post_ID ) ); ?>">
