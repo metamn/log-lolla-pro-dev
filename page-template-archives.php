@@ -3,7 +3,9 @@
  * Template Name: Archives Template
  *
  * Template to display the main Archives page.
- * The content of the page should consist of different shortcodes which are displayed here.
+ *
+ * The page contains:
+ *  * The display of all the shortcodes found in the page body.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/archives Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation

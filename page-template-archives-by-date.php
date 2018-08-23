@@ -5,8 +5,8 @@
  * Template to display a yearly / monthly archive.
  *
  * The page contains:
- *  * A Header from the Topic template parts.
- *  * Two Topic lists from the Topic template parts. One for categories, one for tags.
+ *  * A Header from the Archive template part.
+ *  * The display of the `log-lolla-pro-archives-by-date` shortcode.
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/years-and-months Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation

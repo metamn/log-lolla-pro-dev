@@ -5,6 +5,7 @@
  * The page contains:
  *  * A Header from the Archive template tag
  *  * A Post list from the Post template tag
+ *  * A Post list of Summaries from the Post template tag
  *  * A Topic list from the Topic template tag
  *
  * @link https://morethemes.baby/log-lolla-pro-demo/sources/stratechery/ Live example

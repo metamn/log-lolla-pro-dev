@@ -4,6 +4,10 @@
  *
  * Template to display the Post Formats archive.
  *
+ * * The page contains:
+ *  * A Header from the Archive template part.
+ *  * The display of the `log-lolla-pro-post-formats` shortcode.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

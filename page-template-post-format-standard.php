@@ -9,6 +9,12 @@
  *
  * In `inc/template-functions` we have a rewrite rule to map `post-format/standard` to this page.
  *
+ * * The page contains:
+ *  * A Header from the Archive template part.
+ *  * A Post list of Thoughts from the Post template part.
+ *  * A Post list of Summaries from the Post template part.
+ *  * A Topic list for the related topics from the Topic template part.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */
