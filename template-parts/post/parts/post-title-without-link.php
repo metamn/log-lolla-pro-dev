@@ -1,10 +1,11 @@
 <?php
 /**
- * Displaying a post title without the permalink
+ * Displays a post title without the permalink
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 the_title(

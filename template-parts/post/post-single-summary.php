@@ -1,10 +1,16 @@
 <?php
 /**
- * Template part for displaying a summary post
+ * Displays a summary of a post.
+ *
+ * It contains:
+ * * A Post sticky template part.
+ * * A Post title without link template part.
+ * * A Post content template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass       = log_lolla_pro_get_post_class();

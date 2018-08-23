@@ -1,10 +1,11 @@
 <?php
 /**
- * Displaying a sticky post
+ * Displays a sticky post label
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( is_sticky() ) {

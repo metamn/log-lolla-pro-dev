@@ -1,6 +1,13 @@
 <?php
 /**
- * Template part for displaying a single post
+ * Displays a single post.
+ *
+ * It contains:
+ * * A Post sticky template part.
+ * * A Post title without link template part.
+ * * A Post featured image template part.
+ * * A Post content template part.
+ * * A Post paginated content template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *

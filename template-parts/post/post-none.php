@@ -1,10 +1,11 @@
 <?php
 /**
- * Template part for displaying a message that posts cannot be found
+ * Displays a message that posts cannot be found.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 ?>

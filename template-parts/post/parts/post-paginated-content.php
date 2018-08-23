@@ -1,10 +1,11 @@
 <?php
 /**
- * Displaying navigation for paginated post content
+ * Displays navigation for paginated post content
  *
  * @link https://codex.wordpress.org/Styling_Page-Links
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 /* translators: The `Pages:` text for the post pagination. */

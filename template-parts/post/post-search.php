@@ -1,10 +1,17 @@
 <?php
 /**
- * Template part for displaying results in search pages
+ * Displays results in search pages.
+ *
+ * It contains:
+ * * A Post sticky template part.
+ * * A Post title template part.
+ * * A Post featured permalink template part.
+ * * A Post date template part.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $klass = 'post post-search';

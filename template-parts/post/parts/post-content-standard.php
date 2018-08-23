@@ -10,9 +10,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <aside class="post-content post-content-standard">
