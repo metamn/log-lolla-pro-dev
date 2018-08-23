@@ -1,10 +1,9 @@
 <?php
 /**
- * Template part for displaying the header of the tag archive page
- *
- * It will be displayed using the common `archive-header` template
+ * Displays the header of a topic archive page without the counters.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $title                = get_the_title();

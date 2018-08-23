@@ -2,6 +2,8 @@
 /**
  * Displays a list of posts outside of the loop.
  *
+ * @param array $post_list_query_vars An array of variables to set up a post list.
+ *
  * This is needed for example on a category archive page to keep the Posts counter different for Summaries counter
  *
  * @package Log_Lolla_Pro

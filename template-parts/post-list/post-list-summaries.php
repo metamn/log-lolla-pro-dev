@@ -2,6 +2,8 @@
 /**
  * Displays a list of Summary post type
  *
+ * @param object $archive The archive object.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

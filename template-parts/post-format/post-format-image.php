@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying image posts
+ * Displays an Image post
  *
  * Image – A single image. The first <img /> tag in the post could be considered the image.
  * Alternatively, if the post consists only of a URL, that will be the image URL
@@ -9,6 +9,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

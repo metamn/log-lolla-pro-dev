@@ -6,7 +6,6 @@
  * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <section id="sidebar" class="sidebar">

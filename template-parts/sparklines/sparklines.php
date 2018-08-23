@@ -1,8 +1,11 @@
 <?php
 /**
- * Template part for displaying sparklines
+ * Displays sparklines
+ *
+ * @param string $sparklines The content for the sparklines.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $sparklines = get_query_var( 'sparklines' );

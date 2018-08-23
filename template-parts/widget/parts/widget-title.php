@@ -1,10 +1,12 @@
 <?php
 /**
- * Template part to display a widget title
+ * Displays a widget title
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param string $widget_title The widget title.
+ * @param string $widget_title_url The widget title url.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0.
  */
 
 if ( empty( $widget_title ) ) {

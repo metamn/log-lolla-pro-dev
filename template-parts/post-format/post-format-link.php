@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying link posts
+ * Displays a Link post
  *
  * Themes may wish to use the first <a href=””> tag in the post content as the external link for that post.
  * An alternative approach could be if the post consists only of a URL,
@@ -12,6 +12,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $url   = log_lolla_pro_get_post_link_from_content();

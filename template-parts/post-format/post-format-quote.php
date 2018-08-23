@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying quote posts
+ * Displays a Quote post
  *
  * Quote – A quotation. Probably will contain a blockquote holding the quote content.
  * Alternatively, the quote may be just the content, with the source/author being the title.
@@ -10,6 +10,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

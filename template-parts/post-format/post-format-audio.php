@@ -1,12 +1,13 @@
 <?php
 /**
- * Template part for displaying audio posts
+ * Displays an Audio post.
  *
  * Audio – An audio file. Could be used for Podcasting.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

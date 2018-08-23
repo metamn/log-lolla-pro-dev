@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying video posts
+ * Displays a Video post
  *
  * Video – A single video. The first <video /> tag or object/embed in the post content
  * could be considered the video.
@@ -11,6 +11,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

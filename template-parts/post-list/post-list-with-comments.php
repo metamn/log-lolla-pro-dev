@@ -3,6 +3,7 @@
  * Displays a list of posts and comments
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 ?>

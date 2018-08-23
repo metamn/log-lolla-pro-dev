@@ -1,11 +1,11 @@
 <?php
 /**
- * Template part for displaying the right sidebar of a post
+ * Displays the right sidebar of a post
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
-$klass = '';
 ?>
 
 <div class="post-sidebar post-sidebar-right">

@@ -2,6 +2,8 @@
 /**
  * Displays a list of posts of Standard post format
  *
+ * @param array $posts An array of posts.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

@@ -1,10 +1,12 @@
 <?php
 /**
- * Template part for displaying a topic / taxonomy
+ * Displayis a term / taxonomy / topic with sparklines
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param object $topic      The topic.
+ * @param string $sparklines The content for the sparklines.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $topic      = get_query_var( 'topic' );

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying gallery posts
+ * Displays a Gallery post
  *
  * Gallery – A gallery of images.
  * Post will likely contain a gallery shortcode and will have image attachments.
@@ -8,6 +8,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

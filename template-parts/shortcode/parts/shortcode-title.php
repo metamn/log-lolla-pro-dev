@@ -2,9 +2,10 @@
 /**
  * Template part to display a shortcode title
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param string $shortcode_title The title of the shortcode.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( empty( $shortcode_title ) ) {

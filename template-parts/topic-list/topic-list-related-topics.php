@@ -2,7 +2,10 @@
 /**
  * Displays a list of related topics for a parent object.
  *
+ * @param object $related_to The parent object.
+ *
  * @package Log_Lolla_Pro
+ * @since 1.0.0.
  */
 
 $related_to = get_query_var( 'related-to' );

@@ -2,9 +2,10 @@
 /**
  * Template part to display a widget body
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param string $widget_body The content of the widget.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0.
  */
 
 if ( empty( $widget_body ) ) {

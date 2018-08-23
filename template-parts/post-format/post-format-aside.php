@@ -1,12 +1,13 @@
 <?php
 /**
- * Template part for displaying aside posts
+ * Displays an Aside post.
  *
  * Aside – Typically styled without a title. Similar to a Facebook note update.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

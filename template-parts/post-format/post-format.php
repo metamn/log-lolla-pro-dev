@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying posts
+ * Displays a Standard post
  *
  * We would like to display parts of a post in the same way like parts of a page
  * Therefore we add a new class `article` to both posts and pages and style them via this handle
@@ -8,6 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass = log_lolla_pro_get_post_class();

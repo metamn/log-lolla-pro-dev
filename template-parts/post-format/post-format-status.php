@@ -1,12 +1,13 @@
 <?php
 /**
- * Template part for displaying status posts
+ * Displays a Status post
  *
  * Status – A short status update, similar to a Twitter status update.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

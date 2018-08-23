@@ -4,6 +4,8 @@
  *
  * Either displays a manual query outside of the loop or the standard query from the loop.
  *
+ * @param array $post_list_query_vars An array of variables to set up a post list.
+ *
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

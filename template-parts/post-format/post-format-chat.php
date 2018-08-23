@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying chat posts
+ * Displays a Chat post
  *
  * Chat – A chat transcript, like so:
  * John: foo
@@ -10,6 +10,7 @@
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $post_klass_array = array(

@@ -1,10 +1,11 @@
 <?php
 /**
- * Template part to display a shortcode
+ * Displays a shortcode
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param string $shortcode_klass Additional classnames for this component.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 if ( empty( $shortcode_klass ) ) {

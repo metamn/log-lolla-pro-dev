@@ -1,10 +1,9 @@
 <?php
 /**
- * Template part to display a widget.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * Displays a widget.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0.
  */
 
 get_template_part( 'template-parts/widget/parts/widget', 'title' );

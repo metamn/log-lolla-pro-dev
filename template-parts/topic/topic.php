@@ -1,10 +1,11 @@
 <?php
 /**
- * Template part for displaying a term / taxonomy
+ * Displayis a term / taxonomy / topic
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
+ * @param object $topic The topic.
  *
  * @package Log_Lolla_Pro
+ * @since 1.0.0
  */
 
 $topic = get_query_var( 'topic' );
