@@ -61,8 +61,14 @@ class Log_Lolla_Pro_Archives_By_Date_Widget extends WP_Widget {
 		// Nothing to process.
 	}
 }
-add_action(
-	'widgets_init', function() {
+
+if ( ! function_exists( 'log_lolla_pro_register_archives_by_date_widget' ) ) {
+	/**
+	 * Register the widget.
+	 */
+	function log_lolla_pro_register_archives_by_date_widget() {
 		register_widget( 'Log_Lolla_Pro_Archives_By_Date_Widget' );
 	}
-);
+
+	add_action( 'widgets_init', 'log_lolla_pro_register_archives_by_date_widget' );
+}

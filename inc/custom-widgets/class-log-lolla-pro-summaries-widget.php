@@ -82,8 +82,14 @@ class Log_Lolla_Pro_Summaries_Widget extends WP_Widget {
 		return $instance;
 	}
 }
-add_action(
-	'widgets_init', function() {
+
+if ( ! function_exists( 'log_lolla_pro_register_summaries_widget' ) ) {
+	/**
+	 * Register the widget.
+	 */
+	function log_lolla_pro_register_summaries_widget() {
 		register_widget( 'Log_Lolla_Pro_Summaries_Widget' );
 	}
-);
+
+	add_action( 'widgets_init', 'log_lolla_pro_register_summaries_widget' );
+}

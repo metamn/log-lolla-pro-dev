@@ -84,8 +84,14 @@ class Log_Lolla_Pro_People_Widget extends WP_Widget {
 		return $instance;
 	}
 }
-add_action(
-	'widgets_init', function() {
+
+if ( ! function_exists( 'log_lolla_pro_register_people_widget' ) ) {
+	/**
+	 * Register the widget.
+	 */
+	function log_lolla_pro_register_people_widget() {
 		register_widget( 'Log_Lolla_Pro_People_Widget' );
 	}
-);
+
+	add_action( 'widgets_init', 'log_lolla_pro_register_people_widget' );
+}

@@ -20,10 +20,13 @@ if ( ! function_exists( 'log_lolla_pro_get_post_type_label' ) ) {
 			return;
 		}
 
-		$obj   = get_post_type_object( $post_type );
-		$label = $obj->labels->name;
+		$obj = get_post_type_object( $post_type );
 
-		return $label;
+		if ( isset( $obj->labels->name ) ) {
+			return $obj->labels->name;
+		} else {
+			return '';
+		}
 	}
 }
 

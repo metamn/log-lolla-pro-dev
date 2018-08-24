@@ -61,8 +61,14 @@ class Log_Lolla_Pro_Post_Formats_Widget extends WP_Widget {
 		// Nothing to process.
 	}
 }
-add_action(
-	'widgets_init', function() {
+
+if ( ! function_exists( 'log_lolla_pro_register_post_formats_widget' ) ) {
+	/**
+	 * Register the widget.
+	 */
+	function log_lolla_pro_register_post_formats_widget() {
 		register_widget( 'Log_Lolla_Pro_Post_Formats_Widget' );
 	}
-);
+
+	add_action( 'widgets_init', 'log_lolla_pro_register_post_formats_widget' );
+}

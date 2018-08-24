@@ -111,8 +111,14 @@ class Log_Lolla_Pro_Topics_Summary_Widget extends WP_Widget {
 		return $instance;
 	}
 }
-add_action(
-	'widgets_init', function() {
+
+if ( ! function_exists( 'log_lolla_pro_register_topics_summary_widget' ) ) {
+	/**
+	 * Register the widget.
+	 */
+	function log_lolla_pro_register_topics_summary_widget() {
 		register_widget( 'Log_Lolla_Pro_Topics_Summary_Widget' );
 	}
-);
+
+	add_action( 'widgets_init', 'log_lolla_pro_register_topics_summary_widget' );
+}
