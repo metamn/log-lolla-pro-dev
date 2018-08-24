@@ -1,13 +1,13 @@
 @mixin cursor($type: default) {
 	@if ($type == 'default') {
-		@include cursor__custom($cursor-default, $cursor-default-x, $cursor-default-y);
+		@include cursor-custom($cursor-default, $cursor-default-x, $cursor-default-y);
 	}
 
 	@if ($type == 'pointer') {
 		@include transition(all);
 
 		&:hover {
-			@include cursor__custom($cursor-pointer, $cursor-pointer-x, $cursor-pointer-y, $default: pointer);
+			@include cursor-custom($cursor-pointer, $cursor-pointer-x, $cursor-pointer-y, $default: pointer);
 		}
 	}
 }

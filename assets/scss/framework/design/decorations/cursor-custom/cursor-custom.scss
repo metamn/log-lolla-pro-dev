@@ -18,7 +18,7 @@
 // - they support only .CUR files and not .PNG
 //
 // Styleguide cursor
-@mixin cursor__custom($cursor-image-name, $x: 0, $y: 0, $default: auto) {
+@mixin cursor-custom($cursor-image-name, $x: 0, $y: 0, $default: auto) {
 	cursor: url('assets/images/#{$cursor-image-name}.png') #{$x} #{$y},
 		url('assets/images/#{$cursor-image-name}.cur'),
 		#{$default};

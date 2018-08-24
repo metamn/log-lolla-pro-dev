@@ -1,7 +1,6 @@
 @mixin cite {
 	cite,
 	.cite {
-
 		@include font(default);
 		@include border(normal, top);
 		@include margin(yes, no, no, no);

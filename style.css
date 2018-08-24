@@ -2750,7 +2750,7 @@ html {
               padding: 3.75em 3.75em; } }
           html body .content .post.post-format-quote .post-content-between-sidebars .post-content .text blockquote,
           html body .content .post.post-format-quote .post-content-between-sidebars .post-content .text q {
-            border: none;
+            border: 0;
             padding: 0; }
       html body .content .post.post-format-quote .post-content-between-sidebars .post-permalink {
         -ms-flex-item-align: center;

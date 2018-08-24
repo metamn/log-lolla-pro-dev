@@ -1,11 +1,9 @@
 @mixin cite--body-text {
 	cite,
 	.cite {
-
 		@include font(default);
 		display: block;
     
-
 		&::before {
 			content: 'by';
 			padding-right: $lem / 4;

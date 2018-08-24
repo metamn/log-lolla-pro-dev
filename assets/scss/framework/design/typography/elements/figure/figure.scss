@@ -10,6 +10,6 @@
 
 	figcaption,
 	.wp-caption-text {
-		@include figure__figcaption;
+		@include figcaption;
 	}
 }
