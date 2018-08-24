@@ -12,7 +12,7 @@
 	<span class="prefix">
 		<?php
 		/* translators: The prefix for the link to the Summary archive. */
-		echo esc_html_x( 'A&nbsp;', 'log-lolla-pro' );
+		echo esc_html_x( 'A&nbsp;', 'The prefix for the link to the Summary archive', 'log-lolla-pro' );
 		?>
 	</span>
 
