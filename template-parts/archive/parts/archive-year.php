@@ -4,7 +4,7 @@
  *
  * @param integer $archive_year The archive year.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/archives/ Live example
+ * @link https://morethemes.baby/blog/archives/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

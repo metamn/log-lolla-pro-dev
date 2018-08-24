@@ -8,7 +8,7 @@
  *  * A Post list of Summaries from the Post template tag
  *  * A Topic list from the Topic template tag
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/people/ben-thompson/ Live example
+ * @link https://morethemes.baby/blog/people/ben-thompson/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ WordPress documentation
  *
  * @package Log_Lolla_Pro

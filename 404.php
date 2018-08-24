@@ -6,7 +6,7 @@
  *  * a 'not found' message
  *  * a search form.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/peoplexx Live example
+ * @link https://morethemes.baby/blog/peoplexx Live example
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page Wordpress documentation
  *
  * @package Log_Lolla_Pro

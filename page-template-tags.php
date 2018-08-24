@@ -8,7 +8,7 @@
  *  * A Header from the Topic template parts.
  *  * A Topic list from the Topic template parts.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/tags Live example
+ * @link https://morethemes.baby/blog/tags Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation
  *
  * @package Log_Lolla_Pro

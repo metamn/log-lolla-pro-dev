@@ -8,7 +8,7 @@
  *  * A Header from the Archive template part.
  *  * The display of the `log-lolla-pro-archives-by-date` shortcode.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/years-and-months Live example
+ * @link https://morethemes.baby/blog/years-and-months Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation
  *
  * @package Log_Lolla_Pro

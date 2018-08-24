@@ -6,7 +6,7 @@
  *  * A Header from the Archive template part.
  *  * A Post list from the Post template part.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/summaries Live example
+ * @link https://morethemes.baby/blog/summaries Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro

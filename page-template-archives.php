@@ -7,7 +7,7 @@
  * The page contains:
  *  * The display of all the shortcodes found in the page body.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/archives Live example
+ * @link https://morethemes.baby/blog/archives Live example
  * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/ WordPress documentation
  *
  * @package Log_Lolla_Pro

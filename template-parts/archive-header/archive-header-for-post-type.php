@@ -5,7 +5,7 @@
  * It contains:
  * * An Archive header template part.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/people/ben-thompson/ Live example
+ * @link https://morethemes.baby/blog/people/ben-thompson/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

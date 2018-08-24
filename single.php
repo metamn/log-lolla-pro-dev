@@ -8,7 +8,7 @@
  *  * The Comment list template part.
  *  * The Post navigation template part.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/2018/05/21/tech-platforms-and-the-knowledge-problem/ Live example
+ * @link https://morethemes.baby/blog/2018/05/21/tech-platforms-and-the-knowledge-problem/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ WordPress documentation
  *
  * @package Log_Lolla_Pro

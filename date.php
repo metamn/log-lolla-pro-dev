@@ -11,7 +11,7 @@
  *  * A Post list for the Standard post types of the archive from the Post template part.
  *  * A Topic list for the related topics from the Topic template part.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/2018/ Live example
+ * @link https://morethemes.baby/blog/2018/ Live example
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/ Wordpress documentation
  *
  * @package Log_Lolla_Pro

@@ -1,6 +1,6 @@
 <?php
 /**
- * Displays the  comment content
+ * Displays the  comment content.
  *
  * @package Log_Lolla_Pro
  * @since 1.0.0

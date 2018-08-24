@@ -6,7 +6,7 @@
  *
  * @param string $archive_title The title of the archive.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/tag/indie-web/ Live example
+ * @link https://morethemes.baby/blog/tag/indie-web/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */

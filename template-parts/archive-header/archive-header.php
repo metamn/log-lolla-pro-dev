@@ -9,7 +9,7 @@
  *
  * @param string $archive_klass Additional classes for this component.
  *
- * @link https://morethemes.baby/log-lolla-pro-demo/tag/indie-web/ Live example
+ * @link https://morethemes.baby/blog/tag/indie-web/ Live example
  * @package Log_Lolla_Pro
  * @since 1.0.0
  */
