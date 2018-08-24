@@ -4,14 +4,24 @@
 //
 // No Styleguide entry
 @mixin typography-reset {
-	h1, h2, h3, h4, h5, h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		font-size: 1em;
 		font-weight: normal;
 		margin: 0;
 		padding: 0;
 	}
 
-	p, figure, blockquote, ul, ol, li {
+	p,
+	figure,
+	blockquote,
+	ul,
+	ol,
+	li {
 		margin: 0;
 		padding: 0;
 	}
@@ -28,7 +38,9 @@
 	}
 
 	// https://stackoverflow.com/questions/17838607/making-an-iframe-responsive
-	iframe, object, embed {
+	iframe,
+	object,
+	embed {
 		max-width: 100%;
 	}
 }

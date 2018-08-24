@@ -13,9 +13,5 @@
 		@include padding(yes, no, yes, no);
 
 		@include widget-list;
-
-		> * {
-			// @include width;
-		}
 	}
 }

@@ -489,7 +489,9 @@ template {
 
 html {
   box-sizing: border-box; }
-  html *, html *::before, html *::after {
+  html *,
+  html *::before,
+  html *::after {
     box-sizing: inherit; }
   html body {
     font-size: 100%;
@@ -513,17 +515,29 @@ html {
             flex-direction: column;
     overflow-x: hidden;
     width: 100%; }
-    html body h1, html body h2, html body h3, html body h4, html body h5, html body h6 {
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
       font-size: 1em;
       font-weight: normal;
       margin: 0;
       padding: 0; }
-    html body p, html body figure, html body blockquote, html body ul, html body ol, html body li {
+    html body p,
+    html body figure,
+    html body blockquote,
+    html body ul,
+    html body ol,
+    html body li {
       margin: 0;
       padding: 0; }
     html body a {
       word-wrap: break-word; }
-    html body iframe, html body object, html body embed {
+    html body iframe,
+    html body object,
+    html body embed {
       max-width: 100%; }
     html body button,
     html body input,
@@ -10692,7 +10706,7 @@ html {
         html body .footer .footer-navigation .menu li a:hover, html body .footer .footer-navigation .menu li a:active {
           text-decoration: line-through; }
       html body .footer .footer-navigation .menu li.page_item_has_children {
-        border-bottom: none;
+        border-bottom: n0;
         padding-bottom: 0; }
         html body .footer .footer-navigation .menu li.page_item_has_children a + ul {
           border-top: 1px solid;

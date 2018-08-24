@@ -3,6 +3,7 @@
   "rules": {
     "indentation": "tab",
 	"max-nesting-depth": 4,
-	"order/properties-alphabetical-order": null
+	"order/properties-alphabetical-order": null,
+	"selector-no-qualifying-type": null
   }
 }
