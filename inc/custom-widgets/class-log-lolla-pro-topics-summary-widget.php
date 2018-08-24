@@ -39,7 +39,7 @@ class Log_Lolla_Pro_Topics_Summary_Widget extends WP_Widget {
 	 * @param  array $instance The instance of the widget.
 	 */
 	public function widget( $args, $instance ) {
-		$title   = apply_filters( 'widget_title', esc_html__( 'Topics Summary' ) );
+		$title   = log_lolla_pro_get_topic_label( 'Topics Summary' );
 		$url     = log_lolla_pro_get_link( 'Topics Summary' );
 		$content = log_lolla_pro_get_topic_list_summary(
 			$instance['number_of_categories'],
