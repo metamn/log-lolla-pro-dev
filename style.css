@@ -2683,7 +2683,7 @@ html {
             -ms-flex-order: 2;
                 order: 2; }
       html body .content .post.post-format-quote .post-content-between-sidebars .post-content {
-        background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==);
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEElEQVQImWNgYGD4z0AHAABlBAEAGUklEQAAAABJRU5ErkJggg==");
         padding: 0 !important;
         -webkit-box-ordinal-group: 2;
             -ms-flex-order: 1;
@@ -8078,7 +8078,7 @@ html {
             html body .content .archives .archives-title {
               max-width: 37.5em; } }
         html body .content .archives .archives-items {
-          background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=); }
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII="); }
           @media only screen and (max-width: 767.9px) {
             html body .content .archives .archives-items {
               padding-top: 2.5em; } }
@@ -9341,7 +9341,7 @@ html {
           html body .content .page .post {
             margin-right: 0; } }
     html body .sidebar {
-      background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=);
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEUlEQVQImWNgYGD4jwVTHQAAz6cE/Jh9DFsAAAAASUVORK5CYII=");
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;

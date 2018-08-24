@@ -83,7 +83,7 @@
 		@include colors;
 		@include padding(half, yes, half, yes);
 		@include border(normal, all);
-		border-bottom: none;
+		border-bottom: 0;
 		display: inline-flex;
 	}
 
