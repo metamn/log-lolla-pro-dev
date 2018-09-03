@@ -119,16 +119,19 @@ if ( ! function_exists( 'log_lolla_pro_get_sparkline_dates' ) ) {
 			return;
 		}
 
+		$dates = [];
 		$date1 = new DateTime( $post_dates[0] );
 		$date2 = new DateTime( $post_dates[1] );
 
 		// Number of days since the first post (ie. 110).
 		$number_of_days = $date2->diff( $date1 )->format( '%a' );
 
+		if ( '0' === $number_of_days ) {
+			return;
+		}
+
 		// Number of days for a sparkline unit (ie 11, from 110 / $sparklines).
 		$number_of_days_per_sparkline = round( $number_of_days / $sparklines );
-
-		$dates = [];
 
 		$date = $date1;
 		while ( $date <= $date2 ) {
