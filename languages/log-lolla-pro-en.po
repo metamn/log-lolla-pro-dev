@@ -1,0 +1,767 @@
+# Copyright (C) 2018 More Themes Baby
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Log Lolla Pro 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/log-lolla-pro-dev\n"
+"POT-Creation-Date: 2018-08-24 18:03+0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-08-24 18:04+0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.7.1\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#. translators: The not found (404) page title
+#: 404.php:27
+msgctxt "The not found (404) page title"
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#. translators: The not found (404) page text
+#: 404.php:38
+msgctxt "The not found (404) page text"
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#. translators: The primary menu name
+#: functions.php:53
+msgctxt "The primary menu name"
+msgid "Primary"
+msgstr ""
+
+#. translators: The name of the Header Menu widget area
+#: functions.php:126
+msgctxt "The name of the Header Menu widget area"
+msgid "Header Menu"
+msgstr ""
+
+#. translators: The description of the Header Menu widget area
+#: functions.php:129
+msgctxt "The description of the Header Menu widget area"
+msgid "Add widgets here."
+msgstr ""
+
+#. translators: The name of the Sidebar widget area
+#: functions.php:138
+msgctxt "The name of the Sidebar widget area"
+msgid "Sidebar"
+msgstr ""
+
+#. translators: The description of the Sidebar widget area
+#: functions.php:141
+msgctxt "The description of the Sidebar widget area"
+msgid "Add widgets here."
+msgstr ""
+
+#: inc/custom-post-types.php:18
+msgctxt "post type general name"
+msgid "Summaries"
+msgstr ""
+
+#: inc/custom-post-types.php:19
+msgctxt "post type singular name"
+msgid "Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:20
+msgctxt "admin menu"
+msgid "Summaries"
+msgstr ""
+
+#: inc/custom-post-types.php:21
+msgctxt "add new on admin bar"
+msgid "Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:22
+msgctxt "summary"
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:23
+msgid "Add New Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:24
+msgid "New Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:25
+msgid "Edit Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:26
+msgid "View Summary"
+msgstr ""
+
+#: inc/custom-post-types.php:27
+msgid "All Summaries"
+msgstr ""
+
+#: inc/custom-post-types.php:28
+msgid "Search Summaries"
+msgstr ""
+
+#: inc/custom-post-types.php:29
+msgid "Parent Summaries:"
+msgstr ""
+
+#: inc/custom-post-types.php:30
+msgid "No summary found."
+msgstr ""
+
+#: inc/custom-post-types.php:31
+msgid "No summary found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:36
+msgctxt "The description of the Summary post type"
+msgid "High level summaries of a topic"
+msgstr ""
+
+#: inc/custom-post-types.php:68
+msgctxt "post type general name"
+msgid "Sources"
+msgstr ""
+
+#: inc/custom-post-types.php:69
+msgctxt "post type singular name"
+msgid "Source"
+msgstr ""
+
+#: inc/custom-post-types.php:70
+msgctxt "admin menu"
+msgid "Sources"
+msgstr ""
+
+#: inc/custom-post-types.php:71
+msgctxt "add new on admin bar"
+msgid "Source"
+msgstr ""
+
+#: inc/custom-post-types.php:72
+msgctxt "source"
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:73
+msgid "Add New Source"
+msgstr ""
+
+#: inc/custom-post-types.php:74
+msgid "New Source"
+msgstr ""
+
+#: inc/custom-post-types.php:75
+msgid "Edit Source"
+msgstr ""
+
+#: inc/custom-post-types.php:76
+msgid "View Source"
+msgstr ""
+
+#: inc/custom-post-types.php:77
+msgid "All Sources"
+msgstr ""
+
+#: inc/custom-post-types.php:78
+msgid "Search Sources"
+msgstr ""
+
+#: inc/custom-post-types.php:79
+msgid "Parent Sources:"
+msgstr ""
+
+#: inc/custom-post-types.php:80
+msgid "No source found."
+msgstr ""
+
+#: inc/custom-post-types.php:81
+msgid "No source found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:86
+msgctxt "The description of the Source post type"
+msgid "Frequently used sources of information"
+msgstr ""
+
+#: inc/custom-post-types.php:114
+msgctxt "post type general name"
+msgid "People"
+msgstr ""
+
+#: inc/custom-post-types.php:115
+msgctxt "post type singular name"
+msgid "Person"
+msgstr ""
+
+#: inc/custom-post-types.php:116
+msgctxt "admin menu"
+msgid "People"
+msgstr ""
+
+#: inc/custom-post-types.php:117
+msgctxt "add new on admin bar"
+msgid "Person"
+msgstr ""
+
+#: inc/custom-post-types.php:118
+msgctxt "person"
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:119
+msgid "Add New Person"
+msgstr ""
+
+#: inc/custom-post-types.php:120
+msgid "New Person"
+msgstr ""
+
+#: inc/custom-post-types.php:121
+msgid "Edit Person"
+msgstr ""
+
+#: inc/custom-post-types.php:122
+msgid "View Person"
+msgstr ""
+
+#: inc/custom-post-types.php:123
+msgid "All People"
+msgstr ""
+
+#: inc/custom-post-types.php:124
+msgid "Search People"
+msgstr ""
+
+#: inc/custom-post-types.php:125
+msgid "Parent People:"
+msgstr ""
+
+#: inc/custom-post-types.php:126
+msgid "No people found."
+msgstr ""
+
+#: inc/custom-post-types.php:127
+msgid "No people found in Trash."
+msgstr ""
+
+#: inc/custom-post-types.php:132
+msgctxt "The description of the People post type"
+msgid "People to learn from"
+msgstr ""
+
+#. translators: The Archives by date widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-archives-by-date-widget.php:25
+msgid "Display archives of years and months"
+msgstr ""
+
+#. translators: The People widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-people-widget.php:25
+msgid "Display most popular people"
+msgstr ""
+
+#. translators: The People widget `number of people to display` text on the
+#. admin screen
+#: inc/custom-widgets/class-log-lolla-pro-people-widget.php:27
+msgid "Number of people to display"
+msgstr ""
+
+#. translators: The Post Formats widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-post-formats-widget.php:25
+msgid "Display post formats archive"
+msgstr ""
+
+#. translators: The Source widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-sources-widget.php:25
+msgid "Display sources archive"
+msgstr ""
+
+#. translators: The Source widget `number of sources to display` text on the
+#. admin screen
+#: inc/custom-widgets/class-log-lolla-pro-sources-widget.php:27
+msgid "Number of sources to display"
+msgstr ""
+
+#. translators: The Summary widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-summaries-widget.php:25
+msgid "Display summaries archive"
+msgstr ""
+
+#. translators: The Summary widget `number of summaries to display` text on the
+#. admin screen
+#: inc/custom-widgets/class-log-lolla-pro-summaries-widget.php:27
+msgid "Number of summaries to display"
+msgstr ""
+
+#. translators: The Topics Summary widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php:25
+msgid "Display a short summary based on main topics"
+msgstr ""
+
+#. translators: The Topics Summary widget `number of categories to use` text on
+#. the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php:27
+msgid "Number of categories to use"
+msgstr ""
+
+#. translators: The Topics Summary widget `number of tags to use` text on the
+#. admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php:29
+msgid "Number of tags to use"
+msgstr ""
+
+#. translators: The Topics Summary name
+#: inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php:42
+#: inc/template-tags/topic-template.php:28
+msgid "Topics Summary"
+msgstr ""
+
+#. translators: The Topics Summary widget form help text on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-summary-widget.php:69
+msgid ""
+"A description will be generated by merging the most popular category and tag "
+"descriptions"
+msgstr ""
+
+#. translators: The Topics widget description on the admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-widget.php:25
+msgid "Display popular topics (categories, tags)"
+msgstr ""
+
+#. translators: The Topics widget `number of categories to display` text on the
+#. admin screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-widget.php:27
+msgid "Number of categories to display"
+msgstr ""
+
+#. translators: The Topics widget `number of tags to display` text on the admin
+#. screen
+#: inc/custom-widgets/class-log-lolla-pro-topics-widget.php:29
+msgid "Number of tags to display"
+msgstr ""
+
+#. translators: A widget's `no options to set` text on the admin screen
+#: inc/custom-widgets.php:80
+msgid "There are no options to set for this widget"
+msgstr ""
+
+#. translators: A widget's form helper text on the admin screen
+#: inc/custom-widgets.php:112
+msgid "(-1 displays all items)"
+msgstr ""
+
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:73
+msgid "Copyright text in footer"
+msgstr ""
+
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:96
+msgid "Copyright link in footer"
+msgstr ""
+
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:119
+msgid "Display footer copyright"
+msgstr ""
+
+#. translators: The label of the customizer on the admin screen.
+#: inc/customizer.php:142
+msgid "Display footer credits"
+msgstr ""
+
+#. translators: The description of the customizer on the admin screen.
+#: inc/customizer.php:144
+msgid "Like Powered By Wordpress and the Log Lolla Pro Theme"
+msgstr ""
+
+#. translators: %s: continue reading.
+#: inc/template-functions.php:98 inc/template-functions.php:118
+msgctxt "continue-reading"
+msgid "Continue reading"
+msgstr ""
+
+#. translators: The Archives by date name
+#: inc/template-tags/archive-template.php:26
+msgid "Archives by date"
+msgstr ""
+
+#. translators: The Archives page name
+#: inc/template-tags/archive-template.php:29
+msgid "Archives"
+msgstr ""
+
+#. translators: The title of the `Posts` counter in the archive header.
+#: inc/template-tags/framework-template.php:26
+msgid "Posts"
+msgstr ""
+
+#. translators: The title of the `Summaries` counter in the archive header.
+#: inc/template-tags/framework-template.php:34
+msgid "Summaries"
+msgstr ""
+
+#. translators: The title of the `Thoughts` counter in the archive header.
+#: inc/template-tags/framework-template.php:42
+msgid "Thoughts"
+msgstr ""
+
+#. translators: The title of the `Related topics` counter in the archive
+#. header.
+#. translators: The Related topics name
+#: inc/template-tags/framework-template.php:50
+#: inc/template-tags/topic-template.php:31
+msgid "Related topics"
+msgstr ""
+
+#. translators: The introductory text in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:381
+msgid "This site is about"
+msgstr ""
+
+#. translators: The topic separator in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:385
+msgctxt "The topic separator in the Topics Summary widget"
+msgid ", "
+msgstr ""
+
+#. translators: The topic connector in the Topics Summary widget.
+#: inc/template-tags/framework-template.php:387
+msgctxt "The topic connector in the Topics Summary widget"
+msgid "and"
+msgstr ""
+
+#. translators: The default text for the Header Menu widget.
+#: inc/template-tags/header-template.php:22
+msgctxt "The default text for the Header Menu widget"
+msgid "Use the `Header Menu` widget to define what content goes here"
+msgstr ""
+
+#. translators: The Post Formats name
+#: inc/template-tags/post-format-template.php:25
+msgid "Post Formats"
+msgstr ""
+
+#. translators: The Standard Post Format name
+#: inc/template-tags/post-format-template.php:28
+msgid "Standard"
+msgstr ""
+
+#. translators: The date prefix for the Summary post format.
+#: inc/template-tags/post-type-summary-template.php:75
+msgctxt "The date prefix for the Summary post format"
+msgid "Between&nbsp;"
+msgstr ""
+
+#. translators: The date prefix for the Summary post format.
+#: inc/template-tags/post-type-summary-template.php:81
+msgctxt "he date prefix for the Summary post format"
+msgid "Until&nbsp;"
+msgstr ""
+
+#. translators: The Topics name
+#: inc/template-tags/topic-template.php:25
+msgid "Topics"
+msgstr ""
+
+#. translators: Years and months Archive page name
+#: page-archives-by-date.php:29
+msgctxt "Archives by date page name"
+msgid "Archives by date"
+msgstr ""
+
+#. translators: Post Formats Archive page name
+#: page-post-formats.php:21
+msgctxt "Post Formats Archive page name"
+msgid "Post Formats"
+msgstr ""
+
+#. translators: Search page title.
+#: search.php:19
+msgid "Search Results for: %s"
+msgstr ""
+
+#. translators: The Comment section title for a single comment.
+#: template-parts/comment/parts/comment-list-title.php:20
+msgctxt "one comment"
+msgid "One update"
+msgstr ""
+
+#. translators: The Comment section title for multiple comments.
+#: template-parts/comment/parts/comment-list-title.php:23
+msgctxt " comments"
+msgid " updates"
+msgstr ""
+
+#. translators: The comment permalink title attribute ( <a title="" ...>).
+#: template-parts/comment/parts/comment-permalink.php:19
+msgctxt "comment permalink title"
+msgid "Comment permalink"
+msgstr ""
+
+#. translators: The comment permalink text.
+#: template-parts/comment/parts/comment-permalink.php:21
+msgctxt "comment permalink text"
+msgid "&infin;"
+msgstr ""
+
+#. translators: The comment updated text.
+#: template-parts/comment/parts/comment-updated-text.php:10
+msgctxt "comment updated text"
+msgid "Update on "
+msgstr ""
+
+#. translators: The `Powered by` text in the footer.
+#: template-parts/footer/footer-credits.php:21
+msgid "powered by %1$s"
+msgstr ""
+
+#. translators: The `and the` text in the footer.
+#: template-parts/footer/footer-credits.php:31
+msgid "and the %1$s"
+msgstr ""
+
+#. translators: The `status update by` text for the Status post format.
+#: template-parts/post/parts/post-author-linking-to-post.php:25
+msgctxt "status update by"
+msgid "status update by "
+msgstr ""
+
+#. translators: The `by` text before the post author.
+#: template-parts/post/parts/post-author.php:19
+msgctxt "post author"
+msgid "by"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/post/parts/post-edit-link.php:21
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: The `Pages:` text for the post pagination.
+#: template-parts/post/parts/post-paginated-content.php:11
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: post permalink.
+#: template-parts/post/parts/post-permalink.php:19
+msgctxt "post permalink"
+msgid "&infin;"
+msgstr ""
+
+#. translators: The `Featured` text for the Sticky posts.
+#: template-parts/post/parts/post-sticky.php:16
+msgctxt "sticky post text"
+msgid "Featured"
+msgstr ""
+
+#. translators: The prefix for the link to the Summary archive.
+#: template-parts/post/parts/post-summary-link-to-archive.php:15
+msgctxt "log-lolla-pro"
+msgid "A&nbsp;"
+msgstr ""
+
+#. translators: The title of the Summary posts lists.
+#: template-parts/post/post-list-of-a-summary.php:17
+msgctxt "The title of the Summary posts lists"
+msgid "Based on these posts:"
+msgstr ""
+
+#. translators: The title of the Source, People (post type) posts lists.
+#: template-parts/post/post-list-post-type.php:17
+msgctxt "The title of the Source, People (post type) posts lists"
+msgid "Posts from "
+msgstr ""
+
+#. translators: The title of the section when no posts was found in the loop.
+#: template-parts/post/post-none.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: The text when no posts was found in the loop, and the user can
+#. publish posts.
+#: template-parts/post/post-none.php:32
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. translators: The text when no posts was found in a search.
+#: template-parts/post/post-none.php:49
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#. translators: The text when no posts was found in the loop.
+#: template-parts/post/post-none.php:62
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#. translators: The prefix of a topic
+#: template-parts/topic/topic-with-prefix.php:18
+msgctxt "The prefix of a topic"
+msgid "On&nbsp;"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:102
+msgid "PPCPP-DESCRIPTION"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:103
+msgid "PPCPP-HELPTEXT"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:104
+msgid "PPCPP:OPT-FILENAME"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:105
+msgid "PPCPP:OPT-DIRECTORY"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:106
+msgid "PPCPP:OPT-TARGET"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:107
+msgid "PPCPP:OPT-ENCODING"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:108
+msgid "PPCPP:OPT-EXTENSIONS"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:109
+msgid "PPCPP:OPT-IGNORE"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:110
+msgid "PPCPP:OPT-IGNORETAGS"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:111
+msgid "PPCPP:OPT-HIDDEN"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:112
+msgid "PPCPP:OPT-IGNORESYMLINKS"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:113
+msgid "PPCPP:OPT-MARKERS"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:114
+msgid "PPCPP:OPT-TITLE"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:115
+msgid "PPCPP:OPT-FORCE"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:116
+msgid "PPCPP:OPT-VALIDATE"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:117
+msgid "PPCPP:OPT-VISIBILITY"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:118
+msgid "PPCPP:OPT-SOURCECODE"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:119
+msgid "PPCPP:OPT-PROGRESSBAR"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:125
+msgid "PPCPP:OPT-DEFAULTPACKAGENAME"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:159
+msgid "PPCPP:EXC-BADTARGET"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:167
+msgid "PPCPP:LOG-COLLECTING"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:174
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:190
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:244
+msgid "PPCPP:LOG-OK"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:182
+msgid "PPCPP:LOG-INITIALIZING"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:191
+msgid "PPCPP:LOG-PARSING"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:229
+msgid "PPCPP:EXC-NOFILES"
+msgstr ""
+
+#: vendor/phpdocumentor/phpdocumentor/src/phpDocumentor/Parser/Command/Project/ParseCommand.php:240
+msgid "PPCPP:LOG-STORECACHE"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Log Lolla Pro"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://morethemes.baby/themes/log-lolla-pro/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "The Pro version of the Log Lolla theme focusing on creating knowledge."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "More Themes Baby"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://morethemes.baby"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Archives by date Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Archives Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Categories Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Standard Post Format Archive"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Post Formats Archive"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Tags Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Topics Page"
+msgstr ""
